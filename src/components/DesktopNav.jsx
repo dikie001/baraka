@@ -41,7 +41,7 @@ const DesktopNav = () => {
               <item.icon className="w-6 h-6" />
               <span className="text-xs font-medium">{item.label}</span>
               {/* Tooltip */}
-              <div className="absolute left-full ml-3 px-2 py-1 bg-slate-700 text-white text-sm rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none whitespace-nowrap">
+              <div className="absolute  left-full ml-3 px-2 py-1 bg-slate-700 text-white text-sm rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none whitespace-nowrap">
                 <Link to={item.to}>{item.label}</Link>
               </div>
             </button>

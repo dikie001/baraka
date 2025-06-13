@@ -21,22 +21,28 @@ const BottomNav = () => {
               id: "practice",
               to: "/practice",
             },
-            { icon: Trophy, label: "Achievements", id: "achievements", to:'/achievements' },
+            {
+              icon: Trophy,
+              label: "Achievements",
+              id: "achievements",
+              to: "/achievements",
+            },
             { icon: Star, label: "Profile", id: "profile", to: "/profile" },
           ].map((item, index) => (
             <button
               key={index}
               onClick={() => setActiveTab(item.id)}
-              className={`flex flex-col items-center space-y-1 p-2 rounded-lg transition-all duration-300 ${
+              className={`flex flex-col active:ring-2 ring-purple-600 items-center space-y-1 p-2 rounded-lg transition-all duration-300 ${
                 activeTab === item.id
                   ? "bg-gradient-to-r from-purple-600/30 to-pink-600/30 text-purple-300"
                   : "text-slate-400 hover:text-purple-300"
               }`}
             >
               <item.icon className="w-5 h-5" />
-              <span className="text-xs font-medium">
-                <Link to={item.to}>{item.label}</Link>
-              </span>
+             
+                <Link className="text-xs font-medium" to={item.to}>
+                  {item.label}
+                </Link>
             </button>
           ))}
         </div>
