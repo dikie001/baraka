@@ -8,6 +8,10 @@ import QuickPractice from './quickPractice/QuickPractice'
 import Practice from './practice/Practice'
 import Profile from './pages/Profile'
 import AchievementsPage from './pages/Achievement'
+import Algebra from './topics/algebra/Algebra'
+import Data from './topics/data/Data'
+import Measurement from './topics/measurement/Measurement'
+import Probability from './topics/probability/Probability'
 
 export const App = () => {
   return (
@@ -21,6 +25,11 @@ export const App = () => {
         <Route path="/practice" element={<Practice />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/achievements" element={<AchievementsPage />} />
+        <Route path="/algebra" element={<Algebra />} />
+        <Route path="/measurement" element={<Measurement />} />
+        <Route path="/probability" element={<Probability />} />
+
+        <Route path="/data" element={<Data />} />
       </Routes>
     </Router>
   );
