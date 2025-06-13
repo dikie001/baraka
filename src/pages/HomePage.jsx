@@ -16,41 +16,44 @@ import { PieChart } from "lucide-react";
 import { BarChart2Icon } from "lucide-react";
 import { Dice1 } from "lucide-react";
 import { Dices } from "lucide-react";
+import { Link, useNavigate } from "react-router-dom";
+import BottomNav from "../components/MobileNav";
+import DesktopNav from "../components/DesktopNav";
 
 export default function HomePage() {
   const [activeTab, setActiveTab] = useState("home");
-
+  const navigate = useNavigate();
   const topics = [
-    { name: "Numbers", icon: <Calculator />, progress: 85, level: "Beginner" },
+    { name: "Numbers", icon: <Calculator />, progress: 85, to: "/numbers" },
     {
       name: "Algebra",
       icon: <FunctionSquare />,
       progress: 72,
-      level: "Beginner",
+      to: "/algebra",
     },
     {
       name: "Geometry",
       icon: <Triangle />,
       progress: 45,
-      level: "Intermediate",
+      to: "/geometry",
     },
     {
       name: "Measurement",
       icon: <Scale />,
       progress: 30,
-      level: "Intermediate",
+      to: "/measurement",
     },
     {
       name: "Data Handling",
       icon: <BarChart2Icon />,
       progress: 30,
-      level: "Intermediate",
+      to: "/data-handling",
     },
     {
       name: "Probability",
       icon: <Dices />,
       progress: 30,
-      level: "Intermediate",
+      to: "/probability",
     },
   ];
 
@@ -72,6 +75,8 @@ export default function HomePage() {
         <div className="hidden lg:block absolute top-20 right-20 w-32 h-32 bg-purple-400/10 rounded-full blur-xl animate-pulse delay-700"></div>
         <div className="hidden lg:block absolute bottom-20 left-20 w-40 h-40 bg-pink-400/10 rounded-full blur-xl animate-pulse delay-300"></div>
       </div>
+      <BottomNav />
+      <DesktopNav/>
 
       <div className="relative z-10 w-full max-w-md lg:max-w-4xl xl:max-w-6xl mx-auto bg-slate-800/50 backdrop-blur-xl border border-purple-500/20 shadow-2xl min-h-screen lg:rounded-3xl lg:my-8 lg:min-h-[calc(100vh-4rem)]">
         {/* Header */}
@@ -100,7 +105,10 @@ export default function HomePage() {
             {/* Left Column - Daily Challenge and Quick Practice */}
             <div className="lg:col-span-5 space-y-6">
               {/* Daily Challenge Card */}
-              <div className="bg-gradient-to-r from-purple-600/20 to-pink-600/20 backdrop-blur-sm border border-purple-500/30 rounded-2xl p-4 sm:p-6 hover:scale-105 lg:hover:scale-102 transition-all duration-300 cursor-pointer">
+              <div
+                onClick={() => navigate("/daily-challenge")}
+                className="bg-gradient-to-r from-purple-600/20 to-pink-600/20 backdrop-blur-sm border border-purple-500/30 rounded-2xl p-4 sm:p-6 hover:scale-105 lg:hover:scale-102 transition-all duration-300 cursor-pointer"
+              >
                 <div className="flex items-center justify-between">
                   <div className="flex-1">
                     <h3 className="text-lg lg:text-xl font-semibold text-purple-200">
@@ -128,7 +136,10 @@ export default function HomePage() {
               </div>
 
               {/* Quick Practice Button */}
-              <div className="bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl p-4 sm:p-6 hover:from-purple-500 hover:to-pink-500 transition-all duration-300 cursor-pointer transform hover:scale-105 lg:hover:scale-102">
+              <div
+                onClick={() => navigate("/quick-practice")}
+                className="bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl p-4 sm:p-6 hover:from-purple-500 hover:to-pink-500 transition-all duration-300 cursor-pointer transform hover:scale-105 lg:hover:scale-102"
+              >
                 <div className="flex items-center justify-center space-x-3">
                   <Play className="w-6 h-6 lg:w-8 lg:h-8" />
                   <span className="text-lg lg:text-xl font-semibold">
@@ -151,6 +162,7 @@ export default function HomePage() {
                 <div className="grid grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-3 lg:gap-4">
                   {topics.map((topic, index) => (
                     <div
+                      onClick={() => navigate(topic.to)}
                       key={index}
                       className="bg-slate-700/30 backdrop-blur-sm border border-purple-500/20 rounded-xl p-3 lg:p-4 hover:bg-slate-700/50 hover:scale-105 lg:hover:scale-102 transition-all duration-300 cursor-pointer group"
                     >
@@ -161,7 +173,7 @@ export default function HomePage() {
                         {topic.name}
                       </h4>
                       <p className="text-xs lg:text-sm text-purple-300 mb-3">
-                        {topic.level}
+                        {topic.to}
                       </p>
                       <div className="bg-slate-600/50 rounded-full h-2 lg:h-3 mb-2">
                         <div
@@ -206,60 +218,6 @@ export default function HomePage() {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        {/* Bottom Navigation - Only visible on mobile/tablet */}
-        <div className="fixed bottom-0 left-1/2 transform -translate-x-1/2 w-full max-w-md bg-slate-800/80 backdrop-blur-xl border-t border-purple-500/20 lg:hidden">
-          <div className="flex justify-around py-3">
-            {[
-              { icon: BookOpen, label: "Learn", id: "home" },
-              { icon: Calculator, label: "Practice", id: "practice" },
-              { icon: Trophy, label: "Achievements", id: "achievements" },
-              { icon: Star, label: "Profile", id: "profile" },
-            ].map((item, index) => (
-              <button
-                key={index}
-                onClick={() => setActiveTab(item.id)}
-                className={`flex flex-col items-center space-y-1 p-2 rounded-lg transition-all duration-300 ${
-                  activeTab === item.id
-                    ? "bg-gradient-to-r from-purple-600/30 to-pink-600/30 text-purple-300"
-                    : "text-slate-400 hover:text-purple-300"
-                }`}
-              >
-                <item.icon className="w-5 h-5" />
-                <span className="text-xs font-medium">{item.label}</span>
-              </button>
-            ))}
-          </div>
-        </div>
-
-        {/* Desktop Sidebar Navigation - Only visible on large screens */}
-        <div className="hidden lg:block fixed left-8 top-1/2 transform -translate-y-1/2 bg-slate-800/80 backdrop-blur-xl border border-purple-500/20 rounded-2xl p-4">
-          <div className="flex flex-col space-y-4">
-            {[
-              { icon: BookOpen, label: "Learn", id: "home" },
-              { icon: Calculator, label: "Practice", id: "practice" },
-              { icon: Trophy, label: "Achievements", id: "achievements" },
-              { icon: Star, label: "Profile", id: "profile" },
-            ].map((item, index) => (
-              <button
-                key={index}
-                onClick={() => setActiveTab(item.id)}
-                className={`group flex flex-col items-center space-y-2 p-3 rounded-xl transition-all duration-300 relative ${
-                  activeTab === item.id
-                    ? "bg-gradient-to-r from-purple-600/30 to-pink-600/30 text-purple-300"
-                    : "text-slate-400 hover:text-purple-300 hover:bg-slate-700/30"
-                }`}
-              >
-                <item.icon className="w-6 h-6" />
-                <span className="text-xs font-medium">{item.label}</span>
-                {/* Tooltip */}
-                <div className="absolute left-full ml-3 px-2 py-1 bg-slate-700 text-white text-sm rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none whitespace-nowrap">
-                  {item.label}
-                </div>
-              </button>
-            ))}
           </div>
         </div>
       </div>
