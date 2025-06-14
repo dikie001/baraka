@@ -19,6 +19,8 @@ import { Dices } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 import BottomNav from "../components/MobileNav";
 import DesktopNav from "../components/DesktopNav";
+import { useEffect } from "react";
+import CalculateDate from "../components/CalculateDate";
 
 export default function HomePage() {
   const [activeTab, setActiveTab] = useState("home");
@@ -64,6 +66,8 @@ export default function HomePage() {
     { name: "Champion", icon: "👑", earned: false },
   ];
 
+
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white overflow-hidden">
       {/* Animated Background Elements */}
@@ -90,7 +94,8 @@ export default function HomePage() {
                 Ready to learn math?
               </p>
             </div>
-            <div className="flex items-center space-x-2">
+            <CalculateDate/>
+            <div className="flex mt-7 items-center space-x-2">
               <div className="bg-gradient-to-r from-purple-500 to-pink-500 p-2 lg:p-3 rounded-full">
                 <Trophy className="w-5 h-5 lg:w-6 lg:h-6" />
               </div>

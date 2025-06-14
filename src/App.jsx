@@ -12,6 +12,7 @@ import Algebra from './topics/algebra/Algebra'
 import Data from './topics/data/Data'
 import Measurement from './topics/measurement/Measurement'
 import Probability from './topics/probability/Probability'
+import Geometry from './topics/geometry/Geometry'
 
 export const App = () => {
   return (
@@ -28,6 +29,8 @@ export const App = () => {
         <Route path="/algebra" element={<Algebra />} />
         <Route path="/measurement" element={<Measurement />} />
         <Route path="/probability" element={<Probability />} />
+        <Route path="/geometry" element={<Geometry />} />
+        <Route path="/data-handling" element={<Data />} />
 
         <Route path="/data" element={<Data />} />
       </Routes>

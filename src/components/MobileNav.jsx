@@ -29,7 +29,7 @@ const BottomNav = () => {
             },
             { icon: Star, label: "Profile", id: "profile", to: "/profile" },
           ].map((item, index) => (
-            <button
+            <Link to={item.to}
               key={index}
               onClick={() => setActiveTab(item.id)}
               className={`flex flex-col active:ring-2 ring-purple-600 items-center space-y-1 p-2 rounded-lg transition-all duration-300 ${
@@ -40,10 +40,10 @@ const BottomNav = () => {
             >
               <item.icon className="w-5 h-5" />
              
-                <Link className="text-xs font-medium" to={item.to}>
+                <span className="text-xs font-medium">
                   {item.label}
-                </Link>
-            </button>
+                </span>
+            </Link>
           ))}
         </div>
       </div>
