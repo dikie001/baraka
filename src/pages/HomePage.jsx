@@ -85,7 +85,7 @@ export default function HomePage() {
       <div className="relative z-10 w-full max-w-md lg:max-w-4xl xl:max-w-6xl mx-auto bg-slate-800/50 backdrop-blur-xl border border-purple-500/20 shadow-2xl min-h-screen lg:rounded-3xl lg:my-8 lg:min-h-[calc(100vh-4rem)]">
         {/* Header */}
         <div className="p-4 sm:p-6 lg:p-8 bg-gradient-to-r from-purple-600/30 to-pink-600/30 backdrop-blur-sm border-b border-purple-500/20 lg:rounded-t-3xl">
-          <div className="flex items-center justify-between">
+          <div className="flex mt-6 items-center justify-between">
             <div>
               <h1 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
                 Hi Baraka! 👋
@@ -95,7 +95,7 @@ export default function HomePage() {
               </p>
             </div>
             <CalculateDate/>
-            <div className="flex mt-7 items-center space-x-2">
+            <div className="flex mt-1 items-center space-x-2">
               <div className="bg-gradient-to-r from-purple-500 to-pink-500 p-2 lg:p-3 rounded-full">
                 <Trophy className="w-5 h-5 lg:w-6 lg:h-6" />
               </div>

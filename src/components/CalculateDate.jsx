@@ -1,12 +1,20 @@
 import React from "react";
+import { useState } from "react";
+import { useEffect } from "react";
 
 const CalculateDate = () => {
-  const today = new Date();
-  const time = `${today.getHours()}:${today.getMinutes()}`;
-  const monthNumber = Number(`${today.getMonth() +1}`);
-  const day = Number(`${today.getDate()}`)
-  let month;
+  const [time, setTime] = useState("");
 
+  setInterval(() => {
+    const now = new Date();
+    const currentTime = now.toLocaleTimeString();
+    setTime(currentTime);
+  }, 1000);
+
+  const monthNumber = (new Date().getMonth()+1);
+  const monthDay = (new Date().getDate())
+
+  let month;
   // Allocating months
   switch (monthNumber) {
     case 1:
@@ -43,16 +51,19 @@ const CalculateDate = () => {
       month = "Nov";
       break;
     case 12:
-      month = "Dec"
+      month = "Dec";
     default:
-        month="B.B";
+      month = "B.B";
   }
 
   return (
-    <div className="absolute bg-black/30 rounded-md p-1 top-1 right-3  text-medium  font-semibold">
-      <p>
-        {month} {day} {time} 
-      </p>
+    <div className="flex  justify-between">
+      <div className="absolute  bg-gradient-to-r from-purple-700  to-pink-500 rounded-md p-1 px-3 top-1.5 right-3  text-medium  font-semibold">
+        <p>{time}</p>
+      </div>
+      <div className="absolute left-4  bg-gradient-to-r from-purple-700  to-pink-500 rounded-md p-1 px-3 top-1.5  text-medium  font-semibold">
+        <p>{month} {monthDay}</p>
+      </div>
     </div>
   );
 };

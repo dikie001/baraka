@@ -1,0 +1,988 @@
+{
+  "subtopic": "numbers",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is 3/4 + 2/3?",
+      "options": {
+        "a": "5/7",
+        "b": "17/12",
+        "c": "6/12",
+        "d": "11/12"
+      },
+      "answer": "b",
+      "subtopic": "fractions"
+    },
+    {
+      "id": 2,
+      "question": "What is 25% of 160?",
+      "options": {
+        "a": "35",
+        "b": "40",
+        "c": "45",
+        "d": "50"
+      },
+      "answer": "b",
+      "subtopic": "percentages"
+    },
+    {
+      "id": 3,
+      "question": "What is √64?",
+      "options": {
+        "a": "6",
+        "b": "7",
+        "c": "8",
+        "d": "9"
+      },
+      "answer": "c",
+      "subtopic": "square_roots"
+    },
+    {
+      "id": 4,
+      "question": "Express 45 as a product of prime factors",
+      "options": {
+        "a": "3² × 5",
+        "b": "3 × 15",
+        "c": "5 × 9",
+        "d": "3 × 5²"
+      },
+      "answer": "a",
+      "subtopic": "prime_factorization"
+    },
+    {
+      "id": 5,
+      "question": "What is the value of 2⁴?",
+      "options": {
+        "a": "8",
+        "b": "12",
+        "c": "16",
+        "d": "32"
+      },
+      "answer": "c",
+      "subtopic": "powers"
+    },
+    {
+      "id": 6,
+      "question": "What is the Highest Common Factor (HCF) of 24 and 36?",
+      "options": {
+        "a": "6",
+        "b": "8",
+        "c": "12",
+        "d": "18"
+      },
+      "answer": "c",
+      "subtopic": "hcf"
+    },
+    {
+      "id": 7,
+      "question": "Which of these is an irrational number?",
+      "options": {
+        "a": "0.25",
+        "b": "√9",
+        "c": "√7",
+        "d": "22/7"
+      },
+      "answer": "c",
+      "subtopic": "rational_irrational"
+    },
+    {
+      "id": 8,
+      "question": "Evaluate using BODMAS: 15 − 3 × 2 + 8",
+      "options": {
+        "a": "17",
+        "b": "32",
+        "c": "24",
+        "d": "35"
+      },
+      "answer": "a",
+      "subtopic": "bodmas"
+    },
+    {
+      "id": 9,
+      "question": "Express 0.75 as a fraction in its simplest form",
+      "options": {
+        "a": "75/100",
+        "b": "3/4",
+        "c": "15/20",
+        "d": "6/8"
+      },
+      "answer": "b",
+      "subtopic": "decimals"
+    },
+    {
+      "id": 10,
+      "question": "What is the next term in the sequence: 2, 4, 8, 16, ...?",
+      "options": {
+        "a": "24",
+        "b": "30",
+        "c": "32",
+        "d": "64"
+      },
+      "answer": "c",
+      "subtopic": "sequences"
+    },
+    {
+      "id": 11,
+      "question": "What is the Lowest Common Multiple (LCM) of 12 and 18?",
+      "options": {
+        "a": "72",
+        "b": "36",
+        "c": "24",
+        "d": "54"
+      },
+      "answer": "b",
+      "subtopic": "lcm"
+    },
+    {
+      "id": 12,
+      "question": "Round 3.746 to 2 decimal places",
+      "options": {
+        "a": "3.74",
+        "b": "3.75",
+        "c": "3.8",
+        "d": "4.0"
+      },
+      "answer": "b",
+      "subtopic": "rounding"
+    },
+    {
+      "id": 13,
+      "question": "What is 5/8 − 1/4?",
+      "options": {
+        "a": "3/8",
+        "b": "1/2",
+        "c": "4/4",
+        "d": "1/8"
+      },
+      "answer": "a",
+      "subtopic": "fractions"
+    },
+    {
+      "id": 14,
+      "question": "If a shirt costs $40 and is reduced by 15%, what is the new price?",
+      "options": {
+        "a": "$34",
+        "b": "$35",
+        "c": "$36",
+        "d": "$38"
+      },
+      "answer": "a",
+      "subtopic": "percentages"
+    },
+    {
+      "id": 15,
+      "question": "What is ∛27?",
+      "options": {
+        "a": "2",
+        "b": "3",
+        "c": "4",
+        "d": "9"
+      },
+      "answer": "b",
+      "subtopic": "cube_roots"
+    },
+    {
+      "id": 16,
+      "question": "Express 72 as a product of prime factors",
+      "options": {
+        "a": "2³ × 3²",
+        "b": "2² × 3³",
+        "c": "8 × 9",
+        "d": "6 × 12"
+      },
+      "answer": "a",
+      "subtopic": "prime_factorization"
+    },
+    {
+      "id": 17,
+      "question": "What is the value of 3⁰?",
+      "options": {
+        "a": "0",
+        "b": "1",
+        "c": "3",
+        "d": "undefined"
+      },
+      "answer": "b",
+      "subtopic": "powers"
+    },
+    {
+      "id": 18,
+      "question": "What is the HCF of 48 and 72?",
+      "options": {
+        "a": "12",
+        "b": "16",
+        "c": "24",
+        "d": "36"
+      },
+      "answer": "c",
+      "subtopic": "hcf"
+    },
+    {
+      "id": 19,
+      "question": "Which set contains only rational numbers?",
+      "options": {
+        "a": "{√2, 0.5, 3}",
+        "b": "{1/3, √4, 0.25}",
+        "c": "{π, 2.5, 7}",
+        "d": "{√5, 1/2, 6}"
+      },
+      "answer": "b",
+      "subtopic": "rational_irrational"
+    },
+    {
+      "id": 20,
+      "question": "Evaluate using BODMAS: (4 + 6) × 3 − 5",
+      "options": {
+        "a": "25",
+        "b": "35",
+        "c": "45",
+        "d": "15"
+      },
+      "answer": "a",
+      "subtopic": "bodmas"
+    },
+    {
+      "id": 21,
+      "question": "What is 0.125 expressed as a fraction in simplest form?",
+      "options": {
+        "a": "125/1000",
+        "b": "1/8",
+        "c": "25/200",
+        "d": "5/40"
+      },
+      "answer": "b",
+      "subtopic": "decimals"
+    },
+    {
+      "id": 22,
+      "question": "Find the 7th term in the arithmetic sequence: 3, 7, 11, 15, ...",
+      "options": {
+        "a": "25",
+        "b": "27",
+        "c": "29",
+        "d": "31"
+      },
+      "answer": "b",
+      "subtopic": "sequences"
+    },
+    {
+      "id": 23,
+      "question": "What is the LCM of 15 and 20?",
+      "options": {
+        "a": "300",
+        "b": "60",
+        "c": "75",
+        "d": "100"
+      },
+      "answer": "b",
+      "subtopic": "lcm"
+    },
+    {
+      "id": 24,
+      "question": "Round 247.863 to the nearest hundred",
+      "options": {
+        "a": "200",
+        "b": "240",
+        "c": "248",
+        "d": "300"
+      },
+      "answer": "a",
+      "subtopic": "rounding"
+    },
+    {
+      "id": 25,
+      "question": "What is 2/3 × 3/4?",
+      "options": {
+        "a": "6/12",
+        "b": "1/2",
+        "c": "5/7",
+        "d": "9/12"
+      },
+      "answer": "b",
+      "subtopic": "fractions"
+    },
+    {
+      "id": 26,
+      "question": "What is 15% of 200?",
+      "options": {
+        "a": "25",
+        "b": "30",
+        "c": "35",
+        "d": "40"
+      },
+      "answer": "b",
+      "subtopic": "percentages"
+    },
+    {
+      "id": 27,
+      "question": "What is √144?",
+      "options": {
+        "a": "11",
+        "b": "12",
+        "c": "13",
+        "d": "14"
+      },
+      "answer": "b",
+      "subtopic": "square_roots"
+    },
+    {
+      "id": 28,
+      "question": "Express 60 as a product of prime factors",
+      "options": {
+        "a": "2² × 3 × 5",
+        "b": "4 × 15",
+        "c": "6 × 10",
+        "d": "2³ × 5"
+      },
+      "answer": "a",
+      "subtopic": "prime_factorization"
+    },
+    {
+      "id": 29,
+      "question": "What is the value of 5²?",
+      "options": {
+        "a": "10",
+        "b": "15",
+        "c": "20",
+        "d": "25"
+      },
+      "answer": "d",
+      "subtopic": "powers"
+    },
+    {
+      "id": 30,
+      "question": "What is the HCF of 35 and 49?",
+      "options": {
+        "a": "5",
+        "b": "7",
+        "c": "14",
+        "d": "21"
+      },
+      "answer": "b",
+      "subtopic": "hcf"
+    },
+    {
+      "id": 31,
+      "question": "Which number is irrational?",
+      "options": {
+        "a": "0.333...",
+        "b": "√16",
+        "c": "√10",
+        "d": "7/3"
+      },
+      "answer": "c",
+      "subtopic": "rational_irrational"
+    },
+    {
+      "id": 32,
+      "question": "Evaluate: 20 ÷ 4 + 3 × 2",
+      "options": {
+        "a": "11",
+        "b": "16",
+        "c": "8",
+        "d": "26"
+      },
+      "answer": "a",
+      "subtopic": "bodmas"
+    },
+    {
+      "id": 33,
+      "question": "Convert 0.6 to a fraction in simplest form",
+      "options": {
+        "a": "6/10",
+        "b": "3/5",
+        "c": "12/20",
+        "d": "60/100"
+      },
+      "answer": "b",
+      "subtopic": "decimals"
+    },
+    {
+      "id": 34,
+      "question": "What is the 5th term in the geometric sequence: 2, 6, 18, 54, ...?",
+      "options": {
+        "a": "162",
+        "b": "144",
+        "c": "108",
+        "d": "216"
+      },
+      "answer": "a",
+      "subtopic": "sequences"
+    },
+    {
+      "id": 35,
+      "question": "What is the LCM of 8 and 12?",
+      "options": {
+        "a": "96",
+        "b": "24",
+        "c": "48",
+        "d": "36"
+      },
+      "answer": "b",
+      "subtopic": "lcm"
+    },
+    {
+      "id": 36,
+      "question": "Round 5.847 to 1 decimal place",
+      "options": {
+        "a": "5.8",
+        "b": "5.9",
+        "c": "6.0",
+        "d": "5.85"
+      },
+      "answer": "b",
+      "subtopic": "rounding"
+    },
+    {
+      "id": 37,
+      "question": "What is 7/8 ÷ 1/4?",
+      "options": {
+        "a": "7/32",
+        "b": "7/2",
+        "c": "28/8",
+        "d": "1/2"
+      },
+      "answer": "b",
+      "subtopic": "fractions"
+    },
+    {
+      "id": 38,
+      "question": "What percentage is 18 out of 24?",
+      "options": {
+        "a": "70%",
+        "b": "75%",
+        "c": "80%",
+        "d": "85%"
+      },
+      "answer": "b",
+      "subtopic": "percentages"
+    },
+    {
+      "id": 39,
+      "question": "What is ∛64?",
+      "options": {
+        "a": "3",
+        "b": "4",
+        "c": "8",
+        "d": "16"
+      },
+      "answer": "b",
+      "subtopic": "cube_roots"
+    },
+    {
+      "id": 40,
+      "question": "What is 84 expressed as a product of prime factors?",
+      "options": {
+        "a": "2² × 3 × 7",
+        "b": "4 × 21",
+        "c": "6 × 14",
+        "d": "2³ × 3 × 7"
+      },
+      "answer": "a",
+      "subtopic": "prime_factorization"
+    },
+    {
+      "id": 41,
+      "question": "What is the value of 4³?",
+      "options": {
+        "a": "12",
+        "b": "16",
+        "c": "32",
+        "d": "64"
+      },
+      "answer": "d",
+      "subtopic": "powers"
+    },
+    {
+      "id": 42,
+      "question": "What is the HCF of 60 and 90?",
+      "options": {
+        "a": "15",
+        "b": "20",
+        "c": "30",
+        "d": "45"
+      },
+      "answer": "c",
+      "subtopic": "hcf"
+    },
+    {
+      "id": 43,
+      "question": "Which of these is a rational number?",
+      "options": {
+        "a": "√3",
+        "b": "π",
+        "c": "√25",
+        "d": "√8"
+      },
+      "answer": "c",
+      "subtopic": "rational_irrational"
+    },
+    {
+      "id": 44,
+      "question": "Evaluate: 2 + 3² × 4 − 10",
+      "options": {
+        "a": "28",
+        "b": "32",
+        "c": "26",
+        "d": "38"
+      },
+      "answer": "a",
+      "subtopic": "bodmas"
+    },
+    {
+      "id": 45,
+      "question": "What is 1.25 as a mixed number?",
+      "options": {
+        "a": "1 1/2",
+        "b": "1 1/4",
+        "c": "1 2/5",
+        "d": "1 3/4"
+      },
+      "answer": "b",
+      "subtopic": "decimals"
+    },
+    {
+      "id": 46,
+      "question": "Find the common difference in the arithmetic sequence: 5, 9, 13, 17, ...",
+      "options": {
+        "a": "3",
+        "b": "4",
+        "c": "5",
+        "d": "6"
+      },
+      "answer": "b",
+      "subtopic": "sequences"
+    },
+    {
+      "id": 47,
+      "question": "What is the LCM of 14 and 21?",
+      "options": {
+        "a": "42",
+        "b": "84",
+        "c": "28",
+        "d": "35"
+      },
+      "answer": "a",
+      "subtopic": "lcm"
+    },
+    {
+      "id": 48,
+      "question": "Round 0.0847 to 3 significant figures",
+      "options": {
+        "a": "0.085",
+        "b": "0.0847",
+        "c": "0.08",
+        "d": "0.084"
+      },
+      "answer": "a",
+      "subtopic": "rounding"
+    },
+    {
+      "id": 49,
+      "question": "What is 4/5 + 3/10?",
+      "options": {
+        "a": "7/10",
+        "b": "11/10",
+        "c": "7/15",
+        "d": "13/15"
+      },
+      "answer": "b",
+      "subtopic": "fractions"
+    },
+    {
+      "id": 50,
+      "question": "If 40% of a number is 32, what is the number?",
+      "options": {
+        "a": "70",
+        "b": "75",
+        "c": "80",
+        "d": "85"
+      },
+      "answer": "c",
+      "subtopic": "percentages"
+    },
+    {
+      "id": 51,
+      "question": "What is √169?",
+      "options": {
+        "a": "11",
+        "b": "12",
+        "c": "13",
+        "d": "14"
+      },
+      "answer": "c",
+      "subtopic": "square_roots"
+    },
+    {
+      "id": 52,
+      "question": "Express 100 as a product of prime factors",
+      "options": {
+        "a": "2² × 5²",
+        "b": "4 × 25",
+        "c": "10²",
+        "d": "2 × 50"
+      },
+      "answer": "a",
+      "subtopic": "prime_factorization"
+    },
+    {
+      "id": 53,
+      "question": "What is the value of 6² ÷ 3²?",
+      "options": {
+        "a": "2",
+        "b": "3",
+        "c": "4",
+        "d": "6"
+      },
+      "answer": "c",
+      "subtopic": "powers"
+    },
+    {
+      "id": 54,
+      "question": "What is the HCF of 42 and 56?",
+      "options": {
+        "a": "7",
+        "b": "14",
+        "c": "21",
+        "d": "28"
+      },
+      "answer": "b",
+      "subtopic": "hcf"
+    },
+    {
+      "id": 55,
+      "question": "Which of these numbers is irrational?",
+      "options": {
+        "a": "0.75",
+        "b": "3/4",
+        "c": "√11",
+        "d": "1.5"
+      },
+      "answer": "c",
+      "subtopic": "rational_irrational"
+    },
+    {
+      "id": 56,
+      "question": "Evaluate: 50 − (6 + 4) × 3",
+      "options": {
+        "a": "20",
+        "b": "32",
+        "c": "80",
+        "d": "130"
+      },
+      "answer": "a",
+      "subtopic": "bodmas"
+    },
+    {
+      "id": 57,
+      "question": "Convert 3.8 to a mixed number",
+      "options": {
+        "a": "3 4/5",
+        "b": "3 8/10",
+        "c": "3 2/5",
+        "d": "38/10"
+      },
+      "answer": "a",
+      "subtopic": "decimals"
+    },
+    {
+      "id": 58,
+      "question": "What is the next term in the sequence: 1, 4, 9, 16, ...?",
+      "options": {
+        "a": "20",
+        "b": "24",
+        "c": "25",
+        "d": "36"
+      },
+      "answer": "c",
+      "subtopic": "sequences"
+    },
+    {
+      "id": 59,
+      "question": "What is the LCM of 9 and 15?",
+      "options": {
+        "a": "135",
+        "b": "45",
+        "c": "30",
+        "d": "60"
+      },
+      "answer": "b",
+      "subtopic": "lcm"
+    },
+    {
+      "id": 60,
+      "question": "Round 3456 to the nearest ten",
+      "options": {
+        "a": "3450",
+        "b": "3460",
+        "c": "3400",
+        "d": "3500"
+      },
+      "answer": "b",
+      "subtopic": "rounding"
+    },
+    {
+      "id": 61,
+      "question": "What is 3/5 ÷ 2/3?",
+      "options": {
+        "a": "6/15",
+        "b": "9/10",
+        "c": "1/2",
+        "d": "2/5"
+      },
+      "answer": "b",
+      "subtopic": "fractions"
+    },
+    {
+      "id": 62,
+      "question": "A price increases from $50 to $65. What is the percentage increase?",
+      "options": {
+        "a": "25%",
+        "b": "30%",
+        "c": "35%",
+        "d": "40%"
+      },
+      "answer": "b",
+      "subtopic": "percentages"
+    },
+    {
+      "id": 63,
+      "question": "What is ∛125?",
+      "options": {
+        "a": "4",
+        "b": "5",
+        "c": "6",
+        "d": "25"
+      },
+      "answer": "b",
+      "subtopic": "cube_roots"
+    },
+    {
+      "id": 64,
+      "question": "Express 90 as a product of prime factors",
+      "options": {
+        "a": "2 × 3² × 5",
+        "b": "9 × 10",
+        "c": "6 × 15",
+        "d": "3³ × 5"
+      },
+      "answer": "a",
+      "subtopic": "prime_factorization"
+    },
+    {
+      "id": 65,
+      "question": "What is the value of 10³?",
+      "options": {
+        "a": "30",
+        "b": "100",
+        "c": "300",
+        "d": "1000"
+      },
+      "answer": "d",
+      "subtopic": "powers"
+    },
+    {
+      "id": 66,
+      "question": "What is the HCF of 28 and 40?",
+      "options": {
+        "a": "2",
+        "b": "4",
+        "c": "7",
+        "d": "14"
+      },
+      "answer": "b",
+      "subtopic": "hcf"
+    },
+    {
+      "id": 67,
+      "question": "Which is a rational number?",
+      "options": {
+        "a": "√6",
+        "b": "π/2",
+        "c": "2.5",
+        "d": "√13"
+      },
+      "answer": "c",
+      "subtopic": "rational_irrational"
+    },
+    {
+      "id": 68,
+      "question": "Evaluate: (8 + 2) ÷ 5 × 3",
+      "options": {
+        "a": "6",
+        "b": "30",
+        "c": "2",
+        "d": "18"
+      },
+      "answer": "a",
+      "subtopic": "bodmas"
+    },
+    {
+      "id": 69,
+      "question": "What is 0.45 as a percentage?",
+      "options": {
+        "a": "4.5%",
+        "b": "45%",
+        "c": "450%",
+        "d": "0.45%"
+      },
+      "answer": "b",
+      "subtopic": "decimals"
+    },
+    {
+      "id": 70,
+      "question": "Find the 10th term in the arithmetic sequence: 7, 11, 15, 19, ...",
+      "options": {
+        "a": "42",
+        "b": "43",
+        "c": "47",
+        "d": "51"
+      },
+      "answer": "b",
+      "subtopic": "sequences"
+    },
+    {
+      "id": 71,
+      "question": "What is the LCM of 6 and 10?",
+      "options": {
+        "a": "60",
+        "b": "30",
+        "c": "20",
+        "d": "16"
+      },
+      "answer": "b",
+      "subtopic": "lcm"
+    },
+    {
+      "id": 72,
+      "question": "Round 67.845 to the nearest tenth",
+      "options": {
+        "a": "67.8",
+        "b": "67.9",
+        "c": "68.0",
+        "d": "67.85"
+      },
+      "answer": "b",
+      "subtopic": "rounding"
+    },
+    {
+      "id": 73,
+      "question": "What is 1/6 + 2/9?",
+      "options": {
+        "a": "3/15",
+        "b": "7/18",
+        "c": "11/54",
+        "d": "1/3"
+      },
+      "answer": "b",
+      "subtopic": "fractions"
+    },
+    {
+      "id": 74,
+      "question": "What is 120% of 60?",
+      "options": {
+        "a": "70",
+        "b": "72",
+        "c": "75",
+        "d": "80"
+      },
+      "answer": "b",
+      "subtopic": "percentages"
+    },
+    {
+      "id": 75,
+      "question": "What is √225?",
+      "options": {
+        "a": "13",
+        "b": "14",
+        "c": "15",
+        "d": "16"
+      },
+      "answer": "c",
+      "subtopic": "square_roots"
+    },
+    {
+      "id": 76,
+      "question": "Express 126 as a product of prime factors",
+      "options": {
+        "a": "2 × 3² × 7",
+        "b": "6 × 21",
+        "c": "9 × 14",
+        "d": "3³ × 7"
+      },
+      "answer": "a",
+      "subtopic": "prime_factorization"
+    },
+    {
+      "id": 77,
+      "question": "What is the value of 2⁵?",
+      "options": {
+        "a": "10",
+        "b": "16",
+        "c": "25",
+        "d": "32"
+      },
+      "answer": "d",
+      "subtopic": "powers"
+    },
+    {
+      "id": 78,
+      "question": "What is the HCF of 54 and 72?",
+      "options": {
+        "a": "6",
+        "b": "9",
+        "c": "18",
+        "d": "36"
+      },
+      "answer": "c",
+      "subtopic": "hcf"
+    },
+    {
+      "id": 79,
+      "question": "Which number is irrational?",
+      "options": {
+        "a": "0.121212...",
+        "b": "√36",
+        "c": "√15",
+        "d": "5/7"
+      },
+      "answer": "c",
+      "subtopic": "rational_irrational"
+    },
+    {
+      "id": 80,
+      "question": "Evaluate: 24 ÷ 6 + 2 × 5",
+      "options": {
+        "a": "12",
+        "b": "14",
+        "c": "16",
+        "d": "20"
+      },
+      "answer": "b",
+      "subtopic": "bodmas"
+    },
+    {
+      "id": 81,
+      "question": "Convert 2.75 to a fraction in simplest form",
+      "options": {
+        "a": "275/100",
+        "b": "11/4",
+        "c": "27/10",
+        "d": "55/20"
+      },
+      "answer": "b",
+      "subtopic": "decimals"
+    },
+    {
+      "id": 82,
+      "question": "What is the common ratio in the geometric sequence: 3, 12, 48, 192, ...?",
+      "options": {
+        "a": "3",
+        "b": "4",
+        "c": "9",
+        "d": "16"
+      },
+      "answer": "b",
+      "subtopic": "sequences"
+    }
+  ]}
