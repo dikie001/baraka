@@ -6,6 +6,7 @@ import numberSystems from "./Notes.json";
 
 import { ChevronLeft } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import ConfirmStudyMode from "../../components/ConfirmStudyMode";
 
 const Numbers = () => {
   const { topic, grade, revision_content } = numberSystems;
@@ -23,35 +24,8 @@ const Numbers = () => {
       <BottomNav />
 
       {/* Choose btn notes and questions modal */}
-      {page === "choosePage" && (
-        <div className="flex  inset-0 m-auto h-50 absolute  flex-col sm:flex-row gap-4  p-4 bg-black/40 text-white rounded-xl shadow-lg max-w-md w-[85%] mx-auto">
-          <button
-            className="flex active:text-blue-600 hover:text-blue-500 items-center"
-            onClick={() => navigate("/")}
-          >
-            <ChevronLeft /> Back
-          </button>
 
-          <p className="text-center mt- sm:text-left font-medium">
-            Choose the Mode of Study
-          </p>
-
-          <div className="flex gap-2  justify-between w-full  ">
-            <button
-              onClick={() => setPage("notes")}
-              className="px-4 flex items-center justify-center gap-2 py-2 bg-gradient-to-tr from-purple-700 to-pink-700 hover:bg-green-700 rounded-lg text-medium"
-            >
-              <BookOpen /> Notes
-            </button>
-            <button
-              onClick={() => navigate('/numbers-quiz')}
-              className="px-4 py-2 flex gap-2 bg-gradient-to-br from-purple-700 to-pink-700 hover:bg-red-700 rounded-lg text-medium"
-            >
-              <ListChecks /> MCQs
-            </button>
-          </div>
-        </div>
-      )}
+  {page === "choosePage" && <ConfirmStudyMode/>}
 
       {/* Notes Page */}
       {page === "notes" && (
@@ -106,7 +80,6 @@ const Numbers = () => {
                 </div>
               </div>
             ))}
-
           </div>
 
           {/* Progress Footer */}
