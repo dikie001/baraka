@@ -1,71 +1,96 @@
 import React, { useState, useEffect } from "react";
 import questionsData from "./Quiz.json";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { useLocalStorage } from "@uidotdev/usehooks";
 import BottomNav from "../../components/MobileNav";
 
+// Custom localStorage hook to replace @uidotdev/usehooks
+const useLocalStorage = (key, defaultValue) => {
+  const [value, setValue] = useState(() => {
+    try {
+      const item = localStorage.getItem(key);
+      return item ? JSON.parse(item) : defaultValue;
+    } catch {
+      return defaultValue;
+    }
+  });
+
+  const setStoredValue = (newValue) => {
+    try {
+      setValue(newValue);
+      localStorage.setItem(key, JSON.stringify(newValue));
+    } catch {
+      setValue(newValue);
+    }
+  };
+
+  return [value, setStoredValue];
+};
+
 const NumbersQuizPage = () => {
-  const [current, setCurrent] = useState(0);
-  const [selected, setSelected] = useState(null);
-  const [showAnswer, setShowAnswer] = useState(false);
-  const [score, setScore] = useState(0);
-  const [answered, setAnswered] = useState(new Set());
+  // Load saved progress
+  const [currentNumber, setCurrentNumber] = useLocalStorage(
+    "current-number",
+    0
+  );
   const [percentageScore, setPercentageScore] = useLocalStorage(
     "numbers-percentage-score",
-    null
+    0
   );
-  const [initialScore, setInitialScore] = useState(percentageScore);
+  const [savedScore, setSavedScore] = useLocalStorage("quiz-score", 0);
+  const [savedAnswered, setSavedAnswered] = useLocalStorage(
+    "quiz-answered",
+    []
+  );
+
+  // Initialize state with saved progress
+  const [current, setCurrent] = useState(currentNumber || 0);
+  const [selected, setSelected] = useState(null);
+  const [showAnswer, setShowAnswer] = useState(false);
+  const [score, setScore] = useState(savedScore || 0);
+  const [answered, setAnswered] = useState(new Set(savedAnswered || []));
 
   const question = questionsData.questions[current];
   const totalQuestions = questionsData.questions.length;
-  
+
   const handleOptionClick = (key) => {
     setSelected(key);
     setShowAnswer(true);
 
     if (!answered.has(current) && key === question.answer) {
-      setScore((prev) => prev + 1);
+      const newScore = score + 1;
+      setScore(newScore);
+      setSavedScore(newScore);
     }
-    setAnswered((prev) => new Set([...prev, current]));
+
+    const newAnswered = new Set([...answered, current]);
+    setAnswered(newAnswered);
+    setSavedAnswered([...newAnswered]);
   };
 
   const nextQuestion = () => {
-    if (initialScore >= percentageScore) {
-      setPercentageScore(initialScore);
-    }
+    const nextIndex = (current + 1) % questionsData.questions.length;
+    setCurrent(nextIndex);
+    setCurrentNumber(nextIndex);
     setSelected(null);
     setShowAnswer(false);
-    setCurrent((prev) => (prev + 1) % questionsData.questions.length);
   };
 
   const prevQuestion = () => {
-      if (initialScore >= percentageScore) {
-      setPercentageScore(initialScore);
-    }
+    const prevIndex =
+      (current - 1 + questionsData.questions.length) %
+      questionsData.questions.length;
+    setCurrent(prevIndex);
+    setCurrentNumber(prevIndex);
     setSelected(null);
     setShowAnswer(false);
-    setCurrent(
-      (prev) =>
-        (prev - 1 + questionsData.questions.length) %
-        questionsData.questions.length
-    );
   };
 
-  // Score calculation
-  const CalculateScore = () => {
-    setInitialScore(Math.floor((score / totalQuestions) * 100));
-  };
-
-  // Run CalculateScore Function when score changes
+  // Update percentage score when score changes
   useEffect(() => {
-    CalculateScore();
-  }, [score]);
+    const newPercentageScore = Math.floor((score / totalQuestions) * 100);
+    setPercentageScore(newPercentageScore);
+  }, [score, totalQuestions, setPercentageScore]);
 
-  // Update initialscore when page reloads
-  useEffect(()=>{
-    setInitialScore(percentageScore)
-    console.log(initialScore)
-  },[])
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-900 via-slate-800 to-slate-900 text-white p-4">
       <BottomNav />
@@ -76,7 +101,7 @@ const NumbersQuizPage = () => {
             Numbers Quiz
           </h1>
           <div className="text-purple-300 font-medium">
-            Score: {percentageScore} %
+            Score: {percentageScore}%
           </div>
         </div>
 
@@ -93,13 +118,13 @@ const NumbersQuizPage = () => {
       </div>
 
       {/* Main quiz card */}
-      <div className="max-w-2xl  mx-auto">
+      <div className="max-w-2xl mx-auto">
         <div className="bg-slate-800/60 backdrop-blur-lg p-8 rounded-3xl shadow-2xl border border-purple-500/30 relative overflow-hidden">
           {/* Decorative gradient overlay */}
           <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-purple-500 via-pink-500 to-purple-500"></div>
 
-          <div className="flex items-start justify-between ">
-            <p className="absolute top-3  text-gray-400 text-sm font-semibold">
+          <div className="flex items-start justify-between">
+            <p className="absolute top-3 text-gray-400 text-sm font-semibold">
               {question.subtopic}
             </p>
             <h2 className="text-2xl font-bold text-purple-100 leading-relaxed flex-1">
@@ -152,7 +177,7 @@ const NumbersQuizPage = () => {
           <div className="flex justify-between mb-12 gap-4">
             <button
               onClick={prevQuestion}
-              className="flex items-center px-6 py-3 bg-gradient-to-bl from-purple-600 to-pink-700 hover:ring-2 ring-purpe-500 rounded-xl transition-all duration-200 font-medium text-slate-300 hover:text-white border border-slate-600/50 hover:border-slate-500/50"
+              className="flex items-center px-6 py-3 bg-gradient-to-bl from-purple-600 to-pink-700 hover:ring-2 ring-purple-500 rounded-xl transition-all duration-200 font-medium text-slate-300 hover:text-white border border-slate-600/50 hover:border-slate-500/50"
             >
               <ChevronLeft /> Previous
             </button>
