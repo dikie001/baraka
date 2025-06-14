@@ -11,7 +11,7 @@ const BottomNav = () => {
   return (
     <div>
       {/* Bottom Navigation - Only visible on mobile/tablet */}
-      <div className="fixed z-50 bottom-0 left-1/2 transform -translate-x-1/2 w-full max-w-md bg-slate-800/80 backdrop-blur-xl border-t border-purple-500/20 lg:hidden">
+      <div className="fixed  z-50 bottom-0 left-1/2 transform -translate-x-1/2 w-full max-w-md bg-slate-800/80 backdrop-blur-xl border-t border-purple-500/20 lg:hidden">
         <div className="flex justify-around py-3">
           {[
             { icon: BookOpen, label: "Learn", id: "home", to: "/" },
@@ -32,7 +32,7 @@ const BottomNav = () => {
             <Link to={item.to}
               key={index}
               onClick={() => setActiveTab(item.id)}
-              className={`flex flex-col active:ring-2 ring-purple-600 items-center space-y-1 p-2 rounded-lg transition-all duration-300 ${
+              className={`flex flex-col active:ring-2 ring-purple-600 items-center space-y-1 p-0.5 rounded-lg transition-all duration-300 ${
                 activeTab === item.id
                   ? "bg-gradient-to-r from-purple-600/30 to-pink-600/30 text-purple-300"
                   : "text-slate-400 hover:text-purple-300"
