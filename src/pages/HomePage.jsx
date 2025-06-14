@@ -80,7 +80,8 @@ export default function HomePage() {
         <div className="hidden lg:block absolute bottom-20 left-20 w-40 h-40 bg-pink-400/10 rounded-full blur-xl animate-pulse delay-300"></div>
       </div>
       <BottomNav />
-      <DesktopNav/>
+      <DesktopNav />
+      <CalculateDate />
 
       <div className="relative z-10 w-full max-w-md lg:max-w-4xl xl:max-w-6xl mx-auto bg-slate-800/50 backdrop-blur-xl border border-purple-500/20 shadow-2xl min-h-screen lg:rounded-3xl lg:my-8 lg:min-h-[calc(100vh-4rem)]">
         {/* Header */}
@@ -94,7 +95,7 @@ export default function HomePage() {
                 Ready to learn math?
               </p>
             </div>
-            <CalculateDate/>
+
             <div className="flex mt-1 items-center space-x-2">
               <div className="bg-gradient-to-r from-purple-500 to-pink-500 p-2 lg:p-3 rounded-full">
                 <Trophy className="w-5 h-5 lg:w-6 lg:h-6" />
