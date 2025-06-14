@@ -21,41 +21,55 @@ import BottomNav from "../components/MobileNav";
 import DesktopNav from "../components/DesktopNav";
 import { useEffect } from "react";
 import CalculateDate from "../components/CalculateDate";
+import { useLocalStorage } from "@uidotdev/usehooks";
 
 export default function HomePage() {
   const [activeTab, setActiveTab] = useState("home");
+  const numbersProgress = localStorage.getItem("current-number");
   const navigate = useNavigate();
+
   const topics = [
-    { name: "Numbers", icon: <Calculator />, progress: 85, to: "/numbers" },
+    {
+      name: "Numbers",
+      icon: <Calculator />,
+      progress: numbersProgress,
+      to: "/numbers",
+      about: "Build math foundation ",
+    },
     {
       name: "Algebra",
       icon: <FunctionSquare />,
       progress: 72,
       to: "/algebra",
+      about:"Explore algebraic rules"
     },
     {
       name: "Geometry",
       icon: <Triangle />,
       progress: 45,
       to: "/geometry",
+      about:"Learn spartial reasoning"
     },
     {
       name: "Measurement",
       icon: <Scale />,
       progress: 30,
       to: "/measurement",
+      about:"Estimate and measure"
     },
     {
       name: "Data Handling",
       icon: <BarChart2Icon />,
       progress: 30,
       to: "/data-handling",
+      about:"Interprete data"
     },
     {
       name: "Probability",
       icon: <Dices />,
       progress: 30,
       to: "/probability",
+      about:"Predict with reasoning"
     },
   ];
 
@@ -65,8 +79,6 @@ export default function HomePage() {
     { name: "Math Wizard", icon: "🧙‍♂️", earned: false },
     { name: "Champion", icon: "👑", earned: false },
   ];
-
-
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white overflow-hidden">
@@ -178,7 +190,7 @@ export default function HomePage() {
                         {topic.name}
                       </h4>
                       <p className="text-xs lg:text-sm text-purple-300 mb-3">
-                        {topic.to}
+                        {topic.about} 
                       </p>
                       <div className="bg-slate-600/50 rounded-full h-2 lg:h-3 mb-2">
                         <div

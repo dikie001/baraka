@@ -1,100 +1,122 @@
-import { useLocalStorage } from "@uidotdev/usehooks";
-import { BookOpen, ListChecks, Star } from "lucide-react";
 import React from "react";
-import BottomNav from "../../components/MobileNav";
-import numberSystems from "./Notes.json";
+import revisionData from "./Notes.json";
 
-import { ChevronLeft } from "lucide-react";
-import { useNavigate } from "react-router-dom";
-import ConfirmStudyMode from "../../components/ConfirmStudyMode";
-
-const Numbers = () => {
-  const { topic, grade, revision_content } = numberSystems;
-  const { description, subtopics } = revision_content;
-  const [page, setPage] = useLocalStorage("choose-page", "choosePage");
-  const navigate = useNavigate();
+const NumbersRevision = () => {
+  const { topic, grade, revision_content } = revisionData;
 
   return (
-    <div className="min-h-screen  bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white">
-      {/* Background Elements */}
-      <div className="fixed inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-purple-500/10 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-pink-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
-      </div>
-      <BottomNav />
-
-      {/* Choose btn notes and questions modal */}
-
-  {page === "choosePage" && <ConfirmStudyMode/>}
-
-      {/* Notes Page */}
-      {page === "notes" && (
-        <div className="relative z-10 max-w-4xl mx-auto px-4 py-8 lg:py-12">
-          {/* Header */}
-          <button
-            onClick={() => setPage("choosePage")}
-            className="flex  items-center active:text-blue-600 hover:text-blue-500"
+    <div
+      style={{
+        minHeight: "100vh",
+        background: "linear-gradient(to bottom right, #1e293b, #0f172a)",
+        color: "white",
+        padding: "2rem",
+        fontFamily: "'Segoe UI', sans-serif",
+      }}
+    >
+      <div style={{ maxWidth: "900px", margin: "0 auto" }}>
+        <div style={{ textAlign: "center", marginBottom: "3rem" }}>
+          <h1
+            style={{ fontSize: "3rem", fontWeight: "bold", color: "#14b8a6" }}
           >
-            <ChevronLeft size={30} /> Back
-          </button>
-          <div className="text-center mb-4 lg:mb-12">
-            <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-purple-600/20 to-pink-600/20 backdrop-blur-sm border border-purple-500/20 rounded-2xl px-6 py-3 mb-4">
-              <BookOpen className="w-5 h-5 text-purple-400" />
-              <span className="text-purple-200 font-medium">Grade {grade}</span>
-            </div>
-            <h1 className="text-3xl lg:text-5xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent mb-4">
-              {topic}
-            </h1>
-            <p className="text-purple-200 text-lg lg:text-xl max-w-2xl mx-auto">
-              {description}
-            </p>
-          </div>
+            📘 {topic}
+          </h1>
+          <p
+            style={{
+              color: "#cbd5e1",
+              marginTop: "0.5rem",
+              fontSize: "1.2rem",
+            }}
+          >
+            Grade {grade} Revision Guide
+          </p>
+          <p
+            style={{ marginTop: "1rem", color: "#94a3b8", fontStyle: "italic" }}
+          >
+            {revision_content.description}
+          </p>
+        </div>
 
-          {/* Subtopics */}
-          <div className="space-y-6">
-            {subtopics.map((sub, index) => (
-              <div
-                key={index}
-                className="group bg-slate-800/40 backdrop-blur-sm border border-purple-500/20 rounded-2xl p-6 lg:p-8 hover:border-purple-500/40 transition-all duration-300 hover:transform hover:scale-[1.02]"
+        <div
+          style={{ maxHeight: "75vh", overflowY: "auto", paddingRight: "1rem" }}
+        >
+          {revision_content.subtopics.map((subtopic, index) => (
+            <div
+              key={index}
+              style={{
+                background: "#1e293b",
+                border: "1px solid #334155",
+                borderRadius: "1rem",
+                padding: "1.5rem",
+                marginBottom: "1.5rem",
+                boxShadow: "0 0 10px rgba(20, 184, 166, 0.1)",
+              }}
+            >
+              <h2
+                style={{
+                  fontSize: "1.5rem",
+                  fontWeight: "bold",
+                  color: "#5eead4",
+                  marginBottom: "1rem",
+                }}
               >
-                <div className="flex items-start space-x-4">
-                  <div className="bg-gradient-to-r from-purple-500 to-pink-500 rounded-full p-2 mt-1">
-                    <Star className="w-4 h-4" />
-                  </div>
-                  <div className="flex-1">
-                    <h2 className="text-xl lg:text-2xl font-semibold bg-gradient-to-r from-purple-300 to-pink-300 bg-clip-text text-transparent mb-4">
-                      {sub.title}
-                    </h2>
-                    <div className="space-y-3">
-                      {sub.notes.map((note, i) => (
-                        <div
-                          key={i}
-                          className="flex items-start space-x-3 text-purple-100 group-hover:text-white transition-colors duration-200"
-                        >
-                          <div className="w-2 h-2 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full mt-2 flex-shrink-0"></div>
-                          <p className="leading-relaxed">{note}</p>
-                        </div>
-                      ))}
-                    </div>
+                {index + 1}. {subtopic.title}
+              </h2>
+
+              {subtopic.definition && (
+                <p style={{ marginBottom: "0.75rem" }}>
+                  <strong>🧠 Definition:</strong> {subtopic.definition}
+                </p>
+              )}
+
+              {subtopic.symbol && (
+                <p style={{ marginBottom: "0.75rem", color: "#22d3ee" }}>
+                  <strong>🔣 Symbol:</strong> {subtopic.symbol}
+                </p>
+              )}
+
+              {subtopic.example && (
+                <div style={{ marginBottom: "0.75rem" }}>
+                  <strong>📝 Example:</strong>
+                  <div style={{ marginLeft: "1rem", marginTop: "0.5rem" }}>
+                    <p>Q: {subtopic.example.question}</p>
+                    <p style={{ color: "#4ade80" }}>
+                      A: {subtopic.example.answer}
+                    </p>
                   </div>
                 </div>
-              </div>
-            ))}
-          </div>
+              )}
 
-          {/* Progress Footer */}
-          <div className="mb-15 mt-3 text-center">
-            <div className="inline-flex items-center space-x-2 text-purple-300">
-              <div className="w-2 h-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full animate-pulse"></div>
-              <span className="text-sm">
-                Keep learning Baraka, you're doing great!
-              </span>
+              {subtopic.whyItMatters && (
+                <p style={{ marginBottom: "0.75rem", color: "#cbd5e1" }}>
+                  <strong>💡 Why It Matters:</strong> {subtopic.whyItMatters}
+                </p>
+              )}
+
+              {subtopic.quickTips && subtopic.quickTips.length > 0 && (
+                <div
+                  style={{
+                    fontSize: "0.95rem",
+                    color: "#a1a1aa",
+                    marginTop: "0.5rem",
+                  }}
+                >
+                  <strong>⚡ Quick Tips:</strong>
+                  <ul style={{ paddingLeft: "1.2rem", marginTop: "0.5rem" }}>
+                    {subtopic.quickTips.map((tip, i) => (
+                      <li key={i} style={{ lineHeight: "1.7" }}>
+                        {tip}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
             </div>
-          </div>
+          ))}
         </div>
-      )}
+      </div>
     </div>
   );
 };
 
-export default Numbers;
+export default NumbersRevision;

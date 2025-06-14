@@ -1,120 +1,193 @@
 {
-  "topic": "Number Systems",
+  "topic": "Numbers",
   "grade": 9,
   "revision_content": {
-    "description": "Covers foundational concepts in types of numbers, operations, and number properties.",
+    "description": "Covers all essential subtopics under 'Numbers' in Grade 9 Mathematics with definitions, relatable examples, why-it-matters, and helpful revision tips.",
     "subtopics": [
       {
         "title": "Natural Numbers",
-        "notes": [
-          "Set of counting numbers: 1, 2, 3, 4, ...",
-          "Does not include 0 or negative numbers",
-          "Symbol: N = {1, 2, 3, ...}"
-        ]
+        "definition": "Basic counting numbers starting from 1.",
+        "symbol": "N",
+        "example": {
+          "question": "List the first 5 natural numbers.",
+          "answer": "1, 2, 3, 4, 5"
+        },
+        "whyItMatters": "Used in counting and ordering real-life items.",
+        "quickTips": ["Natural numbers don't include 0.", "Always positive."]
       },
       {
         "title": "Whole Numbers",
-        "notes": ["Natural numbers + 0", "Symbol: W = {0, 1, 2, 3, ...}"]
+        "definition": "Natural numbers including 0.",
+        "symbol": "W",
+        "example": {
+          "question": "Is 0 a whole number?",
+          "answer": "Yes"
+        },
+        "whyItMatters": "Useful when 0 is a valid value (e.g., bank balance = 0).",
+        "quickTips": [
+          "0 is NOT a natural number.",
+          "All natural numbers are whole."
+        ]
       },
       {
         "title": "Integers",
-        "notes": [
-          "Includes negative numbers, 0, and positives",
-          "Z = {..., -3, -2, -1, 0, 1, 2, 3, ...}",
-          "Used in temperature, money loss/gain, elevation, etc."
+        "definition": "Whole numbers including negatives and 0.",
+        "symbol": "Z",
+        "example": {
+          "question": "-5 + 3",
+          "answer": "-2"
+        },
+        "whyItMatters": "Used in temperature, debts, elevation, etc.",
+        "quickTips": [
+          "Negative × Negative = Positive",
+          "Use number lines to compare."
         ]
       },
       {
         "title": "Rational Numbers",
-        "notes": [
-          "Can be expressed as a fraction a/b (b ≠ 0)",
-          "Includes terminating & repeating decimals",
-          "Examples: 1/2, -3/4, 0.75, 5"
+        "definition": "Can be written as a fraction a/b (b ≠ 0).",
+        "symbol": "Q",
+        "example": {
+          "question": "Convert 0.75 to a fraction",
+          "answer": "3/4"
+        },
+        "whyItMatters": "Used in pricing, budgeting, and calculations.",
+        "quickTips": [
+          "Includes recurring decimals",
+          "Terminating decimals = rational."
         ]
       },
       {
         "title": "Irrational Numbers",
-        "notes": [
-          "Cannot be written as exact fractions",
-          "Decimals are non-terminating and non-repeating",
-          "Examples: π (pi), √2, √5"
+        "definition": "Numbers that cannot be written as a simple fraction.",
+        "example": {
+          "question": "Is √2 irrational?",
+          "answer": "Yes, because it doesn't end or repeat."
+        },
+        "whyItMatters": "Common in geometry and real-world measurements.",
+        "quickTips": [
+          "π and √2 are irrational",
+          "Decimals go on forever with no pattern."
         ]
       },
       {
         "title": "Real Numbers",
-        "notes": [
-          "All rational + all irrational numbers",
-          "Basically, any number you can think of on a number line"
-        ]
-      },
-      {
-        "title": "Prime Numbers",
-        "notes": [
-          "Natural numbers greater than 1 with only 2 factors: 1 and itself",
-          "Examples: 2, 3, 5, 7, 11...",
-          "Note: 1 is NOT a prime number"
-        ]
-      },
-      {
-        "title": "Composite Numbers",
-        "notes": [
-          "Natural numbers that have more than 2 factors",
-          "Examples: 4, 6, 8, 9, 10..."
-        ]
+        "definition": "All rational and irrational numbers combined.",
+        "example": {
+          "question": "Is 3.142 a real number?",
+          "answer": "Yes"
+        },
+        "whyItMatters": "Covers every number used in school maths.",
+        "quickTips": ["Every number on a number line is real."]
       },
       {
         "title": "Even and Odd Numbers",
-        "notes": [
-          "Even: divisible by 2 (e.g. 2, 4, 6)",
-          "Odd: not divisible by 2 (e.g. 1, 3, 5)"
-        ]
+        "definition": "Even: divisible by 2; Odd: not divisible by 2.",
+        "example": {
+          "question": "Is 7 even?",
+          "answer": "No, it’s odd"
+        },
+        "whyItMatters": "Important in number patterns and factorization.",
+        "quickTips": ["Even ends in 0, 2, 4, 6, 8", "Odd ends in 1, 3, 5, 7, 9"]
       },
       {
-        "title": "LCM and HCF",
-        "notes": [
-          "LCM (Least Common Multiple): Smallest number divisible by both",
-          "HCF (Highest Common Factor): Largest number that divides both",
-          "Use prime factorization to find LCM/HCF"
-        ]
+        "title": "Prime Numbers",
+        "definition": "Natural numbers > 1 with exactly two factors.",
+        "example": {
+          "question": "Is 7 a prime number?",
+          "answer": "Yes"
+        },
+        "whyItMatters": "Building blocks of all numbers via prime factorization.",
+        "quickTips": ["2 is the only even prime", "1 is NOT a prime number"]
       },
       {
-        "title": "Properties of Operations",
-        "notes": [
+        "title": "Composite Numbers",
+        "definition": "Natural numbers that have more than two factors.",
+        "example": {
+          "question": "Is 9 composite?",
+          "answer": "Yes, since 3 × 3 = 9"
+        },
+        "whyItMatters": "Used in factor trees, simplification.",
+        "quickTips": ["4, 6, 8, 9 are all composite."]
+      },
+      {
+        "title": "LCM (Least Common Multiple)",
+        "definition": "The smallest number that two or more numbers divide evenly.",
+        "example": {
+          "question": "LCM of 4 and 5?",
+          "answer": "20"
+        },
+        "whyItMatters": "Used in aligning fractions, calendars, schedules.",
+        "quickTips": ["Use prime factorization or listing method."]
+      },
+      {
+        "title": "HCF (Highest Common Factor)",
+        "definition": "The largest number that divides two or more numbers exactly.",
+        "example": {
+          "question": "HCF of 12 and 16?",
+          "answer": "4"
+        },
+        "whyItMatters": "Used in reducing fractions.",
+        "quickTips": ["Use prime factors or ladder method."]
+      },
+      {
+        "title": "Number Properties",
+        "definition": "Rules that define how numbers work with operations.",
+        "example": {
+          "question": "a + b = b + a is what property?",
+          "answer": "Commutative Property"
+        },
+        "whyItMatters": "Helps simplify and solve complex problems.",
+        "quickTips": [
           "Commutative: a + b = b + a",
           "Associative: (a + b) + c = a + (b + c)",
-          "Distributive: a(b + c) = ab + ac",
-          "Identity: a + 0 = a, a × 1 = a"
+          "Distributive: a(b + c) = ab + ac"
         ]
       },
       {
-        "title": "Number Line",
-        "notes": [
-          "Visual representation of real numbers",
-          "Negative to left, positive to right",
-          "Zero is at the center"
+        "title": "BODMAS/BIDMAS",
+        "definition": "Order of operations for solving math expressions.",
+        "example": {
+          "question": "15 − 3 × 2 + 8 = ?",
+          "answer": "17"
+        },
+        "whyItMatters": "Prevents mistakes in multi-step problems.",
+        "quickTips": [
+          "Brackets → Orders → Division/Multiplication → Addition/Subtraction"
         ]
       },
       {
         "title": "Scientific Notation",
-        "notes": [
-          "Used for very big/small numbers",
-          "Format: a × 10^n (1 ≤ a < 10)",
-          "Example: 4500 = 4.5 × 10^3"
+        "definition": "Way of writing very big or small numbers using powers of 10.",
+        "example": {
+          "question": "4500 in scientific notation?",
+          "answer": "4.5 × 10^3"
+        },
+        "whyItMatters": "Useful in science and large data handling.",
+        "quickTips": [
+          "Always keep 1 ≤ a < 10",
+          "Count decimal shifts for exponent."
         ]
       },
       {
         "title": "Standard Form",
-        "notes": [
-          "The usual way of writing numbers",
-          "Example: Instead of 2 × 10^3, you write 2000"
-        ]
+        "definition": "The regular way of writing numbers.",
+        "example": {
+          "question": "Write 6.23 × 10^2 in standard form.",
+          "answer": "623"
+        },
+        "whyItMatters": "Used in everyday calculations.",
+        "quickTips": ["Just multiply the number out."]
       },
       {
         "title": "Rounding and Estimation",
-        "notes": [
-          "Round to nearest 10, 100, 1000 etc.",
-          "Used for quick calculations and approximations"
-        ]
+        "definition": "Approximating a number to make calculations easier.",
+        "example": {
+          "question": "Round 487 to the nearest 100",
+          "answer": "500"
+        },
+        "whyItMatters": "Used in shopping, time estimation, budgeting.",
+        "quickTips": ["Check the digit after the place you're rounding."]
       }
     ]
   }
