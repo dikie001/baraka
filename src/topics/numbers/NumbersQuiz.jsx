@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import questionsData from "./Quiz.json";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useLocalStorage } from "@uidotdev/usehooks";
+import BottomNav from "../../components/MobileNav";
 
 const NumbersQuizPage = () => {
   const [current, setCurrent] = useState(0);
@@ -9,12 +10,15 @@ const NumbersQuizPage = () => {
   const [showAnswer, setShowAnswer] = useState(false);
   const [score, setScore] = useState(0);
   const [answered, setAnswered] = useState(new Set());
-  const [percentageScore,setPercentageScore]=useLocalStorage("numbers-percentage-score")
+  const [percentageScore, setPercentageScore] = useLocalStorage(
+    "numbers-percentage-score",
+    null
+  );
+  const [initialScore, setInitialScore] = useState(percentageScore);
 
   const question = questionsData.questions[current];
   const totalQuestions = questionsData.questions.length;
-
-
+  
   const handleOptionClick = (key) => {
     setSelected(key);
     setShowAnswer(true);
@@ -26,12 +30,18 @@ const NumbersQuizPage = () => {
   };
 
   const nextQuestion = () => {
+    if (initialScore >= percentageScore) {
+      setPercentageScore(initialScore);
+    }
     setSelected(null);
     setShowAnswer(false);
     setCurrent((prev) => (prev + 1) % questionsData.questions.length);
   };
 
   const prevQuestion = () => {
+      if (initialScore >= percentageScore) {
+      setPercentageScore(initialScore);
+    }
     setSelected(null);
     setShowAnswer(false);
     setCurrent(
@@ -43,16 +53,24 @@ const NumbersQuizPage = () => {
 
   // Score calculation
   const CalculateScore = () => {
-     setPercentageScore(Math.floor(score/totalQuestions*100))
+    setInitialScore(Math.floor((score / totalQuestions) * 100));
   };
 
+  // Run CalculateScore Function when score changes
   useEffect(() => {
-    CalculateScore()
-  },[score]);
+    CalculateScore();
+  }, [score]);
+
+  // Update initialscore when page reloads
+  useEffect(()=>{
+    setInitialScore(percentageScore)
+    console.log(initialScore)
+  },[])
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-900 via-slate-800 to-slate-900 text-white p-4">
+      <BottomNav />
       {/* Header with progress */}
-      <div className="max-w-4xl mx-auto mb-8">
+      <div className="max-w-4xl mx-auto mb-6">
         <div className="flex items-center justify-between mb-4">
           <h1 className="text-3xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
             Numbers Quiz
@@ -75,12 +93,15 @@ const NumbersQuizPage = () => {
       </div>
 
       {/* Main quiz card */}
-      <div className="max-w-2xl mx-auto">
+      <div className="max-w-2xl  mx-auto">
         <div className="bg-slate-800/60 backdrop-blur-lg p-8 rounded-3xl shadow-2xl border border-purple-500/30 relative overflow-hidden">
           {/* Decorative gradient overlay */}
           <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-purple-500 via-pink-500 to-purple-500"></div>
 
-          <div className="flex items-start justify-between mb-6">
+          <div className="flex items-start justify-between ">
+            <p className="absolute top-3  text-gray-400 text-sm font-semibold">
+              {question.subtopic}
+            </p>
             <h2 className="text-2xl font-bold text-purple-100 leading-relaxed flex-1">
               {question.question}
             </h2>
@@ -89,7 +110,7 @@ const NumbersQuizPage = () => {
             </div>
           </div>
 
-          <div className="space-y-3 mb-8">
+          <div className="space-y-3 mb-6">
             {Object.entries(question.options).map(([key, value]) => (
               <button
                 key={key}
@@ -128,7 +149,7 @@ const NumbersQuizPage = () => {
           )}
 
           {/* Navigation buttons */}
-          <div className="flex gap-4">
+          <div className="flex justify-between mb-12 gap-4">
             <button
               onClick={prevQuestion}
               className="flex items-center px-6 py-3 bg-gradient-to-bl from-purple-600 to-pink-700 hover:ring-2 ring-purpe-500 rounded-xl transition-all duration-200 font-medium text-slate-300 hover:text-white border border-slate-600/50 hover:border-slate-500/50"
