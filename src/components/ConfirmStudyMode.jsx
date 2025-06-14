@@ -8,6 +8,11 @@ import { useNavigate } from 'react-router-dom'
 const ConfirmStudyMode = () => {
     const navigate = useNavigate()
   const [page, setPage] = useLocalStorage("choose-page", "choosePage");
+
+  const handleMCQs=()=>{
+    setPage("MCQs")
+    navigate("/numbers-quiz")
+  }
   return (
     
        
@@ -15,7 +20,6 @@ const ConfirmStudyMode = () => {
               <div className="relative w-full max-w-lg mx-auto bg-gradient-to-br from-gray-900/95 via-slate-800/95 to-gray-900/95 backdrop-blur-xl border border-white/10 rounded-2xl shadow-2xl overflow-hidden">
                 {/* Animated background gradient */}
                 <div className="absolute inset-0 bg-gradient-to-br from-purple-600/20 via-pink-600/20 to-blue-600/20 animate-pulse"></div>
-    
                 {/* Content container */}
                 <div className="relative z-10 p-6 sm:p-8">
                   {/* Header with back button */}
@@ -69,7 +73,7 @@ const ConfirmStudyMode = () => {
     
                     {/* MCQs button */}
                     <button
-                      onClick={() => navigate("/numbers-quiz")}
+                      onClick={handleMCQs}
                       className="group relative overflow-hidden bg-gradient-to-br from-purple-700  to-pink-700 hover:from-pink-500 hover:via-red-500 hover:to-purple-600 p-6 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-pink-500/25 active:scale-95"
                     >
                       <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>

@@ -2,8 +2,9 @@ import React, { useState, useEffect } from "react";
 import questionsData from "./Quiz.json";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import BottomNav from "../../components/MobileNav";
+import ConfirmStudyMode from "../../components/ConfirmStudyMode";
 
-// Custom localStorage hook to replace @uidotdev/usehooks
+// Custom localStorage hook
 const useLocalStorage = (key, defaultValue) => {
   const [value, setValue] = useState(() => {
     try {
@@ -41,6 +42,7 @@ const NumbersQuizPage = () => {
     "quiz-answered",
     []
   );
+  const [mode, setMode] = useLocalStorage("choose-page", null);
 
   // Initialize state with saved progress
   const [current, setCurrent] = useState(currentNumber || 0);
@@ -94,8 +96,10 @@ const NumbersQuizPage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-900 via-slate-800 to-slate-900 text-white p-4">
       <BottomNav />
+      {mode === "choosePage" && <ConfirmStudyMode />}
+      <button onClick={()=>setMode("choosePage")} className="absolute flex  top-2 left-3"><ChevronLeft size={22}/>Back</button>
       {/* Header with progress */}
-      <div className="max-w-4xl mx-auto mb-6">
+      <div className="max-w-4xl mx-auto mb-6 mt-4">
         <div className="flex items-center justify-between mb-4">
           <h1 className="text-3xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
             Numbers Quiz

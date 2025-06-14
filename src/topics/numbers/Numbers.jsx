@@ -1,116 +1,122 @@
 import React from "react";
 import revisionData from "./Notes.json";
+import { ChevronLeft } from "lucide-react";
+import BottomNav from "../../components/MobileNav";
+import { useLocalStorage } from "@uidotdev/usehooks";
+import ConfirmStudyMode from "../../components/ConfirmStudyMode";
 
-const NumbersRevision = () => {
+const Numbers = () => {
   const { topic, grade, revision_content } = revisionData;
+  const [mode, setMode] = useLocalStorage("choose-page", null);
 
   return (
-    <div
-      style={{
-        minHeight: "100vh",
-        background: "linear-gradient(to bottom right, #1e293b, #0f172a)",
-        color: "white",
-        padding: "2rem",
-        fontFamily: "'Segoe UI', sans-serif",
-      }}
-    >
-      <div style={{ maxWidth: "900px", margin: "0 auto" }}>
-        <div style={{ textAlign: "center", marginBottom: "3rem" }}>
-          <h1
-            style={{ fontSize: "3rem", fontWeight: "bold", color: "#14b8a6" }}
-          >
+    <div className="min-h-screen bg-gradient-to-br from-purple-900 via-slate-800 to-purple-800 text-white p-6">
+      <div className="max-w-4xl mx-auto">
+        {mode === "choosePage" && <ConfirmStudyMode />}
+        {/* Header Section */}
+        <button
+          onClick={() => setMode("choosePage")}
+          className="flex absolute top-3 left-3"
+        >
+          <ChevronLeft /> Back
+        </button>
+        <BottomNav />
+        <div className="text-center mb-4 mt-4 space-y-2">
+          <h1 className="text-5xl font-bold bg-gradient-to-r from-pink-400 to-purple-300 bg-clip-text text-transparent">
             📘 {topic}
           </h1>
-          <p
-            style={{
-              color: "#cbd5e1",
-              marginTop: "0.5rem",
-              fontSize: "1.2rem",
-            }}
-          >
+          <p className="text-slate-300 text-xl font-medium">
             Grade {grade} Revision Guide
           </p>
-          <p
-            style={{ marginTop: "1rem", color: "#94a3b8", fontStyle: "italic" }}
-          >
+          <p className="text-slate-400 italic text-lg max-w-2xl mx-auto leading-relaxed">
             {revision_content.description}
           </p>
         </div>
 
-        <div
-          style={{ maxHeight: "75vh", overflowY: "auto", paddingRight: "1rem" }}
-        >
+        {/* Content Section */}
+        <div className="   space-y-5  mb-15">
           {revision_content.subtopics.map((subtopic, index) => (
             <div
               key={index}
-              style={{
-                background: "#1e293b",
-                border: "1px solid #334155",
-                borderRadius: "1rem",
-                padding: "1.5rem",
-                marginBottom: "1.5rem",
-                boxShadow: "0 0 10px rgba(20, 184, 166, 0.1)",
-              }}
+              className="bg-gradient-to-br from-slate-800/80 to-purple-900/30 backdrop-blur-sm border border-purple-500/20 rounded-2xl p-6 shadow-xl hover:shadow-2xl hover:shadow-purple-500/20 transition-all duration-300 hover:scale-[1.02]"
             >
-              <h2
-                style={{
-                  fontSize: "1.5rem",
-                  fontWeight: "bold",
-                  color: "#5eead4",
-                  marginBottom: "1rem",
-                }}
-              >
-                {index + 1}. {subtopic.title}
+              <h2 className="text-2xl font-bold text-pink-300 mb-4 flex items-center gap-3">
+                <span className="bg-gradient-to-r from-pink-500 to-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">
+                  {index + 1}
+                </span>
+                {subtopic.title}
               </h2>
 
-              {subtopic.definition && (
-                <p style={{ marginBottom: "0.75rem" }}>
-                  <strong>🧠 Definition:</strong> {subtopic.definition}
-                </p>
-              )}
-
-              {subtopic.symbol && (
-                <p style={{ marginBottom: "0.75rem", color: "#22d3ee" }}>
-                  <strong>🔣 Symbol:</strong> {subtopic.symbol}
-                </p>
-              )}
-
-              {subtopic.example && (
-                <div style={{ marginBottom: "0.75rem" }}>
-                  <strong>📝 Example:</strong>
-                  <div style={{ marginLeft: "1rem", marginTop: "0.5rem" }}>
-                    <p>Q: {subtopic.example.question}</p>
-                    <p style={{ color: "#4ade80" }}>
-                      A: {subtopic.example.answer}
+              <div className="space-y-4">
+                {subtopic.definition && (
+                  <div className="bg-purple-900/30 rounded-lg p-4 border border-pink-400">
+                    <p className="text-slate-200">
+                      <span className="text-pink-400 font-semibold">
+                        🧠 Definition:
+                      </span>{" "}
+                      {subtopic.definition}
                     </p>
                   </div>
-                </div>
-              )}
+                )}
 
-              {subtopic.whyItMatters && (
-                <p style={{ marginBottom: "0.75rem", color: "#cbd5e1" }}>
-                  <strong>💡 Why It Matters:</strong> {subtopic.whyItMatters}
-                </p>
-              )}
+                {subtopic.symbol && (
+                  <div className="bg-slate-800/50 rounded-lg p-4 border border-purple-400">
+                    <p className="text-cyan-300 font-mono">
+                      <span className="text-purple-400 font-semibold">
+                        🔣 Symbol:
+                      </span>{" "}
+                      {subtopic.symbol}
+                    </p>
+                  </div>
+                )}
 
-              {subtopic.quickTips && subtopic.quickTips.length > 0 && (
-                <div
-                  style={{
-                    fontSize: "0.95rem",
-                    color: "#a1a1aa",
-                    marginTop: "0.5rem",
-                  }}
-                >
-                  <strong>⚡ Quick Tips:</strong>
-                  <ul style={{ paddingLeft: "1.2rem", marginTop: "0.5rem" }}>
-                    {subtopic.quickTips.map((tip, i) => (
-                      <li key={i} style={{ lineHeight: "1.7" }}>
-                        {tip}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
+                {subtopic.example && (
+                  <div className="bg-slate-900/50 rounded-lg p-4 border border-green-400">
+                    <div className="space-y-2">
+                      <p className="text-green-400 font-semibold">
+                        📝 Example:
+                      </p>
+                      <div className="ml-4 space-y-1">
+                        <p className="text-slate-300">
+                          Q: {subtopic.example.question}
+                        </p>
+                        <p className="text-green-300 font-medium">
+                          A: {subtopic.example.answer}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                )}
+
+                {subtopic.whyItMatters && (
+                  <div className="bg-blue-900/30 rounded-lg p-4 border border-blue-400">
+                    <p className="text-slate-200">
+                      <span className="text-blue-400 font-semibold">
+                        💡 Why It Matters:
+                      </span>{" "}
+                      {subtopic.whyItMatters}
+                    </p>
+                  </div>
+                )}
+
+                {subtopic.quickTips && subtopic.quickTips.length > 0 && (
+                  <div className="bg-amber-900/30 rounded-lg p-4 border border-amber-400">
+                    <div className="space-y-2">
+                      <p className="text-amber-400 font-semibold">
+                        ⚡ Quick Tips:
+                      </p>
+                      <ul className="ml-4 space-y-1 text-slate-300">
+                        {subtopic.quickTips.map((tip, i) => (
+                          <li key={i} className="flex items-start gap-2">
+                            <span className="text-amber-400 mt-1">•</span>
+                            <span>{tip}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                )}
+              </div>
             </div>
           ))}
         </div>
@@ -119,4 +125,4 @@ const NumbersRevision = () => {
   );
 };
 
-export default NumbersRevision;
+export default Numbers;
