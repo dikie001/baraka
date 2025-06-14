@@ -82,7 +82,6 @@ export default function HomePage() {
       <BottomNav />
       <DesktopNav />
       <CalculateDate />
-
       <div className="relative z-10 w-full max-w-md lg:max-w-4xl xl:max-w-6xl mx-auto bg-slate-800/50 backdrop-blur-xl border border-purple-500/20 shadow-2xl min-h-screen lg:rounded-3xl lg:my-8 lg:min-h-[calc(100vh-4rem)]">
         {/* Header */}
         <div className="p-4 sm:p-6 lg:p-8 bg-gradient-to-r from-purple-600/30 to-pink-600/30 backdrop-blur-sm border-b border-purple-500/20 lg:rounded-t-3xl">

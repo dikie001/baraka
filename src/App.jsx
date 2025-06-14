@@ -15,7 +15,7 @@ import Probability from './topics/probability/Probability'
 import Geometry from './topics/geometry/Geometry'
 import NumbersQuizPage from './topics/numbers/NumbersQuiz'
 
-export const App = () => {
+const App = () => {
   return (
     <Router>
       <Routes>
@@ -39,3 +39,4 @@ export const App = () => {
     </Router>
   );
 }
+export default App;
