@@ -25,35 +25,46 @@ import { useLocalStorage } from "@uidotdev/usehooks";
 
 export default function HomePage() {
   const [activeTab, setActiveTab] = useState("home");
+
   const numbersProgress = localStorage.getItem("current-number");
-  const algebraProgress = localStorage.getItem("current-number-algebra")
+  const numbersScore = localStorage.getItem("numbers-percentage-score");
+
+  const algebraProgress = localStorage.getItem("current-number-algebra");
+  const algebraScore = localStorage.getItem("algebra-percentage-score")
+
+  const geometryProgress = localStorage.getItem("current-number-geometry");
+  const geometryScore = localStorage.getItem("geometry-percentage-score");
+
   const [page, setPage] = useLocalStorage("choose-page", null);
   const navigate = useNavigate();
 
-  useEffect(()=>{
-    setPage("choosePage")
-  },[])
+  useEffect(() => {
+    setPage("choosePage");
+  }, []);
   const topics = [
     {
       name: "Numbers",
       icon: <Calculator />,
-      progress: numbersProgress,
+      progress: numbersProgress || 0,
       to: "/numbers",
       about: "Build math foundation ",
+      score: numbersScore,
     },
     {
       name: "Algebra",
       icon: <FunctionSquare />,
-      progress: algebraProgress ,
+      progress: algebraProgress || 0,
       to: "/algebra",
       about: "Explore algebraic rules",
+      score: algebraScore,
     },
     {
       name: "Geometry",
       icon: <Triangle />,
-      progress: 45,
+      progress: geometryProgress || 0,
       to: "/geometry",
       about: "Learn spartial reasoning",
+      score: geometryScore,
     },
     {
       name: "Measurement",
@@ -191,12 +202,19 @@ export default function HomePage() {
                       <div className="text-2xl lg:text-3xl mb-2">
                         {topic.icon}
                       </div>
+
+                      {/* Score Display  */}
+                      {/* <p className="absolute p-1 top-2 right-2 text-gray-200  rounded-lg ring ring-purple-700/70">
+                        Score: <span className="font-semibold text-b">{topic.score}%</span>
+                      </p> */}
+                      
                       <h4 className="font-semibold text-purple-200 mb-1 text-sm lg:text-base">
                         {topic.name}
                       </h4>
                       <p className="text-xs lg:text-sm text-purple-300 mb-3">
                         {topic.about}
                       </p>
+
                       <div className="bg-slate-600/50 rounded-full h-2 lg:h-3 mb-2">
                         <div
                           className="bg-gradient-to-r from-purple-500 to-pink-500 h-2 lg:h-3 rounded-full transition-all duration-500"

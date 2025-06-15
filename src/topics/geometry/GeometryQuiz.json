@@ -1,0 +1,1697 @@
+{
+  "subtopic": "geometry",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the sum of interior angles of a quadrilateral?",
+      "options": {
+        "a": "360°",
+        "b": "180°",
+        "c": "540°",
+        "d": "720°"
+      },
+      "answer": "a",
+      "subtopic": "quadrilaterals"
+    },
+    {
+      "id": 2,
+      "question": "In a triangle with angles 45°, 67°, and x°, what is the value of x?",
+      "options": {
+        "a": "68°",
+        "b": "78°",
+        "c": "88°",
+        "d": "58°"
+      },
+      "answer": "a",
+      "subtopic": "triangles"
+    },
+    {
+      "id": 3,
+      "question": "What is the measure of each exterior angle of a regular octagon?",
+      "options": {
+        "a": "45°",
+        "b": "36°",
+        "c": "60°",
+        "d": "72°"
+      },
+      "answer": "a",
+      "subtopic": "polygons"
+    },
+    {
+      "id": 4,
+      "question": "Two parallel lines are cut by a transversal. If one corresponding angle is 73°, what is the other corresponding angle?",
+      "options": {
+        "a": "73°",
+        "b": "107°",
+        "c": "17°",
+        "d": "146°"
+      },
+      "answer": "a",
+      "subtopic": "angles"
+    },
+    {
+      "id": 5,
+      "question": "What is the area of a triangle with base 12 cm and height 8 cm?",
+      "options": {
+        "a": "48 cm²",
+        "b": "96 cm²",
+        "c": "20 cm²",
+        "d": "24 cm²"
+      },
+      "answer": "a",
+      "subtopic": "area and perimeter"
+    },
+    {
+      "id": 6,
+      "question": "A rhombus has diagonals of length 10 cm and 24 cm. What is its area?",
+      "options": {
+        "a": "120 cm²",
+        "b": "240 cm²",
+        "c": "60 cm²",
+        "d": "34 cm²"
+      },
+      "answer": "a",
+      "subtopic": "quadrilaterals"
+    },
+    {
+      "id": 7,
+      "question": "In a right triangle, if one acute angle is 35°, what is the other acute angle?",
+      "options": {
+        "a": "55°",
+        "b": "45°",
+        "c": "65°",
+        "d": "60°"
+      },
+      "answer": "a",
+      "subtopic": "triangles"
+    },
+    {
+      "id": 8,
+      "question": "What is the circumference of a circle with radius 7 cm? (Use π = 22/7)",
+      "options": {
+        "a": "44 cm",
+        "b": "22 cm",
+        "c": "14 cm",
+        "d": "28 cm"
+      },
+      "answer": "a",
+      "subtopic": "circles"
+    },
+    {
+      "id": 9,
+      "question": "How many sides does a dodecagon have?",
+      "options": {
+        "a": "12",
+        "b": "10",
+        "c": "14",
+        "d": "16"
+      },
+      "answer": "a",
+      "subtopic": "polygons"
+    },
+    {
+      "id": 10,
+      "question": "What is the surface area of a cube with edge length 5 cm?",
+      "options": {
+        "a": "150 cm²",
+        "b": "125 cm²",
+        "c": "75 cm²",
+        "d": "100 cm²"
+      },
+      "answer": "a",
+      "subtopic": "volume and surface area"
+    },
+    {
+      "id": 11,
+      "question": "If two angles of a triangle are 62° and 78°, what type of triangle is it?",
+      "options": {
+        "a": "Acute triangle",
+        "b": "Right triangle",
+        "c": "Obtuse triangle",
+        "d": "Equilateral triangle"
+      },
+      "answer": "a",
+      "subtopic": "triangles"
+    },
+    {
+      "id": 12,
+      "question": "What is the area of a parallelogram with base 15 cm and height 9 cm?",
+      "options": {
+        "a": "135 cm²",
+        "b": "48 cm²",
+        "c": "24 cm²",
+        "d": "270 cm²"
+      },
+      "answer": "a",
+      "subtopic": "quadrilaterals"
+    },
+    {
+      "id": 13,
+      "question": "An angle measuring 125° is classified as:",
+      "options": {
+        "a": "Obtuse angle",
+        "b": "Acute angle",
+        "c": "Right angle",
+        "d": "Straight angle"
+      },
+      "answer": "a",
+      "subtopic": "angles"
+    },
+    {
+      "id": 14,
+      "question": "What is the perimeter of a regular hexagon with side length 8 cm?",
+      "options": {
+        "a": "48 cm",
+        "b": "32 cm",
+        "c": "24 cm",
+        "d": "64 cm"
+      },
+      "answer": "a",
+      "subtopic": "polygons"
+    },
+    {
+      "id": 15,
+      "question": "The area of a circle with diameter 14 cm is: (Use π = 22/7)",
+      "options": {
+        "a": "154 cm²",
+        "b": "308 cm²",
+        "c": "44 cm²",
+        "d": "88 cm²"
+      },
+      "answer": "a",
+      "subtopic": "circles"
+    },
+    {
+      "id": 16,
+      "question": "What is the length of the hypotenuse of a right triangle with legs 3 cm and 4 cm?",
+      "options": {
+        "a": "5 cm",
+        "b": "7 cm",
+        "c": "25 cm",
+        "d": "12 cm"
+      },
+      "answer": "a",
+      "subtopic": "triangles"
+    },
+    {
+      "id": 17,
+      "question": "In a rectangle, the diagonals are:",
+      "options": {
+        "a": "Equal in length",
+        "b": "Perpendicular",
+        "c": "Different in length",
+        "d": "Parallel"
+      },
+      "answer": "a",
+      "subtopic": "quadrilaterals"
+    },
+    {
+      "id": 18,
+      "question": "What is the sum of interior angles of a heptagon?",
+      "options": {
+        "a": "900°",
+        "b": "720°",
+        "c": "1080°",
+        "d": "540°"
+      },
+      "answer": "a",
+      "subtopic": "polygons"
+    },
+    {
+      "id": 19,
+      "question": "Two complementary angles have measures in the ratio 2:7. What is the smaller angle?",
+      "options": {
+        "a": "20°",
+        "b": "70°",
+        "c": "30°",
+        "d": "60°"
+      },
+      "answer": "a",
+      "subtopic": "angles"
+    },
+    {
+      "id": 20,
+      "question": "What is the volume of a cylinder with radius 3 cm and height 10 cm? (Use π = 22/7)",
+      "options": {
+        "a": "282.86 cm³",
+        "b": "188.57 cm³",
+        "c": "94.29 cm³",
+        "d": "565.71 cm³"
+      },
+      "answer": "a",
+      "subtopic": "volume and surface area"
+    },
+    {
+      "id": 21,
+      "question": "If the exterior angle of a regular polygon is 24°, how many sides does it have?",
+      "options": {
+        "a": "15",
+        "b": "12",
+        "c": "18",
+        "d": "20"
+      },
+      "answer": "a",
+      "subtopic": "polygons"
+    },
+    {
+      "id": 22,
+      "question": "In triangle ABC, if AB = AC = 10 cm and BC = 12 cm, what is the area?",
+      "options": {
+        "a": "48 cm²",
+        "b": "60 cm²",
+        "c": "96 cm²",
+        "d": "24 cm²"
+      },
+      "answer": "a",
+      "subtopic": "triangles"
+    },
+    {
+      "id": 23,
+      "question": "A trapezium has parallel sides of lengths 8 cm and 12 cm, and height 5 cm. What is its area?",
+      "options": {
+        "a": "50 cm²",
+        "b": "100 cm²",
+        "c": "40 cm²",
+        "d": "60 cm²"
+      },
+      "answer": "a",
+      "subtopic": "quadrilaterals"
+    },
+    {
+      "id": 24,
+      "question": "What is the distance between points A(2, 3) and B(6, 6)?",
+      "options": {
+        "a": "5 units",
+        "b": "7 units",
+        "c": "3 units",
+        "d": "4 units"
+      },
+      "answer": "a",
+      "subtopic": "coordinate geometry"
+    },
+    {
+      "id": 25,
+      "question": "An inscribed angle that intercepts a semicircle measures:",
+      "options": {
+        "a": "90°",
+        "b": "180°",
+        "c": "45°",
+        "d": "60°"
+      },
+      "answer": "a",
+      "subtopic": "circles"
+    },
+    {
+      "id": 26,
+      "question": "What is the area of a sector with central angle 60° in a circle of radius 12 cm? (Use π = 22/7)",
+      "options": {
+        "a": "75.43 cm²",
+        "b": "150.86 cm²",
+        "c": "37.71 cm²",
+        "d": "113.14 cm²"
+      },
+      "answer": "a",
+      "subtopic": "circles"
+    },
+    {
+      "id": 27,
+      "question": "In a parallelogram ABCD, if angle A = 70°, what is angle C?",
+      "options": {
+        "a": "70°",
+        "b": "110°",
+        "c": "140°",
+        "d": "35°"
+      },
+      "answer": "a",
+      "subtopic": "quadrilaterals"
+    },
+    {
+      "id": 28,
+      "question": "What is the perimeter of a triangle with sides 5 cm, 12 cm, and 13 cm?",
+      "options": {
+        "a": "30 cm",
+        "b": "25 cm",
+        "c": "20 cm",
+        "d": "35 cm"
+      },
+      "answer": "a",
+      "subtopic": "triangles"
+    },
+    {
+      "id": 29,
+      "question": "The midpoint of the line segment joining points (4, 6) and (8, 10) is:",
+      "options": {
+        "a": "(6, 8)",
+        "b": "(12, 16)",
+        "c": "(2, 2)",
+        "d": "(4, 4)"
+      },
+      "answer": "a",
+      "subtopic": "coordinate geometry"
+    },
+    {
+      "id": 30,
+      "question": "What is the lateral surface area of a cone with radius 4 cm and slant height 10 cm? (Use π = 22/7)",
+      "options": {
+        "a": "125.71 cm²",
+        "b": "251.43 cm²",
+        "c": "62.86 cm²",
+        "d": "188.57 cm²"
+      },
+      "answer": "a",
+      "subtopic": "volume and surface area"
+    },
+    {
+      "id": 31,
+      "question": "If two angles are supplementary and one is 3 times the other, what is the smaller angle?",
+      "options": {
+        "a": "45°",
+        "b": "135°",
+        "c": "60°",
+        "d": "120°"
+      },
+      "answer": "a",
+      "subtopic": "angles"
+    },
+    {
+      "id": 32,
+      "question": "A regular polygon has an interior angle of 140°. How many sides does it have?",
+      "options": {
+        "a": "9",
+        "b": "8",
+        "c": "10",
+        "d": "7"
+      },
+      "answer": "a",
+      "subtopic": "polygons"
+    },
+    {
+      "id": 33,
+      "question": "What is the area of an equilateral triangle with side 6 cm?",
+      "options": {
+        "a": "15.59 cm²",
+        "b": "18 cm²",
+        "c": "31.18 cm²",
+        "d": "9 cm²"
+      },
+      "answer": "a",
+      "subtopic": "triangles"
+    },
+    {
+      "id": 34,
+      "question": "In a circle, if the radius is doubled, the area becomes:",
+      "options": {
+        "a": "4 times",
+        "b": "2 times",
+        "c": "8 times",
+        "d": "16 times"
+      },
+      "answer": "a",
+      "subtopic": "circles"
+    },
+    {
+      "id": 35,
+      "question": "What is the volume of a sphere with radius 6 cm? (Use π = 22/7)",
+      "options": {
+        "a": "904.32 cm³",
+        "b": "452.16 cm³",
+        "c": "1356.48 cm³",
+        "d": "301.44 cm³"
+      },
+      "answer": "a",
+      "subtopic": "volume and surface area"
+    },
+    {
+      "id": 36,
+      "question": "In a kite, how many pairs of adjacent sides are equal?",
+      "options": {
+        "a": "2",
+        "b": "1",
+        "c": "3",
+        "d": "4"
+      },
+      "answer": "a",
+      "subtopic": "quadrilaterals"
+    },
+    {
+      "id": 37,
+      "question": "What is the slope of the line passing through points (2, 4) and (6, 12)?",
+      "options": {
+        "a": "2",
+        "b": "4",
+        "c": "8",
+        "d": "1/2"
+      },
+      "answer": "a",
+      "subtopic": "coordinate geometry"
+    },
+    {
+      "id": 38,
+      "question": "The altitude of an equilateral triangle with side 10 cm is:",
+      "options": {
+        "a": "8.66 cm",
+        "b": "5 cm",
+        "c": "10 cm",
+        "d": "7.5 cm"
+      },
+      "answer": "a",
+      "subtopic": "triangles"
+    },
+    {
+      "id": 39,
+      "question": "What is the length of an arc with central angle 90° in a circle of radius 8 cm? (Use π = 22/7)",
+      "options": {
+        "a": "12.57 cm",
+        "b": "6.29 cm",
+        "c": "25.14 cm",
+        "d": "18.86 cm"
+      },
+      "answer": "a",
+      "subtopic": "circles"
+    },
+    {
+      "id": 40,
+      "question": "In a right triangle, if the hypotenuse is 15 cm and one leg is 9 cm, what is the other leg?",
+      "options": {
+        "a": "12 cm",
+        "b": "6 cm",
+        "c": "18 cm",
+        "d": "24 cm"
+      },
+      "answer": "a",
+      "subtopic": "triangles"
+    },
+    {
+      "id": 41,
+      "question": "What is the diagonal of a square with side 8 cm?",
+      "options": {
+        "a": "11.31 cm",
+        "b": "16 cm",
+        "c": "8 cm",
+        "d": "22.63 cm"
+      },
+      "answer": "a",
+      "subtopic": "quadrilaterals"
+    },
+    {
+      "id": 42,
+      "question": "An exterior angle of a triangle is 110°. If one interior opposite angle is 65°, what is the other?",
+      "options": {
+        "a": "45°",
+        "b": "55°",
+        "c": "35°",
+        "d": "70°"
+      },
+      "answer": "a",
+      "subtopic": "triangles"
+    },
+    {
+      "id": 43,
+      "question": "What is the total surface area of a cube with edge 4 cm?",
+      "options": {
+        "a": "96 cm²",
+        "b": "64 cm²",
+        "c": "48 cm²",
+        "d": "16 cm²"
+      },
+      "answer": "a",
+      "subtopic": "volume and surface area"
+    },
+    {
+      "id": 44,
+      "question": "The angle between the hour and minute hands of a clock at 3:00 is:",
+      "options": {
+        "a": "90°",
+        "b": "60°",
+        "c": "30°",
+        "d": "120°"
+      },
+      "answer": "a",
+      "subtopic": "angles"
+    },
+    {
+      "id": 45,
+      "question": "What is the area of a rhombus with side 10 cm and one angle 60°?",
+      "options": {
+        "a": "86.6 cm²",
+        "b": "100 cm²",
+        "c": "50 cm²",
+        "d": "173.2 cm²"
+      },
+      "answer": "a",
+      "subtopic": "quadrilaterals"
+    },
+    {
+      "id": 46,
+      "question": "In coordinate geometry, what is the equation of a line passing through the origin with slope 3?",
+      "options": {
+        "a": "y = 3x",
+        "b": "y = x + 3",
+        "c": "y = 3x + 3",
+        "d": "x = 3y"
+      },
+      "answer": "a",
+      "subtopic": "coordinate geometry"
+    },
+    {
+      "id": 47,
+      "question": "What is the measure of each interior angle of a regular decagon?",
+      "options": {
+        "a": "144°",
+        "b": "135°",
+        "c": "150°",
+        "d": "160°"
+      },
+      "answer": "a",
+      "subtopic": "polygons"
+    },
+    {
+      "id": 48,
+      "question": "The radius of a circle inscribed in a square of side 12 cm is:",
+      "options": {
+        "a": "6 cm",
+        "b": "12 cm",
+        "c": "3 cm",
+        "d": "24 cm"
+      },
+      "answer": "a",
+      "subtopic": "circles"
+    },
+    {
+      "id": 49,
+      "question": "What is the perimeter of a rectangle with length 15 cm and width 8 cm?",
+      "options": {
+        "a": "46 cm",
+        "b": "23 cm",
+        "c": "120 cm",
+        "d": "30 cm"
+      },
+      "answer": "a",
+      "subtopic": "quadrilaterals"
+    },
+    {
+      "id": 50,
+      "question": "In triangle PQR, PQ = 8 cm, QR = 6 cm, and angle Q = 90°. What is PR?",
+      "options": {
+        "a": "10 cm",
+        "b": "14 cm",
+        "c": "2 cm",
+        "d": "100 cm"
+      },
+      "answer": "a",
+      "subtopic": "triangles"
+    },
+    {
+      "id": 51,
+      "question": "What is the curved surface area of a cylinder with radius 5 cm and height 12 cm? (Use π = 22/7)",
+      "options": {
+        "a": "377.14 cm²",
+        "b": "188.57 cm²",
+        "c": "754.29 cm²",
+        "d": "942.86 cm²"
+      },
+      "answer": "a",
+      "subtopic": "volume and surface area"
+    },
+    {
+      "id": 52,
+      "question": "Two vertically opposite angles are in the ratio 5:7. If their sum is 144°, what is the smaller angle?",
+      "options": {
+        "a": "60°",
+        "b": "84°",
+        "c": "72°",
+        "d": "48°"
+      },
+      "answer": "a",
+      "subtopic": "angles"
+    },
+    {
+      "id": 53,
+      "question": "What is the area of a trapezium with parallel sides 6 cm and 10 cm, and height 4 cm?",
+      "options": {
+        "a": "32 cm²",
+        "b": "64 cm²",
+        "c": "24 cm²",
+        "d": "40 cm²"
+      },
+      "answer": "a",
+      "subtopic": "quadrilaterals"
+    },
+    {
+      "id": 54,
+      "question": "The centroid of a triangle divides each median in the ratio:",
+      "options": {
+        "a": "2:1",
+        "b": "1:2",
+        "c": "3:1",
+        "d": "1:1"
+      },
+      "answer": "a",
+      "subtopic": "triangles"
+    },
+    {
+      "id": 55,
+      "question": "What is the distance from the origin to the point (3, 4)?",
+      "options": {
+        "a": "5 units",
+        "b": "7 units",
+        "c": "25 units",
+        "d": "12 units"
+      },
+      "answer": "a",
+      "subtopic": "coordinate geometry"
+    },
+    {
+      "id": 56,
+      "question": "In a circle with center O, if angle AOB = 80°, what is the angle ACB where C is on the circle?",
+      "options": {
+        "a": "40°",
+        "b": "80°",
+        "c": "160°",
+        "d": "20°"
+      },
+      "answer": "a",
+      "subtopic": "circles"
+    },
+    {
+      "id": 57,
+      "question": "What is the volume of a rectangular prism with dimensions 6 cm × 4 cm × 5 cm?",
+      "options": {
+        "a": "120 cm³",
+        "b": "60 cm³",
+        "c": "240 cm³",
+        "d": "30 cm³"
+      },
+      "answer": "a",
+      "subtopic": "volume and surface area"
+    },
+    {
+      "id": 58,
+      "question": "The sum of the interior angles of a polygon is 1440°. How many sides does it have?",
+      "options": {
+        "a": "10",
+        "b": "8",
+        "c": "12",
+        "d": "9"
+      },
+      "answer": "a",
+      "subtopic": "polygons"
+    },
+    {
+      "id": 59,
+      "question": "In an isosceles triangle, if the vertex angle is 80°, what is each base angle?",
+      "options": {
+        "a": "50°",
+        "b": "40°",
+        "c": "60°",
+        "d": "100°"
+      },
+      "answer": "a",
+      "subtopic": "triangles"
+    },
+    {
+      "id": 60,
+      "question": "What is the area of a circle with circumference 44 cm? (Use π = 22/7)",
+      "options": {
+        "a": "154 cm²",
+        "b": "308 cm²",
+        "c": "77 cm²",
+        "d": "22 cm²"
+      },
+      "answer": "a",
+      "subtopic": "circles"
+    },
+    {
+      "id": 61,
+      "question": "A parallelogram has sides 12 cm and 8 cm with an included angle of 60°. What is its area?",
+      "options": {
+        "a": "83.14 cm²",
+        "b": "96 cm²",
+        "c": "48 cm²",
+        "d": "166.28 cm²"
+      },
+      "answer": "a",
+      "subtopic": "quadrilaterals"
+    },
+    {
+      "id": 62,
+      "question": "What is the y-intercept of the line 3x + 4y = 12?",
+      "options": {
+        "a": "3",
+        "b": "4",
+        "c": "12",
+        "d": "-3"
+      },
+      "answer": "a",
+      "subtopic": "coordinate geometry"
+    },
+    {
+      "id": 63,
+      "question": "The surface area of a sphere with radius 9 cm is: (Use π = 22/7)",
+      "options": {
+        "a": "1017.88 cm²",
+        "b": "508.94 cm²",
+        "c": "254.47 cm²",
+        "d": "2035.75 cm²"
+      },
+      "answer": "a",
+      "subtopic": "volume and surface area"
+    },
+    {
+      "id": 64,
+      "question": "In a right triangle, if one angle is 30°, what is the ratio of the sides?",
+      "options": {
+        "a": "1 : √3 : 2",
+        "b": "1 : 2 : √3",
+        "c": "√3 : 1 : 2",
+        "d": "2 : 1 : √3"
+      },
+      "answer": "a",
+      "subtopic": "triangles"
+    },
+    {
+      "id": 65,
+      "question": "What is the area of a sector with central angle 120° in a circle of radius 9 cm? (Use π = 22/7)",
+      "options": {
+        "a": "84.86 cm²",
+        "b": "254.57 cm²",
+        "c": "42.43 cm²",
+        "d": "169.71 cm²"
+      },
+      "answer": "a",
+      "subtopic": "circles"
+    },
+    {
+      "id": 66,
+      "question": "The diagonals of a rectangle are 13 cm each. If one side is 5 cm, what is the other side?",
+      "options": {
+        "a": "12 cm",
+        "b": "8 cm",
+        "c": "18 cm",
+        "d": "10 cm"
+      },
+      "answer": "a",
+      "subtopic": "quadrilaterals"
+    },
+    {
+      "id": 67,
+      "question": "What is the measure of an angle that is its own complement?",
+      "options": {
+        "a": "45°",
+        "b": "90°",
+        "c": "60°",
+        "d": "30°"
+      },
+      "answer": "a",
+      "subtopic": "angles"
+    },
+    {
+      "id": 68,
+      "question": "A regular hexagon is inscribed in a circle of radius 10 cm. What is the side length of the hexagon?",
+      "options": {
+        "a": "10 cm",
+        "b": "5 cm",
+        "c": "20 cm",
+        "d": "17.32 cm"
+      },
+      "answer": "a",
+      "subtopic": "polygons"
+    },
+    {
+      "id": 69,
+      "question": "What is the height of a triangle with area 60 cm² and base 15 cm?",
+      "options": {
+        "a": "8 cm",
+        "b": "4 cm",
+        "c": "12 cm",
+        "d": "6 cm"
+      },
+      "answer": "a",
+      "subtopic": "triangles"
+    },
+    {
+      "id": 70,
+      "question": "The equation of a circle with center (2, 3) and radius 5 is:",
+      "options": {
+        "a": "(x-2)² + (y-3)² = 25",
+        "b": "(x+2)² + (y+3)² = 25",
+        "c": "(x-2)² + (y-3)² = 5",
+        "d": "x² + y² = 25"
+      },
+      "answer": "a",
+      "subtopic": "coordinate geometry"
+    },
+    {
+      "id": 71,
+      "question": "What is the total surface area of a cylinder with radius 6 cm and height 8 cm? (Use π = 22/7)",
+      "options": {
+        "a": "527.79 cm²",
+        "b": "301.71 cm²",
+        "c": "226.29 cm²",
+        "d": "753.43 cm²"
+      },
+      "answer": "a",
+      "subtopic": "volume and surface area"
+    },
+    {
+      "id": 72,
+      "question": "In a cyclic quadrilateral, opposite angles are:",
+      "options": {
+        "a": "Supplementary",
+        "b": "Equal",
+        "c": "Complementary",
+        "d": "Right angles"
+      },
+      "answer": "a",
+      "subtopic": "quadrilaterals"
+    },
+    {
+      "id": 73,
+      "question": "What is the area of an isosceles right triangle with hypotenuse 10 cm?",
+      "options": {
+        "a": "25 cm²",
+        "b": "50 cm²",
+        "c": "100 cm²",
+        "d": "12.5 cm²"
+      },
+      "answer": "a",
+      "subtopic": "triangles"
+    },
+    {
+      "id": 74,
+      "question": "The angle subtended by a chord at the center is twice the angle subtended by the same chord at:",
+      "options": {
+        "a": "Any point on the circle",
+        "b": "The center",
+        "c": "The diameter",
+        "d": "The tangent"
+      },
+      "answer": "a",
+      "subtopic": "circles"
+    },
+    {
+      "id": 75,
+      "question": "What is the length of the diagonal of a rectangle with sides 9 cm and 12 cm?",
+      "options": {
+        "a": "15 cm",
+        "b": "21 cm",
+        "c": "225 cm",
+        "d": "10.5 cm"
+      },
+      "answer": "a",
+      "subtopic": "quadrilaterals"
+    },
+    {
+      "id": 76,
+      "question": "If the coordinates of vertices of a triangle are A(0,0), B(3,0), and C(0,4), what is its area?",
+      "options": {
+        "a": "6 square units",
+        "b": "12 square units",
+        "c": "7 square units",
+        "d": "5 square units"
+      },
+      "answer": "a",
+      "subtopic": "coordinate geometry"
+    },
+    {
+      "id": 77,
+      "question": "What is the volume of a cone with radius 4 cm and height 9 cm? (Use π = 22/7)",
+      "options": {
+        "a": "150.86 cm³",
+        "b": "452.57 cm³",
+        "c": "301.71 cm³",
+        "d": "75.43 cm³"
+      },
+      "answer": "a",
+      "subtopic": "volume and surface area"
+    },
+    {
+      "id": 78,
+      "question": "In a triangle, the angle bisector divides the opposite side in the ratio of:",
+      "options": {
+        "a": "The other two sides",
+        "b": "The squares of the other two sides",
+        "c": "1:1",
+        "d": "The altitudes"
+      },
+      "answer": "a",
+      "subtopic": "triangles"
+    },
+    {
+      "id": 79,
+      "question": "What is the sum of all interior angles of a nonagon?",
+      "options": {
+        "a": "1260°",
+        "b": "1080°",
+        "c": "1440°",
+        "d": "900°"
+      },
+      "answer": "a",
+      "subtopic": "polygons"
+    },
+    {
+      "id": 80,
+      "question": "Two angles are in the ratio 3:5 and they are supplementary. What is the larger angle?",
+      "options": {
+        "a": "112.5°",
+        "b": "67.5°",
+        "c": "90°",
+        "d": "135°"
+      },
+      "answer": "a",
+      "subtopic": "angles"
+    },
+    {
+      "id": 81,
+      "question": "What is the area of a regular pentagon with side 6 cm?",
+      "options": {
+        "a": "61.94 cm²",
+        "b": "90 cm²",
+        "c": "30 cm²",
+        "d": "123.88 cm²"
+      },
+      "answer": "a",
+      "subtopic": "polygons"
+    },
+    {
+      "id": 82,
+      "question": "In a right triangle, if the altitude to the hypotenuse is 6 cm and divides it into segments of 4 cm and 9 cm, what is the hypotenuse?",
+      "options": {
+        "a": "13 cm",
+        "b": "15 cm",
+        "c": "12 cm",
+        "d": "10 cm"
+      },
+      "answer": "a",
+      "subtopic": "triangles"
+    },
+    {
+      "id": 83,
+      "question": "What is the radius of a circle that circumscribes a square of side 8 cm?",
+      "options": {
+        "a": "5.66 cm",
+        "b": "8 cm",
+        "c": "4 cm",
+        "d": "11.31 cm"
+      },
+      "answer": "a",
+      "subtopic": "circles"
+    },
+    {
+      "id": 84,
+      "question": "The area of a kite with diagonals 16 cm and 12 cm is:",
+      "options": {
+        "a": "96 cm²",
+        "b": "192 cm²",
+        "c": "48 cm²",
+        "d": "28 cm²"
+      },
+      "answer": "a",
+      "subtopic": "quadrilaterals"
+    },
+    {
+      "id": 85,
+      "question": "What is the slope of a line perpendicular to the line y = 2x + 3?",
+      "options": {
+        "a": "-1/2",
+        "b": "2",
+        "c": "-2",
+        "d": "1/2"
+      },
+      "answer": "a",
+      "subtopic": "coordinate geometry"
+    },
+    {
+      "id": 86,
+      "question": "What is the lateral surface area of a right circular cone with radius 7 cm and height 24 cm? (Use π = 22/7)",
+      "options": {
+        "a": "550 cm²",
+        "b": "1100 cm²",
+        "c": "154 cm²",
+        "d": "704 cm²"
+      },
+      "answer": "a",
+      "subtopic": "volume and surface area"
+    },
+    {
+      "id": 87,
+      "question": "In a triangle ABC, if AB = 7 cm, BC = 24 cm, and AC = 25 cm, what type of triangle is it?",
+      "options": {
+        "a": "Right triangle",
+        "b": "Acute triangle",
+        "c": "Obtuse triangle",
+        "d": "Equilateral triangle"
+      },
+      "answer": "a",
+      "subtopic": "triangles"
+    },
+    {
+      "id": 88,
+      "question": "What is the measure of each exterior angle of a regular 15-sided polygon?",
+      "options": {
+        "a": "24°",
+        "b": "36°",
+        "c": "30°",
+        "d": "20°"
+      },
+      "answer": "a",
+      "subtopic": "polygons"
+    },
+    {
+      "id": 89,
+      "question": "The angle between two tangents drawn from an external point to a circle, if the angle subtended by the chord of contact at the center is 120°, is:",
+      "options": {
+        "a": "60°",
+        "b": "120°",
+        "c": "30°",
+        "d": "240°"
+      },
+      "answer": "a",
+      "subtopic": "circles"
+    },
+    {
+      "id": 90,
+      "question": "What is the area of a square inscribed in a circle of radius 10 cm?",
+      "options": {
+        "a": "200 cm²",
+        "b": "100 cm²",
+        "c": "400 cm²",
+        "d": "314 cm²"
+      },
+      "answer": "a",
+      "subtopic": "quadrilaterals"
+    },
+    {
+      "id": 91,
+      "question": "If the point (3, k) lies on the line 2x + 3y = 12, what is the value of k?",
+      "options": {
+        "a": "2",
+        "b": "3",
+        "c": "4",
+        "d": "6"
+      },
+      "answer": "a",
+      "subtopic": "coordinate geometry"
+    },
+    {
+      "id": 92,
+      "question": "What is the volume of a hemisphere with radius 12 cm? (Use π = 22/7)",
+      "options": {
+        "a": "3617.14 cm³",
+        "b": "7234.29 cm³",
+        "c": "1808.57 cm³",
+        "d": "904.29 cm³"
+      },
+      "answer": "a",
+      "subtopic": "volume and surface area"
+    },
+    {
+      "id": 93,
+      "question": "In an equilateral triangle, each angle measures:",
+      "options": {
+        "a": "60°",
+        "b": "90°",
+        "c": "120°",
+        "d": "30°"
+      },
+      "answer": "a",
+      "subtopic": "triangles"
+    },
+    {
+      "id": 94,
+      "question": "What is the sum of interior angles of a dodecagon?",
+      "options": {
+        "a": "1800°",
+        "b": "1440°",
+        "c": "2160°",
+        "d": "1620°"
+      },
+      "answer": "a",
+      "subtopic": "polygons"
+    },
+    {
+      "id": 95,
+      "question": "Two parallel lines are cut by two transversals. If corresponding angles are equal, then the transversals are:",
+      "options": {
+        "a": "Parallel",
+        "b": "Perpendicular",
+        "c": "Intersecting",
+        "d": "Concurrent"
+      },
+      "answer": "a",
+      "subtopic": "angles"
+    },
+    {
+      "id": 96,
+      "question": "What is the length of the tangent from an external point 13 cm away from the center of a circle with radius 5 cm?",
+      "options": {
+        "a": "12 cm",
+        "b": "8 cm",
+        "c": "18 cm",
+        "d": "144 cm"
+      },
+      "answer": "a",
+      "subtopic": "circles"
+    },
+    {
+      "id": 97,
+      "question": "The area of a trapezium is 84 cm². If the parallel sides are 10 cm and 12 cm, what is the height?",
+      "options": {
+        "a": "7.64 cm",
+        "b": "7 cm",
+        "c": "8 cm",
+        "d": "6 cm"
+      },
+      "answer": "a",
+      "subtopic": "quadrilaterals"
+    },
+    {
+      "id": 98,
+      "question": "What is the distance between the lines 3x + 4y = 5 and 3x + 4y = 15?",
+      "options": {
+        "a": "2 units",
+        "b": "10 units",
+        "c": "5 units",
+        "d": "1 unit"
+      },
+      "answer": "a",
+      "subtopic": "coordinate geometry"
+    },
+    {
+      "id": 99,
+      "question": "What is the curved surface area of a hemisphere with radius 21 cm? (Use π = 22/7)",
+      "options": {
+        "a": "2772 cm²",
+        "b": "1386 cm²",
+        "c": "4158 cm²",
+        "d": "5544 cm²"
+      },
+      "answer": "a",
+      "subtopic": "volume and surface area"
+    },
+    {
+      "id": 100,
+      "question": "In triangle ABC, if the medians intersect at point G, then AG:GD (where D is the midpoint of BC) is:",
+      "options": {
+        "a": "2:1",
+        "b": "1:2",
+        "c": "1:1",
+        "d": "3:1"
+      },
+      "answer": "a",
+      "subtopic": "triangles"
+    },
+    {
+      "id": 101,
+      "question": "What is the number of diagonals in a regular octagon?",
+      "options": {
+        "a": "20",
+        "b": "16",
+        "c": "24",
+        "d": "28"
+      },
+      "answer": "a",
+      "subtopic": "polygons"
+    },
+    {
+      "id": 102,
+      "question": "If two chords of a circle intersect inside the circle, then the product of their segments are:",
+      "options": {
+        "a": "Equal",
+        "b": "Different",
+        "c": "In ratio 2:1",
+        "d": "In ratio 1:2"
+      },
+      "answer": "a",
+      "subtopic": "circles"
+    },
+    {
+      "id": 103,
+      "question": "What is the area of a rhombus with perimeter 40 cm and one diagonal 12 cm?",
+      "options": {
+        "a": "96 cm²",
+        "b": "48 cm²",
+        "c": "192 cm²",
+        "d": "24 cm²"
+      },
+      "answer": "a",
+      "subtopic": "quadrilaterals"
+    },
+    {
+      "id": 104,
+      "question": "The angle of elevation from a point 100 m away from the base of a tower to its top is 30°. What is the height of the tower?",
+      "options": {
+        "a": "57.74 m",
+        "b": "100 m",
+        "c": "86.6 m",
+        "d": "50 m"
+      },
+      "answer": "a",
+      "subtopic": "triangles"
+    },
+    {
+      "id": 105,
+      "question": "What is the x-intercept of the line 2x - 3y = 6?",
+      "options": {
+        "a": "3",
+        "b": "2",
+        "c": "6",
+        "d": "-2"
+      },
+      "answer": "a",
+      "subtopic": "coordinate geometry"
+    },
+    {
+      "id": 106,
+      "question": "What is the total surface area of a cone with radius 14 cm and slant height 20 cm? (Use π = 22/7)",
+      "options": {
+        "a": "1496 cm²",
+        "b": "880 cm²",
+        "c": "616 cm²",
+        "d": "2376 cm²"
+      },
+      "answer": "a",
+      "subtopic": "volume and surface area"
+    },
+    {
+      "id": 107,
+      "question": "In a scalene triangle, all sides are:",
+      "options": {
+        "a": "Different",
+        "b": "Equal",
+        "c": "Two equal",
+        "d": "Perpendicular"
+      },
+      "answer": "a",
+      "subtopic": "triangles"
+    },
+    {
+      "id": 108,
+      "question": "What is the measure of each interior angle of a regular 18-sided polygon?",
+      "options": {
+        "a": "160°",
+        "b": "150°",
+        "c": "170°",
+        "d": "144°"
+      },
+      "answer": "a",
+      "subtopic": "polygons"
+    },
+    {
+      "id": 109,
+      "question": "If a transversal intersects two parallel lines, then alternate interior angles are:",
+      "options": {
+        "a": "Equal",
+        "b": "Supplementary",
+        "c": "Complementary",
+        "d": "Different"
+      },
+      "answer": "a",
+      "subtopic": "angles"
+    },
+    {
+      "id": 110,
+      "question": "What is the area of a segment of a circle with central angle 60° and radius 12 cm? (Use π = 22/7)",
+      "options": {
+        "a": "13.42 cm²",
+        "b": "75.43 cm²",
+        "c": "62.01 cm²",
+        "d": "26.84 cm²"
+      },
+      "answer": "a",
+      "subtopic": "circles"
+    },
+    {
+      "id": 111,
+      "question": "In a parallelogram, the diagonals:",
+      "options": {
+        "a": "Bisect each other",
+        "b": "Are equal",
+        "c": "Are perpendicular",
+        "d": "Are parallel"
+      },
+      "answer": "a",
+      "subtopic": "quadrilaterals"
+    },
+    {
+      "id": 112,
+      "question": "What is the area of a triangle with vertices at (0,0), (5,0), and (0,8)?",
+      "options": {
+        "a": "20 square units",
+        "b": "40 square units",
+        "c": "13 square units",
+        "d": "10 square units"
+      },
+      "answer": "a",
+      "subtopic": "coordinate geometry"
+    },
+    {
+      "id": 113,
+      "question": "What is the volume of a frustum of a cone with radii 6 cm and 4 cm and height 8 cm? (Use π = 22/7)",
+      "options": {
+        "a": "1608.38 cm³",
+        "b": "804.19 cm³",
+        "c": "2412.57 cm³",
+        "d": "536.13 cm³"
+      },
+      "answer": "a",
+      "subtopic": "volume and surface area"
+    },
+    {
+      "id": 114,
+      "question": "The orthocenter of a triangle is the point where:",
+      "options": {
+        "a": "Altitudes meet",
+        "b": "Medians meet",
+        "c": "Angle bisectors meet",
+        "d": "Perpendicular bisectors meet"
+      },
+      "answer": "a",
+      "subtopic": "triangles"
+    },
+    {
+      "id": 115,
+      "question": "What is the sum of exterior angles of any convex polygon?",
+      "options": {
+        "a": "360°",
+        "b": "180°",
+        "c": "540°",
+        "d": "720°"
+      },
+      "answer": "a",
+      "subtopic": "polygons"
+    },
+    {
+      "id": 116,
+      "question": "If two lines intersect at an angle of 50°, what are the measures of the other three angles?",
+      "options": {
+        "a": "50°, 130°, 130°",
+        "b": "40°, 140°, 140°",
+        "c": "60°, 120°, 120°",
+        "d": "50°, 50°, 260°"
+      },
+      "answer": "a",
+      "subtopic": "angles"
+    },
+    {
+      "id": 117,
+      "question": "What is the length of the arc of a circle with radius 7 cm subtending an angle of 45° at the center? (Use π = 22/7)",
+      "options": {
+        "a": "5.5 cm",
+        "b": "11 cm",
+        "c": "3.5 cm",
+        "d": "22 cm"
+      },
+      "answer": "a",
+      "subtopic": "circles"
+    },
+    {
+      "id": 118,
+      "question": "What is the area of a rectangle inscribed in a circle of radius 5 cm with one side 6 cm?",
+      "options": {
+        "a": "48 cm²",
+        "b": "60 cm²",
+        "c": "30 cm²",
+        "d": "24 cm²"
+      },
+      "answer": "a",
+      "subtopic": "quadrilaterals"
+    },
+    {
+      "id": 119,
+      "question": "The centroid of a triangle with vertices A(2,3), B(4,7), and C(6,1) is at:",
+      "options": {
+        "a": "(4, 11/3)",
+        "b": "(12, 11)",
+        "c": "(2, 3.67)",
+        "d": "(4, 3.67)"
+      },
+      "answer": "a",
+      "subtopic": "coordinate geometry"
+    },
+    {
+      "id": 120,
+      "question": "What is the surface area of a sphere with diameter 28 cm? (Use π = 22/7)",
+      "options": {
+        "a": "2464 cm²",
+        "b": "1232 cm²",
+        "c": "4928 cm²",
+        "d": "616 cm²"
+      },
+      "answer": "a",
+      "subtopic": "volume and surface area"
+    },
+    {
+      "id": 121,
+      "question": "In a triangle, the sum of any two sides is:",
+      "options": {
+        "a": "Greater than the third side",
+        "b": "Equal to the third side",
+        "c": "Less than the third side",
+        "d": "Twice the third side"
+      },
+      "answer": "a",
+      "subtopic": "triangles"
+    },
+    {
+      "id": 122,
+      "question": "What is the apothem of a regular hexagon with side 10 cm?",
+      "options": {
+        "a": "8.66 cm",
+        "b": "5 cm",
+        "c": "10 cm",
+        "d": "17.32 cm"
+      },
+      "answer": "a",
+      "subtopic": "polygons"
+    },
+    {
+      "id": 123,
+      "question": "If a line makes angles of 60° and 30° with two intersecting lines, what angle do the intersecting lines make?",
+      "options": {
+        "a": "30°",
+        "b": "90°",
+        "c": "60°",
+        "d": "120°"
+      },
+      "answer": "a",
+      "subtopic": "angles"
+    },
+    {
+      "id": 124,
+      "question": "What is the area of the largest circle that can be inscribed in a square of side 16 cm?",
+      "options": {
+        "a": "201.14 cm²",
+        "b": "804.57 cm²",
+        "c": "64 cm²",
+        "d": "50.29 cm²"
+      },
+      "answer": "a",
+      "subtopic": "circles"
+    },
+    {
+      "id": 125,
+      "question": "The area of a square is 144 cm². What is the length of its diagonal?",
+      "options": {
+        "a": "16.97 cm",
+        "b": "12 cm",
+        "c": "24 cm",
+        "d": "288 cm"
+      },
+      "answer": "a",
+      "subtopic": "quadrilaterals"
+    },
+    {
+      "id": 126,
+      "question": "What is the equation of a line with slope -2 passing through point (3, 4)?",
+      "options": {
+        "a": "y = -2x + 10",
+        "b": "y = -2x - 2",
+        "c": "y = 2x - 2",
+        "d": "y = -2x + 4"
+      },
+      "answer": "a",
+      "subtopic": "coordinate geometry"
+    },
+    {
+      "id": 127,
+      "question": "What is the volume of a hollow cylinder with outer radius 8 cm, inner radius 6 cm, and height 10 cm? (Use π = 22/7)",
+      "options": {
+        "a": "879.64 cm³",
+        "b": "1759.29 cm³",
+        "c": "439.82 cm³",
+        "d": "314.29 cm³"
+      },
+      "answer": "a",
+      "subtopic": "volume and surface area"
+    },
+    {
+      "id": 128,
+      "question": "The incenter of a triangle is equidistant from:",
+      "options": {
+        "a": "All three sides",
+        "b": "All three vertices",
+        "c": "Two sides only",
+        "d": "One side only"
+      },
+      "answer": "a",
+      "subtopic": "triangles"
+    },
+    {
+      "id": 129,
+      "question": "How many lines of symmetry does a regular decagon have?",
+      "options": {
+        "a": "10",
+        "b": "5",
+        "c": "20",
+        "d": "15"
+      },
+      "answer": "a",
+      "subtopic": "polygons"
+    },
+    {
+      "id": 130,
+      "question": "Two angles are complementary. If one angle is 35°, what is the other angle?",
+      "options": {
+        "a": "55°",
+        "b": "145°",
+        "c": "325°",
+        "d": "65°"
+      },
+      "answer": "a",
+      "subtopic": "angles"
+    },
+    {
+      "id": 131,
+      "question": "What is the area of a ring between two concentric circles with radii 10 cm and 6 cm? (Use π = 22/7)",
+      "options": {
+        "a": "201.14 cm²",
+        "b": "314.29 cm²",
+        "c": "113.14 cm²",
+        "d": "402.29 cm²"
+      },
+      "answer": "a",
+      "subtopic": "circles"
+    },
+    {
+      "id": 132,
+      "question": "In a rhombus with side 13 cm and one diagonal 10 cm, what is the length of the other diagonal?",
+      "options": {
+        "a": "24 cm",
+        "b": "5 cm",
+        "c": "12 cm",
+        "d": "26 cm"
+      },
+      "answer": "a",
+      "subtopic": "quadrilaterals"
+    },
+    {
+      "id": 133,
+      "question": "What is the perpendicular distance from point (4, 3) to the line 3x + 4y = 12?",
+      "options": {
+        "a": "2.4 units",
+        "b": "5 units",
+        "c": "12 units",
+        "d": "1 unit"
+      },
+      "answer": "a",
+      "subtopic": "coordinate geometry"
+    },
+    {
+      "id": 134,
+      "question": "What is the lateral surface area of a right triangular prism with base sides 3, 4, 5 cm and height 12 cm?",
+      "options": {
+        "a": "144 cm²",
+        "b": "72 cm²",
+        "c": "288 cm²",
+        "d": "216 cm²"
+      },
+      "answer": "a",
+      "subtopic": "volume and surface area"
+    },
+    {
+      "id": 135,
+      "question": "The circumcenter of a right triangle lies on:",
+      "options": {
+        "a": "The hypotenuse",
+        "b": "One of the legs",
+        "c": "Inside the triangle",
+        "d": "Outside the triangle"
+      },
+      "answer": "a",
+      "subtopic": "triangles"
+    },
+    {
+      "id": 136,
+      "question": "What is the measure of each central angle of a regular 20-sided polygon?",
+      "options": {
+        "a": "18°",
+        "b": "20°",
+        "c": "36°",
+        "d": "15°"
+      },
+      "answer": "a",
+      "subtopic": "polygons"
+    },
+    {
+      "id": 137,
+      "question": "If two parallel lines are cut by a transversal, co-interior angles are:",
+      "options": {
+        "a": "Supplementary",
+        "b": "Equal",
+        "c": "Complementary",
+        "d": "Vertically opposite"
+      },
+      "answer": "a",
+      "subtopic": "angles"
+    },
+    {
+      "id": 138,
+      "question": "What is the area of a semicircle with diameter 20 cm? (Use π = 22/7)",
+      "options": {
+        "a": "157.14 cm²",
+        "b": "314.29 cm²",
+        "c": "628.57 cm²",
+        "d": "78.57 cm²"
+      },
+      "answer": "a",
+      "subtopic": "circles"
+    },
+    {
+      "id": 139,
+      "question": "What is the perimeter of a rhombus with diagonals 24 cm and 32 cm?",
+      "options": {
+        "a": "80 cm",
+        "b": "40 cm",
+        "c": "56 cm",
+        "d": "112 cm"
+      },
+      "answer": "a",
+      "subtopic": "quadrilaterals"
+    },
+    {
+      "id": 140,
+      "question": "The reflection of point (3, -4) across the x-axis is:",
+      "options": {
+        "a": "(3, 4)",
+        "b": "(-3, -4)",
+        "c": "(-3, 4)",
+        "d": "(4, 3)"
+      },
+      "answer": "a",
+      "subtopic": "coordinate geometry"
+    },
+    {
+      "id": 141,
+      "question": "What is the volume of a triangular prism with base area 30 cm² and height 15 cm?",
+      "options": {
+        "a": "450 cm³",
+        "b": "225 cm³",
+        "c": "900 cm³",
+        "d": "45 cm³"
+      },
+      "answer": "a",
+      "subtopic": "volume and surface area"
+    }
+  ]
+}
