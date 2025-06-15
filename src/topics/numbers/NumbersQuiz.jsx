@@ -27,7 +27,8 @@ const useLocalStorage = (key, defaultValue) => {
   return [value, setStoredValue];
 };
 
-const NumbersQuizPage = () => {
+const NumbersQuiz
+ = () => {
   // Load saved progress
   const [currentNumber, setCurrentNumber] = useLocalStorage(
     "current-number",
@@ -198,4 +199,5 @@ const NumbersQuizPage = () => {
   );
 };
 
-export default NumbersQuizPage;
+export default NumbersQuiz
+;

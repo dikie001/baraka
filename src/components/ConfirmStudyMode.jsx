@@ -9,10 +9,6 @@ const ConfirmStudyMode = () => {
     const navigate = useNavigate()
   const [page, setPage] = useLocalStorage("choose-page", "choosePage");
 
-  const handleMCQs=()=>{
-    setPage("MCQs")
-    navigate("/numbers-quiz")
-  }
   return (
     
        
@@ -73,7 +69,7 @@ const ConfirmStudyMode = () => {
     
                     {/* MCQs button */}
                     <button
-                      onClick={handleMCQs}
+                      onClick={()=>setPage("MCQs")}
                       className="group relative overflow-hidden bg-gradient-to-br from-purple-700  to-pink-700 hover:from-pink-500 hover:via-red-500 hover:to-purple-600 p-6 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-pink-500/25 active:scale-95"
                     >
                       <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>

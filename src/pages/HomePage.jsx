@@ -26,8 +26,12 @@ import { useLocalStorage } from "@uidotdev/usehooks";
 export default function HomePage() {
   const [activeTab, setActiveTab] = useState("home");
   const numbersProgress = localStorage.getItem("current-number");
+  const [page, setPage] = useLocalStorage("choose-page", null);
   const navigate = useNavigate();
 
+  useEffect(()=>{
+    setPage("choosePage")
+  },[])
   const topics = [
     {
       name: "Numbers",
@@ -41,35 +45,35 @@ export default function HomePage() {
       icon: <FunctionSquare />,
       progress: 72,
       to: "/algebra",
-      about:"Explore algebraic rules"
+      about: "Explore algebraic rules",
     },
     {
       name: "Geometry",
       icon: <Triangle />,
       progress: 45,
       to: "/geometry",
-      about:"Learn spartial reasoning"
+      about: "Learn spartial reasoning",
     },
     {
       name: "Measurement",
       icon: <Scale />,
       progress: 30,
       to: "/measurement",
-      about:"Estimate and measure"
+      about: "Estimate and measure",
     },
     {
       name: "Data Handling",
       icon: <BarChart2Icon />,
       progress: 30,
-      to: "/data-handling",
-      about:"Interprete data"
+      to: "/data",
+      about: "Interprete data",
     },
     {
       name: "Probability",
       icon: <Dices />,
       progress: 30,
       to: "/probability",
-      about:"Predict with reasoning"
+      about: "Predict with reasoning",
     },
   ];
 
@@ -190,7 +194,7 @@ export default function HomePage() {
                         {topic.name}
                       </h4>
                       <p className="text-xs lg:text-sm text-purple-300 mb-3">
-                        {topic.about} 
+                        {topic.about}
                       </p>
                       <div className="bg-slate-600/50 rounded-full h-2 lg:h-3 mb-2">
                         <div

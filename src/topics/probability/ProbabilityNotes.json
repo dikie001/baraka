@@ -1,0 +1,121 @@
+{
+  "topic": "Probability",
+  "grade": 9,
+  "revision_content": {
+    "description": "Understand the basics of probability—how likely events are to happen, using simple experiments, fractions, and logic.",
+    "subtopics": [
+      {
+        "title": "Basic Probability",
+        "definition": "Probability is the measure of how likely an event is to happen, ranging from 0 (impossible) to 1 (certain).",
+        "symbol": "P(Event) = Favorable Outcomes ÷ Total Outcomes",
+        "example": {
+          "question": "A bag has 3 red and 2 blue balls. What is the probability of picking a red ball?",
+          "answer": "P(Red) = 3 ÷ (3+2) = 3/5"
+        },
+        "whyItMatters": "Probability helps us make informed decisions in real life—from sports to weather forecasts to gambling odds.",
+        "quickTips": [
+          "Probability is always between 0 and 1.",
+          "You can express it as a fraction, decimal, or percentage."
+        ]
+      },
+      {
+        "title": "Equally Likely Outcomes",
+        "definition": "Events where each possible outcome has the same chance of happening.",
+        "symbol": "All outcomes are fair",
+        "example": {
+          "question": "When tossing a fair coin, what is the chance of getting heads?",
+          "answer": "1/2"
+        },
+        "whyItMatters": "Understanding fairness helps you know when experiments are unbiased.",
+        "quickTips": [
+          "Always check if the experiment is fair.",
+          "Don’t assume outcomes are equally likely—check the setup."
+        ]
+      },
+      {
+        "title": "Impossible and Certain Events",
+        "definition": "An impossible event has a probability of 0; a certain event has a probability of 1.",
+        "symbol": "P = 0 (impossible), P = 1 (certain)",
+        "example": {
+          "question": "What’s the probability of rolling a 7 on a 6-sided die?",
+          "answer": "0 (impossible)"
+        },
+        "whyItMatters": "Knowing extremes helps set the boundaries of possibility.",
+        "quickTips": [
+          "Nothing can have a probability less than 0 or more than 1.",
+          "Use common sense—don’t overthink impossible outcomes."
+        ]
+      },
+      {
+        "title": "Listing Outcomes (Sample Space)",
+        "definition": "All the possible results of a probability experiment.",
+        "symbol": "S = {All outcomes}",
+        "example": {
+          "question": "Sample space when tossing 2 coins?",
+          "answer": "S = {HH, HT, TH, TT}"
+        },
+        "whyItMatters": "Knowing all possible outcomes helps calculate accurate probabilities.",
+        "quickTips": [
+          "Use a tree diagram or table to list complex sample spaces.",
+          "Sample space = total number of outcomes."
+        ]
+      },
+      {
+        "title": "Experimental vs Theoretical Probability",
+        "definition": "Theoretical is calculated using math; experimental is based on actual results from trials.",
+        "symbol": "Theoretical = expected | Experimental = observed",
+        "example": {
+          "question": "If you toss a coin 10 times and get heads 6 times, what's the experimental probability of heads?",
+          "answer": "6/10 = 0.6"
+        },
+        "whyItMatters": "Theoretical helps predict, experimental tests reality.",
+        "quickTips": [
+          "Larger number of trials gives more accurate experimental results.",
+          "Compare both to spot bias or errors."
+        ]
+      },
+      {
+        "title": "Simple Events with Dice and Coins",
+        "definition": "Calculating the chance of outcomes in basic experiments like tossing coins or rolling dice.",
+        "symbol": "Fair die: 1–6 | Coin: Heads/Tails",
+        "example": {
+          "question": "Probability of rolling an even number on a dice?",
+          "answer": "P = 3/6 = 1/2"
+        },
+        "whyItMatters": "Common in exams and builds intuition for harder questions.",
+        "quickTips": [
+          "Always count favorable and total outcomes.",
+          "Use symmetry—dice and coins are balanced."
+        ]
+      },
+      {
+        "title": "Mutually Exclusive Events",
+        "definition": "Events that cannot happen at the same time.",
+        "symbol": "P(A or B) = P(A) + P(B)",
+        "example": {
+          "question": "Chance of rolling a 2 or a 5?",
+          "answer": "1/6 + 1/6 = 2/6 = 1/3"
+        },
+        "whyItMatters": "This is the first step toward adding probabilities correctly.",
+        "quickTips": [
+          "Check if events can overlap. If not, they’re exclusive.",
+          "‘OR’ usually means add in probability."
+        ]
+      },
+      {
+        "title": "Complementary Events",
+        "definition": "Events that cover all outcomes together (one happens if the other doesn’t).",
+        "symbol": "P(A') = 1 - P(A)",
+        "example": {
+          "question": "If chance of rain is 0.3, what’s the chance it won’t rain?",
+          "answer": "1 - 0.3 = 0.7"
+        },
+        "whyItMatters": "Helps you find missing probabilities easily.",
+        "quickTips": [
+          "The sum of complementary events is always 1.",
+          "Use this trick to double-check answers."
+        ]
+      }
+    ]
+  }
+}

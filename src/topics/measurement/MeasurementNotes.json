@@ -1,0 +1,129 @@
+{
+  "topic": "Measurement",
+  "grade": 9,
+  "revision_content": {
+    "description": "Learn how to measure, convert, and calculate quantities like length, area, volume, mass, and time using both standard and metric units.",
+    "subtopics": [
+      {
+        "title": "Units of Measurement",
+        "definition": "These are standardized quantities used to express physical properties like length, mass, volume, and time.",
+        "symbol": "m, cm, kg, L, s",
+        "example": {
+          "question": "What is the SI unit of length?",
+          "answer": "Metre (m)"
+        },
+        "whyItMatters": "Units help us communicate quantities clearly and consistently worldwide.",
+        "quickTips": [
+          "Always include units in your final answer.",
+          "Stick to SI units unless told otherwise."
+        ]
+      },
+      {
+        "title": "Conversions Between Units",
+        "definition": "Changing from one unit to another, like cm to m or minutes to hours.",
+        "symbol": "1 m = 100 cm, 60 min = 1 hr",
+        "example": {
+          "question": "Convert 250 cm to metres.",
+          "answer": "250 ÷ 100 = 2.5 m"
+        },
+        "whyItMatters": "Conversions are needed in cooking, travel, sports, and science.",
+        "quickTips": [
+          "To go from smaller to bigger, divide.",
+          "To go from bigger to smaller, multiply."
+        ]
+      },
+      {
+        "title": "Perimeter of 2D Shapes",
+        "definition": "The total distance around the boundary of a 2D shape.",
+        "symbol": "P = a + b + c + ...",
+        "example": {
+          "question": "Find the perimeter of a rectangle: length = 5cm, width = 3cm.",
+          "answer": "P = 2(5 + 3) = 16 cm"
+        },
+        "whyItMatters": "Used in fencing, construction, and layout planning.",
+        "quickTips": ["Use correct shape formula.", "Add all sides together."]
+      },
+      {
+        "title": "Area of 2D Shapes",
+        "definition": "Amount of surface a shape covers.",
+        "symbol": "A = l × w (rectangle), A = ½bh (triangle)",
+        "example": {
+          "question": "Area of a triangle with base 6 cm and height 4 cm?",
+          "answer": "A = ½ × 6 × 4 = 12 cm²"
+        },
+        "whyItMatters": "Crucial in farming, tiling, land measuring, etc.",
+        "quickTips": [
+          "Units are always squared (e.g. cm²).",
+          "Use different formulas for different shapes."
+        ]
+      },
+      {
+        "title": "Surface Area of 3D Shapes",
+        "definition": "The total area covering the outside of a 3D object.",
+        "symbol": "SA = 6l² (cube), SA = 2πrh + 2πr² (cylinder)",
+        "example": {
+          "question": "Find the surface area of a cube with side 4 cm.",
+          "answer": "SA = 6 × 4² = 96 cm²"
+        },
+        "whyItMatters": "Used in painting, wrapping, and manufacturing.",
+        "quickTips": [
+          "Visualize the 3D shape as flat nets.",
+          "Add up areas of all visible faces."
+        ]
+      },
+      {
+        "title": "Volume of Solids",
+        "definition": "The amount of space occupied by a 3D object.",
+        "symbol": "V = l × w × h (cuboid), V = πr²h (cylinder)",
+        "example": {
+          "question": "Volume of a cuboid 3cm × 4cm × 5cm?",
+          "answer": "V = 3 × 4 × 5 = 60 cm³"
+        },
+        "whyItMatters": "Used in storage, packaging, fuel tanks, etc.",
+        "quickTips": [
+          "Always use same units before calculating.",
+          "Volume units are always cubic (e.g. cm³)."
+        ]
+      },
+      {
+        "title": "Mass and Weight",
+        "definition": "Mass is the amount of matter in an object; weight is the force of gravity on that mass.",
+        "symbol": "Mass: kg, g | Weight: N",
+        "example": {
+          "question": "Which is heavier: 2kg or 1500g?",
+          "answer": "2 kg = 2000g → heavier"
+        },
+        "whyItMatters": "Essential in cooking, buying items, or packaging.",
+        "quickTips": ["1 kg = 1000 g", "Weight = Mass × Gravity (W = mg)"]
+      },
+      {
+        "title": "Time and Timetables",
+        "definition": "Time is measured in hours, minutes, and seconds. Timetables help organize and plan events.",
+        "symbol": "24-hr or 12-hr clock",
+        "example": {
+          "question": "Convert 3:45 PM to 24-hour time.",
+          "answer": "15:45"
+        },
+        "whyItMatters": "Time is essential in travel, school, work, and sports.",
+        "quickTips": [
+          "AM is before noon, PM is after noon.",
+          "Learn to read and interpret timetables accurately."
+        ]
+      },
+      {
+        "title": "Speed, Distance and Time",
+        "definition": "Relationship between how far, how fast, and how long.",
+        "symbol": "Speed = Distance ÷ Time",
+        "example": {
+          "question": "A car travels 120 km in 2 hours. Find the speed.",
+          "answer": "Speed = 120 ÷ 2 = 60 km/h"
+        },
+        "whyItMatters": "Key in transport, racing, delivery, and physics.",
+        "quickTips": [
+          "Use the triangle method to remember: DST (Distance = Speed × Time)",
+          "Keep units consistent (convert if necessary)."
+        ]
+      }
+    ]
+  }
+}

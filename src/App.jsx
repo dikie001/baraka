@@ -1,21 +1,27 @@
-import React from 'react'
-import BarakaMathApp from './pages/HomePage'
-import { BrowserRouter as Router, Routes,Route } from 'react-router-dom'
-import AuthPage from './pages/Auth'
-import Numbers from './topics/numbers/Numbers'
+import { useLocalStorage } from '@uidotdev/usehooks'
+import React, { useEffect } from 'react'
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
 import DailyChallenge from './dailyChallenge/DailyChallenge'
-import QuickPractice from './quickPractice/QuickPractice'
-import Practice from './practice/Practice'
-import Profile from './pages/Profile'
 import AchievementsPage from './pages/Achievement'
+import AuthPage from './pages/Auth'
+import BarakaMathApp from './pages/HomePage'
+import Profile from './pages/Profile'
+import Practice from './practice/Practice'
+import QuickPractice from './quickPractice/QuickPractice'
 import Algebra from './topics/algebra/Algebra'
 import Data from './topics/data/Data'
-import Measurement from './topics/measurement/Measurement'
-import Probability from './topics/probability/Probability'
 import Geometry from './topics/geometry/Geometry'
-import NumbersQuizPage from './topics/numbers/NumbersQuiz'
+import Numbers from './topics/numbers/Numbers'
+import NumbersQuiz from './topics/numbers/NumbersQuiz'
+import { Measurement } from './topics/measurement/Measurement'
+import { Probability } from './topics/probability/Probability'
 
 const App = () => {
+  
+  const [page,setPage]=useLocalStorage("choose-page","choosePage")
+  useEffect(()=>{
+        setPage("choosePage")
+  },[])
   return (
     <Router>
       <Routes>
@@ -28,13 +34,11 @@ const App = () => {
         <Route path="/profile" element={<Profile />} />
         <Route path="/achievements" element={<AchievementsPage />} />
         <Route path="/algebra" element={<Algebra />} />
-        <Route path="/measurement" element={<Measurement />} />
         <Route path="/probability" element={<Probability />} />
         <Route path="/geometry" element={<Geometry />} />
-        <Route path="/data-handling" element={<Data />} />
-        <Route path="/numbers-quiz" element={<NumbersQuizPage />} />
-
+        <Route path="/numbers-quiz" element={<NumbersQuiz />} />
         <Route path="/data" element={<Data />} />
+        <Route path="/measurement" element={<Measurement />} />
       </Routes>
     </Router>
   );

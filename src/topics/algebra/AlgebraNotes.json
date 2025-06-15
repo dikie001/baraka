@@ -1,0 +1,163 @@
+{
+  "topic": "Algebra",
+  "grade": 9,
+  "revision_content": {
+    "description": "Understand the language of algebra, its rules, expressions, equations, and how to solve problems using logic and reasoning.",
+    "subtopics": [
+      {
+        "title": "Introduction to Algebra",
+        "definition": "Algebra is a branch of mathematics that uses letters and symbols to represent numbers and quantities in formulas and equations.",
+        "symbol": "x, y, a, b",
+        "example": {
+          "question": "If x = 3, what is the value of 2x + 4?",
+          "answer": "2(3) + 4 = 6 + 4 = 10"
+        },
+        "whyItMatters": "Algebra helps us solve everyday problems logically, like budgeting, planning, or comparing quantities.",
+        "quickTips": [
+          "Think of letters like mystery boxes hiding numbers.",
+          "Substitute values into expressions to find answers."
+        ]
+      },
+      {
+        "title": "Algebraic Expressions",
+        "definition": "These are combinations of variables, numbers, and operations (like +, −, ×, ÷).",
+        "symbol": "e.g. 3x + 2",
+        "example": {
+          "question": "Simplify: 2x + 3x",
+          "answer": "5x"
+        },
+        "whyItMatters": "Expressions are like math sentences. You need them to solve bigger math stories.",
+        "quickTips": [
+          "Only like terms can be added or subtracted (e.g. x with x, not x with y).",
+          "Always arrange terms neatly – constants last."
+        ]
+      },
+      {
+        "title": "Like and Unlike Terms",
+        "definition": "Like terms have the same variables raised to the same power. Unlike terms don’t.",
+        "symbol": "Like: 2x, 5x | Unlike: 2x, 3y",
+        "example": {
+          "question": "Are 4xy and 7yx like terms?",
+          "answer": "Yes, because multiplication is commutative (xy = yx)."
+        },
+        "whyItMatters": "Knowing what to combine helps you simplify and solve faster.",
+        "quickTips": [
+          "Check variable types and powers carefully.",
+          "Rearranging doesn’t change like-ness."
+        ]
+      },
+      {
+        "title": "Simplifying Expressions",
+        "definition": "This means reducing an expression to its simplest form by combining like terms.",
+        "symbol": "e.g. 2a + 3a - a = 4a",
+        "example": {
+          "question": "Simplify: 5x - 2x + x",
+          "answer": "4x"
+        },
+        "whyItMatters": "Simplification makes problems clearer and easier to work with.",
+        "quickTips": [
+          "Always start with combining like terms.",
+          "Be careful with signs, especially negatives!"
+        ]
+      },
+      {
+        "title": "Substitution in Algebra",
+        "definition": "Replacing a variable in an expression with its actual value.",
+        "symbol": "Let x = 2 in 3x → 3(2) = 6",
+        "example": {
+          "question": "Evaluate: 4y + 2 when y = 5",
+          "answer": "4(5) + 2 = 22"
+        },
+        "whyItMatters": "Substitution helps test solutions and solve real-world problems.",
+        "quickTips": [
+          "Put brackets around values when substituting.",
+          "Follow BIDMAS/BODMAS order of operations."
+        ]
+      },
+      {
+        "title": "Forming Equations",
+        "definition": "Turning word problems or relationships into mathematical statements with unknowns.",
+        "symbol": "Let the number be x",
+        "example": {
+          "question": "If a number plus 4 equals 10, what’s the equation?",
+          "answer": "x + 4 = 10"
+        },
+        "whyItMatters": "Equations help turn real-life problems into solvable math forms.",
+        "quickTips": [
+          "Use ‘let’ statements to define unknowns.",
+          "Always read the problem twice before forming."
+        ]
+      },
+      {
+        "title": "Solving Linear Equations in One Variable",
+        "definition": "Finding the value of the unknown that makes the equation true.",
+        "symbol": "ax + b = c",
+        "example": {
+          "question": "Solve: 3x + 2 = 11",
+          "answer": "3x = 9 → x = 3"
+        },
+        "whyItMatters": "Solving equations is key in planning, designing, or balancing anything involving quantities.",
+        "quickTips": [
+          "Keep both sides balanced — what you do on one side, do on the other.",
+          "Work step-by-step to isolate the variable."
+        ]
+      },
+      {
+        "title": "Equations with Brackets",
+        "definition": "Equations that contain brackets and need expansion before solving.",
+        "symbol": "a(b + c) = ab + ac",
+        "example": {
+          "question": "Solve: 2(x + 3) = 10",
+          "answer": "2x + 6 = 10 → 2x = 4 → x = 2"
+        },
+        "whyItMatters": "Real-world problems often involve multiple steps — this builds that skill.",
+        "quickTips": [
+          "Expand brackets before solving.",
+          "Watch out for signs when distributing."
+        ]
+      },
+      {
+        "title": "Word Problems in Algebra",
+        "definition": "Using algebra to interpret and solve everyday life situations described in words.",
+        "symbol": "Let x be...",
+        "example": {
+          "question": "John is 4 years older than Tim. The sum of their ages is 28. Find their ages.",
+          "answer": "Let Tim = x → John = x + 4 → x + (x + 4) = 28 → 2x + 4 = 28 → x = 12, John = 16"
+        },
+        "whyItMatters": "Algebra is everywhere — budgeting, planning, comparing prices — it’s life math.",
+        "quickTips": [
+          "Define variables clearly.",
+          "Translate slowly and carefully — every word matters."
+        ]
+      },
+      {
+        "title": "Common Mistakes in Algebra",
+        "definition": "Errors students often make when working with algebra.",
+        "symbol": "e.g. Forgetting signs or mixing unlike terms",
+        "example": {
+          "question": "What’s wrong with: 3a + 2b = 5ab?",
+          "answer": "You can’t combine unlike terms. That’s illegal math! 🚫"
+        },
+        "whyItMatters": "Knowing what not to do is just as powerful as knowing what to do.",
+        "quickTips": [
+          "Don't add apples to oranges — like terms only.",
+          "Always double-check signs and balance."
+        ]
+      },
+      {
+        "title": "Real-Life Applications of Algebra",
+        "definition": "Using algebra in real-world situations like business, science, or tech.",
+        "symbol": "e.g. Profit = Selling Price - Cost Price",
+        "example": {
+          "question": "A shop sells pens for x shillings each. If they sell 10 pens and make a profit of 200, what’s the profit equation?",
+          "answer": "Profit = 10x - Cost → 10x - Cost = 200"
+        },
+        "whyItMatters": "Algebra is behind smart decisions in business, coding, engineering, and more.",
+        "quickTips": [
+          "Learn to model situations with variables.",
+          "Every formula is just algebra wearing a suit."
+        ]
+      }
+    ]
+  }
+}

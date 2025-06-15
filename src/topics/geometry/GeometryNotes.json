@@ -1,0 +1,132 @@
+{
+  "topic": "Geometry",
+  "grade": 9,
+  "revision_content": {
+    "description": "Explore shapes, sizes, angles, and the properties of space to understand how objects relate and interact in 2D and 3D.",
+    "subtopics": [
+      {
+        "title": "Basic Geometric Terms",
+        "definition": "These are the building blocks of geometry including points, lines, and planes.",
+        "symbol": "Point (•), Line (↔), Plane",
+        "example": {
+          "question": "What do we call a flat surface that extends infinitely?",
+          "answer": "A plane"
+        },
+        "whyItMatters": "Understanding the basics helps build more complex geometric ideas.",
+        "quickTips": [
+          "A point shows location but has no size.",
+          "A line is infinite in both directions."
+        ]
+      },
+      {
+        "title": "Types of Angles",
+        "definition": "Angles are formed when two rays meet at a point. They are classified by their size.",
+        "symbol": "∠",
+        "example": {
+          "question": "What type of angle is 90°?",
+          "answer": "Right angle"
+        },
+        "whyItMatters": "Angles are everywhere – doors, ramps, art, design – recognizing them helps in real-world design.",
+        "quickTips": [
+          "Acute < 90°, Right = 90°, Obtuse > 90° but < 180°",
+          "Angles are measured in degrees (°)"
+        ]
+      },
+      {
+        "title": "Triangles and Their Types",
+        "definition": "A triangle is a 3-sided polygon with different types based on sides and angles.",
+        "symbol": "△",
+        "example": {
+          "question": "Name a triangle with all sides equal.",
+          "answer": "Equilateral triangle"
+        },
+        "whyItMatters": "Triangles form the base of many structures and appear often in technical fields.",
+        "quickTips": [
+          "Equilateral = all equal sides",
+          "Right-angled = one angle is 90°"
+        ]
+      },
+      {
+        "title": "Properties of Triangles",
+        "definition": "Rules that govern triangle angles, sides, and symmetry.",
+        "symbol": "∠A + ∠B + ∠C = 180°",
+        "example": {
+          "question": "What is the sum of interior angles of a triangle?",
+          "answer": "180°"
+        },
+        "whyItMatters": "These rules help solve geometric problems quickly.",
+        "quickTips": [
+          "Exterior angle = sum of opposite interior angles",
+          "Isosceles triangles have 2 equal sides & angles"
+        ]
+      },
+      {
+        "title": "Quadrilaterals",
+        "definition": "Four-sided polygons like squares, rectangles, trapeziums, and parallelograms.",
+        "symbol": "□, ▭",
+        "example": {
+          "question": "Which quadrilateral has all angles 90° and all sides equal?",
+          "answer": "Square"
+        },
+        "whyItMatters": "Used in design, architecture, and layout planning.",
+        "quickTips": [
+          "Sum of interior angles = 360°",
+          "Opposite sides of a rectangle are equal"
+        ]
+      },
+      {
+        "title": "Congruency and Similarity",
+        "definition": "Congruent shapes are exactly the same size and shape; similar shapes have the same shape but different sizes.",
+        "symbol": "≅ for congruent, ∼ for similar",
+        "example": {
+          "question": "Are two triangles with equal angles but different side lengths similar or congruent?",
+          "answer": "Similar"
+        },
+        "whyItMatters": "Helps in resizing, scaling, and pattern recognition.",
+        "quickTips": [
+          "Congruent = same size, same shape",
+          "Similar = same shape, proportional sides"
+        ]
+      },
+      {
+        "title": "Circles",
+        "definition": "A set of points that are all the same distance from a fixed center point.",
+        "symbol": "π, r, d",
+        "example": {
+          "question": "What is the formula for the area of a circle?",
+          "answer": "A = πr²"
+        },
+        "whyItMatters": "Circles appear in wheels, gears, logos, art, and real-world motion.",
+        "quickTips": ["π ≈ 3.14", "Diameter = 2 × radius"]
+      },
+      {
+        "title": "Geometrical Constructions",
+        "definition": "Drawing shapes, angles, and lines accurately using a compass and ruler.",
+        "symbol": "Construct ∠60°",
+        "example": {
+          "question": "Which tool is used to draw arcs and angles accurately?",
+          "answer": "A compass"
+        },
+        "whyItMatters": "Precision drawing is vital in engineering, design, and art.",
+        "quickTips": [
+          "Start with a base line.",
+          "Use compass for accuracy – no eyeballing!"
+        ]
+      },
+      {
+        "title": "3D Shapes and Nets",
+        "definition": "3D shapes have length, width, and height. Nets are 2D layouts that fold into 3D shapes.",
+        "symbol": "Cube, Cylinder, Cone",
+        "example": {
+          "question": "What 3D shape has one curved surface and one flat circular face?",
+          "answer": "Cone"
+        },
+        "whyItMatters": "Helps understand how real-world objects are structured.",
+        "quickTips": [
+          "Volume = space inside; Surface Area = total outer area",
+          "Practice drawing nets to improve spatial thinking"
+        ]
+      }
+    ]
+  }
+}

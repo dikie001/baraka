@@ -1,0 +1,149 @@
+{
+  "topic": "Data Handling",
+  "grade": 9,
+  "revision_content": {
+    "description": "Learn how to collect, organize, present, interpret, and analyze data using various tools like graphs, charts, and statistical methods.",
+    "subtopics": [
+      {
+        "title": "Data Collection",
+        "definition": "The process of gathering information or facts for analysis.",
+        "symbol": "Raw Data",
+        "example": {
+          "question": "Give one method of collecting data.",
+          "answer": "Using questionnaires"
+        },
+        "whyItMatters": "All decisions in research and planning start with good data.",
+        "quickTips": [
+          "Use clear and unbiased questions.",
+          "Always record data accurately."
+        ]
+      },
+      {
+        "title": "Types of Data",
+        "definition": "Data can be qualitative (descriptive) or quantitative (numerical).",
+        "symbol": "Qualitative & Quantitative",
+        "example": {
+          "question": "Is 'favourite colour' qualitative or quantitative?",
+          "answer": "Qualitative"
+        },
+        "whyItMatters": "Different types need different ways of organizing and displaying.",
+        "quickTips": [
+          "Discrete = Counted (like students), Continuous = Measured (like height)",
+          "Know your data type before analysis."
+        ]
+      },
+      {
+        "title": "Frequency Tables",
+        "definition": "A table that shows how often each value in a data set occurs.",
+        "symbol": "Tally, Frequency",
+        "example": {
+          "question": "If 5 students scored 10 marks, what’s the frequency of 10?",
+          "answer": "5"
+        },
+        "whyItMatters": "Helps organize raw data for easier interpretation.",
+        "quickTips": [
+          "Use tally marks for easier counting.",
+          "Include totals at the bottom."
+        ]
+      },
+      {
+        "title": "Bar Graphs",
+        "definition": "A chart that uses bars to represent data values visually.",
+        "symbol": "📊",
+        "example": {
+          "question": "What do we label on the x-axis in a bar graph?",
+          "answer": "Categories (e.g. subjects)"
+        },
+        "whyItMatters": "Bar graphs make comparisons between categories very clear.",
+        "quickTips": [
+          "Bars should be equal width, spaced equally.",
+          "Y-axis always has the numbers (frequency)."
+        ]
+      },
+      {
+        "title": "Line Graphs",
+        "definition": "A graph that uses points connected by lines to show changes over time.",
+        "symbol": "📈",
+        "example": {
+          "question": "When is a line graph most useful?",
+          "answer": "To show trends over time"
+        },
+        "whyItMatters": "Used in weather, finance, growth tracking, etc.",
+        "quickTips": [
+          "Always connect the dots in order.",
+          "Use a title and label axes clearly."
+        ]
+      },
+      {
+        "title": "Pie Charts",
+        "definition": "A circular chart divided into sectors showing proportions.",
+        "symbol": "🔵 (360°)",
+        "example": {
+          "question": "What angle represents 25% in a pie chart?",
+          "answer": "25% of 360° = 90°"
+        },
+        "whyItMatters": "Pie charts help in showing parts of a whole clearly.",
+        "quickTips": [
+          "Total angles must equal 360°.",
+          "Convert data to percentages or fractions first."
+        ]
+      },
+      {
+        "title": "Mean (Average)",
+        "definition": "The total sum of values divided by the number of values.",
+        "symbol": "Mean = Σx ÷ n",
+        "example": {
+          "question": "Find the mean of 5, 10, 15.",
+          "answer": "(5+10+15)/3 = 10"
+        },
+        "whyItMatters": "A quick summary of overall data performance.",
+        "quickTips": [
+          "Always add all data values before dividing.",
+          "Use mean to compare sets of data."
+        ]
+      },
+      {
+        "title": "Median",
+        "definition": "The middle value when data is arranged in order.",
+        "symbol": "Middle number",
+        "example": {
+          "question": "What is the median of 3, 6, 8, 12, 14?",
+          "answer": "8"
+        },
+        "whyItMatters": "Gives the center of the data, unaffected by outliers.",
+        "quickTips": [
+          "If even number of items, average the two middle ones.",
+          "Always sort data before finding median."
+        ]
+      },
+      {
+        "title": "Mode",
+        "definition": "The value that appears most frequently in a data set.",
+        "symbol": "Most repeated",
+        "example": {
+          "question": "Mode of 2, 3, 3, 4, 5?",
+          "answer": "3"
+        },
+        "whyItMatters": "Useful when you want the most popular or common item.",
+        "quickTips": [
+          "There can be more than one mode.",
+          "If no value repeats, there’s no mode."
+        ]
+      },
+      {
+        "title": "Range",
+        "definition": "The difference between the highest and lowest values.",
+        "symbol": "Range = Max - Min",
+        "example": {
+          "question": "Range of 2, 5, 8, 10?",
+          "answer": "10 - 2 = 8"
+        },
+        "whyItMatters": "Shows how spread out the data is.",
+        "quickTips": [
+          "Check for any extreme values.",
+          "Range helps in identifying variability."
+        ]
+      }
+    ]
+  }
+}
