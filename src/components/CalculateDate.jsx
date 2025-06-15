@@ -74,7 +74,7 @@ const CalculateDate = () => {
         aria-label="Toggle subpage"
       >
         <ChevronRight
-          className={`w-6 h-6 transition-all duration-500 ${
+          className={`w-6 h-6 transition-all duration-300 ${
             !isModalOpen ? "rotate-180 text-purple-200" : "text-white"
           }`}
         />

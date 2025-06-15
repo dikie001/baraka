@@ -26,6 +26,7 @@ import { useLocalStorage } from "@uidotdev/usehooks";
 export default function HomePage() {
   const [activeTab, setActiveTab] = useState("home");
   const numbersProgress = localStorage.getItem("current-number");
+  const algebraProgress = localStorage.getItem("current-number-algebra")
   const [page, setPage] = useLocalStorage("choose-page", null);
   const navigate = useNavigate();
 
@@ -43,7 +44,7 @@ export default function HomePage() {
     {
       name: "Algebra",
       icon: <FunctionSquare />,
-      progress: 72,
+      progress: algebraProgress ,
       to: "/algebra",
       about: "Explore algebraic rules",
     },

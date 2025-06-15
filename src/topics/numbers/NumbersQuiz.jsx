@@ -125,9 +125,7 @@ const NumbersQuiz
       {/* Main quiz card */}
       <div className="max-w-2xl mx-auto">
         <div className="bg-slate-800/60 backdrop-blur-lg p-8 rounded-3xl shadow-2xl border border-purple-500/30 relative overflow-hidden">
-          {/* Decorative gradient overlay */}
-          <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-purple-500 via-pink-500 to-purple-500"></div>
-
+          
           <div className="flex items-start justify-between">
             <p className="absolute top-3 text-gray-400 text-sm font-semibold">
               {question.subtopic}
