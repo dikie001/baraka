@@ -1,0 +1,125 @@
+{
+  "subtopic": "measurement",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Convert 3.6 kilometers to meters.",
+      "options": {
+        "a": "360 m",
+        "b": "3600 m",
+        "c": "36 m",
+        "d": "0.36 m"
+      },
+      "answer": "b",
+      "subtopic": "unit conversion"
+    },
+    {
+      "id": 2,
+      "question": "What is the area of a rectangle with length 12 cm and width 7 cm?",
+      "options": {
+        "a": "84 cm²",
+        "b": "19 cm²",
+        "c": "42 cm²",
+        "d": "92 cm²"
+      },
+      "answer": "a",
+      "subtopic": "area"
+    },
+    {
+      "id": 3,
+      "question": "Find the volume of a cube with side length 5 cm.",
+      "options": {
+        "a": "125 cm³",
+        "b": "25 cm³",
+        "c": "100 cm³",
+        "d": "15 cm³"
+      },
+      "answer": "a",
+      "subtopic": "volume"
+    },
+    {
+      "id": 4,
+      "question": "A tank is 2 m long, 1.5 m wide and 1 m high. What is its volume in cubic meters?",
+      "options": {
+        "a": "3 m³",
+        "b": "2.5 m³",
+        "c": "4 m³",
+        "d": "1.5 m³"
+      },
+      "answer": "a",
+      "subtopic": "volume"
+    },
+    {
+      "id": 5,
+      "question": "Convert 4500 cm³ to liters.",
+      "options": {
+        "a": "4.5 L",
+        "b": "45 L",
+        "c": "0.45 L",
+        "d": "450 L"
+      },
+      "answer": "a",
+      "subtopic": "unit conversion"
+    },
+    {
+      "id": 6,
+      "question": "If the scale of a map is 1:100,000, what distance on the ground does 2 cm on the map represent?",
+      "options": {
+        "a": "2 km",
+        "b": "200 m",
+        "c": "20 km",
+        "d": "0.2 km"
+      },
+      "answer": "a",
+      "subtopic": "scale drawing"
+    },
+    {
+      "id": 7,
+      "question": "A cylindrical water tank has a radius of 3 m and a height of 10 m. What is its volume? (Use π ≈ 3.14)",
+      "options": {
+        "a": "282.6 m³",
+        "b": "94.2 m³",
+        "c": "141.3 m³",
+        "d": "471 m³"
+      },
+      "answer": "a",
+      "subtopic": "volume"
+    },
+    {
+      "id": 8,
+      "question": "A car travels 150 km in 3 hours. What is its average speed?",
+      "options": {
+        "a": "50 km/h",
+        "b": "30 km/h",
+        "c": "45 km/h",
+        "d": "60 km/h"
+      },
+      "answer": "a",
+      "subtopic": "speed"
+    },
+    {
+      "id": 9,
+      "question": "Find the surface area of a cube with a side length of 4 cm.",
+      "options": {
+        "a": "96 cm²",
+        "b": "64 cm²",
+        "c": "48 cm²",
+        "d": "36 cm²"
+      },
+      "answer": "a",
+      "subtopic": "surface area"
+    },
+    {
+      "id": 10,
+      "question": "What is the density of a block with mass 200 g and volume 50 cm³?",
+      "options": {
+        "a": "4 g/cm³",
+        "b": "0.25 g/cm³",
+        "c": "2.5 g/cm³",
+        "d": "5 g/cm³"
+      },
+      "answer": "a",
+      "subtopic": "density"
+    }
+  ]
+}

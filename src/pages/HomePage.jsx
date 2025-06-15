@@ -27,13 +27,18 @@ export default function HomePage() {
   const [activeTab, setActiveTab] = useState("home");
 
   const numbersProgress = localStorage.getItem("current-number");
-  const numbersScore = localStorage.getItem("numbers-percentage-score");
 
   const algebraProgress = localStorage.getItem("current-number-algebra");
-  const algebraScore = localStorage.getItem("algebra-percentage-score")
 
   const geometryProgress = localStorage.getItem("current-number-geometry");
-  const geometryScore = localStorage.getItem("geometry-percentage-score");
+
+  const measurementProgress = localStorage.getItem("current-number-measurement" )
+  const measurementTotalQuiz = localStorage.getItem("measurement-quiz-length")
+  const MP = Number(measurementProgress) +1
+  
+
+  
+  
 
   const [page, setPage] = useLocalStorage("choose-page", null);
   const navigate = useNavigate();
@@ -48,7 +53,6 @@ export default function HomePage() {
       progress: numbersProgress || 0,
       to: "/numbers",
       about: "Build math foundation ",
-      score: numbersScore,
     },
     {
       name: "Algebra",
@@ -56,7 +60,6 @@ export default function HomePage() {
       progress: algebraProgress || 0,
       to: "/algebra",
       about: "Explore algebraic rules",
-      score: algebraScore,
     },
     {
       name: "Geometry",
@@ -64,12 +67,11 @@ export default function HomePage() {
       progress: geometryProgress || 0,
       to: "/geometry",
       about: "Learn spartial reasoning",
-      score: geometryScore,
     },
     {
       name: "Measurement",
       icon: <Scale />,
-      progress: 30,
+      progress: (MP  / measurementTotalQuiz ) * 100 ,
       to: "/measurement",
       about: "Estimate and measure",
     },
@@ -207,7 +209,7 @@ export default function HomePage() {
                       {/* <p className="absolute p-1 top-2 right-2 text-gray-200  rounded-lg ring ring-purple-700/70">
                         Score: <span className="font-semibold text-b">{topic.score}%</span>
                       </p> */}
-                      
+
                       <h4 className="font-semibold text-purple-200 mb-1 text-sm lg:text-base">
                         {topic.name}
                       </h4>
