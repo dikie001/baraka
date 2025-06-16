@@ -16,16 +16,19 @@ export default function BarakaAI() {
   const [showSettings, setShowSettings] = useState(false);
   const [error, setError] = useState("");
   const [showWelcome, setShowWelcome] = useState(true);
+  const API_KEY = import.meta.env.VITE_API_KEY;
 
   const callGeminiAPI = async (userMessage) => {
-    if (!apiKey) {
-      setError("Please enter your Gemini API key in settings");
+    if (!API_KEY) {
+      setError("Server error");
       return;
     }
 
+    
+
     try {
       const response = await fetch(
-        `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${apiKey}`,
+        `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${API_KEY}`,
         {
           method: "POST",
           headers: {
@@ -36,7 +39,7 @@ export default function BarakaAI() {
               {
                 parts: [
                   {
-                    text: `You are Baraka AI, a personal study assistant created specifically for a student named Baraka. You help with academic subjects, study planning, explanations, and learning support. Keep responses helpful, encouraging, and focused on education. User message: ${userMessage}`,
+                    text: `You are Baraka AI, a personal study assistant created specifically for a student in grade 9 named Baraka. You help with academic subjects, study planning, explanations, and learning support and life hacks. Keep responses helpful, encouraging, and focused on education. Keep it sharp, fun, and focused. No fluff. User message: ${userMessage}`,
                   },
                 ],
               },
@@ -145,17 +148,8 @@ export default function BarakaAI() {
           {/* Settings Panel */}
           {showSettings && (
             <div className="absolute top-16 right-4 bg-white/10 backdrop-blur-lg rounded-2xl p-4 border border-white/20 z-20 min-w-64">
-              <h3 className="font-semibold mb-3">API Settings</h3>
-              <input
-                type="password"
-                placeholder="Enter Gemini API Key"
-                value={apiKey}
-                onChange={(e) => setApiKey(e.target.value)}
-                className="w-full bg-white/10 border border-white/20 rounded-xl px-3 py-2 text-sm text-white placeholder-purple-200 focus:outline-none focus:ring-2 focus:ring-purple-400"
-              />
-              <p className="text-xs text-purple-200 mt-2">
-                Get your key from Google AI Studio
-              </p>
+              <h3 className="font-semibold mb-3">Baraka AI </h3>
+              
             </div>
           )}
         </header>
