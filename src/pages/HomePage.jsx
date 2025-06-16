@@ -22,24 +22,57 @@ import DesktopNav from "../components/DesktopNav";
 import { useEffect } from "react";
 import CalculateDate from "../components/CalculateDate";
 import { useLocalStorage } from "@uidotdev/usehooks";
+import BarakaAICard from "../components/BarakaAiCard";
 
 export default function HomePage() {
   const [activeTab, setActiveTab] = useState("home");
 
+  // Numbers Quiz LocalStorage
   const numbersProgress = localStorage.getItem("current-number");
+  const numbersTotalQuiz = localStorage.getItem("numbers-quiz-length");
+  const NTQ = Number(numbersTotalQuiz);
+  const NP = Number(numbersProgress);
 
+  // Algebra Quiz LocalStorage
   const algebraProgress = localStorage.getItem("current-number-algebra");
+  const algebraTotalQuiz = localStorage.getItem("algebra-quiz-length");
+  const AP = Number(algebraProgress);
+  const ATQ = Number(algebraTotalQuiz);
 
+  // Geometry Quiz LocalStorage
   const geometryProgress = localStorage.getItem("current-number-geometry");
+  const geometryTotalQuiz = localStorage.getItem("geometry-quiz-length");
+  const GP = geometryProgress ? Number(geometryProgress) : 0;
+  const GTQ = geometryTotalQuiz ? Number(geometryTotalQuiz) : 0;
 
-  const measurementProgress = localStorage.getItem("current-number-measurement" )
-  const measurementTotalQuiz = localStorage.getItem("measurement-quiz-length")
-  const MP = Number(measurementProgress) +1
-  
+  // Measurement QUiz LocalStorage
+  const measurementProgress = localStorage.getItem(
+    "current-number-measurement"
+  );
+  const measurementTotalQuiz = localStorage.getItem("measurement-quiz-length");
+  const MP = Number(measurementProgress);
+  const MTQ = Number(measurementTotalQuiz);
 
-  
-  
+  // Probability Quiz LocalStorage
+  const probabilityProgress = localStorage.getItem(
+    "probability-current-number"
+  );
+  const probabilityTotalQuiz = localStorage.getItem("probability-quiz-length");
+  const PP = Number(probabilityProgress);
+  const PTQ = Number(probabilityTotalQuiz);
+  console.log(PP, PTQ);
 
+  // Data Quiz LocalStorage
+    const dataProgress = localStorage.getItem(
+      "data-current-number"
+    );
+    const dataTotalQuiz = localStorage.getItem(
+      "data-quiz-length"
+    );
+    const DP = Number(dataProgress);
+    const DTQ = Number(dataTotalQuiz);
+
+  // Set Page
   const [page, setPage] = useLocalStorage("choose-page", null);
   const navigate = useNavigate();
 
@@ -50,42 +83,42 @@ export default function HomePage() {
     {
       name: "Numbers",
       icon: <Calculator />,
-      progress: numbersProgress || 0,
+      progress: NP || (NTQ && ((NP / NTQ) * 100).toFixed(0)) || 0,
       to: "/numbers",
       about: "Build math foundation ",
     },
     {
       name: "Algebra",
       icon: <FunctionSquare />,
-      progress: algebraProgress || 0,
+      progress: (ATQ && ((AP / ATQ) * 100).toFixed(0)) || 0,
       to: "/algebra",
       about: "Explore algebraic rules",
     },
     {
       name: "Geometry",
       icon: <Triangle />,
-      progress: geometryProgress || 0,
+      progress: (GTQ && ((GP / GTQ) * 100).toFixed(0)) || 0,
       to: "/geometry",
       about: "Learn spartial reasoning",
     },
     {
       name: "Measurement",
       icon: <Scale />,
-      progress: (MP  / measurementTotalQuiz ) * 100 ,
+      progress: MTQ && (((MP / MTQ) * 100).toFixed(0) || 0),
       to: "/measurement",
       about: "Estimate and measure",
     },
     {
       name: "Data Handling",
       icon: <BarChart2Icon />,
-      progress: 30,
+      progress: DTQ ? ((DP / DTQ)*100).toFixed(0): 0,
       to: "/data",
       about: "Interprete data",
     },
     {
       name: "Probability",
       icon: <Dices />,
-      progress: 30,
+      progress: PTQ ? ((PP / PTQ) * 100).toFixed(0) : 0,
       to: "/probability",
       about: "Predict with reasoning",
     },
@@ -139,36 +172,10 @@ export default function HomePage() {
           <div className="lg:grid lg:grid-cols-12 lg:gap-8 space-y-6 lg:space-y-0">
             {/* Left Column - Daily Challenge and Quick Practice */}
             <div className="lg:col-span-5 space-y-6">
-              {/* Daily Challenge Card */}
-              <div
-                onClick={() => navigate("/daily-challenge")}
-                className="bg-gradient-to-r from-purple-600/20 to-pink-600/20 backdrop-blur-sm border border-purple-500/30 rounded-2xl p-4 sm:p-6 hover:scale-105 lg:hover:scale-102 transition-all duration-300 cursor-pointer"
-              >
-                <div className="flex items-center justify-between">
-                  <div className="flex-1">
-                    <h3 className="text-lg lg:text-xl font-semibold text-purple-200">
-                      Daily Challenge
-                    </h3>
-                    <p className="text-sm lg:text-base text-purple-300 mt-1">
-                      Complete 10 problems
-                    </p>
-                    <div className="flex items-center mt-3 lg:mt-4">
-                      <div className="bg-purple-500/30 rounded-full p-2 mr-3">
-                        <Target className="w-4 h-4 lg:w-5 lg:h-5 text-purple-300" />
-                      </div>
-                      <div className="flex-1">
-                        <div className="bg-slate-700/50 rounded-full h-2 lg:h-3">
-                          <div className="bg-gradient-to-r from-purple-500 to-pink-500 h-2 lg:h-3 rounded-full w-3/4 transition-all duration-500"></div>
-                        </div>
-                        <p className="text-xs lg:text-sm text-purple-300 mt-1">
-                          7/10 completed
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <ChevronRight className="w-6 h-6 lg:w-8 lg:h-8 text-purple-400 ml-4" />
-                </div>
-              </div>
+
+              {/* Baraka Ai Card */}
+              <BarakaAICard/>
+            
 
               {/* Quick Practice Button */}
               <div
@@ -178,7 +185,7 @@ export default function HomePage() {
                 <div className="flex items-center justify-center space-x-3">
                   <Play className="w-6 h-6 lg:w-8 lg:h-8" />
                   <span className="text-lg lg:text-xl font-semibold">
-                    Quick Practice
+                    Random Quiz
                   </span>
                 </div>
                 <p className="text-center text-purple-100 text-sm lg:text-base mt-2">

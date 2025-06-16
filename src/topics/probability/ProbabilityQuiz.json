@@ -1,0 +1,125 @@
+{
+  "subtopic": "probability",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the probability of getting a head when a fair coin is tossed once?",
+      "options": {
+        "a": "1/2",
+        "b": "1/3",
+        "c": "1/4",
+        "d": "2/3"
+      },
+      "answer": "a",
+      "subtopic": "basic probability"
+    },
+    {
+      "id": 2,
+      "question": "What is the probability of getting a 4 when a fair die is rolled?",
+      "options": {
+        "a": "1/6",
+        "b": "1/4",
+        "c": "1/3",
+        "d": "1/2"
+      },
+      "answer": "a",
+      "subtopic": "basic probability"
+    },
+    {
+      "id": 3,
+      "question": "A bag contains 3 red balls, 2 blue balls, and 5 green balls. What is the probability of picking a blue ball?",
+      "options": {
+        "a": "1/5",
+        "b": "1/2",
+        "c": "1/3",
+        "d": "1/10"
+      },
+      "answer": "a",
+      "subtopic": "probability with objects"
+    },
+    {
+      "id": 4,
+      "question": "If an event is certain to happen, its probability is:",
+      "options": {
+        "a": "1",
+        "b": "0",
+        "c": "1/2",
+        "d": "Impossible"
+      },
+      "answer": "a",
+      "subtopic": "probability rules"
+    },
+    {
+      "id": 5,
+      "question": "If the probability of an event occurring is 0.75, what is the probability of it not occurring?",
+      "options": {
+        "a": "0.25",
+        "b": "1",
+        "c": "0.50",
+        "d": "0.75"
+      },
+      "answer": "a",
+      "subtopic": "complementary events"
+    },
+    {
+      "id": 6,
+      "question": "Two coins are tossed. What is the probability of getting two tails?",
+      "options": {
+        "a": "1/4",
+        "b": "1/2",
+        "c": "3/4",
+        "d": "1"
+      },
+      "answer": "a",
+      "subtopic": "combined events"
+    },
+    {
+      "id": 7,
+      "question": "What is the probability of getting an odd number when rolling a fair die?",
+      "options": {
+        "a": "1/2",
+        "b": "1/3",
+        "c": "2/3",
+        "d": "1/6"
+      },
+      "answer": "a",
+      "subtopic": "even and odd outcomes"
+    },
+    {
+      "id": 8,
+      "question": "What is the probability of getting a number less than 5 on a fair die?",
+      "options": {
+        "a": "4/6",
+        "b": "5/6",
+        "c": "1/6",
+        "d": "1/2"
+      },
+      "answer": "a",
+      "subtopic": "counting outcomes"
+    },
+    {
+      "id": 9,
+      "question": "If the probability of rain today is 0.4, what is the probability that it won’t rain?",
+      "options": {
+        "a": "0.6",
+        "b": "0.4",
+        "c": "0.2",
+        "d": "1"
+      },
+      "answer": "a",
+      "subtopic": "complementary events"
+    },
+    {
+      "id": 10,
+      "question": "Which of the following cannot be a probability?",
+      "options": {
+        "a": "-0.2",
+        "b": "0",
+        "c": "1",
+        "d": "0.75"
+      },
+      "answer": "a",
+      "subtopic": "probability rules"
+    }
+  ]
+}

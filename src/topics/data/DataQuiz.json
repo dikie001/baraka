@@ -1,0 +1,125 @@
+{
+  "subtopic": "data handling",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the mean of the numbers: 5, 7, 3, 8, 7?",
+      "options": {
+        "a": "6",
+        "b": "5",
+        "c": "7",
+        "d": "8"
+      },
+      "answer": "a",
+      "subtopic": "mean"
+    },
+    {
+      "id": 2,
+      "question": "Find the median of the data set: 12, 5, 8, 7, 10",
+      "options": {
+        "a": "8",
+        "b": "10",
+        "c": "7",
+        "d": "12"
+      },
+      "answer": "a",
+      "subtopic": "median"
+    },
+    {
+      "id": 3,
+      "question": "Which of these is a measure of central tendency?",
+      "options": {
+        "a": "Mean",
+        "b": "Range",
+        "c": "Variance",
+        "d": "Standard deviation"
+      },
+      "answer": "a",
+      "subtopic": "measures of central tendency"
+    },
+    {
+      "id": 4,
+      "question": "What is the mode of the numbers: 2, 4, 4, 6, 8?",
+      "options": {
+        "a": "4",
+        "b": "6",
+        "c": "8",
+        "d": "2"
+      },
+      "answer": "a",
+      "subtopic": "mode"
+    },
+    {
+      "id": 5,
+      "question": "The range of a data set is the difference between:",
+      "options": {
+        "a": "The highest and the lowest values",
+        "b": "The mean and the median",
+        "c": "The mode and the range",
+        "d": "The middle value and the lowest value"
+      },
+      "answer": "a",
+      "subtopic": "range"
+    },
+    {
+      "id": 6,
+      "question": "What is the range of the numbers: 14, 17, 10, 20, 13?",
+      "options": {
+        "a": "10",
+        "b": "6",
+        "c": "9",
+        "d": "7"
+      },
+      "answer": "a",
+      "subtopic": "range"
+    },
+    {
+      "id": 7,
+      "question": "In a bar graph, the height of each bar shows:",
+      "options": {
+        "a": "The frequency of each category",
+        "b": "The average value",
+        "c": "The percentage",
+        "d": "The median"
+      },
+      "answer": "a",
+      "subtopic": "bar graph interpretation"
+    },
+    {
+      "id": 8,
+      "question": "A pie chart represents data in the form of:",
+      "options": {
+        "a": "Percentages",
+        "b": "Fractions",
+        "c": "Decimals",
+        "d": "Ratios"
+      },
+      "answer": "a",
+      "subtopic": "pie charts"
+    },
+    {
+      "id": 9,
+      "question": "Which type of graph is best for showing changes over time?",
+      "options": {
+        "a": "Line graph",
+        "b": "Bar graph",
+        "c": "Pie chart",
+        "d": "Histogram"
+      },
+      "answer": "a",
+      "subtopic": "line graphs"
+    },
+    {
+      "id": 10,
+      "question": "What is the mean of the first five positive even numbers?",
+      "options": {
+        "a": "6",
+        "b": "4",
+        "c": "8",
+        "d": "10"
+      },
+      "answer": "a",
+      "subtopic": "mean"
+    }
+  ]
+}

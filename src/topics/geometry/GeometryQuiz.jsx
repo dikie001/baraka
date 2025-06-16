@@ -43,6 +43,15 @@ const GeometryQuiz = () => {
     []
   );
   const [mode, setMode] = useLocalStorage("choose-page", null);
+  const [quizLength, setQuizLength] = useLocalStorage(
+    "geometry-quiz-length",
+    null
+  );
+
+  // Save Quiz Length to LocalStorage
+  useEffect(()=>{
+    setQuizLength(totalQuestions)
+  })
 
   // Initialize state with saved progress
   const [current, setCurrent] = useState(currentNumber || 0);

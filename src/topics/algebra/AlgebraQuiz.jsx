@@ -50,9 +50,15 @@ const GeometryQuiz = () => {
   const [showAnswer, setShowAnswer] = useState(false);
   const [score, setScore] = useState(savedScore || 0);
   const [answered, setAnswered] = useState(new Set(savedAnswered || []));
+  const [totalQuizLength, setTotalQuizLength]=useLocalStorage("algebra-quiz-length")
 
   const question = questionsData.questions[current];
   const totalQuestions = questionsData.questions.length;
+
+  // Save quiz length to LocalStorage
+  useEffect(()=>{
+    setTotalQuizLength(totalQuestions)
+  },[])
 
   const handleOptionClick = (key) => {
     setSelected(key);

@@ -1,40 +1,2404 @@
-[
-  {
-    "date": "2025-06-14",
-    "quizzes": [
-      {
-        "question": "What is 7 + 5?",
-        "options": ["10", "12", "13", "11"],
-        "correctAnswer": 1
-      },
-      {
-        "question": "What is 4 × 6?",
-        "options": ["20", "24", "26", "28"],
-        "correctAnswer": 1
-      }
-    ],
-    "completed": false
-  },
-  {
-    "date": "2025-06-15",
-    "quizzes": [
-      {
-        "question": "Simplify: 16 ÷ 4",
-        "options": ["2", "4", "5", "6"],
-        "correctAnswer": 1
-      }
-    ],
-    "completed": false
-  },
-  {
-    "date": "2025-06-16",
-    "quizzes": [
-      {
-        "question": "What is the square root of 81?",
-        "options": ["7", "8", "9", "10"],
-        "correctAnswer": 2
-      }
-    ],
-    "completed": false
-  }
-]
+{
+  "question_bank": [
+    {
+      "question": "What is the probability of getting a 2 when a fair die is rolled?",
+      "options": [
+        "1/6",
+        "2/6",
+        "1/3",
+        "5/6"
+      ],
+      "correct_answer": "1/6",
+      "id": 1,
+      "topic": "Linear Equations"
+    },
+    {
+      "question": "The exterior angle of a regular polygon is 30\u00b0. How many sides does it have?",
+      "options": [
+        "12",
+        "6",
+        "8",
+        "10"
+      ],
+      "correct_answer": "12",
+      "id": 2,
+      "topic": "Algebra"
+    },
+    {
+      "question": "What is the value of sin(30\u00b0)?",
+      "options": [
+        "1",
+        "1/2",
+        "\u221a3/2",
+        "0"
+      ],
+      "correct_answer": "1/2",
+      "id": 3,
+      "topic": "Quadratic Equations"
+    },
+    {
+      "question": "What is the probability of getting a 2 when a fair die is rolled?",
+      "options": [
+        "1/6",
+        "2/6",
+        "1/3",
+        "5/6"
+      ],
+      "correct_answer": "1/6",
+      "id": 4,
+      "topic": "Statistics"
+    },
+    {
+      "question": "What is the probability of getting a 2 when a fair die is rolled?",
+      "options": [
+        "1/6",
+        "2/6",
+        "1/3",
+        "5/6"
+      ],
+      "correct_answer": "1/6",
+      "id": 5,
+      "topic": "Ratios & Proportions"
+    },
+    {
+      "question": "The exterior angle of a regular polygon is 30\u00b0. How many sides does it have?",
+      "options": [
+        "12",
+        "6",
+        "8",
+        "10"
+      ],
+      "correct_answer": "12",
+      "id": 6,
+      "topic": "Trigonometry"
+    },
+    {
+      "question": "Convert 0.75 to a fraction.",
+      "options": [
+        "3/4",
+        "1/4",
+        "2/3",
+        "4/5"
+      ],
+      "correct_answer": "3/4",
+      "id": 7,
+      "topic": "Statistics"
+    },
+    {
+      "question": "Find the area of a triangle with base 10 cm and height 12 cm.",
+      "options": [
+        "60 cm\u00b2",
+        "120 cm\u00b2",
+        "110 cm\u00b2",
+        "100 cm\u00b2"
+      ],
+      "correct_answer": "60 cm\u00b2",
+      "id": 8,
+      "topic": "Geometry"
+    },
+    {
+      "question": "What is the value of sin(30\u00b0)?",
+      "options": [
+        "1",
+        "1/2",
+        "\u221a3/2",
+        "0"
+      ],
+      "correct_answer": "1/2",
+      "id": 9,
+      "topic": "Numbers"
+    },
+    {
+      "question": "Find the area of a triangle with base 10 cm and height 12 cm.",
+      "options": [
+        "60 cm\u00b2",
+        "120 cm\u00b2",
+        "110 cm\u00b2",
+        "100 cm\u00b2"
+      ],
+      "correct_answer": "60 cm\u00b2",
+      "id": 10,
+      "topic": "Quadratic Equations"
+    },
+    {
+      "question": "Find the mean of 5, 10, 15, 20, 25.",
+      "options": [
+        "15",
+        "10",
+        "12",
+        "20"
+      ],
+      "correct_answer": "15",
+      "id": 11,
+      "topic": "Trigonometry"
+    },
+    {
+      "question": "Find the area of a triangle with base 10 cm and height 12 cm.",
+      "options": [
+        "60 cm\u00b2",
+        "120 cm\u00b2",
+        "110 cm\u00b2",
+        "100 cm\u00b2"
+      ],
+      "correct_answer": "60 cm\u00b2",
+      "id": 12,
+      "topic": "Algebra"
+    },
+    {
+      "question": "Find the mean of 5, 10, 15, 20, 25.",
+      "options": [
+        "15",
+        "10",
+        "12",
+        "20"
+      ],
+      "correct_answer": "15",
+      "id": 13,
+      "topic": "Numbers"
+    },
+    {
+      "question": "Convert 0.75 to a fraction.",
+      "options": [
+        "3/4",
+        "1/4",
+        "2/3",
+        "4/5"
+      ],
+      "correct_answer": "3/4",
+      "id": 14,
+      "topic": "Probability"
+    },
+    {
+      "question": "Find the area of a triangle with base 10 cm and height 12 cm.",
+      "options": [
+        "60 cm\u00b2",
+        "120 cm\u00b2",
+        "110 cm\u00b2",
+        "100 cm\u00b2"
+      ],
+      "correct_answer": "60 cm\u00b2",
+      "id": 15,
+      "topic": "Trigonometry"
+    },
+    {
+      "question": "Solve for x: 3x - 7 = 2x + 5",
+      "options": [
+        "x = -12",
+        "x = 12",
+        "x = 1",
+        "x = -1"
+      ],
+      "correct_answer": "x = 12",
+      "id": 16,
+      "topic": "Ratios & Proportions"
+    },
+    {
+      "question": "A scale drawing has a scale of 1:100. What real length does 5 cm represent?",
+      "options": [
+        "500 cm",
+        "50 cm",
+        "100 cm",
+        "5 m"
+      ],
+      "correct_answer": "500 cm",
+      "id": 17,
+      "topic": "Measurement"
+    },
+    {
+      "question": "Solve for x: 3x - 7 = 2x + 5",
+      "options": [
+        "x = -12",
+        "x = 12",
+        "x = 1",
+        "x = -1"
+      ],
+      "correct_answer": "x = 12",
+      "id": 18,
+      "topic": "Geometry"
+    },
+    {
+      "question": "A scale drawing has a scale of 1:100. What real length does 5 cm represent?",
+      "options": [
+        "500 cm",
+        "50 cm",
+        "100 cm",
+        "5 m"
+      ],
+      "correct_answer": "500 cm",
+      "id": 19,
+      "topic": "Quadratic Equations"
+    },
+    {
+      "question": "Solve for x: 3x - 7 = 2x + 5",
+      "options": [
+        "x = -12",
+        "x = 12",
+        "x = 1",
+        "x = -1"
+      ],
+      "correct_answer": "x = 12",
+      "id": 20,
+      "topic": "Ratios & Proportions"
+    },
+    {
+      "question": "What is the value of sin(30\u00b0)?",
+      "options": [
+        "1",
+        "1/2",
+        "\u221a3/2",
+        "0"
+      ],
+      "correct_answer": "1/2",
+      "id": 21,
+      "topic": "Ratios & Proportions"
+    },
+    {
+      "question": "Find the value of x: x\u00b2 = 49",
+      "options": [
+        "x = \u00b17",
+        "x = 7",
+        "x = -7",
+        "x = 0"
+      ],
+      "correct_answer": "x = \u00b17",
+      "id": 22,
+      "topic": "Linear Equations"
+    },
+    {
+      "question": "Convert 0.75 to a fraction.",
+      "options": [
+        "3/4",
+        "1/4",
+        "2/3",
+        "4/5"
+      ],
+      "correct_answer": "3/4",
+      "id": 23,
+      "topic": "Probability"
+    },
+    {
+      "question": "What is the value of sin(30\u00b0)?",
+      "options": [
+        "1",
+        "1/2",
+        "\u221a3/2",
+        "0"
+      ],
+      "correct_answer": "1/2",
+      "id": 24,
+      "topic": "Quadratic Equations"
+    },
+    {
+      "question": "Find the area of a triangle with base 10 cm and height 12 cm.",
+      "options": [
+        "60 cm\u00b2",
+        "120 cm\u00b2",
+        "110 cm\u00b2",
+        "100 cm\u00b2"
+      ],
+      "correct_answer": "60 cm\u00b2",
+      "id": 25,
+      "topic": "Geometry"
+    },
+    {
+      "question": "A scale drawing has a scale of 1:100. What real length does 5 cm represent?",
+      "options": [
+        "500 cm",
+        "50 cm",
+        "100 cm",
+        "5 m"
+      ],
+      "correct_answer": "500 cm",
+      "id": 26,
+      "topic": "Statistics"
+    },
+    {
+      "question": "Solve for x: 3x - 7 = 2x + 5",
+      "options": [
+        "x = -12",
+        "x = 12",
+        "x = 1",
+        "x = -1"
+      ],
+      "correct_answer": "x = 12",
+      "id": 27,
+      "topic": "Algebra"
+    },
+    {
+      "question": "Find the value of x: x\u00b2 = 49",
+      "options": [
+        "x = \u00b17",
+        "x = 7",
+        "x = -7",
+        "x = 0"
+      ],
+      "correct_answer": "x = \u00b17",
+      "id": 28,
+      "topic": "Linear Equations"
+    },
+    {
+      "question": "Solve for x: 3x - 7 = 2x + 5",
+      "options": [
+        "x = -12",
+        "x = 12",
+        "x = 1",
+        "x = -1"
+      ],
+      "correct_answer": "x = 12",
+      "id": 29,
+      "topic": "Probability"
+    },
+    {
+      "question": "Simplify: (2x + 3)(x - 4)",
+      "options": [
+        "2x\u00b2 - 5x - 12",
+        "2x\u00b2 - 5x + 12",
+        "x\u00b2 + x - 12",
+        "2x\u00b2 - 8x + 3"
+      ],
+      "correct_answer": "2x\u00b2 - 5x - 12",
+      "id": 30,
+      "topic": "Trigonometry"
+    },
+    {
+      "question": "Simplify: (2x + 3)(x - 4)",
+      "options": [
+        "2x\u00b2 - 5x - 12",
+        "2x\u00b2 - 5x + 12",
+        "x\u00b2 + x - 12",
+        "2x\u00b2 - 8x + 3"
+      ],
+      "correct_answer": "2x\u00b2 - 5x - 12",
+      "id": 31,
+      "topic": "Ratios & Proportions"
+    },
+    {
+      "question": "The exterior angle of a regular polygon is 30\u00b0. How many sides does it have?",
+      "options": [
+        "12",
+        "6",
+        "8",
+        "10"
+      ],
+      "correct_answer": "12",
+      "id": 32,
+      "topic": "Trigonometry"
+    },
+    {
+      "question": "Find the mean of 5, 10, 15, 20, 25.",
+      "options": [
+        "15",
+        "10",
+        "12",
+        "20"
+      ],
+      "correct_answer": "15",
+      "id": 33,
+      "topic": "Geometry"
+    },
+    {
+      "question": "Find the area of a triangle with base 10 cm and height 12 cm.",
+      "options": [
+        "60 cm\u00b2",
+        "120 cm\u00b2",
+        "110 cm\u00b2",
+        "100 cm\u00b2"
+      ],
+      "correct_answer": "60 cm\u00b2",
+      "id": 34,
+      "topic": "Statistics"
+    },
+    {
+      "question": "Find the mean of 5, 10, 15, 20, 25.",
+      "options": [
+        "15",
+        "10",
+        "12",
+        "20"
+      ],
+      "correct_answer": "15",
+      "id": 35,
+      "topic": "Quadratic Equations"
+    },
+    {
+      "question": "Find the mean of 5, 10, 15, 20, 25.",
+      "options": [
+        "15",
+        "10",
+        "12",
+        "20"
+      ],
+      "correct_answer": "15",
+      "id": 36,
+      "topic": "Numbers"
+    },
+    {
+      "question": "Simplify: (2x + 3)(x - 4)",
+      "options": [
+        "2x\u00b2 - 5x - 12",
+        "2x\u00b2 - 5x + 12",
+        "x\u00b2 + x - 12",
+        "2x\u00b2 - 8x + 3"
+      ],
+      "correct_answer": "2x\u00b2 - 5x - 12",
+      "id": 37,
+      "topic": "Numbers"
+    },
+    {
+      "question": "What is the probability of getting a 2 when a fair die is rolled?",
+      "options": [
+        "1/6",
+        "2/6",
+        "1/3",
+        "5/6"
+      ],
+      "correct_answer": "1/6",
+      "id": 38,
+      "topic": "Statistics"
+    },
+    {
+      "question": "What is the value of sin(30\u00b0)?",
+      "options": [
+        "1",
+        "1/2",
+        "\u221a3/2",
+        "0"
+      ],
+      "correct_answer": "1/2",
+      "id": 39,
+      "topic": "Linear Equations"
+    },
+    {
+      "question": "Convert 0.75 to a fraction.",
+      "options": [
+        "3/4",
+        "1/4",
+        "2/3",
+        "4/5"
+      ],
+      "correct_answer": "3/4",
+      "id": 40,
+      "topic": "Trigonometry"
+    },
+    {
+      "question": "Find the mean of 5, 10, 15, 20, 25.",
+      "options": [
+        "15",
+        "10",
+        "12",
+        "20"
+      ],
+      "correct_answer": "15",
+      "id": 41,
+      "topic": "Ratios & Proportions"
+    },
+    {
+      "question": "Convert 0.75 to a fraction.",
+      "options": [
+        "3/4",
+        "1/4",
+        "2/3",
+        "4/5"
+      ],
+      "correct_answer": "3/4",
+      "id": 42,
+      "topic": "Quadratic Equations"
+    },
+    {
+      "question": "What is the probability of getting a 2 when a fair die is rolled?",
+      "options": [
+        "1/6",
+        "2/6",
+        "1/3",
+        "5/6"
+      ],
+      "correct_answer": "1/6",
+      "id": 43,
+      "topic": "Numbers"
+    },
+    {
+      "question": "Find the mean of 5, 10, 15, 20, 25.",
+      "options": [
+        "15",
+        "10",
+        "12",
+        "20"
+      ],
+      "correct_answer": "15",
+      "id": 44,
+      "topic": "Quadratic Equations"
+    },
+    {
+      "question": "What is the probability of getting a 2 when a fair die is rolled?",
+      "options": [
+        "1/6",
+        "2/6",
+        "1/3",
+        "5/6"
+      ],
+      "correct_answer": "1/6",
+      "id": 45,
+      "topic": "Quadratic Equations"
+    },
+    {
+      "question": "What is the value of sin(30\u00b0)?",
+      "options": [
+        "1",
+        "1/2",
+        "\u221a3/2",
+        "0"
+      ],
+      "correct_answer": "1/2",
+      "id": 46,
+      "topic": "Numbers"
+    },
+    {
+      "question": "Simplify: (2x + 3)(x - 4)",
+      "options": [
+        "2x\u00b2 - 5x - 12",
+        "2x\u00b2 - 5x + 12",
+        "x\u00b2 + x - 12",
+        "2x\u00b2 - 8x + 3"
+      ],
+      "correct_answer": "2x\u00b2 - 5x - 12",
+      "id": 47,
+      "topic": "Algebra"
+    },
+    {
+      "question": "Solve for x: 3x - 7 = 2x + 5",
+      "options": [
+        "x = -12",
+        "x = 12",
+        "x = 1",
+        "x = -1"
+      ],
+      "correct_answer": "x = 12",
+      "id": 48,
+      "topic": "Ratios & Proportions"
+    },
+    {
+      "question": "Find the value of x: x\u00b2 = 49",
+      "options": [
+        "x = \u00b17",
+        "x = 7",
+        "x = -7",
+        "x = 0"
+      ],
+      "correct_answer": "x = \u00b17",
+      "id": 49,
+      "topic": "Geometry"
+    },
+    {
+      "question": "What is the probability of getting a 2 when a fair die is rolled?",
+      "options": [
+        "1/6",
+        "2/6",
+        "1/3",
+        "5/6"
+      ],
+      "correct_answer": "1/6",
+      "id": 50,
+      "topic": "Algebra"
+    },
+    {
+      "question": "Simplify: (2x + 3)(x - 4)",
+      "options": [
+        "2x\u00b2 - 5x - 12",
+        "2x\u00b2 - 5x + 12",
+        "x\u00b2 + x - 12",
+        "2x\u00b2 - 8x + 3"
+      ],
+      "correct_answer": "2x\u00b2 - 5x - 12",
+      "id": 51,
+      "topic": "Numbers"
+    },
+    {
+      "question": "Find the area of a triangle with base 10 cm and height 12 cm.",
+      "options": [
+        "60 cm\u00b2",
+        "120 cm\u00b2",
+        "110 cm\u00b2",
+        "100 cm\u00b2"
+      ],
+      "correct_answer": "60 cm\u00b2",
+      "id": 52,
+      "topic": "Probability"
+    },
+    {
+      "question": "Find the value of x: x\u00b2 = 49",
+      "options": [
+        "x = \u00b17",
+        "x = 7",
+        "x = -7",
+        "x = 0"
+      ],
+      "correct_answer": "x = \u00b17",
+      "id": 53,
+      "topic": "Measurement"
+    },
+    {
+      "question": "Solve for x: 3x - 7 = 2x + 5",
+      "options": [
+        "x = -12",
+        "x = 12",
+        "x = 1",
+        "x = -1"
+      ],
+      "correct_answer": "x = 12",
+      "id": 54,
+      "topic": "Ratios & Proportions"
+    },
+    {
+      "question": "Simplify: (2x + 3)(x - 4)",
+      "options": [
+        "2x\u00b2 - 5x - 12",
+        "2x\u00b2 - 5x + 12",
+        "x\u00b2 + x - 12",
+        "2x\u00b2 - 8x + 3"
+      ],
+      "correct_answer": "2x\u00b2 - 5x - 12",
+      "id": 55,
+      "topic": "Trigonometry"
+    },
+    {
+      "question": "Find the mean of 5, 10, 15, 20, 25.",
+      "options": [
+        "15",
+        "10",
+        "12",
+        "20"
+      ],
+      "correct_answer": "15",
+      "id": 56,
+      "topic": "Trigonometry"
+    },
+    {
+      "question": "What is the value of sin(30\u00b0)?",
+      "options": [
+        "1",
+        "1/2",
+        "\u221a3/2",
+        "0"
+      ],
+      "correct_answer": "1/2",
+      "id": 57,
+      "topic": "Trigonometry"
+    },
+    {
+      "question": "Find the value of x: x\u00b2 = 49",
+      "options": [
+        "x = \u00b17",
+        "x = 7",
+        "x = -7",
+        "x = 0"
+      ],
+      "correct_answer": "x = \u00b17",
+      "id": 58,
+      "topic": "Numbers"
+    },
+    {
+      "question": "Simplify: (2x + 3)(x - 4)",
+      "options": [
+        "2x\u00b2 - 5x - 12",
+        "2x\u00b2 - 5x + 12",
+        "x\u00b2 + x - 12",
+        "2x\u00b2 - 8x + 3"
+      ],
+      "correct_answer": "2x\u00b2 - 5x - 12",
+      "id": 59,
+      "topic": "Trigonometry"
+    },
+    {
+      "question": "What is the probability of getting a 2 when a fair die is rolled?",
+      "options": [
+        "1/6",
+        "2/6",
+        "1/3",
+        "5/6"
+      ],
+      "correct_answer": "1/6",
+      "id": 60,
+      "topic": "Statistics"
+    },
+    {
+      "question": "Find the value of x: x\u00b2 = 49",
+      "options": [
+        "x = \u00b17",
+        "x = 7",
+        "x = -7",
+        "x = 0"
+      ],
+      "correct_answer": "x = \u00b17",
+      "id": 61,
+      "topic": "Trigonometry"
+    },
+    {
+      "question": "A scale drawing has a scale of 1:100. What real length does 5 cm represent?",
+      "options": [
+        "500 cm",
+        "50 cm",
+        "100 cm",
+        "5 m"
+      ],
+      "correct_answer": "500 cm",
+      "id": 62,
+      "topic": "Ratios & Proportions"
+    },
+    {
+      "question": "Find the value of x: x\u00b2 = 49",
+      "options": [
+        "x = \u00b17",
+        "x = 7",
+        "x = -7",
+        "x = 0"
+      ],
+      "correct_answer": "x = \u00b17",
+      "id": 63,
+      "topic": "Statistics"
+    },
+    {
+      "question": "Convert 0.75 to a fraction.",
+      "options": [
+        "3/4",
+        "1/4",
+        "2/3",
+        "4/5"
+      ],
+      "correct_answer": "3/4",
+      "id": 64,
+      "topic": "Quadratic Equations"
+    },
+    {
+      "question": "Find the value of x: x\u00b2 = 49",
+      "options": [
+        "x = \u00b17",
+        "x = 7",
+        "x = -7",
+        "x = 0"
+      ],
+      "correct_answer": "x = \u00b17",
+      "id": 65,
+      "topic": "Algebra"
+    },
+    {
+      "question": "What is the probability of getting a 2 when a fair die is rolled?",
+      "options": [
+        "1/6",
+        "2/6",
+        "1/3",
+        "5/6"
+      ],
+      "correct_answer": "1/6",
+      "id": 66,
+      "topic": "Linear Equations"
+    },
+    {
+      "question": "Convert 0.75 to a fraction.",
+      "options": [
+        "3/4",
+        "1/4",
+        "2/3",
+        "4/5"
+      ],
+      "correct_answer": "3/4",
+      "id": 67,
+      "topic": "Algebra"
+    },
+    {
+      "question": "What is the probability of getting a 2 when a fair die is rolled?",
+      "options": [
+        "1/6",
+        "2/6",
+        "1/3",
+        "5/6"
+      ],
+      "correct_answer": "1/6",
+      "id": 68,
+      "topic": "Measurement"
+    },
+    {
+      "question": "What is the probability of getting a 2 when a fair die is rolled?",
+      "options": [
+        "1/6",
+        "2/6",
+        "1/3",
+        "5/6"
+      ],
+      "correct_answer": "1/6",
+      "id": 69,
+      "topic": "Algebra"
+    },
+    {
+      "question": "Convert 0.75 to a fraction.",
+      "options": [
+        "3/4",
+        "1/4",
+        "2/3",
+        "4/5"
+      ],
+      "correct_answer": "3/4",
+      "id": 70,
+      "topic": "Probability"
+    },
+    {
+      "question": "Solve for x: 3x - 7 = 2x + 5",
+      "options": [
+        "x = -12",
+        "x = 12",
+        "x = 1",
+        "x = -1"
+      ],
+      "correct_answer": "x = 12",
+      "id": 71,
+      "topic": "Numbers"
+    },
+    {
+      "question": "Find the value of x: x\u00b2 = 49",
+      "options": [
+        "x = \u00b17",
+        "x = 7",
+        "x = -7",
+        "x = 0"
+      ],
+      "correct_answer": "x = \u00b17",
+      "id": 72,
+      "topic": "Numbers"
+    },
+    {
+      "question": "Find the mean of 5, 10, 15, 20, 25.",
+      "options": [
+        "15",
+        "10",
+        "12",
+        "20"
+      ],
+      "correct_answer": "15",
+      "id": 73,
+      "topic": "Probability"
+    },
+    {
+      "question": "What is the probability of getting a 2 when a fair die is rolled?",
+      "options": [
+        "1/6",
+        "2/6",
+        "1/3",
+        "5/6"
+      ],
+      "correct_answer": "1/6",
+      "id": 74,
+      "topic": "Geometry"
+    },
+    {
+      "question": "Find the mean of 5, 10, 15, 20, 25.",
+      "options": [
+        "15",
+        "10",
+        "12",
+        "20"
+      ],
+      "correct_answer": "15",
+      "id": 75,
+      "topic": "Algebra"
+    },
+    {
+      "question": "Solve for x: 3x - 7 = 2x + 5",
+      "options": [
+        "x = -12",
+        "x = 12",
+        "x = 1",
+        "x = -1"
+      ],
+      "correct_answer": "x = 12",
+      "id": 76,
+      "topic": "Linear Equations"
+    },
+    {
+      "question": "Find the area of a triangle with base 10 cm and height 12 cm.",
+      "options": [
+        "60 cm\u00b2",
+        "120 cm\u00b2",
+        "110 cm\u00b2",
+        "100 cm\u00b2"
+      ],
+      "correct_answer": "60 cm\u00b2",
+      "id": 77,
+      "topic": "Quadratic Equations"
+    },
+    {
+      "question": "Find the area of a triangle with base 10 cm and height 12 cm.",
+      "options": [
+        "60 cm\u00b2",
+        "120 cm\u00b2",
+        "110 cm\u00b2",
+        "100 cm\u00b2"
+      ],
+      "correct_answer": "60 cm\u00b2",
+      "id": 78,
+      "topic": "Ratios & Proportions"
+    },
+    {
+      "question": "A scale drawing has a scale of 1:100. What real length does 5 cm represent?",
+      "options": [
+        "500 cm",
+        "50 cm",
+        "100 cm",
+        "5 m"
+      ],
+      "correct_answer": "500 cm",
+      "id": 79,
+      "topic": "Numbers"
+    },
+    {
+      "question": "Simplify: (2x + 3)(x - 4)",
+      "options": [
+        "2x\u00b2 - 5x - 12",
+        "2x\u00b2 - 5x + 12",
+        "x\u00b2 + x - 12",
+        "2x\u00b2 - 8x + 3"
+      ],
+      "correct_answer": "2x\u00b2 - 5x - 12",
+      "id": 80,
+      "topic": "Probability"
+    },
+    {
+      "question": "A scale drawing has a scale of 1:100. What real length does 5 cm represent?",
+      "options": [
+        "500 cm",
+        "50 cm",
+        "100 cm",
+        "5 m"
+      ],
+      "correct_answer": "500 cm",
+      "id": 81,
+      "topic": "Measurement"
+    },
+    {
+      "question": "Find the value of x: x\u00b2 = 49",
+      "options": [
+        "x = \u00b17",
+        "x = 7",
+        "x = -7",
+        "x = 0"
+      ],
+      "correct_answer": "x = \u00b17",
+      "id": 82,
+      "topic": "Probability"
+    },
+    {
+      "question": "Convert 0.75 to a fraction.",
+      "options": [
+        "3/4",
+        "1/4",
+        "2/3",
+        "4/5"
+      ],
+      "correct_answer": "3/4",
+      "id": 83,
+      "topic": "Quadratic Equations"
+    },
+    {
+      "question": "A scale drawing has a scale of 1:100. What real length does 5 cm represent?",
+      "options": [
+        "500 cm",
+        "50 cm",
+        "100 cm",
+        "5 m"
+      ],
+      "correct_answer": "500 cm",
+      "id": 84,
+      "topic": "Trigonometry"
+    },
+    {
+      "question": "A scale drawing has a scale of 1:100. What real length does 5 cm represent?",
+      "options": [
+        "500 cm",
+        "50 cm",
+        "100 cm",
+        "5 m"
+      ],
+      "correct_answer": "500 cm",
+      "id": 85,
+      "topic": "Quadratic Equations"
+    },
+    {
+      "question": "Find the mean of 5, 10, 15, 20, 25.",
+      "options": [
+        "15",
+        "10",
+        "12",
+        "20"
+      ],
+      "correct_answer": "15",
+      "id": 86,
+      "topic": "Trigonometry"
+    },
+    {
+      "question": "Convert 0.75 to a fraction.",
+      "options": [
+        "3/4",
+        "1/4",
+        "2/3",
+        "4/5"
+      ],
+      "correct_answer": "3/4",
+      "id": 87,
+      "topic": "Probability"
+    },
+    {
+      "question": "Find the mean of 5, 10, 15, 20, 25.",
+      "options": [
+        "15",
+        "10",
+        "12",
+        "20"
+      ],
+      "correct_answer": "15",
+      "id": 88,
+      "topic": "Statistics"
+    },
+    {
+      "question": "What is the probability of getting a 2 when a fair die is rolled?",
+      "options": [
+        "1/6",
+        "2/6",
+        "1/3",
+        "5/6"
+      ],
+      "correct_answer": "1/6",
+      "id": 89,
+      "topic": "Algebra"
+    },
+    {
+      "question": "The exterior angle of a regular polygon is 30\u00b0. How many sides does it have?",
+      "options": [
+        "12",
+        "6",
+        "8",
+        "10"
+      ],
+      "correct_answer": "12",
+      "id": 90,
+      "topic": "Measurement"
+    },
+    {
+      "question": "What is the probability of getting a 2 when a fair die is rolled?",
+      "options": [
+        "1/6",
+        "2/6",
+        "1/3",
+        "5/6"
+      ],
+      "correct_answer": "1/6",
+      "id": 91,
+      "topic": "Measurement"
+    },
+    {
+      "question": "What is the value of sin(30\u00b0)?",
+      "options": [
+        "1",
+        "1/2",
+        "\u221a3/2",
+        "0"
+      ],
+      "correct_answer": "1/2",
+      "id": 92,
+      "topic": "Probability"
+    },
+    {
+      "question": "Find the mean of 5, 10, 15, 20, 25.",
+      "options": [
+        "15",
+        "10",
+        "12",
+        "20"
+      ],
+      "correct_answer": "15",
+      "id": 93,
+      "topic": "Measurement"
+    },
+    {
+      "question": "Find the value of x: x\u00b2 = 49",
+      "options": [
+        "x = \u00b17",
+        "x = 7",
+        "x = -7",
+        "x = 0"
+      ],
+      "correct_answer": "x = \u00b17",
+      "id": 94,
+      "topic": "Linear Equations"
+    },
+    {
+      "question": "What is the probability of getting a 2 when a fair die is rolled?",
+      "options": [
+        "1/6",
+        "2/6",
+        "1/3",
+        "5/6"
+      ],
+      "correct_answer": "1/6",
+      "id": 95,
+      "topic": "Measurement"
+    },
+    {
+      "question": "Find the area of a triangle with base 10 cm and height 12 cm.",
+      "options": [
+        "60 cm\u00b2",
+        "120 cm\u00b2",
+        "110 cm\u00b2",
+        "100 cm\u00b2"
+      ],
+      "correct_answer": "60 cm\u00b2",
+      "id": 96,
+      "topic": "Algebra"
+    },
+    {
+      "question": "Find the value of x: x\u00b2 = 49",
+      "options": [
+        "x = \u00b17",
+        "x = 7",
+        "x = -7",
+        "x = 0"
+      ],
+      "correct_answer": "x = \u00b17",
+      "id": 97,
+      "topic": "Geometry"
+    },
+    {
+      "question": "Find the mean of 5, 10, 15, 20, 25.",
+      "options": [
+        "15",
+        "10",
+        "12",
+        "20"
+      ],
+      "correct_answer": "15",
+      "id": 98,
+      "topic": "Linear Equations"
+    },
+    {
+      "question": "Find the area of a triangle with base 10 cm and height 12 cm.",
+      "options": [
+        "60 cm\u00b2",
+        "120 cm\u00b2",
+        "110 cm\u00b2",
+        "100 cm\u00b2"
+      ],
+      "correct_answer": "60 cm\u00b2",
+      "id": 99,
+      "topic": "Linear Equations"
+    },
+    {
+      "question": "Solve for x: 3x - 7 = 2x + 5",
+      "options": [
+        "x = -12",
+        "x = 12",
+        "x = 1",
+        "x = -1"
+      ],
+      "correct_answer": "x = 12",
+      "id": 100,
+      "topic": "Numbers"
+    },
+    {
+      "question": "The exterior angle of a regular polygon is 30\u00b0. How many sides does it have?",
+      "options": [
+        "12",
+        "6",
+        "8",
+        "10"
+      ],
+      "correct_answer": "12",
+      "id": 101,
+      "topic": "Linear Equations"
+    },
+    {
+      "question": "What is the probability of getting a 2 when a fair die is rolled?",
+      "options": [
+        "1/6",
+        "2/6",
+        "1/3",
+        "5/6"
+      ],
+      "correct_answer": "1/6",
+      "id": 102,
+      "topic": "Quadratic Equations"
+    },
+    {
+      "question": "What is the value of sin(30\u00b0)?",
+      "options": [
+        "1",
+        "1/2",
+        "\u221a3/2",
+        "0"
+      ],
+      "correct_answer": "1/2",
+      "id": 103,
+      "topic": "Ratios & Proportions"
+    },
+    {
+      "question": "Simplify: (2x + 3)(x - 4)",
+      "options": [
+        "2x\u00b2 - 5x - 12",
+        "2x\u00b2 - 5x + 12",
+        "x\u00b2 + x - 12",
+        "2x\u00b2 - 8x + 3"
+      ],
+      "correct_answer": "2x\u00b2 - 5x - 12",
+      "id": 104,
+      "topic": "Linear Equations"
+    },
+    {
+      "question": "What is the probability of getting a 2 when a fair die is rolled?",
+      "options": [
+        "1/6",
+        "2/6",
+        "1/3",
+        "5/6"
+      ],
+      "correct_answer": "1/6",
+      "id": 105,
+      "topic": "Quadratic Equations"
+    },
+    {
+      "question": "Simplify: (2x + 3)(x - 4)",
+      "options": [
+        "2x\u00b2 - 5x - 12",
+        "2x\u00b2 - 5x + 12",
+        "x\u00b2 + x - 12",
+        "2x\u00b2 - 8x + 3"
+      ],
+      "correct_answer": "2x\u00b2 - 5x - 12",
+      "id": 106,
+      "topic": "Geometry"
+    },
+    {
+      "question": "The exterior angle of a regular polygon is 30\u00b0. How many sides does it have?",
+      "options": [
+        "12",
+        "6",
+        "8",
+        "10"
+      ],
+      "correct_answer": "12",
+      "id": 107,
+      "topic": "Geometry"
+    },
+    {
+      "question": "Find the area of a triangle with base 10 cm and height 12 cm.",
+      "options": [
+        "60 cm\u00b2",
+        "120 cm\u00b2",
+        "110 cm\u00b2",
+        "100 cm\u00b2"
+      ],
+      "correct_answer": "60 cm\u00b2",
+      "id": 108,
+      "topic": "Algebra"
+    },
+    {
+      "question": "Find the mean of 5, 10, 15, 20, 25.",
+      "options": [
+        "15",
+        "10",
+        "12",
+        "20"
+      ],
+      "correct_answer": "15",
+      "id": 109,
+      "topic": "Algebra"
+    },
+    {
+      "question": "What is the value of sin(30\u00b0)?",
+      "options": [
+        "1",
+        "1/2",
+        "\u221a3/2",
+        "0"
+      ],
+      "correct_answer": "1/2",
+      "id": 110,
+      "topic": "Geometry"
+    },
+    {
+      "question": "Solve for x: 3x - 7 = 2x + 5",
+      "options": [
+        "x = -12",
+        "x = 12",
+        "x = 1",
+        "x = -1"
+      ],
+      "correct_answer": "x = 12",
+      "id": 111,
+      "topic": "Geometry"
+    },
+    {
+      "question": "Convert 0.75 to a fraction.",
+      "options": [
+        "3/4",
+        "1/4",
+        "2/3",
+        "4/5"
+      ],
+      "correct_answer": "3/4",
+      "id": 112,
+      "topic": "Statistics"
+    },
+    {
+      "question": "Convert 0.75 to a fraction.",
+      "options": [
+        "3/4",
+        "1/4",
+        "2/3",
+        "4/5"
+      ],
+      "correct_answer": "3/4",
+      "id": 113,
+      "topic": "Probability"
+    },
+    {
+      "question": "Simplify: (2x + 3)(x - 4)",
+      "options": [
+        "2x\u00b2 - 5x - 12",
+        "2x\u00b2 - 5x + 12",
+        "x\u00b2 + x - 12",
+        "2x\u00b2 - 8x + 3"
+      ],
+      "correct_answer": "2x\u00b2 - 5x - 12",
+      "id": 114,
+      "topic": "Linear Equations"
+    },
+    {
+      "question": "Convert 0.75 to a fraction.",
+      "options": [
+        "3/4",
+        "1/4",
+        "2/3",
+        "4/5"
+      ],
+      "correct_answer": "3/4",
+      "id": 115,
+      "topic": "Measurement"
+    },
+    {
+      "question": "Simplify: (2x + 3)(x - 4)",
+      "options": [
+        "2x\u00b2 - 5x - 12",
+        "2x\u00b2 - 5x + 12",
+        "x\u00b2 + x - 12",
+        "2x\u00b2 - 8x + 3"
+      ],
+      "correct_answer": "2x\u00b2 - 5x - 12",
+      "id": 116,
+      "topic": "Numbers"
+    },
+    {
+      "question": "Simplify: (2x + 3)(x - 4)",
+      "options": [
+        "2x\u00b2 - 5x - 12",
+        "2x\u00b2 - 5x + 12",
+        "x\u00b2 + x - 12",
+        "2x\u00b2 - 8x + 3"
+      ],
+      "correct_answer": "2x\u00b2 - 5x - 12",
+      "id": 117,
+      "topic": "Ratios & Proportions"
+    },
+    {
+      "question": "Simplify: (2x + 3)(x - 4)",
+      "options": [
+        "2x\u00b2 - 5x - 12",
+        "2x\u00b2 - 5x + 12",
+        "x\u00b2 + x - 12",
+        "2x\u00b2 - 8x + 3"
+      ],
+      "correct_answer": "2x\u00b2 - 5x - 12",
+      "id": 118,
+      "topic": "Statistics"
+    },
+    {
+      "question": "Solve for x: 3x - 7 = 2x + 5",
+      "options": [
+        "x = -12",
+        "x = 12",
+        "x = 1",
+        "x = -1"
+      ],
+      "correct_answer": "x = 12",
+      "id": 119,
+      "topic": "Numbers"
+    },
+    {
+      "question": "Simplify: (2x + 3)(x - 4)",
+      "options": [
+        "2x\u00b2 - 5x - 12",
+        "2x\u00b2 - 5x + 12",
+        "x\u00b2 + x - 12",
+        "2x\u00b2 - 8x + 3"
+      ],
+      "correct_answer": "2x\u00b2 - 5x - 12",
+      "id": 120,
+      "topic": "Geometry"
+    },
+    {
+      "question": "Simplify: (2x + 3)(x - 4)",
+      "options": [
+        "2x\u00b2 - 5x - 12",
+        "2x\u00b2 - 5x + 12",
+        "x\u00b2 + x - 12",
+        "2x\u00b2 - 8x + 3"
+      ],
+      "correct_answer": "2x\u00b2 - 5x - 12",
+      "id": 121,
+      "topic": "Numbers"
+    },
+    {
+      "question": "What is the probability of getting a 2 when a fair die is rolled?",
+      "options": [
+        "1/6",
+        "2/6",
+        "1/3",
+        "5/6"
+      ],
+      "correct_answer": "1/6",
+      "id": 122,
+      "topic": "Algebra"
+    },
+    {
+      "question": "Find the area of a triangle with base 10 cm and height 12 cm.",
+      "options": [
+        "60 cm\u00b2",
+        "120 cm\u00b2",
+        "110 cm\u00b2",
+        "100 cm\u00b2"
+      ],
+      "correct_answer": "60 cm\u00b2",
+      "id": 123,
+      "topic": "Ratios & Proportions"
+    },
+    {
+      "question": "Find the value of x: x\u00b2 = 49",
+      "options": [
+        "x = \u00b17",
+        "x = 7",
+        "x = -7",
+        "x = 0"
+      ],
+      "correct_answer": "x = \u00b17",
+      "id": 124,
+      "topic": "Algebra"
+    },
+    {
+      "question": "Find the mean of 5, 10, 15, 20, 25.",
+      "options": [
+        "15",
+        "10",
+        "12",
+        "20"
+      ],
+      "correct_answer": "15",
+      "id": 125,
+      "topic": "Numbers"
+    },
+    {
+      "question": "A scale drawing has a scale of 1:100. What real length does 5 cm represent?",
+      "options": [
+        "500 cm",
+        "50 cm",
+        "100 cm",
+        "5 m"
+      ],
+      "correct_answer": "500 cm",
+      "id": 126,
+      "topic": "Quadratic Equations"
+    },
+    {
+      "question": "Solve for x: 3x - 7 = 2x + 5",
+      "options": [
+        "x = -12",
+        "x = 12",
+        "x = 1",
+        "x = -1"
+      ],
+      "correct_answer": "x = 12",
+      "id": 127,
+      "topic": "Probability"
+    },
+    {
+      "question": "A scale drawing has a scale of 1:100. What real length does 5 cm represent?",
+      "options": [
+        "500 cm",
+        "50 cm",
+        "100 cm",
+        "5 m"
+      ],
+      "correct_answer": "500 cm",
+      "id": 128,
+      "topic": "Algebra"
+    },
+    {
+      "question": "Find the value of x: x\u00b2 = 49",
+      "options": [
+        "x = \u00b17",
+        "x = 7",
+        "x = -7",
+        "x = 0"
+      ],
+      "correct_answer": "x = \u00b17",
+      "id": 129,
+      "topic": "Probability"
+    },
+    {
+      "question": "Convert 0.75 to a fraction.",
+      "options": [
+        "3/4",
+        "1/4",
+        "2/3",
+        "4/5"
+      ],
+      "correct_answer": "3/4",
+      "id": 130,
+      "topic": "Trigonometry"
+    },
+    {
+      "question": "The exterior angle of a regular polygon is 30\u00b0. How many sides does it have?",
+      "options": [
+        "12",
+        "6",
+        "8",
+        "10"
+      ],
+      "correct_answer": "12",
+      "id": 131,
+      "topic": "Algebra"
+    },
+    {
+      "question": "Solve for x: 3x - 7 = 2x + 5",
+      "options": [
+        "x = -12",
+        "x = 12",
+        "x = 1",
+        "x = -1"
+      ],
+      "correct_answer": "x = 12",
+      "id": 132,
+      "topic": "Statistics"
+    },
+    {
+      "question": "Solve for x: 3x - 7 = 2x + 5",
+      "options": [
+        "x = -12",
+        "x = 12",
+        "x = 1",
+        "x = -1"
+      ],
+      "correct_answer": "x = 12",
+      "id": 133,
+      "topic": "Numbers"
+    },
+    {
+      "question": "Find the value of x: x\u00b2 = 49",
+      "options": [
+        "x = \u00b17",
+        "x = 7",
+        "x = -7",
+        "x = 0"
+      ],
+      "correct_answer": "x = \u00b17",
+      "id": 134,
+      "topic": "Ratios & Proportions"
+    },
+    {
+      "question": "Find the mean of 5, 10, 15, 20, 25.",
+      "options": [
+        "15",
+        "10",
+        "12",
+        "20"
+      ],
+      "correct_answer": "15",
+      "id": 135,
+      "topic": "Numbers"
+    },
+    {
+      "question": "Find the mean of 5, 10, 15, 20, 25.",
+      "options": [
+        "15",
+        "10",
+        "12",
+        "20"
+      ],
+      "correct_answer": "15",
+      "id": 136,
+      "topic": "Quadratic Equations"
+    },
+    {
+      "question": "What is the probability of getting a 2 when a fair die is rolled?",
+      "options": [
+        "1/6",
+        "2/6",
+        "1/3",
+        "5/6"
+      ],
+      "correct_answer": "1/6",
+      "id": 137,
+      "topic": "Statistics"
+    },
+    {
+      "question": "Find the area of a triangle with base 10 cm and height 12 cm.",
+      "options": [
+        "60 cm\u00b2",
+        "120 cm\u00b2",
+        "110 cm\u00b2",
+        "100 cm\u00b2"
+      ],
+      "correct_answer": "60 cm\u00b2",
+      "id": 138,
+      "topic": "Numbers"
+    },
+    {
+      "question": "Find the mean of 5, 10, 15, 20, 25.",
+      "options": [
+        "15",
+        "10",
+        "12",
+        "20"
+      ],
+      "correct_answer": "15",
+      "id": 139,
+      "topic": "Algebra"
+    },
+    {
+      "question": "Solve for x: 3x - 7 = 2x + 5",
+      "options": [
+        "x = -12",
+        "x = 12",
+        "x = 1",
+        "x = -1"
+      ],
+      "correct_answer": "x = 12",
+      "id": 140,
+      "topic": "Trigonometry"
+    },
+    {
+      "question": "Find the mean of 5, 10, 15, 20, 25.",
+      "options": [
+        "15",
+        "10",
+        "12",
+        "20"
+      ],
+      "correct_answer": "15",
+      "id": 141,
+      "topic": "Algebra"
+    },
+    {
+      "question": "A scale drawing has a scale of 1:100. What real length does 5 cm represent?",
+      "options": [
+        "500 cm",
+        "50 cm",
+        "100 cm",
+        "5 m"
+      ],
+      "correct_answer": "500 cm",
+      "id": 142,
+      "topic": "Ratios & Proportions"
+    },
+    {
+      "question": "Solve for x: 3x - 7 = 2x + 5",
+      "options": [
+        "x = -12",
+        "x = 12",
+        "x = 1",
+        "x = -1"
+      ],
+      "correct_answer": "x = 12",
+      "id": 143,
+      "topic": "Probability"
+    },
+    {
+      "question": "What is the value of sin(30\u00b0)?",
+      "options": [
+        "1",
+        "1/2",
+        "\u221a3/2",
+        "0"
+      ],
+      "correct_answer": "1/2",
+      "id": 144,
+      "topic": "Probability"
+    },
+    {
+      "question": "Solve for x: 3x - 7 = 2x + 5",
+      "options": [
+        "x = -12",
+        "x = 12",
+        "x = 1",
+        "x = -1"
+      ],
+      "correct_answer": "x = 12",
+      "id": 145,
+      "topic": "Quadratic Equations"
+    },
+    {
+      "question": "Find the area of a triangle with base 10 cm and height 12 cm.",
+      "options": [
+        "60 cm\u00b2",
+        "120 cm\u00b2",
+        "110 cm\u00b2",
+        "100 cm\u00b2"
+      ],
+      "correct_answer": "60 cm\u00b2",
+      "id": 146,
+      "topic": "Quadratic Equations"
+    },
+    {
+      "question": "A scale drawing has a scale of 1:100. What real length does 5 cm represent?",
+      "options": [
+        "500 cm",
+        "50 cm",
+        "100 cm",
+        "5 m"
+      ],
+      "correct_answer": "500 cm",
+      "id": 147,
+      "topic": "Geometry"
+    },
+    {
+      "question": "Find the area of a triangle with base 10 cm and height 12 cm.",
+      "options": [
+        "60 cm\u00b2",
+        "120 cm\u00b2",
+        "110 cm\u00b2",
+        "100 cm\u00b2"
+      ],
+      "correct_answer": "60 cm\u00b2",
+      "id": 148,
+      "topic": "Linear Equations"
+    },
+    {
+      "question": "What is the probability of getting a 2 when a fair die is rolled?",
+      "options": [
+        "1/6",
+        "2/6",
+        "1/3",
+        "5/6"
+      ],
+      "correct_answer": "1/6",
+      "id": 149,
+      "topic": "Trigonometry"
+    },
+    {
+      "question": "What is the value of sin(30\u00b0)?",
+      "options": [
+        "1",
+        "1/2",
+        "\u221a3/2",
+        "0"
+      ],
+      "correct_answer": "1/2",
+      "id": 150,
+      "topic": "Algebra"
+    },
+    {
+      "question": "A scale drawing has a scale of 1:100. What real length does 5 cm represent?",
+      "options": [
+        "500 cm",
+        "50 cm",
+        "100 cm",
+        "5 m"
+      ],
+      "correct_answer": "500 cm",
+      "id": 151,
+      "topic": "Algebra"
+    },
+    {
+      "question": "Convert 0.75 to a fraction.",
+      "options": [
+        "3/4",
+        "1/4",
+        "2/3",
+        "4/5"
+      ],
+      "correct_answer": "3/4",
+      "id": 152,
+      "topic": "Statistics"
+    },
+    {
+      "question": "Find the area of a triangle with base 10 cm and height 12 cm.",
+      "options": [
+        "60 cm\u00b2",
+        "120 cm\u00b2",
+        "110 cm\u00b2",
+        "100 cm\u00b2"
+      ],
+      "correct_answer": "60 cm\u00b2",
+      "id": 153,
+      "topic": "Probability"
+    },
+    {
+      "question": "Find the value of x: x\u00b2 = 49",
+      "options": [
+        "x = \u00b17",
+        "x = 7",
+        "x = -7",
+        "x = 0"
+      ],
+      "correct_answer": "x = \u00b17",
+      "id": 154,
+      "topic": "Statistics"
+    },
+    {
+      "question": "Convert 0.75 to a fraction.",
+      "options": [
+        "3/4",
+        "1/4",
+        "2/3",
+        "4/5"
+      ],
+      "correct_answer": "3/4",
+      "id": 155,
+      "topic": "Probability"
+    },
+    {
+      "question": "The exterior angle of a regular polygon is 30\u00b0. How many sides does it have?",
+      "options": [
+        "12",
+        "6",
+        "8",
+        "10"
+      ],
+      "correct_answer": "12",
+      "id": 156,
+      "topic": "Geometry"
+    },
+    {
+      "question": "Find the value of x: x\u00b2 = 49",
+      "options": [
+        "x = \u00b17",
+        "x = 7",
+        "x = -7",
+        "x = 0"
+      ],
+      "correct_answer": "x = \u00b17",
+      "id": 157,
+      "topic": "Algebra"
+    },
+    {
+      "question": "The exterior angle of a regular polygon is 30\u00b0. How many sides does it have?",
+      "options": [
+        "12",
+        "6",
+        "8",
+        "10"
+      ],
+      "correct_answer": "12",
+      "id": 158,
+      "topic": "Probability"
+    },
+    {
+      "question": "Simplify: (2x + 3)(x - 4)",
+      "options": [
+        "2x\u00b2 - 5x - 12",
+        "2x\u00b2 - 5x + 12",
+        "x\u00b2 + x - 12",
+        "2x\u00b2 - 8x + 3"
+      ],
+      "correct_answer": "2x\u00b2 - 5x - 12",
+      "id": 159,
+      "topic": "Probability"
+    },
+    {
+      "question": "Find the mean of 5, 10, 15, 20, 25.",
+      "options": [
+        "15",
+        "10",
+        "12",
+        "20"
+      ],
+      "correct_answer": "15",
+      "id": 160,
+      "topic": "Algebra"
+    },
+    {
+      "question": "Find the value of x: x\u00b2 = 49",
+      "options": [
+        "x = \u00b17",
+        "x = 7",
+        "x = -7",
+        "x = 0"
+      ],
+      "correct_answer": "x = \u00b17",
+      "id": 161,
+      "topic": "Quadratic Equations"
+    },
+    {
+      "question": "A scale drawing has a scale of 1:100. What real length does 5 cm represent?",
+      "options": [
+        "500 cm",
+        "50 cm",
+        "100 cm",
+        "5 m"
+      ],
+      "correct_answer": "500 cm",
+      "id": 162,
+      "topic": "Quadratic Equations"
+    },
+    {
+      "question": "Simplify: (2x + 3)(x - 4)",
+      "options": [
+        "2x\u00b2 - 5x - 12",
+        "2x\u00b2 - 5x + 12",
+        "x\u00b2 + x - 12",
+        "2x\u00b2 - 8x + 3"
+      ],
+      "correct_answer": "2x\u00b2 - 5x - 12",
+      "id": 163,
+      "topic": "Probability"
+    },
+    {
+      "question": "What is the probability of getting a 2 when a fair die is rolled?",
+      "options": [
+        "1/6",
+        "2/6",
+        "1/3",
+        "5/6"
+      ],
+      "correct_answer": "1/6",
+      "id": 164,
+      "topic": "Algebra"
+    },
+    {
+      "question": "Convert 0.75 to a fraction.",
+      "options": [
+        "3/4",
+        "1/4",
+        "2/3",
+        "4/5"
+      ],
+      "correct_answer": "3/4",
+      "id": 165,
+      "topic": "Trigonometry"
+    },
+    {
+      "question": "Find the area of a triangle with base 10 cm and height 12 cm.",
+      "options": [
+        "60 cm\u00b2",
+        "120 cm\u00b2",
+        "110 cm\u00b2",
+        "100 cm\u00b2"
+      ],
+      "correct_answer": "60 cm\u00b2",
+      "id": 166,
+      "topic": "Statistics"
+    },
+    {
+      "question": "Find the mean of 5, 10, 15, 20, 25.",
+      "options": [
+        "15",
+        "10",
+        "12",
+        "20"
+      ],
+      "correct_answer": "15",
+      "id": 167,
+      "topic": "Geometry"
+    },
+    {
+      "question": "The exterior angle of a regular polygon is 30\u00b0. How many sides does it have?",
+      "options": [
+        "12",
+        "6",
+        "8",
+        "10"
+      ],
+      "correct_answer": "12",
+      "id": 168,
+      "topic": "Ratios & Proportions"
+    },
+    {
+      "question": "Simplify: (2x + 3)(x - 4)",
+      "options": [
+        "2x\u00b2 - 5x - 12",
+        "2x\u00b2 - 5x + 12",
+        "x\u00b2 + x - 12",
+        "2x\u00b2 - 8x + 3"
+      ],
+      "correct_answer": "2x\u00b2 - 5x - 12",
+      "id": 169,
+      "topic": "Measurement"
+    },
+    {
+      "question": "Convert 0.75 to a fraction.",
+      "options": [
+        "3/4",
+        "1/4",
+        "2/3",
+        "4/5"
+      ],
+      "correct_answer": "3/4",
+      "id": 170,
+      "topic": "Trigonometry"
+    },
+    {
+      "question": "What is the value of sin(30\u00b0)?",
+      "options": [
+        "1",
+        "1/2",
+        "\u221a3/2",
+        "0"
+      ],
+      "correct_answer": "1/2",
+      "id": 171,
+      "topic": "Probability"
+    },
+    {
+      "question": "What is the probability of getting a 2 when a fair die is rolled?",
+      "options": [
+        "1/6",
+        "2/6",
+        "1/3",
+        "5/6"
+      ],
+      "correct_answer": "1/6",
+      "id": 172,
+      "topic": "Ratios & Proportions"
+    },
+    {
+      "question": "A scale drawing has a scale of 1:100. What real length does 5 cm represent?",
+      "options": [
+        "500 cm",
+        "50 cm",
+        "100 cm",
+        "5 m"
+      ],
+      "correct_answer": "500 cm",
+      "id": 173,
+      "topic": "Geometry"
+    },
+    {
+      "question": "Find the mean of 5, 10, 15, 20, 25.",
+      "options": [
+        "15",
+        "10",
+        "12",
+        "20"
+      ],
+      "correct_answer": "15",
+      "id": 174,
+      "topic": "Trigonometry"
+    },
+    {
+      "question": "Find the value of x: x\u00b2 = 49",
+      "options": [
+        "x = \u00b17",
+        "x = 7",
+        "x = -7",
+        "x = 0"
+      ],
+      "correct_answer": "x = \u00b17",
+      "id": 175,
+      "topic": "Geometry"
+    },
+    {
+      "question": "Simplify: (2x + 3)(x - 4)",
+      "options": [
+        "2x\u00b2 - 5x - 12",
+        "2x\u00b2 - 5x + 12",
+        "x\u00b2 + x - 12",
+        "2x\u00b2 - 8x + 3"
+      ],
+      "correct_answer": "2x\u00b2 - 5x - 12",
+      "id": 176,
+      "topic": "Geometry"
+    },
+    {
+      "question": "Solve for x: 3x - 7 = 2x + 5",
+      "options": [
+        "x = -12",
+        "x = 12",
+        "x = 1",
+        "x = -1"
+      ],
+      "correct_answer": "x = 12",
+      "id": 177,
+      "topic": "Probability"
+    },
+    {
+      "question": "Convert 0.75 to a fraction.",
+      "options": [
+        "3/4",
+        "1/4",
+        "2/3",
+        "4/5"
+      ],
+      "correct_answer": "3/4",
+      "id": 178,
+      "topic": "Ratios & Proportions"
+    },
+    {
+      "question": "Convert 0.75 to a fraction.",
+      "options": [
+        "3/4",
+        "1/4",
+        "2/3",
+        "4/5"
+      ],
+      "correct_answer": "3/4",
+      "id": 179,
+      "topic": "Algebra"
+    },
+    {
+      "question": "Simplify: (2x + 3)(x - 4)",
+      "options": [
+        "2x\u00b2 - 5x - 12",
+        "2x\u00b2 - 5x + 12",
+        "x\u00b2 + x - 12",
+        "2x\u00b2 - 8x + 3"
+      ],
+      "correct_answer": "2x\u00b2 - 5x - 12",
+      "id": 180,
+      "topic": "Measurement"
+    },
+    {
+      "question": "What is the probability of getting a 2 when a fair die is rolled?",
+      "options": [
+        "1/6",
+        "2/6",
+        "1/3",
+        "5/6"
+      ],
+      "correct_answer": "1/6",
+      "id": 181,
+      "topic": "Ratios & Proportions"
+    },
+    {
+      "question": "Find the mean of 5, 10, 15, 20, 25.",
+      "options": [
+        "15",
+        "10",
+        "12",
+        "20"
+      ],
+      "correct_answer": "15",
+      "id": 182,
+      "topic": "Algebra"
+    },
+    {
+      "question": "What is the value of sin(30\u00b0)?",
+      "options": [
+        "1",
+        "1/2",
+        "\u221a3/2",
+        "0"
+      ],
+      "correct_answer": "1/2",
+      "id": 183,
+      "topic": "Numbers"
+    },
+    {
+      "question": "Find the area of a triangle with base 10 cm and height 12 cm.",
+      "options": [
+        "60 cm\u00b2",
+        "120 cm\u00b2",
+        "110 cm\u00b2",
+        "100 cm\u00b2"
+      ],
+      "correct_answer": "60 cm\u00b2",
+      "id": 184,
+      "topic": "Statistics"
+    },
+    {
+      "question": "A scale drawing has a scale of 1:100. What real length does 5 cm represent?",
+      "options": [
+        "500 cm",
+        "50 cm",
+        "100 cm",
+        "5 m"
+      ],
+      "correct_answer": "500 cm",
+      "id": 185,
+      "topic": "Algebra"
+    },
+    {
+      "question": "Simplify: (2x + 3)(x - 4)",
+      "options": [
+        "2x\u00b2 - 5x - 12",
+        "2x\u00b2 - 5x + 12",
+        "x\u00b2 + x - 12",
+        "2x\u00b2 - 8x + 3"
+      ],
+      "correct_answer": "2x\u00b2 - 5x - 12",
+      "id": 186,
+      "topic": "Statistics"
+    },
+    {
+      "question": "Convert 0.75 to a fraction.",
+      "options": [
+        "3/4",
+        "1/4",
+        "2/3",
+        "4/5"
+      ],
+      "correct_answer": "3/4",
+      "id": 187,
+      "topic": "Statistics"
+    },
+    {
+      "question": "Solve for x: 3x - 7 = 2x + 5",
+      "options": [
+        "x = -12",
+        "x = 12",
+        "x = 1",
+        "x = -1"
+      ],
+      "correct_answer": "x = 12",
+      "id": 188,
+      "topic": "Measurement"
+    },
+    {
+      "question": "The exterior angle of a regular polygon is 30\u00b0. How many sides does it have?",
+      "options": [
+        "12",
+        "6",
+        "8",
+        "10"
+      ],
+      "correct_answer": "12",
+      "id": 189,
+      "topic": "Measurement"
+    },
+    {
+      "question": "Solve for x: 3x - 7 = 2x + 5",
+      "options": [
+        "x = -12",
+        "x = 12",
+        "x = 1",
+        "x = -1"
+      ],
+      "correct_answer": "x = 12",
+      "id": 190,
+      "topic": "Probability"
+    },
+    {
+      "question": "The exterior angle of a regular polygon is 30\u00b0. How many sides does it have?",
+      "options": [
+        "12",
+        "6",
+        "8",
+        "10"
+      ],
+      "correct_answer": "12",
+      "id": 191,
+      "topic": "Measurement"
+    },
+    {
+      "question": "Find the mean of 5, 10, 15, 20, 25.",
+      "options": [
+        "15",
+        "10",
+        "12",
+        "20"
+      ],
+      "correct_answer": "15",
+      "id": 192,
+      "topic": "Statistics"
+    },
+    {
+      "question": "What is the value of sin(30\u00b0)?",
+      "options": [
+        "1",
+        "1/2",
+        "\u221a3/2",
+        "0"
+      ],
+      "correct_answer": "1/2",
+      "id": 193,
+      "topic": "Ratios & Proportions"
+    },
+    {
+      "question": "The exterior angle of a regular polygon is 30\u00b0. How many sides does it have?",
+      "options": [
+        "12",
+        "6",
+        "8",
+        "10"
+      ],
+      "correct_answer": "12",
+      "id": 194,
+      "topic": "Geometry"
+    },
+    {
+      "question": "Solve for x: 3x - 7 = 2x + 5",
+      "options": [
+        "x = -12",
+        "x = 12",
+        "x = 1",
+        "x = -1"
+      ],
+      "correct_answer": "x = 12",
+      "id": 195,
+      "topic": "Numbers"
+    },
+    {
+      "question": "Solve for x: 3x - 7 = 2x + 5",
+      "options": [
+        "x = -12",
+        "x = 12",
+        "x = 1",
+        "x = -1"
+      ],
+      "correct_answer": "x = 12",
+      "id": 196,
+      "topic": "Trigonometry"
+    },
+    {
+      "question": "Convert 0.75 to a fraction.",
+      "options": [
+        "3/4",
+        "1/4",
+        "2/3",
+        "4/5"
+      ],
+      "correct_answer": "3/4",
+      "id": 197,
+      "topic": "Quadratic Equations"
+    },
+    {
+      "question": "Find the area of a triangle with base 10 cm and height 12 cm.",
+      "options": [
+        "60 cm\u00b2",
+        "120 cm\u00b2",
+        "110 cm\u00b2",
+        "100 cm\u00b2"
+      ],
+      "correct_answer": "60 cm\u00b2",
+      "id": 198,
+      "topic": "Measurement"
+    },
+    {
+      "question": "Find the mean of 5, 10, 15, 20, 25.",
+      "options": [
+        "15",
+        "10",
+        "12",
+        "20"
+      ],
+      "correct_answer": "15",
+      "id": 199,
+      "topic": "Trigonometry"
+    },
+    {
+      "question": "What is the probability of getting a 2 when a fair die is rolled?",
+      "options": [
+        "1/6",
+        "2/6",
+        "1/3",
+        "5/6"
+      ],
+      "correct_answer": "1/6",
+      "id": 200,
+      "topic": "Statistics"
+    }
+  ]
+}

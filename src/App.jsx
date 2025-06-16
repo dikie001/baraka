@@ -15,6 +15,7 @@ import Numbers from './topics/numbers/Numbers'
 import NumbersQuiz from './topics/numbers/NumbersQuiz'
 import { Measurement } from './topics/measurement/Measurement'
 import { Probability } from './topics/probability/Probability'
+import BarakaAI from './ai/BarakaAi'
 
 const App = () => {
   
@@ -39,6 +40,7 @@ const App = () => {
         <Route path="/numbers-quiz" element={<NumbersQuiz />} />
         <Route path="/data" element={<Data />} />
         <Route path="/measurement" element={<Measurement />} />
+        <Route path="/baraka-ai" element={<BarakaAI />} />
       </Routes>
     </Router>
   );

@@ -43,7 +43,11 @@ const NumbersQuiz
     "quiz-answered",
     []
   );
+  // Set the page
   const [mode, setMode] = useLocalStorage("choose-page", null);
+  // Set quizLengh
+  const [quizLength, setQuizLength]=useLocalStorage("numbers-quiz-length", null)
+
 
   // Initialize state with saved progress
   const [current, setCurrent] = useState(currentNumber || 0);
@@ -94,6 +98,10 @@ const NumbersQuiz
     setPercentageScore(newPercentageScore);
   }, [score, totalQuestions, setPercentageScore]);
 
+  // Set the quiz length once 
+  useEffect(()=>{
+    setQuizLength(totalQuestions)
+  })
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-900 via-slate-800 to-slate-900 text-white p-4">
       <BottomNav />
