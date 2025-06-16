@@ -1,30 +1,23 @@
+import { ChevronLeft } from "lucide-react";
+import { Brain, Send, Settings, Sparkles } from "lucide-react";
 import React, { useState } from "react";
-import {
-  Send,
-  BookOpen,
-  Brain,
-  Sparkles,
-  MessageCircle,
-  Settings,
-} from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 export default function BarakaAI() {
   const [message, setMessage] = useState("");
   const [messages, setMessages] = useState([]);
   const [isTyping, setIsTyping] = useState(false);
-  const [apiKey, setApiKey] = useState("");
   const [showSettings, setShowSettings] = useState(false);
   const [error, setError] = useState("");
   const [showWelcome, setShowWelcome] = useState(true);
   const API_KEY = import.meta.env.VITE_API_KEY;
+  const navigate = useNavigate();
 
   const callGeminiAPI = async (userMessage) => {
     if (!API_KEY) {
       setError("Server error");
       return;
     }
-
-    
 
     try {
       const response = await fetch(
@@ -124,6 +117,12 @@ export default function BarakaAI() {
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-pink-500/20 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-purple-500/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
       </div>
+      <button
+      onClick={()=>navigate('/')}
+        className="flex text-purple-500 z-60 shadow-md shadow-purple-700  bg-black/40 absolute top-2 left-2 py-1.5 px-2 rounded-md "
+      >
+        <ChevronLeft /> Back
+      </button>
 
       <div className="relative z-10 flex flex-col h-screen">
         {/* Compact Header */}
@@ -149,7 +148,6 @@ export default function BarakaAI() {
           {showSettings && (
             <div className="absolute top-16 right-4 bg-white/10 backdrop-blur-lg rounded-2xl p-4 border border-white/20 z-20 min-w-64">
               <h3 className="font-semibold mb-3">Baraka AI </h3>
-              
             </div>
           )}
         </header>
@@ -181,7 +179,7 @@ export default function BarakaAI() {
           {/* Chat Messages Area */}
           <div className="flex-1 bg-white/5 backdrop-blur-lg rounded-2xl border border-white/10 flex flex-col min-h-0">
             {/* Chat Header */}
-            <div className="p-3 border-b border-white/10 flex-shrink-0">
+            <div className="p-3 border-b  border-white/10 flex-shrink-0">
               <h3 className="font-semibold flex items-center gap-2 text-sm">
                 <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
                 AI Assistant Active
@@ -205,7 +203,7 @@ export default function BarakaAI() {
               {messages.map((msg) => (
                 <div
                   key={msg.id}
-                  className={`flex items-start gap-3 mb-4 ${
+                  className={`flex items-start gap-3 mb-3 overflow ${
                     msg.type === "user" ? "flex-row-reverse" : ""
                   }`}
                 >

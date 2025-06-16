@@ -60,7 +60,6 @@ export default function HomePage() {
   const probabilityTotalQuiz = localStorage.getItem("probability-quiz-length");
   const PP = Number(probabilityProgress);
   const PTQ = Number(probabilityTotalQuiz);
-  console.log(PP, PTQ);
 
   // Data Quiz LocalStorage
     const dataProgress = localStorage.getItem(
@@ -180,7 +179,7 @@ export default function HomePage() {
               {/* Quick Practice Button */}
               <div
                 onClick={() => navigate("/quick-practice")}
-                className="bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl p-4 sm:p-6 hover:from-purple-500 hover:to-pink-500 transition-all duration-300 cursor-pointer transform hover:scale-105 lg:hover:scale-102"
+                className="bg-gradient-to-r from-purple-700 to-pink-800 ring ring-purple-700 rounded-2xl p-4 sm:p-6 hover:ring-2 transition-all duration-300 cursor-pointer transform hover:scale-104 lg:hover:scale-102"
               >
                 <div className="flex items-center justify-center space-x-3">
                   <Play className="w-6 h-6 lg:w-8 lg:h-8" />

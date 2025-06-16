@@ -1,12 +1,457 @@
-import React from "react";
-import BottomNav from "../components/MobileNav";
+import {
+  BookOpen,
+  Calendar,
+  ChevronUp,
+  Clock,
+  Crown,
+  Flame,
+  Sparkles,
+  Star,
+  Target,
+  TrendingUp,
+  Zap
+} from "lucide-react";
+import React, { useState } from "react";
 
-const Profile = () => {
+const ProfilePage = () => {
+
+  // Sample subject data - replace with actual data from your app
+  const subjectData = [
+    { name: "Algebra", progress: 85, color: "from-pink-500 to-purple-500" },
+    { name: "Geometry", progress: 72, color: "from-purple-500 to-pink-500" },
+    {
+      name: "Data & Statistics",
+      progress: 90,
+      color: "from-pink-400 to-purple-600",
+    },
+    { name: "Measurement", progress: 68, color: "from-purple-600 to-pink-400" },
+    { name: "Numbers", progress: 95, color: "from-pink-600 to-purple-400" },
+    { name: "Functions", progress: 58, color: "from-purple-400 to-pink-600" },
+  ];
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white overflow-hidden">
-      <BottomNav />
+    <div className="min-h-screen bg-gradient-to-br from-purple-950 via-slate-900 to-purple-900 p-4 relative overflow-hidden">
+      {/* Animated background elements */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-pink-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        <div className="absolute top-3/4 left-1/2 w-64 h-64 bg-purple-400/5 rounded-full blur-2xl animate-pulse delay-500"></div>
+      </div>
+
+      <div className="max-w-7xl mx-auto space-y-8 relative z-10">
+        {/* HEADER PROFILE CARD */}
+        <div className="bg-black/40 backdrop-blur-xl rounded-3xl shadow-2xl shadow-purple-900/30 py-6 border border-purple-500/30 hover:border-purple-400/50 transition-all duration-500 group">
+          <div className="flex flex-col lg:flex-row items-center gap-8">
+            {/* Profile Avatar with animated glow */}
+            <div className="relative">
+              <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full blur-lg opacity-75 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="relative w-28 h-28 sm:w-32 sm:h-32 bg-gradient-to-br from-purple-500 to-pink-600 rounded-full flex items-center justify-center shadow-2xl shadow-purple-500/50 hover:shadow-purple-400/60 transition-all duration-300 hover:scale-105">
+                <img
+                
+                  src="./icon.png"
+                  alt="baraka"
+                  className="absolute rounded-full inset-1 w-[calc(100%-8px)] h-[calc(100%-8px)] object-cover"
+                />
+              </div>
+              <div className="absolute -top-2 -right-2 bg-gradient-to-r from-pink-500 to-purple-500 rounded-full p-2 shadow-xl shadow-pink-500/50 animate-bounce">
+                <Crown className="w-5 h-5 text-white" />
+              </div>
+            </div>
+
+            {/* Profile Info */}
+            <div className="text-center lg:text-left flex-1">
+              <h1 className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-purple-300 to-pink-300 bg-clip-text text-transparent mb-3 drop-shadow-lg">
+                Bozes Baraka
+              </h1>
+              <p className="text-slate-300 mb-4 text-lg">
+                Grade 9 Mathematics Explorer
+              </p>
+              <div className="  flex flex-col space-y-4">
+                <div className="flex gap-3">
+                  <span className="px-2 py-1 bg-gradient-to-r from-purple-500/20 to-pink-500/20 text-purple-200 rounded-full text-sm font-medium backdrop-blur-sm border border-purple-400/30 ">
+                    <Sparkles className="w-4 h-4 inline mr-2" />
+                    Problem Solver
+                  </span>
+                  <span className="px-2 py-1 bg-gradient-to-r from-pink-500/20 to-purple-500/20 text-pink-200 rounded-full text-sm font-medium backdrop-blur-sm border border-pink-400/30 ">
+                    <Zap className="w-4 h-4 inline mr-2" />
+                    Quick Learner
+                  </span>
+                </div>
+                <div>
+                  <span className="px-4 py-2 bg-gradient-to-r from-purple-500/20 to-blue-500/20 text-blue-200 rounded-full text-sm font-medium backdrop-blur-sm border border-blue-400/30 hover:border-blue-300/50 transition-all duration-300 hover:scale-105">
+                    <Flame className="w-4 h-4 inline mr-2" />
+                    Consistent
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* Level Display */}
+            <div className="text-center relative">
+              <div className="text-4xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent mb-2 drop-shadow-lg">
+                Level 12
+              </div>
+              <div className="text-slate-400 text-sm">Mathematics Master</div>
+              <div className="absolute -inset-4 bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-2xl blur-xl opacity-50"></div>
+            </div>
+          </div>
+        </div>
+
+        {/* MAIN CONTENT GRID */}
+        <div className="grid grid-cols-1 xl:grid-cols-3 gap-4">
+          {/* LEFT COLUMN - Stats & Achievements */}
+          <div className="xl:col-span-2 space-y-5">
+            {/* QUICK STATS GRID */}
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-2">
+              {/* Study Streak Card */}
+              <div
+                className="bg-black/30 backdrop-blur-xl rounded-2xl p-6 shadow-2xl border border-purple-500/30 hover:border-purple-400/50 transition-all duration-500 hover:scale-105 hover:shadow-purple-500/25 group cursor-pointer"
+                // onMouseEnter={() => setHoveredCard("streak")}
+                // onMouseLeave={() => setHoveredCard(null)}
+              >
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="p-3 bg-gradient-to-r from-pink-500/20 to-purple-500/20 rounded-xl backdrop-blur-sm border border-purple-400/30 group-hover:scale-110 transition-transform duration-300">
+                    <Calendar className="w-5 h-5 text-purple-300" />
+                  </div>
+                  <span className="text-slate-300 text-sm font-medium">
+                    Study Streak
+                  </span>
+                </div>
+                <div className="text-2xl font-bold text-white mb-2">
+                  15 days
+                </div>
+                <div className="text-xs text-pink-400 font-medium flex items-center">
+                  <ChevronUp className="w-3 h-3 mr-1" />
+                  +3 from last week
+                </div>
+              </div>
+
+              {/* Quizzes Completed Card */}
+              <div
+                className="bg-black/30 backdrop-blur-xl rounded-2xl p-6 shadow-2xl border border-purple-500/30 hover:border-purple-400/50 transition-all duration-500 hover:scale-105 hover:shadow-purple-500/25 group cursor-pointer"
+                // onMouseEnter={() => setHoveredCard("quizzes")}
+                // onMouseLeave={() => setHoveredCard(null)}
+              >
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="p-3 bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-xl backdrop-blur-sm border border-pink-400/30 group-hover:scale-110 transition-transform duration-300">
+                    <Target className="w-5 h-5 text-pink-300" />
+                  </div>
+                  <span className="text-slate-300 text-sm font-medium">
+                    Quizzes Completed
+                  </span>
+                </div>
+                <div className="text-2xl font-bold text-white mb-2">127</div>
+                <div className="text-xs text-purple-400 font-medium">
+                  89% accuracy
+                </div>
+              </div>
+
+              {/* Study Time Card */}
+              <div
+                className="bg-black/30 backdrop-blur-xl rounded-2xl p-6 shadow-2xl border border-purple-500/30 hover:border-purple-400/50 transition-all duration-500 hover:scale-105 hover:shadow-purple-500/25 group cursor-pointer"
+                // onMouseEnter={() => setHoveredCard("time")}
+                // onMouseLeave={() => setHoveredCard(null)}
+              >
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="p-3 bg-gradient-to-r from-pink-500/20 to-purple-500/20 rounded-xl backdrop-blur-sm border border-purple-400/30 group-hover:scale-110 transition-transform duration-300">
+                    <Clock className="w-5 h-5 text-purple-300" />
+                  </div>
+                  <span className="text-slate-300 text-sm font-medium">
+                    Study Time
+                  </span>
+                </div>
+                <div className="text-2xl font-bold text-white mb-2">42h</div>
+                <div className="text-xs text-pink-400 font-medium">
+                  This month
+                </div>
+              </div>
+
+              {/* Total Points Card */}
+              <div
+                className="bg-black/30 backdrop-blur-xl rounded-2xl p-6 shadow-2xl border border-purple-500/30 hover:border-purple-400/50 transition-all duration-500 hover:scale-105 hover:shadow-purple-500/25 group cursor-pointer"
+                // onMouseEnter={() => setHoveredCard("points")}
+                // onMouseLeave={() => setHoveredCard(null)}
+              >
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="p-3 bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-xl backdrop-blur-sm border border-pink-400/30 group-hover:scale-110 ">
+                    <Star className="w-5 h-5 text-pink-300" />
+                  </div>
+                  <span className="text-slate-300 text-sm font-medium">
+                    Total Points
+                  </span>
+                </div>
+                <div className="text-2xl font-bold text-white mb-2">2,450</div>
+                <div className="text-xs text-purple-400 font-medium">
+                  Top 10%
+                </div>
+              </div>
+            </div>
+
+            {/* Commented Block */}
+            <div>
+              {/* RECENT ACHIEVEMENTS SECTION */}
+              {/* <div className="bg-black/30 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-purple-500/30 hover:border-purple-400/50 transition-all duration-500">
+              <div className="flex items-center gap-4 mb-8">
+                <div className="p-3 bg-gradient-to-r from-pink-500/20 to-purple-500/20 rounded-xl backdrop-blur-sm border border-purple-400/30">
+                  <Award className="w-7 h-7 text-purple-300" />
+                </div>
+                <h2 className="text-2xl font-bold text-white">
+                  Recent Achievements
+                </h2>
+              </div>
+
+              <div className="space-y-5"> */}
+
+              {/* Achievement Item 1 */}
+              {/* <div className="flex items-center gap-5 p-5 bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-2xl hover:from-purple-500/20 hover:to-pink-500/20 transition-all duration-300 border border-purple-400/20 hover:border-purple-300/40 backdrop-blur-sm group">
+                  <div className="p-3 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full shadow-lg shadow-purple-500/50 group-hover:shadow-purple-400/60 transition-all duration-300 group-hover:scale-110">
+                    <Trophy className="w-5 h-5 text-white" />
+                  </div>
+                  <div className="flex-1">
+                    <div className="font-semibold text-white text-lg">
+                      Algebra Master
+                    </div>
+                    <div className="text-slate-300">
+                      Completed all algebra topics
+                    </div>
+                  </div>
+                  <div className="text-purple-400 font-bold">+50 XP</div>
+                </div> */}
+
+              {/* Achievement Item 2 */}
+              {/* <div className="flex items-center gap-5 p-5 bg-gradient-to-r from-pink-500/10 to-purple-500/10 rounded-2xl hover:from-pink-500/20 hover:to-purple-500/20 transition-all duration-300 border border-pink-400/20 hover:border-pink-300/40 backdrop-blur-sm group">
+                  <div className="p-3 bg-gradient-to-r from-pink-500 to-purple-500 rounded-full shadow-lg shadow-pink-500/50 group-hover:shadow-pink-400/60 transition-all duration-300 group-hover:scale-110">
+                    <Zap className="w-5 h-5 text-white" />
+                  </div>
+                  <div className="flex-1">
+                    <div className="font-semibold text-white text-lg">
+                      Speed Demon
+                    </div>
+                    <div className="text-slate-300">
+                      10 quick quizzes in a row
+                    </div>
+                  </div>
+                  <div className="text-pink-400 font-bold">+30 XP</div>
+                </div> */}
+
+              {/* Achievement Item 3 */}
+              {/* <div className="flex items-center gap-5 p-5 bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-2xl hover:from-purple-500/20 hover:to-pink-500/20 transition-all duration-300 border border-purple-400/20 hover:border-purple-300/40 backdrop-blur-sm group">
+                  <div className="p-3 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full shadow-lg shadow-purple-500/50 group-hover:shadow-purple-400/60 transition-all duration-300 group-hover:scale-110">
+                    <Brain className="w-5 h-5 text-white" />
+                  </div>
+                  <div className="flex-1">
+                    <div className="font-semibold text-white text-lg">
+                      Problem Solver
+                    </div>
+                    <div className="text-slate-300">
+                      Solved 50 challenging problems
+                    </div>
+                  </div>
+                  <div className="text-purple-400 font-bold">+40 XP</div>
+                </div>
+              </div>
+            </div> */}
+            </div>
+
+            {/* LEARNING ANALYTICS SECTION */}
+            <div className="bg-black/30 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-purple-500/30 hover:border-purple-400/50 transition-all duration-500">
+              <div className="flex items-center gap-4 mb-8">
+                <div className="p-3 bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-xl backdrop-blur-sm border border-purple-400/30">
+                  <TrendingUp className="w-7 h-7 text-purple-300" />
+                </div>
+                <h2 className="text-2xl font-bold text-white">
+                  Learning Analytics
+                </h2>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                {/* Average Quiz Score */}
+                <div className="text-center p-6 bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-2xl backdrop-blur-sm border border-purple-400/30 hover:border-purple-300/50 transition-all duration-300 hover:scale-105 group">
+                  <div className="text-4xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent mb-3 group-hover:scale-110 transition-transform duration-300">
+                    92%
+                  </div>
+                  <div className="text-sm font-medium text-slate-200 mb-2">
+                    Average Quiz Score
+                  </div>
+                  <div className="text-xs text-purple-400 flex items-center justify-center">
+                    <ChevronUp className="w-3 h-3 mr-1" />
+                    +5% from last month
+                  </div>
+                </div>
+
+                {/* Speed Improvement */}
+                <div className="text-center p-6 bg-gradient-to-br from-pink-500/20 to-purple-500/20 rounded-2xl backdrop-blur-sm border border-pink-400/30 hover:border-pink-300/50 transition-all duration-300 hover:scale-105 group">
+                  <div className="text-4xl font-bold bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent mb-3 group-hover:scale-110 transition-transform duration-300">
+                    2.3x
+                  </div>
+                  <div className="text-sm font-medium text-slate-200 mb-2">
+                    Speed Improvement
+                  </div>
+                  <div className="text-xs text-pink-400">
+                    Faster than when you started
+                  </div>
+                </div>
+
+                {/* Study Sessions */}
+                <div className="text-center p-6 bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-2xl backdrop-blur-sm border border-purple-400/30 hover:border-purple-300/50 transition-all duration-300 hover:scale-105 group">
+                  <div className="text-4xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent mb-3 group-hover:scale-110 transition-transform duration-300">
+                    47
+                  </div>
+                  <div className="text-sm font-medium text-slate-200 mb-2">
+                    Study Sessions
+                  </div>
+                  <div className="text-xs text-purple-400">This month</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* RIGHT COLUMN - Goals & Subject Progress */}
+          {/* Commented Block */}
+          <div>
+            {/* WEEKLY GOALS SECTION */}
+            {/* <div className="bg-black/30 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-purple-500/30 hover:border-purple-400/50 transition-all duration-500">
+              <div className="flex items-center gap-4 mb-8">
+                <div className="p-3 bg-gradient-to-r from-pink-500/20 to-purple-500/20 rounded-xl backdrop-blur-sm border border-pink-400/30">
+                  <TrendingUp className="w-7 h-7 text-pink-300" />
+                </div>
+                <h2 className="text-2xl font-bold text-white">Weekly Goals</h2>
+              </div>
+
+              <div className="space-y-6"> */}
+            {/* Goal 1: Complete 5 quizzes */}
+            {/* <div className="group">
+                  <div className="flex justify-between items-center mb-3">
+                    <span className="font-medium text-slate-200">
+                      Complete 5 Random Quizzes
+                    </span>
+                    <span className="text-sm font-bold text-purple-400 bg-purple-500/20 px-3 py-1 rounded-full">
+                      4/5
+                    </span>
+                  </div>
+                  <div className="w-full bg-slate-700/50 rounded-full h-3 overflow-hidden">
+                    <div
+                      className="bg-gradient-to-r from-purple-500 to-pink-500 h-3 rounded-full transition-all duration-1000 shadow-lg shadow-purple-500/50 group-hover:shadow-purple-400/70"
+                      style={{ width: "80%" }}
+                    ></div>
+                  </div>
+                </div> */}
+
+            {/* Goal 2: Study 10 hours */}
+            {/* <div className="group">
+                  <div className="flex justify-between items-center mb-3">
+                    <span className="font-medium text-slate-200">
+                      Study 10 Hours
+                    </span>
+                    <span className="text-sm font-bold text-pink-400 bg-pink-500/20 px-3 py-1 rounded-full">
+                      7.5/10h
+                    </span>
+                  </div>
+                  <div className="w-full bg-slate-700/50 rounded-full h-3 overflow-hidden">
+                    <div
+                      className="bg-gradient-to-r from-pink-500 to-purple-500 h-3 rounded-full transition-all duration-1000 shadow-lg shadow-pink-500/50 group-hover:shadow-pink-400/70"
+                      style={{ width: "75%" }}
+                    ></div>
+                  </div>
+                </div> */}
+
+            {/* Goal 3: Master new topic */}
+            {/* <div className="group">
+                  <div className="flex justify-between items-center mb-3">
+                    <span className="font-medium text-slate-200">
+                      Master New Topic
+                    </span>
+                    <span className="text-sm font-bold text-purple-400 bg-purple-500/20 px-3 py-1 rounded-full">
+                      In Progress
+                    </span>
+                  </div>
+                  <div className="w-full bg-slate-700/50 rounded-full h-3 overflow-hidden">
+                    <div
+                      className="bg-gradient-to-r from-purple-600 to-pink-600 h-3 rounded-full transition-all duration-1000 shadow-lg shadow-purple-500/50 group-hover:shadow-purple-400/70"
+                      style={{ width: "45%" }}
+                    ></div>
+                  </div>
+                </div>
+              </div> */}
+
+            {/* Motivational Message */}
+            {/* <div className="mt-8 p-6 bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-2xl backdrop-blur-sm border border-purple-400/30 hover:border-purple-300/50 transition-all duration-300">
+                <div className="text-center">
+                  <div className="text-white font-medium mb-2 flex items-center justify-center">
+                    <Sparkles className="w-4 h-4 mr-2 text-purple-400" />
+                    Keep it up! You're doing great this week!
+                  </div>
+                  <div className="text-sm text-pink-300">
+                    2 more days to complete your goals
+                  </div>
+                </div>
+              </div>
+            </div> */}
+          </div>
+
+          <div>
+            {/* SUBJECT PROGRESS OVERVIEW SECTION */}
+            <div className="bg-black/30 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-purple-500/30 hover:border-purple-400/50 transition-all duration-500">
+              <div className="flex items-center gap-4 mb-8">
+                <div className="p-3 bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-xl backdrop-blur-sm border border-purple-400/30">
+                  <BookOpen className="w-7 h-7 text-purple-300" />
+                </div>
+                <h2 className="text-2xl font-bold text-white">
+                  Topic Overview
+                </h2>
+              </div>
+
+              <div className="space-y-5">
+                {subjectData.map((subject, index) => (
+                  <div key={index} className="group">
+                    {/* Subject Header */}
+                    <div className="flex justify-between items-center mb-3">
+                      <span className="font-medium text-slate-200">
+                        {subject.name}
+                      </span>
+                      <span className="text-sm font-bold text-purple-400 bg-purple-500/20 px-3 py-1 rounded-full">
+                        {subject.progress}%
+                      </span>
+                    </div>
+
+                    {/* Progress Bar */}
+                    <div className="w-full bg-slate-700/50 rounded-full h-2 overflow-hidden ">
+                      <div
+                        className={`bg-gradient-to-r ${subject.color} h-3 group-hover:h-4 rounded-full transition-all duration-700 shadow-lg `}
+                        style={{ width: `${subject.progress}%` }}
+                      ></div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              {/* Overall Progress Summary */}
+              <div className="mt-8 p-6 bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-2xl backdrop-blur-sm border border-purple-400/30 hover:border-purple-300/50 transition-all duration-300 group">
+                <div className="text-center">
+                  <div className="text-4xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent mb-3 group-hover:scale-110 transition-transform duration-300">
+                    {Math.round(
+                      subjectData.reduce(
+                        (acc, subject) => acc + subject.progress,
+                        0
+                      ) / subjectData.length
+                    )}
+                    %
+                  </div>
+                  <div className="text-white font-medium mb-2">
+                    Overall Progress
+                  </div>
+                  <div className="text-sm text-pink-300 flex items-center justify-center">
+                    <Star className="w-4 h-4 mr-2" />
+                    Excellent work across all Topics!
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
 
-export default Profile;
+export default ProfilePage;
