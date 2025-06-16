@@ -11,15 +11,15 @@ const BottomNav = () => {
   return (
     <div>
       {/* Bottom Navigation - Only visible on mobile/tablet */}
-      <div className="fixed  z-50 bottom-0 left-1/2 transform -translate-x-1/2 w-full max-w-md bg-slate-800/80 backdrop-blur-xl border-t border-purple-500/20 lg:hidden">
+      <div className="fixed  z-50 bottom-0 left-1/2 transform -translate-x-1/2 w-full max-w-md bg-gradient-to-r from-purple-950 to-slate-900  backdrop-blur-xl border-t border-purple-500/20 lg:hidden">
         <div className="flex justify-around py-3">
           {[
             { icon: BookOpen, label: "Learn", id: "home", to: "/" },
             {
               icon: Calculator,
-              label: "Practice",
-              id: "practice",
-              to: "/practice",
+              label: "Exams",
+              id: "exams",
+              to: "/exams-page",
             },
             {
               icon: Trophy,
@@ -29,7 +29,8 @@ const BottomNav = () => {
             },
             { icon: Star, label: "Profile", id: "profile", to: "/profile" },
           ].map((item, index) => (
-            <Link to={item.to}
+            <Link
+              to={item.to}
               key={index}
               onClick={() => setActiveTab(item.id)}
               className={`flex flex-col active:ring-2 ring-purple-600 items-center space-y-1 p-0.5 rounded-lg transition-all duration-300 ${
@@ -39,10 +40,8 @@ const BottomNav = () => {
               }`}
             >
               <item.icon className="w-5 h-5" />
-             
-                <span className="text-xs font-medium">
-                  {item.label}
-                </span>
+
+              <span className="text-xs font-medium">{item.label}</span>
             </Link>
           ))}
         </div>

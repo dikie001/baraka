@@ -37,7 +37,7 @@ const MeasurementQuiz = () => {
     0
   );
   const [savedScore, setSavedScore] = useLocalStorage(
-    "quiz-score-measurement",
+    "measurements-quiz-points",
     0
   );
   const [savedAnswered, setSavedAnswered] = useLocalStorage(

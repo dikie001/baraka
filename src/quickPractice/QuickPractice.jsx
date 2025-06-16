@@ -37,9 +37,9 @@ const QuickPractice = () => {
     "quick-practice-percentage-score",
     0
   );
-  const [savedScore, setSavedScore] = useLocalStorage("quick-practice-quiz-score", 0);
+  const [savedScore, setSavedScore] = useLocalStorage("quick-practice-quiz-points", 0);
   const [savedAnswered, setSavedAnswered] = useLocalStorage(
-    "quiz-practice-quiz-answered",
+    "quick-practice-quiz-answered",
     []
   );
   const navigate = useNavigate()
@@ -50,7 +50,8 @@ const QuickPractice = () => {
   const [showAnswer, setShowAnswer] = useState(false);
   const [score, setScore] = useState(savedScore || 0);
   const [answered, setAnswered] = useState(new Set(savedAnswered || []));
-  const [totalQuizLength, setTotalQuizLength]=useLocalStorage("algebra-quiz-length")
+  const [totalQuizLength, setTotalQuizLength]=useLocalStorage("quick-quiz-length")
+
 
   const question = questionsData.questions[current];
   const totalQuestions = questionsData.questions.length;

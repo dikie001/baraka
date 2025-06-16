@@ -38,7 +38,7 @@ const ProbabilityQuiz
     "probability-percentage-score",
     0
   );
-  const [savedScore, setSavedScore] = useLocalStorage("probability-quiz-score", 0);
+  const [savedScore, setSavedScore] = useLocalStorage("probability-quiz-points", 0);
   const [savedAnswered, setSavedAnswered] = useLocalStorage(
     "probability-quiz-answered",
     []

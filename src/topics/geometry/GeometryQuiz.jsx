@@ -37,7 +37,7 @@ const GeometryQuiz = () => {
     "geometry-percentage-score",
     0
   );
-  const [savedScore, setSavedScore] = useLocalStorage("quiz-score-geometry", 0);
+  const [savedScore, setSavedScore] = useLocalStorage("geometry-quiz-points", 0);
   const [savedAnswered, setSavedAnswered] = useLocalStorage(
     "quiz-answered-geometry",
     []

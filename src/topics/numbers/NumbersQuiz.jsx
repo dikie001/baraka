@@ -38,7 +38,7 @@ const NumbersQuiz
     "numbers-percentage-score",
     0
   );
-  const [savedScore, setSavedScore] = useLocalStorage("quiz-score", 0);
+  const [savedScore, setSavedScore] = useLocalStorage("numbers-quiz-points", 0);
   const [savedAnswered, setSavedAnswered] = useLocalStorage(
     "quiz-answered",
     []

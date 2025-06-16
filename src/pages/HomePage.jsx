@@ -26,6 +26,7 @@ import BarakaAICard from "../components/BarakaAiCard";
 
 export default function HomePage() {
   const [activeTab, setActiveTab] = useState("home");
+  const [overalPoints, setOveralPoints] = useState("");
 
   // Numbers Quiz LocalStorage
   const numbersProgress = localStorage.getItem("current-number");
@@ -62,22 +63,51 @@ export default function HomePage() {
   const PTQ = Number(probabilityTotalQuiz);
 
   // Data Quiz LocalStorage
-    const dataProgress = localStorage.getItem(
-      "data-current-number"
-    );
-    const dataTotalQuiz = localStorage.getItem(
-      "data-quiz-length"
-    );
-    const DP = Number(dataProgress);
-    const DTQ = Number(dataTotalQuiz);
+  const dataProgress = localStorage.getItem("data-current-number");
+  const dataTotalQuiz = localStorage.getItem("data-quiz-length");
+  const DP = Number(dataProgress);
+  const DTQ = Number(dataTotalQuiz);
+
+  // Quick Quiz LocalStorage
+  const quickQuizTotal = localStorage.getItem("quick-quiz-length");
+  const quickQuizProgress = localStorage.getItem(
+    "quick-practice-current-number"
+  );
+  const QQT = Number(quickQuizTotal);
+  const QP = Number(quickQuizProgress);
+
+  // Get Quiz points for all quizes
+  const algebraPoints = localStorage.getItem("algebra-quiz-points");
+  const dataPoints = localStorage.getItem("data-quiz-points");
+  const geometryPoints = localStorage.getItem("geometry-quiz-points");
+  const measurementsPoints = localStorage.getItem("measurements-quiz-points");
+  const numbersPoints = localStorage.getItem("numbers-quiz-points");
+  const probabilityPoints = localStorage.getItem("probability-quiz-points");
+  const quickQuizPoints = localStorage.getItem("quick-practice-quiz-points");
+  const point1 = Number(algebraPoints);
+  const point2 = Number(dataPoints);
+  const point3 = Number(geometryPoints);
+  const point4 = Number(measurementsPoints);
+  const point5 = Number(numbersPoints);
+  const point6 = Number(probabilityPoints);
+  const point7 = Number(quickQuizPoints);
 
   // Set Page
   const [page, setPage] = useLocalStorage("choose-page", null);
   const navigate = useNavigate();
 
+  // Run on first render
   useEffect(() => {
     setPage("choosePage");
+    CalculatePoints();
   }, []);
+
+  // Calculate Points
+  const CalculatePoints = () => {
+    const points = point1 + point2 + point3 + point4 + point5 + point6 + point7;
+    setOveralPoints(points);
+  };
+
   const topics = [
     {
       name: "Numbers",
@@ -108,9 +138,9 @@ export default function HomePage() {
       about: "Estimate and measure",
     },
     {
-      name: "Data Handling",
+      name: "Data & Statistics",
       icon: <BarChart2Icon />,
-      progress: DTQ ? ((DP / DTQ)*100).toFixed(0): 0,
+      progress: DTQ ? ((DP / DTQ) * 100).toFixed(0) : 0,
       to: "/data",
       about: "Interprete data",
     },
@@ -161,7 +191,9 @@ export default function HomePage() {
               <div className="bg-gradient-to-r from-purple-500 to-pink-500 p-2 lg:p-3 rounded-full">
                 <Trophy className="w-5 h-5 lg:w-6 lg:h-6" />
               </div>
-              <span className="text-xl lg:text-2xl font-bold">1,250</span>
+              <span className="text-xl lg:text-2xl font-bold">
+                {overalPoints}
+              </span>
             </div>
           </div>
         </div>
@@ -171,10 +203,8 @@ export default function HomePage() {
           <div className="lg:grid lg:grid-cols-12 lg:gap-8 space-y-6 lg:space-y-0">
             {/* Left Column - Daily Challenge and Quick Practice */}
             <div className="lg:col-span-5 space-y-6">
-
               {/* Baraka Ai Card */}
-              <BarakaAICard/>
-            
+              <BarakaAICard />
 
               {/* Quick Practice Button */}
               <div
@@ -205,7 +235,7 @@ export default function HomePage() {
                     <div
                       onClick={() => navigate(topic.to)}
                       key={index}
-                      className="bg-slate-700/30 backdrop-blur-sm border border-purple-500/20 rounded-xl p-3 lg:p-4 hover:bg-slate-700/50 hover:scale-105 lg:hover:scale-102 transition-all duration-300 cursor-pointer group"
+                      className="bg-black/20 backdrop-blur-xl border border-purple-800 rounded-xl p-3 lg:p-4"
                     >
                       <div className="text-2xl lg:text-3xl mb-2">
                         {topic.icon}
@@ -239,6 +269,7 @@ export default function HomePage() {
 
               {/* Achievements */}
               <div>
+                {/* <div>
                 <h3 className="text-xl lg:text-2xl font-semibold mb-4 lg:mb-6 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
                   Achievements
                 </h3>
@@ -264,6 +295,7 @@ export default function HomePage() {
                     </div>
                   ))}
                 </div>
+              </div> */}
               </div>
             </div>
           </div>

@@ -6,7 +6,6 @@ import AchievementsPage from './pages/Achievement'
 import AuthPage from './pages/Auth'
 import BarakaMathApp from './pages/HomePage'
 import Profile from './pages/Profile'
-import Practice from './practice/Practice'
 import QuickPractice from './quickPractice/QuickPractice'
 import Algebra from './topics/algebra/Algebra'
 import Data from './topics/data/Data'
@@ -16,6 +15,7 @@ import NumbersQuiz from './topics/numbers/NumbersQuiz'
 import { Measurement } from './topics/measurement/Measurement'
 import { Probability } from './topics/probability/Probability'
 import BarakaAI from './ai/BarakaAi'
+import ExamsPage from './exams/ExamsPage'
 
 const App = () => {
   
@@ -31,7 +31,7 @@ const App = () => {
         <Route path="/numbers" element={<Numbers />} />
         <Route path="/daily-challenge" element={<DailyChallenge />} />
         <Route path="/quick-practice" element={<QuickPractice />} />
-        <Route path="/practice" element={<Practice />} />
+        <Route path="/exams-page" element={<ExamsPage />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/achievements" element={<AchievementsPage />} />
         <Route path="/algebra" element={<Algebra />} />

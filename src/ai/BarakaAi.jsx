@@ -146,8 +146,9 @@ export default function BarakaAI() {
 
           {/* Settings Panel */}
           {showSettings && (
-            <div className="absolute top-16 right-4 bg-white/10 backdrop-blur-lg rounded-2xl p-4 border border-white/20 z-20 min-w-64">
+            <div className="absolute  shadow-lg top-16 right-4 bg-white/10 backdrop-blur-lg rounded-2xl p-4 border border-white/20 z-20 min-w-64">
               <h3 className="font-semibold mb-3">Baraka AI </h3>
+              <p className="text-white-400">This panel will be populated soon!</p>
             </div>
           )}
         </header>

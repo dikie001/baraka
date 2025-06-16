@@ -37,7 +37,7 @@ const GeometryQuiz = () => {
     "algebra-percentage-score",
     0
   );
-  const [savedScore, setSavedScore] = useLocalStorage("quiz-score", 0);
+  const [savedScore, setSavedScore] = useLocalStorage("algebra-quiz-points", 0);
   const [savedAnswered, setSavedAnswered] = useLocalStorage(
     "quiz-answered-algebra",
     []
@@ -50,7 +50,7 @@ const GeometryQuiz = () => {
   const [showAnswer, setShowAnswer] = useState(false);
   const [score, setScore] = useState(savedScore || 0);
   const [answered, setAnswered] = useState(new Set(savedAnswered || []));
-  const [totalQuizLength, setTotalQuizLength]=useLocalStorage("algebra-quiz-length")
+  const [totalQuizLength, setTotalQuizLength]=useLocalStorage("algebra-quiz-length", null)
 
   const question = questionsData.questions[current];
   const totalQuestions = questionsData.questions.length;

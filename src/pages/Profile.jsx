@@ -9,28 +9,110 @@ import {
   Star,
   Target,
   TrendingUp,
-  Zap
+  Zap,
 } from "lucide-react";
 import React, { useState } from "react";
+import BottomNav from "../components/MobileNav";
+import { useEffect } from "react";
 
 const ProfilePage = () => {
+  const [globalPercentage, setGlobalPercentage] = useState();
+  // Numbers Quiz LocalStorage
+  const numbersProgress = localStorage.getItem("current-number");
+  const numbersTotalQuiz = localStorage.getItem("numbers-quiz-length");
+  const NTQ = Number(numbersTotalQuiz);
+  const NP = Number(numbersProgress);
 
-  // Sample subject data - replace with actual data from your app
+  // Algebra Quiz LocalStorage
+  const algebraProgress = localStorage.getItem("current-number-algebra");
+  const algebraTotalQuiz = localStorage.getItem("algebra-quiz-length");
+  const AP = Number(algebraProgress);
+  const ATQ = Number(algebraTotalQuiz);
+
+  // Geometry Quiz LocalStorage
+  const geometryProgress = localStorage.getItem("current-number-geometry");
+  const geometryTotalQuiz = localStorage.getItem("geometry-quiz-length");
+  const GP = geometryProgress ? Number(geometryProgress) : 0;
+  const GTQ = geometryTotalQuiz ? Number(geometryTotalQuiz) : 0;
+
+  // Measurement QUiz LocalStorage
+  const measurementProgress = localStorage.getItem(
+    "current-number-measurement"
+  );
+  const measurementTotalQuiz = localStorage.getItem("measurement-quiz-length");
+  const MP = Number(measurementProgress);
+  const MTQ = Number(measurementTotalQuiz);
+
+  // Probability Quiz LocalStorage
+  const probabilityProgress = localStorage.getItem(
+    "probability-current-number"
+  );
+  const probabilityTotalQuiz = localStorage.getItem("probability-quiz-length");
+  const PP = Number(probabilityProgress);
+  const PTQ = Number(probabilityTotalQuiz);
+
+  // Data Quiz LocalStorage
+  const dataProgress = localStorage.getItem("data-current-number");
+  const dataTotalQuiz = localStorage.getItem("data-quiz-length");
+  const DP = Number(dataProgress);
+  const DTQ = Number(dataTotalQuiz);
+
+  // Quick Quiz LocalStorage
+  const quickQuizTotal = localStorage.getItem("quick-quiz-length");
+  const quickQuizProgress = localStorage.getItem(
+    "quick-practice-current-number"
+  );
+  const QQT = Number(quickQuizTotal);
+  const QP = Number(quickQuizProgress);
+
+  // Calculate overall Progress
+  const calculateOverallProgress = () => {
+    const overalProgress = NP + AP + GP + MP + PP + DP + QP;
+    const totalQuiz = NTQ + ATQ + GTQ + MTQ + PTQ + DTQ + QQT;
+    const globalProgress = ((overalProgress / totalQuiz) * 100).toFixed(2);
+    setGlobalPercentage(globalProgress);
+  };
+
+  useEffect(() => {
+    calculateOverallProgress();
+  }, []);
+
   const subjectData = [
-    { name: "Algebra", progress: 85, color: "from-pink-500 to-purple-500" },
-    { name: "Geometry", progress: 72, color: "from-purple-500 to-pink-500" },
+    {
+      name: "Algebra",
+      progress: (ATQ && ((AP / ATQ) * 100).toFixed(0)) || 0,
+      color: "from-pink-500 to-purple-500",
+    },
+    {
+      name: "Geometry",
+      progress: (GTQ && ((GP / GTQ) * 100).toFixed(0)) || 0,
+      color: "from-purple-500 to-pink-500",
+    },
     {
       name: "Data & Statistics",
-      progress: 90,
+      progress: DTQ ? ((DP / DTQ) * 100).toFixed(0) : 0,
       color: "from-pink-400 to-purple-600",
     },
-    { name: "Measurement", progress: 68, color: "from-purple-600 to-pink-400" },
-    { name: "Numbers", progress: 95, color: "from-pink-600 to-purple-400" },
-    { name: "Functions", progress: 58, color: "from-purple-400 to-pink-600" },
+    {
+      name: "Measurement",
+      progress: MTQ && (((MP / MTQ) * 100).toFixed(0) || 0),
+      color: "from-purple-600 to-pink-400",
+    },
+    {
+      name: "Numbers",
+      progress: NP || (NTQ && ((NP / NTQ) * 100).toFixed(0)) || 0,
+      color: "from-pink-600 to-purple-400",
+    },
+    {
+      name: "Probability",
+      progress: PTQ ? ((PP / PTQ) * 100).toFixed(0) : 0,
+      color: "from-purple-400 to-pink-600",
+    },
   ];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-950 via-slate-900 to-purple-900 p-4 relative overflow-hidden">
+      <BottomNav />
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-pulse"></div>
@@ -38,7 +120,7 @@ const ProfilePage = () => {
         <div className="absolute top-3/4 left-1/2 w-64 h-64 bg-purple-400/5 rounded-full blur-2xl animate-pulse delay-500"></div>
       </div>
 
-      <div className="max-w-7xl mx-auto space-y-8 relative z-10">
+      <div className="max-w-7xl mx-auto space-y-4 relative z-10">
         {/* HEADER PROFILE CARD */}
         <div className="bg-black/40 backdrop-blur-xl rounded-3xl shadow-2xl shadow-purple-900/30 py-6 border border-purple-500/30 hover:border-purple-400/50 transition-all duration-500 group">
           <div className="flex flex-col lg:flex-row items-center gap-8">
@@ -47,7 +129,6 @@ const ProfilePage = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full blur-lg opacity-75 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div className="relative w-28 h-28 sm:w-32 sm:h-32 bg-gradient-to-br from-purple-500 to-pink-600 rounded-full flex items-center justify-center shadow-2xl shadow-purple-500/50 hover:shadow-purple-400/60 transition-all duration-300 hover:scale-105">
                 <img
-                
                   src="./icon.png"
                   alt="baraka"
                   className="absolute rounded-full inset-1 w-[calc(100%-8px)] h-[calc(100%-8px)] object-cover"
@@ -426,16 +507,10 @@ const ProfilePage = () => {
               </div>
 
               {/* Overall Progress Summary */}
-              <div className="mt-8 p-6 bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-2xl backdrop-blur-sm border border-purple-400/30 hover:border-purple-300/50 transition-all duration-300 group">
+              <div className="mt-8 mb-12 p-6 bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-2xl backdrop-blur-sm border border-purple-400/30 hover:border-purple-300/50 transition-all duration-300 group">
                 <div className="text-center">
                   <div className="text-4xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent mb-3 group-hover:scale-110 transition-transform duration-300">
-                    {Math.round(
-                      subjectData.reduce(
-                        (acc, subject) => acc + subject.progress,
-                        0
-                      ) / subjectData.length
-                    )}
-                    %
+                    {globalPercentage}%
                   </div>
                   <div className="text-white font-medium mb-2">
                     Overall Progress
