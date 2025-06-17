@@ -92,7 +92,7 @@ export default function BarakaAI() {
   };
 
   return (
-    <div className="h-dvh bg-gradient-to-br from-purple-900 via-slate-800 to-purple-800 text-white">
+    <div className="min-h-screen bg-gradient-to-br from-purple-900 via-slate-800 to-purple-800 text-white">
       {/* Custom Scrollbar Styles */}
       <style>{`
         .custom-scrollbar::-webkit-scrollbar {

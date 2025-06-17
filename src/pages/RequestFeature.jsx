@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Send, Lightbulb, Star, Users, Zap, CheckCircle } from "lucide-react";
 import BottomNav from "../components/MobileNav";
 import toast from "react-hot-toast";
+import { ChevronLeft } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 export default function RequestFeature() {
   const [formData, setFormData] = useState({
@@ -14,6 +16,7 @@ export default function RequestFeature() {
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [errors, setErrors] = useState({});
+  const navigate = useNavigate()
 
   const categories = [
     { value: "ui-ux", label: "UI/UX Improvement", icon: "🎨" },
@@ -134,8 +137,14 @@ export default function RequestFeature() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-900 via-slate-900 to-purple-800 p-4">
-      <BottomNav />
       <div className="max-w-4xl mx-auto mb-10">
+        <button
+          onClick={() => navigate("/")}
+          className="flex items-center gap-2 px-3 py-2 text-purple-200 hover:text-white hover:bg-purple-700/30 rounded-lg transition-colors"
+        >
+          <ChevronLeft className="w-5 h-5" />
+          <span className="text-sm">Back</span>
+        </button>
         {/* Header */}
         <div className="text-center mb-8 pt-6">
           <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-purple-400 to-pink-400 rounded-2xl mb-6 shadow-lg">
