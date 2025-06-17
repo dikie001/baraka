@@ -92,11 +92,11 @@ export default function BarakaAI() {
   };
 
   return (
-    <div className="max-h-screen bg-gradient-to-br from-purple-900 via-slate-800 to-purple-800 text-white">
+    <div className="h-dvh bg-gradient-to-br from-purple-900 via-slate-800 to-purple-800 text-white">
       {/* Custom Scrollbar Styles */}
       <style>{`
         .custom-scrollbar::-webkit-scrollbar {
-          width: 8px;
+          width: 4px;
         }
         .custom-scrollbar::-webkit-scrollbar-track {
           background: rgba(255, 255, 255, 0.1);
@@ -126,7 +126,7 @@ export default function BarakaAI() {
           >
             <Settings className="w-5 h-5" />
           </button>
-
+        
           <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl mb-2">
             <Brain className="w-6 h-6" />
             {/* <img src="/icon.png"/> */}
@@ -141,7 +141,7 @@ export default function BarakaAI() {
           {/* Settings Panel */}
           {showSettings && (
             <div className="absolute  shadow-lg top-16 right-4 bg-white/10 backdrop-blur-lg rounded-2xl p-4 border border-white/20 z-20 min-w-64">
-              <h3 className="font-semibold mb-3">Baraka AI </h3>
+              <h3 className="font-semibold mb-2">Baraka AI </h3>
               <p className="text-white-400">
                 This panel will be populated soon!
               </p>
@@ -150,11 +150,11 @@ export default function BarakaAI() {
         </header>
 
         {/* Main Chat Container */}
-        <div className="flex-1 px-4 pb-4 flex flex-col min-h-0">
+        <div className="flex-1 px-2 pb-2 flex flex-col min-h-0">
           {/* Welcome Card */}
           {showWelcome && (
             <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-4 mb-4 border border-white/20 flex-shrink-0">
-              <div className="flex items-center gap-3 mb-2">
+              <div className="flex items-center gap-3 mb-1">
                 <Sparkles className="w-5 h-5 text-yellow-400" />
                 <h2 className="text-lg font-semibold">Welcome back, Baraka!</h2>
               </div>
@@ -174,7 +174,7 @@ export default function BarakaAI() {
           )}
 
           {/* Chat Messages Area */}
-          <div className="flex-1 bg-white/5 backdrop-blur-lg rounded-2xl border border-white/10 flex flex-col min-h-0">
+          <div className="flex-1   bg-white/5 backdrop-blur-lg rounded-2xl border border-white/10 flex flex-col min-h-0">
             {/* Chat Header */}
             <div className="p-3 border-b  border-white/10 flex-shrink-0">
               <h3 className="font-semibold flex items-center gap-2 text-sm">
@@ -184,9 +184,9 @@ export default function BarakaAI() {
             </div>
 
             {/* Messages Container */}
-            <div className="flex-1 p-3 overflow-y-auto custom-scrollbar min-h-0">
+            <div className="flex-1 p-2 overflow-y-auto custom-scrollbar min-h-0">
               {messages.length === 0 && !isTyping && (
-                <div className="text-center text-purple-200 mt-12">
+                <div className="text-center text-purple-200 mt-10">
                   <Sparkles className="w-12 h-12 mx-auto mb-3 opacity-50" />
                   <p className="text-lg">
                     Start a conversation with Baraka AI!
