@@ -14,63 +14,126 @@ import {
 import BottomNav from "../components/MobileNav";
 
 export default function AchievementsPage() {
-  // Achievements focused on long topical quizzes across different math areas
+  // Get the global percentag
+  const GPP = localStorage.getItem("global-percentage")
+  const globalPercentage = Number(GPP)
+
+
+// Get the scores
+  const GPS = localStorage.getItem("geometry-quiz-points")
+  const geometryPoints = Number(GPS)
+
+  const AGS = localStorage.getItem("algebra-quiz-points")
+  const algebraPoints = Number(AGS)
+
+  const MMP = localStorage.getItem("measurement-quiz-points")
+  const measurementsPoints = Number(MMP)
+  
+  // Numbers Quiz LocalStorage
+  const numbersProgress = localStorage.getItem("current-number");
+  const numbersTotalQuiz = localStorage.getItem("numbers-quiz-length");
+  const NTQ = Number(numbersTotalQuiz);
+  const NP = Number(numbersProgress);
+
+  // Algebra Quiz LocalStorage
+  const algebraProgress = localStorage.getItem("current-number-algebra");
+  const algebraTotalQuiz = localStorage.getItem("algebra-quiz-length");
+  const AP = Number(algebraProgress);
+  const ATQ = Number(algebraTotalQuiz);
+
+  // Geometry Quiz LocalStorage
+  const geometryProgress = localStorage.getItem("current-number-geometry");
+  const geometryTotalQuiz = localStorage.getItem("geometry-quiz-length");
+  const GP = geometryProgress ? Number(geometryProgress) : 0;
+  const GTQ = geometryTotalQuiz ? Number(geometryTotalQuiz) : 0;
+
+  // Measurement QUiz LocalStorage
+  const measurementProgress = localStorage.getItem(
+    "current-number-measurement"
+  );
+  const measurementTotalQuiz = localStorage.getItem("measurement-quiz-length");
+  const MP = Number(measurementProgress);
+  const MTQ = Number(measurementTotalQuiz);
+
+  // Probability Quiz LocalStorage
+  const probabilityProgress = localStorage.getItem(
+    "probability-current-number"
+  );
+  const probabilityTotalQuiz = localStorage.getItem("probability-quiz-length");
+  const PP = Number(probabilityProgress);
+  const PTQ = Number(probabilityTotalQuiz);
+
+  // Data Quiz LocalStorage
+  const dataProgress = localStorage.getItem("data-current-number");
+  const dataTotalQuiz = localStorage.getItem("data-quiz-length");
+  const DP = Number(dataProgress);
+  const DTQ = Number(dataTotalQuiz);
+
+  // Calculate Progress for each card
+  const numbers = NTQ ? ((NP / NTQ) * 100).toFixed(0) : 0;
+  const algebra = ATQ ? ((AP / ATQ) * 100).toFixed(0) : 0;
+  const geometry = GTQ ? ((GP / GTQ) * 100).toFixed(0) : 0;
+  const measurement = MTQ ? ((MP / MTQ) * 100).toFixed(0) : 0;
+  const data = DTQ ? ((DP / DTQ) * 100).toFixed(0) : 0;
+  const probability = PTQ ? ((PP / PTQ) * 100).toFixed(0) : 0;
+  
+
   const achievements = [
     {
       id: 1,
       title: "Math Explorer",
       description: "Start your first topical quiz",
       icon: <Star className="w-6 h-6" />,
-      unlocked: true,
-      progress: 100,
+      unlocked: numbersProgress,
+      progress: numbers,
     },
     {
       id: 2,
       title: "Numbers Navigator",
       description: "Complete 50% of the Numbers topic quiz",
       icon: <Calculator className="w-6 h-6" />,
-      unlocked: true,
-      progress: 100,
+      unlocked: numbers>=50,
+      progress: numbers / 50 * 100,
     },
     {
       id: 3,
       title: "Data Detective",
       description: "Complete 75% of Data & Statistics quiz",
       icon: <BarChart3 className="w-6 h-6" />,
-      unlocked: false,
-      progress: 45,
+      unlocked: data >= 75,
+      progress: data / 75 * 100,
     },
     {
       id: 4,
       title: "Probability Pro",
       description: "Finish the entire Probability topic quiz",
       icon: <Target className="w-6 h-6" />,
-      unlocked: false,
-      progress: 80,
+      unlocked: probability === 100,
+      progress: probability,
     },
     {
       id: 5,
       title: "Geometry Genius",
       description: "Score above 85% on Geometry topic",
       icon: <Trophy className="w-6 h-6" />,
-      unlocked: false,
-      progress: 30,
+      unlocked: geometryPoints > 85,
+      progress: (geometry / 85 * 100).toFixed(0),
     },
     {
       id: 6,
       title: "Algebra Ace",
-      description: "Complete Algebra quiz without hints",
+      description: "score above 70% on algebra",
       icon: <Zap className="w-6 h-6" />,
-      unlocked: false,
-      progress: 15,
+      unlocked: algebraPoints > 70,
+      progress: (algebra /70 * 100).toFixed(0),
     },
     {
       id: 7,
       title: "Measurement Master",
       description: "Perfect score on Measurement topic",
       icon: <Award className="w-6 h-6" />,
-      unlocked: false,
-      progress: 60,
+      unlocked: measurementsPoints === 100,
+      progress: measurement,
     },
     {
       id: 8,
@@ -78,23 +141,16 @@ export default function AchievementsPage() {
       description: "Complete 3 different topic quizzes",
       icon: <CheckCircle className="w-6 h-6" />,
       unlocked: false,
-      progress: 66,
+      progress: 0,
     },
+  
     {
       id: 9,
-      title: "Marathon Runner",
-      description: "Spend 2+ hours on a single topic quiz",
-      icon: <Clock className="w-6 h-6" />,
-      unlocked: false,
-      progress: 85,
-    },
-    {
-      id: 10,
       title: "Math Champion",
       description: "Complete all 6 topical quizzes",
       icon: <Trophy className="w-6 h-6" />,
-      unlocked: false,
-      progress: 33,
+      unlocked: NTQ ===NP && AP===ATQ && GP === GTQ && MP === MTQ && PP === PTQ && DP === DTQ ,
+      progress: globalPercentage || 0,
     },
   ];
 
@@ -114,7 +170,7 @@ export default function AchievementsPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-900 via-slate-900 to-purple-800 p-4">
       <div className="max-w-4xl mx-auto pt-8">
-        <BottomNav/>
+        <BottomNav />
         {/* Header */}
         <div className="text-center mb-10">
           <div className="w-16 h-16 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-2xl flex items-center justify-center mx-auto mb-4">
@@ -144,17 +200,17 @@ export default function AchievementsPage() {
                 <div className="text-white font-medium text-sm">{topic}</div>
                 <div className="text-purple-200 text-xs mt-1">
                   {index === 0
-                    ? "100%"
+                    ? numbers
                     : index === 1
-                    ? "80%"
+                    ? probability
                     : index === 2
-                    ? "60%"
+                    ? measurement
                     : index === 3
-                    ? "45%"
+                    ? data
                     : index === 4
-                    ? "30%"
-                    : "15%"}{" "}
-                  Complete
+                    ? geometry
+                    : algebra}
+                 % Complete
                 </div>
               </div>
             ))}
@@ -242,7 +298,7 @@ export default function AchievementsPage() {
         </div>
 
         {/* Overall Progress */}
-        <div className="mt-8 backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl p-6">
+        <div className="mt-8 mb-20 backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl p-6">
           <h2 className="text-xl font-semibold text-white mb-4">
             Overall Progress
           </h2>

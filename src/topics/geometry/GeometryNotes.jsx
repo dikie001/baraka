@@ -14,12 +14,13 @@ const GeometryNotes = () => {
       <div className="max-w-4xl mx-auto">
         {mode === "choosePage" && <ConfirmStudyMode />}
         {/* Header Section */}
-        <button
-          onClick={() => setMode("choosePage")}
-          className="flex absolute top-3 left-3"
-        >
-          <ChevronLeft /> Back
-        </button>
+  <button
+         onClick={() => setMode("choosePage")}
+         className="flex items-center gap-2 px-3 py-2 text-purple-200 hover:text-white hover:bg-purple-700/30 rounded-lg transition-colors"
+       >
+         <ChevronLeft className="w-5 h-5" />
+         <span className="text-sm">Back</span>
+       </button>
         <BottomNav />
         <div className="text-center mb-4 mt-4 space-y-2">
           <h1 className="text-5xl font-bold bg-gradient-to-r from-pink-400 to-purple-300 bg-clip-text text-transparent">
@@ -32,7 +33,6 @@ const GeometryNotes = () => {
           {/* <p className="text-slate-400 italic text-lg max-w-2xl mx-auto leading-relaxed">
             {revision_content.description}
           </p> */}
-          
         </div>
 
         {/* Content Section */}

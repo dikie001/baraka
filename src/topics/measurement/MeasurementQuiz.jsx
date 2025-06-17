@@ -107,12 +107,12 @@ const MeasurementQuiz = () => {
     <div className="min-h-screen bg-gradient-to-br from-purple-900 via-slate-800 to-slate-900 text-white p-4">
       <BottomNav />
 
-      <button
+ <button
         onClick={() => setMode("choosePage")}
-        className="absolute flex  top-2 left-3"
+        className="flex items-center gap-2 px-3 py-2 text-purple-200 hover:text-white hover:bg-purple-700/30 rounded-lg transition-colors"
       >
-        <ChevronLeft size={22} />
-        Back
+        <ChevronLeft className="w-5 h-5" />
+        <span className="text-sm">Back</span>
       </button>
 
       {/* Header with progress */}

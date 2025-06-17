@@ -27,8 +27,7 @@ const useLocalStorage = (key, defaultValue) => {
   return [value, setStoredValue];
 };
 
-const NumbersQuiz
- = () => {
+const NumbersQuiz = () => {
   // Load saved progress
   const [currentNumber, setCurrentNumber] = useLocalStorage(
     "current-number",
@@ -46,8 +45,10 @@ const NumbersQuiz
   // Set the page
   const [mode, setMode] = useLocalStorage("choose-page", null);
   // Set quizLengh
-  const [quizLength, setQuizLength]=useLocalStorage("numbers-quiz-length", null)
-
+  const [quizLength, setQuizLength] = useLocalStorage(
+    "numbers-quiz-length",
+    null
+  );
 
   // Initialize state with saved progress
   const [current, setCurrent] = useState(currentNumber || 0);
@@ -98,15 +99,21 @@ const NumbersQuiz
     setPercentageScore(newPercentageScore);
   }, [score, totalQuestions, setPercentageScore]);
 
-  // Set the quiz length once 
-  useEffect(()=>{
-    setQuizLength(totalQuestions)
-  })
+  // Set the quiz length once
+  useEffect(() => {
+    setQuizLength(totalQuestions);
+  });
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-900 via-slate-800 to-slate-900 text-white p-4">
       <BottomNav />
       {mode === "choosePage" && <ConfirmStudyMode />}
-      <button onClick={()=>setMode("choosePage")} className="absolute flex  top-2 left-3"><ChevronLeft size={22}/>Back</button>
+    <button
+           onClick={() => setMode("choosePage")}
+           className="flex items-center gap-2 px-3 py-2 text-purple-200 hover:text-white hover:bg-purple-700/30 rounded-lg transition-colors"
+         >
+           <ChevronLeft className="w-5 h-5" />
+           <span className="text-sm">Back</span>
+         </button>
       {/* Header with progress */}
       <div className="max-w-4xl mx-auto mb-6 mt-4">
         <div className="flex items-center justify-between mb-4">
@@ -133,7 +140,6 @@ const NumbersQuiz
       {/* Main quiz card */}
       <div className="max-w-2xl mx-auto">
         <div className="bg-slate-800/60 backdrop-blur-lg p-8 rounded-3xl shadow-2xl border border-purple-500/30 relative overflow-hidden">
-          
           <div className="flex items-start justify-between">
             <p className="absolute top-3 text-gray-400 text-sm font-semibold">
               {question.subtopic}
@@ -205,5 +211,4 @@ const NumbersQuiz
   );
 };
 
-export default NumbersQuiz
-;
+export default NumbersQuiz;

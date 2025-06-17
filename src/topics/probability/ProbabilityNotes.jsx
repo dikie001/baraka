@@ -11,13 +11,13 @@ const ProbabilityNotes = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-900 via-slate-800 to-purple-800 text-white p-6">
       <div className="max-w-4xl mx-auto">
-        
         {/* Header Section */}
         <button
           onClick={() => setMode("choosePage")}
-          className="flex absolute top-3 left-3"
+          className="flex items-center gap-2 px-3 py-2 text-purple-200 hover:text-white hover:bg-purple-700/30 rounded-lg transition-colors"
         >
-          <ChevronLeft /> Back
+          <ChevronLeft className="w-5 h-5" />
+          <span className="text-sm">Back</span>
         </button>
         <BottomNav />
         <div className="text-center mb-4 mt-4 space-y-2">

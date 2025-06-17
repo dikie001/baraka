@@ -12,20 +12,48 @@ import BottomNav from "../components/MobileNav";
 import { useNavigate } from "react-router-dom";
 
 export default function Quizes() {
-  
-  const navigate = useNavigate()
-  const NP = 25,
-    NTQ = 50,
-    AP = 30,
-    ATQ = 40,
-    GP = 15,
-    GTQ = 35;
-  const MP = 20,
-    MTQ = 30,
-    DP = 40,
-    DTQ = 60,
-    PP = 10,
-    PTQ = 25;
+  // Numbers Quiz LocalStorage
+  const numbersProgress = localStorage.getItem("current-number");
+  const numbersTotalQuiz = localStorage.getItem("numbers-quiz-length");
+  const NTQ = Number(numbersTotalQuiz);
+  const NP = Number(numbersProgress);
+
+  // Algebra Quiz LocalStorage
+  const algebraProgress = localStorage.getItem("current-number-algebra");
+  const algebraTotalQuiz = localStorage.getItem("algebra-quiz-length");
+  const AP = Number(algebraProgress);
+  const ATQ = Number(algebraTotalQuiz);
+
+  // Geometry Quiz LocalStorage
+  const geometryProgress = localStorage.getItem("current-number-geometry");
+  const geometryTotalQuiz = localStorage.getItem("geometry-quiz-length");
+  const GP = geometryProgress ? Number(geometryProgress) : 0;
+  const GTQ = geometryTotalQuiz ? Number(geometryTotalQuiz) : 0;
+
+  // Measurement QUiz LocalStorage
+  const measurementProgress = localStorage.getItem(
+    "current-number-measurement"
+  );
+  const measurementTotalQuiz = localStorage.getItem("measurement-quiz-length");
+  const MP = Number(measurementProgress);
+  const MTQ = Number(measurementTotalQuiz);
+
+  // Probability Quiz LocalStorage
+  const probabilityProgress = localStorage.getItem(
+    "probability-current-number"
+  );
+  const probabilityTotalQuiz = localStorage.getItem("probability-quiz-length");
+  const PP = Number(probabilityProgress);
+  const PTQ = Number(probabilityTotalQuiz);
+
+  // Data Quiz LocalStorage
+  const dataProgress = localStorage.getItem("data-current-number");
+  const dataTotalQuiz = localStorage.getItem("data-quiz-length");
+  const DP = Number(dataProgress);
+  const DTQ = Number(dataTotalQuiz);
+
+  const navigate = useNavigate();
+ 
 
   const topics = [
     {
@@ -72,12 +100,10 @@ export default function Quizes() {
     },
   ];
 
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-900 via-slate-900 to-purple-800 p-4">
-      <BottomNav/>
-      <div className="max-w-4xl mx-auto pt-8">
-        
+      <BottomNav />
+      <div className="max-w-4xl mx-auto pt-8 pb-20">
         {/* Header */}
         <div className="text-center mb-10">
           <h1 className="text-3xl font-bold  mb-2 bg-gradient-to-r from-purple-200 to-pink-200 bg-clip-text text-transparent">

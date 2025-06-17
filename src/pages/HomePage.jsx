@@ -1,29 +1,21 @@
-import React, { useState } from "react";
-import {
-  Play,
-  Trophy,
-  Star,
-  BookOpen,
-  Calculator,
-  Target,
-  ChevronRight,
-} from "lucide-react";
-import { FunctionSquare } from "lucide-react";
-import { Ruler } from "lucide-react";
-import { Triangle } from "lucide-react";
-import { Scale } from "lucide-react";
-import { PieChart } from "lucide-react";
-import { BarChart2Icon } from "lucide-react";
-import { Dice1 } from "lucide-react";
-import { Dices } from "lucide-react";
-import { Link, useNavigate } from "react-router-dom";
-import BottomNav from "../components/MobileNav";
-import DesktopNav from "../components/DesktopNav";
-import { useEffect } from "react";
-import CalculateDate from "../components/CalculateDate";
 import { useLocalStorage } from "@uidotdev/usehooks";
+import {
+  BarChart2Icon,
+  Calculator,
+  Dices,
+  FunctionSquare,
+  Play,
+  Scale,
+  Triangle,
+  Trophy
+} from "lucide-react";
+import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import BarakaAICard from "../components/BarakaAiCard";
+import CalculateDate from "../components/CalculateDate";
+import DesktopNav from "../components/DesktopNav";
 import Menu from "../components/Menu";
+import BottomNav from "../components/MobileNav";
 
 export default function HomePage() {
   const [activeTab, setActiveTab] = useState("home");

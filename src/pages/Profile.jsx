@@ -14,9 +14,17 @@ import {
 import React, { useState } from "react";
 import BottomNav from "../components/MobileNav";
 import { useEffect } from "react";
+import { useLocalStorage } from "@uidotdev/usehooks";
 
 const ProfilePage = () => {
   const [globalPercentage, setGlobalPercentage] = useState();
+  const [overalProgress, setOveralProgress]=useLocalStorage("global-percentage",null)
+
+  // Save Global Progress
+  useEffect(()=>{
+    setOveralProgress(globalPercentage)
+  },[globalPercentage])
+  
   // Numbers Quiz LocalStorage
   const numbersProgress = localStorage.getItem("current-number");
   const numbersTotalQuiz = localStorage.getItem("numbers-quiz-length");
