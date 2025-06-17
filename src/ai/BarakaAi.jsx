@@ -1,7 +1,5 @@
 import { Brain, Send, Settings, Sparkles } from "lucide-react";
 import React, { useState } from "react";
-import { useRef } from "react";
-import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 export default function BarakaAI() {
@@ -93,15 +91,8 @@ export default function BarakaAI() {
     }
   };
 
-  // Scroll to the input on load
-  const inputRef = useRef(null)
-  useEffect(()=>{
-    inputRef.current?.scrollIntoView({behaviour: "smooth"})
-    
-  },[])
-
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-900 via-slate-800 to-purple-800 text-white">
+    <div className="h-screen bg-gradient-to-br from-purple-900 via-slate-800 to-purple-800 text-white overflow-hidden">
       {/* Custom Scrollbar Styles */}
       <style>{`
         .custom-scrollbar::-webkit-scrollbar {
@@ -126,16 +117,16 @@ export default function BarakaAI() {
         <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-purple-500/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
       </div>
 
-      <div className="relative z-10 flex flex-col h-2">
+      <div className="relative z-10 flex flex-col h-full">
         {/* Compact Header */}
-        <header className="p-2 text-center relative flex-shrink-0">
+        <header className="p-4 text-center relative flex-shrink-0">
           <button
             onClick={() => setShowSettings(!showSettings)}
             className="absolute top-4 right-4 p-2 bg-white/10 rounded-full hover:bg-white/20 transition-colors"
           >
             <Settings className="w-5 h-5" />
           </button>
-        
+
           <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl mb-2">
             <Brain className="w-6 h-6" />
             {/* <img src="/icon.png"/> */}
@@ -149,7 +140,7 @@ export default function BarakaAI() {
 
           {/* Settings Panel */}
           {showSettings && (
-            <div className="absolute  shadow-lg top-16 right-4 bg-white/10 backdrop-blur-lg rounded-2xl p-4 border border-white/20 z-20 min-w-64">
+            <div className="absolute shadow-lg top-16 right-4 bg-white/10 backdrop-blur-lg rounded-2xl p-4 border border-white/20 z-20 min-w-64">
               <h3 className="font-semibold mb-2">Baraka AI </h3>
               <p className="text-white-400">
                 This panel will be populated soon!
@@ -158,8 +149,8 @@ export default function BarakaAI() {
           )}
         </header>
 
-        {/* Main Chat Container */}
-        <div className="flex-1 px-2 pb-2 flex flex-col min-h-0">
+        {/* Main Content Container */}
+        <div className="flex-1 flex flex-col px-4 pb-4 min-h-0">
           {/* Welcome Card */}
           {showWelcome && (
             <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-4 mb-4 border border-white/20 flex-shrink-0">
@@ -183,9 +174,9 @@ export default function BarakaAI() {
           )}
 
           {/* Chat Messages Area */}
-          <div className="flex-1   bg-white/5 backdrop-blur-lg rounded-2xl border border-white/10 flex flex-col min-h-0">
+          <div className="flex-1 bg-white/5 backdrop-blur-lg rounded-2xl border border-white/10 flex flex-col min-h-0">
             {/* Chat Header */}
-            <div className="p-3 border-b  border-white/10 flex-shrink-0">
+            <div className="p-3 border-b border-white/10 flex-shrink-0">
               <h3 className="font-semibold flex items-center gap-2 text-sm">
                 <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
                 AI Assistant Active
@@ -193,7 +184,7 @@ export default function BarakaAI() {
             </div>
 
             {/* Messages Container */}
-            <div className="flex-1 p-2 overflow-y-auto custom-scrollbar min-h-0">
+            <div className="flex-1 p-3 overflow-y-auto custom-scrollbar">
               {messages.length === 0 && !isTyping && (
                 <div className="text-center text-purple-200 mt-10">
                   <Sparkles className="w-12 h-12 mx-auto mb-3 opacity-50" />
@@ -209,14 +200,14 @@ export default function BarakaAI() {
               {messages.map((msg) => (
                 <div
                   key={msg.id}
-                  className={`flex items-start gap-2 mb-2 overflow ${
+                  className={`flex items-start gap-2 mb-4 ${
                     msg.type === "user" ? "flex-row-reverse" : ""
                   }`}
                 >
                   <div
                     className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 ${
                       msg.type === "user"
-                        ? "bg-gradient-to-r  from-pink-500 to-purple-500 "
+                        ? "bg-gradient-to-r from-pink-500 to-purple-500"
                         : "bg-gradient-to-r from-purple-500 to-pink-500"
                     }`}
                   >
@@ -227,13 +218,13 @@ export default function BarakaAI() {
                     )}
                   </div>
                   <div
-                    className={`max-w-[70%] p-3 rounded-2xl ${
+                    className={`max-w-[80%] p-3 rounded-2xl ${
                       msg.type === "user"
-                        ? "bg-gradient-to-r from-pink-600 to-purple-600 rounded-tr-none break-words whitespace-normal "
+                        ? "bg-gradient-to-r from-pink-600 to-purple-600 rounded-tr-none"
                         : "bg-white/10 rounded-tl-none"
                     }`}
                   >
-                    <p className="text-sm whitespace-pre-wrap leading-relaxed">
+                    <p className="text-sm whitespace-pre-wrap leading-relaxed break-words">
                       {msg.content}
                     </p>
                   </div>
@@ -261,7 +252,6 @@ export default function BarakaAI() {
               <div className="flex gap-3 items-end">
                 <div className="flex-1">
                   <input
-                  ref={inputRef}
                     type="text"
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
