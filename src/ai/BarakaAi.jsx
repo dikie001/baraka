@@ -1,5 +1,7 @@
 import { Brain, Send, Settings, Sparkles } from "lucide-react";
 import React, { useState } from "react";
+import { useRef } from "react";
+import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 export default function BarakaAI() {
@@ -91,6 +93,13 @@ export default function BarakaAI() {
     }
   };
 
+  // Scroll to the input on load
+  const inputRef = useRef(null)
+  useEffect(()=>{
+    inputRef.current?.scrollIntoView({behaviour: "smooth"})
+    
+  },[])
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-900 via-slate-800 to-purple-800 text-white">
       {/* Custom Scrollbar Styles */}
@@ -117,7 +126,7 @@ export default function BarakaAI() {
         <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-purple-500/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
       </div>
 
-      <div className={`relative z-10 flex flex-col min-h-screen  `}>
+      <div className="relative z-10 flex flex-col h-2">
         {/* Compact Header */}
         <header className="p-2 text-center relative flex-shrink-0">
           <button
@@ -126,7 +135,7 @@ export default function BarakaAI() {
           >
             <Settings className="w-5 h-5" />
           </button>
-
+        
           <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl mb-2">
             <Brain className="w-6 h-6" />
             {/* <img src="/icon.png"/> */}
@@ -152,8 +161,8 @@ export default function BarakaAI() {
         {/* Main Chat Container */}
         <div className="flex-1 px-2 pb-2 flex flex-col min-h-0">
           {/* Welcome Card */}
-          {/* {showWelcome && (
-            <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-4 mb-2 border border-white/20 flex-shrink-0">
+          {showWelcome && (
+            <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-4 mb-4 border border-white/20 flex-shrink-0">
               <div className="flex items-center gap-3 mb-1">
                 <Sparkles className="w-5 h-5 text-yellow-400" />
                 <h2 className="text-lg font-semibold">Welcome back, Baraka!</h2>
@@ -164,7 +173,7 @@ export default function BarakaAI() {
                 you need to excel academically.
               </p>
             </div>
-          )} */}
+          )}
 
           {/* Error Display */}
           {error && (
@@ -174,7 +183,7 @@ export default function BarakaAI() {
           )}
 
           {/* Chat Messages Area */}
-          <div className="flex-1 bg-white/5 backdrop-blur-lg rounded-2xl border border-white/10 flex flex-col min-h-0">
+          <div className="flex-1   bg-white/5 backdrop-blur-lg rounded-2xl border border-white/10 flex flex-col min-h-0">
             {/* Chat Header */}
             <div className="p-3 border-b  border-white/10 flex-shrink-0">
               <h3 className="font-semibold flex items-center gap-2 text-sm">
@@ -192,9 +201,7 @@ export default function BarakaAI() {
                     Start a conversation with Baraka AI!
                   </p>
                   <p className="text-sm opacity-75 mt-1">
-                    Ask me anything about your studies.I'm here to help with
-                    explanations, practice questions, study plans, and anything
-                    else you need to excel academically.
+                    Ask me anything about your studies
                   </p>
                 </div>
               )}
@@ -254,6 +261,7 @@ export default function BarakaAI() {
               <div className="flex gap-3 items-end">
                 <div className="flex-1">
                   <input
+                  ref={inputRef}
                     type="text"
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
