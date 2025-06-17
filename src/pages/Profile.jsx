@@ -18,13 +18,39 @@ import { useLocalStorage } from "@uidotdev/usehooks";
 
 const ProfilePage = () => {
   const [globalPercentage, setGlobalPercentage] = useState();
-  const [overalProgress, setOveralProgress]=useLocalStorage("global-percentage",null)
+  const [overalProgress, setOveralProgress] = useLocalStorage(
+    "global-percentage",
+    null
+  );
 
   // Save Global Progress
-  useEffect(()=>{
-    setOveralProgress(globalPercentage)
-  },[globalPercentage])
+  useEffect(() => {
+    setOveralProgress(globalPercentage);
+
+  }, []);
+
+  const [generalPoints, setGeneralPoints]=useState()
+  // Get Global Points
+  const quickQuizPoints = Number(localStorage.getItem("quick-practice-quiz-points"));
+  const numbersPoints = Number(localStorage.getItem("numbers-quiz-points"));
+  const algebraPoints = Number(localStorage.getItem("algebra-quiz-points"));
+  const geometryPoints = Number(localStorage.getItem("geometry-quiz-points"));
+  const probabilityPoints = Number(localStorage.getItem("probability-quiz-points"));
+  const measurementsPoints = Number(localStorage.getItem("measurements-quiz-points"));
+  const dataPoints = Number(localStorage.getItem("data-quiz-points"));
+
+  // Calculate Total Global Points
+   const totalPoints =
+     quickQuizPoints +
+     numbersPoints +
+     algebraPoints +
+     geometryPoints +
+     probabilityPoints +
+     measurementsPoints +
+     dataPoints
   
+
+
   // Numbers Quiz LocalStorage
   const numbersProgress = localStorage.getItem("current-number");
   const numbersTotalQuiz = localStorage.getItem("numbers-quiz-length");
@@ -77,13 +103,16 @@ const ProfilePage = () => {
   const calculateOverallProgress = () => {
     const overalProgress = NP + AP + GP + MP + PP + DP + QP;
     const totalQuiz = NTQ + ATQ + GTQ + MTQ + PTQ + DTQ + QQT;
-    const globalProgress = ((overalProgress / totalQuiz) * 100).toFixed(2);
+    const gp = ((overalProgress / totalQuiz) * 100).toFixed(2);
+    const globalProgress = Number(gp);
     setGlobalPercentage(globalProgress);
   };
 
   useEffect(() => {
     calculateOverallProgress();
   }, []);
+
+
 
   const subjectData = [
     {
@@ -152,10 +181,11 @@ const ProfilePage = () => {
               <h1 className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-purple-300 to-pink-300 bg-clip-text text-transparent mb-3 drop-shadow-lg">
                 Bozes Baraka
               </h1>
-              <p className="text-slate-300 mb-4 text-lg">
+              <p className="text-slate-300  text-lg">
                 Grade 9 Mathematics Explorer
               </p>
-              <div className="  flex flex-col space-y-4">
+
+              {/* <div className="  flex flex-col space-y-4">
                 <div className="flex gap-3">
                   <span className="px-2 py-1 bg-gradient-to-r from-purple-500/20 to-pink-500/20 text-purple-200 rounded-full text-sm font-medium backdrop-blur-sm border border-purple-400/30 ">
                     <Sparkles className="w-4 h-4 inline mr-2" />
@@ -172,15 +202,94 @@ const ProfilePage = () => {
                     Consistent
                   </span>
                 </div>
-              </div>
+              </div> */}
+
             </div>
 
             {/* Level Display */}
             <div className="text-center relative">
               <div className="text-4xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent mb-2 drop-shadow-lg">
-                Level 12
+                {globalPercentage <= 5
+                  ? "Level 1"
+                  : globalPercentage <= 10
+                  ? "Level 2"
+                  : globalPercentage <= 15
+                  ? "Level 3"
+                  : globalPercentage <= 20
+                  ? "Level 4"
+                  : globalPercentage <= 25
+                  ? "Level 5"
+                  : globalPercentage <= 30
+                  ? "Level 6"
+                  : globalPercentage <= 35
+                  ? "Level 7"
+                  : globalPercentage <= 40
+                  ? "Level 8"
+                  : globalPercentage <= 45
+                  ? "Level 9"
+                  : globalPercentage <= 50
+                  ? "Level 10"
+                  : globalPercentage <= 55
+                  ? "Level 11"
+                  : globalPercentage <= 60
+                  ? "Level 12"
+                  : globalPercentage <= 65
+                  ? "Level 13"
+                  : globalPercentage <= 70
+                  ? "Level 14"
+                  : globalPercentage <= 75
+                  ? "Level 15"
+                  : globalPercentage <= 80
+                  ? "Level 16"
+                  : globalPercentage <= 85
+                  ? "Level 17"
+                  : globalPercentage <= 90
+                  ? "Level 18"
+                  : globalPercentage <= 95
+                  ? "Level 19"
+                  : "Master"}
               </div>
-              <div className="text-slate-400 text-sm">Mathematics Master</div>
+              <div className="text-slate-400 text-sm">
+                {globalPercentage <= 5
+                  ? "Newbie"
+                  : globalPercentage <= 10
+                  ? "Concept Builder "
+                  : globalPercentage <= 15
+                  ? "Reasoning Learner"
+                  : globalPercentage <= 20
+                  ? "Algebra Initiate"
+                  : globalPercentage <= 25
+                  ? "Problem Solver"
+                  : globalPercentage <= 30
+                  ? "Proficient Evaluator"
+                  : globalPercentage <= 35
+                  ? "Problem Solver"
+                  : globalPercentage <= 40
+                  ? "Logical Thinker"
+                  : globalPercentage <= 45
+                  ? "Structured Analyst"
+                  : globalPercentage <= 50
+                  ? "Data Interpreter"
+                  : globalPercentage <= 55
+                  ? "Symbolic Navigator"
+                  : globalPercentage <= 60
+                  ? "Equation Analyst"
+                  : globalPercentage <= 65
+                  ? "Abstract Reasoner"
+                  : globalPercentage <= 70
+                  ? "Numerical Commander"
+                  : globalPercentage <= 75
+                  ? "Master of Abstractions"
+                  : globalPercentage <= 80
+                  ? "Theorem Architect"
+                  : globalPercentage <= 85
+                  ? "Quantitative Thinker"
+                  : globalPercentage <= 90
+                  ? "Advanced Mathematician"
+                  : globalPercentage <= 95
+                  ? "Ultimate Scholar"
+                  : "Master Architect!!!"}
+              </div>
               <div className="absolute -inset-4 bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-2xl blur-xl opacity-50"></div>
             </div>
           </div>
@@ -269,10 +378,10 @@ const ProfilePage = () => {
                     Total Points
                   </span>
                 </div>
-                <div className="text-2xl font-bold text-white mb-2">2,450</div>
-                <div className="text-xs text-purple-400 font-medium">
+                <div className="text-2xl font-bold text-white mb-2">{totalPoints} <span className="text-xl">points</span></div>
+                {/* <div className="text-xs text-purple-400 font-medium">
                   Top 10%
-                </div>
+                </div> */}
               </div>
             </div>
 

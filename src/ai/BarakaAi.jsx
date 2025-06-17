@@ -117,7 +117,7 @@ export default function BarakaAI() {
         <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-purple-500/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
       </div>
 
-      <div className="relative z-10 flex flex-col h-screen">
+      <div className={`relative z-10 flex flex-col min-h-screen bottom-0 `}>
         {/* Compact Header */}
         <header className="p-2 text-center relative flex-shrink-0">
           <button
@@ -153,7 +153,7 @@ export default function BarakaAI() {
         <div className="flex-1 px-2 pb-2 flex flex-col min-h-0">
           {/* Welcome Card */}
           {showWelcome && (
-            <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-4 mb-4 border border-white/20 flex-shrink-0">
+            <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-4 mb-2 border border-white/20 flex-shrink-0">
               <div className="flex items-center gap-3 mb-1">
                 <Sparkles className="w-5 h-5 text-yellow-400" />
                 <h2 className="text-lg font-semibold">Welcome back, Baraka!</h2>
