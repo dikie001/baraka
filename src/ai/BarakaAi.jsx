@@ -1,4 +1,3 @@
-import { ChevronLeft } from "lucide-react";
 import { Brain, Send, Settings, Sparkles } from "lucide-react";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
@@ -120,7 +119,7 @@ export default function BarakaAI() {
 
       <div className="relative z-10 flex flex-col h-screen">
         {/* Compact Header */}
-        <header className="p-4 text-center relative flex-shrink-0">
+        <header className="p-2 text-center relative flex-shrink-0">
           <button
             onClick={() => setShowSettings(!showSettings)}
             className="absolute top-4 right-4 p-2 bg-white/10 rounded-full hover:bg-white/20 transition-colors"
@@ -130,6 +129,7 @@ export default function BarakaAI() {
 
           <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl mb-2">
             <Brain className="w-6 h-6" />
+            {/* <img src="/icon.png"/> */}
           </div>
           <h1 className="text-2xl font-bold bg-gradient-to-r from-purple-300 to-pink-300 bg-clip-text text-transparent">
             Baraka AI
@@ -184,7 +184,7 @@ export default function BarakaAI() {
             </div>
 
             {/* Messages Container */}
-            <div className="flex-1 p-4 overflow-y-auto custom-scrollbar min-h-0">
+            <div className="flex-1 p-3 overflow-y-auto custom-scrollbar min-h-0">
               {messages.length === 0 && !isTyping && (
                 <div className="text-center text-purple-200 mt-12">
                   <Sparkles className="w-12 h-12 mx-auto mb-3 opacity-50" />
