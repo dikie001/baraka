@@ -1,5 +1,7 @@
 import { Brain, Send, Settings, Sparkles } from "lucide-react";
 import React, { useState } from "react";
+import { useEffect } from "react";
+import { useRef } from "react";
 import { useNavigate } from "react-router-dom";
 
 export default function BarakaAI() {
@@ -11,6 +13,12 @@ export default function BarakaAI() {
   const [showWelcome, setShowWelcome] = useState(true);
   const API_KEY = import.meta.env.VITE_API_KEY;
   const navigate = useNavigate();
+  const bottomRef = useRef(null)
+
+  // Set UseRef
+  useEffect(()=>{
+    bottomRef.current?.scrollIntoView({behaviour: "smooth"})
+  },[])
 
   const callGeminiAPI = async (userMessage) => {
     if (!API_KEY) {
@@ -31,7 +39,7 @@ export default function BarakaAI() {
               {
                 parts: [
                   {
-                    text: `You are Baraka AI, a personal study assistant created specifically for a student in grade 9 named Baraka. You help with academic subjects, study planning, explanations, and learning support and life hacks. Keep responses helpful, encouraging, and focused on education. Keep it sharp, fun, and focused. No fluff.You were created and designed by Dickens Omondi also known as dikie. User message: ${userMessage}`,
+                    text: `You are Baraka AI, a personal study assistant created specifically for a student in grade 9 named Baraka. You help with academic subjects, study planning, explanations, and learning support and life hacks. Keep responses helpful, encouraging, and focused on education. Keep it sharp, fun, and focused. No fluff.You were created, designed and trained by Dickens Omondi . User message: ${userMessage}`,
                   },
                 ],
               },
@@ -253,6 +261,7 @@ export default function BarakaAI() {
                 <div className="flex-1">
                   <input
                     type="text"
+                    ref={bottomRef}
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
                     onKeyPress={(e) => e.key === "Enter" && handleSend()}
