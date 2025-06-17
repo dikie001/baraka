@@ -1,3 +1,4 @@
+import { Phone } from "lucide-react";
 import {
   Lightbulb,
   X,
@@ -47,23 +48,24 @@ const MenuComponent = () => {
       label: "Settings",
       to: "/settings",
     },
+
     {
       id: 6,
-      icon: <HelpCircle className="w-5 h-5" />,
-      label: "Help & Support",
-      to: "/help-support",
-    },
-    {
-      id: 7,
       icon: <Lightbulb className="w-5 h-5" />,
       label: "Request Feature",
       to: "/request-feature",
     },
     {
-      id: 8,
+      id: 7,
       icon: <Bug className="w-5 h-5" />,
       label: "Report Bug",
       to: "/report-bug",
+    },
+    {
+      id: 8,
+      icon: <Phone className="w-5 h-5" />,
+      label: "Contact Developer",
+      to: "/contact",
     },
   ];
 

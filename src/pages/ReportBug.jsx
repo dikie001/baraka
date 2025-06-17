@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { Bug, Send, CheckCircle, AlertTriangle } from "lucide-react";
 import BottomNav from "../components/MobileNav";
+import { ChevronLeft } from "lucide-react";
+import { useNavigate } from "react-router-dom";
+import toast from "react-hot-toast";
 
 export default function ReportBug() {
   const [formData, setFormData] = useState({
@@ -11,20 +14,43 @@ export default function ReportBug() {
     severity: "",
   });
   const [submitted, setSubmitted] = useState(false);
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = async() => {
     if (
-      formData.title &&
-      formData.description &&
-      formData.email &&
-      formData.severity
+      !formData.title &&
+      !formData.description &&
+      !formData.email &&
+      !formData.severity
     ) {
-      setSubmitted(true);
+      toast.error("Kindly fill in all details.");
     }
+try{
+
+    const res = await fetch("https://formspree.io/f/mgvvgozj", {
+      method:'POST',
+      headers: {
+        "Content-Type": "application/json",
+         Accept: "application/json"
+      },
+      body: JSON.stringify(formData)
+    });
+    const result = await res.json()
+    console.log(result)
+    if(res.ok){
+      toast.success("Message sent successfully")
+      setFormData({title: '', description:'', email:'', severity:'', steps:''})
+      setSubmitted(true)
+    }else{
+      toast.error("Message not sent.")
+    }
+  }catch(e){
+    toast.error("Network error")
+  }
   };
 
   const severityLevels = [
@@ -72,11 +98,17 @@ export default function ReportBug() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-900 via-slate-900 to-purple-800 flex items-center justify-center p-4">
-      <BottomNav />
+    <div className="min-h-screen bg-gradient-to-br from-purple-900 via-slate-900 to-purple-800 flex items-center justify-center p-3">
       <div className="w-full max-w-lg">
+        <button
+          onClick={() => navigate("/")}
+          className="flex items-center gap-2 px-3 py-2 text-purple-200 hover:text-white hover:bg-purple-700/30 rounded-lg transition-colors"
+        >
+          <ChevronLeft className="w-5 h-5" />
+          <span className="text-sm">Back</span>
+        </button>
         {/* Header */}
-        <div className="text-center mb-8">
+        <div className="text-center mb-6">
           <div className="w-16 h-16 bg-gradient-to-r from-red-400 to-pink-400 rounded-2xl flex items-center justify-center mx-auto mb-4">
             <Bug className="w-8 h-8 text-white" />
           </div>
@@ -145,7 +177,8 @@ export default function ReportBug() {
 
           <div>
             <label className="block text-purple-100 font-medium mb-2">
-              Steps to Reproduce
+              Steps to Reproduce{" "}
+              <span className="text-sm text-gray-400">(optional)</span>
             </label>
             <textarea
               name="steps"
@@ -159,7 +192,7 @@ export default function ReportBug() {
 
           <div>
             <label className="block text-purple-100 font-medium mb-2">
-              Email
+              Email <span className="text-sm text-gray-400">(optional)</span>
             </label>
             <input
               type="email"
@@ -171,13 +204,13 @@ export default function ReportBug() {
             />
           </div>
 
-          <div className="flex items-center space-x-2 p-4 bg-yellow-500/10 border border-yellow-500/20 rounded-xl">
+          {/* <div className="flex items-center space-x-2 p-4 bg-yellow-500/10 border border-yellow-500/20 rounded-xl">
             <AlertTriangle className="w-5 h-5 text-yellow-400 flex-shrink-0" />
             <p className="text-yellow-200 text-sm">
               Include screenshots or screen recordings if possible to help us
               understand the issue better.
             </p>
-          </div>
+          </div> */}
 
           <button
             onClick={handleSubmit}

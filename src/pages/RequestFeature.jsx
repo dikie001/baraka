@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Send, Lightbulb, Star, Users, Zap, CheckCircle } from "lucide-react";
 import BottomNav from "../components/MobileNav";
+import toast from "react-hot-toast";
 
 export default function RequestFeature() {
   const [formData, setFormData] = useState({
@@ -62,12 +63,30 @@ export default function RequestFeature() {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     if (validateForm()) {
-      setIsSubmitted(true);
-      // Here you would typically send the data to your backend
+      try {
+        const res = await fetch("https://formspree.io/f/mgvvgozj", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify(formData),
+        });
+        const result = await res.json();
+        console.log(result);
+
+        if (res.ok) {
+          toast.success("Request sent successfully");
+          setIsSubmitted(true);
+        }else{
+          toast.error("Message not sent!")
+        }
+      } catch (e) {}
+
       console.log("Feature request submitted:", formData);
     }
   };
@@ -127,7 +146,7 @@ export default function RequestFeature() {
           </h1>
           <p className="text-purple-100 text-lg max-w-2xl mx-auto leading-relaxed">
             Have an idea that could make our app better? We'd love to hear from
-            you! 
+            you!
           </p>
         </div>
 

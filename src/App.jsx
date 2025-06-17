@@ -19,8 +19,10 @@ import Quizes from './pages/Quizes'
 import ReportBug from './pages/ReportBug'
 import Settings from './pages/Settings'
 import RequestFeature from './pages/RequestFeature'
-import HelpSupport from './pages/HelpSupport'
+import HelpSupport from './pages/Contact'
 import Achievements from './pages/Achievements'
+import ContactPage from './pages/Contact'
+import { Toaster } from 'react-hot-toast'
 
 const App = () => {
   
@@ -30,6 +32,7 @@ const App = () => {
   },[])
   return (
     <Router>
+      <Toaster/>
       <Routes>
         <Route path="/" element={<BarakaMathApp />} />
         <Route path="/auth-page" element={<AuthPage />} />
@@ -50,7 +53,7 @@ const App = () => {
         <Route path="/report-bug" element={<ReportBug />} />
         <Route path="/settings" element={<Settings />} />
         <Route path="/request-feature" element={<RequestFeature />} />
-        <Route path="/help-support" element={<HelpSupport />} />
+        <Route path="/contact" element={<ContactPage />} />
       </Routes>
     </Router>
   );
