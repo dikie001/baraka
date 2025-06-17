@@ -23,6 +23,7 @@ import { useEffect } from "react";
 import CalculateDate from "../components/CalculateDate";
 import { useLocalStorage } from "@uidotdev/usehooks";
 import BarakaAICard from "../components/BarakaAiCard";
+import Menu from "../components/Menu";
 
 export default function HomePage() {
   const [activeTab, setActiveTab] = useState("home");
@@ -84,6 +85,7 @@ export default function HomePage() {
   const numbersPoints = localStorage.getItem("numbers-quiz-points");
   const probabilityPoints = localStorage.getItem("probability-quiz-points");
   const quickQuizPoints = localStorage.getItem("quick-practice-quiz-points");
+  // Convert Quiz Points 
   const point1 = Number(algebraPoints);
   const point2 = Number(dataPoints);
   const point3 = Number(geometryPoints);
@@ -174,10 +176,11 @@ export default function HomePage() {
       <BottomNav />
       <DesktopNav />
       <CalculateDate />
+      <Menu/>
       <div className="relative z-10 w-full max-w-md lg:max-w-4xl xl:max-w-6xl mx-auto bg-slate-800/50 backdrop-blur-xl border border-purple-500/20 shadow-2xl min-h-screen lg:rounded-3xl lg:my-8 lg:min-h-[calc(100vh-4rem)]">
         {/* Header */}
         <div className="p-4 sm:p-6 lg:p-8 bg-gradient-to-r from-purple-600/30 to-pink-600/30 backdrop-blur-sm border-b border-purple-500/20 lg:rounded-t-3xl">
-          <div className="flex mt-1 items-center justify-between">
+          <div className="flex mt-1 ml-10 items-center justify-between">
             <div>
               <h1 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
                 Hi Baraka! 👋

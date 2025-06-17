@@ -66,7 +66,7 @@ const CalculateDate = () => {
   };
 
   return (
-    <div className="absolute min-h-screen bg-gray-100">
+    <div className="absolute z-50 min-h-screen bg-gray-100">
       {/* Toggle Button - Fixed on right side */}
       <button
         onClick={toggleModal}
