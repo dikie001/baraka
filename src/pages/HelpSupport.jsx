@@ -1,5 +1,5 @@
+import { CheckCircle, HelpCircle, Send } from "lucide-react";
 import React, { useState } from "react";
-import { HelpCircle, Send, CheckCircle } from "lucide-react";
 import BottomNav from "../components/MobileNav";
 
 export default function HelpSupport() {
@@ -23,12 +23,12 @@ export default function HelpSupport() {
   if (submitted) {
     return (
       <div className="min-h-screen bg-gradient-to-br from-purple-900 via-slate-900 to-purple-800 flex items-center justify-center p-4">
-        <BottomNav/>
+        <BottomNav />
         <div className="backdrop-blur-xl bg-white/10 border border-white/20 rounded-3xl p-8 text-center max-w-md">
           <div className="w-16 h-16 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full flex items-center justify-center mx-auto mb-6">
             <CheckCircle className="w-8 h-8 text-white" />
           </div>
-        
+
           <h2 className="text-2xl font-bold text-white mb-4">Message Sent!</h2>
           <p className="text-purple-100 mb-6">
             We'll get back to you within 24 hours.
@@ -46,13 +46,14 @@ export default function HelpSupport() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-900 via-slate-900 to-purple-800 flex items-center justify-center p-4">
-      <div className="w-full max-w-lg">
+      <BottomNav />
+      <div className="w-full max-w-lg mb-15">
         {/* Header */}
-        <div className="text-center mb-8">
-          <div className="w-16 h-16 bg-gradient-to-r from-blue-400 to-purple-400 rounded-2xl flex items-center justify-center mx-auto mb-4">
+        <div className="text-center mb-5">
+          <div className="w-16 h-16 bg-gradient-to-r from-blue-400 to-purple-400 rounded-2xl flex items-center justify-center mx-auto mb-2">
             <HelpCircle className="w-8 h-8 text-white" />
           </div>
-          <h1 className="text-3xl font-bold text-white mb-2 bg-gradient-to-r from-purple-200 to-pink-200 bg-clip-text text-transparent">
+          <h1 className="text-3xl font-bold  mb-2 bg-gradient-to-r from-purple-200 to-pink-200 bg-clip-text text-transparent">
             Help & Support
           </h1>
           <p className="text-purple-100">
@@ -61,7 +62,7 @@ export default function HelpSupport() {
         </div>
 
         {/* Form */}
-        <div className="backdrop-blur-xl bg-white/10 border border-white/20 rounded-3xl p-6 space-y-4">
+        <div className="backdrop-blur-xl bg-white/10 border border-white/20 rounded-3xl p-6 space-y-2">
           <div>
             <label className="block text-purple-100 font-medium mb-2">
               Subject

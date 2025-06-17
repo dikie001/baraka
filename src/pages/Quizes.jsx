@@ -9,9 +9,11 @@ import {
   ChevronRight,
 } from "lucide-react";
 import BottomNav from "../components/MobileNav";
+import { useNavigate } from "react-router-dom";
 
 export default function Quizes() {
-  // Mock progress data - replace with your actual state variables
+  
+  const navigate = useNavigate()
   const NP = 25,
     NTQ = 50,
     AP = 30,
@@ -70,10 +72,6 @@ export default function Quizes() {
     },
   ];
 
-  const handleTopicClick = (to) => {
-    console.log(`Navigate to ${to}`);
-    // Add your navigation logic here
-  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-900 via-slate-900 to-purple-800 p-4">
@@ -93,7 +91,7 @@ export default function Quizes() {
           {topics.map((topic, index) => (
             <div
               key={index}
-              onClick={() => handleTopicClick(topic.to)}
+              onClick={() => navigate(topic.to)}
               className="backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl p-5 cursor-pointer transition-all duration-300 hover:scale-105 hover:bg-white/15 group"
             >
               <div className="flex items-center justify-between mb-3">

@@ -13,20 +13,20 @@ export default defineConfig({
         enabled: true,
       },
       manifest: {
-        name: "My Offline App",
-        short_name: "OfflineApp",
+        name: "Quizzy",
+        short_name: "quizzy",
         start_url: "/",
         display: "standalone",
         background_color: "#ffffff",
         theme_color: "#0f172a",
         icons: [
           {
-            src: "/test.png",
+            src: "/icon.png",
             sizes: "192x192",
             type: "image/png",
           },
           {
-            src: "/test.png",
+            src: "/icon.png",
             sizes: "512x512",
             type: "image/png",
           },

@@ -115,39 +115,44 @@ export default function RequestFeature() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-900 via-slate-900 to-purple-800 p-4">
-      <div className="max-w-4xl mx-auto">
+      <BottomNav />
+      <div className="max-w-4xl mx-auto mb-10">
         {/* Header */}
-        <div className="text-center mb-12 pt-8">
+        <div className="text-center mb-8 pt-6">
           <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-purple-400 to-pink-400 rounded-2xl mb-6 shadow-lg">
             <Lightbulb className="w-8 h-8 text-white" />
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 bg-gradient-to-r from-purple-200 to-pink-200 bg-clip-text text-transparent">
+          <h1 className="text-4xl md:text-5xl font-bold  mb-4 bg-gradient-to-r from-purple-200 to-pink-200 bg-clip-text text-transparent">
             Request a Feature
           </h1>
           <p className="text-purple-100 text-lg max-w-2xl mx-auto leading-relaxed">
             Have an idea that could make our app better? We'd love to hear from
-            you! Share your thoughts and help us build something amazing
-            together.
+            you! 
           </p>
         </div>
 
-        {/* Stats Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-          <div className="backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl p-6 text-center shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
-            <Users className="w-8 h-8 text-purple-300 mx-auto mb-3" />
-            <div className="text-2xl font-bold text-white">2.5K+</div>
-            <div className="text-purple-200 text-sm">Features Requested</div>
-          </div>
-          <div className="backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl p-6 text-center shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
-            <Star className="w-8 h-8 text-yellow-300 mx-auto mb-3" />
-            <div className="text-2xl font-bold text-white">847</div>
-            <div className="text-purple-200 text-sm">Features Implemented</div>
-          </div>
-          <div className="backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl p-6 text-center shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
-            <Zap className="w-8 h-8 text-green-300 mx-auto mb-3" />
-            <div className="text-2xl font-bold text-white">72h</div>
-            <div className="text-purple-200 text-sm">Avg Response Time</div>
-          </div>
+        {/* Commented feature Block */}
+        <div>
+          {/* Stats Cards */}
+          {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            <div className="backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl p-6 text-center shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
+              <Users className="w-8 h-8 text-purple-300 mx-auto mb-3" />
+              <div className="text-2xl font-bold text-white">2.5K+</div>
+              <div className="text-purple-200 text-sm">Features Requested</div>
+            </div>
+            <div className="backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl p-6 text-center shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
+              <Star className="w-8 h-8 text-yellow-300 mx-auto mb-3" />
+              <div className="text-2xl font-bold text-white">847</div>
+              <div className="text-purple-200 text-sm">
+                Features Implemented
+              </div>
+            </div>
+            <div className="backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl p-6 text-center shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
+              <Zap className="w-8 h-8 text-green-300 mx-auto mb-3" />
+              <div className="text-2xl font-bold text-white">72h</div>
+              <div className="text-purple-200 text-sm">Avg Response Time</div>
+            </div>
+          </div> */}
         </div>
 
         {/* Form */}

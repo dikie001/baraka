@@ -73,7 +73,7 @@ const MenuComponent = () => {
     <>
       {/* Toggle Button */}
       <button
-        className="absolute z-40 left-2 top-7 p-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white "
+        className="absolute z-55 left-2 top-7 p-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white "
         onClick={() => setOpenMenu(!openMenu)}
       >
         {openMenu ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -86,11 +86,11 @@ const MenuComponent = () => {
           onClick={() => setOpenMenu(false)}
         >
           <div
-            className="fixed left-0 top-0 h-full w-80 bg-gradient-to-b from-purple-900/95 to-black/35 backdrop-blur-xl border-r border-white/10 p-6 transform transition-transform duration-300 overflow-y-auto"
+            className="fixed  left-0 top-0 h-full w-80 bg-gradient-to-b from-purple-900/95 to-black/35 backdrop-blur-xl border-r border-white/10 p-6 transform transition-transform duration-300 overflow-y-auto"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Header Section */}
-            <div className="flex flex-col items-center mt-16 mb-8">
+            <div className="flex flex-col items-center mt-16 mb-6">
               <img
                 src="/icon.png"
                 alt="Baraka's Learning App"
@@ -101,7 +101,7 @@ const MenuComponent = () => {
             </div>
 
             {/* Menu Links */}
-            <nav className="space-y-2 gap-2 grid grid-cols-2 ">
+            <nav className="space-y-1 gap-2 grid grid-cols-2 ">
               {menuLinks.map((item) => (
              
                   <Link

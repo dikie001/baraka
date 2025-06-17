@@ -93,7 +93,7 @@ export default function BarakaAI() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-900 via-slate-800 to-purple-800 text-white">
+    <div className="max-h-screen bg-gradient-to-br from-purple-900 via-slate-800 to-purple-800 text-white">
       {/* Custom Scrollbar Styles */}
       <style>{`
         .custom-scrollbar::-webkit-scrollbar {
@@ -117,12 +117,6 @@ export default function BarakaAI() {
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-pink-500/20 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-purple-500/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
       </div>
-      <button
-      onClick={()=>navigate('/')}
-        className="flex text-purple-500 z-60 shadow-md shadow-purple-700  bg-black/40 absolute top-2 left-2 py-1.5 px-2 rounded-md "
-      >
-        <ChevronLeft /> Back
-      </button>
 
       <div className="relative z-10 flex flex-col h-screen">
         {/* Compact Header */}
@@ -148,7 +142,9 @@ export default function BarakaAI() {
           {showSettings && (
             <div className="absolute  shadow-lg top-16 right-4 bg-white/10 backdrop-blur-lg rounded-2xl p-4 border border-white/20 z-20 min-w-64">
               <h3 className="font-semibold mb-3">Baraka AI </h3>
-              <p className="text-white-400">This panel will be populated soon!</p>
+              <p className="text-white-400">
+                This panel will be populated soon!
+              </p>
             </div>
           )}
         </header>
@@ -204,14 +200,14 @@ export default function BarakaAI() {
               {messages.map((msg) => (
                 <div
                   key={msg.id}
-                  className={`flex items-start gap-3 mb-3 overflow ${
+                  className={`flex items-start gap-2 mb-2 overflow ${
                     msg.type === "user" ? "flex-row-reverse" : ""
                   }`}
                 >
                   <div
                     className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 ${
                       msg.type === "user"
-                        ? "bg-gradient-to-r from-pink-500 to-purple-500"
+                        ? "bg-gradient-to-r  from-pink-500 to-purple-500 "
                         : "bg-gradient-to-r from-purple-500 to-pink-500"
                     }`}
                   >
@@ -224,7 +220,7 @@ export default function BarakaAI() {
                   <div
                     className={`max-w-[70%] p-3 rounded-2xl ${
                       msg.type === "user"
-                        ? "bg-gradient-to-r from-pink-600 to-purple-600 rounded-tr-none"
+                        ? "bg-gradient-to-r from-pink-600 to-purple-600 rounded-tr-none break-words whitespace-normal "
                         : "bg-white/10 rounded-tl-none"
                     }`}
                   >
