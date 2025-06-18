@@ -3,6 +3,7 @@ import questionsData from "./Quiz.json";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import BottomNav from "../../components/MobileNav";
 import ConfirmStudyMode from "../../components/ConfirmStudyMode";
+import toast from "react-hot-toast";
 
 // Custom localStorage hook
 const useLocalStorage = (key, defaultValue) => {
@@ -76,6 +77,12 @@ const NumbersQuiz = () => {
   };
 
   const nextQuestion = () => {
+    if (!selected) {
+      const toasty = toast.error("Please select an Answer!", {
+        id: "toasty",
+      });
+      return;
+    }
     const nextIndex = (current + 1) % questionsData.questions.length;
     setCurrent(nextIndex);
     setCurrentNumber(nextIndex);
@@ -84,13 +91,16 @@ const NumbersQuiz = () => {
   };
 
   const prevQuestion = () => {
-    const prevIndex =
-      (current - 1 + questionsData.questions.length) %
-      questionsData.questions.length;
-    setCurrent(prevIndex);
-    setCurrentNumber(prevIndex);
-    setSelected(null);
-    setShowAnswer(false);
+    const toasty = toast.error("This button has been disabled", {
+      id: "toasty",
+    });
+    // const prevIndex =
+    //   (current - 1 + questionsData.questions.length) %
+    //   questionsData.questions.length;
+    // setCurrent(prevIndex);
+    // setCurrentNumber(prevIndex);
+    // setSelected(null);
+    // setShowAnswer(false);
   };
 
   // Update percentage score when score changes
@@ -107,13 +117,13 @@ const NumbersQuiz = () => {
     <div className="min-h-screen bg-gradient-to-br from-purple-900 via-slate-800 to-slate-900 text-white p-4">
       <BottomNav />
       {mode === "choosePage" && <ConfirmStudyMode />}
-    <button
-           onClick={() => setMode("choosePage")}
-           className="flex items-center gap-2 px-3 py-2 text-purple-200 hover:text-white hover:bg-purple-700/30 rounded-lg transition-colors"
-         >
-           <ChevronLeft className="w-5 h-5" />
-           <span className="text-sm">Back</span>
-         </button>
+      <button
+        onClick={() => setMode("choosePage")}
+        className="flex items-center gap-2 px-3 py-2 text-purple-200 hover:text-white hover:bg-purple-700/30 rounded-lg transition-colors"
+      >
+        <ChevronLeft className="w-5 h-5" />
+        <span className="text-sm">Back</span>
+      </button>
       {/* Header with progress */}
       <div className="max-w-4xl mx-auto mb-6 mt-4">
         <div className="flex items-center justify-between mb-4">

@@ -3,6 +3,7 @@ import questionsData from "./RandomQuiz.json";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import BottomNav from "../components/MobileNav";
 import { useNavigate } from "react-router-dom";
+import toast from "react-hot-toast";
 
 // Custom localStorage hook
 const useLocalStorage = (key, defaultValue) => {
@@ -37,12 +38,15 @@ const QuickPractice = () => {
     "quick-practice-percentage-score",
     0
   );
-  const [savedScore, setSavedScore] = useLocalStorage("quick-practice-quiz-points", 0);
+  const [savedScore, setSavedScore] = useLocalStorage(
+    "quick-practice-quiz-points",
+    0
+  );
   const [savedAnswered, setSavedAnswered] = useLocalStorage(
     "quick-practice-quiz-answered",
     []
   );
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   // Initialize state with saved progress
   const [current, setCurrent] = useState(currentNumber || 0);
@@ -50,16 +54,16 @@ const QuickPractice = () => {
   const [showAnswer, setShowAnswer] = useState(false);
   const [score, setScore] = useState(savedScore || 0);
   const [answered, setAnswered] = useState(new Set(savedAnswered || []));
-  const [totalQuizLength, setTotalQuizLength]=useLocalStorage("quick-quiz-length")
-
+  const [totalQuizLength, setTotalQuizLength] =
+    useLocalStorage("quick-quiz-length");
 
   const question = questionsData.questions[current];
   const totalQuestions = questionsData.questions.length;
 
   // Save quiz length to LocalStorage
-  useEffect(()=>{
-    setTotalQuizLength(totalQuestions)
-  },[])
+  useEffect(() => {
+    setTotalQuizLength(totalQuestions);
+  }, []);
 
   const handleOptionClick = (key) => {
     setSelected(key);
@@ -77,6 +81,15 @@ const QuickPractice = () => {
   };
 
   const nextQuestion = () => {
+    if (!selected) {
+      const toasty = toast.error("Please select an Answer!", { id: "toasty" });
+      return;
+    } else if (currentNumber === 199) {
+      const toasty = toast.success("Hurray, you have completed!", {
+        id: "toasty",
+      });
+      return;
+    }
     const nextIndex = (current + 1) % questionsData.questions.length;
     setCurrent(nextIndex);
     setCurrentNumber(nextIndex);
@@ -85,13 +98,17 @@ const QuickPractice = () => {
   };
 
   const prevQuestion = () => {
-    const prevIndex =
-      (current - 1 + questionsData.questions.length) %
-      questionsData.questions.length;
-    setCurrent(prevIndex);
-    setCurrentNumber(prevIndex);
-    setSelected(null);
-    setShowAnswer(false);
+    const toasty = toast.error("This button has been disabled", {
+      id: "toasty",
+    });
+
+    // const prevIndex =
+    //   (current - 1 + questionsData.questions.length) %
+    //   questionsData.questions.length;
+    // setCurrent(prevIndex);
+    // setCurrentNumber(prevIndex);
+    // setSelected(null);
+    // setShowAnswer(false);
   };
 
   // Update percentage score when score changes

@@ -3,6 +3,7 @@ import questionsData from "./ProbabilityQuiz.json";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import BottomNav from "../../components/MobileNav";
 import ConfirmStudyMode from "../../components/ConfirmStudyMode";
+import toast from "react-hot-toast";
 
 // Custom localStorage hook
 const useLocalStorage = (key, defaultValue) => {
@@ -80,6 +81,17 @@ const ProbabilityQuiz = () => {
   };
 
   const nextQuestion = () => {
+    if (!selected) {
+      const toasty = toast.error("Please select an Answer!", {
+        id: "toasty",
+      });
+      return;
+    } else if (currentNumber === 99) {
+      const toasty = toast.success("Hurray, you have completed!", {
+        id: "toasty",
+      });
+      return;
+    }
     const nextIndex = (current + 1) % questionsData.questions.length;
     setCurrent(nextIndex);
     setCurrentNumber(nextIndex);
@@ -88,13 +100,16 @@ const ProbabilityQuiz = () => {
   };
 
   const prevQuestion = () => {
-    const prevIndex =
-      (current - 1 + questionsData.questions.length) %
-      questionsData.questions.length;
-    setCurrent(prevIndex);
-    setCurrentNumber(prevIndex);
-    setSelected(null);
-    setShowAnswer(false);
+    const toasty = toast.error("This button has been disabled", {
+      id: "toasty",
+    });
+    // const prevIndex =
+    //   (current - 1 + questionsData.questions.length) %
+    //   questionsData.questions.length;
+    // setCurrent(prevIndex);
+    // setCurrentNumber(prevIndex);
+    // setSelected(null);
+    // setShowAnswer(false);
   };
 
   // Update percentage score when score changes
@@ -119,10 +134,10 @@ const ProbabilityQuiz = () => {
         <span className="text-sm">Back</span>
       </button>
       {/* Header with progress */}
-      <div className="max-w-4xl mx-auto mb-6 mt-4">
+      <div className="max-w-4xl mx-auto mb-6 mt-2">
         <div className="flex items-center justify-between mb-4">
           <h1 className="text-3xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-            Numbers Quiz
+            Probability Quiz
           </h1>
           <div className="text-purple-300 font-medium">
             Score: {percentageScore}%

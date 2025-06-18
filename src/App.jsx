@@ -1,28 +1,28 @@
 import { useLocalStorage } from '@uidotdev/usehooks'
 import React, { useEffect } from 'react'
+import { Toaster } from 'react-hot-toast'
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
+import BarakaAI from './ai/BarakaAi'
+import InstallPrompt from './components/InstallPrompt'
 import DailyChallenge from './dailyChallenge/DailyChallenge'
+import ExamsPage from './exams/ExamsPage'
+import Achievements from './pages/Achievements'
 import AuthPage from './pages/Auth'
+import ContactPage from './pages/Contact'
 import BarakaMathApp from './pages/HomePage'
 import Profile from './pages/Profile'
+import Quizes from './pages/Quizes'
+import ReportBug from './pages/ReportBug'
+import RequestFeature from './pages/RequestFeature'
+import Settings from './pages/Settings'
 import QuickPractice from './quickPractice/QuickPractice'
 import Algebra from './topics/algebra/Algebra'
 import Data from './topics/data/Data'
 import Geometry from './topics/geometry/Geometry'
+import { Measurement } from './topics/measurement/Measurement'
 import Numbers from './topics/numbers/Numbers'
 import NumbersQuiz from './topics/numbers/NumbersQuiz'
-import { Measurement } from './topics/measurement/Measurement'
 import { Probability } from './topics/probability/Probability'
-import BarakaAI from './ai/BarakaAi'
-import ExamsPage from './exams/ExamsPage'
-import Quizes from './pages/Quizes'
-import ReportBug from './pages/ReportBug'
-import Settings from './pages/Settings'
-import RequestFeature from './pages/RequestFeature'
-import HelpSupport from './pages/Contact'
-import Achievements from './pages/Achievements'
-import ContactPage from './pages/Contact'
-import { Toaster } from 'react-hot-toast'
 
 const App = () => {
   
@@ -33,6 +33,7 @@ const App = () => {
   return (
     <Router>
       <Toaster/>
+      <InstallPrompt/>
       <Routes>
         <Route path="/" element={<BarakaMathApp />} />
         <Route path="/auth-page" element={<AuthPage />} />
