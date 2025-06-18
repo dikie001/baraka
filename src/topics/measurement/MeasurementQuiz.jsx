@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import questionsData from "./MeasurementQuiz.json";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import BottomNav from "../../components/MobileNav";
+import ConfirmStudyMode from "../../components/ConfirmStudyMode";
 
 // Custom localStorage hook
 const useLocalStorage = (key, defaultValue) => {
@@ -44,12 +45,11 @@ const MeasurementQuiz = () => {
     "quiz-answered-measurement",
     []
   );
-  const [mode, setMode] = useLocalStorage("choose-page", null);
+  const [mode, setMode] = useLocalStorage("choose-page", "choosePage");
   const [quizLength, setQuizLength] = useLocalStorage(
     "measurement-quiz-length",
     null
   );
-
 
   // Initialize state with saved progress
   const [current, setCurrent] = useState(currentNumber || 0);
@@ -99,15 +99,15 @@ const MeasurementQuiz = () => {
     const newPercentageScore = Math.floor((score / totalQuestions) * 100);
     setPercentageScore(newPercentageScore);
   }, [score, totalQuestions, setPercentageScore]);
- 
-  useEffect(()=>{
-      setQuizLength(totalQuestions);
-  },[])
+
+  useEffect(() => {
+    setQuizLength(totalQuestions);
+  }, []);
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-900 via-slate-800 to-slate-900 text-white p-4">
       <BottomNav />
-
- <button
+{mode === 'choosePage' && <ConfirmStudyMode/>}
+      <button
         onClick={() => setMode("choosePage")}
         className="flex items-center gap-2 px-3 py-2 text-purple-200 hover:text-white hover:bg-purple-700/30 rounded-lg transition-colors"
       >

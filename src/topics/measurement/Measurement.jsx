@@ -6,7 +6,7 @@ import MeasurementQuiz from "./MeasurementQuiz";
 import { useEffect } from "react";
 
 export const Measurement = () => {
-  const [page, setPage] = useLocalStorage("choose-page", "choosePage");
+  const [page, setPage] = useLocalStorage("choose-page", 'choosePage');
   useEffect(()=>{
     setPage("choosePage")
   },[])

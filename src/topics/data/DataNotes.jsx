@@ -21,14 +21,14 @@ const DataNotes = () => {
         <BottomNav />
         <div className="text-center mb-4 mt-4 space-y-2">
           <h1 className="text-5xl font-bold bg-gradient-to-r from-pink-400 to-purple-300 bg-clip-text text-transparent">
-            📘 {topic}
+             {topic}
           </h1>
           <p className="text-slate-300 text-xl font-medium">
             Grade {grade} Revision Guide
           </p>
-          <p className="text-slate-400 italic text-lg max-w-2xl mx-auto leading-relaxed">
+          {/* <p className="text-slate-400 italic text-lg max-w-2xl mx-auto leading-relaxed">
             {revision_content.description}
-          </p>
+          </p> */}
         </div>
 
         {/* Content Section */}
