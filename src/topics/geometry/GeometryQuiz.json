@@ -1,1697 +1,2404 @@
-{
-  "subtopic": "geometry",
+{"subtopic":"Geometry",
   "questions": [
     {
       "id": 1,
-      "question": "What is the sum of interior angles of a quadrilateral?",
+      "question": "What is the area of a rectangle with length 16 cm and width 12 cm?",
       "options": {
-        "a": "360°",
-        "b": "180°",
-        "c": "540°",
-        "d": "720°"
+        "A": "192 cm\u00b2",
+        "B": "226 cm\u00b2",
+        "C": "249 cm\u00b2",
+        "D": "41 cm\u00b2"
       },
-      "answer": "a",
-      "subtopic": "quadrilaterals"
+      "answer": "A",
+      "subtopic": "Geometry"
     },
     {
       "id": 2,
-      "question": "In a triangle with angles 45°, 67°, and x°, what is the value of x?",
+      "question": "What is the area of a rectangle with length 6 cm and width 10 cm?",
       "options": {
-        "a": "68°",
-        "b": "78°",
-        "c": "88°",
-        "d": "58°"
+        "A": "63 cm\u00b2",
+        "B": "60 cm\u00b2",
+        "C": "243 cm\u00b2",
+        "D": "189 cm\u00b2"
       },
-      "answer": "a",
-      "subtopic": "triangles"
+      "answer": "B",
+      "subtopic": "Geometry"
     },
     {
       "id": 3,
-      "question": "What is the measure of each exterior angle of a regular octagon?",
+      "question": "What is the perimeter of a square with side 9 cm?",
       "options": {
-        "a": "45°",
-        "b": "36°",
-        "c": "60°",
-        "d": "72°"
+        "A": "36 cm",
+        "B": "47 cm",
+        "C": "11 cm",
+        "D": "60 cm"
       },
-      "answer": "a",
-      "subtopic": "polygons"
+      "answer": "A",
+      "subtopic": "Geometry"
     },
     {
       "id": 4,
-      "question": "Two parallel lines are cut by a transversal. If one corresponding angle is 73°, what is the other corresponding angle?",
+      "question": "What is the sum of the interior angles of a triangle?",
       "options": {
-        "a": "73°",
-        "b": "107°",
-        "c": "17°",
-        "d": "146°"
+        "A": "180\u00b0",
+        "B": "240\u00b0",
+        "C": "150\u00b0",
+        "D": "210\u00b0"
       },
-      "answer": "a",
-      "subtopic": "angles"
+      "answer": "A",
+      "subtopic": "Geometry"
     },
     {
       "id": 5,
-      "question": "What is the area of a triangle with base 12 cm and height 8 cm?",
+      "question": "What is the volume of a cube with side 6 cm?",
       "options": {
-        "a": "48 cm²",
-        "b": "96 cm²",
-        "c": "20 cm²",
-        "d": "24 cm²"
+        "A": "216 cm\u00b3",
+        "B": "286 cm\u00b3",
+        "C": "714 cm\u00b3",
+        "D": "385 cm\u00b3"
       },
-      "answer": "a",
-      "subtopic": "area and perimeter"
+      "answer": "A",
+      "subtopic": "Geometry"
     },
     {
       "id": 6,
-      "question": "A rhombus has diagonals of length 10 cm and 24 cm. What is its area?",
+      "question": "What is the sum of the interior angles of a quadrilateral?",
       "options": {
-        "a": "120 cm²",
-        "b": "240 cm²",
-        "c": "60 cm²",
-        "d": "34 cm²"
+        "A": "390\u00b0",
+        "B": "420\u00b0",
+        "C": "330\u00b0",
+        "D": "360\u00b0"
       },
-      "answer": "a",
-      "subtopic": "quadrilaterals"
+      "answer": "D",
+      "subtopic": "Geometry"
     },
     {
       "id": 7,
-      "question": "In a right triangle, if one acute angle is 35°, what is the other acute angle?",
+      "question": "A triangle has sides 6 cm, 8 cm and 10 cm. What type of triangle is it?",
       "options": {
-        "a": "55°",
-        "b": "45°",
-        "c": "65°",
-        "d": "60°"
+        "A": "Scalene",
+        "B": "Right-angled",
+        "C": "Isosceles",
+        "D": "Equilateral"
       },
-      "answer": "a",
-      "subtopic": "triangles"
+      "answer": "B",
+      "subtopic": "Geometry"
     },
     {
       "id": 8,
-      "question": "What is the circumference of a circle with radius 7 cm? (Use π = 22/7)",
+      "question": "What is the sum of the interior angles of a triangle?",
       "options": {
-        "a": "44 cm",
-        "b": "22 cm",
-        "c": "14 cm",
-        "d": "28 cm"
+        "A": "180\u00b0",
+        "B": "210\u00b0",
+        "C": "240\u00b0",
+        "D": "150\u00b0"
       },
-      "answer": "a",
-      "subtopic": "circles"
+      "answer": "A",
+      "subtopic": "Geometry"
     },
     {
       "id": 9,
-      "question": "How many sides does a dodecagon have?",
+      "question": "What is the area of a rectangle with length 7 cm and width 5 cm?",
       "options": {
-        "a": "12",
-        "b": "10",
-        "c": "14",
-        "d": "16"
+        "A": "35 cm\u00b2",
+        "B": "177 cm\u00b2",
+        "C": "250 cm\u00b2",
+        "D": "286 cm\u00b2"
       },
-      "answer": "a",
-      "subtopic": "polygons"
+      "answer": "A",
+      "subtopic": "Geometry"
     },
     {
       "id": 10,
-      "question": "What is the surface area of a cube with edge length 5 cm?",
+      "question": "What is the perimeter of a square with side 13 cm?",
       "options": {
-        "a": "150 cm²",
-        "b": "125 cm²",
-        "c": "75 cm²",
-        "d": "100 cm²"
+        "A": "89 cm",
+        "B": "52 cm",
+        "C": "40 cm",
+        "D": "10 cm"
       },
-      "answer": "a",
-      "subtopic": "volume and surface area"
+      "answer": "B",
+      "subtopic": "Geometry"
     },
     {
       "id": 11,
-      "question": "If two angles of a triangle are 62° and 78°, what type of triangle is it?",
+      "question": "What is the perimeter of a square with side 5 cm?",
       "options": {
-        "a": "Acute triangle",
-        "b": "Right triangle",
-        "c": "Obtuse triangle",
-        "d": "Equilateral triangle"
+        "A": "12 cm",
+        "B": "50 cm",
+        "C": "33 cm",
+        "D": "20 cm"
       },
-      "answer": "a",
-      "subtopic": "triangles"
+      "answer": "D",
+      "subtopic": "Geometry"
     },
     {
       "id": 12,
-      "question": "What is the area of a parallelogram with base 15 cm and height 9 cm?",
+      "question": "A triangle has sides 6 cm, 8 cm and 10 cm. What type of triangle is it?",
       "options": {
-        "a": "135 cm²",
-        "b": "48 cm²",
-        "c": "24 cm²",
-        "d": "270 cm²"
+        "A": "Scalene",
+        "B": "Equilateral",
+        "C": "Isosceles",
+        "D": "Right-angled"
       },
-      "answer": "a",
-      "subtopic": "quadrilaterals"
+      "answer": "D",
+      "subtopic": "Geometry"
     },
     {
       "id": 13,
-      "question": "An angle measuring 125° is classified as:",
+      "question": "What is the volume of a cube with side 10 cm?",
       "options": {
-        "a": "Obtuse angle",
-        "b": "Acute angle",
-        "c": "Right angle",
-        "d": "Straight angle"
+        "A": "629 cm\u00b3",
+        "B": "1000 cm\u00b3",
+        "C": "799 cm\u00b3",
+        "D": "415 cm\u00b3"
       },
-      "answer": "a",
-      "subtopic": "angles"
+      "answer": "B",
+      "subtopic": "Geometry"
     },
     {
       "id": 14,
-      "question": "What is the perimeter of a regular hexagon with side length 8 cm?",
+      "question": "What is the sum of the interior angles of a pentagon?",
       "options": {
-        "a": "48 cm",
-        "b": "32 cm",
-        "c": "24 cm",
-        "d": "64 cm"
+        "A": "540\u00b0",
+        "B": "570\u00b0",
+        "C": "510\u00b0",
+        "D": "600\u00b0"
       },
-      "answer": "a",
-      "subtopic": "polygons"
+      "answer": "A",
+      "subtopic": "Geometry"
     },
     {
       "id": 15,
-      "question": "The area of a circle with diameter 14 cm is: (Use π = 22/7)",
+      "question": "What is the sum of the interior angles of a quadrilateral?",
       "options": {
-        "a": "154 cm²",
-        "b": "308 cm²",
-        "c": "44 cm²",
-        "d": "88 cm²"
+        "A": "390\u00b0",
+        "B": "330\u00b0",
+        "C": "360\u00b0",
+        "D": "420\u00b0"
       },
-      "answer": "a",
-      "subtopic": "circles"
+      "answer": "C",
+      "subtopic": "Geometry"
     },
     {
       "id": 16,
-      "question": "What is the length of the hypotenuse of a right triangle with legs 3 cm and 4 cm?",
+      "question": "What is the sum of the interior angles of a pentagon?",
       "options": {
-        "a": "5 cm",
-        "b": "7 cm",
-        "c": "25 cm",
-        "d": "12 cm"
+        "A": "510\u00b0",
+        "B": "540\u00b0",
+        "C": "570\u00b0",
+        "D": "600\u00b0"
       },
-      "answer": "a",
-      "subtopic": "triangles"
+      "answer": "B",
+      "subtopic": "Geometry"
     },
     {
       "id": 17,
-      "question": "In a rectangle, the diagonals are:",
+      "question": "What is the perimeter of a square with side 15 cm?",
       "options": {
-        "a": "Equal in length",
-        "b": "Perpendicular",
-        "c": "Different in length",
-        "d": "Parallel"
+        "A": "56 cm",
+        "B": "64 cm",
+        "C": "90 cm",
+        "D": "60 cm"
       },
-      "answer": "a",
-      "subtopic": "quadrilaterals"
+      "answer": "D",
+      "subtopic": "Geometry"
     },
     {
       "id": 18,
-      "question": "What is the sum of interior angles of a heptagon?",
+      "question": "A triangle has sides 6 cm, 8 cm and 10 cm. What type of triangle is it?",
       "options": {
-        "a": "900°",
-        "b": "720°",
-        "c": "1080°",
-        "d": "540°"
+        "A": "Scalene",
+        "B": "Equilateral",
+        "C": "Isosceles",
+        "D": "Right-angled"
       },
-      "answer": "a",
-      "subtopic": "polygons"
+      "answer": "D",
+      "subtopic": "Geometry"
     },
     {
       "id": 19,
-      "question": "Two complementary angles have measures in the ratio 2:7. What is the smaller angle?",
+      "question": "What is the sum of the interior angles of a hexagon?",
       "options": {
-        "a": "20°",
-        "b": "70°",
-        "c": "30°",
-        "d": "60°"
+        "A": "720\u00b0",
+        "B": "780\u00b0",
+        "C": "750\u00b0",
+        "D": "690\u00b0"
       },
-      "answer": "a",
-      "subtopic": "angles"
+      "answer": "A",
+      "subtopic": "Geometry"
     },
     {
       "id": 20,
-      "question": "What is the volume of a cylinder with radius 3 cm and height 10 cm? (Use π = 22/7)",
+      "question": "What is the perimeter of a square with side 14 cm?",
       "options": {
-        "a": "282.86 cm³",
-        "b": "188.57 cm³",
-        "c": "94.29 cm³",
-        "d": "565.71 cm³"
+        "A": "29 cm",
+        "B": "44 cm",
+        "C": "53 cm",
+        "D": "56 cm"
       },
-      "answer": "a",
-      "subtopic": "volume and surface area"
+      "answer": "D",
+      "subtopic": "Geometry"
     },
     {
       "id": 21,
-      "question": "If the exterior angle of a regular polygon is 24°, how many sides does it have?",
+      "question": "What is the area of a rectangle with length 7 cm and width 9 cm?",
       "options": {
-        "a": "15",
-        "b": "12",
-        "c": "18",
-        "d": "20"
+        "A": "140 cm\u00b2",
+        "B": "45 cm\u00b2",
+        "C": "63 cm\u00b2",
+        "D": "299 cm\u00b2"
       },
-      "answer": "a",
-      "subtopic": "polygons"
+      "answer": "C",
+      "subtopic": "Geometry"
     },
     {
       "id": 22,
-      "question": "In triangle ABC, if AB = AC = 10 cm and BC = 12 cm, what is the area?",
+      "question": "A triangle has sides 6 cm, 8 cm and 10 cm. What type of triangle is it?",
       "options": {
-        "a": "48 cm²",
-        "b": "60 cm²",
-        "c": "96 cm²",
-        "d": "24 cm²"
+        "A": "Scalene",
+        "B": "Isosceles",
+        "C": "Equilateral",
+        "D": "Right-angled"
       },
-      "answer": "a",
-      "subtopic": "triangles"
+      "answer": "D",
+      "subtopic": "Geometry"
     },
     {
       "id": 23,
-      "question": "A trapezium has parallel sides of lengths 8 cm and 12 cm, and height 5 cm. What is its area?",
+      "question": "What is the perimeter of a square with side 8 cm?",
       "options": {
-        "a": "50 cm²",
-        "b": "100 cm²",
-        "c": "40 cm²",
-        "d": "60 cm²"
+        "A": "31 cm",
+        "B": "32 cm",
+        "C": "84 cm",
+        "D": "56 cm"
       },
-      "answer": "a",
-      "subtopic": "quadrilaterals"
+      "answer": "B",
+      "subtopic": "Geometry"
     },
     {
       "id": 24,
-      "question": "What is the distance between points A(2, 3) and B(6, 6)?",
+      "question": "What is the perimeter of a square with side 8 cm?",
       "options": {
-        "a": "5 units",
-        "b": "7 units",
-        "c": "3 units",
-        "d": "4 units"
+        "A": "91 cm",
+        "B": "45 cm",
+        "C": "32 cm",
+        "D": "58 cm"
       },
-      "answer": "a",
-      "subtopic": "coordinate geometry"
+      "answer": "C",
+      "subtopic": "Geometry"
     },
     {
       "id": 25,
-      "question": "An inscribed angle that intercepts a semicircle measures:",
+      "question": "What is the perimeter of a square with side 6 cm?",
       "options": {
-        "a": "90°",
-        "b": "180°",
-        "c": "45°",
-        "d": "60°"
+        "A": "75 cm",
+        "B": "24 cm",
+        "C": "19 cm",
+        "D": "78 cm"
       },
-      "answer": "a",
-      "subtopic": "circles"
+      "answer": "B",
+      "subtopic": "Geometry"
     },
     {
       "id": 26,
-      "question": "What is the area of a sector with central angle 60° in a circle of radius 12 cm? (Use π = 22/7)",
+      "question": "What is the sum of the interior angles of a quadrilateral?",
       "options": {
-        "a": "75.43 cm²",
-        "b": "150.86 cm²",
-        "c": "37.71 cm²",
-        "d": "113.14 cm²"
+        "A": "330\u00b0",
+        "B": "360\u00b0",
+        "C": "390\u00b0",
+        "D": "420\u00b0"
       },
-      "answer": "a",
-      "subtopic": "circles"
+      "answer": "B",
+      "subtopic": "Geometry"
     },
     {
       "id": 27,
-      "question": "In a parallelogram ABCD, if angle A = 70°, what is angle C?",
+      "question": "What is the perimeter of a square with side 10 cm?",
       "options": {
-        "a": "70°",
-        "b": "110°",
-        "c": "140°",
-        "d": "35°"
+        "A": "47 cm",
+        "B": "40 cm",
+        "C": "62 cm",
+        "D": "45 cm"
       },
-      "answer": "a",
-      "subtopic": "quadrilaterals"
+      "answer": "B",
+      "subtopic": "Geometry"
     },
     {
       "id": 28,
-      "question": "What is the perimeter of a triangle with sides 5 cm, 12 cm, and 13 cm?",
+      "question": "What is the volume of a cube with side 8 cm?",
       "options": {
-        "a": "30 cm",
-        "b": "25 cm",
-        "c": "20 cm",
-        "d": "35 cm"
+        "A": "512 cm\u00b3",
+        "B": "708 cm\u00b3",
+        "C": "510 cm\u00b3",
+        "D": "107 cm\u00b3"
       },
-      "answer": "a",
-      "subtopic": "triangles"
+      "answer": "A",
+      "subtopic": "Geometry"
     },
     {
       "id": 29,
-      "question": "The midpoint of the line segment joining points (4, 6) and (8, 10) is:",
+      "question": "What is the perimeter of a square with side 11 cm?",
       "options": {
-        "a": "(6, 8)",
-        "b": "(12, 16)",
-        "c": "(2, 2)",
-        "d": "(4, 4)"
+        "A": "50 cm",
+        "B": "44 cm",
+        "C": "37 cm",
+        "D": "77 cm"
       },
-      "answer": "a",
-      "subtopic": "coordinate geometry"
+      "answer": "B",
+      "subtopic": "Geometry"
     },
     {
       "id": 30,
-      "question": "What is the lateral surface area of a cone with radius 4 cm and slant height 10 cm? (Use π = 22/7)",
+      "question": "What is the perimeter of a square with side 13 cm?",
       "options": {
-        "a": "125.71 cm²",
-        "b": "251.43 cm²",
-        "c": "62.86 cm²",
-        "d": "188.57 cm²"
+        "A": "52 cm",
+        "B": "42 cm",
+        "C": "15 cm",
+        "D": "99 cm"
       },
-      "answer": "a",
-      "subtopic": "volume and surface area"
+      "answer": "A",
+      "subtopic": "Geometry"
     },
     {
       "id": 31,
-      "question": "If two angles are supplementary and one is 3 times the other, what is the smaller angle?",
+      "question": "What is the volume of a cube with side 3 cm?",
       "options": {
-        "a": "45°",
-        "b": "135°",
-        "c": "60°",
-        "d": "120°"
+        "A": "769 cm\u00b3",
+        "B": "27 cm\u00b3",
+        "C": "320 cm\u00b3",
+        "D": "245 cm\u00b3"
       },
-      "answer": "a",
-      "subtopic": "angles"
+      "answer": "B",
+      "subtopic": "Geometry"
     },
     {
       "id": 32,
-      "question": "A regular polygon has an interior angle of 140°. How many sides does it have?",
+      "question": "What is the area of a rectangle with length 17 cm and width 11 cm?",
       "options": {
-        "a": "9",
-        "b": "8",
-        "c": "10",
-        "d": "7"
+        "A": "187 cm\u00b2",
+        "B": "230 cm\u00b2",
+        "C": "123 cm\u00b2",
+        "D": "119 cm\u00b2"
       },
-      "answer": "a",
-      "subtopic": "polygons"
+      "answer": "A",
+      "subtopic": "Geometry"
     },
     {
       "id": 33,
-      "question": "What is the area of an equilateral triangle with side 6 cm?",
+      "question": "A triangle has sides 6 cm, 8 cm and 10 cm. What type of triangle is it?",
       "options": {
-        "a": "15.59 cm²",
-        "b": "18 cm²",
-        "c": "31.18 cm²",
-        "d": "9 cm²"
+        "A": "Equilateral",
+        "B": "Scalene",
+        "C": "Right-angled",
+        "D": "Isosceles"
       },
-      "answer": "a",
-      "subtopic": "triangles"
+      "answer": "C",
+      "subtopic": "Geometry"
     },
     {
       "id": 34,
-      "question": "In a circle, if the radius is doubled, the area becomes:",
+      "question": "What is the sum of the interior angles of a hexagon?",
       "options": {
-        "a": "4 times",
-        "b": "2 times",
-        "c": "8 times",
-        "d": "16 times"
+        "A": "780\u00b0",
+        "B": "690\u00b0",
+        "C": "750\u00b0",
+        "D": "720\u00b0"
       },
-      "answer": "a",
-      "subtopic": "circles"
+      "answer": "D",
+      "subtopic": "Geometry"
     },
     {
       "id": 35,
-      "question": "What is the volume of a sphere with radius 6 cm? (Use π = 22/7)",
+      "question": "What is the perimeter of a square with side 11 cm?",
       "options": {
-        "a": "904.32 cm³",
-        "b": "452.16 cm³",
-        "c": "1356.48 cm³",
-        "d": "301.44 cm³"
+        "A": "44 cm",
+        "B": "63 cm",
+        "C": "41 cm",
+        "D": "88 cm"
       },
-      "answer": "a",
-      "subtopic": "volume and surface area"
+      "answer": "A",
+      "subtopic": "Geometry"
     },
     {
       "id": 36,
-      "question": "In a kite, how many pairs of adjacent sides are equal?",
+      "question": "What is the area of a rectangle with length 19 cm and width 5 cm?",
       "options": {
-        "a": "2",
-        "b": "1",
-        "c": "3",
-        "d": "4"
+        "A": "273 cm\u00b2",
+        "B": "95 cm\u00b2",
+        "C": "102 cm\u00b2",
+        "D": "211 cm\u00b2"
       },
-      "answer": "a",
-      "subtopic": "quadrilaterals"
+      "answer": "B",
+      "subtopic": "Geometry"
     },
     {
       "id": 37,
-      "question": "What is the slope of the line passing through points (2, 4) and (6, 12)?",
+      "question": "A triangle has sides 6 cm, 8 cm and 10 cm. What type of triangle is it?",
       "options": {
-        "a": "2",
-        "b": "4",
-        "c": "8",
-        "d": "1/2"
+        "A": "Isosceles",
+        "B": "Scalene",
+        "C": "Equilateral",
+        "D": "Right-angled"
       },
-      "answer": "a",
-      "subtopic": "coordinate geometry"
+      "answer": "D",
+      "subtopic": "Geometry"
     },
     {
       "id": 38,
-      "question": "The altitude of an equilateral triangle with side 10 cm is:",
+      "question": "What is the area of a rectangle with length 11 cm and width 10 cm?",
       "options": {
-        "a": "8.66 cm",
-        "b": "5 cm",
-        "c": "10 cm",
-        "d": "7.5 cm"
+        "A": "252 cm\u00b2",
+        "B": "194 cm\u00b2",
+        "C": "109 cm\u00b2",
+        "D": "110 cm\u00b2"
       },
-      "answer": "a",
-      "subtopic": "triangles"
+      "answer": "D",
+      "subtopic": "Geometry"
     },
     {
       "id": 39,
-      "question": "What is the length of an arc with central angle 90° in a circle of radius 8 cm? (Use π = 22/7)",
+      "question": "What is the area of a rectangle with length 16 cm and width 13 cm?",
       "options": {
-        "a": "12.57 cm",
-        "b": "6.29 cm",
-        "c": "25.14 cm",
-        "d": "18.86 cm"
+        "A": "208 cm\u00b2",
+        "B": "57 cm\u00b2",
+        "C": "56 cm\u00b2",
+        "D": "174 cm\u00b2"
       },
-      "answer": "a",
-      "subtopic": "circles"
+      "answer": "A",
+      "subtopic": "Geometry"
     },
     {
       "id": 40,
-      "question": "In a right triangle, if the hypotenuse is 15 cm and one leg is 9 cm, what is the other leg?",
+      "question": "What is the sum of the interior angles of a pentagon?",
       "options": {
-        "a": "12 cm",
-        "b": "6 cm",
-        "c": "18 cm",
-        "d": "24 cm"
+        "A": "540\u00b0",
+        "B": "600\u00b0",
+        "C": "570\u00b0",
+        "D": "510\u00b0"
       },
-      "answer": "a",
-      "subtopic": "triangles"
+      "answer": "A",
+      "subtopic": "Geometry"
     },
     {
       "id": 41,
-      "question": "What is the diagonal of a square with side 8 cm?",
+      "question": "What is the volume of a cube with side 9 cm?",
       "options": {
-        "a": "11.31 cm",
-        "b": "16 cm",
-        "c": "8 cm",
-        "d": "22.63 cm"
+        "A": "389 cm\u00b3",
+        "B": "393 cm\u00b3",
+        "C": "729 cm\u00b3",
+        "D": "208 cm\u00b3"
       },
-      "answer": "a",
-      "subtopic": "quadrilaterals"
+      "answer": "C",
+      "subtopic": "Geometry"
     },
     {
       "id": 42,
-      "question": "An exterior angle of a triangle is 110°. If one interior opposite angle is 65°, what is the other?",
+      "question": "What is the area of a rectangle with length 11 cm and width 15 cm?",
       "options": {
-        "a": "45°",
-        "b": "55°",
-        "c": "35°",
-        "d": "70°"
+        "A": "165 cm\u00b2",
+        "B": "87 cm\u00b2",
+        "C": "230 cm\u00b2",
+        "D": "80 cm\u00b2"
       },
-      "answer": "a",
-      "subtopic": "triangles"
+      "answer": "A",
+      "subtopic": "Geometry"
     },
     {
       "id": 43,
-      "question": "What is the total surface area of a cube with edge 4 cm?",
+      "question": "What is the volume of a cube with side 8 cm?",
       "options": {
-        "a": "96 cm²",
-        "b": "64 cm²",
-        "c": "48 cm²",
-        "d": "16 cm²"
+        "A": "512 cm\u00b3",
+        "B": "523 cm\u00b3",
+        "C": "972 cm\u00b3",
+        "D": "753 cm\u00b3"
       },
-      "answer": "a",
-      "subtopic": "volume and surface area"
+      "answer": "A",
+      "subtopic": "Geometry"
     },
     {
       "id": 44,
-      "question": "The angle between the hour and minute hands of a clock at 3:00 is:",
+      "question": "What is the sum of the interior angles of a triangle?",
       "options": {
-        "a": "90°",
-        "b": "60°",
-        "c": "30°",
-        "d": "120°"
+        "A": "150\u00b0",
+        "B": "240\u00b0",
+        "C": "180\u00b0",
+        "D": "210\u00b0"
       },
-      "answer": "a",
-      "subtopic": "angles"
+      "answer": "C",
+      "subtopic": "Geometry"
     },
     {
       "id": 45,
-      "question": "What is the area of a rhombus with side 10 cm and one angle 60°?",
+      "question": "What is the volume of a cube with side 3 cm?",
       "options": {
-        "a": "86.6 cm²",
-        "b": "100 cm²",
-        "c": "50 cm²",
-        "d": "173.2 cm²"
+        "A": "27 cm\u00b3",
+        "B": "144 cm\u00b3",
+        "C": "128 cm\u00b3",
+        "D": "669 cm\u00b3"
       },
-      "answer": "a",
-      "subtopic": "quadrilaterals"
+      "answer": "A",
+      "subtopic": "Geometry"
     },
     {
       "id": 46,
-      "question": "In coordinate geometry, what is the equation of a line passing through the origin with slope 3?",
+      "question": "What is the area of a rectangle with length 16 cm and width 5 cm?",
       "options": {
-        "a": "y = 3x",
-        "b": "y = x + 3",
-        "c": "y = 3x + 3",
-        "d": "x = 3y"
+        "A": "90 cm\u00b2",
+        "B": "214 cm\u00b2",
+        "C": "268 cm\u00b2",
+        "D": "80 cm\u00b2"
       },
-      "answer": "a",
-      "subtopic": "coordinate geometry"
+      "answer": "D",
+      "subtopic": "Geometry"
     },
     {
       "id": 47,
-      "question": "What is the measure of each interior angle of a regular decagon?",
+      "question": "What is the area of a rectangle with length 7 cm and width 10 cm?",
       "options": {
-        "a": "144°",
-        "b": "135°",
-        "c": "150°",
-        "d": "160°"
+        "A": "225 cm\u00b2",
+        "B": "70 cm\u00b2",
+        "C": "120 cm\u00b2",
+        "D": "44 cm\u00b2"
       },
-      "answer": "a",
-      "subtopic": "polygons"
+      "answer": "B",
+      "subtopic": "Geometry"
     },
     {
       "id": 48,
-      "question": "The radius of a circle inscribed in a square of side 12 cm is:",
+      "question": "What is the sum of the interior angles of a quadrilateral?",
       "options": {
-        "a": "6 cm",
-        "b": "12 cm",
-        "c": "3 cm",
-        "d": "24 cm"
+        "A": "420\u00b0",
+        "B": "360\u00b0",
+        "C": "330\u00b0",
+        "D": "390\u00b0"
       },
-      "answer": "a",
-      "subtopic": "circles"
+      "answer": "B",
+      "subtopic": "Geometry"
     },
     {
       "id": 49,
-      "question": "What is the perimeter of a rectangle with length 15 cm and width 8 cm?",
+      "question": "What is the perimeter of a square with side 3 cm?",
       "options": {
-        "a": "46 cm",
-        "b": "23 cm",
-        "c": "120 cm",
-        "d": "30 cm"
+        "A": "27 cm",
+        "B": "45 cm",
+        "C": "12 cm",
+        "D": "10 cm"
       },
-      "answer": "a",
-      "subtopic": "quadrilaterals"
+      "answer": "C",
+      "subtopic": "Geometry"
     },
     {
       "id": 50,
-      "question": "In triangle PQR, PQ = 8 cm, QR = 6 cm, and angle Q = 90°. What is PR?",
+      "question": "What is the sum of the interior angles of a pentagon?",
       "options": {
-        "a": "10 cm",
-        "b": "14 cm",
-        "c": "2 cm",
-        "d": "100 cm"
+        "A": "540\u00b0",
+        "B": "600\u00b0",
+        "C": "510\u00b0",
+        "D": "570\u00b0"
       },
-      "answer": "a",
-      "subtopic": "triangles"
+      "answer": "A",
+      "subtopic": "Geometry"
     },
     {
       "id": 51,
-      "question": "What is the curved surface area of a cylinder with radius 5 cm and height 12 cm? (Use π = 22/7)",
+      "question": "What is the sum of the interior angles of a triangle?",
       "options": {
-        "a": "377.14 cm²",
-        "b": "188.57 cm²",
-        "c": "754.29 cm²",
-        "d": "942.86 cm²"
+        "A": "180\u00b0",
+        "B": "150\u00b0",
+        "C": "240\u00b0",
+        "D": "210\u00b0"
       },
-      "answer": "a",
-      "subtopic": "volume and surface area"
+      "answer": "A",
+      "subtopic": "Geometry"
     },
     {
       "id": 52,
-      "question": "Two vertically opposite angles are in the ratio 5:7. If their sum is 144°, what is the smaller angle?",
+      "question": "A triangle has sides 6 cm, 8 cm and 10 cm. What type of triangle is it?",
       "options": {
-        "a": "60°",
-        "b": "84°",
-        "c": "72°",
-        "d": "48°"
+        "A": "Right-angled",
+        "B": "Isosceles",
+        "C": "Scalene",
+        "D": "Equilateral"
       },
-      "answer": "a",
-      "subtopic": "angles"
+      "answer": "A",
+      "subtopic": "Geometry"
     },
     {
       "id": 53,
-      "question": "What is the area of a trapezium with parallel sides 6 cm and 10 cm, and height 4 cm?",
+      "question": "A triangle has sides 6 cm, 8 cm and 10 cm. What type of triangle is it?",
       "options": {
-        "a": "32 cm²",
-        "b": "64 cm²",
-        "c": "24 cm²",
-        "d": "40 cm²"
+        "A": "Isosceles",
+        "B": "Equilateral",
+        "C": "Right-angled",
+        "D": "Scalene"
       },
-      "answer": "a",
-      "subtopic": "quadrilaterals"
+      "answer": "C",
+      "subtopic": "Geometry"
     },
     {
       "id": 54,
-      "question": "The centroid of a triangle divides each median in the ratio:",
+      "question": "What is the sum of the interior angles of a pentagon?",
       "options": {
-        "a": "2:1",
-        "b": "1:2",
-        "c": "3:1",
-        "d": "1:1"
+        "A": "540\u00b0",
+        "B": "600\u00b0",
+        "C": "570\u00b0",
+        "D": "510\u00b0"
       },
-      "answer": "a",
-      "subtopic": "triangles"
+      "answer": "A",
+      "subtopic": "Geometry"
     },
     {
       "id": 55,
-      "question": "What is the distance from the origin to the point (3, 4)?",
+      "question": "What is the area of a rectangle with length 19 cm and width 9 cm?",
       "options": {
-        "a": "5 units",
-        "b": "7 units",
-        "c": "25 units",
-        "d": "12 units"
+        "A": "162 cm\u00b2",
+        "B": "70 cm\u00b2",
+        "C": "74 cm\u00b2",
+        "D": "171 cm\u00b2"
       },
-      "answer": "a",
-      "subtopic": "coordinate geometry"
+      "answer": "D",
+      "subtopic": "Geometry"
     },
     {
       "id": 56,
-      "question": "In a circle with center O, if angle AOB = 80°, what is the angle ACB where C is on the circle?",
+      "question": "A triangle has sides 6 cm, 8 cm and 10 cm. What type of triangle is it?",
       "options": {
-        "a": "40°",
-        "b": "80°",
-        "c": "160°",
-        "d": "20°"
+        "A": "Scalene",
+        "B": "Isosceles",
+        "C": "Equilateral",
+        "D": "Right-angled"
       },
-      "answer": "a",
-      "subtopic": "circles"
+      "answer": "D",
+      "subtopic": "Geometry"
     },
     {
       "id": 57,
-      "question": "What is the volume of a rectangular prism with dimensions 6 cm × 4 cm × 5 cm?",
+      "question": "What is the area of a rectangle with length 6 cm and width 10 cm?",
       "options": {
-        "a": "120 cm³",
-        "b": "60 cm³",
-        "c": "240 cm³",
-        "d": "30 cm³"
+        "A": "60 cm\u00b2",
+        "B": "217 cm\u00b2",
+        "C": "212 cm\u00b2",
+        "D": "281 cm\u00b2"
       },
-      "answer": "a",
-      "subtopic": "volume and surface area"
+      "answer": "A",
+      "subtopic": "Geometry"
     },
     {
       "id": 58,
-      "question": "The sum of the interior angles of a polygon is 1440°. How many sides does it have?",
+      "question": "A triangle has sides 6 cm, 8 cm and 10 cm. What type of triangle is it?",
       "options": {
-        "a": "10",
-        "b": "8",
-        "c": "12",
-        "d": "9"
+        "A": "Scalene",
+        "B": "Equilateral",
+        "C": "Isosceles",
+        "D": "Right-angled"
       },
-      "answer": "a",
-      "subtopic": "polygons"
+      "answer": "D",
+      "subtopic": "Geometry"
     },
     {
       "id": 59,
-      "question": "In an isosceles triangle, if the vertex angle is 80°, what is each base angle?",
+      "question": "What is the perimeter of a square with side 5 cm?",
       "options": {
-        "a": "50°",
-        "b": "40°",
-        "c": "60°",
-        "d": "100°"
+        "A": "60 cm",
+        "B": "20 cm",
+        "C": "75 cm",
+        "D": "40 cm"
       },
-      "answer": "a",
-      "subtopic": "triangles"
+      "answer": "B",
+      "subtopic": "Geometry"
     },
     {
       "id": 60,
-      "question": "What is the area of a circle with circumference 44 cm? (Use π = 22/7)",
+      "question": "What is the sum of the interior angles of a pentagon?",
       "options": {
-        "a": "154 cm²",
-        "b": "308 cm²",
-        "c": "77 cm²",
-        "d": "22 cm²"
+        "A": "600\u00b0",
+        "B": "510\u00b0",
+        "C": "570\u00b0",
+        "D": "540\u00b0"
       },
-      "answer": "a",
-      "subtopic": "circles"
+      "answer": "D",
+      "subtopic": "Geometry"
     },
     {
       "id": 61,
-      "question": "A parallelogram has sides 12 cm and 8 cm with an included angle of 60°. What is its area?",
+      "question": "What is the sum of the interior angles of a hexagon?",
       "options": {
-        "a": "83.14 cm²",
-        "b": "96 cm²",
-        "c": "48 cm²",
-        "d": "166.28 cm²"
+        "A": "780\u00b0",
+        "B": "690\u00b0",
+        "C": "750\u00b0",
+        "D": "720\u00b0"
       },
-      "answer": "a",
-      "subtopic": "quadrilaterals"
+      "answer": "D",
+      "subtopic": "Geometry"
     },
     {
       "id": 62,
-      "question": "What is the y-intercept of the line 3x + 4y = 12?",
+      "question": "What is the sum of the interior angles of a pentagon?",
       "options": {
-        "a": "3",
-        "b": "4",
-        "c": "12",
-        "d": "-3"
+        "A": "600\u00b0",
+        "B": "540\u00b0",
+        "C": "510\u00b0",
+        "D": "570\u00b0"
       },
-      "answer": "a",
-      "subtopic": "coordinate geometry"
+      "answer": "B",
+      "subtopic": "Geometry"
     },
     {
       "id": 63,
-      "question": "The surface area of a sphere with radius 9 cm is: (Use π = 22/7)",
+      "question": "What is the area of a rectangle with length 15 cm and width 11 cm?",
       "options": {
-        "a": "1017.88 cm²",
-        "b": "508.94 cm²",
-        "c": "254.47 cm²",
-        "d": "2035.75 cm²"
+        "A": "259 cm\u00b2",
+        "B": "165 cm\u00b2",
+        "C": "273 cm\u00b2",
+        "D": "163 cm\u00b2"
       },
-      "answer": "a",
-      "subtopic": "volume and surface area"
+      "answer": "B",
+      "subtopic": "Geometry"
     },
     {
       "id": 64,
-      "question": "In a right triangle, if one angle is 30°, what is the ratio of the sides?",
+      "question": "A triangle has sides 6 cm, 8 cm and 10 cm. What type of triangle is it?",
       "options": {
-        "a": "1 : √3 : 2",
-        "b": "1 : 2 : √3",
-        "c": "√3 : 1 : 2",
-        "d": "2 : 1 : √3"
+        "A": "Isosceles",
+        "B": "Equilateral",
+        "C": "Scalene",
+        "D": "Right-angled"
       },
-      "answer": "a",
-      "subtopic": "triangles"
+      "answer": "D",
+      "subtopic": "Geometry"
     },
     {
       "id": 65,
-      "question": "What is the area of a sector with central angle 120° in a circle of radius 9 cm? (Use π = 22/7)",
+      "question": "What is the sum of the interior angles of a hexagon?",
       "options": {
-        "a": "84.86 cm²",
-        "b": "254.57 cm²",
-        "c": "42.43 cm²",
-        "d": "169.71 cm²"
+        "A": "720\u00b0",
+        "B": "780\u00b0",
+        "C": "690\u00b0",
+        "D": "750\u00b0"
       },
-      "answer": "a",
-      "subtopic": "circles"
+      "answer": "A",
+      "subtopic": "Geometry"
     },
     {
       "id": 66,
-      "question": "The diagonals of a rectangle are 13 cm each. If one side is 5 cm, what is the other side?",
+      "question": "What is the volume of a cube with side 5 cm?",
       "options": {
-        "a": "12 cm",
-        "b": "8 cm",
-        "c": "18 cm",
-        "d": "10 cm"
+        "A": "496 cm\u00b3",
+        "B": "297 cm\u00b3",
+        "C": "125 cm\u00b3",
+        "D": "909 cm\u00b3"
       },
-      "answer": "a",
-      "subtopic": "quadrilaterals"
+      "answer": "C",
+      "subtopic": "Geometry"
     },
     {
       "id": 67,
-      "question": "What is the measure of an angle that is its own complement?",
+      "question": "What is the volume of a cube with side 5 cm?",
       "options": {
-        "a": "45°",
-        "b": "90°",
-        "c": "60°",
-        "d": "30°"
+        "A": "125 cm\u00b3",
+        "B": "858 cm\u00b3",
+        "C": "155 cm\u00b3",
+        "D": "384 cm\u00b3"
       },
-      "answer": "a",
-      "subtopic": "angles"
+      "answer": "A",
+      "subtopic": "Geometry"
     },
     {
       "id": 68,
-      "question": "A regular hexagon is inscribed in a circle of radius 10 cm. What is the side length of the hexagon?",
+      "question": "What is the volume of a cube with side 7 cm?",
       "options": {
-        "a": "10 cm",
-        "b": "5 cm",
-        "c": "20 cm",
-        "d": "17.32 cm"
+        "A": "137 cm\u00b3",
+        "B": "331 cm\u00b3",
+        "C": "457 cm\u00b3",
+        "D": "343 cm\u00b3"
       },
-      "answer": "a",
-      "subtopic": "polygons"
+      "answer": "D",
+      "subtopic": "Geometry"
     },
     {
       "id": 69,
-      "question": "What is the height of a triangle with area 60 cm² and base 15 cm?",
+      "question": "What is the area of a rectangle with length 8 cm and width 7 cm?",
       "options": {
-        "a": "8 cm",
-        "b": "4 cm",
-        "c": "12 cm",
-        "d": "6 cm"
+        "A": "206 cm\u00b2",
+        "B": "111 cm\u00b2",
+        "C": "56 cm\u00b2",
+        "D": "128 cm\u00b2"
       },
-      "answer": "a",
-      "subtopic": "triangles"
+      "answer": "C",
+      "subtopic": "Geometry"
     },
     {
       "id": 70,
-      "question": "The equation of a circle with center (2, 3) and radius 5 is:",
+      "question": "What is the sum of the interior angles of a hexagon?",
       "options": {
-        "a": "(x-2)² + (y-3)² = 25",
-        "b": "(x+2)² + (y+3)² = 25",
-        "c": "(x-2)² + (y-3)² = 5",
-        "d": "x² + y² = 25"
+        "A": "780\u00b0",
+        "B": "750\u00b0",
+        "C": "690\u00b0",
+        "D": "720\u00b0"
       },
-      "answer": "a",
-      "subtopic": "coordinate geometry"
+      "answer": "D",
+      "subtopic": "Geometry"
     },
     {
       "id": 71,
-      "question": "What is the total surface area of a cylinder with radius 6 cm and height 8 cm? (Use π = 22/7)",
+      "question": "A triangle has sides 6 cm, 8 cm and 10 cm. What type of triangle is it?",
       "options": {
-        "a": "527.79 cm²",
-        "b": "301.71 cm²",
-        "c": "226.29 cm²",
-        "d": "753.43 cm²"
+        "A": "Scalene",
+        "B": "Isosceles",
+        "C": "Equilateral",
+        "D": "Right-angled"
       },
-      "answer": "a",
-      "subtopic": "volume and surface area"
+      "answer": "D",
+      "subtopic": "Geometry"
     },
     {
       "id": 72,
-      "question": "In a cyclic quadrilateral, opposite angles are:",
+      "question": "What is the perimeter of a square with side 8 cm?",
       "options": {
-        "a": "Supplementary",
-        "b": "Equal",
-        "c": "Complementary",
-        "d": "Right angles"
+        "A": "32 cm",
+        "B": "87 cm",
+        "C": "83 cm",
+        "D": "23 cm"
       },
-      "answer": "a",
-      "subtopic": "quadrilaterals"
+      "answer": "A",
+      "subtopic": "Geometry"
     },
     {
       "id": 73,
-      "question": "What is the area of an isosceles right triangle with hypotenuse 10 cm?",
+      "question": "What is the sum of the interior angles of a quadrilateral?",
       "options": {
-        "a": "25 cm²",
-        "b": "50 cm²",
-        "c": "100 cm²",
-        "d": "12.5 cm²"
+        "A": "330\u00b0",
+        "B": "420\u00b0",
+        "C": "360\u00b0",
+        "D": "390\u00b0"
       },
-      "answer": "a",
-      "subtopic": "triangles"
+      "answer": "C",
+      "subtopic": "Geometry"
     },
     {
       "id": 74,
-      "question": "The angle subtended by a chord at the center is twice the angle subtended by the same chord at:",
+      "question": "What is the volume of a cube with side 2 cm?",
       "options": {
-        "a": "Any point on the circle",
-        "b": "The center",
-        "c": "The diameter",
-        "d": "The tangent"
+        "A": "8 cm\u00b3",
+        "B": "602 cm\u00b3",
+        "C": "775 cm\u00b3",
+        "D": "591 cm\u00b3"
       },
-      "answer": "a",
-      "subtopic": "circles"
+      "answer": "A",
+      "subtopic": "Geometry"
     },
     {
       "id": 75,
-      "question": "What is the length of the diagonal of a rectangle with sides 9 cm and 12 cm?",
+      "question": "What is the perimeter of a square with side 8 cm?",
       "options": {
-        "a": "15 cm",
-        "b": "21 cm",
-        "c": "225 cm",
-        "d": "10.5 cm"
+        "A": "28 cm",
+        "B": "58 cm",
+        "C": "32 cm",
+        "D": "48 cm"
       },
-      "answer": "a",
-      "subtopic": "quadrilaterals"
+      "answer": "C",
+      "subtopic": "Geometry"
     },
     {
       "id": 76,
-      "question": "If the coordinates of vertices of a triangle are A(0,0), B(3,0), and C(0,4), what is its area?",
+      "question": "What is the area of a rectangle with length 16 cm and width 15 cm?",
       "options": {
-        "a": "6 square units",
-        "b": "12 square units",
-        "c": "7 square units",
-        "d": "5 square units"
+        "A": "102 cm\u00b2",
+        "B": "88 cm\u00b2",
+        "C": "227 cm\u00b2",
+        "D": "240 cm\u00b2"
       },
-      "answer": "a",
-      "subtopic": "coordinate geometry"
+      "answer": "D",
+      "subtopic": "Geometry"
     },
     {
       "id": 77,
-      "question": "What is the volume of a cone with radius 4 cm and height 9 cm? (Use π = 22/7)",
+      "question": "What is the perimeter of a square with side 10 cm?",
       "options": {
-        "a": "150.86 cm³",
-        "b": "452.57 cm³",
-        "c": "301.71 cm³",
-        "d": "75.43 cm³"
+        "A": "40 cm",
+        "B": "44 cm",
+        "C": "42 cm",
+        "D": "82 cm"
       },
-      "answer": "a",
-      "subtopic": "volume and surface area"
+      "answer": "A",
+      "subtopic": "Geometry"
     },
     {
       "id": 78,
-      "question": "In a triangle, the angle bisector divides the opposite side in the ratio of:",
+      "question": "What is the perimeter of a square with side 7 cm?",
       "options": {
-        "a": "The other two sides",
-        "b": "The squares of the other two sides",
-        "c": "1:1",
-        "d": "The altitudes"
+        "A": "15 cm",
+        "B": "28 cm",
+        "C": "67 cm",
+        "D": "80 cm"
       },
-      "answer": "a",
-      "subtopic": "triangles"
+      "answer": "B",
+      "subtopic": "Geometry"
     },
     {
       "id": 79,
-      "question": "What is the sum of all interior angles of a nonagon?",
+      "question": "What is the area of a rectangle with length 20 cm and width 15 cm?",
       "options": {
-        "a": "1260°",
-        "b": "1080°",
-        "c": "1440°",
-        "d": "900°"
+        "A": "300 cm\u00b2",
+        "B": "229 cm\u00b2",
+        "C": "219 cm\u00b2",
+        "D": "63 cm\u00b2"
       },
-      "answer": "a",
-      "subtopic": "polygons"
+      "answer": "A",
+      "subtopic": "Geometry"
     },
     {
       "id": 80,
-      "question": "Two angles are in the ratio 3:5 and they are supplementary. What is the larger angle?",
+      "question": "A triangle has sides 6 cm, 8 cm and 10 cm. What type of triangle is it?",
       "options": {
-        "a": "112.5°",
-        "b": "67.5°",
-        "c": "90°",
-        "d": "135°"
+        "A": "Right-angled",
+        "B": "Scalene",
+        "C": "Isosceles",
+        "D": "Equilateral"
       },
-      "answer": "a",
-      "subtopic": "angles"
+      "answer": "A",
+      "subtopic": "Geometry"
     },
     {
       "id": 81,
-      "question": "What is the area of a regular pentagon with side 6 cm?",
+      "question": "What is the area of a rectangle with length 14 cm and width 9 cm?",
       "options": {
-        "a": "61.94 cm²",
-        "b": "90 cm²",
-        "c": "30 cm²",
-        "d": "123.88 cm²"
+        "A": "126 cm\u00b2",
+        "B": "193 cm\u00b2",
+        "C": "161 cm\u00b2",
+        "D": "291 cm\u00b2"
       },
-      "answer": "a",
-      "subtopic": "polygons"
+      "answer": "A",
+      "subtopic": "Geometry"
     },
     {
       "id": 82,
-      "question": "In a right triangle, if the altitude to the hypotenuse is 6 cm and divides it into segments of 4 cm and 9 cm, what is the hypotenuse?",
+      "question": "What is the sum of the interior angles of a pentagon?",
       "options": {
-        "a": "13 cm",
-        "b": "15 cm",
-        "c": "12 cm",
-        "d": "10 cm"
+        "A": "600\u00b0",
+        "B": "570\u00b0",
+        "C": "540\u00b0",
+        "D": "510\u00b0"
       },
-      "answer": "a",
-      "subtopic": "triangles"
+      "answer": "C",
+      "subtopic": "Geometry"
     },
     {
       "id": 83,
-      "question": "What is the radius of a circle that circumscribes a square of side 8 cm?",
+      "question": "A triangle has sides 6 cm, 8 cm and 10 cm. What type of triangle is it?",
       "options": {
-        "a": "5.66 cm",
-        "b": "8 cm",
-        "c": "4 cm",
-        "d": "11.31 cm"
+        "A": "Scalene",
+        "B": "Right-angled",
+        "C": "Isosceles",
+        "D": "Equilateral"
       },
-      "answer": "a",
-      "subtopic": "circles"
+      "answer": "B",
+      "subtopic": "Geometry"
     },
     {
       "id": 84,
-      "question": "The area of a kite with diagonals 16 cm and 12 cm is:",
+      "question": "What is the volume of a cube with side 8 cm?",
       "options": {
-        "a": "96 cm²",
-        "b": "192 cm²",
-        "c": "48 cm²",
-        "d": "28 cm²"
+        "A": "800 cm\u00b3",
+        "B": "512 cm\u00b3",
+        "C": "906 cm\u00b3",
+        "D": "231 cm\u00b3"
       },
-      "answer": "a",
-      "subtopic": "quadrilaterals"
+      "answer": "B",
+      "subtopic": "Geometry"
     },
     {
       "id": 85,
-      "question": "What is the slope of a line perpendicular to the line y = 2x + 3?",
+      "question": "What is the area of a rectangle with length 19 cm and width 10 cm?",
       "options": {
-        "a": "-1/2",
-        "b": "2",
-        "c": "-2",
-        "d": "1/2"
+        "A": "249 cm\u00b2",
+        "B": "33 cm\u00b2",
+        "C": "238 cm\u00b2",
+        "D": "190 cm\u00b2"
       },
-      "answer": "a",
-      "subtopic": "coordinate geometry"
+      "answer": "D",
+      "subtopic": "Geometry"
     },
     {
       "id": 86,
-      "question": "What is the lateral surface area of a right circular cone with radius 7 cm and height 24 cm? (Use π = 22/7)",
+      "question": "What is the sum of the interior angles of a pentagon?",
       "options": {
-        "a": "550 cm²",
-        "b": "1100 cm²",
-        "c": "154 cm²",
-        "d": "704 cm²"
+        "A": "510\u00b0",
+        "B": "570\u00b0",
+        "C": "540\u00b0",
+        "D": "600\u00b0"
       },
-      "answer": "a",
-      "subtopic": "volume and surface area"
+      "answer": "C",
+      "subtopic": "Geometry"
     },
     {
       "id": 87,
-      "question": "In a triangle ABC, if AB = 7 cm, BC = 24 cm, and AC = 25 cm, what type of triangle is it?",
+      "question": "What is the sum of the interior angles of a pentagon?",
       "options": {
-        "a": "Right triangle",
-        "b": "Acute triangle",
-        "c": "Obtuse triangle",
-        "d": "Equilateral triangle"
+        "A": "510\u00b0",
+        "B": "540\u00b0",
+        "C": "600\u00b0",
+        "D": "570\u00b0"
       },
-      "answer": "a",
-      "subtopic": "triangles"
+      "answer": "B",
+      "subtopic": "Geometry"
     },
     {
       "id": 88,
-      "question": "What is the measure of each exterior angle of a regular 15-sided polygon?",
+      "question": "What is the perimeter of a square with side 14 cm?",
       "options": {
-        "a": "24°",
-        "b": "36°",
-        "c": "30°",
-        "d": "20°"
+        "A": "32 cm",
+        "B": "56 cm",
+        "C": "60 cm",
+        "D": "23 cm"
       },
-      "answer": "a",
-      "subtopic": "polygons"
+      "answer": "B",
+      "subtopic": "Geometry"
     },
     {
       "id": 89,
-      "question": "The angle between two tangents drawn from an external point to a circle, if the angle subtended by the chord of contact at the center is 120°, is:",
+      "question": "What is the volume of a cube with side 7 cm?",
       "options": {
-        "a": "60°",
-        "b": "120°",
-        "c": "30°",
-        "d": "240°"
+        "A": "897 cm\u00b3",
+        "B": "218 cm\u00b3",
+        "C": "343 cm\u00b3",
+        "D": "996 cm\u00b3"
       },
-      "answer": "a",
-      "subtopic": "circles"
+      "answer": "C",
+      "subtopic": "Geometry"
     },
     {
       "id": 90,
-      "question": "What is the area of a square inscribed in a circle of radius 10 cm?",
+      "question": "What is the area of a rectangle with length 16 cm and width 15 cm?",
       "options": {
-        "a": "200 cm²",
-        "b": "100 cm²",
-        "c": "400 cm²",
-        "d": "314 cm²"
+        "A": "179 cm\u00b2",
+        "B": "240 cm\u00b2",
+        "C": "154 cm\u00b2",
+        "D": "297 cm\u00b2"
       },
-      "answer": "a",
-      "subtopic": "quadrilaterals"
+      "answer": "B",
+      "subtopic": "Geometry"
     },
     {
       "id": 91,
-      "question": "If the point (3, k) lies on the line 2x + 3y = 12, what is the value of k?",
+      "question": "A triangle has sides 6 cm, 8 cm and 10 cm. What type of triangle is it?",
       "options": {
-        "a": "2",
-        "b": "3",
-        "c": "4",
-        "d": "6"
+        "A": "Isosceles",
+        "B": "Equilateral",
+        "C": "Scalene",
+        "D": "Right-angled"
       },
-      "answer": "a",
-      "subtopic": "coordinate geometry"
+      "answer": "D",
+      "subtopic": "Geometry"
     },
     {
       "id": 92,
-      "question": "What is the volume of a hemisphere with radius 12 cm? (Use π = 22/7)",
+      "question": "A triangle has sides 6 cm, 8 cm and 10 cm. What type of triangle is it?",
       "options": {
-        "a": "3617.14 cm³",
-        "b": "7234.29 cm³",
-        "c": "1808.57 cm³",
-        "d": "904.29 cm³"
+        "A": "Scalene",
+        "B": "Isosceles",
+        "C": "Equilateral",
+        "D": "Right-angled"
       },
-      "answer": "a",
-      "subtopic": "volume and surface area"
+      "answer": "D",
+      "subtopic": "Geometry"
     },
     {
       "id": 93,
-      "question": "In an equilateral triangle, each angle measures:",
+      "question": "What is the volume of a cube with side 6 cm?",
       "options": {
-        "a": "60°",
-        "b": "90°",
-        "c": "120°",
-        "d": "30°"
+        "A": "652 cm\u00b3",
+        "B": "216 cm\u00b3",
+        "C": "966 cm\u00b3",
+        "D": "404 cm\u00b3"
       },
-      "answer": "a",
-      "subtopic": "triangles"
+      "answer": "B",
+      "subtopic": "Geometry"
     },
     {
       "id": 94,
-      "question": "What is the sum of interior angles of a dodecagon?",
+      "question": "What is the area of a rectangle with length 6 cm and width 9 cm?",
       "options": {
-        "a": "1800°",
-        "b": "1440°",
-        "c": "2160°",
-        "d": "1620°"
+        "A": "111 cm\u00b2",
+        "B": "54 cm\u00b2",
+        "C": "154 cm\u00b2",
+        "D": "129 cm\u00b2"
       },
-      "answer": "a",
-      "subtopic": "polygons"
+      "answer": "B",
+      "subtopic": "Geometry"
     },
     {
       "id": 95,
-      "question": "Two parallel lines are cut by two transversals. If corresponding angles are equal, then the transversals are:",
+      "question": "What is the volume of a cube with side 3 cm?",
       "options": {
-        "a": "Parallel",
-        "b": "Perpendicular",
-        "c": "Intersecting",
-        "d": "Concurrent"
+        "A": "997 cm\u00b3",
+        "B": "692 cm\u00b3",
+        "C": "168 cm\u00b3",
+        "D": "27 cm\u00b3"
       },
-      "answer": "a",
-      "subtopic": "angles"
+      "answer": "D",
+      "subtopic": "Geometry"
     },
     {
       "id": 96,
-      "question": "What is the length of the tangent from an external point 13 cm away from the center of a circle with radius 5 cm?",
+      "question": "What is the sum of the interior angles of a hexagon?",
       "options": {
-        "a": "12 cm",
-        "b": "8 cm",
-        "c": "18 cm",
-        "d": "144 cm"
+        "A": "780\u00b0",
+        "B": "750\u00b0",
+        "C": "690\u00b0",
+        "D": "720\u00b0"
       },
-      "answer": "a",
-      "subtopic": "circles"
+      "answer": "D",
+      "subtopic": "Geometry"
     },
     {
       "id": 97,
-      "question": "The area of a trapezium is 84 cm². If the parallel sides are 10 cm and 12 cm, what is the height?",
+      "question": "What is the area of a rectangle with length 15 cm and width 10 cm?",
       "options": {
-        "a": "7.64 cm",
-        "b": "7 cm",
-        "c": "8 cm",
-        "d": "6 cm"
+        "A": "148 cm\u00b2",
+        "B": "150 cm\u00b2",
+        "C": "143 cm\u00b2",
+        "D": "91 cm\u00b2"
       },
-      "answer": "a",
-      "subtopic": "quadrilaterals"
+      "answer": "B",
+      "subtopic": "Geometry"
     },
     {
       "id": 98,
-      "question": "What is the distance between the lines 3x + 4y = 5 and 3x + 4y = 15?",
+      "question": "What is the volume of a cube with side 5 cm?",
       "options": {
-        "a": "2 units",
-        "b": "10 units",
-        "c": "5 units",
-        "d": "1 unit"
+        "A": "290 cm\u00b3",
+        "B": "125 cm\u00b3",
+        "C": "131 cm\u00b3",
+        "D": "784 cm\u00b3"
       },
-      "answer": "a",
-      "subtopic": "coordinate geometry"
+      "answer": "B",
+      "subtopic": "Geometry"
     },
     {
       "id": 99,
-      "question": "What is the curved surface area of a hemisphere with radius 21 cm? (Use π = 22/7)",
+      "question": "What is the volume of a cube with side 7 cm?",
       "options": {
-        "a": "2772 cm²",
-        "b": "1386 cm²",
-        "c": "4158 cm²",
-        "d": "5544 cm²"
+        "A": "343 cm\u00b3",
+        "B": "173 cm\u00b3",
+        "C": "49 cm\u00b3",
+        "D": "56 cm\u00b3"
       },
-      "answer": "a",
-      "subtopic": "volume and surface area"
+      "answer": "A",
+      "subtopic": "Geometry"
     },
     {
       "id": 100,
-      "question": "In triangle ABC, if the medians intersect at point G, then AG:GD (where D is the midpoint of BC) is:",
+      "question": "What is the sum of the interior angles of a pentagon?",
       "options": {
-        "a": "2:1",
-        "b": "1:2",
-        "c": "1:1",
-        "d": "3:1"
+        "A": "540\u00b0",
+        "B": "510\u00b0",
+        "C": "600\u00b0",
+        "D": "570\u00b0"
       },
-      "answer": "a",
-      "subtopic": "triangles"
+      "answer": "A",
+      "subtopic": "Geometry"
     },
     {
       "id": 101,
-      "question": "What is the number of diagonals in a regular octagon?",
+      "question": "What is the perimeter of a square with side 6 cm?",
       "options": {
-        "a": "20",
-        "b": "16",
-        "c": "24",
-        "d": "28"
+        "A": "65 cm",
+        "B": "79 cm",
+        "C": "24 cm",
+        "D": "50 cm"
       },
-      "answer": "a",
-      "subtopic": "polygons"
+      "answer": "C",
+      "subtopic": "Geometry"
     },
     {
       "id": 102,
-      "question": "If two chords of a circle intersect inside the circle, then the product of their segments are:",
+      "question": "A triangle has sides 6 cm, 8 cm and 10 cm. What type of triangle is it?",
       "options": {
-        "a": "Equal",
-        "b": "Different",
-        "c": "In ratio 2:1",
-        "d": "In ratio 1:2"
+        "A": "Equilateral",
+        "B": "Scalene",
+        "C": "Isosceles",
+        "D": "Right-angled"
       },
-      "answer": "a",
-      "subtopic": "circles"
+      "answer": "D",
+      "subtopic": "Geometry"
     },
     {
       "id": 103,
-      "question": "What is the area of a rhombus with perimeter 40 cm and one diagonal 12 cm?",
+      "question": "What is the sum of the interior angles of a hexagon?",
       "options": {
-        "a": "96 cm²",
-        "b": "48 cm²",
-        "c": "192 cm²",
-        "d": "24 cm²"
+        "A": "720\u00b0",
+        "B": "750\u00b0",
+        "C": "780\u00b0",
+        "D": "690\u00b0"
       },
-      "answer": "a",
-      "subtopic": "quadrilaterals"
+      "answer": "A",
+      "subtopic": "Geometry"
     },
     {
       "id": 104,
-      "question": "The angle of elevation from a point 100 m away from the base of a tower to its top is 30°. What is the height of the tower?",
+      "question": "What is the area of a rectangle with length 12 cm and width 9 cm?",
       "options": {
-        "a": "57.74 m",
-        "b": "100 m",
-        "c": "86.6 m",
-        "d": "50 m"
+        "A": "151 cm\u00b2",
+        "B": "190 cm\u00b2",
+        "C": "91 cm\u00b2",
+        "D": "108 cm\u00b2"
       },
-      "answer": "a",
-      "subtopic": "triangles"
+      "answer": "D",
+      "subtopic": "Geometry"
     },
     {
       "id": 105,
-      "question": "What is the x-intercept of the line 2x - 3y = 6?",
+      "question": "What is the area of a rectangle with length 10 cm and width 8 cm?",
       "options": {
-        "a": "3",
-        "b": "2",
-        "c": "6",
-        "d": "-2"
+        "A": "62 cm\u00b2",
+        "B": "102 cm\u00b2",
+        "C": "69 cm\u00b2",
+        "D": "80 cm\u00b2"
       },
-      "answer": "a",
-      "subtopic": "coordinate geometry"
+      "answer": "D",
+      "subtopic": "Geometry"
     },
     {
       "id": 106,
-      "question": "What is the total surface area of a cone with radius 14 cm and slant height 20 cm? (Use π = 22/7)",
+      "question": "What is the area of a rectangle with length 6 cm and width 12 cm?",
       "options": {
-        "a": "1496 cm²",
-        "b": "880 cm²",
-        "c": "616 cm²",
-        "d": "2376 cm²"
+        "A": "72 cm\u00b2",
+        "B": "30 cm\u00b2",
+        "C": "107 cm\u00b2",
+        "D": "169 cm\u00b2"
       },
-      "answer": "a",
-      "subtopic": "volume and surface area"
+      "answer": "A",
+      "subtopic": "Geometry"
     },
     {
       "id": 107,
-      "question": "In a scalene triangle, all sides are:",
+      "question": "What is the sum of the interior angles of a hexagon?",
       "options": {
-        "a": "Different",
-        "b": "Equal",
-        "c": "Two equal",
-        "d": "Perpendicular"
+        "A": "690\u00b0",
+        "B": "750\u00b0",
+        "C": "720\u00b0",
+        "D": "780\u00b0"
       },
-      "answer": "a",
-      "subtopic": "triangles"
+      "answer": "C",
+      "subtopic": "Geometry"
     },
     {
       "id": 108,
-      "question": "What is the measure of each interior angle of a regular 18-sided polygon?",
+      "question": "A triangle has sides 6 cm, 8 cm and 10 cm. What type of triangle is it?",
       "options": {
-        "a": "160°",
-        "b": "150°",
-        "c": "170°",
-        "d": "144°"
+        "A": "Isosceles",
+        "B": "Equilateral",
+        "C": "Scalene",
+        "D": "Right-angled"
       },
-      "answer": "a",
-      "subtopic": "polygons"
+      "answer": "D",
+      "subtopic": "Geometry"
     },
     {
       "id": 109,
-      "question": "If a transversal intersects two parallel lines, then alternate interior angles are:",
+      "question": "What is the volume of a cube with side 10 cm?",
       "options": {
-        "a": "Equal",
-        "b": "Supplementary",
-        "c": "Complementary",
-        "d": "Different"
+        "A": "85 cm\u00b3",
+        "B": "979 cm\u00b3",
+        "C": "221 cm\u00b3",
+        "D": "1000 cm\u00b3"
       },
-      "answer": "a",
-      "subtopic": "angles"
+      "answer": "D",
+      "subtopic": "Geometry"
     },
     {
       "id": 110,
-      "question": "What is the area of a segment of a circle with central angle 60° and radius 12 cm? (Use π = 22/7)",
+      "question": "What is the area of a rectangle with length 9 cm and width 14 cm?",
       "options": {
-        "a": "13.42 cm²",
-        "b": "75.43 cm²",
-        "c": "62.01 cm²",
-        "d": "26.84 cm²"
+        "A": "126 cm\u00b2",
+        "B": "221 cm\u00b2",
+        "C": "52 cm\u00b2",
+        "D": "287 cm\u00b2"
       },
-      "answer": "a",
-      "subtopic": "circles"
+      "answer": "A",
+      "subtopic": "Geometry"
     },
     {
       "id": 111,
-      "question": "In a parallelogram, the diagonals:",
+      "question": "What is the perimeter of a square with side 9 cm?",
       "options": {
-        "a": "Bisect each other",
-        "b": "Are equal",
-        "c": "Are perpendicular",
-        "d": "Are parallel"
+        "A": "93 cm",
+        "B": "80 cm",
+        "C": "25 cm",
+        "D": "36 cm"
       },
-      "answer": "a",
-      "subtopic": "quadrilaterals"
+      "answer": "D",
+      "subtopic": "Geometry"
     },
     {
       "id": 112,
-      "question": "What is the area of a triangle with vertices at (0,0), (5,0), and (0,8)?",
+      "question": "What is the perimeter of a square with side 5 cm?",
       "options": {
-        "a": "20 square units",
-        "b": "40 square units",
-        "c": "13 square units",
-        "d": "10 square units"
+        "A": "42 cm",
+        "B": "20 cm",
+        "C": "31 cm",
+        "D": "12 cm"
       },
-      "answer": "a",
-      "subtopic": "coordinate geometry"
+      "answer": "B",
+      "subtopic": "Geometry"
     },
     {
       "id": 113,
-      "question": "What is the volume of a frustum of a cone with radii 6 cm and 4 cm and height 8 cm? (Use π = 22/7)",
+      "question": "What is the perimeter of a square with side 12 cm?",
       "options": {
-        "a": "1608.38 cm³",
-        "b": "804.19 cm³",
-        "c": "2412.57 cm³",
-        "d": "536.13 cm³"
+        "A": "48 cm",
+        "B": "65 cm",
+        "C": "66 cm",
+        "D": "94 cm"
       },
-      "answer": "a",
-      "subtopic": "volume and surface area"
+      "answer": "A",
+      "subtopic": "Geometry"
     },
     {
       "id": 114,
-      "question": "The orthocenter of a triangle is the point where:",
+      "question": "What is the volume of a cube with side 7 cm?",
       "options": {
-        "a": "Altitudes meet",
-        "b": "Medians meet",
-        "c": "Angle bisectors meet",
-        "d": "Perpendicular bisectors meet"
+        "A": "657 cm\u00b3",
+        "B": "275 cm\u00b3",
+        "C": "343 cm\u00b3",
+        "D": "791 cm\u00b3"
       },
-      "answer": "a",
-      "subtopic": "triangles"
+      "answer": "C",
+      "subtopic": "Geometry"
     },
     {
       "id": 115,
-      "question": "What is the sum of exterior angles of any convex polygon?",
+      "question": "What is the sum of the interior angles of a hexagon?",
       "options": {
-        "a": "360°",
-        "b": "180°",
-        "c": "540°",
-        "d": "720°"
+        "A": "690\u00b0",
+        "B": "720\u00b0",
+        "C": "750\u00b0",
+        "D": "780\u00b0"
       },
-      "answer": "a",
-      "subtopic": "polygons"
+      "answer": "B",
+      "subtopic": "Geometry"
     },
     {
       "id": 116,
-      "question": "If two lines intersect at an angle of 50°, what are the measures of the other three angles?",
+      "question": "What is the area of a rectangle with length 14 cm and width 15 cm?",
       "options": {
-        "a": "50°, 130°, 130°",
-        "b": "40°, 140°, 140°",
-        "c": "60°, 120°, 120°",
-        "d": "50°, 50°, 260°"
+        "A": "49 cm\u00b2",
+        "B": "244 cm\u00b2",
+        "C": "210 cm\u00b2",
+        "D": "166 cm\u00b2"
       },
-      "answer": "a",
-      "subtopic": "angles"
+      "answer": "C",
+      "subtopic": "Geometry"
     },
     {
       "id": 117,
-      "question": "What is the length of the arc of a circle with radius 7 cm subtending an angle of 45° at the center? (Use π = 22/7)",
+      "question": "What is the area of a rectangle with length 9 cm and width 7 cm?",
       "options": {
-        "a": "5.5 cm",
-        "b": "11 cm",
-        "c": "3.5 cm",
-        "d": "22 cm"
+        "A": "274 cm\u00b2",
+        "B": "207 cm\u00b2",
+        "C": "63 cm\u00b2",
+        "D": "55 cm\u00b2"
       },
-      "answer": "a",
-      "subtopic": "circles"
+      "answer": "C",
+      "subtopic": "Geometry"
     },
     {
       "id": 118,
-      "question": "What is the area of a rectangle inscribed in a circle of radius 5 cm with one side 6 cm?",
+      "question": "A triangle has sides 6 cm, 8 cm and 10 cm. What type of triangle is it?",
       "options": {
-        "a": "48 cm²",
-        "b": "60 cm²",
-        "c": "30 cm²",
-        "d": "24 cm²"
+        "A": "Isosceles",
+        "B": "Scalene",
+        "C": "Equilateral",
+        "D": "Right-angled"
       },
-      "answer": "a",
-      "subtopic": "quadrilaterals"
+      "answer": "D",
+      "subtopic": "Geometry"
     },
     {
       "id": 119,
-      "question": "The centroid of a triangle with vertices A(2,3), B(4,7), and C(6,1) is at:",
+      "question": "A triangle has sides 6 cm, 8 cm and 10 cm. What type of triangle is it?",
       "options": {
-        "a": "(4, 11/3)",
-        "b": "(12, 11)",
-        "c": "(2, 3.67)",
-        "d": "(4, 3.67)"
+        "A": "Scalene",
+        "B": "Equilateral",
+        "C": "Isosceles",
+        "D": "Right-angled"
       },
-      "answer": "a",
-      "subtopic": "coordinate geometry"
+      "answer": "D",
+      "subtopic": "Geometry"
     },
     {
       "id": 120,
-      "question": "What is the surface area of a sphere with diameter 28 cm? (Use π = 22/7)",
+      "question": "What is the volume of a cube with side 9 cm?",
       "options": {
-        "a": "2464 cm²",
-        "b": "1232 cm²",
-        "c": "4928 cm²",
-        "d": "616 cm²"
+        "A": "729 cm\u00b3",
+        "B": "161 cm\u00b3",
+        "C": "364 cm\u00b3",
+        "D": "579 cm\u00b3"
       },
-      "answer": "a",
-      "subtopic": "volume and surface area"
+      "answer": "A",
+      "subtopic": "Geometry"
     },
     {
       "id": 121,
-      "question": "In a triangle, the sum of any two sides is:",
+      "question": "What is the perimeter of a square with side 10 cm?",
       "options": {
-        "a": "Greater than the third side",
-        "b": "Equal to the third side",
-        "c": "Less than the third side",
-        "d": "Twice the third side"
+        "A": "79 cm",
+        "B": "40 cm",
+        "C": "16 cm",
+        "D": "93 cm"
       },
-      "answer": "a",
-      "subtopic": "triangles"
+      "answer": "B",
+      "subtopic": "Geometry"
     },
     {
       "id": 122,
-      "question": "What is the apothem of a regular hexagon with side 10 cm?",
+      "question": "What is the perimeter of a square with side 13 cm?",
       "options": {
-        "a": "8.66 cm",
-        "b": "5 cm",
-        "c": "10 cm",
-        "d": "17.32 cm"
+        "A": "100 cm",
+        "B": "48 cm",
+        "C": "52 cm",
+        "D": "89 cm"
       },
-      "answer": "a",
-      "subtopic": "polygons"
+      "answer": "C",
+      "subtopic": "Geometry"
     },
     {
       "id": 123,
-      "question": "If a line makes angles of 60° and 30° with two intersecting lines, what angle do the intersecting lines make?",
+      "question": "A triangle has sides 6 cm, 8 cm and 10 cm. What type of triangle is it?",
       "options": {
-        "a": "30°",
-        "b": "90°",
-        "c": "60°",
-        "d": "120°"
+        "A": "Scalene",
+        "B": "Equilateral",
+        "C": "Right-angled",
+        "D": "Isosceles"
       },
-      "answer": "a",
-      "subtopic": "angles"
+      "answer": "C",
+      "subtopic": "Geometry"
     },
     {
       "id": 124,
-      "question": "What is the area of the largest circle that can be inscribed in a square of side 16 cm?",
+      "question": "What is the perimeter of a square with side 7 cm?",
       "options": {
-        "a": "201.14 cm²",
-        "b": "804.57 cm²",
-        "c": "64 cm²",
-        "d": "50.29 cm²"
+        "A": "46 cm",
+        "B": "28 cm",
+        "C": "56 cm",
+        "D": "47 cm"
       },
-      "answer": "a",
-      "subtopic": "circles"
+      "answer": "B",
+      "subtopic": "Geometry"
     },
     {
       "id": 125,
-      "question": "The area of a square is 144 cm². What is the length of its diagonal?",
+      "question": "What is the perimeter of a square with side 13 cm?",
       "options": {
-        "a": "16.97 cm",
-        "b": "12 cm",
-        "c": "24 cm",
-        "d": "288 cm"
+        "A": "66 cm",
+        "B": "92 cm",
+        "C": "52 cm",
+        "D": "24 cm"
       },
-      "answer": "a",
-      "subtopic": "quadrilaterals"
+      "answer": "C",
+      "subtopic": "Geometry"
     },
     {
       "id": 126,
-      "question": "What is the equation of a line with slope -2 passing through point (3, 4)?",
+      "question": "What is the volume of a cube with side 10 cm?",
       "options": {
-        "a": "y = -2x + 10",
-        "b": "y = -2x - 2",
-        "c": "y = 2x - 2",
-        "d": "y = -2x + 4"
+        "A": "888 cm\u00b3",
+        "B": "629 cm\u00b3",
+        "C": "1000 cm\u00b3",
+        "D": "976 cm\u00b3"
       },
-      "answer": "a",
-      "subtopic": "coordinate geometry"
+      "answer": "C",
+      "subtopic": "Geometry"
     },
     {
       "id": 127,
-      "question": "What is the volume of a hollow cylinder with outer radius 8 cm, inner radius 6 cm, and height 10 cm? (Use π = 22/7)",
+      "question": "What is the area of a rectangle with length 13 cm and width 9 cm?",
       "options": {
-        "a": "879.64 cm³",
-        "b": "1759.29 cm³",
-        "c": "439.82 cm³",
-        "d": "314.29 cm³"
+        "A": "117 cm\u00b2",
+        "B": "139 cm\u00b2",
+        "C": "187 cm\u00b2",
+        "D": "165 cm\u00b2"
       },
-      "answer": "a",
-      "subtopic": "volume and surface area"
+      "answer": "A",
+      "subtopic": "Geometry"
     },
     {
       "id": 128,
-      "question": "The incenter of a triangle is equidistant from:",
+      "question": "What is the volume of a cube with side 2 cm?",
       "options": {
-        "a": "All three sides",
-        "b": "All three vertices",
-        "c": "Two sides only",
-        "d": "One side only"
+        "A": "296 cm\u00b3",
+        "B": "8 cm\u00b3",
+        "C": "144 cm\u00b3",
+        "D": "118 cm\u00b3"
       },
-      "answer": "a",
-      "subtopic": "triangles"
+      "answer": "B",
+      "subtopic": "Geometry"
     },
     {
       "id": 129,
-      "question": "How many lines of symmetry does a regular decagon have?",
+      "question": "What is the perimeter of a square with side 7 cm?",
       "options": {
-        "a": "10",
-        "b": "5",
-        "c": "20",
-        "d": "15"
+        "A": "81 cm",
+        "B": "72 cm",
+        "C": "28 cm",
+        "D": "91 cm"
       },
-      "answer": "a",
-      "subtopic": "polygons"
+      "answer": "C",
+      "subtopic": "Geometry"
     },
     {
       "id": 130,
-      "question": "Two angles are complementary. If one angle is 35°, what is the other angle?",
+      "question": "What is the perimeter of a square with side 5 cm?",
       "options": {
-        "a": "55°",
-        "b": "145°",
-        "c": "325°",
-        "d": "65°"
+        "A": "18 cm",
+        "B": "20 cm",
+        "C": "44 cm",
+        "D": "52 cm"
       },
-      "answer": "a",
-      "subtopic": "angles"
+      "answer": "B",
+      "subtopic": "Geometry"
     },
     {
       "id": 131,
-      "question": "What is the area of a ring between two concentric circles with radii 10 cm and 6 cm? (Use π = 22/7)",
+      "question": "What is the volume of a cube with side 10 cm?",
       "options": {
-        "a": "201.14 cm²",
-        "b": "314.29 cm²",
-        "c": "113.14 cm²",
-        "d": "402.29 cm²"
+        "A": "1000 cm\u00b3",
+        "B": "526 cm\u00b3",
+        "C": "36 cm\u00b3",
+        "D": "600 cm\u00b3"
       },
-      "answer": "a",
-      "subtopic": "circles"
+      "answer": "A",
+      "subtopic": "Geometry"
     },
     {
       "id": 132,
-      "question": "In a rhombus with side 13 cm and one diagonal 10 cm, what is the length of the other diagonal?",
+      "question": "A triangle has sides 6 cm, 8 cm and 10 cm. What type of triangle is it?",
       "options": {
-        "a": "24 cm",
-        "b": "5 cm",
-        "c": "12 cm",
-        "d": "26 cm"
+        "A": "Equilateral",
+        "B": "Scalene",
+        "C": "Right-angled",
+        "D": "Isosceles"
       },
-      "answer": "a",
-      "subtopic": "quadrilaterals"
+      "answer": "C",
+      "subtopic": "Geometry"
     },
     {
       "id": 133,
-      "question": "What is the perpendicular distance from point (4, 3) to the line 3x + 4y = 12?",
+      "question": "What is the area of a rectangle with length 19 cm and width 8 cm?",
       "options": {
-        "a": "2.4 units",
-        "b": "5 units",
-        "c": "12 units",
-        "d": "1 unit"
+        "A": "240 cm\u00b2",
+        "B": "158 cm\u00b2",
+        "C": "239 cm\u00b2",
+        "D": "152 cm\u00b2"
       },
-      "answer": "a",
-      "subtopic": "coordinate geometry"
+      "answer": "D",
+      "subtopic": "Geometry"
     },
     {
       "id": 134,
-      "question": "What is the lateral surface area of a right triangular prism with base sides 3, 4, 5 cm and height 12 cm?",
+      "question": "A triangle has sides 6 cm, 8 cm and 10 cm. What type of triangle is it?",
       "options": {
-        "a": "144 cm²",
-        "b": "72 cm²",
-        "c": "288 cm²",
-        "d": "216 cm²"
+        "A": "Isosceles",
+        "B": "Right-angled",
+        "C": "Scalene",
+        "D": "Equilateral"
       },
-      "answer": "a",
-      "subtopic": "volume and surface area"
+      "answer": "B",
+      "subtopic": "Geometry"
     },
     {
       "id": 135,
-      "question": "The circumcenter of a right triangle lies on:",
+      "question": "What is the area of a rectangle with length 9 cm and width 8 cm?",
       "options": {
-        "a": "The hypotenuse",
-        "b": "One of the legs",
-        "c": "Inside the triangle",
-        "d": "Outside the triangle"
+        "A": "276 cm\u00b2",
+        "B": "217 cm\u00b2",
+        "C": "79 cm\u00b2",
+        "D": "72 cm\u00b2"
       },
-      "answer": "a",
-      "subtopic": "triangles"
+      "answer": "D",
+      "subtopic": "Geometry"
     },
     {
       "id": 136,
-      "question": "What is the measure of each central angle of a regular 20-sided polygon?",
+      "question": "What is the volume of a cube with side 8 cm?",
       "options": {
-        "a": "18°",
-        "b": "20°",
-        "c": "36°",
-        "d": "15°"
+        "A": "512 cm\u00b3",
+        "B": "406 cm\u00b3",
+        "C": "511 cm\u00b3",
+        "D": "203 cm\u00b3"
       },
-      "answer": "a",
-      "subtopic": "polygons"
+      "answer": "A",
+      "subtopic": "Geometry"
     },
     {
       "id": 137,
-      "question": "If two parallel lines are cut by a transversal, co-interior angles are:",
+      "question": "What is the sum of the interior angles of a triangle?",
       "options": {
-        "a": "Supplementary",
-        "b": "Equal",
-        "c": "Complementary",
-        "d": "Vertically opposite"
+        "A": "180\u00b0",
+        "B": "210\u00b0",
+        "C": "150\u00b0",
+        "D": "240\u00b0"
       },
-      "answer": "a",
-      "subtopic": "angles"
+      "answer": "A",
+      "subtopic": "Geometry"
     },
     {
       "id": 138,
-      "question": "What is the area of a semicircle with diameter 20 cm? (Use π = 22/7)",
+      "question": "A triangle has sides 6 cm, 8 cm and 10 cm. What type of triangle is it?",
       "options": {
-        "a": "157.14 cm²",
-        "b": "314.29 cm²",
-        "c": "628.57 cm²",
-        "d": "78.57 cm²"
+        "A": "Scalene",
+        "B": "Isosceles",
+        "C": "Right-angled",
+        "D": "Equilateral"
       },
-      "answer": "a",
-      "subtopic": "circles"
+      "answer": "C",
+      "subtopic": "Geometry"
     },
     {
       "id": 139,
-      "question": "What is the perimeter of a rhombus with diagonals 24 cm and 32 cm?",
+      "question": "What is the volume of a cube with side 10 cm?",
       "options": {
-        "a": "80 cm",
-        "b": "40 cm",
-        "c": "56 cm",
-        "d": "112 cm"
+        "A": "939 cm\u00b3",
+        "B": "718 cm\u00b3",
+        "C": "819 cm\u00b3",
+        "D": "1000 cm\u00b3"
       },
-      "answer": "a",
-      "subtopic": "quadrilaterals"
+      "answer": "D",
+      "subtopic": "Geometry"
     },
     {
       "id": 140,
-      "question": "The reflection of point (3, -4) across the x-axis is:",
+      "question": "What is the perimeter of a square with side 15 cm?",
       "options": {
-        "a": "(3, 4)",
-        "b": "(-3, -4)",
-        "c": "(-3, 4)",
-        "d": "(4, 3)"
+        "A": "60 cm",
+        "B": "93 cm",
+        "C": "100 cm",
+        "D": "99 cm"
       },
-      "answer": "a",
-      "subtopic": "coordinate geometry"
+      "answer": "A",
+      "subtopic": "Geometry"
     },
     {
       "id": 141,
-      "question": "What is the volume of a triangular prism with base area 30 cm² and height 15 cm?",
+      "question": "What is the volume of a cube with side 10 cm?",
       "options": {
-        "a": "450 cm³",
-        "b": "225 cm³",
-        "c": "900 cm³",
-        "d": "45 cm³"
+        "A": "1000 cm\u00b3",
+        "B": "997 cm\u00b3",
+        "C": "48 cm\u00b3",
+        "D": "769 cm\u00b3"
       },
-      "answer": "a",
-      "subtopic": "volume and surface area"
+      "answer": "A",
+      "subtopic": "Geometry"
+    },
+    {
+      "id": 142,
+      "question": "A triangle has sides 6 cm, 8 cm and 10 cm. What type of triangle is it?",
+      "options": {
+        "A": "Equilateral",
+        "B": "Isosceles",
+        "C": "Right-angled",
+        "D": "Scalene"
+      },
+      "answer": "C",
+      "subtopic": "Geometry"
+    },
+    {
+      "id": 143,
+      "question": "A triangle has sides 6 cm, 8 cm and 10 cm. What type of triangle is it?",
+      "options": {
+        "A": "Equilateral",
+        "B": "Scalene",
+        "C": "Right-angled",
+        "D": "Isosceles"
+      },
+      "answer": "C",
+      "subtopic": "Geometry"
+    },
+    {
+      "id": 144,
+      "question": "What is the perimeter of a square with side 8 cm?",
+      "options": {
+        "A": "65 cm",
+        "B": "32 cm",
+        "C": "48 cm",
+        "D": "46 cm"
+      },
+      "answer": "B",
+      "subtopic": "Geometry"
+    },
+    {
+      "id": 145,
+      "question": "What is the area of a rectangle with length 11 cm and width 8 cm?",
+      "options": {
+        "A": "38 cm\u00b2",
+        "B": "88 cm\u00b2",
+        "C": "87 cm\u00b2",
+        "D": "297 cm\u00b2"
+      },
+      "answer": "B",
+      "subtopic": "Geometry"
+    },
+    {
+      "id": 146,
+      "question": "What is the area of a rectangle with length 19 cm and width 9 cm?",
+      "options": {
+        "A": "242 cm\u00b2",
+        "B": "171 cm\u00b2",
+        "C": "227 cm\u00b2",
+        "D": "257 cm\u00b2"
+      },
+      "answer": "B",
+      "subtopic": "Geometry"
+    },
+    {
+      "id": 147,
+      "question": "What is the area of a rectangle with length 18 cm and width 14 cm?",
+      "options": {
+        "A": "198 cm\u00b2",
+        "B": "155 cm\u00b2",
+        "C": "252 cm\u00b2",
+        "D": "277 cm\u00b2"
+      },
+      "answer": "C",
+      "subtopic": "Geometry"
+    },
+    {
+      "id": 148,
+      "question": "What is the area of a rectangle with length 17 cm and width 14 cm?",
+      "options": {
+        "A": "227 cm\u00b2",
+        "B": "165 cm\u00b2",
+        "C": "194 cm\u00b2",
+        "D": "238 cm\u00b2"
+      },
+      "answer": "D",
+      "subtopic": "Geometry"
+    },
+    {
+      "id": 149,
+      "question": "A triangle has sides 6 cm, 8 cm and 10 cm. What type of triangle is it?",
+      "options": {
+        "A": "Right-angled",
+        "B": "Scalene",
+        "C": "Isosceles",
+        "D": "Equilateral"
+      },
+      "answer": "A",
+      "subtopic": "Geometry"
+    },
+    {
+      "id": 150,
+      "question": "A triangle has sides 6 cm, 8 cm and 10 cm. What type of triangle is it?",
+      "options": {
+        "A": "Equilateral",
+        "B": "Right-angled",
+        "C": "Isosceles",
+        "D": "Scalene"
+      },
+      "answer": "B",
+      "subtopic": "Geometry"
+    },
+    {
+      "id": 151,
+      "question": "What is the area of a rectangle with length 8 cm and width 7 cm?",
+      "options": {
+        "A": "195 cm\u00b2",
+        "B": "117 cm\u00b2",
+        "C": "78 cm\u00b2",
+        "D": "56 cm\u00b2"
+      },
+      "answer": "D",
+      "subtopic": "Geometry"
+    },
+    {
+      "id": 152,
+      "question": "A triangle has sides 6 cm, 8 cm and 10 cm. What type of triangle is it?",
+      "options": {
+        "A": "Isosceles",
+        "B": "Equilateral",
+        "C": "Scalene",
+        "D": "Right-angled"
+      },
+      "answer": "D",
+      "subtopic": "Geometry"
+    },
+    {
+      "id": 153,
+      "question": "What is the perimeter of a square with side 9 cm?",
+      "options": {
+        "A": "43 cm",
+        "B": "89 cm",
+        "C": "36 cm",
+        "D": "24 cm"
+      },
+      "answer": "C",
+      "subtopic": "Geometry"
+    },
+    {
+      "id": 154,
+      "question": "A triangle has sides 6 cm, 8 cm and 10 cm. What type of triangle is it?",
+      "options": {
+        "A": "Equilateral",
+        "B": "Isosceles",
+        "C": "Scalene",
+        "D": "Right-angled"
+      },
+      "answer": "D",
+      "subtopic": "Geometry"
+    },
+    {
+      "id": 155,
+      "question": "A triangle has sides 6 cm, 8 cm and 10 cm. What type of triangle is it?",
+      "options": {
+        "A": "Isosceles",
+        "B": "Right-angled",
+        "C": "Equilateral",
+        "D": "Scalene"
+      },
+      "answer": "B",
+      "subtopic": "Geometry"
+    },
+    {
+      "id": 156,
+      "question": "What is the sum of the interior angles of a pentagon?",
+      "options": {
+        "A": "540\u00b0",
+        "B": "570\u00b0",
+        "C": "510\u00b0",
+        "D": "600\u00b0"
+      },
+      "answer": "A",
+      "subtopic": "Geometry"
+    },
+    {
+      "id": 157,
+      "question": "What is the perimeter of a square with side 6 cm?",
+      "options": {
+        "A": "95 cm",
+        "B": "45 cm",
+        "C": "24 cm",
+        "D": "34 cm"
+      },
+      "answer": "C",
+      "subtopic": "Geometry"
+    },
+    {
+      "id": 158,
+      "question": "What is the sum of the interior angles of a quadrilateral?",
+      "options": {
+        "A": "390\u00b0",
+        "B": "330\u00b0",
+        "C": "420\u00b0",
+        "D": "360\u00b0"
+      },
+      "answer": "D",
+      "subtopic": "Geometry"
+    },
+    {
+      "id": 159,
+      "question": "What is the volume of a cube with side 7 cm?",
+      "options": {
+        "A": "244 cm\u00b3",
+        "B": "832 cm\u00b3",
+        "C": "135 cm\u00b3",
+        "D": "343 cm\u00b3"
+      },
+      "answer": "D",
+      "subtopic": "Geometry"
+    },
+    {
+      "id": 160,
+      "question": "What is the perimeter of a square with side 15 cm?",
+      "options": {
+        "A": "57 cm",
+        "B": "60 cm",
+        "C": "39 cm",
+        "D": "99 cm"
+      },
+      "answer": "B",
+      "subtopic": "Geometry"
+    },
+    {
+      "id": 161,
+      "question": "What is the perimeter of a square with side 7 cm?",
+      "options": {
+        "A": "60 cm",
+        "B": "28 cm",
+        "C": "21 cm",
+        "D": "67 cm"
+      },
+      "answer": "B",
+      "subtopic": "Geometry"
+    },
+    {
+      "id": 162,
+      "question": "A triangle has sides 6 cm, 8 cm and 10 cm. What type of triangle is it?",
+      "options": {
+        "A": "Equilateral",
+        "B": "Isosceles",
+        "C": "Scalene",
+        "D": "Right-angled"
+      },
+      "answer": "D",
+      "subtopic": "Geometry"
+    },
+    {
+      "id": 163,
+      "question": "What is the area of a rectangle with length 20 cm and width 6 cm?",
+      "options": {
+        "A": "263 cm\u00b2",
+        "B": "138 cm\u00b2",
+        "C": "120 cm\u00b2",
+        "D": "108 cm\u00b2"
+      },
+      "answer": "C",
+      "subtopic": "Geometry"
+    },
+    {
+      "id": 164,
+      "question": "What is the sum of the interior angles of a quadrilateral?",
+      "options": {
+        "A": "330\u00b0",
+        "B": "360\u00b0",
+        "C": "420\u00b0",
+        "D": "390\u00b0"
+      },
+      "answer": "B",
+      "subtopic": "Geometry"
+    },
+    {
+      "id": 165,
+      "question": "What is the sum of the interior angles of a triangle?",
+      "options": {
+        "A": "180\u00b0",
+        "B": "150\u00b0",
+        "C": "240\u00b0",
+        "D": "210\u00b0"
+      },
+      "answer": "A",
+      "subtopic": "Geometry"
+    },
+    {
+      "id": 166,
+      "question": "What is the perimeter of a square with side 10 cm?",
+      "options": {
+        "A": "86 cm",
+        "B": "37 cm",
+        "C": "79 cm",
+        "D": "40 cm"
+      },
+      "answer": "D",
+      "subtopic": "Geometry"
+    },
+    {
+      "id": 167,
+      "question": "A triangle has sides 6 cm, 8 cm and 10 cm. What type of triangle is it?",
+      "options": {
+        "A": "Equilateral",
+        "B": "Scalene",
+        "C": "Isosceles",
+        "D": "Right-angled"
+      },
+      "answer": "D",
+      "subtopic": "Geometry"
+    },
+    {
+      "id": 168,
+      "question": "What is the perimeter of a square with side 14 cm?",
+      "options": {
+        "A": "93 cm",
+        "B": "84 cm",
+        "C": "29 cm",
+        "D": "56 cm"
+      },
+      "answer": "D",
+      "subtopic": "Geometry"
+    },
+    {
+      "id": 169,
+      "question": "What is the sum of the interior angles of a hexagon?",
+      "options": {
+        "A": "720\u00b0",
+        "B": "780\u00b0",
+        "C": "750\u00b0",
+        "D": "690\u00b0"
+      },
+      "answer": "A",
+      "subtopic": "Geometry"
+    },
+    {
+      "id": 170,
+      "question": "What is the sum of the interior angles of a triangle?",
+      "options": {
+        "A": "210\u00b0",
+        "B": "240\u00b0",
+        "C": "180\u00b0",
+        "D": "150\u00b0"
+      },
+      "answer": "C",
+      "subtopic": "Geometry"
+    },
+    {
+      "id": 171,
+      "question": "A triangle has sides 6 cm, 8 cm and 10 cm. What type of triangle is it?",
+      "options": {
+        "A": "Equilateral",
+        "B": "Isosceles",
+        "C": "Right-angled",
+        "D": "Scalene"
+      },
+      "answer": "C",
+      "subtopic": "Geometry"
+    },
+    {
+      "id": 172,
+      "question": "What is the volume of a cube with side 3 cm?",
+      "options": {
+        "A": "343 cm\u00b3",
+        "B": "27 cm\u00b3",
+        "C": "651 cm\u00b3",
+        "D": "256 cm\u00b3"
+      },
+      "answer": "B",
+      "subtopic": "Geometry"
+    },
+    {
+      "id": 173,
+      "question": "A triangle has sides 6 cm, 8 cm and 10 cm. What type of triangle is it?",
+      "options": {
+        "A": "Scalene",
+        "B": "Equilateral",
+        "C": "Right-angled",
+        "D": "Isosceles"
+      },
+      "answer": "C",
+      "subtopic": "Geometry"
+    },
+    {
+      "id": 174,
+      "question": "What is the area of a rectangle with length 13 cm and width 15 cm?",
+      "options": {
+        "A": "88 cm\u00b2",
+        "B": "195 cm\u00b2",
+        "C": "240 cm\u00b2",
+        "D": "190 cm\u00b2"
+      },
+      "answer": "B",
+      "subtopic": "Geometry"
+    },
+    {
+      "id": 175,
+      "question": "What is the area of a rectangle with length 19 cm and width 5 cm?",
+      "options": {
+        "A": "263 cm\u00b2",
+        "B": "95 cm\u00b2",
+        "C": "279 cm\u00b2",
+        "D": "24 cm\u00b2"
+      },
+      "answer": "B",
+      "subtopic": "Geometry"
+    },
+    {
+      "id": 176,
+      "question": "A triangle has sides 6 cm, 8 cm and 10 cm. What type of triangle is it?",
+      "options": {
+        "A": "Right-angled",
+        "B": "Isosceles",
+        "C": "Equilateral",
+        "D": "Scalene"
+      },
+      "answer": "A",
+      "subtopic": "Geometry"
+    },
+    {
+      "id": 177,
+      "question": "What is the volume of a cube with side 9 cm?",
+      "options": {
+        "A": "729 cm\u00b3",
+        "B": "269 cm\u00b3",
+        "C": "670 cm\u00b3",
+        "D": "517 cm\u00b3"
+      },
+      "answer": "A",
+      "subtopic": "Geometry"
+    },
+    {
+      "id": 178,
+      "question": "What is the sum of the interior angles of a pentagon?",
+      "options": {
+        "A": "510\u00b0",
+        "B": "540\u00b0",
+        "C": "570\u00b0",
+        "D": "600\u00b0"
+      },
+      "answer": "B",
+      "subtopic": "Geometry"
+    },
+    {
+      "id": 179,
+      "question": "What is the volume of a cube with side 6 cm?",
+      "options": {
+        "A": "216 cm\u00b3",
+        "B": "897 cm\u00b3",
+        "C": "656 cm\u00b3",
+        "D": "366 cm\u00b3"
+      },
+      "answer": "A",
+      "subtopic": "Geometry"
+    },
+    {
+      "id": 180,
+      "question": "What is the perimeter of a square with side 7 cm?",
+      "options": {
+        "A": "65 cm",
+        "B": "28 cm",
+        "C": "30 cm",
+        "D": "83 cm"
+      },
+      "answer": "B",
+      "subtopic": "Geometry"
+    },
+    {
+      "id": 181,
+      "question": "A triangle has sides 6 cm, 8 cm and 10 cm. What type of triangle is it?",
+      "options": {
+        "A": "Scalene",
+        "B": "Equilateral",
+        "C": "Right-angled",
+        "D": "Isosceles"
+      },
+      "answer": "C",
+      "subtopic": "Geometry"
+    },
+    {
+      "id": 182,
+      "question": "A triangle has sides 6 cm, 8 cm and 10 cm. What type of triangle is it?",
+      "options": {
+        "A": "Equilateral",
+        "B": "Scalene",
+        "C": "Isosceles",
+        "D": "Right-angled"
+      },
+      "answer": "D",
+      "subtopic": "Geometry"
+    },
+    {
+      "id": 183,
+      "question": "A triangle has sides 6 cm, 8 cm and 10 cm. What type of triangle is it?",
+      "options": {
+        "A": "Isosceles",
+        "B": "Scalene",
+        "C": "Equilateral",
+        "D": "Right-angled"
+      },
+      "answer": "D",
+      "subtopic": "Geometry"
+    },
+    {
+      "id": 184,
+      "question": "What is the perimeter of a square with side 7 cm?",
+      "options": {
+        "A": "28 cm",
+        "B": "67 cm",
+        "C": "19 cm",
+        "D": "32 cm"
+      },
+      "answer": "A",
+      "subtopic": "Geometry"
+    },
+    {
+      "id": 185,
+      "question": "What is the sum of the interior angles of a pentagon?",
+      "options": {
+        "A": "510\u00b0",
+        "B": "570\u00b0",
+        "C": "600\u00b0",
+        "D": "540\u00b0"
+      },
+      "answer": "D",
+      "subtopic": "Geometry"
+    },
+    {
+      "id": 186,
+      "question": "What is the sum of the interior angles of a triangle?",
+      "options": {
+        "A": "210\u00b0",
+        "B": "240\u00b0",
+        "C": "150\u00b0",
+        "D": "180\u00b0"
+      },
+      "answer": "D",
+      "subtopic": "Geometry"
+    },
+    {
+      "id": 187,
+      "question": "What is the sum of the interior angles of a pentagon?",
+      "options": {
+        "A": "540\u00b0",
+        "B": "510\u00b0",
+        "C": "570\u00b0",
+        "D": "600\u00b0"
+      },
+      "answer": "A",
+      "subtopic": "Geometry"
+    },
+    {
+      "id": 188,
+      "question": "What is the area of a rectangle with length 5 cm and width 9 cm?",
+      "options": {
+        "A": "204 cm\u00b2",
+        "B": "210 cm\u00b2",
+        "C": "91 cm\u00b2",
+        "D": "45 cm\u00b2"
+      },
+      "answer": "D",
+      "subtopic": "Geometry"
+    },
+    {
+      "id": 189,
+      "question": "What is the volume of a cube with side 6 cm?",
+      "options": {
+        "A": "359 cm\u00b3",
+        "B": "396 cm\u00b3",
+        "C": "436 cm\u00b3",
+        "D": "216 cm\u00b3"
+      },
+      "answer": "D",
+      "subtopic": "Geometry"
+    },
+    {
+      "id": 190,
+      "question": "A triangle has sides 6 cm, 8 cm and 10 cm. What type of triangle is it?",
+      "options": {
+        "A": "Right-angled",
+        "B": "Equilateral",
+        "C": "Isosceles",
+        "D": "Scalene"
+      },
+      "answer": "A",
+      "subtopic": "Geometry"
+    },
+    {
+      "id": 191,
+      "question": "What is the sum of the interior angles of a hexagon?",
+      "options": {
+        "A": "690\u00b0",
+        "B": "780\u00b0",
+        "C": "720\u00b0",
+        "D": "750\u00b0"
+      },
+      "answer": "C",
+      "subtopic": "Geometry"
+    },
+    {
+      "id": 192,
+      "question": "What is the area of a rectangle with length 17 cm and width 10 cm?",
+      "options": {
+        "A": "170 cm\u00b2",
+        "B": "122 cm\u00b2",
+        "C": "220 cm\u00b2",
+        "D": "251 cm\u00b2"
+      },
+      "answer": "A",
+      "subtopic": "Geometry"
+    },
+    {
+      "id": 193,
+      "question": "What is the volume of a cube with side 7 cm?",
+      "options": {
+        "A": "343 cm\u00b3",
+        "B": "660 cm\u00b3",
+        "C": "137 cm\u00b3",
+        "D": "810 cm\u00b3"
+      },
+      "answer": "A",
+      "subtopic": "Geometry"
+    },
+    {
+      "id": 194,
+      "question": "What is the perimeter of a square with side 10 cm?",
+      "options": {
+        "A": "27 cm",
+        "B": "40 cm",
+        "C": "88 cm",
+        "D": "75 cm"
+      },
+      "answer": "B",
+      "subtopic": "Geometry"
+    },
+    {
+      "id": 195,
+      "question": "What is the perimeter of a square with side 7 cm?",
+      "options": {
+        "A": "17 cm",
+        "B": "74 cm",
+        "C": "28 cm",
+        "D": "49 cm"
+      },
+      "answer": "C",
+      "subtopic": "Geometry"
+    },
+    {
+      "id": 196,
+      "question": "What is the volume of a cube with side 10 cm?",
+      "options": {
+        "A": "609 cm\u00b3",
+        "B": "931 cm\u00b3",
+        "C": "569 cm\u00b3",
+        "D": "1000 cm\u00b3"
+      },
+      "answer": "D",
+      "subtopic": "Geometry"
+    },
+    {
+      "id": 197,
+      "question": "What is the area of a rectangle with length 11 cm and width 7 cm?",
+      "options": {
+        "A": "247 cm\u00b2",
+        "B": "77 cm\u00b2",
+        "C": "156 cm\u00b2",
+        "D": "267 cm\u00b2"
+      },
+      "answer": "B",
+      "subtopic": "Geometry"
+    },
+    {
+      "id": 198,
+      "question": "A triangle has sides 6 cm, 8 cm and 10 cm. What type of triangle is it?",
+      "options": {
+        "A": "Equilateral",
+        "B": "Right-angled",
+        "C": "Isosceles",
+        "D": "Scalene"
+      },
+      "answer": "B",
+      "subtopic": "Geometry"
+    },
+    {
+      "id": 199,
+      "question": "What is the volume of a cube with side 10 cm?",
+      "options": {
+        "A": "791 cm\u00b3",
+        "B": "450 cm\u00b3",
+        "C": "1000 cm\u00b3",
+        "D": "756 cm\u00b3"
+      },
+      "answer": "C",
+      "subtopic": "Geometry"
+    },
+    {
+      "id": 200,
+      "question": "What is the area of a rectangle with length 8 cm and width 5 cm?",
+      "options": {
+        "A": "162 cm\u00b2",
+        "B": "181 cm\u00b2",
+        "C": "173 cm\u00b2",
+        "D": "40 cm\u00b2"
+      },
+      "answer": "D",
+      "subtopic": "Geometry"
     }
   ]
 }

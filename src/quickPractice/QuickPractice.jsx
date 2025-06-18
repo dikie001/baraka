@@ -145,9 +145,9 @@ const QuickPractice = () => {
             <h2 className="text-2xl font-bold text-purple-100 leading-relaxed flex-1">
               {question.question}
             </h2>
-            <div className="ml-4 px-3 py-1 bg-purple-900/50 rounded-full text-sm font-medium text-purple-300 border border-purple-500/30">
+            {/* <div className="ml-4 px-3 py-1 bg-purple-900/50 rounded-full text-sm font-medium text-purple-300 border border-purple-500/30">
               #{question.id}
-            </div>
+            </div> */}
           </div>
 
           <div className="space-y-3 mb-4">

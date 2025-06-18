@@ -1,125 +1,1204 @@
 {
-  "subtopic": "probability",
   "questions": [
     {
       "id": 1,
-      "question": "What is the probability of getting a head when a fair coin is tossed once?",
+      "question": "What is the probability of getting a head when a fair coin is tossed?",
       "options": {
-        "a": "1/2",
-        "b": "1/3",
-        "c": "1/4",
-        "d": "2/3"
+        "A": "1/2",
+        "B": "1",
+        "C": "2/3",
+        "D": "1/3"
       },
-      "answer": "a",
-      "subtopic": "basic probability"
+      "answer": "A",
+      "subtopic": "Basic Probability"
     },
     {
       "id": 2,
-      "question": "What is the probability of getting a 4 when a fair die is rolled?",
+      "question": "A bag contains 3 red and 2 green balls. What is the probability of picking a red ball?",
       "options": {
-        "a": "1/6",
-        "b": "1/4",
-        "c": "1/3",
-        "d": "1/2"
+        "A": "1/3",
+        "B": "1/2",
+        "C": "3/5",
+        "D": "2/5"
       },
-      "answer": "a",
-      "subtopic": "basic probability"
+      "answer": "C",
+      "subtopic": "Basic Probability"
     },
     {
       "id": 3,
-      "question": "A bag contains 3 red balls, 2 blue balls, and 5 green balls. What is the probability of picking a blue ball?",
+      "question": "If a coin is tossed 100 times and lands on heads 45 times, what is the experimental probability of getting heads?",
       "options": {
-        "a": "1/5",
-        "b": "1/2",
-        "c": "1/3",
-        "d": "1/10"
+        "A": "45/100",
+        "B": "55/100",
+        "C": "50/100",
+        "D": "60/100"
       },
-      "answer": "a",
-      "subtopic": "probability with objects"
+      "answer": "A",
+      "subtopic": "Experimental Probability"
     },
     {
       "id": 4,
-      "question": "If an event is certain to happen, its probability is:",
+      "question": "In 50 trials, a spinner lands on blue 20 times. What is the experimental probability of landing on blue?",
       "options": {
-        "a": "1",
-        "b": "0",
-        "c": "1/2",
-        "d": "Impossible"
+        "A": "3/5",
+        "B": "2/5",
+        "C": "4/5",
+        "D": "1/2"
       },
-      "answer": "a",
-      "subtopic": "probability rules"
+      "answer": "B",
+      "subtopic": "Experimental Probability"
     },
     {
       "id": 5,
-      "question": "If the probability of an event occurring is 0.75, what is the probability of it not occurring?",
+      "question": "What is the theoretical probability of rolling a 4 on a fair six-sided die?",
       "options": {
-        "a": "0.25",
-        "b": "1",
-        "c": "0.50",
-        "d": "0.75"
+        "A": "1/2",
+        "B": "1/4",
+        "C": "1/3",
+        "D": "1/6"
       },
-      "answer": "a",
-      "subtopic": "complementary events"
+      "answer": "D",
+      "subtopic": "Theoretical Probability"
     },
     {
       "id": 6,
-      "question": "Two coins are tossed. What is the probability of getting two tails?",
+      "question": "A standard deck has 52 cards. What is the probability of drawing an ace?",
       "options": {
-        "a": "1/4",
-        "b": "1/2",
-        "c": "3/4",
-        "d": "1"
+        "A": "1/13",
+        "B": "1/12",
+        "C": "1/26",
+        "D": "1/4"
       },
-      "answer": "a",
-      "subtopic": "combined events"
+      "answer": "A",
+      "subtopic": "Theoretical Probability"
     },
     {
       "id": 7,
-      "question": "What is the probability of getting an odd number when rolling a fair die?",
+      "question": "If the probability of raining tomorrow is 0.3, what is the probability that it will not rain?",
       "options": {
-        "a": "1/2",
-        "b": "1/3",
-        "c": "2/3",
-        "d": "1/6"
+        "A": "0.7",
+        "B": "0.6",
+        "C": "0.3",
+        "D": "0.5"
       },
-      "answer": "a",
-      "subtopic": "even and odd outcomes"
+      "answer": "A",
+      "subtopic": "Complementary Events"
     },
     {
       "id": 8,
-      "question": "What is the probability of getting a number less than 5 on a fair die?",
+      "question": "The probability of a student passing an exam is 0.8. What is the probability of failing?",
       "options": {
-        "a": "4/6",
-        "b": "5/6",
-        "c": "1/6",
-        "d": "1/2"
+        "A": "0.5",
+        "B": "0.1",
+        "C": "0.8",
+        "D": "0.2"
       },
-      "answer": "a",
-      "subtopic": "counting outcomes"
+      "answer": "D",
+      "subtopic": "Complementary Events"
     },
     {
       "id": 9,
-      "question": "If the probability of rain today is 0.4, what is the probability that it won’t rain?",
+      "question": "What is the probability of getting two heads when two fair coins are tossed?",
       "options": {
-        "a": "0.6",
-        "b": "0.4",
-        "c": "0.2",
-        "d": "1"
+        "A": "3/4",
+        "B": "1/2",
+        "C": "1/3",
+        "D": "1/4"
       },
-      "answer": "a",
-      "subtopic": "complementary events"
+      "answer": "D",
+      "subtopic": "Probability of Multiple Events"
     },
     {
       "id": 10,
-      "question": "Which of the following cannot be a probability?",
+      "question": "What is the probability of rolling a 2 and a 5 in two dice rolls?",
       "options": {
-        "a": "-0.2",
-        "b": "0",
-        "c": "1",
-        "d": "0.75"
+        "A": "1/36",
+        "B": "1/6",
+        "C": "1/18",
+        "D": "1/12"
       },
-      "answer": "a",
-      "subtopic": "probability rules"
+      "answer": "A",
+      "subtopic": "Probability of Multiple Events"
+    },
+    {
+      "id": 11,
+      "question": "How many outcomes are there when flipping a coin and rolling a die?",
+      "options": {
+        "A": "2",
+        "B": "10",
+        "C": "6",
+        "D": "12"
+      },
+      "answer": "D",
+      "subtopic": "Tree Diagrams"
+    },
+    {
+      "id": 12,
+      "question": "Using a tree diagram, how many outcomes are there in tossing two coins?",
+      "options": {
+        "A": "3",
+        "B": "2",
+        "C": "6",
+        "D": "4"
+      },
+      "answer": "D",
+      "subtopic": "Tree Diagrams"
+    },
+    {
+      "id": 13,
+      "question": "Which pair of events are mutually exclusive?",
+      "options": {
+        "A": "Being a cat and a dog at the same time",
+        "B": "All of the above",
+        "C": "Getting a head and a tail in one coin toss",
+        "D": "Rolling a 2 and a 3 on one die"
+      },
+      "answer": "B",
+      "subtopic": "Mutually Exclusive Events"
+    },
+    {
+      "id": 14,
+      "question": "If events A and B are mutually exclusive, what is P(A or B)?",
+      "options": {
+        "A": "P(A) + P(B)",
+        "B": "P(A) - P(B)",
+        "C": "P(A) / P(B)",
+        "D": "P(A) \u00d7 P(B)"
+      },
+      "answer": "A",
+      "subtopic": "Mutually Exclusive Events"
+    },
+    {
+      "id": 15,
+      "question": "If two events A and B are independent, what is P(A and B)?",
+      "options": {
+        "A": "P(A) / P(B)",
+        "B": "P(A) \u00d7 P(B)",
+        "C": "P(A) - P(B)",
+        "D": "P(A) + P(B)"
+      },
+      "answer": "B",
+      "subtopic": "Independent Events"
+    },
+    {
+      "id": 16,
+      "question": "Which of these are independent events?",
+      "options": {
+        "A": "Choosing a ball and not putting it back",
+        "B": "Rolling a die and flipping a coin",
+        "C": "Drawing two cards from a deck without replacement",
+        "D": "None"
+      },
+      "answer": "B",
+      "subtopic": "Independent Events"
+    },
+    {
+      "id": 17,
+      "question": "What is the probability of getting a head when a fair coin is tossed?",
+      "options": {
+        "A": "2/3",
+        "B": "1/2",
+        "C": "1",
+        "D": "1/3"
+      },
+      "answer": "B",
+      "subtopic": "Basic Probability"
+    },
+    {
+      "id": 18,
+      "question": "A bag contains 3 red and 2 green balls. What is the probability of picking a red ball?",
+      "options": {
+        "A": "1/2",
+        "B": "3/5",
+        "C": "1/3",
+        "D": "2/5"
+      },
+      "answer": "B",
+      "subtopic": "Basic Probability"
+    },
+    {
+      "id": 19,
+      "question": "If a coin is tossed 100 times and lands on heads 45 times, what is the experimental probability of getting heads?",
+      "options": {
+        "A": "50/100",
+        "B": "45/100",
+        "C": "60/100",
+        "D": "55/100"
+      },
+      "answer": "B",
+      "subtopic": "Experimental Probability"
+    },
+    {
+      "id": 20,
+      "question": "In 50 trials, a spinner lands on blue 20 times. What is the experimental probability of landing on blue?",
+      "options": {
+        "A": "1/2",
+        "B": "2/5",
+        "C": "3/5",
+        "D": "4/5"
+      },
+      "answer": "B",
+      "subtopic": "Experimental Probability"
+    },
+    {
+      "id": 21,
+      "question": "What is the theoretical probability of rolling a 4 on a fair six-sided die?",
+      "options": {
+        "A": "1/3",
+        "B": "1/6",
+        "C": "1/2",
+        "D": "1/4"
+      },
+      "answer": "B",
+      "subtopic": "Theoretical Probability"
+    },
+    {
+      "id": 22,
+      "question": "A standard deck has 52 cards. What is the probability of drawing an ace?",
+      "options": {
+        "A": "1/26",
+        "B": "1/4",
+        "C": "1/13",
+        "D": "1/12"
+      },
+      "answer": "C",
+      "subtopic": "Theoretical Probability"
+    },
+    {
+      "id": 23,
+      "question": "If the probability of raining tomorrow is 0.3, what is the probability that it will not rain?",
+      "options": {
+        "A": "0.3",
+        "B": "0.5",
+        "C": "0.6",
+        "D": "0.7"
+      },
+      "answer": "D",
+      "subtopic": "Complementary Events"
+    },
+    {
+      "id": 24,
+      "question": "The probability of a student passing an exam is 0.8. What is the probability of failing?",
+      "options": {
+        "A": "0.2",
+        "B": "0.8",
+        "C": "0.5",
+        "D": "0.1"
+      },
+      "answer": "A",
+      "subtopic": "Complementary Events"
+    },
+    {
+      "id": 25,
+      "question": "What is the probability of getting two heads when two fair coins are tossed?",
+      "options": {
+        "A": "1/3",
+        "B": "1/2",
+        "C": "1/4",
+        "D": "3/4"
+      },
+      "answer": "C",
+      "subtopic": "Probability of Multiple Events"
+    },
+    {
+      "id": 26,
+      "question": "What is the probability of rolling a 2 and a 5 in two dice rolls?",
+      "options": {
+        "A": "1/12",
+        "B": "1/6",
+        "C": "1/36",
+        "D": "1/18"
+      },
+      "answer": "C",
+      "subtopic": "Probability of Multiple Events"
+    },
+    {
+      "id": 27,
+      "question": "How many outcomes are there when flipping a coin and rolling a die?",
+      "options": {
+        "A": "2",
+        "B": "6",
+        "C": "10",
+        "D": "12"
+      },
+      "answer": "D",
+      "subtopic": "Tree Diagrams"
+    },
+    {
+      "id": 28,
+      "question": "Using a tree diagram, how many outcomes are there in tossing two coins?",
+      "options": {
+        "A": "6",
+        "B": "2",
+        "C": "3",
+        "D": "4"
+      },
+      "answer": "D",
+      "subtopic": "Tree Diagrams"
+    },
+    {
+      "id": 29,
+      "question": "Which pair of events are mutually exclusive?",
+      "options": {
+        "A": "Getting a head and a tail in one coin toss",
+        "B": "All of the above",
+        "C": "Rolling a 2 and a 3 on one die",
+        "D": "Being a cat and a dog at the same time"
+      },
+      "answer": "B",
+      "subtopic": "Mutually Exclusive Events"
+    },
+    {
+      "id": 30,
+      "question": "If events A and B are mutually exclusive, what is P(A or B)?",
+      "options": {
+        "A": "P(A) + P(B)",
+        "B": "P(A) - P(B)",
+        "C": "P(A) / P(B)",
+        "D": "P(A) \u00d7 P(B)"
+      },
+      "answer": "A",
+      "subtopic": "Mutually Exclusive Events"
+    },
+    {
+      "id": 31,
+      "question": "If two events A and B are independent, what is P(A and B)?",
+      "options": {
+        "A": "P(A) \u00d7 P(B)",
+        "B": "P(A) - P(B)",
+        "C": "P(A) / P(B)",
+        "D": "P(A) + P(B)"
+      },
+      "answer": "A",
+      "subtopic": "Independent Events"
+    },
+    {
+      "id": 32,
+      "question": "Which of these are independent events?",
+      "options": {
+        "A": "Rolling a die and flipping a coin",
+        "B": "None",
+        "C": "Choosing a ball and not putting it back",
+        "D": "Drawing two cards from a deck without replacement"
+      },
+      "answer": "A",
+      "subtopic": "Independent Events"
+    },
+    {
+      "id": 33,
+      "question": "What is the probability of getting a head when a fair coin is tossed?",
+      "options": {
+        "A": "1/3",
+        "B": "2/3",
+        "C": "1/2",
+        "D": "1"
+      },
+      "answer": "C",
+      "subtopic": "Basic Probability"
+    },
+    {
+      "id": 34,
+      "question": "A bag contains 3 red and 2 green balls. What is the probability of picking a red ball?",
+      "options": {
+        "A": "1/2",
+        "B": "1/3",
+        "C": "2/5",
+        "D": "3/5"
+      },
+      "answer": "D",
+      "subtopic": "Basic Probability"
+    },
+    {
+      "id": 35,
+      "question": "If a coin is tossed 100 times and lands on heads 45 times, what is the experimental probability of getting heads?",
+      "options": {
+        "A": "50/100",
+        "B": "45/100",
+        "C": "55/100",
+        "D": "60/100"
+      },
+      "answer": "B",
+      "subtopic": "Experimental Probability"
+    },
+    {
+      "id": 36,
+      "question": "In 50 trials, a spinner lands on blue 20 times. What is the experimental probability of landing on blue?",
+      "options": {
+        "A": "1/2",
+        "B": "2/5",
+        "C": "3/5",
+        "D": "4/5"
+      },
+      "answer": "B",
+      "subtopic": "Experimental Probability"
+    },
+    {
+      "id": 37,
+      "question": "What is the theoretical probability of rolling a 4 on a fair six-sided die?",
+      "options": {
+        "A": "1/3",
+        "B": "1/6",
+        "C": "1/2",
+        "D": "1/4"
+      },
+      "answer": "B",
+      "subtopic": "Theoretical Probability"
+    },
+    {
+      "id": 38,
+      "question": "A standard deck has 52 cards. What is the probability of drawing an ace?",
+      "options": {
+        "A": "1/12",
+        "B": "1/26",
+        "C": "1/13",
+        "D": "1/4"
+      },
+      "answer": "C",
+      "subtopic": "Theoretical Probability"
+    },
+    {
+      "id": 39,
+      "question": "If the probability of raining tomorrow is 0.3, what is the probability that it will not rain?",
+      "options": {
+        "A": "0.7",
+        "B": "0.6",
+        "C": "0.5",
+        "D": "0.3"
+      },
+      "answer": "A",
+      "subtopic": "Complementary Events"
+    },
+    {
+      "id": 40,
+      "question": "The probability of a student passing an exam is 0.8. What is the probability of failing?",
+      "options": {
+        "A": "0.8",
+        "B": "0.1",
+        "C": "0.5",
+        "D": "0.2"
+      },
+      "answer": "D",
+      "subtopic": "Complementary Events"
+    },
+    {
+      "id": 41,
+      "question": "What is the probability of getting two heads when two fair coins are tossed?",
+      "options": {
+        "A": "1/4",
+        "B": "3/4",
+        "C": "1/2",
+        "D": "1/3"
+      },
+      "answer": "A",
+      "subtopic": "Probability of Multiple Events"
+    },
+    {
+      "id": 42,
+      "question": "What is the probability of rolling a 2 and a 5 in two dice rolls?",
+      "options": {
+        "A": "1/18",
+        "B": "1/6",
+        "C": "1/36",
+        "D": "1/12"
+      },
+      "answer": "C",
+      "subtopic": "Probability of Multiple Events"
+    },
+    {
+      "id": 43,
+      "question": "How many outcomes are there when flipping a coin and rolling a die?",
+      "options": {
+        "A": "10",
+        "B": "12",
+        "C": "2",
+        "D": "6"
+      },
+      "answer": "B",
+      "subtopic": "Tree Diagrams"
+    },
+    {
+      "id": 44,
+      "question": "Using a tree diagram, how many outcomes are there in tossing two coins?",
+      "options": {
+        "A": "2",
+        "B": "4",
+        "C": "3",
+        "D": "6"
+      },
+      "answer": "B",
+      "subtopic": "Tree Diagrams"
+    },
+    {
+      "id": 45,
+      "question": "Which pair of events are mutually exclusive?",
+      "options": {
+        "A": "Rolling a 2 and a 3 on one die",
+        "B": "Getting a head and a tail in one coin toss",
+        "C": "All of the above",
+        "D": "Being a cat and a dog at the same time"
+      },
+      "answer": "C",
+      "subtopic": "Mutually Exclusive Events"
+    },
+    {
+      "id": 46,
+      "question": "If events A and B are mutually exclusive, what is P(A or B)?",
+      "options": {
+        "A": "P(A) \u00d7 P(B)",
+        "B": "P(A) / P(B)",
+        "C": "P(A) + P(B)",
+        "D": "P(A) - P(B)"
+      },
+      "answer": "C",
+      "subtopic": "Mutually Exclusive Events"
+    },
+    {
+      "id": 47,
+      "question": "If two events A and B are independent, what is P(A and B)?",
+      "options": {
+        "A": "P(A) - P(B)",
+        "B": "P(A) \u00d7 P(B)",
+        "C": "P(A) + P(B)",
+        "D": "P(A) / P(B)"
+      },
+      "answer": "B",
+      "subtopic": "Independent Events"
+    },
+    {
+      "id": 48,
+      "question": "Which of these are independent events?",
+      "options": {
+        "A": "Choosing a ball and not putting it back",
+        "B": "Drawing two cards from a deck without replacement",
+        "C": "Rolling a die and flipping a coin",
+        "D": "None"
+      },
+      "answer": "C",
+      "subtopic": "Independent Events"
+    },
+    {
+      "id": 49,
+      "question": "What is the probability of getting a head when a fair coin is tossed?",
+      "options": {
+        "A": "2/3",
+        "B": "1/2",
+        "C": "1",
+        "D": "1/3"
+      },
+      "answer": "B",
+      "subtopic": "Basic Probability"
+    },
+    {
+      "id": 50,
+      "question": "A bag contains 3 red and 2 green balls. What is the probability of picking a red ball?",
+      "options": {
+        "A": "1/2",
+        "B": "2/5",
+        "C": "1/3",
+        "D": "3/5"
+      },
+      "answer": "D",
+      "subtopic": "Basic Probability"
+    },
+    {
+      "id": 51,
+      "question": "If a coin is tossed 100 times and lands on heads 45 times, what is the experimental probability of getting heads?",
+      "options": {
+        "A": "45/100",
+        "B": "50/100",
+        "C": "60/100",
+        "D": "55/100"
+      },
+      "answer": "A",
+      "subtopic": "Experimental Probability"
+    },
+    {
+      "id": 52,
+      "question": "In 50 trials, a spinner lands on blue 20 times. What is the experimental probability of landing on blue?",
+      "options": {
+        "A": "1/2",
+        "B": "4/5",
+        "C": "3/5",
+        "D": "2/5"
+      },
+      "answer": "D",
+      "subtopic": "Experimental Probability"
+    },
+    {
+      "id": 53,
+      "question": "What is the theoretical probability of rolling a 4 on a fair six-sided die?",
+      "options": {
+        "A": "1/6",
+        "B": "1/4",
+        "C": "1/2",
+        "D": "1/3"
+      },
+      "answer": "A",
+      "subtopic": "Theoretical Probability"
+    },
+    {
+      "id": 54,
+      "question": "A standard deck has 52 cards. What is the probability of drawing an ace?",
+      "options": {
+        "A": "1/26",
+        "B": "1/12",
+        "C": "1/4",
+        "D": "1/13"
+      },
+      "answer": "D",
+      "subtopic": "Theoretical Probability"
+    },
+    {
+      "id": 55,
+      "question": "If the probability of raining tomorrow is 0.3, what is the probability that it will not rain?",
+      "options": {
+        "A": "0.7",
+        "B": "0.6",
+        "C": "0.5",
+        "D": "0.3"
+      },
+      "answer": "A",
+      "subtopic": "Complementary Events"
+    },
+    {
+      "id": 56,
+      "question": "The probability of a student passing an exam is 0.8. What is the probability of failing?",
+      "options": {
+        "A": "0.2",
+        "B": "0.8",
+        "C": "0.5",
+        "D": "0.1"
+      },
+      "answer": "A",
+      "subtopic": "Complementary Events"
+    },
+    {
+      "id": 57,
+      "question": "What is the probability of getting two heads when two fair coins are tossed?",
+      "options": {
+        "A": "1/4",
+        "B": "1/3",
+        "C": "1/2",
+        "D": "3/4"
+      },
+      "answer": "A",
+      "subtopic": "Probability of Multiple Events"
+    },
+    {
+      "id": 58,
+      "question": "What is the probability of rolling a 2 and a 5 in two dice rolls?",
+      "options": {
+        "A": "1/36",
+        "B": "1/12",
+        "C": "1/6",
+        "D": "1/18"
+      },
+      "answer": "A",
+      "subtopic": "Probability of Multiple Events"
+    },
+    {
+      "id": 59,
+      "question": "How many outcomes are there when flipping a coin and rolling a die?",
+      "options": {
+        "A": "10",
+        "B": "12",
+        "C": "6",
+        "D": "2"
+      },
+      "answer": "B",
+      "subtopic": "Tree Diagrams"
+    },
+    {
+      "id": 60,
+      "question": "Using a tree diagram, how many outcomes are there in tossing two coins?",
+      "options": {
+        "A": "4",
+        "B": "3",
+        "C": "2",
+        "D": "6"
+      },
+      "answer": "A",
+      "subtopic": "Tree Diagrams"
+    },
+    {
+      "id": 61,
+      "question": "Which pair of events are mutually exclusive?",
+      "options": {
+        "A": "Being a cat and a dog at the same time",
+        "B": "Getting a head and a tail in one coin toss",
+        "C": "All of the above",
+        "D": "Rolling a 2 and a 3 on one die"
+      },
+      "answer": "C",
+      "subtopic": "Mutually Exclusive Events"
+    },
+    {
+      "id": 62,
+      "question": "If events A and B are mutually exclusive, what is P(A or B)?",
+      "options": {
+        "A": "P(A) + P(B)",
+        "B": "P(A) / P(B)",
+        "C": "P(A) - P(B)",
+        "D": "P(A) \u00d7 P(B)"
+      },
+      "answer": "A",
+      "subtopic": "Mutually Exclusive Events"
+    },
+    {
+      "id": 63,
+      "question": "If two events A and B are independent, what is P(A and B)?",
+      "options": {
+        "A": "P(A) + P(B)",
+        "B": "P(A) - P(B)",
+        "C": "P(A) / P(B)",
+        "D": "P(A) \u00d7 P(B)"
+      },
+      "answer": "D",
+      "subtopic": "Independent Events"
+    },
+    {
+      "id": 64,
+      "question": "Which of these are independent events?",
+      "options": {
+        "A": "Choosing a ball and not putting it back",
+        "B": "Rolling a die and flipping a coin",
+        "C": "Drawing two cards from a deck without replacement",
+        "D": "None"
+      },
+      "answer": "B",
+      "subtopic": "Independent Events"
+    },
+    {
+      "id": 65,
+      "question": "What is the probability of getting a head when a fair coin is tossed?",
+      "options": {
+        "A": "1/2",
+        "B": "2/3",
+        "C": "1",
+        "D": "1/3"
+      },
+      "answer": "A",
+      "subtopic": "Basic Probability"
+    },
+    {
+      "id": 66,
+      "question": "A bag contains 3 red and 2 green balls. What is the probability of picking a red ball?",
+      "options": {
+        "A": "3/5",
+        "B": "1/3",
+        "C": "1/2",
+        "D": "2/5"
+      },
+      "answer": "A",
+      "subtopic": "Basic Probability"
+    },
+    {
+      "id": 67,
+      "question": "If a coin is tossed 100 times and lands on heads 45 times, what is the experimental probability of getting heads?",
+      "options": {
+        "A": "50/100",
+        "B": "45/100",
+        "C": "55/100",
+        "D": "60/100"
+      },
+      "answer": "B",
+      "subtopic": "Experimental Probability"
+    },
+    {
+      "id": 68,
+      "question": "In 50 trials, a spinner lands on blue 20 times. What is the experimental probability of landing on blue?",
+      "options": {
+        "A": "4/5",
+        "B": "1/2",
+        "C": "3/5",
+        "D": "2/5"
+      },
+      "answer": "D",
+      "subtopic": "Experimental Probability"
+    },
+    {
+      "id": 69,
+      "question": "What is the theoretical probability of rolling a 4 on a fair six-sided die?",
+      "options": {
+        "A": "1/4",
+        "B": "1/2",
+        "C": "1/3",
+        "D": "1/6"
+      },
+      "answer": "D",
+      "subtopic": "Theoretical Probability"
+    },
+    {
+      "id": 70,
+      "question": "A standard deck has 52 cards. What is the probability of drawing an ace?",
+      "options": {
+        "A": "1/13",
+        "B": "1/26",
+        "C": "1/4",
+        "D": "1/12"
+      },
+      "answer": "A",
+      "subtopic": "Theoretical Probability"
+    },
+    {
+      "id": 71,
+      "question": "If the probability of raining tomorrow is 0.3, what is the probability that it will not rain?",
+      "options": {
+        "A": "0.6",
+        "B": "0.3",
+        "C": "0.5",
+        "D": "0.7"
+      },
+      "answer": "D",
+      "subtopic": "Complementary Events"
+    },
+    {
+      "id": 72,
+      "question": "The probability of a student passing an exam is 0.8. What is the probability of failing?",
+      "options": {
+        "A": "0.5",
+        "B": "0.1",
+        "C": "0.2",
+        "D": "0.8"
+      },
+      "answer": "C",
+      "subtopic": "Complementary Events"
+    },
+    {
+      "id": 73,
+      "question": "What is the probability of getting two heads when two fair coins are tossed?",
+      "options": {
+        "A": "1/3",
+        "B": "3/4",
+        "C": "1/4",
+        "D": "1/2"
+      },
+      "answer": "C",
+      "subtopic": "Probability of Multiple Events"
+    },
+    {
+      "id": 74,
+      "question": "What is the probability of rolling a 2 and a 5 in two dice rolls?",
+      "options": {
+        "A": "1/18",
+        "B": "1/36",
+        "C": "1/12",
+        "D": "1/6"
+      },
+      "answer": "B",
+      "subtopic": "Probability of Multiple Events"
+    },
+    {
+      "id": 75,
+      "question": "How many outcomes are there when flipping a coin and rolling a die?",
+      "options": {
+        "A": "10",
+        "B": "12",
+        "C": "6",
+        "D": "2"
+      },
+      "answer": "B",
+      "subtopic": "Tree Diagrams"
+    },
+    {
+      "id": 76,
+      "question": "Using a tree diagram, how many outcomes are there in tossing two coins?",
+      "options": {
+        "A": "4",
+        "B": "2",
+        "C": "6",
+        "D": "3"
+      },
+      "answer": "A",
+      "subtopic": "Tree Diagrams"
+    },
+    {
+      "id": 77,
+      "question": "Which pair of events are mutually exclusive?",
+      "options": {
+        "A": "Being a cat and a dog at the same time",
+        "B": "Getting a head and a tail in one coin toss",
+        "C": "All of the above",
+        "D": "Rolling a 2 and a 3 on one die"
+      },
+      "answer": "C",
+      "subtopic": "Mutually Exclusive Events"
+    },
+    {
+      "id": 78,
+      "question": "If events A and B are mutually exclusive, what is P(A or B)?",
+      "options": {
+        "A": "P(A) / P(B)",
+        "B": "P(A) + P(B)",
+        "C": "P(A) - P(B)",
+        "D": "P(A) \u00d7 P(B)"
+      },
+      "answer": "B",
+      "subtopic": "Mutually Exclusive Events"
+    },
+    {
+      "id": 79,
+      "question": "If two events A and B are independent, what is P(A and B)?",
+      "options": {
+        "A": "P(A) / P(B)",
+        "B": "P(A) - P(B)",
+        "C": "P(A) \u00d7 P(B)",
+        "D": "P(A) + P(B)"
+      },
+      "answer": "C",
+      "subtopic": "Independent Events"
+    },
+    {
+      "id": 80,
+      "question": "Which of these are independent events?",
+      "options": {
+        "A": "Drawing two cards from a deck without replacement",
+        "B": "Rolling a die and flipping a coin",
+        "C": "None",
+        "D": "Choosing a ball and not putting it back"
+      },
+      "answer": "B",
+      "subtopic": "Independent Events"
+    },
+    {
+      "id": 81,
+      "question": "What is the probability of getting a head when a fair coin is tossed?",
+      "options": {
+        "A": "1/3",
+        "B": "1",
+        "C": "2/3",
+        "D": "1/2"
+      },
+      "answer": "D",
+      "subtopic": "Basic Probability"
+    },
+    {
+      "id": 82,
+      "question": "A bag contains 3 red and 2 green balls. What is the probability of picking a red ball?",
+      "options": {
+        "A": "3/5",
+        "B": "2/5",
+        "C": "1/2",
+        "D": "1/3"
+      },
+      "answer": "A",
+      "subtopic": "Basic Probability"
+    },
+    {
+      "id": 83,
+      "question": "If a coin is tossed 100 times and lands on heads 45 times, what is the experimental probability of getting heads?",
+      "options": {
+        "A": "60/100",
+        "B": "50/100",
+        "C": "55/100",
+        "D": "45/100"
+      },
+      "answer": "D",
+      "subtopic": "Experimental Probability"
+    },
+    {
+      "id": 84,
+      "question": "In 50 trials, a spinner lands on blue 20 times. What is the experimental probability of landing on blue?",
+      "options": {
+        "A": "2/5",
+        "B": "4/5",
+        "C": "1/2",
+        "D": "3/5"
+      },
+      "answer": "A",
+      "subtopic": "Experimental Probability"
+    },
+    {
+      "id": 85,
+      "question": "What is the theoretical probability of rolling a 4 on a fair six-sided die?",
+      "options": {
+        "A": "1/2",
+        "B": "1/4",
+        "C": "1/6",
+        "D": "1/3"
+      },
+      "answer": "C",
+      "subtopic": "Theoretical Probability"
+    },
+    {
+      "id": 86,
+      "question": "A standard deck has 52 cards. What is the probability of drawing an ace?",
+      "options": {
+        "A": "1/12",
+        "B": "1/26",
+        "C": "1/13",
+        "D": "1/4"
+      },
+      "answer": "C",
+      "subtopic": "Theoretical Probability"
+    },
+    {
+      "id": 87,
+      "question": "If the probability of raining tomorrow is 0.3, what is the probability that it will not rain?",
+      "options": {
+        "A": "0.3",
+        "B": "0.7",
+        "C": "0.6",
+        "D": "0.5"
+      },
+      "answer": "B",
+      "subtopic": "Complementary Events"
+    },
+    {
+      "id": 88,
+      "question": "The probability of a student passing an exam is 0.8. What is the probability of failing?",
+      "options": {
+        "A": "0.8",
+        "B": "0.5",
+        "C": "0.1",
+        "D": "0.2"
+      },
+      "answer": "D",
+      "subtopic": "Complementary Events"
+    },
+    {
+      "id": 89,
+      "question": "What is the probability of getting two heads when two fair coins are tossed?",
+      "options": {
+        "A": "3/4",
+        "B": "1/4",
+        "C": "1/3",
+        "D": "1/2"
+      },
+      "answer": "B",
+      "subtopic": "Probability of Multiple Events"
+    },
+    {
+      "id": 90,
+      "question": "What is the probability of rolling a 2 and a 5 in two dice rolls?",
+      "options": {
+        "A": "1/12",
+        "B": "1/36",
+        "C": "1/18",
+        "D": "1/6"
+      },
+      "answer": "B",
+      "subtopic": "Probability of Multiple Events"
+    },
+    {
+      "id": 91,
+      "question": "How many outcomes are there when flipping a coin and rolling a die?",
+      "options": {
+        "A": "12",
+        "B": "10",
+        "C": "2",
+        "D": "6"
+      },
+      "answer": "A",
+      "subtopic": "Tree Diagrams"
+    },
+    {
+      "id": 92,
+      "question": "Using a tree diagram, how many outcomes are there in tossing two coins?",
+      "options": {
+        "A": "3",
+        "B": "6",
+        "C": "4",
+        "D": "2"
+      },
+      "answer": "C",
+      "subtopic": "Tree Diagrams"
+    },
+    {
+      "id": 93,
+      "question": "Which pair of events are mutually exclusive?",
+      "options": {
+        "A": "Being a cat and a dog at the same time",
+        "B": "Getting a head and a tail in one coin toss",
+        "C": "All of the above",
+        "D": "Rolling a 2 and a 3 on one die"
+      },
+      "answer": "C",
+      "subtopic": "Mutually Exclusive Events"
+    },
+    {
+      "id": 94,
+      "question": "If events A and B are mutually exclusive, what is P(A or B)?",
+      "options": {
+        "A": "P(A) + P(B)",
+        "B": "P(A) \u00d7 P(B)",
+        "C": "P(A) / P(B)",
+        "D": "P(A) - P(B)"
+      },
+      "answer": "A",
+      "subtopic": "Mutually Exclusive Events"
+    },
+    {
+      "id": 95,
+      "question": "If two events A and B are independent, what is P(A and B)?",
+      "options": {
+        "A": "P(A) / P(B)",
+        "B": "P(A) + P(B)",
+        "C": "P(A) - P(B)",
+        "D": "P(A) \u00d7 P(B)"
+      },
+      "answer": "D",
+      "subtopic": "Independent Events"
+    },
+    {
+      "id": 96,
+      "question": "Which of these are independent events?",
+      "options": {
+        "A": "Rolling a die and flipping a coin",
+        "B": "None",
+        "C": "Choosing a ball and not putting it back",
+        "D": "Drawing two cards from a deck without replacement"
+      },
+      "answer": "A",
+      "subtopic": "Independent Events"
+    },
+    {
+      "id": 97,
+      "question": "What is the probability of getting a head when a fair coin is tossed?",
+      "options": {
+        "A": "1/2",
+        "B": "1/3",
+        "C": "2/3",
+        "D": "1"
+      },
+      "answer": "A",
+      "subtopic": "Basic Probability"
+    },
+    {
+      "id": 98,
+      "question": "A bag contains 3 red and 2 green balls. What is the probability of picking a red ball?",
+      "options": {
+        "A": "1/2",
+        "B": "1/3",
+        "C": "2/5",
+        "D": "3/5"
+      },
+      "answer": "D",
+      "subtopic": "Basic Probability"
+    },
+    {
+      "id": 99,
+      "question": "If a coin is tossed 100 times and lands on heads 45 times, what is the experimental probability of getting heads?",
+      "options": {
+        "A": "55/100",
+        "B": "60/100",
+        "C": "45/100",
+        "D": "50/100"
+      },
+      "answer": "C",
+      "subtopic": "Experimental Probability"
+    },
+    {
+      "id": 100,
+      "question": "In 50 trials, a spinner lands on blue 20 times. What is the experimental probability of landing on blue?",
+      "options": {
+        "A": "2/5",
+        "B": "1/2",
+        "C": "4/5",
+        "D": "3/5"
+      },
+      "answer": "A",
+      "subtopic": "Experimental Probability"
     }
   ]
 }

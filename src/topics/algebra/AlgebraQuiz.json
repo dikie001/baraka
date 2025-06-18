@@ -1,6005 +1,2405 @@
 {
-  "subtopic": "algebra",
+  "subtopic":"Algebra",
   "questions": [
     {
       "id": 1,
-      "question": "Simplify: 21x + 13x",
+      "question": "Expand: (x + 4)^2",
       "options": {
-        "a": "148x",
-        "b": "118x",
-        "c": "18x",
-        "d": "34x"
+        "A": "x^2 + 4x + 16",
+        "B": "x^2 + 8x",
+        "C": "x^2 + 8x + 16",
+        "D": "x^2 + 16"
       },
-      "answer": "d",
-      "subtopic": "simplifying expressions"
+      "answer": "C",
+      "subtopic": "Algebra"
     },
     {
       "id": 2,
-      "question": "Simplify: 8x + 9y",
+      "question": "Evaluate: If x = 9, find x^2 + 2x + 1",
       "options": {
-        "a": "168x",
-        "b": "8x + 9y",
-        "c": "120x",
-        "d": "116x"
+        "A": "98",
+        "B": "104",
+        "C": "100",
+        "D": "97"
       },
-      "answer": "b",
-      "subtopic": "simplifying expressions"
+      "answer": "C",
+      "subtopic": "Algebra"
     },
     {
       "id": 3,
-      "question": "Simplify: (x+y)3",
+      "question": "Solve for x: 1x + 7 = 20",
       "options": {
-        "a": "115x",
-        "b": "18x",
-        "c": "(3x+3y",
-        "d": "158x"
+        "A": "x = 15.67",
+        "B": "x = 15",
+        "C": "x = 13",
+        "D": "x = 8.58"
       },
-      "answer": "c",
-      "subtopic": "simplifying expressions"
+      "answer": "C",
+      "subtopic": "Algebra"
     },
     {
       "id": 4,
-      "question": "Factorize: x\u00b2 + 12x + 35",
+      "question": "Simplify: 5(x + 8) - 2x",
       "options": {
-        "a": "(x + 17)(x + 5)",
-        "b": "(x + 7)(x + 5)",
-        "c": "(x + 7)(x + 17)",
-        "d": "(x + 7)(x + 10)"
+        "A": "5x + 38 = 5x + 38",
+        "B": "5x + 6",
+        "C": "5x + -6",
+        "D": "5x + 42"
       },
-      "answer": "b",
-      "subtopic": "factorization"
+      "answer": "A",
+      "subtopic": "Algebra"
     },
     {
       "id": 5,
-      "question": "Expand: (x + 9)(x + 9)",
+      "question": "Solve for x: 4x + 1 = 43",
       "options": {
-        "a": "x\u00b2 + 110x + 101",
-        "b": "x\u00b2 + 18x + 81",
-        "c": "x\u00b2 + 114x + 141",
-        "d": "x\u00b2 + 178x + 817"
+        "A": "x = 6.79",
+        "B": "x = 10.5",
+        "C": "x = 9.01",
+        "D": "x = 11.97"
       },
-      "answer": "b",
-      "subtopic": "expansion"
+      "answer": "B",
+      "subtopic": "Algebra"
     },
     {
       "id": 6,
-      "question": "Expand: (x + 9)(x + 9)",
+      "question": "Simplify: 3(x + 7) - 5x",
       "options": {
-        "a": "x\u00b2 + 18x + 81",
-        "b": "x\u00b2 + 138x + 813",
-        "c": "x\u00b2 + 108x + 810",
-        "d": "x\u00b2 + 119x + 191"
+        "A": "3x + -2",
+        "B": "3x + 16 = 3x + 16",
+        "C": "3x + 2",
+        "D": "3x + 26"
       },
-      "answer": "a",
-      "subtopic": "expansion"
+      "answer": "B",
+      "subtopic": "Algebra"
     },
     {
       "id": 7,
-      "question": "Expand: (x + 9)(x + 9)",
+      "question": "Simplify: 4(x + 2) - 1x",
       "options": {
-        "a": "x\u00b2 + 120x + 201",
-        "b": "x\u00b2 + 113x + 131",
-        "c": "x\u00b2 + 18x + 81",
-        "d": "x\u00b2 + 168x + 816"
+        "A": "4x + -1",
+        "B": "4x + 1",
+        "C": "4x + 9",
+        "D": "4x + 7 = 4x + 7"
       },
-      "answer": "c",
-      "subtopic": "expansion"
+      "answer": "D",
+      "subtopic": "Algebra"
     },
     {
       "id": 8,
-      "question": "Solve: 9x + 19 = 39",
+      "question": "Factorize: x^2 + 11x + 28",
       "options": {
-        "a": "x = 10",
-        "b": "x = 13",
-        "c": "x = 2",
-        "d": "x = 18"
+        "A": "(x - 4)(x + 7)",
+        "B": "(x - 4)(x - 7)",
+        "C": "(x + 4)(x + 7)",
+        "D": "(x + 4)(x - 7)"
       },
-      "answer": "c",
-      "subtopic": "linear equations"
+      "answer": "C",
+      "subtopic": "Algebra"
     },
     {
       "id": 9,
-      "question": "Make x the subject: y = 9x + 19",
+      "question": "Evaluate: If x = 5, find x^2 + 2x + 1",
       "options": {
-        "a": "x = (y - 118)/18",
-        "b": "x = (y - 159)/9",
-        "c": "x = (y - 19)/9",
-        "d": "x = (y - 112)/12"
+        "A": "38",
+        "B": "39",
+        "C": "36",
+        "D": "34"
       },
-      "answer": "c",
-      "subtopic": "changing subject"
+      "answer": "C",
+      "subtopic": "Algebra"
     },
     {
       "id": 10,
-      "question": "Factorize: x\u00b2 + 10x + 21",
+      "question": "Simplify: 2(x + 6) - 2x",
       "options": {
-        "a": "(x + 7)(x + 13)",
-        "b": "(x + 7)(x + 3)",
-        "c": "(x + 7)(x + 17)",
-        "d": "(x + 7)(x + 12)"
+        "A": "2x + 10 = 2x + 10",
+        "B": "2x + 4",
+        "C": "2x + -4",
+        "D": "2x + 14"
       },
-      "answer": "b",
-      "subtopic": "factorization"
+      "answer": "A",
+      "subtopic": "Algebra"
     },
     {
       "id": 11,
-      "question": "Simplify: 9x + 9x",
+      "question": "Solve for x: 5x + 10 = 47",
       "options": {
-        "a": "158x",
-        "b": "18x",
-        "c": "178x",
-        "d": "118x"
+        "A": "x = 11.46",
+        "B": "x = 3.55",
+        "C": "x = 11.38",
+        "D": "x = 7.4"
       },
-      "answer": "b",
-      "subtopic": "simplifying expressions"
+      "answer": "D",
+      "subtopic": "Algebra"
     },
     {
       "id": 12,
-      "question": "Solve: 9x + 19 = 39",
+      "question": "Solve for x: 10x + 14 = 30",
       "options": {
-        "a": "x = 2",
-        "b": "x = 18",
-        "c": "x = 19",
-        "d": "x = 14"
+        "A": "x = 0.51",
+        "B": "x = 1.6",
+        "C": "x = -1.63",
+        "D": "x = 5.19"
       },
-      "answer": "a",
-      "subtopic": "linear equations"
+      "answer": "B",
+      "subtopic": "Algebra"
     },
     {
       "id": 13,
-      "question": "Make x the subject: y = 9x + 19",
+      "question": "Factorize: x^2 + 18x + 80",
       "options": {
-        "a": "x = (y - 129)/9",
-        "b": "x = (y - 112)/12",
-        "c": "x = (y - 117)/17",
-        "d": "x = (y - 19)/9"
+        "A": "(x - 8)(x - 10)",
+        "B": "(x + 8)(x - 10)",
+        "C": "(x - 8)(x + 10)",
+        "D": "(x + 8)(x + 10)"
       },
-      "answer": "d",
-      "subtopic": "changing subject"
+      "answer": "D",
+      "subtopic": "Algebra"
     },
     {
       "id": 14,
-      "question": "Simplify: 9x + 9x",
+      "question": "Solve for x: 3x + 10 = 32",
       "options": {
-        "a": "114x",
-        "b": "18x",
-        "c": "188x",
-        "d": "112x"
+        "A": "x = 8.36",
+        "B": "x = 9.08",
+        "C": "x = 9.09",
+        "D": "x = 7.33"
       },
-      "answer": "b",
-      "subtopic": "simplifying expressions"
+      "answer": "D",
+      "subtopic": "Algebra"
     },
     {
       "id": 15,
-      "question": "Factorize: x\u00b2 + 4x + 3",
+      "question": "Simplify: 4(x + 7) - 5x",
       "options": {
-        "a": "(x + 11)(x + 1)",
-        "b": "(x + 3)(x + 12)",
-        "c": "(x + 15)(x + 1)",
-        "d": "(x + 3)(x + 1)"
+        "A": "4x + 23 = 4x + 23",
+        "B": "4x + 33",
+        "C": "4x + 2",
+        "D": "4x + -2"
       },
-      "answer": "d",
-      "subtopic": "factorization"
+      "answer": "A",
+      "subtopic": "Algebra"
     },
     {
       "id": 16,
-      "question": "Solve: 9x + 19 = 39",
+      "question": "Factorize: x^2 + 11x + 24",
       "options": {
-        "a": "x = 13",
-        "b": "x = 18",
-        "c": "x = 20",
-        "d": "x = 2"
+        "A": "(x + 8)(x + 3)",
+        "B": "(x - 8)(x - 3)",
+        "C": "(x + 8)(x - 3)",
+        "D": "(x - 8)(x + 3)"
       },
-      "answer": "d",
-      "subtopic": "linear equations"
+      "answer": "A",
+      "subtopic": "Algebra"
     },
     {
       "id": 17,
-      "question": "Factorize: x\u00b2 + 13x + 40",
+      "question": "Solve for x: 1x + 3 = 34",
       "options": {
-        "a": "(x + 8)(x + 5)",
-        "b": "(x + 20)(x + 5)",
-        "c": "(x + 8)(x + 10)",
-        "d": "(x + 18)(x + 5)"
+        "A": "x = 27.16",
+        "B": "x = 28.63",
+        "C": "x = 32.65",
+        "D": "x = 31"
       },
-      "answer": "a",
-      "subtopic": "factorization"
+      "answer": "D",
+      "subtopic": "Algebra"
     },
     {
       "id": 18,
-      "question": "Expand: (x + 9)(x + 9)",
+      "question": "Expand: (x + 10)^2",
       "options": {
-        "a": "x\u00b2 + 18x + 81",
-        "b": "x\u00b2 + 116x + 161",
-        "c": "x\u00b2 + 208x + 820",
-        "d": "x\u00b2 + 108x + 810"
+        "A": "x^2 + 20x + 100",
+        "B": "x^2 + 20x",
+        "C": "x^2 + 10x + 100",
+        "D": "x^2 + 100"
       },
-      "answer": "a",
-      "subtopic": "expansion"
+      "answer": "A",
+      "subtopic": "Algebra"
     },
     {
       "id": 19,
-      "question": "Expand: (x + 9)(x + 9)",
+      "question": "Evaluate: If x = 6, find x^2 + 2x + 1",
       "options": {
-        "a": "x\u00b2 + 18x + 81",
-        "b": "x\u00b2 + 116x + 161",
-        "c": "x\u00b2 + 208x + 820",
-        "d": "x\u00b2 + 198x + 819"
+        "A": "53",
+        "B": "49",
+        "C": "46",
+        "D": "47"
       },
-      "answer": "a",
-      "subtopic": "expansion"
+      "answer": "B",
+      "subtopic": "Algebra"
     },
     {
       "id": 20,
-      "question": "Factorize: x\u00b2 + 6x + 9",
+      "question": "Expand: (x + 4)^2",
       "options": {
-        "a": "(x + 20)(x + 20)",
-        "b": "(x + 12)(x + 12)",
-        "c": "(x + 16)(x + 16)",
-        "d": "(x + 3)(x + 3)"
+        "A": "x^2 + 4x + 16",
+        "B": "x^2 + 8x + 16",
+        "C": "x^2 + 16",
+        "D": "x^2 + 8x"
       },
-      "answer": "d",
-      "subtopic": "factorization"
+      "answer": "B",
+      "subtopic": "Algebra"
     },
     {
       "id": 21,
-      "question": "Solve: 9x + 19 = 39",
+      "question": "Evaluate: If x = 7, find x^2 + 2x + 1",
       "options": {
-        "a": "x = 16",
-        "b": "x = 14",
-        "c": "x = 18",
-        "d": "x = 2"
+        "A": "68",
+        "B": "61",
+        "C": "64",
+        "D": "67"
       },
-      "answer": "d",
-      "subtopic": "linear equations"
+      "answer": "C",
+      "subtopic": "Algebra"
     },
     {
       "id": 22,
-      "question": "Simplify: 9x + 9x",
+      "question": "Solve for x: 6x + 15 = 18",
       "options": {
-        "a": "111x",
-        "b": "198x",
-        "c": "115x",
-        "d": "18x"
+        "A": "x = 0.5",
+        "B": "x = -1.2",
+        "C": "x = -3.59",
+        "D": "x = -0.28"
       },
-      "answer": "d",
-      "subtopic": "simplifying expressions"
+      "answer": "A",
+      "subtopic": "Algebra"
     },
     {
       "id": 23,
-      "question": "Simplify: 9x + 9x",
+      "question": "Simplify: 3(x + 2) - 5x",
       "options": {
-        "a": "118x",
-        "b": "116x",
-        "c": "18x",
-        "d": "138x"
+        "A": "3x + 1 = 3x + 1",
+        "B": "3x + -3",
+        "C": "3x + 11",
+        "D": "3x + 3"
       },
-      "answer": "c",
-      "subtopic": "simplifying expressions"
+      "answer": "A",
+      "subtopic": "Algebra"
     },
     {
       "id": 24,
-      "question": "Expand: (x + 9)(x + 9)",
+      "question": "Simplify: 2(x + 7) - 5x",
       "options": {
-        "a": "x\u00b2 + 111x + 111",
-        "b": "x\u00b2 + 18x + 81",
-        "c": "x\u00b2 + 119x + 191",
-        "d": "x\u00b2 + 118x + 181"
+        "A": "2x + 9 = 2x + 9",
+        "B": "2x + 19",
+        "C": "2x + -2",
+        "D": "2x + 2"
       },
-      "answer": "b",
-      "subtopic": "expansion"
+      "answer": "A",
+      "subtopic": "Algebra"
     },
     {
       "id": 25,
-      "question": "Factorize: x\u00b2 + 13x + 42",
+      "question": "Expand: (x + 3)^2",
       "options": {
-        "a": "(x + 7)(x + 16)",
-        "b": "(x + 17)(x + 6)",
-        "c": "(x + 7)(x + 6)",
-        "d": "(x + 19)(x + 6)"
+        "A": "x^2 + 6x",
+        "B": "x^2 + 9",
+        "C": "x^2 + 6x + 9",
+        "D": "x^2 + 3x + 9"
       },
-      "answer": "c",
-      "subtopic": "factorization"
+      "answer": "C",
+      "subtopic": "Algebra"
     },
     {
       "id": 26,
-      "question": "Factorize: x\u00b2 + 11x + 24",
+      "question": "Solve for x: 6x + 11 = 14",
       "options": {
-        "a": "(x + 14)(x + 8)",
-        "b": "(x + 16)(x + 8)",
-        "c": "(x + 3)(x + 10)",
-        "d": "(x + 3)(x + 8)"
+        "A": "x = 0.97",
+        "B": "x = -1.41",
+        "C": "x = 1.49",
+        "D": "x = 0.5"
       },
-      "answer": "d",
-      "subtopic": "factorization"
+      "answer": "D",
+      "subtopic": "Algebra"
     },
     {
       "id": 27,
-      "question": "Simplify: 9x + 9x",
+      "question": "Simplify: 3(x + 10) - 3x",
       "options": {
-        "a": "18x",
-        "b": "208x",
-        "c": "112x",
-        "d": "178x"
+        "A": "3x + 27 = 3x + 27",
+        "B": "3x + 7",
+        "C": "3x + 33",
+        "D": "3x + -7"
       },
-      "answer": "a",
-      "subtopic": "simplifying expressions"
+      "answer": "A",
+      "subtopic": "Algebra"
     },
     {
       "id": 28,
-      "question": "Make x the subject: y = 9x + 19",
+      "question": "Evaluate: If x = 2, find x^2 + 2x + 1",
       "options": {
-        "a": "x = (y - 199)/9",
-        "b": "x = (y - 19)/9",
-        "c": "x = (y - 110)/10",
-        "d": "x = (y - 149)/9"
+        "A": "9",
+        "B": "13",
+        "C": "7",
+        "D": "6"
       },
-      "answer": "b",
-      "subtopic": "changing subject"
+      "answer": "A",
+      "subtopic": "Algebra"
     },
     {
       "id": 29,
-      "question": "Make x the subject: y = 9x + 19",
+      "question": "Simplify: 5(x + 4) - 4x",
       "options": {
-        "a": "x = (y - 110)/10",
-        "b": "x = (y - 114)/14",
-        "c": "x = (y - 19)/9",
-        "d": "x = (y - 179)/9"
+        "A": "5x + 16 = 5x + 16",
+        "B": "5x + 0",
+        "C": "5x + 24",
+        "D": "5x + 0"
       },
-      "answer": "c",
-      "subtopic": "changing subject"
+      "answer": "A",
+      "subtopic": "Algebra"
     },
     {
       "id": 30,
-      "question": "Factorize: x\u00b2 + 8x + 15",
+      "question": "Simplify: 2(x + 2) - 4x",
       "options": {
-        "a": "(x + 3)(x + 11)",
-        "b": "(x + 3)(x + 18)",
-        "c": "(x + 3)(x + 5)",
-        "d": "(x + 10)(x + 5)"
+        "A": "2x + -2",
+        "B": "2x + 0 = 2x + 0",
+        "C": "2x + 8",
+        "D": "2x + 2"
       },
-      "answer": "c",
-      "subtopic": "factorization"
+      "answer": "B",
+      "subtopic": "Algebra"
     },
     {
       "id": 31,
-      "question": "Expand: (x + 9)(x + 9)",
+      "question": "Expand: (x + 10)^2",
       "options": {
-        "a": "x\u00b2 + 198x + 819",
-        "b": "x\u00b2 + 111x + 111",
-        "c": "x\u00b2 + 18x + 81",
-        "d": "x\u00b2 + 116x + 161"
+        "A": "x^2 + 20x + 100",
+        "B": "x^2 + 100",
+        "C": "x^2 + 10x + 100",
+        "D": "x^2 + 20x"
       },
-      "answer": "c",
-      "subtopic": "expansion"
+      "answer": "A",
+      "subtopic": "Algebra"
     },
     {
       "id": 32,
-      "question": "Expand: (x + 9)(x + 9)",
+      "question": "Evaluate: If x = 8, find x^2 + 2x + 1",
       "options": {
-        "a": "x\u00b2 + 113x + 131",
-        "b": "x\u00b2 + 18x + 81",
-        "c": "x\u00b2 + 117x + 171",
-        "d": "x\u00b2 + 148x + 814"
+        "A": "79",
+        "B": "81",
+        "C": "84",
+        "D": "83"
       },
-      "answer": "b",
-      "subtopic": "expansion"
+      "answer": "B",
+      "subtopic": "Algebra"
     },
     {
       "id": 33,
-      "question": "Factorize: x\u00b2 + 13x + 40",
+      "question": "Factorize: x^2 + 15x + 56",
       "options": {
-        "a": "(x + 5)(x + 8)",
-        "b": "(x + 15)(x + 8)",
-        "c": "(x + 13)(x + 8)",
-        "d": "(x + 17)(x + 8)"
+        "A": "(x + 7)(x - 8)",
+        "B": "(x + 7)(x + 8)",
+        "C": "(x - 7)(x + 8)",
+        "D": "(x - 7)(x - 8)"
       },
-      "answer": "a",
-      "subtopic": "factorization"
+      "answer": "B",
+      "subtopic": "Algebra"
     },
     {
       "id": 34,
-      "question": "Expand: (x + 9)(x + 9)",
+      "question": "Expand: (x + 10)^2",
       "options": {
-        "a": "x\u00b2 + 112x + 121",
-        "b": "x\u00b2 + 117x + 171",
-        "c": "x\u00b2 + 18x + 81",
-        "d": "x\u00b2 + 108x + 810"
+        "A": "x^2 + 10x + 100",
+        "B": "x^2 + 100",
+        "C": "x^2 + 20x + 100",
+        "D": "x^2 + 20x"
       },
-      "answer": "c",
-      "subtopic": "expansion"
+      "answer": "C",
+      "subtopic": "Algebra"
     },
     {
       "id": 35,
-      "question": "Simplify: 9x + 9x",
+      "question": "Factorize: x^2 + 5x + 4",
       "options": {
-        "a": "118x",
-        "b": "18x",
-        "c": "115x",
-        "d": "112x"
+        "A": "(x + 4)(x + 1)",
+        "B": "(x - 4)(x - 1)",
+        "C": "(x - 4)(x + 1)",
+        "D": "(x + 4)(x - 1)"
       },
-      "answer": "b",
-      "subtopic": "simplifying expressions"
+      "answer": "A",
+      "subtopic": "Algebra"
     },
     {
       "id": 36,
-      "question": "Expand: (x + 9)(x + 9)",
+      "question": "Simplify: 5(x + 4) - 3x",
       "options": {
-        "a": "x\u00b2 + 112x + 121",
-        "b": "x\u00b2 + 115x + 151",
-        "c": "x\u00b2 + 18x + 81",
-        "d": "x\u00b2 + 110x + 101"
+        "A": "5x + -1",
+        "B": "5x + 1",
+        "C": "5x + 17 = 5x + 17",
+        "D": "5x + 23"
       },
-      "answer": "c",
-      "subtopic": "expansion"
+      "answer": "C",
+      "subtopic": "Algebra"
     },
     {
       "id": 37,
-      "question": "Factorize: x\u00b2 + 14x + 48",
+      "question": "Simplify: 3(x + 1) - 2x",
       "options": {
-        "a": "(x + 8)(x + 11)",
-        "b": "(x + 15)(x + 6)",
-        "c": "(x + 8)(x + 17)",
-        "d": "(x + 8)(x + 6)"
+        "A": "3x + -1",
+        "B": "3x + 1",
+        "C": "3x + 1 = 3x + 1",
+        "D": "3x + 5"
       },
-      "answer": "d",
-      "subtopic": "factorization"
+      "answer": "C",
+      "subtopic": "Algebra"
     },
     {
       "id": 38,
-      "question": "Solve: 9x + 19 = 39",
+      "question": "Evaluate: If x = 3, find x^2 + 2x + 1",
       "options": {
-        "a": "x = 2",
-        "b": "x = 17",
-        "c": "x = 10",
-        "d": "x = 13"
+        "A": "13",
+        "B": "19",
+        "C": "18",
+        "D": "16"
       },
-      "answer": "a",
-      "subtopic": "linear equations"
+      "answer": "D",
+      "subtopic": "Algebra"
     },
     {
       "id": 39,
-      "question": "Expand: (x + 9)(x + 9)",
+      "question": "Expand: (x + 1)^2",
       "options": {
-        "a": "x\u00b2 + 120x + 201",
-        "b": "x\u00b2 + 118x + 181",
-        "c": "x\u00b2 + 18x + 81",
-        "d": "x\u00b2 + 113x + 131"
+        "A": "x^2 + 1x + 1",
+        "B": "x^2 + 1",
+        "C": "x^2 + 2x",
+        "D": "x^2 + 2x + 1"
       },
-      "answer": "c",
-      "subtopic": "expansion"
+      "answer": "D",
+      "subtopic": "Algebra"
     },
     {
       "id": 40,
-      "question": "Expand: (x + 9)(x + 9)",
+      "question": "Expand: (x + 3)^2",
       "options": {
-        "a": "x\u00b2 + 119x + 191",
-        "b": "x\u00b2 + 198x + 819",
-        "c": "x\u00b2 + 111x + 111",
-        "d": "x\u00b2 + 18x + 81"
+        "A": "x^2 + 9",
+        "B": "x^2 + 6x + 9",
+        "C": "x^2 + 3x + 9",
+        "D": "x^2 + 6x"
       },
-      "answer": "d",
-      "subtopic": "expansion"
+      "answer": "B",
+      "subtopic": "Algebra"
     },
     {
       "id": 41,
-      "question": "Solve: 9x + 19 = 39",
+      "question": "Evaluate: If x = 10, find x^2 + 2x + 1",
       "options": {
-        "a": "x = 2",
-        "b": "x = 12",
-        "c": "x = 15",
-        "d": "x = 17"
+        "A": "125",
+        "B": "119",
+        "C": "124",
+        "D": "121"
       },
-      "answer": "a",
-      "subtopic": "linear equations"
+      "answer": "D",
+      "subtopic": "Algebra"
     },
     {
       "id": 42,
-      "question": "Solve: 9x + 19 = 39",
+      "question": "Factorize: x^2 + 15x + 50",
       "options": {
-        "a": "x = 12",
-        "b": "x = 15",
-        "c": "x = 2",
-        "d": "x = 19"
+        "A": "(x - 10)(x + 5)",
+        "B": "(x + 10)(x + 5)",
+        "C": "(x + 10)(x - 5)",
+        "D": "(x - 10)(x - 5)"
       },
-      "answer": "c",
-      "subtopic": "linear equations"
+      "answer": "B",
+      "subtopic": "Algebra"
     },
     {
       "id": 43,
-      "question": "Solve: 9x + 19 = 39",
+      "question": "Evaluate: If x = 1, find x^2 + 2x + 1",
       "options": {
-        "a": "x = 17",
-        "b": "x = 10",
-        "c": "x = 19",
-        "d": "x = 2"
+        "A": "4",
+        "B": "7",
+        "C": "8",
+        "D": "6"
       },
-      "answer": "d",
-      "subtopic": "linear equations"
+      "answer": "A",
+      "subtopic": "Algebra"
     },
     {
       "id": 44,
-      "question": "Solve: 9x + 19 = 39",
+      "question": "Expand: (x + 6)^2",
       "options": {
-        "a": "x = 2",
-        "b": "x = 16",
-        "c": "x = 15",
-        "d": "x = 20"
+        "A": "x^2 + 12x + 36",
+        "B": "x^2 + 12x",
+        "C": "x^2 + 36",
+        "D": "x^2 + 6x + 36"
       },
-      "answer": "a",
-      "subtopic": "linear equations"
+      "answer": "A",
+      "subtopic": "Algebra"
     },
     {
       "id": 45,
-      "question": "Factorize: x\u00b2 + 18x + 81",
+      "question": "Factorize: x^2 + 7x + 12",
       "options": {
-        "a": "(x + 18)(x + 18)",
-        "b": "(x + 15)(x + 15)",
-        "c": "(x + 16)(x + 16)",
-        "d": "(x + 9)(x + 9)"
+        "A": "(x - 4)(x - 3)",
+        "B": "(x + 4)(x - 3)",
+        "C": "(x - 4)(x + 3)",
+        "D": "(x + 4)(x + 3)"
       },
-      "answer": "d",
-      "subtopic": "factorization"
+      "answer": "D",
+      "subtopic": "Algebra"
     },
     {
       "id": 46,
-      "question": "Expand: (x + 9)(x + 9)",
+      "question": "Solve for x: 1x + 3 = 39",
       "options": {
-        "a": "x\u00b2 + 188x + 818",
-        "b": "x\u00b2 + 18x + 81",
-        "c": "x\u00b2 + 108x + 810",
-        "d": "x\u00b2 + 118x + 181"
+        "A": "x = 33.25",
+        "B": "x = 36",
+        "C": "x = 35.33",
+        "D": "x = 38.59"
       },
-      "answer": "b",
-      "subtopic": "expansion"
+      "answer": "B",
+      "subtopic": "Algebra"
     },
     {
       "id": 47,
-      "question": "Factorize: x\u00b2 + 17x + 72",
+      "question": "Simplify: 3(x + 2) - 2x",
       "options": {
-        "a": "(x + 9)(x + 11)",
-        "b": "(x + 9)(x + 8)",
-        "c": "(x + 19)(x + 8)",
-        "d": "(x + 17)(x + 8)"
+        "A": "3x + 0",
+        "B": "3x + 4 = 3x + 4",
+        "C": "3x + 8",
+        "D": "3x + 0"
       },
-      "answer": "b",
-      "subtopic": "factorization"
+      "answer": "B",
+      "subtopic": "Algebra"
     },
     {
       "id": 48,
-      "question": "Expand: (x + 9)(x + 9)",
+      "question": "Factorize: x^2 + 11x + 10",
       "options": {
-        "a": "x\u00b2 + 120x + 201",
-        "b": "x\u00b2 + 18x + 81",
-        "c": "x\u00b2 + 208x + 820",
-        "d": "x\u00b2 + 113x + 131"
+        "A": "(x + 1)(x - 10)",
+        "B": "(x - 1)(x - 10)",
+        "C": "(x - 1)(x + 10)",
+        "D": "(x + 1)(x + 10)"
       },
-      "answer": "b",
-      "subtopic": "expansion"
+      "answer": "D",
+      "subtopic": "Algebra"
     },
     {
       "id": 49,
-      "question": "Simplify: 9x + 9x",
+      "question": "Solve for x: 8x + 3 = 10",
       "options": {
-        "a": "117x",
-        "b": "18x",
-        "c": "148x",
-        "d": "208x"
+        "A": "x = 0.88",
+        "B": "x = 1.58",
+        "C": "x = -0.06",
+        "D": "x = 1.18"
       },
-      "answer": "b",
-      "subtopic": "simplifying expressions"
+      "answer": "A",
+      "subtopic": "Algebra"
     },
     {
       "id": 50,
-      "question": "Solve: 9x + 19 = 39",
+      "question": "Expand: (x + 8)^2",
       "options": {
-        "a": "x = 2",
-        "b": "x = 18",
-        "c": "x = 16",
-        "d": "x = 11"
+        "A": "x^2 + 64",
+        "B": "x^2 + 16x",
+        "C": "x^2 + 8x + 64",
+        "D": "x^2 + 16x + 64"
       },
-      "answer": "a",
-      "subtopic": "linear equations"
+      "answer": "D",
+      "subtopic": "Algebra"
     },
     {
       "id": 51,
-      "question": "Factorize: x\u00b2 + 4x + 3",
+      "question": "Factorize: x^2 + 12x + 20",
       "options": {
-        "a": "(x + 1)(x + 14)",
-        "b": "(x + 1)(x + 3)",
-        "c": "(x + 14)(x + 3)",
-        "d": "(x + 1)(x + 12)"
+        "A": "(x - 2)(x + 10)",
+        "B": "(x + 2)(x + 10)",
+        "C": "(x + 2)(x - 10)",
+        "D": "(x - 2)(x - 10)"
       },
-      "answer": "b",
-      "subtopic": "factorization"
+      "answer": "B",
+      "subtopic": "Algebra"
     },
     {
       "id": 52,
-      "question": "Expand: (x + 9)(x + 9)",
+      "question": "Simplify: 5(x + 4) - 1x",
       "options": {
-        "a": "x\u00b2 + 168x + 816",
-        "b": "x\u00b2 + 115x + 151",
-        "c": "x\u00b2 + 138x + 813",
-        "d": "x\u00b2 + 18x + 81"
+        "A": "5x + -3",
+        "B": "5x + 19 = 5x + 19",
+        "C": "5x + 3",
+        "D": "5x + 21"
       },
-      "answer": "d",
-      "subtopic": "expansion"
+      "answer": "B",
+      "subtopic": "Algebra"
     },
     {
       "id": 53,
-      "question": "Expand: (x + 9)(x + 9)",
+      "question": "Solve for x: 2x + 16 = 39",
       "options": {
-        "a": "x\u00b2 + 128x + 812",
-        "b": "x\u00b2 + 117x + 171",
-        "c": "x\u00b2 + 111x + 111",
-        "d": "x\u00b2 + 18x + 81"
+        "A": "x = 9.11",
+        "B": "x = 11.5",
+        "C": "x = 8.7",
+        "D": "x = 9.67"
       },
-      "answer": "d",
-      "subtopic": "expansion"
+      "answer": "B",
+      "subtopic": "Algebra"
     },
     {
       "id": 54,
-      "question": "Solve: 9x + 19 = 39",
+      "question": "Expand: (x + 8)^2",
       "options": {
-        "a": "x = 11",
-        "b": "x = 2",
-        "c": "x = 17",
-        "d": "x = 20"
+        "A": "x^2 + 64",
+        "B": "x^2 + 8x + 64",
+        "C": "x^2 + 16x + 64",
+        "D": "x^2 + 16x"
       },
-      "answer": "b",
-      "subtopic": "linear equations"
+      "answer": "C",
+      "subtopic": "Algebra"
     },
     {
       "id": 55,
-      "question": "Expand: (x + 9)(x + 9)",
+      "question": "Solve for x: 5x + 14 = 33",
       "options": {
-        "a": "x\u00b2 + 158x + 815",
-        "b": "x\u00b2 + 18x + 81",
-        "c": "x\u00b2 + 120x + 201",
-        "d": "x\u00b2 + 111x + 111"
+        "A": "x = 1.35",
+        "B": "x = 8.53",
+        "C": "x = 0.59",
+        "D": "x = 3.8"
       },
-      "answer": "b",
-      "subtopic": "expansion"
+      "answer": "D",
+      "subtopic": "Algebra"
     },
     {
       "id": 56,
-      "question": "Factorize: x\u00b2 + 8x + 15",
+      "question": "Evaluate: If x = 10, find x^2 + 2x + 1",
       "options": {
-        "a": "(x + 5)(x + 10)",
-        "b": "(x + 5)(x + 3)",
-        "c": "(x + 5)(x + 18)",
-        "d": "(x + 14)(x + 3)"
+        "A": "123",
+        "B": "125",
+        "C": "121",
+        "D": "124"
       },
-      "answer": "b",
-      "subtopic": "factorization"
+      "answer": "C",
+      "subtopic": "Algebra"
     },
     {
       "id": 57,
-      "question": "Factorize: x\u00b2 + 10x + 24",
+      "question": "Simplify: 4(x + 9) - 3x",
       "options": {
-        "a": "(x + 4)(x + 6)",
-        "b": "(x + 17)(x + 6)",
-        "c": "(x + 4)(x + 16)",
-        "d": "(x + 4)(x + 17)"
+        "A": "4x + -6",
+        "B": "4x + 33 = 4x + 33",
+        "C": "4x + 6",
+        "D": "4x + 39"
       },
-      "answer": "a",
-      "subtopic": "factorization"
+      "answer": "B",
+      "subtopic": "Algebra"
     },
     {
       "id": 58,
-      "question": "Solve: 9x + 19 = 39",
+      "question": "Factorize: x^2 + 9x + 18",
       "options": {
-        "a": "x = 15",
-        "b": "x = 17",
-        "c": "x = 2",
-        "d": "x = 10"
+        "A": "(x - 3)(x - 6)",
+        "B": "(x + 3)(x - 6)",
+        "C": "(x + 3)(x + 6)",
+        "D": "(x - 3)(x + 6)"
       },
-      "answer": "c",
-      "subtopic": "linear equations"
+      "answer": "C",
+      "subtopic": "Algebra"
     },
     {
       "id": 59,
-      "question": "Make x the subject: y = 9x + 19",
+      "question": "Evaluate: If x = 3, find x^2 + 2x + 1",
       "options": {
-        "a": "x = (y - 19)/9",
-        "b": "x = (y - 169)/9",
-        "c": "x = (y - 119)/9",
-        "d": "x = (y - 120)/20"
+        "A": "18",
+        "B": "13",
+        "C": "16",
+        "D": "19"
       },
-      "answer": "a",
-      "subtopic": "changing subject"
+      "answer": "C",
+      "subtopic": "Algebra"
     },
     {
       "id": 60,
-      "question": "Make x the subject: y = 9x + 19",
+      "question": "Solve for x: 9x + 16 = 38",
       "options": {
-        "a": "x = (y - 114)/14",
-        "b": "x = (y - 189)/9",
-        "c": "x = (y - 111)/11",
-        "d": "x = (y - 19)/9"
+        "A": "x = 7.07",
+        "B": "x = 1.58",
+        "C": "x = 5.71",
+        "D": "x = 2.44"
       },
-      "answer": "d",
-      "subtopic": "changing subject"
+      "answer": "D",
+      "subtopic": "Algebra"
     },
     {
       "id": 61,
-      "question": "Solve: 9x + 19 = 39",
+      "question": "Factorize: x^2 + 12x + 36",
       "options": {
-        "a": "x = 20",
-        "b": "x = 10",
-        "c": "x = 12",
-        "d": "x = 2"
+        "A": "(x + 6)(x + 6)",
+        "B": "(x + 6)(x - 6)",
+        "C": "(x - 6)(x - 6)",
+        "D": "(x - 6)(x + 6)"
       },
-      "answer": "d",
-      "subtopic": "linear equations"
+      "answer": "A",
+      "subtopic": "Algebra"
     },
     {
       "id": 62,
-      "question": "Factorize: x\u00b2 + 7x + 12",
+      "question": "Simplify: 3(x + 6) - 1x",
       "options": {
-        "a": "(x + 4)(x + 14)",
-        "b": "(x + 14)(x + 3)",
-        "c": "(x + 4)(x + 3)",
-        "d": "(x + 10)(x + 3)"
+        "A": "3x + 5",
+        "B": "3x + 19",
+        "C": "3x + 17 = 3x + 17",
+        "D": "3x + -5"
       },
-      "answer": "c",
-      "subtopic": "factorization"
+      "answer": "C",
+      "subtopic": "Algebra"
     },
     {
       "id": 63,
-      "question": "Make x the subject: y = 9x + 19",
+      "question": "Simplify: 4(x + 2) - 5x",
       "options": {
-        "a": "x = (y - 115)/15",
-        "b": "x = (y - 120)/20",
-        "c": "x = (y - 19)/9",
-        "d": "x = (y - 139)/9"
+        "A": "4x + -3",
+        "B": "4x + 3 = 4x + 3",
+        "C": "4x + 13",
+        "D": "4x + 3"
       },
-      "answer": "c",
-      "subtopic": "changing subject"
+      "answer": "B",
+      "subtopic": "Algebra"
     },
     {
       "id": 64,
-      "question": "Solve: 9x + 19 = 39",
+      "question": "Expand: (x + 7)^2",
       "options": {
-        "a": "x = 2",
-        "b": "x = 13",
-        "c": "x = 15",
-        "d": "x = 14"
+        "A": "x^2 + 49",
+        "B": "x^2 + 14x",
+        "C": "x^2 + 7x + 49",
+        "D": "x^2 + 14x + 49"
       },
-      "answer": "a",
-      "subtopic": "linear equations"
+      "answer": "D",
+      "subtopic": "Algebra"
     },
     {
       "id": 65,
-      "question": "Solve: 9x + 19 = 39",
+      "question": "Solve for x: 1x + 7 = 23",
       "options": {
-        "a": "x = 17",
-        "b": "x = 15",
-        "c": "x = 2",
-        "d": "x = 13"
+        "A": "x = 11.13",
+        "B": "x = 16.91",
+        "C": "x = 16",
+        "D": "x = 20.13"
       },
-      "answer": "c",
-      "subtopic": "linear equations"
+      "answer": "C",
+      "subtopic": "Algebra"
     },
     {
       "id": 66,
-      "question": "Make x the subject: y = 9x + 19",
+      "question": "Solve for x: 3x + 20 = 42",
       "options": {
-        "a": "x = (y - 117)/17",
-        "b": "x = (y - 116)/16",
-        "c": "x = (y - 112)/12",
-        "d": "x = (y - 19)/9"
+        "A": "x = 7.11",
+        "B": "x = 10.43",
+        "C": "x = 7.33",
+        "D": "x = 6.39"
       },
-      "answer": "d",
-      "subtopic": "changing subject"
+      "answer": "C",
+      "subtopic": "Algebra"
     },
     {
       "id": 67,
-      "question": "Simplify: 9x + 9x",
+      "question": "Evaluate: If x = 2, find x^2 + 2x + 1",
       "options": {
-        "a": "113x",
-        "b": "138x",
-        "c": "128x",
-        "d": "18x"
+        "A": "11",
+        "B": "6",
+        "C": "9",
+        "D": "12"
       },
-      "answer": "d",
-      "subtopic": "simplifying expressions"
+      "answer": "C",
+      "subtopic": "Algebra"
     },
     {
       "id": 68,
-      "question": "Make x the subject: y = 9x + 19",
+      "question": "Factorize: x^2 + 15x + 54",
       "options": {
-        "a": "x = (y - 19)/9",
-        "b": "x = (y - 149)/9",
-        "c": "x = (y - 119)/19",
-        "d": "x = (y - 112)/12"
+        "A": "(x - 9)(x - 6)",
+        "B": "(x - 9)(x + 6)",
+        "C": "(x + 9)(x + 6)",
+        "D": "(x + 9)(x - 6)"
       },
-      "answer": "a",
-      "subtopic": "changing subject"
+      "answer": "C",
+      "subtopic": "Algebra"
     },
     {
       "id": 69,
-      "question": "Solve: 9x + 19 = 39",
+      "question": "Expand: (x + 10)^2",
       "options": {
-        "a": "x = 2",
-        "b": "x = 11",
-        "c": "x = 14",
-        "d": "x = 16"
+        "A": "x^2 + 20x",
+        "B": "x^2 + 10x + 100",
+        "C": "x^2 + 20x + 100",
+        "D": "x^2 + 100"
       },
-      "answer": "a",
-      "subtopic": "linear equations"
+      "answer": "C",
+      "subtopic": "Algebra"
     },
     {
       "id": 70,
-      "question": "Make x the subject: y = 9x + 19",
+      "question": "Factorize: x^2 + 10x + 24",
       "options": {
-        "a": "x = (y - 118)/18",
-        "b": "x = (y - 115)/15",
-        "c": "x = (y - 19)/9",
-        "d": "x = (y - 119)/19"
+        "A": "(x + 6)(x - 4)",
+        "B": "(x + 6)(x + 4)",
+        "C": "(x - 6)(x - 4)",
+        "D": "(x - 6)(x + 4)"
       },
-      "answer": "c",
-      "subtopic": "changing subject"
+      "answer": "B",
+      "subtopic": "Algebra"
     },
     {
       "id": 71,
-      "question": "Simplify: 9x + 9x",
+      "question": "Factorize: x^2 + 13x + 36",
       "options": {
-        "a": "112x",
-        "b": "118x",
-        "c": "115x",
-        "d": "18x"
+        "A": "(x - 9)(x - 4)",
+        "B": "(x + 9)(x + 4)",
+        "C": "(x + 9)(x - 4)",
+        "D": "(x - 9)(x + 4)"
       },
-      "answer": "d",
-      "subtopic": "simplifying expressions"
+      "answer": "B",
+      "subtopic": "Algebra"
     },
     {
       "id": 72,
-      "question": "Simplify: 9x + 9x",
+      "question": "Solve for x: 7x + 9 = 14",
       "options": {
-        "a": "138x",
-        "b": "108x",
-        "c": "119x",
-        "d": "18x"
+        "A": "x = 4.69",
+        "B": "x = -1.28",
+        "C": "x = 3.5",
+        "D": "x = 0.71"
       },
-      "answer": "d",
-      "subtopic": "simplifying expressions"
+      "answer": "D",
+      "subtopic": "Algebra"
     },
     {
       "id": 73,
-      "question": "Expand: (x + 9)(x + 9)",
+      "question": "Factorize: x^2 + 13x + 40",
       "options": {
-        "a": "x\u00b2 + 158x + 815",
-        "b": "x\u00b2 + 18x + 81",
-        "c": "x\u00b2 + 119x + 191",
-        "d": "x\u00b2 + 198x + 819"
+        "A": "(x + 8)(x + 5)",
+        "B": "(x - 8)(x + 5)",
+        "C": "(x + 8)(x - 5)",
+        "D": "(x - 8)(x - 5)"
       },
-      "answer": "b",
-      "subtopic": "expansion"
+      "answer": "A",
+      "subtopic": "Algebra"
     },
     {
       "id": 74,
-      "question": "Factorize: x\u00b2 + 4x + 3",
+      "question": "Factorize: x^2 + 4x + 3",
       "options": {
-        "a": "(x + 1)(x + 12)",
-        "b": "(x + 1)(x + 3)",
-        "c": "(x + 16)(x + 3)",
-        "d": "(x + 12)(x + 3)"
+        "A": "(x + 1)(x + 3)",
+        "B": "(x + 1)(x - 3)",
+        "C": "(x - 1)(x + 3)",
+        "D": "(x - 1)(x - 3)"
       },
-      "answer": "b",
-      "subtopic": "factorization"
+      "answer": "A",
+      "subtopic": "Algebra"
     },
     {
       "id": 75,
-      "question": "Solve: 9x + 19 = 39",
+      "question": "Expand: (x + 10)^2",
       "options": {
-        "a": "x = 2",
-        "b": "x = 12",
-        "c": "x = 15",
-        "d": "x = 18"
+        "A": "x^2 + 10x + 100",
+        "B": "x^2 + 20x + 100",
+        "C": "x^2 + 100",
+        "D": "x^2 + 20x"
       },
-      "answer": "a",
-      "subtopic": "linear equations"
+      "answer": "B",
+      "subtopic": "Algebra"
     },
     {
       "id": 76,
-      "question": "Simplify: 9x + 9x",
+      "question": "Evaluate: If x = 4, find x^2 + 2x + 1",
       "options": {
-        "a": "178x",
-        "b": "18x",
-        "c": "117x",
-        "d": "128x"
+        "A": "23",
+        "B": "29",
+        "C": "25",
+        "D": "22"
       },
-      "answer": "b",
-      "subtopic": "simplifying expressions"
+      "answer": "C",
+      "subtopic": "Algebra"
     },
     {
       "id": 77,
-      "question": "Make x the subject: y = 9x + 19",
+      "question": "Factorize: x^2 + 18x + 80",
       "options": {
-        "a": "x = (y - 109)/9",
-        "b": "x = (y - 139)/9",
-        "c": "x = (y - 19)/9",
-        "d": "x = (y - 179)/9"
+        "A": "(x + 10)(x - 8)",
+        "B": "(x + 10)(x + 8)",
+        "C": "(x - 10)(x + 8)",
+        "D": "(x - 10)(x - 8)"
       },
-      "answer": "c",
-      "subtopic": "changing subject"
+      "answer": "B",
+      "subtopic": "Algebra"
     },
     {
       "id": 78,
-      "question": "Expand: (x + 9)(x + 9)",
+      "question": "Solve for x: 2x + 8 = 14",
       "options": {
-        "a": "x\u00b2 + 18x + 81",
-        "b": "x\u00b2 + 158x + 815",
-        "c": "x\u00b2 + 117x + 171",
-        "d": "x\u00b2 + 118x + 811"
+        "A": "x = 3",
+        "B": "x = -1.83",
+        "C": "x = 1.41",
+        "D": "x = -1.58"
       },
-      "answer": "a",
-      "subtopic": "expansion"
+      "answer": "A",
+      "subtopic": "Algebra"
     },
     {
       "id": 79,
-      "question": "Make x the subject: y = 9x + 19",
+      "question": "Factorize: x^2 + 12x + 20",
       "options": {
-        "a": "x = (y - 159)/9",
-        "b": "x = (y - 129)/9",
-        "c": "x = (y - 113)/13",
-        "d": "x = (y - 19)/9"
+        "A": "(x + 10)(x + 2)",
+        "B": "(x - 10)(x + 2)",
+        "C": "(x - 10)(x - 2)",
+        "D": "(x + 10)(x - 2)"
       },
-      "answer": "d",
-      "subtopic": "changing subject"
+      "answer": "A",
+      "subtopic": "Algebra"
     },
     {
       "id": 80,
-      "question": "Expand: (x + 9)(x + 9)",
+      "question": "Expand: (x + 1)^2",
       "options": {
-        "a": "x\u00b2 + 188x + 818",
-        "b": "x\u00b2 + 113x + 131",
-        "c": "x\u00b2 + 18x + 81",
-        "d": "x\u00b2 + 178x + 817"
+        "A": "x^2 + 1x + 1",
+        "B": "x^2 + 2x",
+        "C": "x^2 + 2x + 1",
+        "D": "x^2 + 1"
       },
-      "answer": "c",
-      "subtopic": "expansion"
+      "answer": "C",
+      "subtopic": "Algebra"
     },
     {
       "id": 81,
-      "question": "Solve: 9x + 19 = 39",
+      "question": "Simplify: 1(x + 3) - 2x",
       "options": {
-        "a": "x = 18",
-        "b": "x = 13",
-        "c": "x = 15",
-        "d": "x = 2"
+        "A": "1x + 5",
+        "B": "1x + 1",
+        "C": "1x + -1",
+        "D": "1x + 1 = 1x + 1"
       },
-      "answer": "d",
-      "subtopic": "linear equations"
+      "answer": "D",
+      "subtopic": "Algebra"
     },
     {
       "id": 82,
-      "question": "Expand: (x + 9)(x + 9)",
+      "question": "Simplify: 2(x + 9) - 4x",
       "options": {
-        "a": "x\u00b2 + 18x + 81",
-        "b": "x\u00b2 + 128x + 812",
-        "c": "x\u00b2 + 118x + 811",
-        "d": "x\u00b2 + 115x + 151"
+        "A": "2x + -5",
+        "B": "2x + 22",
+        "C": "2x + 5",
+        "D": "2x + 14 = 2x + 14"
       },
-      "answer": "a",
-      "subtopic": "expansion"
+      "answer": "D",
+      "subtopic": "Algebra"
     },
     {
       "id": 83,
-      "question": "Expand: (x + 9)(x + 9)",
+      "question": "Solve for x: 5x + 17 = 14",
       "options": {
-        "a": "x\u00b2 + 113x + 131",
-        "b": "x\u00b2 + 18x + 81",
-        "c": "x\u00b2 + 112x + 121",
-        "d": "x\u00b2 + 208x + 820"
+        "A": "x = -5.2",
+        "B": "x = -1.69",
+        "C": "x = -1.26",
+        "D": "x = -0.6"
       },
-      "answer": "b",
-      "subtopic": "expansion"
+      "answer": "D",
+      "subtopic": "Algebra"
     },
     {
       "id": 84,
-      "question": "Expand: (x + 9)(x + 9)",
+      "question": "Factorize: x^2 + 10x + 16",
       "options": {
-        "a": "x\u00b2 + 18x + 81",
-        "b": "x\u00b2 + 198x + 819",
-        "c": "x\u00b2 + 138x + 813",
-        "d": "x\u00b2 + 118x + 811"
+        "A": "(x + 8)(x - 2)",
+        "B": "(x - 8)(x + 2)",
+        "C": "(x - 8)(x - 2)",
+        "D": "(x + 8)(x + 2)"
       },
-      "answer": "a",
-      "subtopic": "expansion"
+      "answer": "D",
+      "subtopic": "Algebra"
     },
     {
       "id": 85,
-      "question": "Factorize: x\u00b2 + 10x + 9",
+      "question": "Factorize: x^2 + 10x + 16",
       "options": {
-        "a": "(x + 1)(x + 20)",
-        "b": "(x + 19)(x + 9)",
-        "c": "(x + 1)(x + 9)",
-        "d": "(x + 12)(x + 9)"
+        "A": "(x + 8)(x - 2)",
+        "B": "(x - 8)(x + 2)",
+        "C": "(x - 8)(x - 2)",
+        "D": "(x + 8)(x + 2)"
       },
-      "answer": "c",
-      "subtopic": "factorization"
+      "answer": "D",
+      "subtopic": "Algebra"
     },
     {
       "id": 86,
-      "question": "Solve: 9x + 19 = 39",
+      "question": "Factorize: x^2 + 7x + 10",
       "options": {
-        "a": "x = 14",
-        "b": "x = 10",
-        "c": "x = 19",
-        "d": "x = 2"
+        "A": "(x + 2)(x + 5)",
+        "B": "(x + 2)(x - 5)",
+        "C": "(x - 2)(x + 5)",
+        "D": "(x - 2)(x - 5)"
       },
-      "answer": "d",
-      "subtopic": "linear equations"
+      "answer": "A",
+      "subtopic": "Algebra"
     },
     {
       "id": 87,
-      "question": "Solve: 9x + 19 = 39",
+      "question": "Factorize: x^2 + 15x + 50",
       "options": {
-        "a": "x = 20",
-        "b": "x = 14",
-        "c": "x = 2",
-        "d": "x = 13"
+        "A": "(x - 5)(x + 10)",
+        "B": "(x - 5)(x - 10)",
+        "C": "(x + 5)(x + 10)",
+        "D": "(x + 5)(x - 10)"
       },
-      "answer": "c",
-      "subtopic": "linear equations"
+      "answer": "C",
+      "subtopic": "Algebra"
     },
     {
       "id": 88,
-      "question": "Expand: (x + 9)(x + 9)",
+      "question": "Evaluate: If x = 5, find x^2 + 2x + 1",
       "options": {
-        "a": "x\u00b2 + 18x + 81",
-        "b": "x\u00b2 + 108x + 810",
-        "c": "x\u00b2 + 118x + 181",
-        "d": "x\u00b2 + 198x + 819"
+        "A": "38",
+        "B": "39",
+        "C": "36",
+        "D": "34"
       },
-      "answer": "a",
-      "subtopic": "expansion"
+      "answer": "C",
+      "subtopic": "Algebra"
     },
     {
       "id": 89,
-      "question": "Simplify: 9x + 9x",
+      "question": "Factorize: x^2 + 10x + 24",
       "options": {
-        "a": "208x",
-        "b": "115x",
-        "c": "188x",
-        "d": "18x"
+        "A": "(x - 4)(x + 6)",
+        "B": "(x - 4)(x - 6)",
+        "C": "(x + 4)(x + 6)",
+        "D": "(x + 4)(x - 6)"
       },
-      "answer": "d",
-      "subtopic": "simplifying expressions"
+      "answer": "C",
+      "subtopic": "Algebra"
     },
     {
       "id": 90,
-      "question": "Solve: 9x + 19 = 39",
+      "question": "Evaluate: If x = 7, find x^2 + 2x + 1",
       "options": {
-        "a": "x = 16",
-        "b": "x = 12",
-        "c": "x = 11",
-        "d": "x = 2"
+        "A": "64",
+        "B": "61",
+        "C": "66",
+        "D": "68"
       },
-      "answer": "d",
-      "subtopic": "linear equations"
+      "answer": "A",
+      "subtopic": "Algebra"
     },
     {
       "id": 91,
-      "question": "Solve: 9x + 19 = 39",
+      "question": "Evaluate: If x = 5, find x^2 + 2x + 1",
       "options": {
-        "a": "x = 2",
-        "b": "x = 11",
-        "c": "x = 12",
-        "d": "x = 14"
+        "A": "36",
+        "B": "33",
+        "C": "40",
+        "D": "38"
       },
-      "answer": "a",
-      "subtopic": "linear equations"
+      "answer": "A",
+      "subtopic": "Algebra"
     },
     {
       "id": 92,
-      "question": "Simplify: 9x + 9x",
+      "question": "Evaluate: If x = 1, find x^2 + 2x + 1",
       "options": {
-        "a": "18x",
-        "b": "158x",
-        "c": "128x",
-        "d": "108x"
+        "A": "4",
+        "B": "2",
+        "C": "6",
+        "D": "1"
       },
-      "answer": "a",
-      "subtopic": "simplifying expressions"
+      "answer": "A",
+      "subtopic": "Algebra"
     },
     {
       "id": 93,
-      "question": "Solve: 9x + 19 = 39",
+      "question": "Evaluate: If x = 2, find x^2 + 2x + 1",
       "options": {
-        "a": "x = 13",
-        "b": "x = 2",
-        "c": "x = 19",
-        "d": "x = 14"
+        "A": "13",
+        "B": "9",
+        "C": "12",
+        "D": "11"
       },
-      "answer": "b",
-      "subtopic": "linear equations"
+      "answer": "B",
+      "subtopic": "Algebra"
     },
     {
       "id": 94,
-      "question": "Factorize: x\u00b2 + 10x + 16",
+      "question": "Solve for x: 4x + 3 = 23",
       "options": {
-        "a": "(x + 16)(x + 2)",
-        "b": "(x + 8)(x + 11)",
-        "c": "(x + 8)(x + 2)",
-        "d": "(x + 8)(x + 10)"
+        "A": "x = 5",
+        "B": "x = 7.4",
+        "C": "x = 8.58",
+        "D": "x = 2.95"
       },
-      "answer": "c",
-      "subtopic": "factorization"
+      "answer": "A",
+      "subtopic": "Algebra"
     },
     {
       "id": 95,
-      "question": "Simplify: 9x + 9x",
+      "question": "Evaluate: If x = 3, find x^2 + 2x + 1",
       "options": {
-        "a": "18x",
-        "b": "148x",
-        "c": "117x",
-        "d": "178x"
+        "A": "20",
+        "B": "16",
+        "C": "14",
+        "D": "18"
       },
-      "answer": "a",
-      "subtopic": "simplifying expressions"
+      "answer": "B",
+      "subtopic": "Algebra"
     },
     {
       "id": 96,
-      "question": "Simplify: 9x + 9x",
+      "question": "Expand: (x + 3)^2",
       "options": {
-        "a": "18x",
-        "b": "118x",
-        "c": "128x",
-        "d": "115x"
+        "A": "x^2 + 6x",
+        "B": "x^2 + 9",
+        "C": "x^2 + 6x + 9",
+        "D": "x^2 + 3x + 9"
       },
-      "answer": "a",
-      "subtopic": "simplifying expressions"
+      "answer": "C",
+      "subtopic": "Algebra"
     },
     {
       "id": 97,
-      "question": "Make x the subject: y = 9x + 19",
+      "question": "Factorize: x^2 + 15x + 54",
       "options": {
-        "a": "x = (y - 109)/9",
-        "b": "x = (y - 19)/9",
-        "c": "x = (y - 114)/14",
-        "d": "x = (y - 110)/10"
+        "A": "(x + 6)(x + 9)",
+        "B": "(x + 6)(x - 9)",
+        "C": "(x - 6)(x + 9)",
+        "D": "(x - 6)(x - 9)"
       },
-      "answer": "b",
-      "subtopic": "changing subject"
+      "answer": "A",
+      "subtopic": "Algebra"
     },
     {
       "id": 98,
-      "question": "Factorize: x\u00b2 + 8x + 15",
+      "question": "Evaluate: If x = 2, find x^2 + 2x + 1",
       "options": {
-        "a": "(x + 10)(x + 5)",
-        "b": "(x + 3)(x + 5)",
-        "c": "(x + 3)(x + 14)",
-        "d": "(x + 17)(x + 5)"
+        "A": "12",
+        "B": "9",
+        "C": "6",
+        "D": "11"
       },
-      "answer": "b",
-      "subtopic": "factorization"
+      "answer": "B",
+      "subtopic": "Algebra"
     },
     {
       "id": 99,
-      "question": "Make x the subject: y = 9x + 19",
+      "question": "Simplify: 4(x + 3) - 5x",
       "options": {
-        "a": "x = (y - 149)/9",
-        "b": "x = (y - 139)/9",
-        "c": "x = (y - 19)/9",
-        "d": "x = (y - 209)/9"
+        "A": "4x + 7 = 4x + 7",
+        "B": "4x + 2",
+        "C": "4x + -2",
+        "D": "4x + 17"
       },
-      "answer": "c",
-      "subtopic": "changing subject"
+      "answer": "A",
+      "subtopic": "Algebra"
     },
     {
       "id": 100,
-      "question": "Solve: 9x + 19 = 39",
+      "question": "Evaluate: If x = 10, find x^2 + 2x + 1",
       "options": {
-        "a": "x = 12",
-        "b": "x = 16",
-        "c": "x = 19",
-        "d": "x = 2"
+        "A": "119",
+        "B": "118",
+        "C": "125",
+        "D": "121"
       },
-      "answer": "d",
-      "subtopic": "linear equations"
+      "answer": "D",
+      "subtopic": "Algebra"
     },
     {
       "id": 101,
-      "question": "Simplify: 9x + 9x",
+      "question": "Expand: (x + 7)^2",
       "options": {
-        "a": "116x",
-        "b": "18x",
-        "c": "128x",
-        "d": "112x"
+        "A": "x^2 + 49",
+        "B": "x^2 + 7x + 49",
+        "C": "x^2 + 14x",
+        "D": "x^2 + 14x + 49"
       },
-      "answer": "b",
-      "subtopic": "simplifying expressions"
+      "answer": "D",
+      "subtopic": "Algebra"
     },
     {
       "id": 102,
-      "question": "Factorize: x\u00b2 + 6x + 8",
+      "question": "Expand: (x + 3)^2",
       "options": {
-        "a": "(x + 10)(x + 2)",
-        "b": "(x + 4)(x + 16)",
-        "c": "(x + 4)(x + 14)",
-        "d": "(x + 4)(x + 2)"
+        "A": "x^2 + 9",
+        "B": "x^2 + 6x + 9",
+        "C": "x^2 + 6x",
+        "D": "x^2 + 3x + 9"
       },
-      "answer": "d",
-      "subtopic": "factorization"
+      "answer": "B",
+      "subtopic": "Algebra"
     },
     {
       "id": 103,
-      "question": "Make x the subject: y = 9x + 19",
+      "question": "Solve for x: 3x + 20 = 17",
       "options": {
-        "a": "x = (y - 120)/20",
-        "b": "x = (y - 139)/9",
-        "c": "x = (y - 19)/9",
-        "d": "x = (y - 118)/18"
+        "A": "x = -1",
+        "B": "x = -4.76",
+        "C": "x = -4.05",
+        "D": "x = -1.74"
       },
-      "answer": "c",
-      "subtopic": "changing subject"
+      "answer": "A",
+      "subtopic": "Algebra"
     },
     {
       "id": 104,
-      "question": "Make x the subject: y = 9x + 19",
+      "question": "Solve for x: 10x + 19 = 21",
       "options": {
-        "a": "x = (y - 19)/9",
-        "b": "x = (y - 118)/18",
-        "c": "x = (y - 110)/10",
-        "d": "x = (y - 117)/17"
+        "A": "x = 3.28",
+        "B": "x = 4.43",
+        "C": "x = -2.44",
+        "D": "x = 0.2"
       },
-      "answer": "a",
-      "subtopic": "changing subject"
+      "answer": "D",
+      "subtopic": "Algebra"
     },
     {
       "id": 105,
-      "question": "Make x the subject: y = 9x + 19",
+      "question": "Evaluate: If x = 4, find x^2 + 2x + 1",
       "options": {
-        "a": "x = (y - 159)/9",
-        "b": "x = (y - 169)/9",
-        "c": "x = (y - 19)/9",
-        "d": "x = (y - 112)/12"
+        "A": "28",
+        "B": "27",
+        "C": "25",
+        "D": "23"
       },
-      "answer": "c",
-      "subtopic": "changing subject"
+      "answer": "C",
+      "subtopic": "Algebra"
     },
     {
       "id": 106,
-      "question": "Factorize: x\u00b2 + 5x + 4",
+      "question": "Solve for x: 7x + 1 = 49",
       "options": {
-        "a": "(x + 13)(x + 1)",
-        "b": "(x + 4)(x + 1)",
-        "c": "(x + 12)(x + 1)",
-        "d": "(x + 4)(x + 20)"
+        "A": "x = 2.45",
+        "B": "x = 11.53",
+        "C": "x = 6.86",
+        "D": "x = 11.08"
       },
-      "answer": "b",
-      "subtopic": "factorization"
+      "answer": "C",
+      "subtopic": "Algebra"
     },
     {
       "id": 107,
-      "question": "Expand: (x + 9)(x + 9)",
+      "question": "Expand: (x + 1)^2",
       "options": {
-        "a": "x\u00b2 + 115x + 151",
-        "b": "x\u00b2 + 18x + 81",
-        "c": "x\u00b2 + 113x + 131",
-        "d": "x\u00b2 + 188x + 818"
+        "A": "x^2 + 2x + 1",
+        "B": "x^2 + 2x",
+        "C": "x^2 + 1x + 1",
+        "D": "x^2 + 1"
       },
-      "answer": "b",
-      "subtopic": "expansion"
+      "answer": "A",
+      "subtopic": "Algebra"
     },
     {
       "id": 108,
-      "question": "Simplify: 9x + 9x",
+      "question": "Solve for x: 1x + 12 = 17",
       "options": {
-        "a": "117x",
-        "b": "18x",
-        "c": "110x",
-        "d": "128x"
+        "A": "x = 1.11",
+        "B": "x = 8.98",
+        "C": "x = 5",
+        "D": "x = 5.52"
       },
-      "answer": "b",
-      "subtopic": "simplifying expressions"
+      "answer": "C",
+      "subtopic": "Algebra"
     },
     {
       "id": 109,
-      "question": "Solve: 9x + 19 = 39",
+      "question": "Solve for x: 8x + 4 = 45",
       "options": {
-        "a": "x = 2",
-        "b": "x = 19",
-        "c": "x = 10",
-        "d": "x = 15"
+        "A": "x = 0.91",
+        "B": "x = 7.5",
+        "C": "x = 5.12",
+        "D": "x = 2.61"
       },
-      "answer": "a",
-      "subtopic": "linear equations"
+      "answer": "C",
+      "subtopic": "Algebra"
     },
     {
       "id": 110,
-      "question": "Solve: 9x + 19 = 39",
+      "question": "Factorize: x^2 + 9x + 8",
       "options": {
-        "a": "x = 19",
-        "b": "x = 2",
-        "c": "x = 14",
-        "d": "x = 20"
+        "A": "(x + 1)(x + 8)",
+        "B": "(x - 1)(x + 8)",
+        "C": "(x - 1)(x - 8)",
+        "D": "(x + 1)(x - 8)"
       },
-      "answer": "b",
-      "subtopic": "linear equations"
+      "answer": "A",
+      "subtopic": "Algebra"
     },
     {
       "id": 111,
-      "question": "Expand: (x + 9)(x + 9)",
+      "question": "Simplify: 5(x + 1) - 5x",
       "options": {
-        "a": "x\u00b2 + 128x + 812",
-        "b": "x\u00b2 + 120x + 201",
-        "c": "x\u00b2 + 18x + 81",
-        "d": "x\u00b2 + 117x + 171"
+        "A": "5x + 10",
+        "B": "5x + 0 = 5x + 0",
+        "C": "5x + -4",
+        "D": "5x + 4"
       },
-      "answer": "c",
-      "subtopic": "expansion"
+      "answer": "B",
+      "subtopic": "Algebra"
     },
     {
       "id": 112,
-      "question": "Simplify: 9x + 9x",
+      "question": "Factorize: x^2 + 7x + 6",
       "options": {
-        "a": "18x",
-        "b": "158x",
-        "c": "114x",
-        "d": "113x"
+        "A": "(x + 6)(x - 1)",
+        "B": "(x - 6)(x - 1)",
+        "C": "(x + 6)(x + 1)",
+        "D": "(x - 6)(x + 1)"
       },
-      "answer": "a",
-      "subtopic": "simplifying expressions"
+      "answer": "C",
+      "subtopic": "Algebra"
     },
     {
       "id": 113,
-      "question": "Factorize: x\u00b2 + 7x + 10",
+      "question": "Factorize: x^2 + 8x + 16",
       "options": {
-        "a": "(x + 2)(x + 12)",
-        "b": "(x + 14)(x + 5)",
-        "c": "(x + 11)(x + 5)",
-        "d": "(x + 2)(x + 5)"
+        "A": "(x - 4)(x + 4)",
+        "B": "(x + 4)(x + 4)",
+        "C": "(x - 4)(x - 4)",
+        "D": "(x + 4)(x - 4)"
       },
-      "answer": "d",
-      "subtopic": "factorization"
+      "answer": "B",
+      "subtopic": "Algebra"
     },
     {
       "id": 114,
-      "question": "Expand: (x + 9)(x + 9)",
+      "question": "Expand: (x + 7)^2",
       "options": {
-        "a": "x\u00b2 + 18x + 81",
-        "b": "x\u00b2 + 117x + 171",
-        "c": "x\u00b2 + 178x + 817",
-        "d": "x\u00b2 + 118x + 811"
+        "A": "x^2 + 14x + 49",
+        "B": "x^2 + 7x + 49",
+        "C": "x^2 + 49",
+        "D": "x^2 + 14x"
       },
-      "answer": "a",
-      "subtopic": "expansion"
+      "answer": "A",
+      "subtopic": "Algebra"
     },
     {
       "id": 115,
-      "question": "Simplify: 9x + 9x",
+      "question": "Factorize: x^2 + 15x + 50",
       "options": {
-        "a": "138x",
-        "b": "118x",
-        "c": "18x",
-        "d": "119x"
+        "A": "(x + 5)(x - 10)",
+        "B": "(x - 5)(x - 10)",
+        "C": "(x - 5)(x + 10)",
+        "D": "(x + 5)(x + 10)"
       },
-      "answer": "c",
-      "subtopic": "simplifying expressions"
+      "answer": "D",
+      "subtopic": "Algebra"
     },
     {
       "id": 116,
-      "question": "Solve: 9x + 19 = 39",
+      "question": "Factorize: x^2 + 14x + 40",
       "options": {
-        "a": "x = 13",
-        "b": "x = 18",
-        "c": "x = 2",
-        "d": "x = 20"
+        "A": "(x - 4)(x - 10)",
+        "B": "(x - 4)(x + 10)",
+        "C": "(x + 4)(x + 10)",
+        "D": "(x + 4)(x - 10)"
       },
-      "answer": "c",
-      "subtopic": "linear equations"
+      "answer": "C",
+      "subtopic": "Algebra"
     },
     {
       "id": 117,
-      "question": "Make x the subject: y = 9x + 19",
+      "question": "Simplify: 5(x + 9) - 5x",
       "options": {
-        "a": "x = (y - 149)/9",
-        "b": "x = (y - 199)/9",
-        "c": "x = (y - 169)/9",
-        "d": "x = (y - 19)/9"
+        "A": "5x + 4",
+        "B": "5x + 50",
+        "C": "5x + -4",
+        "D": "5x + 40 = 5x + 40"
       },
-      "answer": "d",
-      "subtopic": "changing subject"
+      "answer": "D",
+      "subtopic": "Algebra"
     },
     {
       "id": 118,
-      "question": "Solve: 9x + 19 = 39",
+      "question": "Solve for x: 3x + 14 = 33",
       "options": {
-        "a": "x = 10",
-        "b": "x = 2",
-        "c": "x = 17",
-        "d": "x = 19"
+        "A": "x = 4.31",
+        "B": "x = 5.94",
+        "C": "x = 9.18",
+        "D": "x = 6.33"
       },
-      "answer": "b",
-      "subtopic": "linear equations"
+      "answer": "D",
+      "subtopic": "Algebra"
     },
     {
       "id": 119,
-      "question": "Factorize: x\u00b2 + 15x + 56",
+      "question": "Solve for x: 2x + 11 = 10",
       "options": {
-        "a": "(x + 7)(x + 8)",
-        "b": "(x + 7)(x + 10)",
-        "c": "(x + 16)(x + 8)",
-        "d": "(x + 10)(x + 8)"
+        "A": "x = -0.5",
+        "B": "x = 1.59",
+        "C": "x = -0.78",
+        "D": "x = 4.22"
       },
-      "answer": "a",
-      "subtopic": "factorization"
+      "answer": "A",
+      "subtopic": "Algebra"
     },
     {
       "id": 120,
-      "question": "Simplify: 9x + 9x",
+      "question": "Expand: (x + 8)^2",
       "options": {
-        "a": "114x",
-        "b": "119x",
-        "c": "168x",
-        "d": "18x"
+        "A": "x^2 + 64",
+        "B": "x^2 + 8x + 64",
+        "C": "x^2 + 16x",
+        "D": "x^2 + 16x + 64"
       },
-      "answer": "d",
-      "subtopic": "simplifying expressions"
+      "answer": "D",
+      "subtopic": "Algebra"
     },
     {
       "id": 121,
-      "question": "Expand: (x + 9)(x + 9)",
+      "question": "Solve for x: 1x + 11 = 40",
       "options": {
-        "a": "x\u00b2 + 18x + 81",
-        "b": "x\u00b2 + 119x + 191",
-        "c": "x\u00b2 + 128x + 812",
-        "d": "x\u00b2 + 148x + 814"
+        "A": "x = 33.66",
+        "B": "x = 32.58",
+        "C": "x = 30.67",
+        "D": "x = 29"
       },
-      "answer": "a",
-      "subtopic": "expansion"
+      "answer": "D",
+      "subtopic": "Algebra"
     },
     {
       "id": 122,
-      "question": "Make x the subject: y = 9x + 19",
+      "question": "Expand: (x + 1)^2",
       "options": {
-        "a": "x = (y - 129)/9",
-        "b": "x = (y - 19)/9",
-        "c": "x = (y - 159)/9",
-        "d": "x = (y - 109)/9"
+        "A": "x^2 + 2x + 1",
+        "B": "x^2 + 2x",
+        "C": "x^2 + 1x + 1",
+        "D": "x^2 + 1"
       },
-      "answer": "b",
-      "subtopic": "changing subject"
+      "answer": "A",
+      "subtopic": "Algebra"
     },
     {
       "id": 123,
-      "question": "Make x the subject: y = 9x + 19",
+      "question": "Expand: (x + 10)^2",
       "options": {
-        "a": "x = (y - 159)/9",
-        "b": "x = (y - 149)/9",
-        "c": "x = (y - 19)/9",
-        "d": "x = (y - 111)/11"
+        "A": "x^2 + 20x + 100",
+        "B": "x^2 + 20x",
+        "C": "x^2 + 10x + 100",
+        "D": "x^2 + 100"
       },
-      "answer": "c",
-      "subtopic": "changing subject"
+      "answer": "A",
+      "subtopic": "Algebra"
     },
     {
       "id": 124,
-      "question": "Simplify: 9x + 9x",
+      "question": "Expand: (x + 2)^2",
       "options": {
-        "a": "158x",
-        "b": "178x",
-        "c": "18x",
-        "d": "119x"
+        "A": "x^2 + 4",
+        "B": "x^2 + 2x + 4",
+        "C": "x^2 + 4x",
+        "D": "x^2 + 4x + 4"
       },
-      "answer": "c",
-      "subtopic": "simplifying expressions"
+      "answer": "D",
+      "subtopic": "Algebra"
     },
     {
       "id": 125,
-      "question": "Factorize: x\u00b2 + 13x + 42",
+      "question": "Solve for x: 4x + 14 = 21",
       "options": {
-        "a": "(x + 6)(x + 7)",
-        "b": "(x + 6)(x + 14)",
-        "c": "(x + 6)(x + 19)",
-        "d": "(x + 18)(x + 7)"
+        "A": "x = -1.69",
+        "B": "x = 6.18",
+        "C": "x = 1.75",
+        "D": "x = 4.82"
       },
-      "answer": "a",
-      "subtopic": "factorization"
+      "answer": "C",
+      "subtopic": "Algebra"
     },
     {
       "id": 126,
-      "question": "Simplify: 9x + 9x",
+      "question": "Solve for x: 10x + 19 = 28",
       "options": {
-        "a": "115x",
-        "b": "112x",
-        "c": "18x",
-        "d": "118x"
+        "A": "x = 0.9",
+        "B": "x = 3.69",
+        "C": "x = 3.97",
+        "D": "x = -0.78"
       },
-      "answer": "c",
-      "subtopic": "simplifying expressions"
+      "answer": "A",
+      "subtopic": "Algebra"
     },
     {
       "id": 127,
-      "question": "Factorize: x\u00b2 + 13x + 42",
+      "question": "Factorize: x^2 + 14x + 40",
       "options": {
-        "a": "(x + 6)(x + 7)",
-        "b": "(x + 6)(x + 19)",
-        "c": "(x + 6)(x + 16)",
-        "d": "(x + 16)(x + 7)"
+        "A": "(x - 10)(x + 4)",
+        "B": "(x + 10)(x - 4)",
+        "C": "(x - 10)(x - 4)",
+        "D": "(x + 10)(x + 4)"
       },
-      "answer": "a",
-      "subtopic": "factorization"
+      "answer": "D",
+      "subtopic": "Algebra"
     },
     {
       "id": 128,
-      "question": "Factorize: x\u00b2 + 14x + 48",
+      "question": "Factorize: x^2 + 11x + 28",
       "options": {
-        "a": "(x + 8)(x + 10)",
-        "b": "(x + 13)(x + 6)",
-        "c": "(x + 8)(x + 11)",
-        "d": "(x + 8)(x + 6)"
+        "A": "(x + 7)(x - 4)",
+        "B": "(x + 7)(x + 4)",
+        "C": "(x - 7)(x + 4)",
+        "D": "(x - 7)(x - 4)"
       },
-      "answer": "d",
-      "subtopic": "factorization"
+      "answer": "B",
+      "subtopic": "Algebra"
     },
     {
       "id": 129,
-      "question": "Expand: (x + 9)(x + 9)",
+      "question": "Expand: (x + 6)^2",
       "options": {
-        "a": "x\u00b2 + 18x + 81",
-        "b": "x\u00b2 + 116x + 161",
-        "c": "x\u00b2 + 138x + 813",
-        "d": "x\u00b2 + 113x + 131"
+        "A": "x^2 + 36",
+        "B": "x^2 + 6x + 36",
+        "C": "x^2 + 12x + 36",
+        "D": "x^2 + 12x"
       },
-      "answer": "a",
-      "subtopic": "expansion"
+      "answer": "C",
+      "subtopic": "Algebra"
     },
     {
       "id": 130,
-      "question": "Factorize: x\u00b2 + 6x + 8",
+      "question": "Solve for x: 4x + 15 = 28",
       "options": {
-        "a": "(x + 4)(x + 17)",
-        "b": "(x + 4)(x + 18)",
-        "c": "(x + 15)(x + 2)",
-        "d": "(x + 4)(x + 2)"
+        "A": "x = 0.69",
+        "B": "x = 3.25",
+        "C": "x = 5.1",
+        "D": "x = -0.28"
       },
-      "answer": "d",
-      "subtopic": "factorization"
+      "answer": "B",
+      "subtopic": "Algebra"
     },
     {
       "id": 131,
-      "question": "Expand: (x + 9)(x + 9)",
+      "question": "Factorize: x^2 + 12x + 20",
       "options": {
-        "a": "x\u00b2 + 120x + 201",
-        "b": "x\u00b2 + 18x + 81",
-        "c": "x\u00b2 + 118x + 181",
-        "d": "x\u00b2 + 138x + 813"
+        "A": "(x + 10)(x - 2)",
+        "B": "(x - 10)(x - 2)",
+        "C": "(x + 10)(x + 2)",
+        "D": "(x - 10)(x + 2)"
       },
-      "answer": "b",
-      "subtopic": "expansion"
+      "answer": "C",
+      "subtopic": "Algebra"
     },
     {
       "id": 132,
-      "question": "Make x the subject: y = 9x + 19",
+      "question": "Expand: (x + 1)^2",
       "options": {
-        "a": "x = (y - 199)/9",
-        "b": "x = (y - 19)/9",
-        "c": "x = (y - 159)/9",
-        "d": "x = (y - 120)/20"
+        "A": "x^2 + 1",
+        "B": "x^2 + 2x",
+        "C": "x^2 + 2x + 1",
+        "D": "x^2 + 1x + 1"
       },
-      "answer": "b",
-      "subtopic": "changing subject"
+      "answer": "C",
+      "subtopic": "Algebra"
     },
     {
       "id": 133,
-      "question": "Expand: (x + 9)(x + 9)",
+      "question": "Factorize: x^2 + 8x + 12",
       "options": {
-        "a": "x\u00b2 + 148x + 814",
-        "b": "x\u00b2 + 18x + 81",
-        "c": "x\u00b2 + 110x + 101",
-        "d": "x\u00b2 + 168x + 816"
+        "A": "(x + 2)(x + 6)",
+        "B": "(x - 2)(x - 6)",
+        "C": "(x + 2)(x - 6)",
+        "D": "(x - 2)(x + 6)"
       },
-      "answer": "b",
-      "subtopic": "expansion"
+      "answer": "A",
+      "subtopic": "Algebra"
     },
     {
       "id": 134,
-      "question": "Solve: 9x + 19 = 39",
+      "question": "Factorize: x^2 + 20x + 100",
       "options": {
-        "a": "x = 14",
-        "b": "x = 16",
-        "c": "x = 2",
-        "d": "x = 20"
+        "A": "(x + 10)(x - 10)",
+        "B": "(x + 10)(x + 10)",
+        "C": "(x - 10)(x - 10)",
+        "D": "(x - 10)(x + 10)"
       },
-      "answer": "c",
-      "subtopic": "linear equations"
+      "answer": "B",
+      "subtopic": "Algebra"
     },
     {
       "id": 135,
-      "question": "Expand: (x + 9)(x + 9)",
+      "question": "Evaluate: If x = 6, find x^2 + 2x + 1",
       "options": {
-        "a": "x\u00b2 + 115x + 151",
-        "b": "x\u00b2 + 178x + 817",
-        "c": "x\u00b2 + 118x + 181",
-        "d": "x\u00b2 + 18x + 81"
+        "A": "46",
+        "B": "47",
+        "C": "52",
+        "D": "49"
       },
-      "answer": "d",
-      "subtopic": "expansion"
+      "answer": "D",
+      "subtopic": "Algebra"
     },
     {
       "id": 136,
-      "question": "Make x the subject: y = 9x + 19",
+      "question": "Solve for x: 6x + 9 = 43",
       "options": {
-        "a": "x = (y - 129)/9",
-        "b": "x = (y - 113)/13",
-        "c": "x = (y - 115)/15",
-        "d": "x = (y - 19)/9"
+        "A": "x = 8.88",
+        "B": "x = 1.55",
+        "C": "x = 9.1",
+        "D": "x = 5.67"
       },
-      "answer": "d",
-      "subtopic": "changing subject"
+      "answer": "D",
+      "subtopic": "Algebra"
     },
     {
       "id": 137,
-      "question": "Solve: 9x + 19 = 39",
+      "question": "Simplify: 1(x + 5) - 4x",
       "options": {
-        "a": "x = 18",
-        "b": "x = 2",
-        "c": "x = 14",
-        "d": "x = 17"
+        "A": "1x + -1",
+        "B": "1x + 1 = 1x + 1",
+        "C": "1x + 1",
+        "D": "1x + 9"
       },
-      "answer": "b",
-      "subtopic": "linear equations"
+      "answer": "B",
+      "subtopic": "Algebra"
     },
     {
       "id": 138,
-      "question": "Solve: 9x + 19 = 39",
+      "question": "Expand: (x + 8)^2",
       "options": {
-        "a": "x = 2",
-        "b": "x = 16",
-        "c": "x = 17",
-        "d": "x = 15"
+        "A": "x^2 + 64",
+        "B": "x^2 + 8x + 64",
+        "C": "x^2 + 16x",
+        "D": "x^2 + 16x + 64"
       },
-      "answer": "a",
-      "subtopic": "linear equations"
+      "answer": "D",
+      "subtopic": "Algebra"
     },
     {
       "id": 139,
-      "question": "Make x the subject: y = 9x + 19",
+      "question": "Factorize: x^2 + 16x + 63",
       "options": {
-        "a": "x = (y - 169)/9",
-        "b": "x = (y - 189)/9",
-        "c": "x = (y - 159)/9",
-        "d": "x = (y - 19)/9"
+        "A": "(x + 7)(x - 9)",
+        "B": "(x + 7)(x + 9)",
+        "C": "(x - 7)(x + 9)",
+        "D": "(x - 7)(x - 9)"
       },
-      "answer": "d",
-      "subtopic": "changing subject"
+      "answer": "B",
+      "subtopic": "Algebra"
     },
     {
       "id": 140,
-      "question": "Simplify: 9x + 9x",
+      "question": "Solve for x: 7x + 19 = 40",
       "options": {
-        "a": "18x",
-        "b": "178x",
-        "c": "168x",
-        "d": "120x"
+        "A": "x = 5.14",
+        "B": "x = 2.09",
+        "C": "x = 5.2",
+        "D": "x = 3"
       },
-      "answer": "a",
-      "subtopic": "simplifying expressions"
+      "answer": "D",
+      "subtopic": "Algebra"
     },
     {
       "id": 141,
-      "question": "Factorize: x\u00b2 + 10x + 21",
+      "question": "Factorize: x^2 + 8x + 15",
       "options": {
-        "a": "(x + 20)(x + 3)",
-        "b": "(x + 7)(x + 18)",
-        "c": "(x + 7)(x + 13)",
-        "d": "(x + 7)(x + 3)"
+        "A": "(x - 3)(x - 5)",
+        "B": "(x + 3)(x - 5)",
+        "C": "(x + 3)(x + 5)",
+        "D": "(x - 3)(x + 5)"
       },
-      "answer": "d",
-      "subtopic": "factorization"
+      "answer": "C",
+      "subtopic": "Algebra"
     },
     {
       "id": 142,
-      "question": "Simplify: 9x + 9x",
+      "question": "Expand: (x + 1)^2",
       "options": {
-        "a": "18x",
-        "b": "158x",
-        "c": "118x",
-        "d": "110x"
+        "A": "x^2 + 2x + 1",
+        "B": "x^2 + 1",
+        "C": "x^2 + 2x",
+        "D": "x^2 + 1x + 1"
       },
-      "answer": "a",
-      "subtopic": "simplifying expressions"
+      "answer": "A",
+      "subtopic": "Algebra"
     },
     {
       "id": 143,
-      "question": "Factorize: x\u00b2 + 14x + 45",
+      "question": "Factorize: x^2 + 15x + 50",
       "options": {
-        "a": "(x + 9)(x + 14)",
-        "b": "(x + 9)(x + 16)",
-        "c": "(x + 20)(x + 5)",
-        "d": "(x + 9)(x + 5)"
+        "A": "(x + 5)(x - 10)",
+        "B": "(x - 5)(x + 10)",
+        "C": "(x - 5)(x - 10)",
+        "D": "(x + 5)(x + 10)"
       },
-      "answer": "d",
-      "subtopic": "factorization"
+      "answer": "D",
+      "subtopic": "Algebra"
     },
     {
       "id": 144,
-      "question": "Solve: 9x + 19 = 39",
+      "question": "Evaluate: If x = 1, find x^2 + 2x + 1",
       "options": {
-        "a": "x = 17",
-        "b": "x = 2",
-        "c": "x = 10",
-        "d": "x = 18"
+        "A": "7",
+        "B": "1",
+        "C": "4",
+        "D": "6"
       },
-      "answer": "b",
-      "subtopic": "linear equations"
+      "answer": "C",
+      "subtopic": "Algebra"
     },
     {
       "id": 145,
-      "question": "Simplify: 9x + 9x",
+      "question": "Factorize: x^2 + 12x + 20",
       "options": {
-        "a": "148x",
-        "b": "118x",
-        "c": "18x",
-        "d": "119x"
+        "A": "(x + 10)(x + 2)",
+        "B": "(x - 10)(x + 2)",
+        "C": "(x + 10)(x - 2)",
+        "D": "(x - 10)(x - 2)"
       },
-      "answer": "c",
-      "subtopic": "simplifying expressions"
+      "answer": "A",
+      "subtopic": "Algebra"
     },
     {
       "id": 146,
-      "question": "Simplify: 9x + 9x",
+      "question": "Solve for x: 1x + 4 = 37",
       "options": {
-        "a": "115x",
-        "b": "112x",
-        "c": "110x",
-        "d": "18x"
+        "A": "x = 32.51",
+        "B": "x = 35.62",
+        "C": "x = 28.27",
+        "D": "x = 33"
       },
-      "answer": "d",
-      "subtopic": "simplifying expressions"
+      "answer": "D",
+      "subtopic": "Algebra"
     },
     {
       "id": 147,
-      "question": "Solve: 9x + 19 = 39",
+      "question": "Expand: (x + 7)^2",
       "options": {
-        "a": "x = 2",
-        "b": "x = 19",
-        "c": "x = 18",
-        "d": "x = 10"
+        "A": "x^2 + 14x + 49",
+        "B": "x^2 + 7x + 49",
+        "C": "x^2 + 49",
+        "D": "x^2 + 14x"
       },
-      "answer": "a",
-      "subtopic": "linear equations"
+      "answer": "A",
+      "subtopic": "Algebra"
     },
     {
       "id": 148,
-      "question": "Expand: (x + 9)(x + 9)",
+      "question": "Expand: (x + 2)^2",
       "options": {
-        "a": "x\u00b2 + 138x + 813",
-        "b": "x\u00b2 + 208x + 820",
-        "c": "x\u00b2 + 18x + 81",
-        "d": "x\u00b2 + 118x + 811"
+        "A": "x^2 + 2x + 4",
+        "B": "x^2 + 4",
+        "C": "x^2 + 4x + 4",
+        "D": "x^2 + 4x"
       },
-      "answer": "c",
-      "subtopic": "expansion"
+      "answer": "C",
+      "subtopic": "Algebra"
     },
     {
       "id": 149,
-      "question": "Solve: 9x + 19 = 39",
+      "question": "Expand: (x + 10)^2",
       "options": {
-        "a": "x = 12",
-        "b": "x = 19",
-        "c": "x = 2",
-        "d": "x = 13"
+        "A": "x^2 + 10x + 100",
+        "B": "x^2 + 100",
+        "C": "x^2 + 20x + 100",
+        "D": "x^2 + 20x"
       },
-      "answer": "c",
-      "subtopic": "linear equations"
+      "answer": "C",
+      "subtopic": "Algebra"
     },
     {
       "id": 150,
-      "question": "Expand: (x + 9)(x + 9)",
+      "question": "Expand: (x + 2)^2",
       "options": {
-        "a": "x\u00b2 + 158x + 815",
-        "b": "x\u00b2 + 198x + 819",
-        "c": "x\u00b2 + 18x + 81",
-        "d": "x\u00b2 + 111x + 111"
+        "A": "x^2 + 4",
+        "B": "x^2 + 4x",
+        "C": "x^2 + 4x + 4",
+        "D": "x^2 + 2x + 4"
       },
-      "answer": "c",
-      "subtopic": "expansion"
+      "answer": "C",
+      "subtopic": "Algebra"
     },
     {
       "id": 151,
-      "question": "Simplify: 9x + 9x",
+      "question": "Solve for x: 2x + 15 = 23",
       "options": {
-        "a": "18x",
-        "b": "118x",
-        "c": "168x",
-        "d": "116x"
+        "A": "x = -0.07",
+        "B": "x = 2.81",
+        "C": "x = 4",
+        "D": "x = -0.54"
       },
-      "answer": "a",
-      "subtopic": "simplifying expressions"
+      "answer": "C",
+      "subtopic": "Algebra"
     },
     {
       "id": 152,
-      "question": "Solve: 9x + 19 = 39",
+      "question": "Solve for x: 4x + 14 = 47",
       "options": {
-        "a": "x = 12",
-        "b": "x = 20",
-        "c": "x = 13",
-        "d": "x = 2"
+        "A": "x = 8.25",
+        "B": "x = 7.33",
+        "C": "x = 10.78",
+        "D": "x = 5.28"
       },
-      "answer": "d",
-      "subtopic": "linear equations"
+      "answer": "A",
+      "subtopic": "Algebra"
     },
     {
       "id": 153,
-      "question": "Simplify: 9x + 9x",
+      "question": "Simplify: 2(x + 6) - 5x",
       "options": {
-        "a": "148x",
-        "b": "111x",
-        "c": "118x",
-        "d": "18x"
+        "A": "2x + 17",
+        "B": "2x + 7 = 2x + 7",
+        "C": "2x + 1",
+        "D": "2x + -1"
       },
-      "answer": "d",
-      "subtopic": "simplifying expressions"
+      "answer": "B",
+      "subtopic": "Algebra"
     },
     {
       "id": 154,
-      "question": "Simplify: 9x + 9x",
+      "question": "Simplify: 4(x + 2) - 1x",
       "options": {
-        "a": "18x",
-        "b": "138x",
-        "c": "188x",
-        "d": "116x"
+        "A": "4x + 9",
+        "B": "4x + 7 = 4x + 7",
+        "C": "4x + 1",
+        "D": "4x + -1"
       },
-      "answer": "a",
-      "subtopic": "simplifying expressions"
+      "answer": "B",
+      "subtopic": "Algebra"
     },
     {
       "id": 155,
-      "question": "Solve: 9x + 19 = 39",
+      "question": "Solve for x: 6x + 5 = 25",
       "options": {
-        "a": "x = 17",
-        "b": "x = 18",
-        "c": "x = 2",
-        "d": "x = 14"
+        "A": "x = 4.09",
+        "B": "x = 5.41",
+        "C": "x = 3.33",
+        "D": "x = 7.32"
       },
-      "answer": "c",
-      "subtopic": "linear equations"
+      "answer": "C",
+      "subtopic": "Algebra"
     },
     {
       "id": 156,
-      "question": "Solve: 9x + 19 = 39",
+      "question": "Factorize: x^2 + 16x + 63",
       "options": {
-        "a": "x = 18",
-        "b": "x = 15",
-        "c": "x = 2",
-        "d": "x = 11"
+        "A": "(x - 9)(x + 7)",
+        "B": "(x + 9)(x + 7)",
+        "C": "(x - 9)(x - 7)",
+        "D": "(x + 9)(x - 7)"
       },
-      "answer": "c",
-      "subtopic": "linear equations"
+      "answer": "B",
+      "subtopic": "Algebra"
     },
     {
       "id": 157,
-      "question": "Solve: 9x + 19 = 39",
+      "question": "Evaluate: If x = 5, find x^2 + 2x + 1",
       "options": {
-        "a": "x = 11",
-        "b": "x = 10",
-        "c": "x = 2",
-        "d": "x = 17"
+        "A": "36",
+        "B": "33",
+        "C": "40",
+        "D": "39"
       },
-      "answer": "c",
-      "subtopic": "linear equations"
+      "answer": "A",
+      "subtopic": "Algebra"
     },
     {
       "id": 158,
-      "question": "Factorize: x\u00b2 + 10x + 21",
+      "question": "Simplify: 3(x + 1) - 5x",
       "options": {
-        "a": "(x + 7)(x + 18)",
-        "b": "(x + 7)(x + 3)",
-        "c": "(x + 12)(x + 3)",
-        "d": "(x + 7)(x + 11)"
+        "A": "3x + 8",
+        "B": "3x + -4",
+        "C": "3x + 4",
+        "D": "3x + -2 = 3x + -2"
       },
-      "answer": "b",
-      "subtopic": "factorization"
+      "answer": "D",
+      "subtopic": "Algebra"
     },
     {
       "id": 159,
-      "question": "Solve: 9x + 19 = 39",
+      "question": "Solve for x: 1x + 3 = 28",
       "options": {
-        "a": "x = 10",
-        "b": "x = 2",
-        "c": "x = 19",
-        "d": "x = 20"
+        "A": "x = 25.4",
+        "B": "x = 26.57",
+        "C": "x = 26.84",
+        "D": "x = 25"
       },
-      "answer": "b",
-      "subtopic": "linear equations"
+      "answer": "D",
+      "subtopic": "Algebra"
     },
     {
       "id": 160,
-      "question": "Solve: 9x + 19 = 39",
+      "question": "Simplify: 4(x + 1) - 1x",
       "options": {
-        "a": "x = 14",
-        "b": "x = 18",
-        "c": "x = 2",
-        "d": "x = 20"
+        "A": "4x + 0",
+        "B": "4x + 0",
+        "C": "4x + 3 = 4x + 3",
+        "D": "4x + 5"
       },
-      "answer": "c",
-      "subtopic": "linear equations"
+      "answer": "C",
+      "subtopic": "Algebra"
     },
     {
       "id": 161,
-      "question": "Make x the subject: y = 9x + 19",
+      "question": "Factorize: x^2 + 19x + 90",
       "options": {
-        "a": "x = (y - 19)/9",
-        "b": "x = (y - 113)/13",
-        "c": "x = (y - 120)/20",
-        "d": "x = (y - 139)/9"
+        "A": "(x + 10)(x - 9)",
+        "B": "(x - 10)(x - 9)",
+        "C": "(x - 10)(x + 9)",
+        "D": "(x + 10)(x + 9)"
       },
-      "answer": "a",
-      "subtopic": "changing subject"
+      "answer": "D",
+      "subtopic": "Algebra"
     },
     {
       "id": 162,
-      "question": "Expand: (x + 9)(x + 9)",
+      "question": "Solve for x: 4x + 5 = 48",
       "options": {
-        "a": "x\u00b2 + 188x + 818",
-        "b": "x\u00b2 + 18x + 81",
-        "c": "x\u00b2 + 117x + 171",
-        "d": "x\u00b2 + 115x + 151"
+        "A": "x = 12.65",
+        "B": "x = 6.04",
+        "C": "x = 13.55",
+        "D": "x = 10.75"
       },
-      "answer": "b",
-      "subtopic": "expansion"
+      "answer": "D",
+      "subtopic": "Algebra"
     },
     {
       "id": 163,
-      "question": "Simplify: 9x + 9x",
+      "question": "Expand: (x + 3)^2",
       "options": {
-        "a": "117x",
-        "b": "111x",
-        "c": "188x",
-        "d": "18x"
+        "A": "x^2 + 3x + 9",
+        "B": "x^2 + 9",
+        "C": "x^2 + 6x + 9",
+        "D": "x^2 + 6x"
       },
-      "answer": "d",
-      "subtopic": "simplifying expressions"
+      "answer": "C",
+      "subtopic": "Algebra"
     },
     {
       "id": 164,
-      "question": "Solve: 9x + 19 = 39",
+      "question": "Simplify: 4(x + 3) - 2x",
       "options": {
-        "a": "x = 17",
-        "b": "x = 11",
-        "c": "x = 2",
-        "d": "x = 14"
+        "A": "4x + -1",
+        "B": "4x + 10 = 4x + 10",
+        "C": "4x + 14",
+        "D": "4x + 1"
       },
-      "answer": "c",
-      "subtopic": "linear equations"
+      "answer": "B",
+      "subtopic": "Algebra"
     },
     {
       "id": 165,
-      "question": "Factorize: x\u00b2 + 17x + 72",
+      "question": "Factorize: x^2 + 12x + 20",
       "options": {
-        "a": "(x + 8)(x + 9)",
-        "b": "(x + 8)(x + 15)",
-        "c": "(x + 8)(x + 16)",
-        "d": "(x + 8)(x + 18)"
+        "A": "(x - 10)(x - 2)",
+        "B": "(x - 10)(x + 2)",
+        "C": "(x + 10)(x + 2)",
+        "D": "(x + 10)(x - 2)"
       },
-      "answer": "a",
-      "subtopic": "factorization"
+      "answer": "C",
+      "subtopic": "Algebra"
     },
     {
       "id": 166,
-      "question": "Expand: (x + 9)(x + 9)",
+      "question": "Factorize: x^2 + 13x + 42",
       "options": {
-        "a": "x\u00b2 + 119x + 191",
-        "b": "x\u00b2 + 115x + 151",
-        "c": "x\u00b2 + 168x + 816",
-        "d": "x\u00b2 + 18x + 81"
+        "A": "(x - 7)(x - 6)",
+        "B": "(x - 7)(x + 6)",
+        "C": "(x + 7)(x - 6)",
+        "D": "(x + 7)(x + 6)"
       },
-      "answer": "d",
-      "subtopic": "expansion"
+      "answer": "D",
+      "subtopic": "Algebra"
     },
     {
       "id": 167,
-      "question": "Simplify: 9x + 9x",
+      "question": "Simplify: 2(x + 5) - 3x",
       "options": {
-        "a": "18x",
-        "b": "116x",
-        "c": "120x",
-        "d": "117x"
+        "A": "2x + 2",
+        "B": "2x + -2",
+        "C": "2x + 7 = 2x + 7",
+        "D": "2x + 13"
       },
-      "answer": "a",
-      "subtopic": "simplifying expressions"
+      "answer": "C",
+      "subtopic": "Algebra"
     },
     {
       "id": 168,
-      "question": "Expand: (x + 9)(x + 9)",
+      "question": "Expand: (x + 8)^2",
       "options": {
-        "a": "x\u00b2 + 18x + 81",
-        "b": "x\u00b2 + 118x + 181",
-        "c": "x\u00b2 + 178x + 817",
-        "d": "x\u00b2 + 113x + 131"
+        "A": "x^2 + 8x + 64",
+        "B": "x^2 + 64",
+        "C": "x^2 + 16x + 64",
+        "D": "x^2 + 16x"
       },
-      "answer": "a",
-      "subtopic": "expansion"
+      "answer": "C",
+      "subtopic": "Algebra"
     },
     {
       "id": 169,
-      "question": "Solve: 9x + 19 = 39",
+      "question": "Simplify: 5(x + 3) - 5x",
       "options": {
-        "a": "x = 2",
-        "b": "x = 20",
-        "c": "x = 10",
-        "d": "x = 14"
+        "A": "5x + 20",
+        "B": "5x + 10 = 5x + 10",
+        "C": "5x + 2",
+        "D": "5x + -2"
       },
-      "answer": "a",
-      "subtopic": "linear equations"
+      "answer": "B",
+      "subtopic": "Algebra"
     },
     {
       "id": 170,
-      "question": "Simplify: 9x + 9x",
+      "question": "Factorize: x^2 + 9x + 14",
       "options": {
-        "a": "108x",
-        "b": "117x",
-        "c": "18x",
-        "d": "114x"
+        "A": "(x - 2)(x - 7)",
+        "B": "(x - 2)(x + 7)",
+        "C": "(x + 2)(x - 7)",
+        "D": "(x + 2)(x + 7)"
       },
-      "answer": "c",
-      "subtopic": "simplifying expressions"
+      "answer": "D",
+      "subtopic": "Algebra"
     },
     {
       "id": 171,
-      "question": "Solve: 9x + 19 = 39",
+      "question": "Simplify: 5(x + 10) - 4x",
       "options": {
-        "a": "x = 16",
-        "b": "x = 19",
-        "c": "x = 12",
-        "d": "x = 2"
+        "A": "5x + 54",
+        "B": "5x + 6",
+        "C": "5x + 46 = 5x + 46",
+        "D": "5x + -6"
       },
-      "answer": "d",
-      "subtopic": "linear equations"
+      "answer": "C",
+      "subtopic": "Algebra"
     },
     {
       "id": 172,
-      "question": "Make x the subject: y = 9x + 19",
+      "question": "Factorize: x^2 + 10x + 21",
       "options": {
-        "a": "x = (y - 19)/9",
-        "b": "x = (y - 129)/9",
-        "c": "x = (y - 110)/10",
-        "d": "x = (y - 117)/17"
+        "A": "(x + 7)(x + 3)",
+        "B": "(x - 7)(x + 3)",
+        "C": "(x - 7)(x - 3)",
+        "D": "(x + 7)(x - 3)"
       },
-      "answer": "a",
-      "subtopic": "changing subject"
+      "answer": "A",
+      "subtopic": "Algebra"
     },
     {
       "id": 173,
-      "question": "Simplify: 9x + 9x",
+      "question": "Solve for x: 7x + 17 = 37",
       "options": {
-        "a": "18x",
-        "b": "168x",
-        "c": "148x",
-        "d": "111x"
+        "A": "x = 2.02",
+        "B": "x = 2.86",
+        "C": "x = -1.27",
+        "D": "x = 0.11"
       },
-      "answer": "a",
-      "subtopic": "simplifying expressions"
+      "answer": "B",
+      "subtopic": "Algebra"
     },
     {
       "id": 174,
-      "question": "Simplify: 9x + 9x",
+      "question": "Factorize: x^2 + 17x + 70",
       "options": {
-        "a": "111x",
-        "b": "113x",
-        "c": "128x",
-        "d": "18x"
+        "A": "(x + 7)(x + 10)",
+        "B": "(x + 7)(x - 10)",
+        "C": "(x - 7)(x + 10)",
+        "D": "(x - 7)(x - 10)"
       },
-      "answer": "d",
-      "subtopic": "simplifying expressions"
+      "answer": "A",
+      "subtopic": "Algebra"
     },
     {
       "id": 175,
-      "question": "Factorize: x\u00b2 + 7x + 6",
+      "question": "Expand: (x + 6)^2",
       "options": {
-        "a": "(x + 20)(x + 6)",
-        "b": "(x + 10)(x + 6)",
-        "c": "(x + 1)(x + 10)",
-        "d": "(x + 1)(x + 6)"
+        "A": "x^2 + 36",
+        "B": "x^2 + 12x + 36",
+        "C": "x^2 + 6x + 36",
+        "D": "x^2 + 12x"
       },
-      "answer": "d",
-      "subtopic": "factorization"
+      "answer": "B",
+      "subtopic": "Algebra"
     },
     {
       "id": 176,
-      "question": "Factorize: x\u00b2 + 6x + 9",
+      "question": "Simplify: 1(x + 7) - 5x",
       "options": {
-        "a": "(x + 20)(x + 20)",
-        "b": "(x + 10)(x + 10)",
-        "c": "(x + 15)(x + 15)",
-        "d": "(x + 3)(x + 3)"
+        "A": "1x + 2",
+        "B": "1x + 2 = 1x + 2",
+        "C": "1x + 12",
+        "D": "1x + -2"
       },
-      "answer": "d",
-      "subtopic": "factorization"
+      "answer": "B",
+      "subtopic": "Algebra"
     },
     {
       "id": 177,
-      "question": "Solve: 9x + 19 = 39",
+      "question": "Simplify: 1(x + 8) - 2x",
       "options": {
-        "a": "x = 19",
-        "b": "x = 10",
-        "c": "x = 2",
-        "d": "x = 16"
+        "A": "1x + -6",
+        "B": "1x + 6",
+        "C": "1x + 10",
+        "D": "1x + 6 = 1x + 6"
       },
-      "answer": "c",
-      "subtopic": "linear equations"
+      "answer": "D",
+      "subtopic": "Algebra"
     },
     {
       "id": 178,
-      "question": "Factorize: x\u00b2 + 10x + 21",
+      "question": "Evaluate: If x = 7, find x^2 + 2x + 1",
       "options": {
-        "a": "(x + 3)(x + 18)",
-        "b": "(x + 3)(x + 19)",
-        "c": "(x + 3)(x + 7)",
-        "d": "(x + 3)(x + 10)"
+        "A": "66",
+        "B": "68",
+        "C": "67",
+        "D": "64"
       },
-      "answer": "c",
-      "subtopic": "factorization"
+      "answer": "D",
+      "subtopic": "Algebra"
     },
     {
       "id": 179,
-      "question": "Make x the subject: y = 9x + 19",
+      "question": "Expand: (x + 7)^2",
       "options": {
-        "a": "x = (y - 209)/9",
-        "b": "x = (y - 179)/9",
-        "c": "x = (y - 109)/9",
-        "d": "x = (y - 19)/9"
+        "A": "x^2 + 7x + 49",
+        "B": "x^2 + 49",
+        "C": "x^2 + 14x + 49",
+        "D": "x^2 + 14x"
       },
-      "answer": "d",
-      "subtopic": "changing subject"
+      "answer": "C",
+      "subtopic": "Algebra"
     },
     {
       "id": 180,
-      "question": "Simplify: 9x + 9x",
+      "question": "Solve for x: 1x + 1 = 34",
       "options": {
-        "a": "108x",
-        "b": "178x",
-        "c": "198x",
-        "d": "18x"
+        "A": "x = 33.04",
+        "B": "x = 33",
+        "C": "x = 28.08",
+        "D": "x = 28.39"
       },
-      "answer": "d",
-      "subtopic": "simplifying expressions"
+      "answer": "B",
+      "subtopic": "Algebra"
     },
     {
       "id": 181,
-      "question": "Factorize: x\u00b2 + 17x + 72",
+      "question": "Evaluate: If x = 2, find x^2 + 2x + 1",
       "options": {
-        "a": "(x + 20)(x + 8)",
-        "b": "(x + 13)(x + 8)",
-        "c": "(x + 9)(x + 8)",
-        "d": "(x + 9)(x + 13)"
+        "A": "6",
+        "B": "9",
+        "C": "13",
+        "D": "12"
       },
-      "answer": "c",
-      "subtopic": "factorization"
+      "answer": "B",
+      "subtopic": "Algebra"
     },
     {
       "id": 182,
-      "question": "Expand: (x + 9)(x + 9)",
+      "question": "Evaluate: If x = 7, find x^2 + 2x + 1",
       "options": {
-        "a": "x\u00b2 + 198x + 819",
-        "b": "x\u00b2 + 18x + 81",
-        "c": "x\u00b2 + 120x + 201",
-        "d": "x\u00b2 + 208x + 820"
+        "A": "66",
+        "B": "61",
+        "C": "64",
+        "D": "67"
       },
-      "answer": "b",
-      "subtopic": "expansion"
+      "answer": "C",
+      "subtopic": "Algebra"
     },
     {
       "id": 183,
-      "question": "Make x the subject: y = 9x + 19",
+      "question": "Evaluate: If x = 3, find x^2 + 2x + 1",
       "options": {
-        "a": "x = (y - 19)/9",
-        "b": "x = (y - 110)/10",
-        "c": "x = (y - 169)/9",
-        "d": "x = (y - 118)/18"
+        "A": "20",
+        "B": "16",
+        "C": "18",
+        "D": "13"
       },
-      "answer": "a",
-      "subtopic": "changing subject"
+      "answer": "B",
+      "subtopic": "Algebra"
     },
     {
       "id": 184,
-      "question": "Solve: 9x + 19 = 39",
+      "question": "Factorize: x^2 + 6x + 8",
       "options": {
-        "a": "x = 2",
-        "b": "x = 14",
-        "c": "x = 12",
-        "d": "x = 10"
+        "A": "(x - 2)(x - 4)",
+        "B": "(x + 2)(x + 4)",
+        "C": "(x + 2)(x - 4)",
+        "D": "(x - 2)(x + 4)"
       },
-      "answer": "a",
-      "subtopic": "linear equations"
+      "answer": "B",
+      "subtopic": "Algebra"
     },
     {
       "id": 185,
-      "question": "Factorize: x\u00b2 + 5x + 4",
+      "question": "Evaluate: If x = 5, find x^2 + 2x + 1",
       "options": {
-        "a": "(x + 4)(x + 1)",
-        "b": "(x + 19)(x + 1)",
-        "c": "(x + 4)(x + 17)",
-        "d": "(x + 4)(x + 10)"
+        "A": "36",
+        "B": "38",
+        "C": "33",
+        "D": "40"
       },
-      "answer": "a",
-      "subtopic": "factorization"
+      "answer": "A",
+      "subtopic": "Algebra"
     },
     {
       "id": 186,
-      "question": "Simplify: 9x + 9x",
+      "question": "Factorize: x^2 + 3x + 2",
       "options": {
-        "a": "112x",
-        "b": "138x",
-        "c": "18x",
-        "d": "117x"
+        "A": "(x + 1)(x + 2)",
+        "B": "(x - 1)(x + 2)",
+        "C": "(x + 1)(x - 2)",
+        "D": "(x - 1)(x - 2)"
       },
-      "answer": "c",
-      "subtopic": "simplifying expressions"
+      "answer": "A",
+      "subtopic": "Algebra"
     },
     {
       "id": 187,
-      "question": "Expand: (x + 9)(x + 9)",
+      "question": "Simplify: 5(x + 2) - 1x",
       "options": {
-        "a": "x\u00b2 + 168x + 816",
-        "b": "x\u00b2 + 118x + 811",
-        "c": "x\u00b2 + 18x + 81",
-        "d": "x\u00b2 + 178x + 817"
+        "A": "5x + 1",
+        "B": "5x + 9 = 5x + 9",
+        "C": "5x + 11",
+        "D": "5x + -1"
       },
-      "answer": "c",
-      "subtopic": "expansion"
+      "answer": "B",
+      "subtopic": "Algebra"
     },
     {
       "id": 188,
-      "question": "Expand: (x + 9)(x + 9)",
+      "question": "Evaluate: If x = 6, find x^2 + 2x + 1",
       "options": {
-        "a": "x\u00b2 + 115x + 151",
-        "b": "x\u00b2 + 128x + 812",
-        "c": "x\u00b2 + 113x + 131",
-        "d": "x\u00b2 + 18x + 81"
+        "A": "52",
+        "B": "47",
+        "C": "49",
+        "D": "53"
       },
-      "answer": "d",
-      "subtopic": "expansion"
+      "answer": "C",
+      "subtopic": "Algebra"
     },
     {
       "id": 189,
-      "question": "Simplify: 9x + 9x",
+      "question": "Expand: (x + 4)^2",
       "options": {
-        "a": "178x",
-        "b": "18x",
-        "c": "113x",
-        "d": "115x"
+        "A": "x^2 + 16",
+        "B": "x^2 + 8x",
+        "C": "x^2 + 4x + 16",
+        "D": "x^2 + 8x + 16"
       },
-      "answer": "b",
-      "subtopic": "simplifying expressions"
+      "answer": "D",
+      "subtopic": "Algebra"
     },
     {
       "id": 190,
-      "question": "Simplify: 9x + 9x",
+      "question": "Solve for x: 9x + 7 = 40",
       "options": {
-        "a": "198x",
-        "b": "18x",
-        "c": "148x",
-        "d": "138x"
+        "A": "x = 2.68",
+        "B": "x = 3.67",
+        "C": "x = -0.82",
+        "D": "x = 6.18"
       },
-      "answer": "b",
-      "subtopic": "simplifying expressions"
+      "answer": "B",
+      "subtopic": "Algebra"
     },
     {
       "id": 191,
-      "question": "Simplify: 9x + 9x",
+      "question": "Expand: (x + 3)^2",
       "options": {
-        "a": "168x",
-        "b": "113x",
-        "c": "110x",
-        "d": "18x"
+        "A": "x^2 + 3x + 9",
+        "B": "x^2 + 6x + 9",
+        "C": "x^2 + 6x",
+        "D": "x^2 + 9"
       },
-      "answer": "d",
-      "subtopic": "simplifying expressions"
+      "answer": "B",
+      "subtopic": "Algebra"
     },
     {
       "id": 192,
-      "question": "Factorize: x\u00b2 + 15x + 54",
+      "question": "Solve for x: 9x + 10 = 28",
       "options": {
-        "a": "(x + 9)(x + 15)",
-        "b": "(x + 14)(x + 6)",
-        "c": "(x + 9)(x + 13)",
-        "d": "(x + 9)(x + 6)"
+        "A": "x = 1.5",
+        "B": "x = 6.1",
+        "C": "x = 5.03",
+        "D": "x = 2"
       },
-      "answer": "d",
-      "subtopic": "factorization"
+      "answer": "D",
+      "subtopic": "Algebra"
     },
     {
       "id": 193,
-      "question": "Expand: (x + 9)(x + 9)",
+      "question": "Simplify: 1(x + 10) - 3x",
       "options": {
-        "a": "x\u00b2 + 198x + 819",
-        "b": "x\u00b2 + 18x + 81",
-        "c": "x\u00b2 + 178x + 817",
-        "d": "x\u00b2 + 111x + 111"
+        "A": "1x + 7 = 1x + 7",
+        "B": "1x + -7",
+        "C": "1x + 13",
+        "D": "1x + 7"
       },
-      "answer": "b",
-      "subtopic": "expansion"
+      "answer": "A",
+      "subtopic": "Algebra"
     },
     {
       "id": 194,
-      "question": "Solve: 9x + 19 = 39",
+      "question": "Evaluate: If x = 10, find x^2 + 2x + 1",
       "options": {
-        "a": "x = 16",
-        "b": "x = 10",
-        "c": "x = 11",
-        "d": "x = 2"
+        "A": "121",
+        "B": "123",
+        "C": "125",
+        "D": "118"
       },
-      "answer": "d",
-      "subtopic": "linear equations"
+      "answer": "A",
+      "subtopic": "Algebra"
     },
     {
       "id": 195,
-      "question": "Solve: 9x + 19 = 39",
+      "question": "Solve for x: 1x + 2 = 43",
       "options": {
-        "a": "x = 20",
-        "b": "x = 2",
-        "c": "x = 13",
-        "d": "x = 17"
+        "A": "x = 39.73",
+        "B": "x = 41",
+        "C": "x = 37.45",
+        "D": "x = 44.06"
       },
-      "answer": "b",
-      "subtopic": "linear equations"
+      "answer": "B",
+      "subtopic": "Algebra"
     },
     {
       "id": 196,
-      "question": "Simplify: 9x + 9x",
+      "question": "Evaluate: If x = 3, find x^2 + 2x + 1",
       "options": {
-        "a": "178x",
-        "b": "18x",
-        "c": "118x",
-        "d": "110x"
+        "A": "16",
+        "B": "13",
+        "C": "18",
+        "D": "19"
       },
-      "answer": "b",
-      "subtopic": "simplifying expressions"
+      "answer": "A",
+      "subtopic": "Algebra"
     },
     {
       "id": 197,
-      "question": "Simplify: 9x + 9x",
+      "question": "Factorize: x^2 + 6x + 8",
       "options": {
-        "a": "118x",
-        "b": "148x",
-        "c": "18x",
-        "d": "110x"
+        "A": "(x - 2)(x - 4)",
+        "B": "(x + 2)(x + 4)",
+        "C": "(x - 2)(x + 4)",
+        "D": "(x + 2)(x - 4)"
       },
-      "answer": "c",
-      "subtopic": "simplifying expressions"
+      "answer": "B",
+      "subtopic": "Algebra"
     },
     {
       "id": 198,
-      "question": "Factorize: x\u00b2 + 10x + 24",
+      "question": "Solve for x: 8x + 17 = 49",
       "options": {
-        "a": "(x + 4)(x + 12)",
-        "b": "(x + 10)(x + 6)",
-        "c": "(x + 12)(x + 6)",
-        "d": "(x + 4)(x + 6)"
+        "A": "x = 3.01",
+        "B": "x = 5.2",
+        "C": "x = 4",
+        "D": "x = 3.3"
       },
-      "answer": "d",
-      "subtopic": "factorization"
+      "answer": "C",
+      "subtopic": "Algebra"
     },
     {
       "id": 199,
-      "question": "Factorize: x\u00b2 + 8x + 15",
+      "question": "Expand: (x + 8)^2",
       "options": {
-        "a": "(x + 18)(x + 3)",
-        "b": "(x + 5)(x + 17)",
-        "c": "(x + 5)(x + 3)",
-        "d": "(x + 13)(x + 3)"
+        "A": "x^2 + 16x",
+        "B": "x^2 + 8x + 64",
+        "C": "x^2 + 16x + 64",
+        "D": "x^2 + 64"
       },
-      "answer": "c",
-      "subtopic": "factorization"
+      "answer": "C",
+      "subtopic": "Algebra"
     },
     {
       "id": 200,
-      "question": "Simplify: 9x + 9x",
-      "options": {
-        "a": "168x",
-        "b": "18x",
-        "c": "115x",
-        "d": "108x"
-      },
-      "answer": "b",
-      "subtopic": "simplifying expressions"
-    },
-    {
-      "id": 201,
-      "question": "Expand: (x + 9)(x + 9)",
-      "options": {
-        "a": "x\u00b2 + 108x + 810",
-        "b": "x\u00b2 + 178x + 817",
-        "c": "x\u00b2 + 118x + 811",
-        "d": "x\u00b2 + 18x + 81"
-      },
-      "answer": "d",
-      "subtopic": "expansion"
-    },
-    {
-      "id": 202,
-      "question": "Factorize: x\u00b2 + 10x + 16",
-      "options": {
-        "a": "(x + 2)(x + 20)",
-        "b": "(x + 16)(x + 8)",
-        "c": "(x + 10)(x + 8)",
-        "d": "(x + 2)(x + 8)"
-      },
-      "answer": "d",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 203,
-      "question": "Factorize: x\u00b2 + 10x + 21",
-      "options": {
-        "a": "(x + 14)(x + 3)",
-        "b": "(x + 7)(x + 10)",
-        "c": "(x + 7)(x + 3)",
-        "d": "(x + 16)(x + 3)"
-      },
-      "answer": "c",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 204,
-      "question": "Make x the subject: y = 9x + 19",
-      "options": {
-        "a": "x = (y - 179)/9",
-        "b": "x = (y - 111)/11",
-        "c": "x = (y - 149)/9",
-        "d": "x = (y - 19)/9"
-      },
-      "answer": "d",
-      "subtopic": "changing subject"
-    },
-    {
-      "id": 205,
-      "question": "Factorize: x\u00b2 + 10x + 21",
-      "options": {
-        "a": "(x + 7)(x + 3)",
-        "b": "(x + 11)(x + 3)",
-        "c": "(x + 7)(x + 11)",
-        "d": "(x + 7)(x + 10)"
-      },
-      "answer": "a",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 206,
-      "question": "Make x the subject: y = 9x + 19",
-      "options": {
-        "a": "x = (y - 111)/11",
-        "b": "x = (y - 139)/9",
-        "c": "x = (y - 19)/9",
-        "d": "x = (y - 209)/9"
-      },
-      "answer": "c",
-      "subtopic": "changing subject"
-    },
-    {
-      "id": 207,
-      "question": "Factorize: x\u00b2 + 4x + 4",
-      "options": {
-        "a": "(x + 20)(x + 20)",
-        "b": "(x + 16)(x + 16)",
-        "c": "(x + 18)(x + 18)",
-        "d": "(x + 2)(x + 2)"
-      },
-      "answer": "d",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 208,
-      "question": "Factorize: x\u00b2 + 11x + 18",
-      "options": {
-        "a": "(x + 9)(x + 10)",
-        "b": "(x + 9)(x + 20)",
-        "c": "(x + 9)(x + 2)",
-        "d": "(x + 14)(x + 2)"
-      },
-      "answer": "c",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 209,
-      "question": "Make x the subject: y = 9x + 19",
-      "options": {
-        "a": "x = (y - 117)/17",
-        "b": "x = (y - 19)/9",
-        "c": "x = (y - 120)/20",
-        "d": "x = (y - 169)/9"
-      },
-      "answer": "b",
-      "subtopic": "changing subject"
-    },
-    {
-      "id": 210,
-      "question": "Make x the subject: y = 9x + 19",
-      "options": {
-        "a": "x = (y - 111)/11",
-        "b": "x = (y - 19)/9",
-        "c": "x = (y - 209)/9",
-        "d": "x = (y - 199)/9"
-      },
-      "answer": "b",
-      "subtopic": "changing subject"
-    },
-    {
-      "id": 211,
-      "question": "Solve: 9x + 19 = 39",
-      "options": {
-        "a": "x = 18",
-        "b": "x = 16",
-        "c": "x = 13",
-        "d": "x = 2"
-      },
-      "answer": "d",
-      "subtopic": "linear equations"
-    },
-    {
-      "id": 212,
-      "question": "Factorize: x\u00b2 + 13x + 40",
-      "options": {
-        "a": "(x + 12)(x + 8)",
-        "b": "(x + 5)(x + 8)",
-        "c": "(x + 18)(x + 8)",
-        "d": "(x + 13)(x + 8)"
-      },
-      "answer": "b",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 213,
-      "question": "Factorize: x\u00b2 + 7x + 10",
-      "options": {
-        "a": "(x + 5)(x + 2)",
-        "b": "(x + 5)(x + 11)",
-        "c": "(x + 5)(x + 18)",
-        "d": "(x + 5)(x + 20)"
-      },
-      "answer": "a",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 214,
-      "question": "Make x the subject: y = 9x + 19",
-      "options": {
-        "a": "x = (y - 189)/9",
-        "b": "x = (y - 116)/16",
-        "c": "x = (y - 209)/9",
-        "d": "x = (y - 19)/9"
-      },
-      "answer": "d",
-      "subtopic": "changing subject"
-    },
-    {
-      "id": 215,
-      "question": "Make x the subject: y = 9x + 19",
-      "options": {
-        "a": "x = (y - 199)/9",
-        "b": "x = (y - 19)/9",
-        "c": "x = (y - 109)/9",
-        "d": "x = (y - 209)/9"
-      },
-      "answer": "b",
-      "subtopic": "changing subject"
-    },
-    {
-      "id": 216,
-      "question": "Solve: 9x + 19 = 39",
-      "options": {
-        "a": "x = 11",
-        "b": "x = 14",
-        "c": "x = 18",
-        "d": "x = 2"
-      },
-      "answer": "d",
-      "subtopic": "linear equations"
-    },
-    {
-      "id": 217,
-      "question": "Expand: (x + 9)(x + 9)",
-      "options": {
-        "a": "x\u00b2 + 188x + 818",
-        "b": "x\u00b2 + 110x + 101",
-        "c": "x\u00b2 + 18x + 81",
-        "d": "x\u00b2 + 115x + 151"
-      },
-      "answer": "c",
-      "subtopic": "expansion"
-    },
-    {
-      "id": 218,
-      "question": "Simplify: 9x + 9x",
-      "options": {
-        "a": "188x",
-        "b": "116x",
-        "c": "18x",
-        "d": "120x"
-      },
-      "answer": "c",
-      "subtopic": "simplifying expressions"
-    },
-    {
-      "id": 219,
-      "question": "Solve: 9x + 19 = 39",
-      "options": {
-        "a": "x = 15",
-        "b": "x = 2",
-        "c": "x = 11",
-        "d": "x = 19"
-      },
-      "answer": "b",
-      "subtopic": "linear equations"
-    },
-    {
-      "id": 220,
-      "question": "Solve: 9x + 19 = 39",
-      "options": {
-        "a": "x = 18",
-        "b": "x = 12",
-        "c": "x = 17",
-        "d": "x = 2"
-      },
-      "answer": "d",
-      "subtopic": "linear equations"
-    },
-    {
-      "id": 221,
-      "question": "Make x the subject: y = 9x + 19",
-      "options": {
-        "a": "x = (y - 111)/11",
-        "b": "x = (y - 139)/9",
-        "c": "x = (y - 129)/9",
-        "d": "x = (y - 19)/9"
-      },
-      "answer": "d",
-      "subtopic": "changing subject"
-    },
-    {
-      "id": 222,
-      "question": "Solve: 9x + 19 = 39",
-      "options": {
-        "a": "x = 16",
-        "b": "x = 2",
-        "c": "x = 15",
-        "d": "x = 13"
-      },
-      "answer": "b",
-      "subtopic": "linear equations"
-    },
-    {
-      "id": 223,
-      "question": "Make x the subject: y = 9x + 19",
-      "options": {
-        "a": "x = (y - 115)/15",
-        "b": "x = (y - 179)/9",
-        "c": "x = (y - 19)/9",
-        "d": "x = (y - 117)/17"
-      },
-      "answer": "c",
-      "subtopic": "changing subject"
-    },
-    {
-      "id": 224,
-      "question": "Expand: (x + 9)(x + 9)",
-      "options": {
-        "a": "x\u00b2 + 138x + 813",
-        "b": "x\u00b2 + 112x + 121",
-        "c": "x\u00b2 + 18x + 81",
-        "d": "x\u00b2 + 117x + 171"
-      },
-      "answer": "c",
-      "subtopic": "expansion"
-    },
-    {
-      "id": 225,
-      "question": "Factorize: x\u00b2 + 10x + 9",
-      "options": {
-        "a": "(x + 19)(x + 1)",
-        "b": "(x + 12)(x + 1)",
-        "c": "(x + 9)(x + 1)",
-        "d": "(x + 9)(x + 11)"
-      },
-      "answer": "c",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 226,
-      "question": "Simplify: 9x + 9x",
-      "options": {
-        "a": "18x",
-        "b": "118x",
-        "c": "117x",
-        "d": "108x"
-      },
-      "answer": "a",
-      "subtopic": "simplifying expressions"
-    },
-    {
-      "id": 227,
-      "question": "Expand: (x + 9)(x + 9)",
-      "options": {
-        "a": "x\u00b2 + 188x + 818",
-        "b": "x\u00b2 + 108x + 810",
-        "c": "x\u00b2 + 118x + 181",
-        "d": "x\u00b2 + 18x + 81"
-      },
-      "answer": "d",
-      "subtopic": "expansion"
-    },
-    {
-      "id": 228,
-      "question": "Expand: (x + 9)(x + 9)",
-      "options": {
-        "a": "x\u00b2 + 138x + 813",
-        "b": "x\u00b2 + 119x + 191",
-        "c": "x\u00b2 + 116x + 161",
-        "d": "x\u00b2 + 18x + 81"
-      },
-      "answer": "d",
-      "subtopic": "expansion"
-    },
-    {
-      "id": 229,
-      "question": "Simplify: 9x + 9x",
-      "options": {
-        "a": "18x",
-        "b": "128x",
-        "c": "117x",
-        "d": "108x"
-      },
-      "answer": "a",
-      "subtopic": "simplifying expressions"
-    },
-    {
-      "id": 230,
-      "question": "Simplify: 9x + 9x",
-      "options": {
-        "a": "115x",
-        "b": "18x",
-        "c": "128x",
-        "d": "119x"
-      },
-      "answer": "b",
-      "subtopic": "simplifying expressions"
-    },
-    {
-      "id": 231,
-      "question": "Simplify: 9x + 9x",
-      "options": {
-        "a": "115x",
-        "b": "114x",
-        "c": "208x",
-        "d": "18x"
-      },
-      "answer": "d",
-      "subtopic": "simplifying expressions"
-    },
-    {
-      "id": 232,
-      "question": "Factorize: x\u00b2 + 11x + 18",
-      "options": {
-        "a": "(x + 20)(x + 2)",
-        "b": "(x + 9)(x + 15)",
-        "c": "(x + 9)(x + 11)",
-        "d": "(x + 9)(x + 2)"
-      },
-      "answer": "d",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 233,
-      "question": "Solve: 9x + 19 = 39",
-      "options": {
-        "a": "x = 19",
-        "b": "x = 11",
-        "c": "x = 2",
-        "d": "x = 18"
-      },
-      "answer": "c",
-      "subtopic": "linear equations"
-    },
-    {
-      "id": 234,
-      "question": "Make x the subject: y = 9x + 19",
-      "options": {
-        "a": "x = (y - 149)/9",
-        "b": "x = (y - 19)/9",
-        "c": "x = (y - 111)/11",
-        "d": "x = (y - 113)/13"
-      },
-      "answer": "b",
-      "subtopic": "changing subject"
-    },
-    {
-      "id": 235,
-      "question": "Factorize: x\u00b2 + 12x + 36",
-      "options": {
-        "a": "(x + 20)(x + 20)",
-        "b": "(x + 18)(x + 18)",
-        "c": "(x + 6)(x + 6)",
-        "d": "(x + 16)(x + 16)"
-      },
-      "answer": "c",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 236,
-      "question": "Simplify: 9x + 9x",
-      "options": {
-        "a": "117x",
-        "b": "198x",
-        "c": "188x",
-        "d": "18x"
-      },
-      "answer": "d",
-      "subtopic": "simplifying expressions"
-    },
-    {
-      "id": 237,
-      "question": "Factorize: x\u00b2 + 12x + 27",
-      "options": {
-        "a": "(x + 15)(x + 9)",
-        "b": "(x + 18)(x + 9)",
-        "c": "(x + 3)(x + 9)",
-        "d": "(x + 13)(x + 9)"
-      },
-      "answer": "c",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 238,
-      "question": "Make x the subject: y = 9x + 19",
-      "options": {
-        "a": "x = (y - 19)/9",
-        "b": "x = (y - 139)/9",
-        "c": "x = (y - 209)/9",
-        "d": "x = (y - 111)/11"
-      },
-      "answer": "a",
-      "subtopic": "changing subject"
-    },
-    {
-      "id": 239,
-      "question": "Factorize: x\u00b2 + 8x + 15",
-      "options": {
-        "a": "(x + 5)(x + 3)",
-        "b": "(x + 5)(x + 16)",
-        "c": "(x + 10)(x + 3)",
-        "d": "(x + 5)(x + 12)"
-      },
-      "answer": "a",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 240,
-      "question": "Factorize: x\u00b2 + 16x + 64",
-      "options": {
-        "a": "(x + 16)(x + 16)",
-        "b": "(x + 20)(x + 20)",
-        "c": "(x + 8)(x + 8)",
-        "d": "(x + 18)(x + 18)"
-      },
-      "answer": "c",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 241,
-      "question": "Expand: (x + 9)(x + 9)",
-      "options": {
-        "a": "x\u00b2 + 18x + 81",
-        "b": "x\u00b2 + 208x + 820",
-        "c": "x\u00b2 + 112x + 121",
-        "d": "x\u00b2 + 138x + 813"
-      },
-      "answer": "a",
-      "subtopic": "expansion"
-    },
-    {
-      "id": 242,
-      "question": "Make x the subject: y = 9x + 19",
-      "options": {
-        "a": "x = (y - 159)/9",
-        "b": "x = (y - 19)/9",
-        "c": "x = (y - 116)/16",
-        "d": "x = (y - 169)/9"
-      },
-      "answer": "b",
-      "subtopic": "changing subject"
-    },
-    {
-      "id": 243,
-      "question": "Simplify: 9x + 9x",
-      "options": {
-        "a": "113x",
-        "b": "118x",
-        "c": "117x",
-        "d": "18x"
-      },
-      "answer": "d",
-      "subtopic": "simplifying expressions"
-    },
-    {
-      "id": 244,
-      "question": "Factorize: x\u00b2 + 9x + 20",
-      "options": {
-        "a": "(x + 14)(x + 5)",
-        "b": "(x + 4)(x + 17)",
-        "c": "(x + 19)(x + 5)",
-        "d": "(x + 4)(x + 5)"
-      },
-      "answer": "d",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 245,
-      "question": "Solve: 9x + 19 = 39",
-      "options": {
-        "a": "x = 12",
-        "b": "x = 13",
-        "c": "x = 15",
-        "d": "x = 2"
-      },
-      "answer": "d",
-      "subtopic": "linear equations"
-    },
-    {
-      "id": 246,
-      "question": "Make x the subject: y = 9x + 19",
-      "options": {
-        "a": "x = (y - 159)/9",
-        "b": "x = (y - 19)/9",
-        "c": "x = (y - 109)/9",
-        "d": "x = (y - 113)/13"
-      },
-      "answer": "b",
-      "subtopic": "changing subject"
-    },
-    {
-      "id": 247,
-      "question": "Factorize: x\u00b2 + 13x + 36",
-      "options": {
-        "a": "(x + 4)(x + 9)",
-        "b": "(x + 12)(x + 9)",
-        "c": "(x + 4)(x + 20)",
-        "d": "(x + 14)(x + 9)"
-      },
-      "answer": "a",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 248,
-      "question": "Make x the subject: y = 9x + 19",
-      "options": {
-        "a": "x = (y - 119)/9",
-        "b": "x = (y - 115)/15",
-        "c": "x = (y - 159)/9",
-        "d": "x = (y - 19)/9"
-      },
-      "answer": "d",
-      "subtopic": "changing subject"
-    },
-    {
-      "id": 249,
-      "question": "Simplify: 9x + 9x",
-      "options": {
-        "a": "112x",
-        "b": "115x",
-        "c": "18x",
-        "d": "110x"
-      },
-      "answer": "c",
-      "subtopic": "simplifying expressions"
-    },
-    {
-      "id": 250,
-      "question": "Factorize: x\u00b2 + 14x + 45",
-      "options": {
-        "a": "(x + 10)(x + 5)",
-        "b": "(x + 9)(x + 15)",
-        "c": "(x + 9)(x + 5)",
-        "d": "(x + 9)(x + 16)"
-      },
-      "answer": "c",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 251,
-      "question": "Make x the subject: y = 9x + 19",
-      "options": {
-        "a": "x = (y - 113)/13",
-        "b": "x = (y - 111)/11",
-        "c": "x = (y - 19)/9",
-        "d": "x = (y - 120)/20"
-      },
-      "answer": "c",
-      "subtopic": "changing subject"
-    },
-    {
-      "id": 252,
-      "question": "Factorize: x\u00b2 + 18x + 81",
-      "options": {
-        "a": "(x + 9)(x + 9)",
-        "b": "(x + 12)(x + 12)",
-        "c": "(x + 14)(x + 14)",
-        "d": "(x + 11)(x + 11)"
-      },
-      "answer": "a",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 253,
-      "question": "Simplify: 9x + 9x",
-      "options": {
-        "a": "112x",
-        "b": "18x",
-        "c": "188x",
-        "d": "117x"
-      },
-      "answer": "b",
-      "subtopic": "simplifying expressions"
-    },
-    {
-      "id": 254,
-      "question": "Simplify: 9x + 9x",
-      "options": {
-        "a": "188x",
-        "b": "158x",
-        "c": "18x",
-        "d": "117x"
-      },
-      "answer": "c",
-      "subtopic": "simplifying expressions"
-    },
-    {
-      "id": 255,
-      "question": "Solve: 9x + 19 = 39",
-      "options": {
-        "a": "x = 10",
-        "b": "x = 2",
-        "c": "x = 12",
-        "d": "x = 20"
-      },
-      "answer": "b",
-      "subtopic": "linear equations"
-    },
-    {
-      "id": 256,
-      "question": "Solve: 9x + 19 = 39",
-      "options": {
-        "a": "x = 19",
-        "b": "x = 2",
-        "c": "x = 13",
-        "d": "x = 15"
-      },
-      "answer": "b",
-      "subtopic": "linear equations"
-    },
-    {
-      "id": 257,
-      "question": "Simplify: 9x + 9x",
-      "options": {
-        "a": "158x",
-        "b": "112x",
-        "c": "18x",
-        "d": "188x"
-      },
-      "answer": "c",
-      "subtopic": "simplifying expressions"
-    },
-    {
-      "id": 258,
-      "question": "Solve: 9x + 19 = 39",
-      "options": {
-        "a": "x = 12",
-        "b": "x = 2",
-        "c": "x = 15",
-        "d": "x = 10"
-      },
-      "answer": "b",
-      "subtopic": "linear equations"
-    },
-    {
-      "id": 259,
-      "question": "Expand: (x + 9)(x + 9)",
-      "options": {
-        "a": "x\u00b2 + 18x + 81",
-        "b": "x\u00b2 + 108x + 810",
-        "c": "x\u00b2 + 119x + 191",
-        "d": "x\u00b2 + 115x + 151"
-      },
-      "answer": "a",
-      "subtopic": "expansion"
-    },
-    {
-      "id": 260,
-      "question": "Simplify: 9x + 9x",
-      "options": {
-        "a": "168x",
-        "b": "113x",
-        "c": "117x",
-        "d": "18x"
-      },
-      "answer": "d",
-      "subtopic": "simplifying expressions"
-    },
-    {
-      "id": 261,
-      "question": "Factorize: x\u00b2 + 11x + 24",
-      "options": {
-        "a": "(x + 20)(x + 8)",
-        "b": "(x + 18)(x + 8)",
-        "c": "(x + 19)(x + 8)",
-        "d": "(x + 3)(x + 8)"
-      },
-      "answer": "d",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 262,
-      "question": "Make x the subject: y = 9x + 19",
-      "options": {
-        "a": "x = (y - 115)/15",
-        "b": "x = (y - 19)/9",
-        "c": "x = (y - 118)/18",
-        "d": "x = (y - 110)/10"
-      },
-      "answer": "b",
-      "subtopic": "changing subject"
-    },
-    {
-      "id": 263,
-      "question": "Make x the subject: y = 9x + 19",
-      "options": {
-        "a": "x = (y - 189)/9",
-        "b": "x = (y - 209)/9",
-        "c": "x = (y - 19)/9",
-        "d": "x = (y - 112)/12"
-      },
-      "answer": "c",
-      "subtopic": "changing subject"
-    },
-    {
-      "id": 264,
-      "question": "Expand: (x + 9)(x + 9)",
-      "options": {
-        "a": "x\u00b2 + 18x + 81",
-        "b": "x\u00b2 + 112x + 121",
-        "c": "x\u00b2 + 198x + 819",
-        "d": "x\u00b2 + 208x + 820"
-      },
-      "answer": "a",
-      "subtopic": "expansion"
-    },
-    {
-      "id": 265,
-      "question": "Expand: (x + 9)(x + 9)",
-      "options": {
-        "a": "x\u00b2 + 118x + 811",
-        "b": "x\u00b2 + 178x + 817",
-        "c": "x\u00b2 + 198x + 819",
-        "d": "x\u00b2 + 18x + 81"
-      },
-      "answer": "d",
-      "subtopic": "expansion"
-    },
-    {
-      "id": 266,
-      "question": "Simplify: 9x + 9x",
-      "options": {
-        "a": "188x",
-        "b": "18x",
-        "c": "118x",
-        "d": "208x"
-      },
-      "answer": "b",
-      "subtopic": "simplifying expressions"
-    },
-    {
-      "id": 267,
-      "question": "Factorize: x\u00b2 + 8x + 7",
-      "options": {
-        "a": "(x + 1)(x + 17)",
-        "b": "(x + 13)(x + 7)",
-        "c": "(x + 1)(x + 7)",
-        "d": "(x + 19)(x + 7)"
-      },
-      "answer": "c",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 268,
-      "question": "Solve: 9x + 19 = 39",
-      "options": {
-        "a": "x = 17",
-        "b": "x = 13",
-        "c": "x = 10",
-        "d": "x = 2"
-      },
-      "answer": "d",
-      "subtopic": "linear equations"
-    },
-    {
-      "id": 269,
-      "question": "Make x the subject: y = 9x + 19",
-      "options": {
-        "a": "x = (y - 19)/9",
-        "b": "x = (y - 159)/9",
-        "c": "x = (y - 109)/9",
-        "d": "x = (y - 116)/16"
-      },
-      "answer": "a",
-      "subtopic": "changing subject"
-    },
-    {
-      "id": 270,
-      "question": "Expand: (x + 9)(x + 9)",
-      "options": {
-        "a": "x\u00b2 + 117x + 171",
-        "b": "x\u00b2 + 111x + 111",
-        "c": "x\u00b2 + 114x + 141",
-        "d": "x\u00b2 + 18x + 81"
-      },
-      "answer": "d",
-      "subtopic": "expansion"
-    },
-    {
-      "id": 271,
-      "question": "Expand: (x + 9)(x + 9)",
-      "options": {
-        "a": "x\u00b2 + 114x + 141",
-        "b": "x\u00b2 + 18x + 81",
-        "c": "x\u00b2 + 168x + 816",
-        "d": "x\u00b2 + 118x + 181"
-      },
-      "answer": "b",
-      "subtopic": "expansion"
-    },
-    {
-      "id": 272,
-      "question": "Factorize: x\u00b2 + 15x + 56",
-      "options": {
-        "a": "(x + 14)(x + 8)",
-        "b": "(x + 7)(x + 8)",
-        "c": "(x + 12)(x + 8)",
-        "d": "(x + 11)(x + 8)"
-      },
-      "answer": "b",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 273,
-      "question": "Solve: 9x + 19 = 39",
-      "options": {
-        "a": "x = 2",
-        "b": "x = 10",
-        "c": "x = 17",
-        "d": "x = 12"
-      },
-      "answer": "a",
-      "subtopic": "linear equations"
-    },
-    {
-      "id": 274,
-      "question": "Factorize: x\u00b2 + 10x + 16",
-      "options": {
-        "a": "(x + 2)(x + 11)",
-        "b": "(x + 19)(x + 8)",
-        "c": "(x + 2)(x + 8)",
-        "d": "(x + 2)(x + 17)"
-      },
-      "answer": "c",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 275,
-      "question": "Simplify: 9x + 9x",
-      "options": {
-        "a": "138x",
-        "b": "18x",
-        "c": "117x",
-        "d": "158x"
-      },
-      "answer": "b",
-      "subtopic": "simplifying expressions"
-    },
-    {
-      "id": 276,
-      "question": "Simplify: 9x + 9x",
-      "options": {
-        "a": "158x",
-        "b": "18x",
-        "c": "113x",
-        "d": "114x"
-      },
-      "answer": "b",
-      "subtopic": "simplifying expressions"
-    },
-    {
-      "id": 277,
-      "question": "Solve: 9x + 19 = 39",
-      "options": {
-        "a": "x = 2",
-        "b": "x = 17",
-        "c": "x = 10",
-        "d": "x = 11"
-      },
-      "answer": "a",
-      "subtopic": "linear equations"
-    },
-    {
-      "id": 278,
-      "question": "Factorize: x\u00b2 + 9x + 14",
-      "options": {
-        "a": "(x + 11)(x + 7)",
-        "b": "(x + 2)(x + 18)",
-        "c": "(x + 2)(x + 7)",
-        "d": "(x + 18)(x + 7)"
-      },
-      "answer": "c",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 279,
-      "question": "Solve: 9x + 19 = 39",
-      "options": {
-        "a": "x = 2",
-        "b": "x = 19",
-        "c": "x = 13",
-        "d": "x = 20"
-      },
-      "answer": "a",
-      "subtopic": "linear equations"
-    },
-    {
-      "id": 280,
-      "question": "Expand: (x + 9)(x + 9)",
-      "options": {
-        "a": "x\u00b2 + 18x + 81",
-        "b": "x\u00b2 + 115x + 151",
-        "c": "x\u00b2 + 112x + 121",
-        "d": "x\u00b2 + 108x + 810"
-      },
-      "answer": "a",
-      "subtopic": "expansion"
-    },
-    {
-      "id": 281,
-      "question": "Expand: (x + 9)(x + 9)",
-      "options": {
-        "a": "x\u00b2 + 18x + 81",
-        "b": "x\u00b2 + 110x + 101",
-        "c": "x\u00b2 + 119x + 191",
-        "d": "x\u00b2 + 115x + 151"
-      },
-      "answer": "a",
-      "subtopic": "expansion"
-    },
-    {
-      "id": 282,
-      "question": "Expand: (x + 9)(x + 9)",
-      "options": {
-        "a": "x\u00b2 + 198x + 819",
-        "b": "x\u00b2 + 18x + 81",
-        "c": "x\u00b2 + 118x + 181",
-        "d": "x\u00b2 + 110x + 101"
-      },
-      "answer": "b",
-      "subtopic": "expansion"
-    },
-    {
-      "id": 283,
-      "question": "Expand: (x + 9)(x + 9)",
-      "options": {
-        "a": "x\u00b2 + 138x + 813",
-        "b": "x\u00b2 + 128x + 812",
-        "c": "x\u00b2 + 114x + 141",
-        "d": "x\u00b2 + 18x + 81"
-      },
-      "answer": "d",
-      "subtopic": "expansion"
-    },
-    {
-      "id": 284,
-      "question": "Solve: 9x + 19 = 39",
-      "options": {
-        "a": "x = 10",
-        "b": "x = 2",
-        "c": "x = 12",
-        "d": "x = 20"
-      },
-      "answer": "b",
-      "subtopic": "linear equations"
-    },
-    {
-      "id": 285,
-      "question": "Factorize: x\u00b2 + 16x + 63",
-      "options": {
-        "a": "(x + 17)(x + 9)",
-        "b": "(x + 7)(x + 9)",
-        "c": "(x + 10)(x + 9)",
-        "d": "(x + 16)(x + 9)"
-      },
-      "answer": "b",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 286,
-      "question": "Simplify: 9x + 9x",
-      "options": {
-        "a": "168x",
-        "b": "18x",
-        "c": "118x",
-        "d": "112x"
-      },
-      "answer": "b",
-      "subtopic": "simplifying expressions"
-    },
-    {
-      "id": 287,
-      "question": "Simplify: 9x + 9x",
-      "options": {
-        "a": "118x",
-        "b": "18x",
-        "c": "148x",
-        "d": "198x"
-      },
-      "answer": "b",
-      "subtopic": "simplifying expressions"
-    },
-    {
-      "id": 288,
-      "question": "Expand: (x + 9)(x + 9)",
-      "options": {
-        "a": "x\u00b2 + 18x + 81",
-        "b": "x\u00b2 + 112x + 121",
-        "c": "x\u00b2 + 178x + 817",
-        "d": "x\u00b2 + 158x + 815"
-      },
-      "answer": "a",
-      "subtopic": "expansion"
-    },
-    {
-      "id": 289,
-      "question": "Expand: (x + 9)(x + 9)",
-      "options": {
-        "a": "x\u00b2 + 118x + 811",
-        "b": "x\u00b2 + 18x + 81",
-        "c": "x\u00b2 + 168x + 816",
-        "d": "x\u00b2 + 119x + 191"
-      },
-      "answer": "b",
-      "subtopic": "expansion"
-    },
-    {
-      "id": 290,
-      "question": "Simplify: 9x + 9x",
-      "options": {
-        "a": "115x",
-        "b": "118x",
-        "c": "158x",
-        "d": "18x"
-      },
-      "answer": "d",
-      "subtopic": "simplifying expressions"
-    },
-    {
-      "id": 291,
-      "question": "Make x the subject: y = 9x + 19",
-      "options": {
-        "a": "x = (y - 116)/16",
-        "b": "x = (y - 110)/10",
-        "c": "x = (y - 118)/18",
-        "d": "x = (y - 19)/9"
-      },
-      "answer": "d",
-      "subtopic": "changing subject"
-    },
-    {
-      "id": 292,
-      "question": "Make x the subject: y = 9x + 19",
-      "options": {
-        "a": "x = (y - 113)/13",
-        "b": "x = (y - 19)/9",
-        "c": "x = (y - 111)/11",
-        "d": "x = (y - 129)/9"
-      },
-      "answer": "b",
-      "subtopic": "changing subject"
-    },
-    {
-      "id": 293,
-      "question": "Factorize: x\u00b2 + 8x + 15",
-      "options": {
-        "a": "(x + 3)(x + 11)",
-        "b": "(x + 11)(x + 5)",
-        "c": "(x + 3)(x + 5)",
-        "d": "(x + 10)(x + 5)"
-      },
-      "answer": "c",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 294,
-      "question": "Solve: 9x + 19 = 39",
-      "options": {
-        "a": "x = 11",
-        "b": "x = 2",
-        "c": "x = 18",
-        "d": "x = 15"
-      },
-      "answer": "b",
-      "subtopic": "linear equations"
-    },
-    {
-      "id": 295,
-      "question": "Expand: (x + 9)(x + 9)",
-      "options": {
-        "a": "x\u00b2 + 110x + 101",
-        "b": "x\u00b2 + 188x + 818",
-        "c": "x\u00b2 + 18x + 81",
-        "d": "x\u00b2 + 116x + 161"
-      },
-      "answer": "c",
-      "subtopic": "expansion"
-    },
-    {
-      "id": 296,
-      "question": "Solve: 9x + 19 = 39",
-      "options": {
-        "a": "x = 2",
-        "b": "x = 13",
-        "c": "x = 10",
-        "d": "x = 11"
-      },
-      "answer": "a",
-      "subtopic": "linear equations"
-    },
-    {
-      "id": 297,
-      "question": "Expand: (x + 9)(x + 9)",
-      "options": {
-        "a": "x\u00b2 + 108x + 810",
-        "b": "x\u00b2 + 148x + 814",
-        "c": "x\u00b2 + 208x + 820",
-        "d": "x\u00b2 + 18x + 81"
-      },
-      "answer": "d",
-      "subtopic": "expansion"
-    },
-    {
-      "id": 298,
-      "question": "Factorize: x\u00b2 + 9x + 18",
-      "options": {
-        "a": "(x + 6)(x + 16)",
-        "b": "(x + 6)(x + 3)",
-        "c": "(x + 6)(x + 15)",
-        "d": "(x + 6)(x + 14)"
-      },
-      "answer": "b",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 299,
-      "question": "Factorize: x\u00b2 + 9x + 20",
-      "options": {
-        "a": "(x + 5)(x + 13)",
-        "b": "(x + 5)(x + 4)",
-        "c": "(x + 20)(x + 4)",
-        "d": "(x + 5)(x + 14)"
-      },
-      "answer": "b",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 300,
-      "question": "Make x the subject: y = 9x + 19",
-      "options": {
-        "a": "x = (y - 149)/9",
-        "b": "x = (y - 112)/12",
-        "c": "x = (y - 19)/9",
-        "d": "x = (y - 159)/9"
-      },
-      "answer": "c",
-      "subtopic": "changing subject"
-    },
-    {
-      "id": 301,
-      "question": "Expand: (x + 9)(x + 9)",
-      "options": {
-        "a": "x\u00b2 + 178x + 817",
-        "b": "x\u00b2 + 115x + 151",
-        "c": "x\u00b2 + 18x + 81",
-        "d": "x\u00b2 + 117x + 171"
-      },
-      "answer": "c",
-      "subtopic": "expansion"
-    },
-    {
-      "id": 302,
-      "question": "Factorize: x\u00b2 + 10x + 24",
-      "options": {
-        "a": "(x + 4)(x + 6)",
-        "b": "(x + 14)(x + 6)",
-        "c": "(x + 18)(x + 6)",
-        "d": "(x + 4)(x + 17)"
-      },
-      "answer": "a",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 303,
-      "question": "Solve: 9x + 19 = 39",
-      "options": {
-        "a": "x = 15",
-        "b": "x = 2",
-        "c": "x = 11",
-        "d": "x = 19"
-      },
-      "answer": "b",
-      "subtopic": "linear equations"
-    },
-    {
-      "id": 304,
-      "question": "Expand: (x + 9)(x + 9)",
-      "options": {
-        "a": "x\u00b2 + 114x + 141",
-        "b": "x\u00b2 + 112x + 121",
-        "c": "x\u00b2 + 18x + 81",
-        "d": "x\u00b2 + 115x + 151"
-      },
-      "answer": "c",
-      "subtopic": "expansion"
-    },
-    {
-      "id": 305,
-      "question": "Make x the subject: y = 9x + 19",
-      "options": {
-        "a": "x = (y - 112)/12",
-        "b": "x = (y - 19)/9",
-        "c": "x = (y - 120)/20",
-        "d": "x = (y - 129)/9"
-      },
-      "answer": "b",
-      "subtopic": "changing subject"
-    },
-    {
-      "id": 306,
-      "question": "Solve: 9x + 19 = 39",
-      "options": {
-        "a": "x = 17",
-        "b": "x = 2",
-        "c": "x = 11",
-        "d": "x = 12"
-      },
-      "answer": "b",
-      "subtopic": "linear equations"
-    },
-    {
-      "id": 307,
-      "question": "Simplify: 9x + 9x",
-      "options": {
-        "a": "118x",
-        "b": "138x",
-        "c": "18x",
-        "d": "117x"
-      },
-      "answer": "c",
-      "subtopic": "simplifying expressions"
-    },
-    {
-      "id": 308,
-      "question": "Simplify: 9x + 9x",
-      "options": {
-        "a": "158x",
-        "b": "18x",
-        "c": "168x",
-        "d": "198x"
-      },
-      "answer": "b",
-      "subtopic": "simplifying expressions"
-    },
-    {
-      "id": 309,
-      "question": "Simplify: 9x + 9x",
-      "options": {
-        "a": "110x",
-        "b": "148x",
-        "c": "18x",
-        "d": "118x"
-      },
-      "answer": "c",
-      "subtopic": "simplifying expressions"
-    },
-    {
-      "id": 310,
-      "question": "Solve: 9x + 19 = 39",
-      "options": {
-        "a": "x = 14",
-        "b": "x = 13",
-        "c": "x = 19",
-        "d": "x = 2"
-      },
-      "answer": "d",
-      "subtopic": "linear equations"
-    },
-    {
-      "id": 311,
-      "question": "Factorize: x\u00b2 + 12x + 27",
-      "options": {
-        "a": "(x + 9)(x + 16)",
-        "b": "(x + 9)(x + 3)",
-        "c": "(x + 9)(x + 10)",
-        "d": "(x + 15)(x + 3)"
-      },
-      "answer": "b",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 312,
-      "question": "Solve: 9x + 19 = 39",
-      "options": {
-        "a": "x = 17",
-        "b": "x = 18",
-        "c": "x = 2",
-        "d": "x = 10"
-      },
-      "answer": "c",
-      "subtopic": "linear equations"
-    },
-    {
-      "id": 313,
-      "question": "Simplify: 9x + 9x",
-      "options": {
-        "a": "113x",
-        "b": "110x",
-        "c": "18x",
-        "d": "188x"
-      },
-      "answer": "c",
-      "subtopic": "simplifying expressions"
-    },
-    {
-      "id": 314,
-      "question": "Make x the subject: y = 9x + 19",
-      "options": {
-        "a": "x = (y - 129)/9",
-        "b": "x = (y - 149)/9",
-        "c": "x = (y - 109)/9",
-        "d": "x = (y - 19)/9"
-      },
-      "answer": "d",
-      "subtopic": "changing subject"
-    },
-    {
-      "id": 315,
-      "question": "Factorize: x\u00b2 + 13x + 36",
-      "options": {
-        "a": "(x + 19)(x + 4)",
-        "b": "(x + 14)(x + 4)",
-        "c": "(x + 9)(x + 4)",
-        "d": "(x + 18)(x + 4)"
-      },
-      "answer": "c",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 316,
-      "question": "Make x the subject: y = 9x + 19",
-      "options": {
-        "a": "x = (y - 118)/18",
-        "b": "x = (y - 129)/9",
-        "c": "x = (y - 209)/9",
-        "d": "x = (y - 19)/9"
-      },
-      "answer": "d",
-      "subtopic": "changing subject"
-    },
-    {
-      "id": 317,
-      "question": "Factorize: x\u00b2 + 11x + 18",
-      "options": {
-        "a": "(x + 17)(x + 2)",
-        "b": "(x + 9)(x + 13)",
-        "c": "(x + 13)(x + 2)",
-        "d": "(x + 9)(x + 2)"
-      },
-      "answer": "d",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 318,
-      "question": "Factorize: x\u00b2 + 15x + 54",
-      "options": {
-        "a": "(x + 9)(x + 15)",
-        "b": "(x + 9)(x + 6)",
-        "c": "(x + 9)(x + 20)",
-        "d": "(x + 11)(x + 6)"
-      },
-      "answer": "b",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 319,
-      "question": "Make x the subject: y = 9x + 19",
-      "options": {
-        "a": "x = (y - 112)/12",
-        "b": "x = (y - 19)/9",
-        "c": "x = (y - 117)/17",
-        "d": "x = (y - 109)/9"
-      },
-      "answer": "b",
-      "subtopic": "changing subject"
-    },
-    {
-      "id": 320,
-      "question": "Expand: (x + 9)(x + 9)",
-      "options": {
-        "a": "x\u00b2 + 18x + 81",
-        "b": "x\u00b2 + 178x + 817",
-        "c": "x\u00b2 + 148x + 814",
-        "d": "x\u00b2 + 112x + 121"
-      },
-      "answer": "a",
-      "subtopic": "expansion"
-    },
-    {
-      "id": 321,
-      "question": "Solve: 9x + 19 = 39",
-      "options": {
-        "a": "x = 11",
-        "b": "x = 12",
-        "c": "x = 2",
-        "d": "x = 15"
-      },
-      "answer": "c",
-      "subtopic": "linear equations"
-    },
-    {
-      "id": 322,
-      "question": "Make x the subject: y = 9x + 19",
-      "options": {
-        "a": "x = (y - 111)/11",
-        "b": "x = (y - 119)/9",
-        "c": "x = (y - 19)/9",
-        "d": "x = (y - 119)/19"
-      },
-      "answer": "c",
-      "subtopic": "changing subject"
-    },
-    {
-      "id": 323,
-      "question": "Factorize: x\u00b2 + 9x + 14",
-      "options": {
-        "a": "(x + 2)(x + 20)",
-        "b": "(x + 2)(x + 7)",
-        "c": "(x + 15)(x + 7)",
-        "d": "(x + 2)(x + 18)"
-      },
-      "answer": "b",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 324,
-      "question": "Factorize: x\u00b2 + 10x + 24",
-      "options": {
-        "a": "(x + 4)(x + 6)",
-        "b": "(x + 4)(x + 19)",
-        "c": "(x + 19)(x + 6)",
-        "d": "(x + 15)(x + 6)"
-      },
-      "answer": "a",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 325,
-      "question": "Simplify: 9x + 9x",
-      "options": {
-        "a": "198x",
-        "b": "18x",
-        "c": "119x",
-        "d": "178x"
-      },
-      "answer": "b",
-      "subtopic": "simplifying expressions"
-    },
-    {
-      "id": 326,
-      "question": "Expand: (x + 9)(x + 9)",
-      "options": {
-        "a": "x\u00b2 + 18x + 81",
-        "b": "x\u00b2 + 118x + 811",
-        "c": "x\u00b2 + 112x + 121",
-        "d": "x\u00b2 + 114x + 141"
-      },
-      "answer": "a",
-      "subtopic": "expansion"
-    },
-    {
-      "id": 327,
-      "question": "Expand: (x + 9)(x + 9)",
-      "options": {
-        "a": "x\u00b2 + 208x + 820",
-        "b": "x\u00b2 + 178x + 817",
-        "c": "x\u00b2 + 111x + 111",
-        "d": "x\u00b2 + 18x + 81"
-      },
-      "answer": "d",
-      "subtopic": "expansion"
-    },
-    {
-      "id": 328,
-      "question": "Solve: 9x + 19 = 39",
-      "options": {
-        "a": "x = 11",
-        "b": "x = 10",
-        "c": "x = 2",
-        "d": "x = 17"
-      },
-      "answer": "c",
-      "subtopic": "linear equations"
-    },
-    {
-      "id": 329,
-      "question": "Expand: (x + 9)(x + 9)",
-      "options": {
-        "a": "x\u00b2 + 112x + 121",
-        "b": "x\u00b2 + 111x + 111",
-        "c": "x\u00b2 + 118x + 811",
-        "d": "x\u00b2 + 18x + 81"
-      },
-      "answer": "d",
-      "subtopic": "expansion"
-    },
-    {
-      "id": 330,
-      "question": "Expand: (x + 9)(x + 9)",
-      "options": {
-        "a": "x\u00b2 + 18x + 81",
-        "b": "x\u00b2 + 117x + 171",
-        "c": "x\u00b2 + 118x + 181",
-        "d": "x\u00b2 + 168x + 816"
-      },
-      "answer": "a",
-      "subtopic": "expansion"
-    },
-    {
-      "id": 331,
-      "question": "Simplify: 9x + 9x",
-      "options": {
-        "a": "112x",
-        "b": "118x",
-        "c": "138x",
-        "d": "18x"
-      },
-      "answer": "d",
-      "subtopic": "simplifying expressions"
-    },
-    {
-      "id": 332,
-      "question": "Make x the subject: y = 9x + 19",
-      "options": {
-        "a": "x = (y - 139)/9",
-        "b": "x = (y - 120)/20",
-        "c": "x = (y - 19)/9",
-        "d": "x = (y - 114)/14"
-      },
-      "answer": "c",
-      "subtopic": "changing subject"
-    },
-    {
-      "id": 333,
-      "question": "Solve: 9x + 19 = 39",
-      "options": {
-        "a": "x = 15",
-        "b": "x = 16",
-        "c": "x = 19",
-        "d": "x = 2"
-      },
-      "answer": "d",
-      "subtopic": "linear equations"
-    },
-    {
-      "id": 334,
-      "question": "Factorize: x\u00b2 + 13x + 42",
-      "options": {
-        "a": "(x + 6)(x + 7)",
-        "b": "(x + 17)(x + 7)",
-        "c": "(x + 6)(x + 10)",
-        "d": "(x + 6)(x + 18)"
-      },
-      "answer": "a",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 335,
-      "question": "Solve: 9x + 19 = 39",
-      "options": {
-        "a": "x = 14",
-        "b": "x = 2",
-        "c": "x = 15",
-        "d": "x = 18"
-      },
-      "answer": "b",
-      "subtopic": "linear equations"
-    },
-    {
-      "id": 336,
-      "question": "Make x the subject: y = 9x + 19",
-      "options": {
-        "a": "x = (y - 19)/9",
-        "b": "x = (y - 117)/17",
-        "c": "x = (y - 179)/9",
-        "d": "x = (y - 139)/9"
-      },
-      "answer": "a",
-      "subtopic": "changing subject"
-    },
-    {
-      "id": 337,
-      "question": "Factorize: x\u00b2 + 10x + 16",
-      "options": {
-        "a": "(x + 18)(x + 8)",
-        "b": "(x + 2)(x + 8)",
-        "c": "(x + 2)(x + 13)",
-        "d": "(x + 2)(x + 15)"
-      },
-      "answer": "b",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 338,
-      "question": "Expand: (x + 9)(x + 9)",
-      "options": {
-        "a": "x\u00b2 + 18x + 81",
-        "b": "x\u00b2 + 138x + 813",
-        "c": "x\u00b2 + 148x + 814",
-        "d": "x\u00b2 + 118x + 811"
-      },
-      "answer": "a",
-      "subtopic": "expansion"
-    },
-    {
-      "id": 339,
-      "question": "Simplify: 9x + 9x",
-      "options": {
-        "a": "112x",
-        "b": "18x",
-        "c": "118x",
-        "d": "208x"
-      },
-      "answer": "b",
-      "subtopic": "simplifying expressions"
-    },
-    {
-      "id": 340,
-      "question": "Expand: (x + 9)(x + 9)",
-      "options": {
-        "a": "x\u00b2 + 117x + 171",
-        "b": "x\u00b2 + 18x + 81",
-        "c": "x\u00b2 + 112x + 121",
-        "d": "x\u00b2 + 120x + 201"
-      },
-      "answer": "b",
-      "subtopic": "expansion"
-    },
-    {
-      "id": 341,
-      "question": "Expand: (x + 9)(x + 9)",
-      "options": {
-        "a": "x\u00b2 + 18x + 81",
-        "b": "x\u00b2 + 113x + 131",
-        "c": "x\u00b2 + 112x + 121",
-        "d": "x\u00b2 + 188x + 818"
-      },
-      "answer": "a",
-      "subtopic": "expansion"
-    },
-    {
-      "id": 342,
-      "question": "Solve: 9x + 19 = 39",
-      "options": {
-        "a": "x = 18",
-        "b": "x = 2",
-        "c": "x = 12",
-        "d": "x = 17"
-      },
-      "answer": "b",
-      "subtopic": "linear equations"
-    },
-    {
-      "id": 343,
-      "question": "Make x the subject: y = 9x + 19",
-      "options": {
-        "a": "x = (y - 119)/19",
-        "b": "x = (y - 120)/20",
-        "c": "x = (y - 169)/9",
-        "d": "x = (y - 19)/9"
-      },
-      "answer": "d",
-      "subtopic": "changing subject"
-    },
-    {
-      "id": 344,
-      "question": "Simplify: 9x + 9x",
-      "options": {
-        "a": "198x",
-        "b": "168x",
-        "c": "110x",
-        "d": "18x"
-      },
-      "answer": "d",
-      "subtopic": "simplifying expressions"
-    },
-    {
-      "id": 345,
-      "question": "Make x the subject: y = 9x + 19",
-      "options": {
-        "a": "x = (y - 115)/15",
-        "b": "x = (y - 110)/10",
-        "c": "x = (y - 119)/19",
-        "d": "x = (y - 19)/9"
-      },
-      "answer": "d",
-      "subtopic": "changing subject"
-    },
-    {
-      "id": 346,
-      "question": "Solve: 9x + 19 = 39",
-      "options": {
-        "a": "x = 2",
-        "b": "x = 15",
-        "c": "x = 19",
-        "d": "x = 10"
-      },
-      "answer": "a",
-      "subtopic": "linear equations"
-    },
-    {
-      "id": 347,
-      "question": "Simplify: 9x + 9x",
-      "options": {
-        "a": "18x",
-        "b": "168x",
-        "c": "116x",
-        "d": "158x"
-      },
-      "answer": "a",
-      "subtopic": "simplifying expressions"
-    },
-    {
-      "id": 348,
-      "question": "Expand: (x + 9)(x + 9)",
-      "options": {
-        "a": "x\u00b2 + 208x + 820",
-        "b": "x\u00b2 + 18x + 81",
-        "c": "x\u00b2 + 168x + 816",
-        "d": "x\u00b2 + 118x + 181"
-      },
-      "answer": "b",
-      "subtopic": "expansion"
-    },
-    {
-      "id": 349,
-      "question": "Simplify: 9x + 9x",
-      "options": {
-        "a": "198x",
-        "b": "120x",
-        "c": "138x",
-        "d": "18x"
-      },
-      "answer": "d",
-      "subtopic": "simplifying expressions"
-    },
-    {
-      "id": 350,
-      "question": "Simplify: 9x + 9x",
-      "options": {
-        "a": "114x",
-        "b": "111x",
-        "c": "18x",
-        "d": "138x"
-      },
-      "answer": "c",
-      "subtopic": "simplifying expressions"
-    },
-    {
-      "id": 351,
-      "question": "Solve: 9x + 19 = 39",
-      "options": {
-        "a": "x = 15",
-        "b": "x = 18",
-        "c": "x = 2",
-        "d": "x = 10"
-      },
-      "answer": "c",
-      "subtopic": "linear equations"
-    },
-    {
-      "id": 352,
-      "question": "Make x the subject: y = 9x + 19",
-      "options": {
-        "a": "x = (y - 129)/9",
-        "b": "x = (y - 199)/9",
-        "c": "x = (y - 19)/9",
-        "d": "x = (y - 189)/9"
-      },
-      "answer": "c",
-      "subtopic": "changing subject"
-    },
-    {
-      "id": 353,
-      "question": "Solve: 9x + 19 = 39",
-      "options": {
-        "a": "x = 16",
-        "b": "x = 10",
-        "c": "x = 19",
-        "d": "x = 2"
-      },
-      "answer": "d",
-      "subtopic": "linear equations"
-    },
-    {
-      "id": 354,
-      "question": "Expand: (x + 9)(x + 9)",
-      "options": {
-        "a": "x\u00b2 + 119x + 191",
-        "b": "x\u00b2 + 18x + 81",
-        "c": "x\u00b2 + 118x + 811",
-        "d": "x\u00b2 + 158x + 815"
-      },
-      "answer": "b",
-      "subtopic": "expansion"
-    },
-    {
-      "id": 355,
-      "question": "Solve: 9x + 19 = 39",
-      "options": {
-        "a": "x = 2",
-        "b": "x = 13",
-        "c": "x = 18",
-        "d": "x = 11"
-      },
-      "answer": "a",
-      "subtopic": "linear equations"
-    },
-    {
-      "id": 356,
-      "question": "Expand: (x + 9)(x + 9)",
-      "options": {
-        "a": "x\u00b2 + 114x + 141",
-        "b": "x\u00b2 + 117x + 171",
-        "c": "x\u00b2 + 112x + 121",
-        "d": "x\u00b2 + 18x + 81"
-      },
-      "answer": "d",
-      "subtopic": "expansion"
-    },
-    {
-      "id": 357,
-      "question": "Expand: (x + 9)(x + 9)",
-      "options": {
-        "a": "x\u00b2 + 113x + 131",
-        "b": "x\u00b2 + 114x + 141",
-        "c": "x\u00b2 + 18x + 81",
-        "d": "x\u00b2 + 168x + 816"
-      },
-      "answer": "c",
-      "subtopic": "expansion"
-    },
-    {
-      "id": 358,
-      "question": "Make x the subject: y = 9x + 19",
-      "options": {
-        "a": "x = (y - 110)/10",
-        "b": "x = (y - 113)/13",
-        "c": "x = (y - 19)/9",
-        "d": "x = (y - 189)/9"
-      },
-      "answer": "c",
-      "subtopic": "changing subject"
-    },
-    {
-      "id": 359,
-      "question": "Factorize: x\u00b2 + 13x + 36",
-      "options": {
-        "a": "(x + 9)(x + 12)",
-        "b": "(x + 9)(x + 4)",
-        "c": "(x + 11)(x + 4)",
-        "d": "(x + 9)(x + 11)"
-      },
-      "answer": "b",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 360,
-      "question": "Expand: (x + 9)(x + 9)",
-      "options": {
-        "a": "x\u00b2 + 119x + 191",
-        "b": "x\u00b2 + 117x + 171",
-        "c": "x\u00b2 + 208x + 820",
-        "d": "x\u00b2 + 18x + 81"
-      },
-      "answer": "d",
-      "subtopic": "expansion"
-    },
-    {
-      "id": 361,
-      "question": "Solve: 9x + 19 = 39",
-      "options": {
-        "a": "x = 17",
-        "b": "x = 2",
-        "c": "x = 19",
-        "d": "x = 11"
-      },
-      "answer": "b",
-      "subtopic": "linear equations"
-    },
-    {
-      "id": 362,
-      "question": "Factorize: x\u00b2 + 6x + 5",
-      "options": {
-        "a": "(x + 5)(x + 19)",
-        "b": "(x + 15)(x + 1)",
-        "c": "(x + 5)(x + 1)",
-        "d": "(x + 5)(x + 13)"
-      },
-      "answer": "c",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 363,
-      "question": "Solve: 9x + 19 = 39",
-      "options": {
-        "a": "x = 2",
-        "b": "x = 19",
-        "c": "x = 17",
-        "d": "x = 16"
-      },
-      "answer": "a",
-      "subtopic": "linear equations"
-    },
-    {
-      "id": 364,
-      "question": "Factorize: x\u00b2 + 3x + 2",
-      "options": {
-        "a": "(x + 1)(x + 2)",
-        "b": "(x + 15)(x + 2)",
-        "c": "(x + 17)(x + 2)",
-        "d": "(x + 1)(x + 15)"
-      },
-      "answer": "a",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 365,
-      "question": "Simplify: 9x + 9x",
-      "options": {
-        "a": "198x",
-        "b": "18x",
-        "c": "111x",
-        "d": "128x"
-      },
-      "answer": "b",
-      "subtopic": "simplifying expressions"
-    },
-    {
-      "id": 366,
-      "question": "Factorize: x\u00b2 + 18x + 81",
-      "options": {
-        "a": "(x + 10)(x + 10)",
-        "b": "(x + 9)(x + 9)",
-        "c": "(x + 16)(x + 16)",
-        "d": "(x + 12)(x + 12)"
-      },
-      "answer": "b",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 367,
-      "question": "Solve: 9x + 19 = 39",
-      "options": {
-        "a": "x = 2",
-        "b": "x = 11",
-        "c": "x = 19",
-        "d": "x = 15"
-      },
-      "answer": "a",
-      "subtopic": "linear equations"
-    },
-    {
-      "id": 368,
-      "question": "Simplify: 9x + 9x",
-      "options": {
-        "a": "18x",
-        "b": "118x",
-        "c": "128x",
-        "d": "138x"
-      },
-      "answer": "a",
-      "subtopic": "simplifying expressions"
-    },
-    {
-      "id": 369,
-      "question": "Expand: (x + 9)(x + 9)",
-      "options": {
-        "a": "x\u00b2 + 18x + 81",
-        "b": "x\u00b2 + 168x + 816",
-        "c": "x\u00b2 + 116x + 161",
-        "d": "x\u00b2 + 198x + 819"
-      },
-      "answer": "a",
-      "subtopic": "expansion"
-    },
-    {
-      "id": 370,
-      "question": "Simplify: 9x + 9x",
-      "options": {
-        "a": "117x",
-        "b": "148x",
-        "c": "112x",
-        "d": "18x"
-      },
-      "answer": "d",
-      "subtopic": "simplifying expressions"
-    },
-    {
-      "id": 371,
-      "question": "Simplify: 9x + 9x",
-      "options": {
-        "a": "168x",
-        "b": "114x",
-        "c": "18x",
-        "d": "108x"
-      },
-      "answer": "c",
-      "subtopic": "simplifying expressions"
-    },
-    {
-      "id": 372,
-      "question": "Expand: (x + 9)(x + 9)",
-      "options": {
-        "a": "x\u00b2 + 108x + 810",
-        "b": "x\u00b2 + 18x + 81",
-        "c": "x\u00b2 + 119x + 191",
-        "d": "x\u00b2 + 114x + 141"
-      },
-      "answer": "b",
-      "subtopic": "expansion"
-    },
-    {
-      "id": 373,
-      "question": "Simplify: 9x + 9x",
-      "options": {
-        "a": "119x",
-        "b": "120x",
-        "c": "118x",
-        "d": "18x"
-      },
-      "answer": "d",
-      "subtopic": "simplifying expressions"
-    },
-    {
-      "id": 374,
-      "question": "Expand: (x + 9)(x + 9)",
-      "options": {
-        "a": "x\u00b2 + 18x + 81",
-        "b": "x\u00b2 + 158x + 815",
-        "c": "x\u00b2 + 120x + 201",
-        "d": "x\u00b2 + 118x + 181"
-      },
-      "answer": "a",
-      "subtopic": "expansion"
-    },
-    {
-      "id": 375,
-      "question": "Factorize: x\u00b2 + 11x + 30",
-      "options": {
-        "a": "(x + 6)(x + 5)",
-        "b": "(x + 12)(x + 5)",
-        "c": "(x + 15)(x + 5)",
-        "d": "(x + 6)(x + 19)"
-      },
-      "answer": "a",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 376,
-      "question": "Factorize: x\u00b2 + 5x + 4",
-      "options": {
-        "a": "(x + 1)(x + 16)",
-        "b": "(x + 1)(x + 4)",
-        "c": "(x + 1)(x + 11)",
-        "d": "(x + 13)(x + 4)"
-      },
-      "answer": "b",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 377,
-      "question": "Make x the subject: y = 9x + 19",
-      "options": {
-        "a": "x = (y - 113)/13",
-        "b": "x = (y - 19)/9",
-        "c": "x = (y - 117)/17",
-        "d": "x = (y - 129)/9"
-      },
-      "answer": "b",
-      "subtopic": "changing subject"
-    },
-    {
-      "id": 378,
-      "question": "Solve: 9x + 19 = 39",
-      "options": {
-        "a": "x = 2",
-        "b": "x = 10",
-        "c": "x = 17",
-        "d": "x = 19"
-      },
-      "answer": "a",
-      "subtopic": "linear equations"
-    },
-    {
-      "id": 379,
-      "question": "Solve: 9x + 19 = 39",
-      "options": {
-        "a": "x = 2",
-        "b": "x = 16",
-        "c": "x = 14",
-        "d": "x = 10"
-      },
-      "answer": "a",
-      "subtopic": "linear equations"
-    },
-    {
-      "id": 380,
-      "question": "Factorize: x\u00b2 + 7x + 6",
-      "options": {
-        "a": "(x + 15)(x + 1)",
-        "b": "(x + 6)(x + 1)",
-        "c": "(x + 6)(x + 12)",
-        "d": "(x + 6)(x + 13)"
-      },
-      "answer": "b",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 381,
-      "question": "Simplify: 9x + 9x",
-      "options": {
-        "a": "198x",
-        "b": "18x",
-        "c": "110x",
-        "d": "168x"
-      },
-      "answer": "b",
-      "subtopic": "simplifying expressions"
-    },
-    {
-      "id": 382,
-      "question": "Factorize: x\u00b2 + 15x + 54",
-      "options": {
-        "a": "(x + 6)(x + 17)",
-        "b": "(x + 6)(x + 16)",
-        "c": "(x + 6)(x + 9)",
-        "d": "(x + 6)(x + 12)"
-      },
-      "answer": "c",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 383,
-      "question": "Make x the subject: y = 9x + 19",
-      "options": {
-        "a": "x = (y - 19)/9",
-        "b": "x = (y - 149)/9",
-        "c": "x = (y - 139)/9",
-        "d": "x = (y - 112)/12"
-      },
-      "answer": "a",
-      "subtopic": "changing subject"
-    },
-    {
-      "id": 384,
-      "question": "Expand: (x + 9)(x + 9)",
-      "options": {
-        "a": "x\u00b2 + 18x + 81",
-        "b": "x\u00b2 + 108x + 810",
-        "c": "x\u00b2 + 198x + 819",
-        "d": "x\u00b2 + 111x + 111"
-      },
-      "answer": "a",
-      "subtopic": "expansion"
-    },
-    {
-      "id": 385,
-      "question": "Simplify: 9x + 9x",
-      "options": {
-        "a": "18x",
-        "b": "178x",
-        "c": "120x",
-        "d": "208x"
-      },
-      "answer": "a",
-      "subtopic": "simplifying expressions"
-    },
-    {
-      "id": 386,
-      "question": "Expand: (x + 9)(x + 9)",
-      "options": {
-        "a": "x\u00b2 + 18x + 81",
-        "b": "x\u00b2 + 113x + 131",
-        "c": "x\u00b2 + 178x + 817",
-        "d": "x\u00b2 + 158x + 815"
-      },
-      "answer": "a",
-      "subtopic": "expansion"
-    },
-    {
-      "id": 387,
-      "question": "Factorize: x\u00b2 + 12x + 32",
-      "options": {
-        "a": "(x + 4)(x + 8)",
-        "b": "(x + 11)(x + 8)",
-        "c": "(x + 4)(x + 16)",
-        "d": "(x + 4)(x + 10)"
-      },
-      "answer": "a",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 388,
-      "question": "Make x the subject: y = 9x + 19",
-      "options": {
-        "a": "x = (y - 118)/18",
-        "b": "x = (y - 169)/9",
-        "c": "x = (y - 112)/12",
-        "d": "x = (y - 19)/9"
-      },
-      "answer": "d",
-      "subtopic": "changing subject"
-    },
-    {
-      "id": 389,
-      "question": "Make x the subject: y = 9x + 19",
-      "options": {
-        "a": "x = (y - 19)/9",
-        "b": "x = (y - 118)/18",
-        "c": "x = (y - 189)/9",
-        "d": "x = (y - 114)/14"
-      },
-      "answer": "a",
-      "subtopic": "changing subject"
-    },
-    {
-      "id": 390,
-      "question": "Factorize: x\u00b2 + 10x + 9",
-      "options": {
-        "a": "(x + 1)(x + 9)",
-        "b": "(x + 10)(x + 9)",
-        "c": "(x + 1)(x + 12)",
-        "d": "(x + 17)(x + 9)"
-      },
-      "answer": "a",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 391,
-      "question": "Factorize: x\u00b2 + 9x + 20",
-      "options": {
-        "a": "(x + 4)(x + 5)",
-        "b": "(x + 4)(x + 16)",
-        "c": "(x + 20)(x + 5)",
-        "d": "(x + 11)(x + 5)"
-      },
-      "answer": "a",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 392,
-      "question": "Expand: (x + 9)(x + 9)",
-      "options": {
-        "a": "x\u00b2 + 115x + 151",
-        "b": "x\u00b2 + 110x + 101",
-        "c": "x\u00b2 + 138x + 813",
-        "d": "x\u00b2 + 18x + 81"
-      },
-      "answer": "d",
-      "subtopic": "expansion"
-    },
-    {
-      "id": 393,
-      "question": "Simplify: 9x + 9x",
-      "options": {
-        "a": "118x",
-        "b": "18x",
-        "c": "110x",
-        "d": "113x"
-      },
-      "answer": "b",
-      "subtopic": "simplifying expressions"
-    },
-    {
-      "id": 394,
-      "question": "Make x the subject: y = 9x + 19",
-      "options": {
-        "a": "x = (y - 159)/9",
-        "b": "x = (y - 120)/20",
-        "c": "x = (y - 19)/9",
-        "d": "x = (y - 129)/9"
-      },
-      "answer": "c",
-      "subtopic": "changing subject"
-    },
-    {
-      "id": 395,
-      "question": "Factorize: x\u00b2 + 6x + 5",
-      "options": {
-        "a": "(x + 5)(x + 14)",
-        "b": "(x + 5)(x + 1)",
-        "c": "(x + 5)(x + 15)",
-        "d": "(x + 5)(x + 19)"
-      },
-      "answer": "b",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 396,
-      "question": "Make x the subject: y = 9x + 19",
-      "options": {
-        "a": "x = (y - 115)/15",
-        "b": "x = (y - 19)/9",
-        "c": "x = (y - 117)/17",
-        "d": "x = (y - 139)/9"
-      },
-      "answer": "b",
-      "subtopic": "changing subject"
-    },
-    {
-      "id": 397,
-      "question": "Expand: (x + 9)(x + 9)",
-      "options": {
-        "a": "x\u00b2 + 18x + 81",
-        "b": "x\u00b2 + 118x + 811",
-        "c": "x\u00b2 + 114x + 141",
-        "d": "x\u00b2 + 112x + 121"
-      },
-      "answer": "a",
-      "subtopic": "expansion"
-    },
-    {
-      "id": 398,
-      "question": "Factorize: x\u00b2 + 10x + 21",
-      "options": {
-        "a": "(x + 7)(x + 12)",
-        "b": "(x + 7)(x + 3)",
-        "c": "(x + 7)(x + 18)",
-        "d": "(x + 11)(x + 3)"
-      },
-      "answer": "b",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 399,
-      "question": "Simplify: 9x + 9x",
-      "options": {
-        "a": "188x",
-        "b": "18x",
-        "c": "110x",
-        "d": "113x"
-      },
-      "answer": "b",
-      "subtopic": "simplifying expressions"
-    },
-    {
-      "id": 400,
-      "question": "Expand: (x + 9)(x + 9)",
-      "options": {
-        "a": "x\u00b2 + 148x + 814",
-        "b": "x\u00b2 + 115x + 151",
-        "c": "x\u00b2 + 168x + 816",
-        "d": "x\u00b2 + 18x + 81"
-      },
-      "answer": "d",
-      "subtopic": "expansion"
-    },
-    {
-      "id": 401,
-      "question": "Simplify: 9x + 9x",
-      "options": {
-        "a": "18x",
-        "b": "118x",
-        "c": "138x",
-        "d": "188x"
-      },
-      "answer": "a",
-      "subtopic": "simplifying expressions"
-    },
-    {
-      "id": 402,
-      "question": "Simplify: 9x + 9x",
-      "options": {
-        "a": "118x",
-        "b": "18x",
-        "c": "119x",
-        "d": "198x"
-      },
-      "answer": "b",
-      "subtopic": "simplifying expressions"
-    },
-    {
-      "id": 403,
-      "question": "Simplify: 9x + 9x",
-      "options": {
-        "a": "18x",
-        "b": "113x",
-        "c": "198x",
-        "d": "118x"
-      },
-      "answer": "a",
-      "subtopic": "simplifying expressions"
-    },
-    {
-      "id": 404,
-      "question": "Make x the subject: y = 9x + 19",
-      "options": {
-        "a": "x = (y - 179)/9",
-        "b": "x = (y - 19)/9",
-        "c": "x = (y - 113)/13",
-        "d": "x = (y - 159)/9"
-      },
-      "answer": "b",
-      "subtopic": "changing subject"
-    },
-    {
-      "id": 405,
-      "question": "Make x the subject: y = 9x + 19",
-      "options": {
-        "a": "x = (y - 149)/9",
-        "b": "x = (y - 19)/9",
-        "c": "x = (y - 116)/16",
-        "d": "x = (y - 179)/9"
-      },
-      "answer": "b",
-      "subtopic": "changing subject"
-    },
-    {
-      "id": 406,
-      "question": "Make x the subject: y = 9x + 19",
-      "options": {
-        "a": "x = (y - 209)/9",
-        "b": "x = (y - 119)/9",
-        "c": "x = (y - 114)/14",
-        "d": "x = (y - 19)/9"
-      },
-      "answer": "d",
-      "subtopic": "changing subject"
-    },
-    {
-      "id": 407,
-      "question": "Solve: 9x + 19 = 39",
-      "options": {
-        "a": "x = 14",
-        "b": "x = 19",
-        "c": "x = 12",
-        "d": "x = 2"
-      },
-      "answer": "d",
-      "subtopic": "linear equations"
-    },
-    {
-      "id": 408,
-      "question": "Expand: (x + 9)(x + 9)",
-      "options": {
-        "a": "x\u00b2 + 108x + 810",
-        "b": "x\u00b2 + 18x + 81",
-        "c": "x\u00b2 + 198x + 819",
-        "d": "x\u00b2 + 115x + 151"
-      },
-      "answer": "b",
-      "subtopic": "expansion"
-    },
-    {
-      "id": 409,
-      "question": "Factorize: x\u00b2 + 5x + 6",
-      "options": {
-        "a": "(x + 15)(x + 2)",
-        "b": "(x + 20)(x + 2)",
-        "c": "(x + 3)(x + 2)",
-        "d": "(x + 14)(x + 2)"
-      },
-      "answer": "c",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 410,
-      "question": "Expand: (x + 9)(x + 9)",
-      "options": {
-        "a": "x\u00b2 + 116x + 161",
-        "b": "x\u00b2 + 117x + 171",
-        "c": "x\u00b2 + 113x + 131",
-        "d": "x\u00b2 + 18x + 81"
-      },
-      "answer": "d",
-      "subtopic": "expansion"
-    },
-    {
-      "id": 411,
-      "question": "Factorize: x\u00b2 + 10x + 16",
-      "options": {
-        "a": "(x + 16)(x + 2)",
-        "b": "(x + 8)(x + 2)",
-        "c": "(x + 17)(x + 2)",
-        "d": "(x + 8)(x + 17)"
-      },
-      "answer": "b",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 412,
-      "question": "Solve: 9x + 19 = 39",
-      "options": {
-        "a": "x = 2",
-        "b": "x = 16",
-        "c": "x = 10",
-        "d": "x = 17"
-      },
-      "answer": "a",
-      "subtopic": "linear equations"
-    },
-    {
-      "id": 413,
-      "question": "Factorize: x\u00b2 + 9x + 8",
-      "options": {
-        "a": "(x + 14)(x + 8)",
-        "b": "(x + 12)(x + 8)",
-        "c": "(x + 17)(x + 8)",
-        "d": "(x + 1)(x + 8)"
-      },
-      "answer": "d",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 414,
-      "question": "Simplify: 9x + 9x",
-      "options": {
-        "a": "116x",
-        "b": "112x",
-        "c": "188x",
-        "d": "18x"
-      },
-      "answer": "d",
-      "subtopic": "simplifying expressions"
-    },
-    {
-      "id": 415,
-      "question": "Solve: 9x + 19 = 39",
-      "options": {
-        "a": "x = 19",
-        "b": "x = 12",
-        "c": "x = 2",
-        "d": "x = 15"
-      },
-      "answer": "c",
-      "subtopic": "linear equations"
-    },
-    {
-      "id": 416,
-      "question": "Simplify: 9x + 9x",
-      "options": {
-        "a": "116x",
-        "b": "18x",
-        "c": "188x",
-        "d": "111x"
-      },
-      "answer": "b",
-      "subtopic": "simplifying expressions"
-    },
-    {
-      "id": 417,
-      "question": "Factorize: x\u00b2 + 10x + 21",
-      "options": {
-        "a": "(x + 19)(x + 7)",
-        "b": "(x + 3)(x + 17)",
-        "c": "(x + 3)(x + 7)",
-        "d": "(x + 11)(x + 7)"
-      },
-      "answer": "c",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 418,
-      "question": "Make x the subject: y = 9x + 19",
-      "options": {
-        "a": "x = (y - 19)/9",
-        "b": "x = (y - 111)/11",
-        "c": "x = (y - 199)/9",
-        "d": "x = (y - 120)/20"
-      },
-      "answer": "a",
-      "subtopic": "changing subject"
-    },
-    {
-      "id": 419,
-      "question": "Factorize: x\u00b2 + 11x + 18",
-      "options": {
-        "a": "(x + 20)(x + 9)",
-        "b": "(x + 2)(x + 11)",
-        "c": "(x + 2)(x + 16)",
-        "d": "(x + 2)(x + 9)"
-      },
-      "answer": "d",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 420,
-      "question": "Factorize: x\u00b2 + 6x + 9",
-      "options": {
-        "a": "(x + 3)(x + 3)",
-        "b": "(x + 20)(x + 20)",
-        "c": "(x + 13)(x + 13)",
-        "d": "(x + 15)(x + 15)"
-      },
-      "answer": "a",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 421,
-      "question": "Make x the subject: y = 9x + 19",
-      "options": {
-        "a": "x = (y - 111)/11",
-        "b": "x = (y - 120)/20",
-        "c": "x = (y - 19)/9",
-        "d": "x = (y - 109)/9"
-      },
-      "answer": "c",
-      "subtopic": "changing subject"
-    },
-    {
-      "id": 422,
-      "question": "Factorize: x\u00b2 + 15x + 56",
-      "options": {
-        "a": "(x + 14)(x + 7)",
-        "b": "(x + 8)(x + 17)",
-        "c": "(x + 8)(x + 7)",
-        "d": "(x + 8)(x + 10)"
-      },
-      "answer": "c",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 423,
-      "question": "Simplify: 9x + 9x",
-      "options": {
-        "a": "18x",
-        "b": "138x",
-        "c": "188x",
-        "d": "118x"
-      },
-      "answer": "a",
-      "subtopic": "simplifying expressions"
-    },
-    {
-      "id": 424,
-      "question": "Expand: (x + 9)(x + 9)",
-      "options": {
-        "a": "x\u00b2 + 168x + 816",
-        "b": "x\u00b2 + 119x + 191",
-        "c": "x\u00b2 + 148x + 814",
-        "d": "x\u00b2 + 18x + 81"
-      },
-      "answer": "d",
-      "subtopic": "expansion"
-    },
-    {
-      "id": 425,
-      "question": "Expand: (x + 9)(x + 9)",
-      "options": {
-        "a": "x\u00b2 + 113x + 131",
-        "b": "x\u00b2 + 112x + 121",
-        "c": "x\u00b2 + 18x + 81",
-        "d": "x\u00b2 + 138x + 813"
-      },
-      "answer": "c",
-      "subtopic": "expansion"
-    },
-    {
-      "id": 426,
-      "question": "Simplify: 9x + 9x",
-      "options": {
-        "a": "148x",
-        "b": "18x",
-        "c": "168x",
-        "d": "118x"
-      },
-      "answer": "b",
-      "subtopic": "simplifying expressions"
-    },
-    {
-      "id": 427,
-      "question": "Make x the subject: y = 9x + 19",
-      "options": {
-        "a": "x = (y - 169)/9",
-        "b": "x = (y - 139)/9",
-        "c": "x = (y - 119)/9",
-        "d": "x = (y - 19)/9"
-      },
-      "answer": "d",
-      "subtopic": "changing subject"
-    },
-    {
-      "id": 428,
-      "question": "Expand: (x + 9)(x + 9)",
-      "options": {
-        "a": "x\u00b2 + 148x + 814",
-        "b": "x\u00b2 + 112x + 121",
-        "c": "x\u00b2 + 18x + 81",
-        "d": "x\u00b2 + 158x + 815"
-      },
-      "answer": "c",
-      "subtopic": "expansion"
-    },
-    {
-      "id": 429,
-      "question": "Expand: (x + 9)(x + 9)",
-      "options": {
-        "a": "x\u00b2 + 112x + 121",
-        "b": "x\u00b2 + 118x + 181",
-        "c": "x\u00b2 + 116x + 161",
-        "d": "x\u00b2 + 18x + 81"
-      },
-      "answer": "d",
-      "subtopic": "expansion"
-    },
-    {
-      "id": 430,
-      "question": "Expand: (x + 9)(x + 9)",
-      "options": {
-        "a": "x\u00b2 + 113x + 131",
-        "b": "x\u00b2 + 208x + 820",
-        "c": "x\u00b2 + 198x + 819",
-        "d": "x\u00b2 + 18x + 81"
-      },
-      "answer": "d",
-      "subtopic": "expansion"
-    },
-    {
-      "id": 431,
-      "question": "Expand: (x + 9)(x + 9)",
-      "options": {
-        "a": "x\u00b2 + 138x + 813",
-        "b": "x\u00b2 + 18x + 81",
-        "c": "x\u00b2 + 158x + 815",
-        "d": "x\u00b2 + 108x + 810"
-      },
-      "answer": "b",
-      "subtopic": "expansion"
-    },
-    {
-      "id": 432,
-      "question": "Solve: 9x + 19 = 39",
-      "options": {
-        "a": "x = 12",
-        "b": "x = 11",
-        "c": "x = 10",
-        "d": "x = 2"
-      },
-      "answer": "d",
-      "subtopic": "linear equations"
-    },
-    {
-      "id": 433,
-      "question": "Expand: (x + 9)(x + 9)",
-      "options": {
-        "a": "x\u00b2 + 18x + 81",
-        "b": "x\u00b2 + 113x + 131",
-        "c": "x\u00b2 + 116x + 161",
-        "d": "x\u00b2 + 178x + 817"
-      },
-      "answer": "a",
-      "subtopic": "expansion"
-    },
-    {
-      "id": 434,
-      "question": "Make x the subject: y = 9x + 19",
-      "options": {
-        "a": "x = (y - 169)/9",
-        "b": "x = (y - 19)/9",
-        "c": "x = (y - 117)/17",
-        "d": "x = (y - 109)/9"
-      },
-      "answer": "b",
-      "subtopic": "changing subject"
-    },
-    {
-      "id": 435,
-      "question": "Simplify: 9x + 9x",
-      "options": {
-        "a": "114x",
-        "b": "112x",
-        "c": "18x",
-        "d": "188x"
-      },
-      "answer": "c",
-      "subtopic": "simplifying expressions"
-    },
-    {
-      "id": 436,
-      "question": "Factorize: x\u00b2 + 7x + 12",
-      "options": {
-        "a": "(x + 10)(x + 4)",
-        "b": "(x + 3)(x + 16)",
-        "c": "(x + 3)(x + 4)",
-        "d": "(x + 19)(x + 4)"
-      },
-      "answer": "c",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 437,
-      "question": "Solve: 9x + 19 = 39",
-      "options": {
-        "a": "x = 2",
-        "b": "x = 19",
-        "c": "x = 15",
-        "d": "x = 16"
-      },
-      "answer": "a",
-      "subtopic": "linear equations"
-    },
-    {
-      "id": 438,
-      "question": "Solve: 9x + 19 = 39",
-      "options": {
-        "a": "x = 2",
-        "b": "x = 14",
-        "c": "x = 16",
-        "d": "x = 11"
-      },
-      "answer": "a",
-      "subtopic": "linear equations"
-    },
-    {
-      "id": 439,
-      "question": "Factorize: x\u00b2 + 14x + 45",
-      "options": {
-        "a": "(x + 9)(x + 5)",
-        "b": "(x + 9)(x + 11)",
-        "c": "(x + 12)(x + 5)",
-        "d": "(x + 11)(x + 5)"
-      },
-      "answer": "a",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 440,
-      "question": "Factorize: x\u00b2 + 17x + 72",
-      "options": {
-        "a": "(x + 9)(x + 18)",
-        "b": "(x + 9)(x + 8)",
-        "c": "(x + 9)(x + 17)",
-        "d": "(x + 14)(x + 8)"
-      },
-      "answer": "b",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 441,
-      "question": "Solve: 9x + 19 = 39",
-      "options": {
-        "a": "x = 15",
-        "b": "x = 2",
-        "c": "x = 17",
-        "d": "x = 20"
-      },
-      "answer": "b",
-      "subtopic": "linear equations"
-    },
-    {
-      "id": 442,
-      "question": "Simplify: 9x + 9x",
-      "options": {
-        "a": "120x",
-        "b": "108x",
-        "c": "178x",
-        "d": "18x"
-      },
-      "answer": "d",
-      "subtopic": "simplifying expressions"
-    },
-    {
-      "id": 443,
-      "question": "Make x the subject: y = 9x + 19",
-      "options": {
-        "a": "x = (y - 19)/9",
-        "b": "x = (y - 189)/9",
-        "c": "x = (y - 139)/9",
-        "d": "x = (y - 199)/9"
-      },
-      "answer": "a",
-      "subtopic": "changing subject"
-    },
-    {
-      "id": 444,
-      "question": "Factorize: x\u00b2 + 9x + 18",
-      "options": {
-        "a": "(x + 6)(x + 20)",
-        "b": "(x + 6)(x + 3)",
-        "c": "(x + 13)(x + 3)",
-        "d": "(x + 12)(x + 3)"
-      },
-      "answer": "b",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 445,
-      "question": "Make x the subject: y = 9x + 19",
-      "options": {
-        "a": "x = (y - 119)/19",
-        "b": "x = (y - 169)/9",
-        "c": "x = (y - 19)/9",
-        "d": "x = (y - 117)/17"
-      },
-      "answer": "c",
-      "subtopic": "changing subject"
-    },
-    {
-      "id": 446,
-      "question": "Make x the subject: y = 9x + 19",
-      "options": {
-        "a": "x = (y - 118)/18",
-        "b": "x = (y - 19)/9",
-        "c": "x = (y - 179)/9",
-        "d": "x = (y - 114)/14"
-      },
-      "answer": "b",
-      "subtopic": "changing subject"
-    },
-    {
-      "id": 447,
-      "question": "Make x the subject: y = 9x + 19",
-      "options": {
-        "a": "x = (y - 19)/9",
-        "b": "x = (y - 113)/13",
-        "c": "x = (y - 119)/9",
-        "d": "x = (y - 114)/14"
-      },
-      "answer": "a",
-      "subtopic": "changing subject"
-    },
-    {
-      "id": 448,
-      "question": "Solve: 9x + 19 = 39",
-      "options": {
-        "a": "x = 11",
-        "b": "x = 2",
-        "c": "x = 10",
-        "d": "x = 17"
-      },
-      "answer": "b",
-      "subtopic": "linear equations"
-    },
-    {
-      "id": 449,
-      "question": "Make x the subject: y = 9x + 19",
-      "options": {
-        "a": "x = (y - 149)/9",
-        "b": "x = (y - 116)/16",
-        "c": "x = (y - 19)/9",
-        "d": "x = (y - 118)/18"
-      },
-      "answer": "c",
-      "subtopic": "changing subject"
-    },
-    {
-      "id": 450,
-      "question": "Factorize: x\u00b2 + 12x + 35",
-      "options": {
-        "a": "(x + 5)(x + 17)",
-        "b": "(x + 16)(x + 7)",
-        "c": "(x + 5)(x + 7)",
-        "d": "(x + 12)(x + 7)"
-      },
-      "answer": "c",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 451,
-      "question": "Expand: (x + 9)(x + 9)",
-      "options": {
-        "a": "x\u00b2 + 18x + 81",
-        "b": "x\u00b2 + 168x + 816",
-        "c": "x\u00b2 + 108x + 810",
-        "d": "x\u00b2 + 116x + 161"
-      },
-      "answer": "a",
-      "subtopic": "expansion"
-    },
-    {
-      "id": 452,
-      "question": "Expand: (x + 9)(x + 9)",
-      "options": {
-        "a": "x\u00b2 + 115x + 151",
-        "b": "x\u00b2 + 113x + 131",
-        "c": "x\u00b2 + 116x + 161",
-        "d": "x\u00b2 + 18x + 81"
-      },
-      "answer": "d",
-      "subtopic": "expansion"
-    },
-    {
-      "id": 453,
-      "question": "Make x the subject: y = 9x + 19",
-      "options": {
-        "a": "x = (y - 117)/17",
-        "b": "x = (y - 209)/9",
-        "c": "x = (y - 110)/10",
-        "d": "x = (y - 19)/9"
-      },
-      "answer": "d",
-      "subtopic": "changing subject"
-    },
-    {
-      "id": 454,
-      "question": "Expand: (x + 9)(x + 9)",
-      "options": {
-        "a": "x\u00b2 + 18x + 81",
-        "b": "x\u00b2 + 116x + 161",
-        "c": "x\u00b2 + 158x + 815",
-        "d": "x\u00b2 + 168x + 816"
-      },
-      "answer": "a",
-      "subtopic": "expansion"
-    },
-    {
-      "id": 455,
-      "question": "Make x the subject: y = 9x + 19",
-      "options": {
-        "a": "x = (y - 139)/9",
-        "b": "x = (y - 179)/9",
-        "c": "x = (y - 119)/19",
-        "d": "x = (y - 19)/9"
-      },
-      "answer": "d",
-      "subtopic": "changing subject"
-    },
-    {
-      "id": 456,
-      "question": "Make x the subject: y = 9x + 19",
-      "options": {
-        "a": "x = (y - 19)/9",
-        "b": "x = (y - 118)/18",
-        "c": "x = (y - 139)/9",
-        "d": "x = (y - 179)/9"
-      },
-      "answer": "a",
-      "subtopic": "changing subject"
-    },
-    {
-      "id": 457,
-      "question": "Make x the subject: y = 9x + 19",
-      "options": {
-        "a": "x = (y - 19)/9",
-        "b": "x = (y - 113)/13",
-        "c": "x = (y - 139)/9",
-        "d": "x = (y - 117)/17"
-      },
-      "answer": "a",
-      "subtopic": "changing subject"
-    },
-    {
-      "id": 458,
-      "question": "Solve: 9x + 19 = 39",
-      "options": {
-        "a": "x = 2",
-        "b": "x = 11",
-        "c": "x = 12",
-        "d": "x = 15"
-      },
-      "answer": "a",
-      "subtopic": "linear equations"
-    },
-    {
-      "id": 459,
-      "question": "Solve: 9x + 19 = 39",
-      "options": {
-        "a": "x = 13",
-        "b": "x = 11",
-        "c": "x = 2",
-        "d": "x = 19"
-      },
-      "answer": "c",
-      "subtopic": "linear equations"
-    },
-    {
-      "id": 460,
-      "question": "Solve: 9x + 19 = 39",
-      "options": {
-        "a": "x = 19",
-        "b": "x = 12",
-        "c": "x = 16",
-        "d": "x = 2"
-      },
-      "answer": "d",
-      "subtopic": "linear equations"
-    },
-    {
-      "id": 461,
-      "question": "Expand: (x + 9)(x + 9)",
-      "options": {
-        "a": "x\u00b2 + 188x + 818",
-        "b": "x\u00b2 + 18x + 81",
-        "c": "x\u00b2 + 110x + 101",
-        "d": "x\u00b2 + 178x + 817"
-      },
-      "answer": "b",
-      "subtopic": "expansion"
-    },
-    {
-      "id": 462,
-      "question": "Make x the subject: y = 9x + 19",
-      "options": {
-        "a": "x = (y - 149)/9",
-        "b": "x = (y - 19)/9",
-        "c": "x = (y - 114)/14",
-        "d": "x = (y - 179)/9"
-      },
-      "answer": "b",
-      "subtopic": "changing subject"
-    },
-    {
-      "id": 463,
-      "question": "Make x the subject: y = 9x + 19",
-      "options": {
-        "a": "x = (y - 169)/9",
-        "b": "x = (y - 19)/9",
-        "c": "x = (y - 159)/9",
-        "d": "x = (y - 119)/9"
-      },
-      "answer": "b",
-      "subtopic": "changing subject"
-    },
-    {
-      "id": 464,
-      "question": "Factorize: x\u00b2 + 10x + 9",
-      "options": {
-        "a": "(x + 17)(x + 1)",
-        "b": "(x + 9)(x + 14)",
-        "c": "(x + 13)(x + 1)",
-        "d": "(x + 9)(x + 1)"
-      },
-      "answer": "d",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 465,
-      "question": "Expand: (x + 9)(x + 9)",
-      "options": {
-        "a": "x\u00b2 + 178x + 817",
-        "b": "x\u00b2 + 113x + 131",
-        "c": "x\u00b2 + 18x + 81",
-        "d": "x\u00b2 + 208x + 820"
-      },
-      "answer": "c",
-      "subtopic": "expansion"
-    },
-    {
-      "id": 466,
-      "question": "Simplify: 9x + 9x",
-      "options": {
-        "a": "188x",
-        "b": "18x",
-        "c": "158x",
-        "d": "168x"
-      },
-      "answer": "b",
-      "subtopic": "simplifying expressions"
-    },
-    {
-      "id": 467,
-      "question": "Factorize: x\u00b2 + 9x + 14",
-      "options": {
-        "a": "(x + 2)(x + 7)",
-        "b": "(x + 12)(x + 7)",
-        "c": "(x + 2)(x + 16)",
-        "d": "(x + 2)(x + 12)"
-      },
-      "answer": "a",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 468,
-      "question": "Factorize: x\u00b2 + 11x + 28",
-      "options": {
-        "a": "(x + 7)(x + 12)",
-        "b": "(x + 7)(x + 17)",
-        "c": "(x + 7)(x + 4)",
-        "d": "(x + 7)(x + 16)"
-      },
-      "answer": "c",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 469,
-      "question": "Factorize: x\u00b2 + 5x + 4",
-      "options": {
-        "a": "(x + 4)(x + 14)",
-        "b": "(x + 4)(x + 12)",
-        "c": "(x + 4)(x + 16)",
-        "d": "(x + 4)(x + 1)"
-      },
-      "answer": "d",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 470,
-      "question": "Solve: 9x + 19 = 39",
-      "options": {
-        "a": "x = 11",
-        "b": "x = 2",
-        "c": "x = 12",
-        "d": "x = 10"
-      },
-      "answer": "b",
-      "subtopic": "linear equations"
-    },
-    {
-      "id": 471,
-      "question": "Solve: 9x + 19 = 39",
-      "options": {
-        "a": "x = 12",
-        "b": "x = 2",
-        "c": "x = 18",
-        "d": "x = 14"
-      },
-      "answer": "b",
-      "subtopic": "linear equations"
-    },
-    {
-      "id": 472,
-      "question": "Solve: 9x + 19 = 39",
-      "options": {
-        "a": "x = 19",
-        "b": "x = 12",
-        "c": "x = 2",
-        "d": "x = 14"
-      },
-      "answer": "c",
-      "subtopic": "linear equations"
-    },
-    {
-      "id": 473,
-      "question": "Expand: (x + 9)(x + 9)",
-      "options": {
-        "a": "x\u00b2 + 117x + 171",
-        "b": "x\u00b2 + 119x + 191",
-        "c": "x\u00b2 + 188x + 818",
-        "d": "x\u00b2 + 18x + 81"
-      },
-      "answer": "d",
-      "subtopic": "expansion"
-    },
-    {
-      "id": 474,
-      "question": "Factorize: x\u00b2 + 10x + 24",
-      "options": {
-        "a": "(x + 6)(x + 10)",
-        "b": "(x + 17)(x + 4)",
-        "c": "(x + 6)(x + 4)",
-        "d": "(x + 6)(x + 17)"
-      },
-      "answer": "c",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 475,
-      "question": "Solve: 9x + 19 = 39",
-      "options": {
-        "a": "x = 10",
-        "b": "x = 14",
-        "c": "x = 2",
-        "d": "x = 19"
-      },
-      "answer": "c",
-      "subtopic": "linear equations"
-    },
-    {
-      "id": 476,
-      "question": "Factorize: x\u00b2 + 7x + 12",
-      "options": {
-        "a": "(x + 13)(x + 4)",
-        "b": "(x + 3)(x + 14)",
-        "c": "(x + 3)(x + 4)",
-        "d": "(x + 14)(x + 4)"
-      },
-      "answer": "c",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 477,
-      "question": "Expand: (x + 9)(x + 9)",
-      "options": {
-        "a": "x\u00b2 + 18x + 81",
-        "b": "x\u00b2 + 198x + 819",
-        "c": "x\u00b2 + 117x + 171",
-        "d": "x\u00b2 + 118x + 181"
-      },
-      "answer": "a",
-      "subtopic": "expansion"
-    },
-    {
-      "id": 478,
-      "question": "Simplify: 9x + 9x",
-      "options": {
-        "a": "18x",
-        "b": "168x",
-        "c": "119x",
-        "d": "118x"
-      },
-      "answer": "a",
-      "subtopic": "simplifying expressions"
-    },
-    {
-      "id": 479,
-      "question": "Factorize: x\u00b2 + 14x + 48",
-      "options": {
-        "a": "(x + 16)(x + 8)",
-        "b": "(x + 6)(x + 10)",
-        "c": "(x + 17)(x + 8)",
-        "d": "(x + 6)(x + 8)"
-      },
-      "answer": "d",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 480,
-      "question": "Simplify: 9x + 9x",
-      "options": {
-        "a": "116x",
-        "b": "18x",
-        "c": "113x",
-        "d": "114x"
-      },
-      "answer": "b",
-      "subtopic": "simplifying expressions"
-    },
-    {
-      "id": 481,
-      "question": "Expand: (x + 9)(x + 9)",
-      "options": {
-        "a": "x\u00b2 + 208x + 820",
-        "b": "x\u00b2 + 18x + 81",
-        "c": "x\u00b2 + 110x + 101",
-        "d": "x\u00b2 + 119x + 191"
-      },
-      "answer": "b",
-      "subtopic": "expansion"
-    },
-    {
-      "id": 482,
-      "question": "Solve: 9x + 19 = 39",
-      "options": {
-        "a": "x = 11",
-        "b": "x = 17",
-        "c": "x = 12",
-        "d": "x = 2"
-      },
-      "answer": "d",
-      "subtopic": "linear equations"
-    },
-    {
-      "id": 483,
-      "question": "Factorize: x\u00b2 + 10x + 9",
-      "options": {
-        "a": "(x + 14)(x + 1)",
-        "b": "(x + 9)(x + 1)",
-        "c": "(x + 17)(x + 1)",
-        "d": "(x + 12)(x + 1)"
-      },
-      "answer": "b",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 484,
-      "question": "Expand: (x + 9)(x + 9)",
-      "options": {
-        "a": "x\u00b2 + 178x + 817",
-        "b": "x\u00b2 + 117x + 171",
-        "c": "x\u00b2 + 18x + 81",
-        "d": "x\u00b2 + 120x + 201"
-      },
-      "answer": "c",
-      "subtopic": "expansion"
-    },
-    {
-      "id": 485,
-      "question": "Make x the subject: y = 9x + 19",
-      "options": {
-        "a": "x = (y - 111)/11",
-        "b": "x = (y - 19)/9",
-        "c": "x = (y - 116)/16",
-        "d": "x = (y - 117)/17"
-      },
-      "answer": "b",
-      "subtopic": "changing subject"
-    },
-    {
-      "id": 486,
-      "question": "Expand: (x + 9)(x + 9)",
-      "options": {
-        "a": "x\u00b2 + 18x + 81",
-        "b": "x\u00b2 + 178x + 817",
-        "c": "x\u00b2 + 208x + 820",
-        "d": "x\u00b2 + 116x + 161"
-      },
-      "answer": "a",
-      "subtopic": "expansion"
-    },
-    {
-      "id": 487,
-      "question": "Solve: 9x + 19 = 39",
-      "options": {
-        "a": "x = 2",
-        "b": "x = 18",
-        "c": "x = 17",
-        "d": "x = 16"
-      },
-      "answer": "a",
-      "subtopic": "linear equations"
-    },
-    {
-      "id": 488,
-      "question": "Expand: (x + 9)(x + 9)",
-      "options": {
-        "a": "x\u00b2 + 110x + 101",
-        "b": "x\u00b2 + 198x + 819",
-        "c": "x\u00b2 + 115x + 151",
-        "d": "x\u00b2 + 18x + 81"
-      },
-      "answer": "d",
-      "subtopic": "expansion"
-    },
-    {
-      "id": 489,
-      "question": "Factorize: x\u00b2 + 15x + 54",
-      "options": {
-        "a": "(x + 9)(x + 6)",
-        "b": "(x + 15)(x + 6)",
-        "c": "(x + 20)(x + 6)",
-        "d": "(x + 14)(x + 6)"
-      },
-      "answer": "a",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 490,
-      "question": "Expand: (x + 9)(x + 9)",
-      "options": {
-        "a": "x\u00b2 + 120x + 201",
-        "b": "x\u00b2 + 178x + 817",
-        "c": "x\u00b2 + 128x + 812",
-        "d": "x\u00b2 + 18x + 81"
-      },
-      "answer": "d",
-      "subtopic": "expansion"
-    },
-    {
-      "id": 491,
-      "question": "Expand: (x + 9)(x + 9)",
-      "options": {
-        "a": "x\u00b2 + 128x + 812",
-        "b": "x\u00b2 + 18x + 81",
-        "c": "x\u00b2 + 116x + 161",
-        "d": "x\u00b2 + 114x + 141"
-      },
-      "answer": "b",
-      "subtopic": "expansion"
-    },
-    {
-      "id": 492,
-      "question": "Expand: (x + 9)(x + 9)",
-      "options": {
-        "a": "x\u00b2 + 188x + 818",
-        "b": "x\u00b2 + 113x + 131",
-        "c": "x\u00b2 + 18x + 81",
-        "d": "x\u00b2 + 178x + 817"
-      },
-      "answer": "c",
-      "subtopic": "expansion"
-    },
-    {
-      "id": 493,
-      "question": "Simplify: 9x + 9x",
-      "options": {
-        "a": "115x",
-        "b": "138x",
-        "c": "116x",
-        "d": "18x"
-      },
-      "answer": "d",
-      "subtopic": "simplifying expressions"
-    },
-    {
-      "id": 494,
-      "question": "Simplify: 9x + 9x",
-      "options": {
-        "a": "120x",
-        "b": "110x",
-        "c": "18x",
-        "d": "111x"
-      },
-      "answer": "c",
-      "subtopic": "simplifying expressions"
-    },
-    {
-      "id": 495,
-      "question": "Factorize: x\u00b2 + 9x + 20",
-      "options": {
-        "a": "(x + 17)(x + 4)",
-        "b": "(x + 5)(x + 10)",
-        "c": "(x + 5)(x + 20)",
-        "d": "(x + 5)(x + 4)"
-      },
-      "answer": "d",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 496,
-      "question": "Factorize: x\u00b2 + 8x + 7",
-      "options": {
-        "a": "(x + 1)(x + 20)",
-        "b": "(x + 1)(x + 7)",
-        "c": "(x + 11)(x + 7)",
-        "d": "(x + 1)(x + 12)"
-      },
-      "answer": "b",
-      "subtopic": "factorization"
-    },
-    {
-      "id": 497,
-      "question": "Make x the subject: y = 9x + 19",
-      "options": {
-        "a": "x = (y - 19)/9",
-        "b": "x = (y - 112)/12",
-        "c": "x = (y - 159)/9",
-        "d": "x = (y - 116)/16"
-      },
-      "answer": "a",
-      "subtopic": "changing subject"
-    },
-    {
-      "id": 498,
-      "question": "Expand: (x + 9)(x + 9)",
-      "options": {
-        "a": "x\u00b2 + 18x + 81",
-        "b": "x\u00b2 + 128x + 812",
-        "c": "x\u00b2 + 108x + 810",
-        "d": "x\u00b2 + 110x + 101"
-      },
-      "answer": "a",
-      "subtopic": "expansion"
-    },
-    {
-      "id": 499,
-      "question": "Make x the subject: y = 9x + 19",
-      "options": {
-        "a": "x = (y - 120)/20",
-        "b": "x = (y - 19)/9",
-        "c": "x = (y - 113)/13",
-        "d": "x = (y - 118)/18"
-      },
-      "answer": "b",
-      "subtopic": "changing subject"
-    },
-    {
-      "id": 500,
-      "question": "Simplify: 9x + 9x",
-      "options": {
-        "a": "115x",
-        "b": "128x",
-        "c": "18x",
-        "d": "188x"
-      },
-      "answer": "c",
-      "subtopic": "simplifying expressions"
+      "question": "Factorize: x^2 + 8x + 15",
+      "options": {
+        "A": "(x - 3)(x + 5)",
+        "B": "(x + 3)(x - 5)",
+        "C": "(x - 3)(x - 5)",
+        "D": "(x + 3)(x + 5)"
+      },
+      "answer": "D",
+      "subtopic": "Algebra"
     }
   ]
 }
