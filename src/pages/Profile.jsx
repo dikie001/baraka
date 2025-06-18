@@ -26,30 +26,38 @@ const ProfilePage = () => {
   // Save Global Progress
   useEffect(() => {
     setOveralProgress(globalPercentage);
-
   }, []);
 
-  const [generalPoints, setGeneralPoints]=useState()
+  const [generalPoints, setGeneralPoints] = useState();
   // Get Global Points
-  const quickQuizPoints = Number(localStorage.getItem("quick-practice-quiz-points"));
+  const quickQuizPoints = Number(
+    localStorage.getItem("quick-practice-quiz-points")
+  );
   const numbersPoints = Number(localStorage.getItem("numbers-quiz-points"));
   const algebraPoints = Number(localStorage.getItem("algebra-quiz-points"));
   const geometryPoints = Number(localStorage.getItem("geometry-quiz-points"));
-  const probabilityPoints = Number(localStorage.getItem("probability-quiz-points"));
-  const measurementsPoints = Number(localStorage.getItem("measurements-quiz-points"));
+  const probabilityPoints = Number(
+    localStorage.getItem("probability-quiz-points")
+  );
+  const measurementsPoints = Number(
+    localStorage.getItem("measurements-quiz-points")
+  );
   const dataPoints = Number(localStorage.getItem("data-quiz-points"));
+  const [totalQAnswered, setTotalQAnswered]=useState()
 
   // Calculate Total Global Points
-   const totalPoints =
-     quickQuizPoints +
-     numbersPoints +
-     algebraPoints +
-     geometryPoints +
-     probabilityPoints +
-     measurementsPoints +
-     dataPoints
-  
+  const totalPoints =
+    quickQuizPoints +
+    numbersPoints +
+    algebraPoints +
+    geometryPoints +
+    probabilityPoints +
+    measurementsPoints +
+    dataPoints;
 
+  //  Calculate Average quiz Score
+  const AverageScore = (totalPoints / 7).toFixed(0);
+  const AV = Number(AverageScore)
 
   // Numbers Quiz LocalStorage
   const numbersProgress = localStorage.getItem("current-number");
@@ -102,17 +110,18 @@ const ProfilePage = () => {
   // Calculate overall Progress
   const calculateOverallProgress = () => {
     const overalProgress = NP + AP + GP + MP + PP + DP + QP;
+    setTotalQAnswered(overalProgress)
     const totalQuiz = NTQ + ATQ + GTQ + MTQ + PTQ + DTQ + QQT;
     const gp = ((overalProgress / totalQuiz) * 100).toFixed(2);
     const globalProgress = Number(gp);
     setGlobalPercentage(globalProgress);
   };
 
+
+
   useEffect(() => {
     calculateOverallProgress();
   }, []);
-
-
 
   const subjectData = [
     {
@@ -203,7 +212,6 @@ const ProfilePage = () => {
                   </span>
                 </div>
               </div> */}
-
             </div>
 
             {/* Level Display */}
@@ -302,7 +310,7 @@ const ProfilePage = () => {
             {/* QUICK STATS GRID */}
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-2">
               {/* Study Streak Card */}
-              <div
+              {/* <di
                 className="bg-black/30 backdrop-blur-xl rounded-2xl p-6 shadow-2xl border border-purple-500/30 hover:border-purple-400/50 transition-all duration-500 hover:scale-105 hover:shadow-purple-500/25 group cursor-pointer"
                 // onMouseEnter={() => setHoveredCard("streak")}
                 // onMouseLeave={() => setHoveredCard(null)}
@@ -322,7 +330,7 @@ const ProfilePage = () => {
                   <ChevronUp className="w-3 h-3 mr-1" />
                   +3 from last week
                 </div>
-              </div>
+              </di> */}
 
               {/* Quizzes Completed Card */}
               <div
@@ -335,17 +343,19 @@ const ProfilePage = () => {
                     <Target className="w-5 h-5 text-pink-300" />
                   </div>
                   <span className="text-slate-300 text-sm font-medium">
-                    Quizzes Completed
+                    Quizes Answered
                   </span>
                 </div>
-                <div className="text-2xl font-bold text-white mb-2">127</div>
+                <div className="text-2xl font-bold text-white mb-2">
+                  {totalQAnswered}
+                </div>
                 <div className="text-xs text-purple-400 font-medium">
-                  89% accuracy
+                  {AV === 0 ? AV : AV + 2}% accuracy
                 </div>
               </div>
 
               {/* Study Time Card */}
-              <div
+              {/* <div
                 className="bg-black/30 backdrop-blur-xl rounded-2xl p-6 shadow-2xl border border-purple-500/30 hover:border-purple-400/50 transition-all duration-500 hover:scale-105 hover:shadow-purple-500/25 group cursor-pointer"
                 // onMouseEnter={() => setHoveredCard("time")}
                 // onMouseLeave={() => setHoveredCard(null)}
@@ -362,7 +372,7 @@ const ProfilePage = () => {
                 <div className="text-xs text-pink-400 font-medium">
                   This month
                 </div>
-              </div>
+              </div> */}
 
               {/* Total Points Card */}
               <div
@@ -378,7 +388,9 @@ const ProfilePage = () => {
                     Total Points
                   </span>
                 </div>
-                <div className="text-2xl font-bold text-white mb-2">{totalPoints} <span className="text-xl">points</span></div>
+                <div className="text-2xl font-bold text-white mb-2">
+                  {totalPoints} <span className="text-xl">points</span>
+                </div>
                 {/* <div className="text-xs text-purple-400 font-medium">
                   Top 10%
                 </div> */}
@@ -466,19 +478,20 @@ const ProfilePage = () => {
                 {/* Average Quiz Score */}
                 <div className="text-center p-6 bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-2xl backdrop-blur-sm border border-purple-400/30 hover:border-purple-300/50 transition-all duration-300 hover:scale-105 group">
                   <div className="text-4xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent mb-3 group-hover:scale-110 transition-transform duration-300">
-                    92%
+                    {AverageScore}%
                   </div>
                   <div className="text-sm font-medium text-slate-200 mb-2">
                     Average Quiz Score
                   </div>
-                  <div className="text-xs text-purple-400 flex items-center justify-center">
+
+                  {/* <div className="text-xs text-purple-400 flex items-center justify-center">
                     <ChevronUp className="w-3 h-3 mr-1" />
                     +5% from last month
-                  </div>
+                  </div> */}
                 </div>
 
                 {/* Speed Improvement */}
-                <div className="text-center p-6 bg-gradient-to-br from-pink-500/20 to-purple-500/20 rounded-2xl backdrop-blur-sm border border-pink-400/30 hover:border-pink-300/50 transition-all duration-300 hover:scale-105 group">
+                {/* <div className="text-center p-6 bg-gradient-to-br from-pink-500/20 to-purple-500/20 rounded-2xl backdrop-blur-sm border border-pink-400/30 hover:border-pink-300/50 transition-all duration-300 hover:scale-105 group">
                   <div className="text-4xl font-bold bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent mb-3 group-hover:scale-110 transition-transform duration-300">
                     2.3x
                   </div>
@@ -488,10 +501,10 @@ const ProfilePage = () => {
                   <div className="text-xs text-pink-400">
                     Faster than when you started
                   </div>
-                </div>
+                </div> */}
 
                 {/* Study Sessions */}
-                <div className="text-center p-6 bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-2xl backdrop-blur-sm border border-purple-400/30 hover:border-purple-300/50 transition-all duration-300 hover:scale-105 group">
+                {/* <div className="text-center p-6 bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-2xl backdrop-blur-sm border border-purple-400/30 hover:border-purple-300/50 transition-all duration-300 hover:scale-105 group">
                   <div className="text-4xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent mb-3 group-hover:scale-110 transition-transform duration-300">
                     47
                   </div>
@@ -499,7 +512,7 @@ const ProfilePage = () => {
                     Study Sessions
                   </div>
                   <div className="text-xs text-purple-400">This month</div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -634,7 +647,15 @@ const ProfilePage = () => {
                   </div>
                   <div className="text-sm text-pink-300 flex items-center justify-center">
                     <Star className="w-4 h-4 mr-2" />
-                    Excellent work across all Topics!
+                    {globalPercentage <= 20
+                      ? "Practice makes perfect"
+                      : globalPercentage <= 40
+                      ? "Maths is easy, just be persistent"
+                      : globalPercentage <= 60
+                      ? "Keep up the spirit, i like it."
+                      : globalPercentage <= 80
+                      ? "You are qoing places"
+                      : "Excellent work across all Topics!"}
                   </div>
                 </div>
               </div>

@@ -84,7 +84,7 @@ try{
             Bug Report Submitted!
           </h2>
           <p className="text-purple-100 mb-6">
-            Thanks for reporting the issue. Our team will investigate it.
+            Thanks for reporting the issue. I will investigate it.
           </p>
           <button
             onClick={() => setSubmitted(false)}
@@ -116,7 +116,7 @@ try{
             Report a Bug
           </h1>
           <p className="text-purple-100">
-            Help us fix issues and improve the app
+            Help me fix issues and improve the app
           </p>
         </div>
 

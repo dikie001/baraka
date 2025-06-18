@@ -120,7 +120,7 @@ export default function RequestFeature() {
               Request Submitted!
             </h2>
             <p className="text-purple-100 mb-6 leading-relaxed">
-              Thank you for your feature request. Our team will review it and
+              Thank you for your feature request. I will review it and
               get back to you soon.
             </p>
             <button
@@ -154,7 +154,7 @@ export default function RequestFeature() {
             Request a Feature
           </h1>
           <p className="text-purple-100 text-lg max-w-2xl mx-auto leading-relaxed">
-            Have an idea that could make our app better? We'd love to hear from
+            Have an idea that could make this app better? I'd love to hear from
             you!
           </p>
         </div>
@@ -339,7 +339,7 @@ export default function RequestFeature() {
         {/* Footer */}
         <div className="text-center mt-12 pb-8">
           <p className="text-purple-200 text-sm">
-            Your feedback drives our development. Thank you for helping us
+            Your feedback drives my development. Thank you for helping me
             improve! 💜
           </p>
         </div>

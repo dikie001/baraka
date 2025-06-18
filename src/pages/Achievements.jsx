@@ -169,7 +169,7 @@ export default function AchievementsPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-900 via-slate-900 to-purple-800 p-4">
-      <div className="max-w-4xl mx-auto pt-8">
+      <div className="max-w-4xl mx-auto mb-20 pt-8">
         <BottomNav />
         {/* Header */}
         <div className="text-center mb-10">
@@ -184,7 +184,7 @@ export default function AchievementsPage() {
           </p>
 
           {/* Progress Summary */}
-          <div className="mt-6 grid grid-cols-2 md:grid-cols-3 gap-4 max-w-2xl mx-auto">
+          <div className="mt-6  grid grid-cols-2 md:grid-cols-3 gap-4 max-w-2xl mx-auto">
             {[
               "Numbers",
               "Probability",
@@ -274,14 +274,14 @@ export default function AchievementsPage() {
 
                   {/* Progress Bar for locked achievements */}
                   {!achievement.unlocked && (
-                    <div className="mt-4">
+                    <div className="mt-4 ">
                       <div className="flex justify-between items-center mb-2">
                         <span className="text-gray-400 text-xs">Progress</span>
                         <span className="text-white text-xs font-medium">
                           {achievement.progress}%
                         </span>
                       </div>
-                      <div className="w-full bg-white/10 rounded-full h-2">
+                      <div className="w-full  bg-white/10 rounded-full h-2">
                         <div
                           className={`bg-gradient-to-r ${
                             topicColors[achievement.id]
@@ -298,7 +298,7 @@ export default function AchievementsPage() {
         </div>
 
         {/* Overall Progress */}
-        <div className="mt-8 mb-20 backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl p-6">
+        {/* <div className="mt-8 mb-20 backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl p-6">
           <h2 className="text-xl font-semibold text-white mb-4">
             Overall Progress
           </h2>
@@ -320,7 +320,7 @@ export default function AchievementsPage() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

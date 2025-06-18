@@ -95,8 +95,8 @@ export default function ContactPage() {
 
         <div className="flex justify-center gap-4 mb-8">
           {[
-            { Icon: FaGithub, href: "#" },
-            { Icon: BsWhatsapp, href: "#" },
+            { Icon: FaGithub, href: "https://github.com/dikie001" },
+            { Icon: BsWhatsapp, href: "https://wa.me/+254716957179?text=Hello%20there!" },
             { Icon: FaFacebook, href: "#" },
             { Icon: Mail, href: "mailto:omondidickens255@gmail.com" },
           ].map(({ Icon, href }, i) => (
