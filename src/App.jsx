@@ -28,14 +28,13 @@ const NumbersQuiz = lazy(() => import("./topics/numbers/NumbersQuiz"));
 const Probability = lazy(() => import("./topics/probability/Probability"));
 const App = () => {
 
-  // Remove Loader After Loading is Complete
-  // const hideLoader = () => {
-  //   const loader = document.getElementById("loader");
-  //   if (loader) loader.remove();
-  // };
-  // useEffect(() => {
-  //   hideLoader();
-  // }, []);
+ useEffect(() => {
+  const splash = document.getElementById('splash-screen');
+  if (splash) {
+    splash.style.opacity = '0';
+    setTimeout(() => splash.remove(), 300);
+  }
+}, []);
 
   const [page, setPage] = useLocalStorage("choose-page", "choosePage");
   useEffect(() => {
