@@ -169,7 +169,7 @@ export default function HomePage() {
       <DesktopNav />
       <CalculateDate />
       <Menu />
-      <div className="relative z-10 w-full max-w-md lg:max-w-4xl xl:max-w-6xl mx-auto bg-slate-800/50 backdrop-blur-xl border border-purple-500/20 shadow-2xl min-h-screen lg:rounded-3xl lg:my-8 lg:min-h-[calc(100vh-4rem)]">
+      <div className="relative z-10 w-full max-w-lg lg:max-w-4xl xl:max-w-6xl mx-auto bg-slate-800/50 backdrop-blur-xl border  border-purple-500/20 shadow-2xl min-h-screen lg:rounded-3xl lg:my-8 lg:min-h-[calc(100vh-4rem)]">
         {/* Header */}
         <div className="p-4 sm:p-6 lg:p-8 bg-gradient-to-r from-purple-950 to-slate-900  backdrop-blur-xl border-b border-purple-500/20 lg:rounded-t-3xl">
           <div className="flex mt-1 ml-10 items-center justify-between">
