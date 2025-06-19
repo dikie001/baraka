@@ -82,9 +82,9 @@ const CalculateDate = () => {
 
       {/* Modal Overlay */}
       {isModalOpen && (
-        <div className="fixed mb-15  inset-0 bg-black/40 bg-opacity-60 backdrop-blur-sm z-40 flex items-center justify-center p-4">
+        <div className="fixed mb-15   inset-0 bg-black/40 bg-opacity-60 backdrop-blur-sm z-40 flex items-center justify-center p-4">
           {/* Modal Content */}
-          <div className="bg-gradient-to-br from-purple-950 to-slate-900 rounded-2xl shadow-2xl border border-purple-500/20 max-w-lg w-full p-8 transform transition-all duration-500 scale-100 backdrop-blur-md relative overflow-hidden">
+          <div className="bg-gradient-to-br from-purple-950 to-slate-900 z-50 rounded-2xl shadow-2xl border border-purple-500/20 max-w-lg w-full p-8  backdrop-blur-md relative overflow-hidden">
             {/* Subtle gradient overlay for depth */}
             <div className="absolute inset-0 bg-gradient-to-tr from-white/5 to-transparent pointer-events-none"></div>
 
@@ -93,7 +93,7 @@ const CalculateDate = () => {
               onClick={toggleModal}
               className="absolute top-6 right-6 text-white/70 hover:text-white hover:bg-white/10 rounded-full p-2 transition-all duration-300 z-10"
             >
-              <X className="w-5 h-5" />
+              <X className="w-5 h-5" onClick={toggleModal} />
             </button>
 
             {/* Modal Header */}

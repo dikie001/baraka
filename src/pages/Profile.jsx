@@ -15,9 +15,11 @@ import React, { useState } from "react";
 import BottomNav from "../components/MobileNav";
 import { useEffect } from "react";
 import { useLocalStorage } from "@uidotdev/usehooks";
+import { lazy, Suspense } from "react";
 
 const ProfilePage = () => {
   const [globalPercentage, setGlobalPercentage] = useState();
+  const [loading, setLoading]=useState(false)
   const [overalProgress, setOveralProgress] = useLocalStorage(
     "global-percentage",
     null
@@ -115,6 +117,7 @@ const ProfilePage = () => {
     const gp = ((overalProgress / totalQuiz) * 100).toFixed(2);
     const globalProgress = Number(gp);
     setGlobalPercentage(globalProgress);
+
   };
 
   useEffect(() => {
@@ -154,8 +157,10 @@ const ProfilePage = () => {
     },
   ];
 
+
+
   return (
-    <div className=" p-4 relative overflow-hidden will-change-transform">
+    <div className=" p-4 relative overflow-hidden scroll-smooth will-change-transform">
       <BottomNav />
       {/* Animated background elements */}
       {/* <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -164,7 +169,7 @@ const ProfilePage = () => {
         <div className="absolute top-3/4 left-1/2 w-64 h-64 bg-purple-400/5 rounded-full blur-2xl animate-pulse delay-500"></div>
       </div> */}
 
-      <div className="max-w-7xl mx-auto space-y-4 relative z-10">
+      <div className="max-w-7xl mx-auto space-y-4 scroll-smooth relative z-10">
         {/* HEADER PROFILE CARD */}
         <div className="bg-black/40 backdrop-blur-xl rounded-3xl shadow-2xl shadow-purple-900/30 py-6 border border-purple-500/30">
           <div className="flex flex-col lg:flex-row items-center gap-8">
