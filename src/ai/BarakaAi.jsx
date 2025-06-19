@@ -117,7 +117,7 @@ export default function BarakaAI() {
         .custom-scrollbar::-webkit-scrollbar-thumb:hover {
           background: linear-gradient(to bottom, #f472b6, #c084fc);
         }
-      `}</style>
+      `}</style> 
 
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">

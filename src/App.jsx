@@ -31,32 +31,34 @@ const App = () => {
         setPage("choosePage")
   },[])
   return (
-    <Router>
-      <Toaster/>
-      <InstallPrompt/>
-      <Routes>
-        <Route path="/" element={<BarakaMathApp />} />
-        <Route path="/auth-page" element={<AuthPage />} />
-        <Route path="/numbers" element={<Numbers />} />
-        <Route path="/daily-challenge" element={<DailyChallenge />} />
-        <Route path="/quick-practice" element={<QuickPractice />} />
-        <Route path="/exams-page" element={<ExamsPage />} />
-        <Route path="/profile" element={<Profile />} />
-        <Route path="/achievements" element={<Achievements />} />
-        <Route path="/algebra" element={<Algebra />} />
-        <Route path="/probability" element={<Probability />} />
-        <Route path="/geometry" element={<Geometry />} />
-        <Route path="/numbers-quiz" element={<NumbersQuiz />} />
-        <Route path="/data" element={<Data />} />
-        <Route path="/measurement" element={<Measurement />} />
-        <Route path="/baraka-ai" element={<BarakaAI />} />
-        <Route path="/quizes" element={<Quizes />} />
-        <Route path="/report-bug" element={<ReportBug />} />
-        <Route path="/settings" element={<Settings />} />
-        <Route path="/request-feature" element={<RequestFeature />} />
-        <Route path="/contact" element={<ContactPage />} />
-      </Routes>
-    </Router>
+    <div className='w-full overflow-x-hidden px-0 m-0 max-w-none mx-auto'>
+      <Router>
+        <Toaster />
+        <InstallPrompt />
+        <Routes>
+          <Route path="/" element={<BarakaMathApp />} />
+          <Route path="/auth-page" element={<AuthPage />} />
+          <Route path="/numbers" element={<Numbers />} />
+          <Route path="/daily-challenge" element={<DailyChallenge />} />
+          <Route path="/quick-practice" element={<QuickPractice />} />
+          <Route path="/exams-page" element={<ExamsPage />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/achievements" element={<Achievements />} />
+          <Route path="/algebra" element={<Algebra />} />
+          <Route path="/probability" element={<Probability />} />
+          <Route path="/geometry" element={<Geometry />} />
+          <Route path="/numbers-quiz" element={<NumbersQuiz />} />
+          <Route path="/data" element={<Data />} />
+          <Route path="/measurement" element={<Measurement />} />
+          <Route path="/baraka-ai" element={<BarakaAI />} />
+          <Route path="/quizes" element={<Quizes />} />
+          <Route path="/report-bug" element={<ReportBug />} />
+          <Route path="/settings" element={<Settings />} />
+          <Route path="/request-feature" element={<RequestFeature />} />
+          <Route path="/contact" element={<ContactPage />} />
+        </Routes>
+      </Router>
+    </div>
   );
 }
 export default App;
