@@ -4,6 +4,8 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import BottomNav from "../../components/MobileNav";
 import ConfirmStudyMode from "../../components/ConfirmStudyMode";
 import toast from "react-hot-toast";
+import useFeedbackSound from "../../hooks/useFeedbackSound";
+import { useNavigate } from "react-router-dom";
 
 // Custom localStorage hook
 const useLocalStorage = (key, defaultValue) => {
@@ -29,6 +31,11 @@ const useLocalStorage = (key, defaultValue) => {
 };
 
 const NumbersQuiz = () => {
+  const navigate = useNavigate();
+  // Initialize Sound
+
+  const { playError, playSuccess, playFinish } = useFeedbackSound();
+
   // Load saved progress
   const [currentNumber, setCurrentNumber] = useLocalStorage(
     "current-number",
@@ -66,9 +73,12 @@ const NumbersQuiz = () => {
     setShowAnswer(true);
 
     if (!answered.has(current) && key === question.answer) {
+      playSuccess();
       const newScore = score + 1;
       setScore(newScore);
       setSavedScore(newScore);
+    } else if (!answered.has(current) && key !== question.answer) {
+      playError();
     }
 
     const newAnswered = new Set([...answered, current]);
@@ -78,9 +88,20 @@ const NumbersQuiz = () => {
 
   const nextQuestion = () => {
     if (!selected) {
+      playError();
       const toasty = toast.error("Please select an Answer!", {
         id: "toasty",
       });
+      return;
+    } else if (currentNumber === 81) {
+      playFinish();
+      const toasty = toast.success("Hurray, you have completed!", {
+        id: "toasty",
+      });
+      setTimeout(() => {
+        navigate("/");
+      }, 1000);
+
       return;
     }
     const nextIndex = (current + 1) % questionsData.questions.length;
@@ -91,6 +112,7 @@ const NumbersQuiz = () => {
   };
 
   const prevQuestion = () => {
+    playError();
     const toasty = toast.error("This button has been disabled", {
       id: "toasty",
     });

@@ -102,6 +102,9 @@ const GeometryQuiz = () => {
          const toasty = toast.success("Hurray, you have completed!", {
            id: "toasty",
          });
+         setTimeout(()=>{
+          navigate('/')
+         },1000)
          return;
        }
     const nextIndex = (current + 1) % questionsData.questions.length;

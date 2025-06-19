@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useMemo } from "react";
 import {
   Trophy,
   Star,
@@ -13,170 +13,321 @@ import {
 } from "lucide-react";
 import BottomNav from "../components/MobileNav";
 
+// Memoized icon components to prevent re-renders
+const MemoizedIcons = {
+  Star: React.memo(() => <Star className="w-6 h-6" />),
+  Calculator: React.memo(() => <Calculator className="w-6 h-6" />),
+  BarChart3: React.memo(() => <BarChart3 className="w-6 h-6" />),
+  Target: React.memo(() => <Target className="w-6 h-6" />),
+  Trophy: React.memo(() => <Trophy className="w-6 h-6" />),
+  Zap: React.memo(() => <Zap className="w-6 h-6" />),
+  Award: React.memo(() => <Award className="w-6 h-6" />),
+  CheckCircle: React.memo(() => <CheckCircle className="w-6 h-6" />),
+};
+
+// Constants to avoid recreation on each render
+const TOPIC_COLORS = {
+  1: "from-blue-400 to-cyan-400",
+  2: "from-green-400 to-emerald-400",
+  3: "from-purple-400 to-violet-400",
+  4: "from-orange-400 to-red-400",
+  5: "from-pink-400 to-rose-400",
+  6: "from-yellow-400 to-amber-400",
+  7: "from-indigo-400 to-blue-400",
+  8: "from-teal-400 to-cyan-400",
+  9: "from-rose-400 to-pink-400",
+  10: "from-amber-400 to-orange-400",
+};
+
+const TOPICS = [
+  "Numbers",
+  "Probability",
+  "Measurement",
+  "Data & Statistics",
+  "Geometry",
+  "Algebra",
+];
+
+// Helper function to safely get localStorage value as number
+const getStorageNumber = (key, fallback = 0) => {
+  const value = localStorage.getItem(key);
+  return value ? Number(value) : fallback;
+};
+
+// Helper function to calculate percentage safely
+const calculatePercentage = (current, total) => {
+  return total > 0 ? Math.round((current / total) * 100) : 0;
+};
+
+// Memoized achievement card component
+const AchievementCard = React.memo(({ achievement, topicColor }) => (
+  <div
+    className={`backdrop-blur-xl border rounded-2xl p-5 transition-all duration-300 hover:scale-[1.02] ${
+      achievement.unlocked
+        ? "bg-white/5 border-white/30 hover:bg-white/20"
+        : "bg-black/20 border-white/10 opacity-75 hover:opacity-90"
+    }`}
+  >
+    <div className="flex items-start space-x-4">
+      {/* Icon */}
+      <div
+        className={`w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 ${
+          achievement.unlocked
+            ? `bg-gradient-to-r ${topicColor} text-white shadow-lg`
+            : "bg-gray-600/50 text-gray-400"
+        }`}
+      >
+        {achievement.icon}
+      </div>
+
+      {/* Content */}
+      <div className="flex-1 min-w-0">
+        <div className="flex items-start justify-between">
+          <div className="flex-1">
+            <h3
+              className={`font-semibold text-lg ${
+                achievement.unlocked ? "text-white" : "text-gray-300"
+              }`}
+            >
+              {achievement.title}
+            </h3>
+            <p
+              className={`text-sm mt-1 ${
+                achievement.unlocked ? "text-purple-200" : "text-gray-400"
+              }`}
+            >
+              {achievement.description}
+            </p>
+          </div>
+
+          {/* Status */}
+          {achievement.unlocked && (
+            <div className="text-green-400 font-medium text-sm ml-2 flex-shrink-0">
+              ✓ Unlocked
+            </div>
+          )}
+        </div>
+
+        {/* Progress Bar for locked achievements */}
+        {!achievement.unlocked && (
+          <div className="mt-4">
+            <div className="flex justify-between items-center mb-2">
+              <span className="text-gray-400 text-xs">Progress</span>
+              <span className="text-white text-xs font-medium">
+                {achievement.progress}%
+              </span>
+            </div>
+            <div className="w-full bg-white/10 rounded-full h-2">
+              <div
+                className={`bg-gradient-to-r ${topicColor} h-2 rounded-full transition-all duration-500`}
+                style={{ width: `${achievement.progress}%` }}
+              />
+            </div>
+          </div>
+        )}
+      </div>
+    </div>
+  </div>
+));
+
+// Memoized topic summary card
+const TopicSummaryCard = React.memo(({ topic, percentage }) => (
+  <div className="backdrop-blur-xl bg-white/5 border border-white/20 rounded-xl p-3">
+    <div className="text-white font-medium text-sm">{topic}</div>
+    <div className="text-purple-200 text-xs mt-1">{percentage}% Complete</div>
+  </div>
+));
+
 export default function AchievementsPage() {
-  // Get the global percentag
-  const GPP = localStorage.getItem("global-percentage")
-  const globalPercentage = Number(GPP)
+  // Memoize all localStorage operations and calculations
+  const gameData = useMemo(() => {
+    // Get scores
+    const globalPercentage = getStorageNumber("global-percentage");
+    const geometryPoints = getStorageNumber("geometry-quiz-points");
+    const algebraPoints = getStorageNumber("algebra-quiz-points");
+    const measurementsPoints = getStorageNumber("measurement-quiz-points");
 
+    // Get progress data
+    const numbersData = {
+      progress: getStorageNumber("current-number"),
+      total: getStorageNumber("numbers-quiz-length"),
+    };
 
-// Get the scores
-  const GPS = localStorage.getItem("geometry-quiz-points")
-  const geometryPoints = Number(GPS)
+    const algebraData = {
+      progress: getStorageNumber("current-number-algebra"),
+      total: getStorageNumber("algebra-quiz-length"),
+    };
 
-  const AGS = localStorage.getItem("algebra-quiz-points")
-  const algebraPoints = Number(AGS)
+    const geometryData = {
+      progress: getStorageNumber("current-number-geometry"),
+      total: getStorageNumber("geometry-quiz-length"),
+    };
 
-  const MMP = localStorage.getItem("measurement-quiz-points")
-  const measurementsPoints = Number(MMP)
-  
-  // Numbers Quiz LocalStorage
-  const numbersProgress = localStorage.getItem("current-number");
-  const numbersTotalQuiz = localStorage.getItem("numbers-quiz-length");
-  const NTQ = Number(numbersTotalQuiz);
-  const NP = Number(numbersProgress);
+    const measurementData = {
+      progress: getStorageNumber("current-number-measurement"),
+      total: getStorageNumber("measurement-quiz-length"),
+    };
 
-  // Algebra Quiz LocalStorage
-  const algebraProgress = localStorage.getItem("current-number-algebra");
-  const algebraTotalQuiz = localStorage.getItem("algebra-quiz-length");
-  const AP = Number(algebraProgress);
-  const ATQ = Number(algebraTotalQuiz);
+    const probabilityData = {
+      progress: getStorageNumber("probability-current-number"),
+      total: getStorageNumber("probability-quiz-length"),
+    };
 
-  // Geometry Quiz LocalStorage
-  const geometryProgress = localStorage.getItem("current-number-geometry");
-  const geometryTotalQuiz = localStorage.getItem("geometry-quiz-length");
-  const GP = geometryProgress ? Number(geometryProgress) : 0;
-  const GTQ = geometryTotalQuiz ? Number(geometryTotalQuiz) : 0;
+    const dataData = {
+      progress: getStorageNumber("data-current-number"),
+      total: getStorageNumber("data-quiz-length"),
+    };
 
-  // Measurement QUiz LocalStorage
-  const measurementProgress = localStorage.getItem(
-    "current-number-measurement"
+    // Calculate percentages
+    const percentages = {
+      numbers: calculatePercentage(numbersData.progress, numbersData.total),
+      algebra: calculatePercentage(algebraData.progress, algebraData.total),
+      geometry: calculatePercentage(geometryData.progress, geometryData.total),
+      measurement: calculatePercentage(
+        measurementData.progress,
+        measurementData.total
+      ),
+      probability: calculatePercentage(
+        probabilityData.progress,
+        probabilityData.total
+      ),
+      data: calculatePercentage(dataData.progress, dataData.total),
+    };
+
+    return {
+      globalPercentage,
+      geometryPoints,
+      algebraPoints,
+      measurementsPoints,
+      percentages,
+      rawData: {
+        numbers: numbersData,
+        algebra: algebraData,
+        geometry: geometryData,
+        measurement: measurementData,
+        probability: probabilityData,
+        data: dataData,
+      },
+    };
+  }, []); // Empty dependency array since localStorage is synchronous
+
+  // Memoize achievements array
+  const achievements = useMemo(() => {
+    const {
+      percentages,
+      geometryPoints,
+      algebraPoints,
+      measurementsPoints,
+      globalPercentage,
+      rawData,
+    } = gameData;
+
+    return [
+      {
+        id: 1,
+        title: "Math Explorer",
+        description: "Start your first topical quiz",
+        icon: <MemoizedIcons.Star />,
+        unlocked: rawData.numbers.progress > 0,
+        progress: percentages.numbers,
+      },
+      {
+        id: 2,
+        title: "Numbers Navigator",
+        description: "Complete 50% of the Numbers topic quiz",
+        icon: <MemoizedIcons.Calculator />,
+        unlocked: percentages.numbers >= 50,
+        progress: Math.min(100, Math.round((percentages.numbers / 50) * 100)),
+      },
+      {
+        id: 3,
+        title: "Data Detective",
+        description: "Complete 75% of Data & Statistics quiz",
+        icon: <MemoizedIcons.BarChart3 />,
+        unlocked: percentages.data >= 75,
+        progress: Math.min(100, Math.round((percentages.data / 75) * 100)),
+      },
+      {
+        id: 4,
+        title: "Probability Pro",
+        description: "Finish the entire Probability topic quiz",
+        icon: <MemoizedIcons.Target />,
+        unlocked: percentages.probability === 100,
+        progress: percentages.probability,
+      },
+      {
+        id: 5,
+        title: "Geometry Genius",
+        description: "Score above 85% on Geometry topic",
+        icon: <MemoizedIcons.Trophy />,
+        unlocked: geometryPoints > 85,
+        progress: Math.min(100, Math.round((percentages.geometry / 85) * 100)),
+      },
+      {
+        id: 6,
+        title: "Algebra Ace",
+        description: "score above 70% on algebra",
+        icon: <MemoizedIcons.Zap />,
+        unlocked: algebraPoints > 70,
+        progress: Math.min(100, Math.round((percentages.algebra / 70) * 100)),
+      },
+      {
+        id: 7,
+        title: "Measurement Master",
+        description: "Perfect score on Measurement topic",
+        icon: <MemoizedIcons.Award />,
+        unlocked: measurementsPoints === 100,
+        progress: percentages.measurement,
+      },
+      {
+        id: 8,
+        title: "Triple Threat",
+        description: "Complete 3 different topic quizzes",
+        icon: <MemoizedIcons.CheckCircle />,
+        unlocked: false, // This logic wasn't implemented in original
+        progress: 0,
+      },
+      {
+        id: 9,
+        title: "Math Champion",
+        description: "Complete all 6 topical quizzes",
+        icon: <MemoizedIcons.Trophy />,
+        unlocked:
+          rawData.numbers.total === rawData.numbers.progress &&
+          rawData.algebra.progress === rawData.algebra.total &&
+          rawData.geometry.progress === rawData.geometry.total &&
+          rawData.measurement.progress === rawData.measurement.total &&
+          rawData.probability.progress === rawData.probability.total &&
+          rawData.data.progress === rawData.data.total,
+        progress: globalPercentage || 0,
+      },
+    ];
+  }, [gameData]);
+
+  // Memoize topic percentages array for display
+  const topicPercentages = useMemo(
+    () => [
+      gameData.percentages.numbers,
+      gameData.percentages.probability,
+      gameData.percentages.measurement,
+      gameData.percentages.data,
+      gameData.percentages.geometry,
+      gameData.percentages.algebra,
+    ],
+    [gameData.percentages]
   );
-  const measurementTotalQuiz = localStorage.getItem("measurement-quiz-length");
-  const MP = Number(measurementProgress);
-  const MTQ = Number(measurementTotalQuiz);
-
-  // Probability Quiz LocalStorage
-  const probabilityProgress = localStorage.getItem(
-    "probability-current-number"
-  );
-  const probabilityTotalQuiz = localStorage.getItem("probability-quiz-length");
-  const PP = Number(probabilityProgress);
-  const PTQ = Number(probabilityTotalQuiz);
-
-  // Data Quiz LocalStorage
-  const dataProgress = localStorage.getItem("data-current-number");
-  const dataTotalQuiz = localStorage.getItem("data-quiz-length");
-  const DP = Number(dataProgress);
-  const DTQ = Number(dataTotalQuiz);
-
-  // Calculate Progress for each card
-  const numbers = NTQ ? ((NP / NTQ) * 100).toFixed(0) : 0;
-  const algebra = ATQ ? ((AP / ATQ) * 100).toFixed(0) : 0;
-  const geometry = GTQ ? ((GP / GTQ) * 100).toFixed(0) : 0;
-  const measurement = MTQ ? ((MP / MTQ) * 100).toFixed(0) : 0;
-  const data = DTQ ? ((DP / DTQ) * 100).toFixed(0) : 0;
-  const probability = PTQ ? ((PP / PTQ) * 100).toFixed(0) : 0;
-  
-
-  const achievements = [
-    {
-      id: 1,
-      title: "Math Explorer",
-      description: "Start your first topical quiz",
-      icon: <Star className="w-6 h-6" />,
-      unlocked: numbersProgress,
-      progress: numbers,
-    },
-    {
-      id: 2,
-      title: "Numbers Navigator",
-      description: "Complete 50% of the Numbers topic quiz",
-      icon: <Calculator className="w-6 h-6" />,
-      unlocked: numbers>=50,
-      progress: numbers / 50 * 100,
-    },
-    {
-      id: 3,
-      title: "Data Detective",
-      description: "Complete 75% of Data & Statistics quiz",
-      icon: <BarChart3 className="w-6 h-6" />,
-      unlocked: data >= 75,
-      progress: data / 75 * 100,
-    },
-    {
-      id: 4,
-      title: "Probability Pro",
-      description: "Finish the entire Probability topic quiz",
-      icon: <Target className="w-6 h-6" />,
-      unlocked: probability === 100,
-      progress: probability,
-    },
-    {
-      id: 5,
-      title: "Geometry Genius",
-      description: "Score above 85% on Geometry topic",
-      icon: <Trophy className="w-6 h-6" />,
-      unlocked: geometryPoints > 85,
-      progress: (geometry / 85 * 100).toFixed(0),
-    },
-    {
-      id: 6,
-      title: "Algebra Ace",
-      description: "score above 70% on algebra",
-      icon: <Zap className="w-6 h-6" />,
-      unlocked: algebraPoints > 70,
-      progress: (algebra /70 * 100).toFixed(0),
-    },
-    {
-      id: 7,
-      title: "Measurement Master",
-      description: "Perfect score on Measurement topic",
-      icon: <Award className="w-6 h-6" />,
-      unlocked: measurementsPoints === 100,
-      progress: measurement,
-    },
-    {
-      id: 8,
-      title: "Triple Threat",
-      description: "Complete 3 different topic quizzes",
-      icon: <CheckCircle className="w-6 h-6" />,
-      unlocked: false,
-      progress: 0,
-    },
-  
-    {
-      id: 9,
-      title: "Math Champion",
-      description: "Complete all 6 topical quizzes",
-      icon: <Trophy className="w-6 h-6" />,
-      unlocked: NTQ ===NP && AP===ATQ && GP === GTQ && MP === MTQ && PP === PTQ && DP === DTQ ,
-      progress: globalPercentage || 0,
-    },
-  ];
-
-  const topicColors = {
-    1: "from-blue-400 to-cyan-400",
-    2: "from-green-400 to-emerald-400",
-    3: "from-purple-400 to-violet-400",
-    4: "from-orange-400 to-red-400",
-    5: "from-pink-400 to-rose-400",
-    6: "from-yellow-400 to-amber-400",
-    7: "from-indigo-400 to-blue-400",
-    8: "from-teal-400 to-cyan-400",
-    9: "from-rose-400 to-pink-400",
-    10: "from-amber-400 to-orange-400",
-  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-900 via-slate-900 to-purple-800 p-4">
       <div className="max-w-4xl mx-auto mb-20 pt-8">
         <BottomNav />
+
         {/* Header */}
         <div className="text-center mb-10">
           <div className="w-16 h-16 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-2xl flex items-center justify-center mx-auto mb-4">
             <Trophy className="w-8 h-8 text-white" />
           </div>
-          <h1 className="text-3xl font-bold  mb-2 bg-gradient-to-r from-purple-200 to-pink-200 bg-clip-text text-transparent">
+          <h1 className="text-3xl font-bold mb-2 bg-gradient-to-r from-purple-200 to-pink-200 bg-clip-text text-transparent">
             Math Achievements
           </h1>
           <p className="text-purple-100">
@@ -184,35 +335,13 @@ export default function AchievementsPage() {
           </p>
 
           {/* Progress Summary */}
-          <div className="mt-6  grid grid-cols-2 md:grid-cols-3 gap-4 max-w-2xl mx-auto">
-            {[
-              "Numbers",
-              "Probability",
-              "Measurement",
-              "Data & Statistics",
-              "Geometry",
-              "Algebra",
-            ].map((topic, index) => (
-              <div
+          <div className="mt-6 grid grid-cols-2 md:grid-cols-3 gap-4 max-w-2xl mx-auto">
+            {TOPICS.map((topic, index) => (
+              <TopicSummaryCard
                 key={topic}
-                className="backdrop-blur-xl bg-white/10 border border-white/20 rounded-xl p-3"
-              >
-                <div className="text-white font-medium text-sm">{topic}</div>
-                <div className="text-purple-200 text-xs mt-1">
-                  {index === 0
-                    ? numbers
-                    : index === 1
-                    ? probability
-                    : index === 2
-                    ? measurement
-                    : index === 3
-                    ? data
-                    : index === 4
-                    ? geometry
-                    : algebra}
-                 % Complete
-                </div>
-              </div>
+                topic={topic}
+                percentage={topicPercentages[index]}
+              />
             ))}
           </div>
         </div>
@@ -220,107 +349,13 @@ export default function AchievementsPage() {
         {/* Achievements Grid */}
         <div className="grid gap-4 md:grid-cols-2">
           {achievements.map((achievement) => (
-            <div
+            <AchievementCard
               key={achievement.id}
-              className={`backdrop-blur-xl border rounded-2xl p-5 transition-all duration-300 hover:scale-[1.02] ${
-                achievement.unlocked
-                  ? "bg-white/15 border-white/30 hover:bg-white/20"
-                  : "bg-white/5 border-white/10 opacity-75 hover:opacity-90"
-              }`}
-            >
-              <div className="flex items-start space-x-4">
-                {/* Icon */}
-                <div
-                  className={`w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 ${
-                    achievement.unlocked
-                      ? `bg-gradient-to-r ${
-                          topicColors[achievement.id]
-                        } text-white shadow-lg`
-                      : "bg-gray-600/50 text-gray-400"
-                  }`}
-                >
-                  {achievement.icon}
-                </div>
-
-                {/* Content */}
-                <div className="flex-1 min-w-0">
-                  <div className="flex items-start justify-between">
-                    <div className="flex-1">
-                      <h3
-                        className={`font-semibold text-lg ${
-                          achievement.unlocked ? "text-white" : "text-gray-300"
-                        }`}
-                      >
-                        {achievement.title}
-                      </h3>
-                      <p
-                        className={`text-sm mt-1 ${
-                          achievement.unlocked
-                            ? "text-purple-200"
-                            : "text-gray-400"
-                        }`}
-                      >
-                        {achievement.description}
-                      </p>
-                    </div>
-
-                    {/* Status */}
-                    {achievement.unlocked && (
-                      <div className="text-green-400 font-medium text-sm ml-2 flex-shrink-0">
-                        ✓ Unlocked
-                      </div>
-                    )}
-                  </div>
-
-                  {/* Progress Bar for locked achievements */}
-                  {!achievement.unlocked && (
-                    <div className="mt-4 ">
-                      <div className="flex justify-between items-center mb-2">
-                        <span className="text-gray-400 text-xs">Progress</span>
-                        <span className="text-white text-xs font-medium">
-                          {achievement.progress}%
-                        </span>
-                      </div>
-                      <div className="w-full  bg-white/10 rounded-full h-2">
-                        <div
-                          className={`bg-gradient-to-r ${
-                            topicColors[achievement.id]
-                          } h-2 rounded-full transition-all duration-500`}
-                          style={{ width: `${achievement.progress}%` }}
-                        ></div>
-                      </div>
-                    </div>
-                  )}
-                </div>
-              </div>
-            </div>
+              achievement={achievement}
+              topicColor={TOPIC_COLORS[achievement.id]}
+            />
           ))}
         </div>
-
-        {/* Overall Progress */}
-        {/* <div className="mt-8 mb-20 backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl p-6">
-          <h2 className="text-xl font-semibold text-white mb-4">
-            Overall Progress
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
-            <div>
-              <div className="text-2xl font-bold text-green-400">2</div>
-              <div className="text-purple-200 text-sm">
-                Achievements Unlocked
-              </div>
-            </div>
-            <div>
-              <div className="text-2xl font-bold text-yellow-400">8</div>
-              <div className="text-purple-200 text-sm">In Progress</div>
-            </div>
-            <div>
-              <div className="text-2xl font-bold text-purple-400">45%</div>
-              <div className="text-purple-200 text-sm">
-                Average Topic Progress
-              </div>
-            </div>
-          </div>
-        </div> */}
       </div>
     </div>
   );

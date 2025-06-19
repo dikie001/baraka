@@ -4,6 +4,9 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import BottomNav from "../../components/MobileNav";
 import ConfirmStudyMode from "../../components/ConfirmStudyMode";
 import toast from "react-hot-toast";
+import useFeedbackSound from "../../hooks/useFeedbackSound";
+import { useNavigate } from "react-router-dom";
+
 
 // Custom localStorage hook
 const useLocalStorage = (key, defaultValue) => {
@@ -29,6 +32,11 @@ const useLocalStorage = (key, defaultValue) => {
 };
 
 const MeasurementQuiz = () => {
+  const navigate = useNavigate()
+
+  // Initialize with sound
+  const {playError, playSuccess, playFinish}= useFeedbackSound()
+
   // Load saved progress
   const [currentNumber, setCurrentNumber] = useLocalStorage(
     "current-number-measurement",
@@ -67,10 +75,14 @@ const MeasurementQuiz = () => {
     setShowAnswer(true);
 
     if (!answered.has(current) && key === question.answer) {
+      playSuccess()
       const newScore = score + 1;
       setScore(newScore);
       setSavedScore(newScore);
+    } else if (!answered.has(current) && key !== question.answer) {
+      playError();
     }
+
 
     const newAnswered = new Set([...answered, current]);
     setAnswered(newAnswered);
@@ -79,11 +91,13 @@ const MeasurementQuiz = () => {
 
   const nextQuestion = () => {
     if (!selected) {
+      playError()
       const toasty = toast.error("Please select an Answer!", {
         id: "toasty",
       });
       return;
     } else if (currentNumber === 199) {
+      playFinish()
       const toasty = toast.success("Hurray, you have completed!", {
         id: "toasty",
       });
@@ -97,6 +111,7 @@ const MeasurementQuiz = () => {
   };
 
   const prevQuestion = () => {
+    playError()
       const toasty = toast.error("This button has been disabled", {
         id: "toasty",
       });

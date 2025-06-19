@@ -226,7 +226,6 @@ export default function HomePage() {
  
   return (
     <div className=" text-white overflow-hidden">
-
       <BottomNav />
       <DesktopNav />
       <CalculateDate />
@@ -278,7 +277,6 @@ export default function HomePage() {
                   Start a random quiz now!
                 </p>
               </div>
-              
             </div>
 
             {/* Right Column - Topics and Achievements */}
@@ -299,10 +297,7 @@ export default function HomePage() {
                         {topic.icon}
                       </div>
 
-                      {/* Score Display  */}
-                      {/* <p className="absolute p-1 top-2 right-2 text-gray-200  rounded-lg ring ring-purple-700/70">
-                        Score: <span className="font-semibold text-b">{topic.score}%</span>
-                      </p> */}
+                     
 
                       <h4 className="font-semibold text-purple-200 mb-1 text-sm lg:text-base">
                         {topic.name}
@@ -325,35 +320,9 @@ export default function HomePage() {
                 </div>
               </div>
 
-              {/* Achievements */}
+   
               <div>
-                {/* <div>
-                <h3 className="text-xl lg:text-2xl font-semibold mb-4 lg:mb-6 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                  Achievements
-                </h3>
-                <div className="grid grid-cols-4 lg:grid-cols-4 xl:grid-cols-8 gap-3 lg:gap-4">
-                  {achievements.map((achievement, index) => (
-                    <div
-                      key={index}
-                      className={`bg-slate-700/30 backdrop-blur-sm border rounded-xl p-3 lg:p-4 text-center transition-all duration-300 ${
-                        achievement.earned
-                          ? "border-purple-500/40 hover:scale-110 lg:hover:scale-105"
-                          : "border-slate-600/20 opacity-50"
-                      }`}
-                    >
-                      <div className="text-2xl lg:text-3xl mb-1">
-                        {achievement.icon}
-                      </div>
-                      <p className="text-xs lg:text-sm text-purple-200 font-medium">
-                        {achievement.name}
-                      </p>
-                      {achievement.earned && (
-                        <div className="w-2 h-2 lg:w-3 lg:h-3 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full mx-auto mt-1"></div>
-                      )}
-                    </div>
-                  ))}
-                </div>
-              </div> */}
+          
               </div>
             </div>
           </div>
