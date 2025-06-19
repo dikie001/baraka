@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { useEffect } from "react";
 import { useRef } from "react";
 import { useNavigate } from "react-router-dom";
+import useFeedbackSound from "../hooks/useFeedbackSound";
 
 export default function BarakaAI() {
   const [message, setMessage] = useState("");
@@ -13,12 +14,15 @@ export default function BarakaAI() {
   const [showWelcome, setShowWelcome] = useState(true);
   const API_KEY = import.meta.env.VITE_API_KEY;
   const navigate = useNavigate();
-  const bottomRef = useRef(null)
+  const bottomRef = useRef(null);
+
+  // Initiaize sounds from hook
+  const { playSend, playReceive } = useFeedbackSound();
 
   // Set UseRef
-  useEffect(()=>{
-    bottomRef.current?.scrollIntoView({behaviour: "smooth"})
-  },[])
+  useEffect(() => {
+    bottomRef.current?.scrollIntoView({ behaviour: "smooth" });
+  }, []);
 
   const callGeminiAPI = async (userMessage) => {
     if (!API_KEY) {
@@ -71,6 +75,7 @@ export default function BarakaAI() {
     setShowWelcome(false);
     if (!message.trim()) return;
 
+    playSend();
     const userMessage = message.trim();
     setMessage("");
     setError("");
@@ -86,6 +91,7 @@ export default function BarakaAI() {
 
     try {
       const aiResponse = await callGeminiAPI(userMessage);
+      playReceive()
       const newAiMessage = {
         type: "ai",
         content: aiResponse,
@@ -100,7 +106,7 @@ export default function BarakaAI() {
   };
 
   return (
-    <div className="h-screen bg-gradient-to-br from-purple-900 via-slate-800 to-purple-800 text-white overflow-hidden">
+    <div className=" text-white overflow-hidden">
       {/* Custom Scrollbar Styles */}
       <style>{`
         .custom-scrollbar::-webkit-scrollbar {
@@ -117,8 +123,7 @@ export default function BarakaAI() {
         .custom-scrollbar::-webkit-scrollbar-thumb:hover {
           background: linear-gradient(to bottom, #f472b6, #c084fc);
         }
-      `}</style> 
-
+      `}</style>
 
       <div className="relative z-10 flex max-w-3xl mx-auto flex-col h-full ">
         {/* Compact Header */}
@@ -143,7 +148,7 @@ export default function BarakaAI() {
 
           {/* Settings Panel */}
           {showSettings && (
-            <div className="absolute shadow-lg top-16 right-4 bg-white/10 backdrop-blur-lg rounded-2xl p-4 border border-white/20 z-20 min-w-64">
+            <div className="absolute shadow-lg top-16 right-4 bg-white/5 backdrop-blur-lg rounded-2xl p-4 border border-white/20 z-20 min-w-64">
               <h3 className="font-semibold mb-2">Baraka AI </h3>
               <p className="text-white-400">
                 This panel will be populated soon!
@@ -156,7 +161,7 @@ export default function BarakaAI() {
         <div className="flex-1 flex flex-col px-4 pb-4 min-h-0">
           {/* Welcome Card */}
           {showWelcome && (
-            <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-4 mb-4 border border-white/20 flex-shrink-0">
+            <div className="bg-white/5 backdrop-blur-lg rounded-2xl p-4 mb-4 border border-white/20 flex-shrink-0">
               <div className="flex items-center gap-3 mb-1">
                 <Sparkles className="w-5 h-5 text-yellow-400" />
                 <h2 className="text-lg font-semibold">Welcome back, Baraka!</h2>

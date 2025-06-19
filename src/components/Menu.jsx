@@ -16,6 +16,7 @@ import { Link, useNavigate } from "react-router-dom";
 
 const MenuComponent = () => {
   const [openMenu, setOpenMenu] = useState(false);
+  const navigate = useNavigate()
 
   const menuLinks = [
     {
@@ -88,7 +89,7 @@ const MenuComponent = () => {
           onClick={() => setOpenMenu(false)}
         >
           <div
-            className="fixed  left-0 top-0 h-full w-80 bg-gradient-to-b from-purple-900/95 to-black/35 backdrop-blur-xl border-r border-white/10 p-6 transform transition-transform duration-300 overflow-y-auto"
+            className="fixed  left-0 top-0 h-full w-80 bg-gradient-to-b from-purple-900/95 to-black/35 backdrop-blur-xl border-r border-white/10 p-6 transform transition-transform duration-300 "
             onClick={(e) => e.stopPropagation()}
           >
             {/* Header Section */}
@@ -105,17 +106,16 @@ const MenuComponent = () => {
             {/* Menu Links */}
             <nav className="space-y-1 gap-2 grid grid-cols-2 ">
               {menuLinks.map((item) => (
-             
-                  <Link
-                    key={item.id}
-                    to={item.to}
-                    className="flex items-center gap-2 p-3 h-20 rounded-xl bg-white/5 hover:bg-white/10 border border-purple-700 hover:border-purple-400/30 text-white transition-all duration-200 group w-full text-left"
-                  >
-                    <span className="text-purple-400 group-hover:text-purple-300 transition-colors">
-                      {item.icon}
-                    </span>
-                    <span className="font-medium text-sm">{item.label}</span>
-                  </Link>
+                <Link
+                  key={item.id}
+                  to={item.to}
+                  className="flex items-center gap-2 p-3 h-20 rounded-xl bg-white/5 hover:bg-white/10 border border-purple-700 hover:border-purple-400/30 text-white transition-all duration-200 group w-full text-left"
+                >
+                  <span className="text-purple-400 group-hover:text-purple-300 transition-colors">
+                    {item.icon}
+                  </span>
+                  <span className="font-medium text-sm">{item.label}</span>
+                </Link>
               ))}
             </nav>
 
@@ -123,7 +123,9 @@ const MenuComponent = () => {
             <div className="mt-2  mb-13">
               <div className="text-center text-gray-300 text-xs">
                 <p>Version 1.0.0</p>
-                <p className="mt-1">Powered by dikie.dev</p>
+                <p className="mt-1">
+                  Powered by <span className="font-semibold  text-cyan-300 underline cursor-pointer" onClick={()=>navigate('/contact')}>dikie.dev</span>
+                </p>
               </div>
             </div>
           </div>

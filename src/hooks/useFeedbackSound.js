@@ -2,6 +2,8 @@ import { useRef } from "react";
 import success from "../assets/sounds/success.mp3";
 import error from "../assets/sounds/error.mp3";
 import finish from "../assets/sounds/finish.mp3";
+import send from "../assets/sounds/send.mp3";
+import receive from "../assets/sounds/receive.mp3"
 import { useEffect } from "react";
 
 const useFeedbackSound = () => {
@@ -9,13 +11,16 @@ const useFeedbackSound = () => {
   const successRef = useRef(new Audio(success));
   const errorRef = useRef(new Audio(error));
   const finishRef = useRef(new Audio(finish));
+  const sendRef = useRef(new Audio(send));
+  const receiveRef = useRef(new Audio(receive));
 
   useEffect(() => {
     //   Force Preload
     successRef.current.preload = "auto";
     errorRef.current.preload = "auto";
     finishRef.current.preload = "auto";
-// Touch the audio to warm it up!
+
+    // Touch the audio to warm it up!
     successRef.current.load();
     errorRef.current.load();
     finishRef.current.load();
@@ -42,7 +47,21 @@ const useFeedbackSound = () => {
     audio.play().catch(console.warn);
   };
 
-  return { playSuccess, playError, playFinish };
+  const playSend = () => {
+    const audio = sendRef.current;
+    audio.currentTime = 0;
+    audio.volume = 1;
+    audio.play().catch(console.warn);
+  };
+
+  const playReceive = () => {
+    const audio = receiveRef.current;
+    audio.currentTime = 0;
+    audio.volume = 1;
+    audio.play().catch(console.warn);
+  };
+
+  return { playSuccess, playError, playFinish, playSend, playReceive };
 };
 
 export default useFeedbackSound;
