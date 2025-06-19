@@ -157,14 +157,14 @@ const ProfilePage = () => {
   ];
 
   return (
-    <div className=" p-4 relative overflow-hidden">
+    <div className=" p-4 relative overflow-hidden will-change-transform">
       <BottomNav />
       {/* Animated background elements */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+      {/* <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-pink-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
         <div className="absolute top-3/4 left-1/2 w-64 h-64 bg-purple-400/5 rounded-full blur-2xl animate-pulse delay-500"></div>
-      </div>
+      </div> */}
 
       <div className="max-w-7xl mx-auto space-y-4 relative z-10">
         {/* HEADER PROFILE CARD */}

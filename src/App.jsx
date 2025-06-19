@@ -31,7 +31,7 @@ const App = () => {
         setPage("choosePage")
   },[])
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-950 via-slate-900 to-purple-900">
+    <div className="scroll-smooth min-h-screen bg-gradient-to-br from-purple-950 via-slate-900 to-purple-900">
       <Router>
         <Toaster />
         <InstallPrompt />
