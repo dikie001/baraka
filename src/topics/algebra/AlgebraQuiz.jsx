@@ -4,6 +4,9 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import BottomNav from "../../components/MobileNav";
 import ConfirmStudyMode from "../../components/ConfirmStudyMode";
 import toast from "react-hot-toast";
+import useFeedbackSound from "../../hooks/useFeedbackSound";
+import { useNavigate } from "react-router-dom";
+
 
 // Custom localStorage hook
 const useLocalStorage = (key, defaultValue) => {
@@ -29,6 +32,9 @@ const useLocalStorage = (key, defaultValue) => {
 };
 
 const GeometryQuiz = () => {
+  const navigate = useNavigate()
+  // Initialize sounds
+  const { playError, playSuccess, playFinish } = useFeedbackSound();
   // Load saved progress
   const [currentNumber, setCurrentNumber] = useLocalStorage(
     "current-number-algebra",
@@ -69,9 +75,12 @@ const GeometryQuiz = () => {
     setShowAnswer(true);
 
     if (!answered.has(current) && key === question.answer) {
+      playSuccess();
       const newScore = score + 1;
       setScore(newScore);
       setSavedScore(newScore);
+    } else if (!answered.has(current) && key !== question.answer) {
+      playError();
     }
 
     const newAnswered = new Set([...answered, current]);
@@ -81,14 +90,19 @@ const GeometryQuiz = () => {
 
   const nextQuestion = () => {
     if (!selected) {
+      playError();
       const toasty = toast.error("Please select an Answer!", {
         id: "toasty",
       });
       return;
     } else if (currentNumber === 199) {
+      playFinish();
       const toasty = toast.success("Hurray, you have completed!", {
         id: "toasty",
       });
+      setTimeout(()=>{
+        navigate('/')
+      },1000)
       return;
     }
     const nextIndex = (current + 1) % questionsData.questions.length;
@@ -99,9 +113,10 @@ const GeometryQuiz = () => {
   };
 
   const prevQuestion = () => {
-      const toasty = toast.error("This button has been disabled", {
-        id: "toasty",
-      });
+    playError();
+    const toasty = toast.error("This button has been disabled", {
+      id: "toasty",
+    });
     // const prevIndex =
     //   (current - 1 + questionsData.questions.length) %
     //   questionsData.questions.length;
