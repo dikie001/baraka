@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 export default function BarakaAICard() {
     const navigate = useNavigate()
+
   return (
     <div onClick={() => navigate("/baraka-ai")}>
       {/* Baraka AI Assistant Card */}

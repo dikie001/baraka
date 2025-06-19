@@ -119,13 +119,8 @@ export default function BarakaAI() {
         }
       `}</style> 
 
-      {/* Animated background elements */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-pink-500/20 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-purple-500/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
-      </div>
 
-      <div className="relative z-10 flex flex-col h-full ">
+      <div className="relative z-10 flex max-w-3xl mx-auto flex-col h-full ">
         {/* Compact Header */}
         <header className="p-4 text-center relative flex-shrink-0">
           <button

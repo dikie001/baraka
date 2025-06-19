@@ -4,6 +4,8 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import BottomNav from "../components/MobileNav";
 import { useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
+import useFeedbackSound from "../hooks/useFeedbackSound";
+
 
 // Custom localStorage hook
 const useLocalStorage = (key, defaultValue) => {
@@ -29,6 +31,9 @@ const useLocalStorage = (key, defaultValue) => {
 };
 
 const QuickPractice = () => {
+  // Initialise Sounds
+  const { playSuccess, playError, playFinish } = useFeedbackSound();
+
   // Load saved progress
   const [currentNumber, setCurrentNumber] = useLocalStorage(
     "quick-practice-current-number",
@@ -71,8 +76,11 @@ const QuickPractice = () => {
 
     if (!answered.has(current) && key === question.answer) {
       const newScore = score + 1;
+      playSuccess()
       setScore(newScore);
       setSavedScore(newScore);
+    } else if (!answered.has(current) && key !== question.answer) {
+      playError()
     }
 
     const newAnswered = new Set([...answered, current]);
@@ -83,8 +91,10 @@ const QuickPractice = () => {
   const nextQuestion = () => {
     if (!selected) {
       const toasty = toast.error("Please select an Answer!", { id: "toasty" });
+      playError()
       return;
     } else if (currentNumber === 199) {
+      playFinish()
       const toasty = toast.success("Hurray, you have completed!", {
         id: "toasty",
       });
@@ -98,6 +108,7 @@ const QuickPractice = () => {
   };
 
   const prevQuestion = () => {
+    playError()
     const toasty = toast.error("This button has been disabled", {
       id: "toasty",
     });
