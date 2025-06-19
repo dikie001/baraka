@@ -125,7 +125,7 @@ export default function BarakaAI() {
         <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-purple-500/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
       </div>
 
-      <div className="relative z-10 flex flex-col h-full">
+      <div className="relative z-10 flex flex-col h-full ">
         {/* Compact Header */}
         <header className="p-4 text-center relative flex-shrink-0">
           <button
