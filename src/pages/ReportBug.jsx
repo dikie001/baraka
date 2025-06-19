@@ -99,7 +99,7 @@ try{
 
   return (
     <div className=" flex items-center justify-center p-3">
-      <div className="w-full max-w-lg">
+      <div className="w-full max-w-lg mb-5">
         <button
           onClick={() => navigate("/")}
           className="flex items-center gap-2 px-3 py-2 text-purple-200 hover:text-white hover:bg-purple-700/30 rounded-lg transition-colors"
@@ -219,6 +219,11 @@ try{
             <Send className="w-5 h-5" />
             <span>Submit Bug Report</span>
           </button>
+        </div>
+        <div className="text-center mt-12 pb-8">
+          <p className="text-purple-200 text-sm">
+            Thank you for reporting the bug!
+          </p>
         </div>
       </div>
     </div>

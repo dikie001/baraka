@@ -137,7 +137,7 @@ export default function RequestFeature() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-900 via-slate-900 to-purple-800 p-4">
-      <div className="max-w-4xl mx-auto mb-10">
+      <div className="max-w-4xl mx-auto mb-5">
         <button
           onClick={() => navigate("/")}
           className="flex items-center gap-2 px-3 py-2 text-purple-200 hover:text-white hover:bg-purple-700/30 rounded-lg transition-colors"
@@ -184,7 +184,7 @@ export default function RequestFeature() {
         </div>
 
         {/* Form */}
-        <div className="backdrop-blur-xl bg-white/10 border border-white/20 rounded-3xl p-8 shadow-2xl">
+        <div className="backdrop-blur-xl bg-white/5 border border-white/20 rounded-3xl p-8 shadow-2xl">
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {/* Feature Title */}

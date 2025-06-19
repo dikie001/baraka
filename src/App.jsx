@@ -27,6 +27,19 @@ const Numbers = lazy(() => import("./topics/numbers/Numbers"));
 const NumbersQuiz = lazy(() => import("./topics/numbers/NumbersQuiz"));
 const Probability = lazy(() => import("./topics/probability/Probability"));
 const App = () => {
+  console.error = (...args) => {
+    args.forEach((arg) => {
+      if (typeof arg === "object") {
+        try {
+          console.log("🔍 Error object:", JSON.stringify(arg, null, 2));
+        } catch (err) {
+          console.log("❗ Could not stringify:", arg);
+        }
+      }
+    });
+    console.warn("[Intercepted error]", ...args);
+  };
+
   const [page, setPage] = useLocalStorage("choose-page", "choosePage");
   useEffect(() => {
     setPage("choosePage");

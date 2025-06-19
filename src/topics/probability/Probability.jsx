@@ -6,7 +6,7 @@ import { useEffect } from "react";
 import ProbabilityNotes from "./ProbabilityNotes";
 import ProbabilityQuiz from "./ProbabilityQuiz";
 
-export const Probability = () => {
+const Probability = () => {
   const [page, setPage] = useLocalStorage("choose-page", "choosePage");
   useEffect(() => {
     setPage("choosePage");
@@ -24,3 +24,5 @@ export const Probability = () => {
     </div>
   );
 };
+
+export default Probability;

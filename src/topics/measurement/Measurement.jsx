@@ -5,7 +5,7 @@ import MeasurementNotes from "./MeasurementNotes";
 import MeasurementQuiz from "./MeasurementQuiz";
 import { useEffect } from "react";
 
-export const Measurement = () => {
+  const Measurement = () => {
   const [page, setPage] = useLocalStorage("choose-page", 'choosePage');
   useEffect(()=>{
     setPage("choosePage")
@@ -23,3 +23,5 @@ export const Measurement = () => {
     </div>
   );
 };
+
+export default Measurement;
