@@ -308,7 +308,7 @@ const ProfilePage = () => {
           </div>
 
           {/* Right Column - Subject Progress */}
-          <div className={cardBase + " p-8"}>
+          <div className={cardBase + " p-8 mb-20"}>
             <div className="flex items-center gap-4 mb-8">
               <div className={iconContainer}>
                 <BookOpen className="w-7 h-7 text-purple-300" />
