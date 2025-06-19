@@ -318,7 +318,7 @@ export default function AchievementsPage() {
   );
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-900 via-slate-900 to-purple-800 p-4">
+    <div className=" p-4">
       <div className="max-w-4xl mx-auto mb-20 pt-8">
         <BottomNav />
 

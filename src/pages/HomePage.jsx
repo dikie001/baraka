@@ -170,17 +170,6 @@ export default function HomePage() {
     ];
   }, [localStorageData]);
 
-  // Memoize achievements array
-  const achievements = useMemo(
-    () => [
-      { name: "Quick Solver", icon: "⚡", earned: true },
-      { name: "Perfect Score", icon: "🎯", earned: true },
-      { name: "Math Wizard", icon: "🧙‍♂️", earned: false },
-      { name: "Champion", icon: "👑", earned: false },
-    ],
-    []
-  );
-
   // Memoize total points calculation
   const totalPoints = useMemo(() => {
     const {
@@ -222,17 +211,15 @@ export default function HomePage() {
     setOveralPoints(totalPoints);
   }, [setPage, totalPoints]);
 
-
- 
   return (
-    <div className=" text-white overflow-hidden">
+    <div className="text-white overflow-hidden">
       <BottomNav />
       <DesktopNav />
       <CalculateDate />
       <Menu />
-      <div className="relative z-10 w-full max-w-3xl mb-12 lg:max-w-4xl xl:max-w-6xl mx-auto bg-slate-800/50 backdrop-blur-xl border  border-purple-500/20 shadow-2xl min-h-screen lg:rounded-3xl lg:my-8 lg:min-h-[calc(100vh-4rem)]">
+      <div className="relative z-10 w-full max-w-3xl mb-15 lg:max-w-4xl xl:max-w-6xl mx-auto  border border-purple-500/20 shadow-xl min-h-screen lg:rounded-2xl lg:my-8 lg:min-h-[calc(100vh-4rem)]">
         {/* Header */}
-        <div className="p-4 sm:p-6 lg:p-8 bg-gradient-to-r from-purple-950 to-slate-900  backdrop-blur-xl border-b border-purple-500/20 lg:rounded-t-3xl">
+        <div className="p-4 sm:p-6 lg:p-8 bg-gradient-to-r from-purple-900 to-slate-900 border-b border-purple-500/20 lg:rounded-t-2xl">
           <div className="flex mt-1 ml-10 items-center justify-between">
             <div>
               <h1 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
@@ -243,7 +230,7 @@ export default function HomePage() {
               </p>
             </div>
 
-            <div className="flex  items-center space-x-2">
+            <div className="flex items-center space-x-2">
               <div className="bg-gradient-to-r from-purple-500 to-pink-500 p-2 lg:p-3 rounded-full">
                 <Trophy className="w-5 h-5 lg:w-6 lg:h-6" />
               </div>
@@ -265,7 +252,7 @@ export default function HomePage() {
               {/* Quick Practice Button */}
               <div
                 onClick={handleQuickPracticeClick}
-                className="bg-gradient-to-r from-purple-700 to-pink-800 ring ring-purple-700 rounded-2xl p-4 sm:p-6 hover:ring-2 transition-all duration-300 cursor-pointer transform hover:scale-104 lg:hover:scale-102"
+                className="bg-gradient-to-r from-purple-700 to-pink-800 rounded-xl p-4 sm:p-6 hover:opacity-90 transition-opacity duration-200 cursor-pointer"
               >
                 <div className="flex items-center justify-center space-x-3">
                   <Play className="w-6 h-6 lg:w-8 lg:h-8" />
@@ -291,13 +278,11 @@ export default function HomePage() {
                     <div
                       onClick={() => handleTopicClick(topic.to)}
                       key={index}
-                      className="bg-black/20 backdrop-blur-xl border border-purple-800 rounded-xl p-3 lg:p-4"
+                      className="bg-white/5 border border-purple-700 rounded-xl p-3 lg:p-4 hover:bg-white/10 transition-colors duration-200 cursor-pointer"
                     >
                       <div className="text-2xl lg:text-3xl mb-2">
                         {topic.icon}
                       </div>
-
-                     
 
                       <h4 className="font-semibold text-purple-200 mb-1 text-sm lg:text-base">
                         {topic.name}
@@ -306,11 +291,11 @@ export default function HomePage() {
                         {topic.about}
                       </p>
 
-                      <div className="bg-slate-600/50 rounded-full h-2 lg:h-3 mb-2">
+                      <div className="bg-slate-600 rounded-full h-2 lg:h-3 mb-2">
                         <div
-                          className="bg-gradient-to-r from-purple-500 to-pink-500 h-2 lg:h-3 rounded-full transition-all duration-500"
+                          className="bg-gradient-to-r from-purple-500 to-pink-500 h-2 lg:h-3 rounded-full transition-all duration-300"
                           style={{ width: `${topic.progress}%` }}
-                        ></div>
+                        />
                       </div>
                       <p className="text-xs lg:text-sm text-purple-300">
                         {topic.progress}% complete
@@ -318,11 +303,6 @@ export default function HomePage() {
                     </div>
                   ))}
                 </div>
-              </div>
-
-   
-              <div>
-          
               </div>
             </div>
           </div>

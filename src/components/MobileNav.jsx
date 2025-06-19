@@ -11,7 +11,7 @@ const BottomNav = () => {
   return (
     <div>
       {/* Bottom Navigation - Only visible on mobile/tablet */}
-      <div className="fixed z-20 bottom-0 left-1/2 transform -translate-x-1/2 w-full max-w-3xl bg-gradient-to-r from-purple-950 to-slate-900  backdrop-blur-xl border-t border-purple-500/20 lg:hidden">
+      <div className="fixed z-20 bottom-0 w-full max-w-3xl bg-gradient-to-r from-purple-900 to-slate-900   border-t border-purple-500/20 lg:hidden">
         <div className="flex justify-around py-3">
           {[
             { icon: BookOpen, label: "Learn", id: "home", to: "/" },
