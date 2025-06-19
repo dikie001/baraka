@@ -1,7 +1,5 @@
 import { Brain, Send, Settings, Sparkles } from "lucide-react";
-import React, { useState } from "react";
-import { useEffect } from "react";
-import { useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import useFeedbackSound from "../hooks/useFeedbackSound";
 
@@ -12,20 +10,20 @@ export default function BarakaAI() {
   const [showSettings, setShowSettings] = useState(false);
   const [error, setError] = useState("");
   const [showWelcome, setShowWelcome] = useState(true);
+
   const API_KEY = import.meta.env.VITE_API_KEY;
   const navigate = useNavigate();
   const bottomRef = useRef(null);
 
-  // Initiaize sounds from hook
-  const { playSend, playReceive } = useFeedbackSound();
+  const { playSend, playReceive,playError } = useFeedbackSound();
 
-  // Set UseRef
   useEffect(() => {
-    bottomRef.current?.scrollIntoView({ behaviour: "smooth" });
-  }, []);
+    bottomRef.current?.scrollIntoView({ behavior: "smooth" });
+  }, [messages, isTyping]);
 
   const callGeminiAPI = async (userMessage) => {
     if (!API_KEY) {
+      playError()
       setError("Server error");
       return;
     }
@@ -53,6 +51,7 @@ export default function BarakaAI() {
       );
 
       if (!response.ok) {
+        playError()
         throw new Error(`API Error: ${response.status}`);
       }
 
@@ -62,8 +61,10 @@ export default function BarakaAI() {
         "Sorry, I couldn't generate a response."
       );
     } catch (err) {
+      playError()
       console.error("Gemini API Error:", err);
       throw new Error(
+        
         err.message.includes("API Error")
           ? "Invalid API key or quota exceeded"
           : "Network error. Please try again."
@@ -86,12 +87,11 @@ export default function BarakaAI() {
       id: Date.now(),
     };
     setMessages((prev) => [...prev, newUserMessage]);
-
     setIsTyping(true);
 
     try {
       const aiResponse = await callGeminiAPI(userMessage);
-      playReceive()
+      playReceive();
       const newAiMessage = {
         type: "ai",
         content: aiResponse,
@@ -106,8 +106,8 @@ export default function BarakaAI() {
   };
 
   return (
-    <div className=" text-white overflow-hidden">
-      {/* Custom Scrollbar Styles */}
+    <div className="text-white overflow-hidden">
+      {/* Optimized Scrollbar Styles */}
       <style>{`
         .custom-scrollbar::-webkit-scrollbar {
           width: 4px;
@@ -125,19 +125,19 @@ export default function BarakaAI() {
         }
       `}</style>
 
-      <div className="relative z-10 flex max-w-3xl mx-auto flex-col h-full ">
+      <div className="relative z-10 flex max-w-3xl mx-auto flex-col h-full">
         {/* Compact Header */}
         <header className="p-4 text-center relative flex-shrink-0">
           <button
             onClick={() => setShowSettings(!showSettings)}
-            className="absolute top-4 right-4 p-2 bg-white/10 rounded-full hover:bg-white/20 transition-colors"
+            className="absolute top-4 right-4 p-2 bg-white/10 rounded-full hover:bg-white/20 transition-colors duration-200"
+            aria-label="Settings"
           >
             <Settings className="w-5 h-5" />
           </button>
 
           <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl mb-2">
             <Brain className="w-6 h-6" />
-            {/* <img src="/icon.png"/> */}
           </div>
           <h1 className="text-2xl font-bold bg-gradient-to-r from-purple-300 to-pink-300 bg-clip-text text-transparent">
             Baraka AI
@@ -148,9 +148,9 @@ export default function BarakaAI() {
 
           {/* Settings Panel */}
           {showSettings && (
-            <div className="absolute shadow-lg top-16 right-4 bg-white/5 backdrop-blur-lg rounded-2xl p-4 border border-white/20 z-20 min-w-64">
-              <h3 className="font-semibold mb-2">Baraka AI </h3>
-              <p className="text-white-400">
+            <div className="absolute shadow-2xl top-16 right-4 bg-white/5 backdrop-blur-lg rounded-2xl p-4 border border-white/20 z-20 min-w-64">
+              <h3 className="font-semibold mb-2">Baraka AI</h3>
+              <p className="text-white/70">
                 This panel will be populated soon!
               </p>
             </div>
@@ -161,7 +161,7 @@ export default function BarakaAI() {
         <div className="flex-1 flex flex-col px-4 pb-4 min-h-0">
           {/* Welcome Card */}
           {showWelcome && (
-            <div className="bg-white/5 backdrop-blur-lg rounded-2xl p-4 mb-4 border border-white/20 flex-shrink-0">
+            <div className="bg-white/5 backdrop-blur-lg rounded-2xl p-4 mb-4 border border-white/20 flex-shrink-0 animate-fade-in">
               <div className="flex items-center gap-3 mb-1">
                 <Sparkles className="w-5 h-5 text-yellow-400" />
                 <h2 className="text-lg font-semibold">Welcome back, Baraka!</h2>
@@ -176,13 +176,13 @@ export default function BarakaAI() {
 
           {/* Error Display */}
           {error && (
-            <div className="bg-red-500/20 border border-red-500/30 rounded-2xl p-3 mb-4 flex-shrink-0">
+            <div className="bg-red-500/20 border border-red-500/30 rounded-2xl p-3 mb-4 flex-shrink-0 animate-fade-in">
               <p className="text-red-200 text-sm">{error}</p>
             </div>
           )}
 
           {/* Chat Messages Area */}
-          <div className="flex-1 bg-white/5 backdrop-blur-lg rounded-2xl border border-white/10 flex flex-col min-h-0">
+          <div className="flex-1 bg-white/5 backdrop-blur-lg rounded-2xl border border-white/10 flex flex-col min-h-100  max-h-screen">
             {/* Chat Header */}
             <div className="p-3 border-b border-white/10 flex-shrink-0">
               <h3 className="font-semibold flex items-center gap-2 text-sm">
@@ -253,6 +253,7 @@ export default function BarakaAI() {
                   </div>
                 </div>
               )}
+              <div ref={bottomRef} />
             </div>
 
             {/* Chat Input */}
@@ -260,8 +261,8 @@ export default function BarakaAI() {
               <div className="flex gap-3 items-end">
                 <div className="flex-1">
                   <input
-                    type="text"
                     ref={bottomRef}
+                    type="text"
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
                     onKeyPress={(e) => e.key === "Enter" && handleSend()}
