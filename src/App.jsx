@@ -27,15 +27,15 @@ const Numbers = lazy(() => import("./topics/numbers/Numbers"));
 const NumbersQuiz = lazy(() => import("./topics/numbers/NumbersQuiz"));
 const Probability = lazy(() => import("./topics/probability/Probability"));
 const App = () => {
-  
+
   // Remove Loader After Loading is Complete
-  const hideLoader = () => {
-    const loader = document.getElementById("loader");
-    if (loader) loader.remove();
-  };
-  useEffect(() => {
-    hideLoader();
-  }, []);
+  // const hideLoader = () => {
+  //   const loader = document.getElementById("loader");
+  //   if (loader) loader.remove();
+  // };
+  // useEffect(() => {
+  //   hideLoader();
+  // }, []);
 
   const [page, setPage] = useLocalStorage("choose-page", "choosePage");
   useEffect(() => {
