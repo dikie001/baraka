@@ -43,7 +43,7 @@ const ProfilePage = () => {
     localStorage.getItem("measurements-quiz-points")
   );
   const dataPoints = Number(localStorage.getItem("data-quiz-points"));
-  const [totalQAnswered, setTotalQAnswered]=useState()
+  const [totalQAnswered, setTotalQAnswered] = useState();
 
   // Calculate Total Global Points
   const totalPoints =
@@ -57,7 +57,7 @@ const ProfilePage = () => {
 
   //  Calculate Average quiz Score
   const AverageScore = (totalPoints / 7).toFixed(0);
-  const AV = Number(AverageScore)
+  const AV = Number(AverageScore);
 
   // Numbers Quiz LocalStorage
   const numbersProgress = localStorage.getItem("current-number");
@@ -110,14 +110,12 @@ const ProfilePage = () => {
   // Calculate overall Progress
   const calculateOverallProgress = () => {
     const overalProgress = NP + AP + GP + MP + PP + DP + QP;
-    setTotalQAnswered(overalProgress)
+    setTotalQAnswered(overalProgress);
     const totalQuiz = NTQ + ATQ + GTQ + MTQ + PTQ + DTQ + QQT;
     const gp = ((overalProgress / totalQuiz) * 100).toFixed(2);
     const globalProgress = Number(gp);
     setGlobalPercentage(globalProgress);
   };
-
-
 
   useEffect(() => {
     calculateOverallProgress();
@@ -168,13 +166,13 @@ const ProfilePage = () => {
 
       <div className="max-w-7xl mx-auto space-y-4 relative z-10">
         {/* HEADER PROFILE CARD */}
-        <div className="bg-black/40 backdrop-blur-xl rounded-3xl shadow-2xl shadow-purple-900/30 py-6 border border-purple-500/30 hover:border-purple-400/50 transition-all duration-500 group">
+        <div className="bg-black/40 backdrop-blur-xl rounded-3xl shadow-2xl shadow-purple-900/30 py-6 border border-purple-500/30">
           <div className="flex flex-col lg:flex-row items-center gap-8">
             {/* Profile Avatar with animated glow */}
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full blur-lg opacity-75 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <div className="relative w-28 h-28 sm:w-32 sm:h-32 bg-gradient-to-br from-purple-500 to-pink-600 rounded-full flex items-center justify-center shadow-2xl shadow-purple-500/50 hover:shadow-purple-400/60 transition-all duration-300 hover:scale-105">
+              <div className="relative w-28 h-28 sm:w-32 sm:h-32 bg-gradient-to-br from-purple-500 to-pink-600 rounded-full flex items-center justify-center shadow-2xl shadow-purple-500/50 ">
                 <img
+                  loading="lazy"
                   src="./icon.png"
                   alt="baraka"
                   className="absolute rounded-full inset-1 w-[calc(100%-8px)] h-[calc(100%-8px)] object-cover"
@@ -513,7 +511,6 @@ const ProfilePage = () => {
                   </div>
                   <div className="text-xs text-purple-400">This month</div>
                 </div> */}
-                
               </div>
             </div>
           </div>
