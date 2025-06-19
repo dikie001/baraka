@@ -8,7 +8,7 @@ export default function BarakaAICard() {
   return (
     <div onClick={() => navigate("/baraka-ai")}>
       {/* Baraka AI Assistant Card */}
-      <div className="bg-gradient-to-br from-purple-600/25 to-pink-600/25 backdrop-blur-lg border border-purple-400/40 rounded-2xl p-3 sm:p-6 hover:scale-105 lg:hover:scale-102 transition-all duration-300 cursor-pointer w-full shadow-xl shadow-purple-900/20">
+      <div className="bg-gradient-to-br from-purple-700/25 to-pink-700/25 backdrop-blur-lg border border-purple-400/40 rounded-2xl p-3 sm:p-6 hover:scale-105 lg:hover:scale-102 transition-all duration-300 cursor-pointer w-full shadow-xl shadow-purple-900/20">
         <div className="flex items-center justify-between">
           <div className="flex-1">
             <div className="flex items-center gap-3 mb-1">
@@ -55,12 +55,12 @@ export default function BarakaAICard() {
             </div>
           </div>
         </div>
-        <button
+        {/* <button
           onClick={() => navigate("/baraka-ai")}
           className="bg-black/40 text-purple-400 text-sm font-medium shadow-lg shadow-black/30 py-2 px-3 rounded-md ring ring-purple-600 absolute top-2 right-2 "
         >
           Chat with my Ai{" "}
-        </button>
+        </button> */}
       </div>
     </div>
   );

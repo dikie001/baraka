@@ -8,7 +8,7 @@ export default function SettingsPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-900 via-slate-900 to-purple-800 p-4">
+    <div className="to-purple-800 p-4">
       <BottomNav />
       <div className="max-w-2xl mx-auto pt-16">
         <div className="text-center">

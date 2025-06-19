@@ -123,7 +123,7 @@ const ProbabilityQuiz = () => {
     setQuizLength(totalQuestions);
   });
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-900 via-slate-800 to-slate-900 text-white p-4">
+    <div className=" text-white p-4">
       <BottomNav />
       {mode === "choosePage" && <ConfirmStudyMode />}
       <button

@@ -9,7 +9,7 @@ const AlgebraNotes = () => {
   const [mode, setMode] = useLocalStorage("choose-page", "choosePage");
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-900 via-slate-800 to-purple-800 text-white">
+    <div className=" text-white">
       <div className="max-w-4xl mx-auto">
    
         {/* Header Section */}

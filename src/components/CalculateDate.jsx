@@ -70,7 +70,7 @@ const CalculateDate = () => {
       {/* Toggle Button - Fixed on right side */}
       <button
         onClick={toggleModal}
-        className="fixed right-0 top-1/2 transform -translate-y-1/2 bg-gradient-to-br from-purple-600 via-slate-700 to-purple-700 text-white py-4 rounded-l-2xl shadow-2xl hover:shadow-purple-500/25 transition-all duration-500 z-50 border border-purple-400/30 hover:border-purple-300/50 backdrop-blur-sm"
+        className="fixed right-0 top-1/2 transform -translate-y-1/2 bg-gradient-to-br from-purple-800 to-pink-800  text-white py-4 rounded-l-2xl shadow-2xl hover:shadow-purple-500/25 transition-all duration-500 z-50 border border-purple-400/30 "
         aria-label="Toggle subpage"
       >
         <ChevronRight
@@ -84,7 +84,7 @@ const CalculateDate = () => {
       {isModalOpen && (
         <div className="fixed mb-15  inset-0 bg-black/40 bg-opacity-60 backdrop-blur-sm z-40 flex items-center justify-center p-4">
           {/* Modal Content */}
-          <div className="bg-gradient-to-br from-purple-900 via-slate-800 to-purple-800 rounded-2xl shadow-2xl border border-purple-500/20 max-w-lg w-full p-8 transform transition-all duration-500 scale-100 backdrop-blur-md relative overflow-hidden">
+          <div className="bg-gradient-to-br from-purple-950 to-slate-900 rounded-2xl shadow-2xl border border-purple-500/20 max-w-lg w-full p-8 transform transition-all duration-500 scale-100 backdrop-blur-md relative overflow-hidden">
             {/* Subtle gradient overlay for depth */}
             <div className="absolute inset-0 bg-gradient-to-tr from-white/5 to-transparent pointer-events-none"></div>
 

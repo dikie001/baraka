@@ -101,7 +101,7 @@ export default function Quizes() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-900 via-slate-900 to-purple-800 p-4">
+    <div className=" p-4">
       <BottomNav />
       <div className="max-w-4xl mx-auto pt-8 pb-20">
         {/* Header */}
@@ -118,7 +118,7 @@ export default function Quizes() {
             <div
               key={index}
               onClick={() => navigate(topic.to)}
-              className="backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl p-5 cursor-pointer transition-all duration-300 hover:scale-105 hover:bg-white/15 group"
+              className="backdrop-blur-xl bg-white/5 border border-white/20 rounded-2xl p-5 cursor-pointer transition-all duration-300 hover:scale-105 hover:bg-white/15 group"
             >
               <div className="flex items-center justify-between mb-3">
                 <div className="flex items-center space-x-3">

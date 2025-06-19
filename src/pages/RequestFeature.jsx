@@ -109,10 +109,10 @@ export default function RequestFeature() {
 
   if (isSubmitted) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-purple-900 via-slate-900 to-purple-800 p-4 flex items-center justify-center">
+      <div className=" p-4 flex items-center justify-center">
         <div className="max-w-md w-full">
           <BottomNav />
-          <div className="backdrop-blur-xl bg-white/10 border border-white/20 rounded-3xl p-8 text-center shadow-2xl">
+          <div className="backdrop-blur-xl bg-white/5 border border-white/20 rounded-3xl p-8 text-center shadow-2xl">
             <div className="w-20 h-20 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full flex items-center justify-center mx-auto mb-6">
               <CheckCircle className="w-10 h-10 text-white" />
             </div>

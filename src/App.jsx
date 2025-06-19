@@ -31,7 +31,7 @@ const App = () => {
         setPage("choosePage")
   },[])
   return (
-    <div className='w-full overflow-x-hidden px-0 m-0 max-w-none mx-auto'>
+    <div className="min-h-screen bg-gradient-to-br from-purple-950 via-slate-900 to-purple-900">
       <Router>
         <Toaster />
         <InstallPrompt />

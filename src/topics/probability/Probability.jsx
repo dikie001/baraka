@@ -12,7 +12,7 @@ export const Probability = () => {
     setPage("choosePage");
   }, []);
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-900 via-slate-800 to-purple-800 text-white p-3">
+    <div className=" text-white p-3">
       {/* Display the Study Mode Modal */}
       {page === "choosePage" && <ConfirmStudyMode />}
 

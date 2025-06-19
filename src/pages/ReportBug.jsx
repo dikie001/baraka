@@ -74,9 +74,9 @@ try{
 
   if (submitted) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-purple-900 via-slate-900 to-purple-800 flex items-center justify-center p-4">
+      <div className=" flex items-center justify-center p-4">
         <BottomNav />
-        <div className="backdrop-blur-xl bg-white/10 border border-white/20 rounded-3xl p-8 text-center max-w-md">
+        <div className="backdrop-blur-xl bg-white/5 border border-white/20 rounded-3xl p-8 text-center max-w-md">
           <div className="w-16 h-16 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full flex items-center justify-center mx-auto mb-6">
             <CheckCircle className="w-8 h-8 text-white" />
           </div>
@@ -98,7 +98,7 @@ try{
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-900 via-slate-900 to-purple-800 flex items-center justify-center p-3">
+    <div className=" flex items-center justify-center p-3">
       <div className="w-full max-w-lg">
         <button
           onClick={() => navigate("/")}

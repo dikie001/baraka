@@ -155,23 +155,23 @@ export default function HomePage() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white overflow-hidden">
+    <div className=" text-white overflow-hidden">
       {/* Animated Background Elements */}
       {/* <div className="fixed inset-0 overflow-hidden pointer-events-none"> */}
-        {/* <div className="absolute -top-40 -right-40 w-80 h-80 bg-purple-500/20 rounded-full blur-3xl animate-pulse"></div>
+      {/* <div className="absolute -top-40 -right-40 w-80 h-80 bg-purple-500/20 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-pink-500/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-purple-600/10 rounded-full blur-2xl animate-pulse delay-500"></div> */}
-        {/* Additional background elements for larger screens */}
-        {/* <div className="hidden lg:block absolute top-20 right-20 w-32 h-32 bg-purple-400/10 rounded-full blur-xl animate-pulse delay-700"></div>
+      {/* Additional background elements for larger screens */}
+      {/* <div className="hidden lg:block absolute top-20 right-20 w-32 h-32 bg-purple-400/10 rounded-full blur-xl animate-pulse delay-700"></div>
         <div className="hidden lg:block absolute bottom-20 left-20 w-40 h-40 bg-pink-400/10 rounded-full blur-xl animate-pulse delay-300"></div>
       </div> */}
       <BottomNav />
       <DesktopNav />
       <CalculateDate />
-      <Menu/>
+      <Menu />
       <div className="relative z-10 w-full max-w-md lg:max-w-4xl xl:max-w-6xl mx-auto bg-slate-800/50 backdrop-blur-xl border border-purple-500/20 shadow-2xl min-h-screen lg:rounded-3xl lg:my-8 lg:min-h-[calc(100vh-4rem)]">
         {/* Header */}
-        <div className="p-4 sm:p-6 lg:p-8 bg-gradient-to-r from-purple-600/30 to-pink-600/30 backdrop-blur-sm border-b border-purple-500/20 lg:rounded-t-3xl">
+        <div className="p-4 sm:p-6 lg:p-8 bg-gradient-to-r from-purple-950 to-slate-900  backdrop-blur-xl border-b border-purple-500/20 lg:rounded-t-3xl">
           <div className="flex mt-1 ml-10 items-center justify-between">
             <div>
               <h1 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
@@ -292,7 +292,6 @@ export default function HomePage() {
                 </div>
               </div> */}
               </div>
-             
             </div>
           </div>
         </div>

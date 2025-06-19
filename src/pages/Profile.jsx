@@ -157,7 +157,7 @@ const ProfilePage = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-950 via-slate-900 to-purple-900 p-4 relative overflow-hidden">
+    <div className=" p-4 relative overflow-hidden">
       <BottomNav />
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -513,15 +513,18 @@ const ProfilePage = () => {
                   </div>
                   <div className="text-xs text-purple-400">This month</div>
                 </div> */}
+                
               </div>
             </div>
           </div>
 
-          {/* RIGHT COLUMN - Goals & Subject Progress */}
-          {/* Commented Block */}
+          {/* Commented block */}
           <div>
-            {/* WEEKLY GOALS SECTION */}
-            {/* <div className="bg-black/30 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-purple-500/30 hover:border-purple-400/50 transition-all duration-500">
+            {/* RIGHT COLUMN - Goals & Subject Progress */}
+            {/* Commented Block */}
+            <div>
+              {/* WEEKLY GOALS SECTION */}
+              {/* <div className="bg-black/30 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-purple-500/30 hover:border-purple-400/50 transition-all duration-500">
               <div className="flex items-center gap-4 mb-8">
                 <div className="p-3 bg-gradient-to-r from-pink-500/20 to-purple-500/20 rounded-xl backdrop-blur-sm border border-pink-400/30">
                   <TrendingUp className="w-7 h-7 text-pink-300" />
@@ -530,8 +533,8 @@ const ProfilePage = () => {
               </div>
 
               <div className="space-y-6"> */}
-            {/* Goal 1: Complete 5 quizzes */}
-            {/* <div className="group">
+              {/* Goal 1: Complete 5 quizzes */}
+              {/* <div className="group">
                   <div className="flex justify-between items-center mb-3">
                     <span className="font-medium text-slate-200">
                       Complete 5 Random Quizzes
@@ -548,8 +551,8 @@ const ProfilePage = () => {
                   </div>
                 </div> */}
 
-            {/* Goal 2: Study 10 hours */}
-            {/* <div className="group">
+              {/* Goal 2: Study 10 hours */}
+              {/* <div className="group">
                   <div className="flex justify-between items-center mb-3">
                     <span className="font-medium text-slate-200">
                       Study 10 Hours
@@ -566,8 +569,8 @@ const ProfilePage = () => {
                   </div>
                 </div> */}
 
-            {/* Goal 3: Master new topic */}
-            {/* <div className="group">
+              {/* Goal 3: Master new topic */}
+              {/* <div className="group">
                   <div className="flex justify-between items-center mb-3">
                     <span className="font-medium text-slate-200">
                       Master New Topic
@@ -585,8 +588,8 @@ const ProfilePage = () => {
                 </div>
               </div> */}
 
-            {/* Motivational Message */}
-            {/* <div className="mt-8 p-6 bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-2xl backdrop-blur-sm border border-purple-400/30 hover:border-purple-300/50 transition-all duration-300">
+              {/* Motivational Message */}
+              {/* <div className="mt-8 p-6 bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-2xl backdrop-blur-sm border border-purple-400/30 hover:border-purple-300/50 transition-all duration-300">
                 <div className="text-center">
                   <div className="text-white font-medium mb-2 flex items-center justify-center">
                     <Sparkles className="w-4 h-4 mr-2 text-purple-400" />
@@ -598,6 +601,7 @@ const ProfilePage = () => {
                 </div>
               </div>
             </div> */}
+            </div>
           </div>
 
           <div>
