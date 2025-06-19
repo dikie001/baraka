@@ -28,13 +28,7 @@ const NumbersQuiz = lazy(() => import("./topics/numbers/NumbersQuiz"));
 const Probability = lazy(() => import("./topics/probability/Probability"));
 const App = () => {
 
- useEffect(() => {
-  const splash = document.getElementById('splash-screen');
-  if (splash) {
-    splash.style.opacity = '0';
-    setTimeout(() => splash.remove(), 300);
-  }
-}, []);
+ 
 
   const [page, setPage] = useLocalStorage("choose-page", "choosePage");
   useEffect(() => {
