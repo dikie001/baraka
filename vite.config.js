@@ -12,27 +12,7 @@ export default defineConfig({
       devOptions: {
         enabled: true,
       },
-      manifest: {
-        name: "Quizzy",
-        short_name: "quizzy",
-        start_url: "/",
-        display: "standalone",
-        background_color: "#ffffff",
-        theme_color: "#0f172a",
-        icons: [
-          {
-            src: "/icon.png",
-            sizes: "192x192",
-            type: "image/png",
-          },
-          {
-            src: "/icon.png",
-            sizes: "512x512",
-            type: "image/png",
-            purpose: "any maskable",
-          },
-        ],
-      },
+      manifest: "/manifest.json", // ⬅️ pull from public folder
       workbox: {
         globPatterns: ["**/*.{js,css,html,ico,png,svg,json}"],
       },

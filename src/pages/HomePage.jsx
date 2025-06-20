@@ -217,24 +217,24 @@ export default function HomePage() {
       <DesktopNav />
       <CalculateDate />
       <Menu />
-      <div className="relative z-10 w-full max-w-3xl mb-15 lg:max-w-4xl xl:max-w-6xl mx-auto  border border-purple-500/20 shadow-xl min-h-screen lg:rounded-2xl lg:my-8 lg:min-h-[calc(100vh-4rem)]">
+      <div className="relative z-10 w-full max-w-3xl mb-15 lg:max-w-5xl xl:max-w-7xl 2xl:max-w-8xl mx-auto border border-purple-500/20 shadow-xl min-h-screen lg:rounded-2xl lg:my-8 lg:min-h-[calc(100vh-4rem)]">
         {/* Header */}
-        <div className="p-4 sm:p-6 lg:p-8 bg-gradient-to-r from-purple-900 to-slate-900 border-b border-purple-500/20 lg:rounded-t-2xl">
+        <div className="p-4 sm:p-6 lg:p-8 xl:p-10 2xl:p-12 bg-gradient-to-r from-purple-900 to-slate-900 border-b border-purple-500/20 lg:rounded-t-2xl">
           <div className="flex mt-1 ml-10 items-center justify-between">
             <div>
-              <h1 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+              <h1 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
                 Hi Baraka! 👋
               </h1>
-              <p className="text-purple-200 text-sm lg:text-base mt-1">
+              <p className="text-purple-200 text-sm lg:text-base xl:text-lg 2xl:text-xl mt-1">
                 Ready to learn math?
               </p>
             </div>
 
-            <div className="flex items-center space-x-2">
-              <div className="bg-gradient-to-r from-purple-500 to-pink-500 p-2 lg:p-3 rounded-full">
-                <Trophy className="w-5 h-5 lg:w-6 lg:h-6" />
+            <div className="flex items-center space-x-2 lg:space-x-3">
+              <div className="bg-gradient-to-r from-purple-500 to-pink-500 p-2 lg:p-3 xl:p-4 rounded-full">
+                <Trophy className="w-5 h-5 lg:w-6 lg:h-6 xl:w-7 xl:h-7 2xl:w-8 2xl:h-8" />
               </div>
-              <span className="text-xl lg:text-2xl font-bold">
+              <span className="text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-bold">
                 {overalPoints}
               </span>
             </div>
@@ -242,62 +242,62 @@ export default function HomePage() {
         </div>
 
         {/* Main Content */}
-        <div className="p-4 sm:p-6 lg:p-8 space-y-6 lg:space-y-8 pb-20 lg:pb-8">
-          <div className="lg:grid lg:grid-cols-12 lg:gap-8 space-y-6 lg:space-y-0">
+        <div className="p-4 sm:p-6 lg:p-8 xl:p-10 2xl:p-12 space-y-6 lg:space-y-8 xl:space-y-10 2xl:space-y-12 pb-20 lg:pb-8">
+          <div className="lg:grid lg:grid-cols-12 lg:gap-8 xl:gap-10 2xl:gap-12 space-y-6 lg:space-y-0">
             {/* Left Column - Daily Challenge and Quick Practice */}
-            <div className="lg:col-span-5 space-y-6">
+            <div className="lg:col-span-5 xl:col-span-4 space-y-6 xl:space-y-8 2xl:space-y-10">
               {/* Baraka Ai Card */}
               <BarakaAICard />
 
               {/* Quick Practice Button */}
               <div
                 onClick={handleQuickPracticeClick}
-                className="bg-gradient-to-r from-purple-700 to-pink-800 rounded-xl p-4 sm:p-6 hover:opacity-90 transition-opacity duration-200 cursor-pointer"
+                className="bg-gradient-to-r from-purple-700 to-pink-800 rounded-xl p-4 sm:p-6 lg:p-6 xl:p-8 2xl:p-10 hover:opacity-90 transition-opacity duration-200 cursor-pointer"
               >
-                <div className="flex items-center justify-center space-x-3">
-                  <Play className="w-6 h-6 lg:w-8 lg:h-8" />
-                  <span className="text-lg lg:text-xl font-semibold">
+                <div className="flex items-center justify-center space-x-3 lg:space-x-4">
+                  <Play className="w-6 h-6 lg:w-8 lg:h-8 xl:w-10 xl:h-10 2xl:w-12 2xl:h-12" />
+                  <span className="text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-semibold">
                     Random Quiz
                   </span>
                 </div>
-                <p className="text-center text-purple-100 text-sm lg:text-base mt-2">
+                <p className="text-center text-purple-100 text-sm lg:text-base xl:text-lg 2xl:text-xl mt-2 lg:mt-3">
                   Start a random quiz now!
                 </p>
               </div>
             </div>
 
             {/* Right Column - Topics and Achievements */}
-            <div className="lg:col-span-7 space-y-6 lg:space-y-8">
+            <div className="lg:col-span-7 xl:col-span-8 space-y-6 lg:space-y-8 xl:space-y-10 2xl:space-y-12">
               {/* Topics Grid */}
               <div>
-                <h3 className="text-xl lg:text-2xl font-semibold mb-4 lg:mb-6 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                <h3 className="text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-semibold mb-4 lg:mb-6 xl:mb-8 2xl:mb-10 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
                   Learn Topics
                 </h3>
-                <div className="grid grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-3 lg:gap-4">
+                <div className="grid grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-3 lg:gap-4 xl:gap-6 2xl:gap-8">
                   {topics.map((topic, index) => (
                     <div
                       onClick={() => handleTopicClick(topic.to)}
                       key={index}
-                      className="bg-white/5 border border-purple-700 rounded-xl p-3 lg:p-4 hover:bg-white/10 transition-colors duration-200 cursor-pointer"
+                      className="bg-white/5 border border-purple-700 rounded-xl p-3 lg:p-4 xl:p-6 2xl:p-8 hover:bg-white/10 transition-colors duration-200 cursor-pointer"
                     >
-                      <div className="text-2xl lg:text-3xl mb-2">
+                      <div className="text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl mb-2 lg:mb-3 xl:mb-4">
                         {topic.icon}
                       </div>
 
-                      <h4 className="font-semibold text-purple-200 mb-1 text-sm lg:text-base">
+                      <h4 className="font-semibold text-purple-200 mb-1 lg:mb-2 text-sm lg:text-base xl:text-lg 2xl:text-xl">
                         {topic.name}
                       </h4>
-                      <p className="text-xs lg:text-sm text-purple-300 mb-3">
+                      <p className="text-xs lg:text-sm xl:text-base 2xl:text-lg text-purple-300 mb-3 lg:mb-4 xl:mb-5">
                         {topic.about}
                       </p>
 
-                      <div className="bg-slate-600 rounded-full h-2 lg:h-3 mb-2">
+                      <div className="bg-slate-600 rounded-full h-2 lg:h-3 xl:h-4 2xl:h-5 mb-2 lg:mb-3">
                         <div
-                          className="bg-gradient-to-r from-purple-500 to-pink-500 h-2 lg:h-3 rounded-full transition-all duration-300"
+                          className="bg-gradient-to-r from-purple-500 to-pink-500 h-2 lg:h-3 xl:h-4 2xl:h-5 rounded-full transition-all duration-300"
                           style={{ width: `${topic.progress}%` }}
                         />
                       </div>
-                      <p className="text-xs lg:text-sm text-purple-300">
+                      <p className="text-xs lg:text-sm xl:text-base 2xl:text-lg text-purple-300">
                         {topic.progress}% complete
                       </p>
                     </div>

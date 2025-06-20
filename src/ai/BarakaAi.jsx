@@ -150,12 +150,12 @@ export default function BarakaAI() {
                 </h1>
               </div>
             </div>
-            <div>
+            <div className="z-55">
               <button
                 onClick={() => setShowSettings(!showSettings)}
                 className=" mr-5 p-3  bg-white/10  rounded-xl hover:bg-white/20 transition-all duration-200"
               >
-                <Settings onClick={()=>console.log('first')} className="w-5 h-5 z-45" />
+                <Settings onClick={()=>console.log('first')} className="w-5 h-5 " />
               </button>
             </div>
           </div>
