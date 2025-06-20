@@ -1,16 +1,15 @@
-import { useState } from "react";
-import { ListChecks, ChevronLeft, BookOpen } from "lucide-react";
-import { useNavigate } from "react-router-dom";
 import { useLocalStorage } from "@uidotdev/usehooks";
+import { BookOpen, ChevronLeft, ListChecks } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const ConfirmStudyMode = () => {
   const navigate = useNavigate()
   const [page, setPage] = useLocalStorage("choose-page", "choosePage");
 
 
-  return (
+  return ( 
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60">
-      <div className="w-full max-w-md bg-gradient-to-br from-purple-900 via-slate-800 to-purple-900 border border-purple-300/20 rounded-2xl shadow-2xl p-6">
+      <div className="w-full  max-w-md bg-gradient-to-br from-purple-900 via-slate-800 to-purple-900 border border-purple-300/20 rounded-2xl shadow-2xl p-6">
         {/* Header */}
         <div className="flex items-center justify-between mb-6">
           <button
