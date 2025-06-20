@@ -76,7 +76,7 @@ const MenuComponent = () => {
     <>
       {/* Toggle Button */}
       <button
-        className="absolute z-55 left-2 top-7 p-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white "
+        className="absolute z-55 left-2 top-7 lg:top-19 xl:left-23 2xl:lext-24 3xl:left-26 4xl:left-28 xl:top-22 lg:left-7 p-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white "
         onClick={() => setOpenMenu(!openMenu)}
       >
         {openMenu ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
