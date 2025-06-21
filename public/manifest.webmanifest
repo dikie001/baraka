@@ -4,12 +4,12 @@
   "description": "Your ultimate revision buddy with smart quizzes across subjects!",
   "icons": [
     {
-      "src": "/icon.png",
+      "src": "/icon2.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/icon.png",
+      "src": "/icon2.png",
       "type": "image/png",
       "sizes": "512x512"
     }
@@ -37,7 +37,7 @@
       "src": "/screenshots/shot2.jpg",
       "type": "image/png",
       "sizes": "1280x720",
-      "label": "Inbuilt Baraka AI"
+      "label": "Inbuilt Baraka AI Assistant"
     }
   ]
 }
