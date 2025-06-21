@@ -4,12 +4,12 @@
   "description": "Your ultimate revision buddy with smart quizzes across subjects!",
   "icons": [
     {
-      "src": "/icon2.png",
+      "src": "/icon.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/icon2.png",
+      "src": "/icon.png",
       "type": "image/png",
       "sizes": "512x512"
     }
