@@ -205,11 +205,15 @@ export default function HomePage() {
     [navigate]
   );
 
+  // Run when points change
+  useEffect(() => {
+    setOveralPoints(totalPoints);
+  }, [totalPoints]);
+
   // Run on first render
   useEffect(() => {
     setPage("choosePage");
-    setOveralPoints(totalPoints);
-  }, [setPage, totalPoints]);
+  }, []);
 
   return (
     <div className="text-white overflow-hidden">
@@ -229,7 +233,7 @@ export default function HomePage() {
                   Ready to learn math?
                 </p>
               </div>
-              <div >
+              <div>
                 <DesktopNav />
               </div>
             </div>

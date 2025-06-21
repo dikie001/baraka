@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 const ConfirmStudyMode = () => {
   const navigate = useNavigate()
-  const [page, setPage] = useLocalStorage("choose-page", "choosePage");
+  const [page, setPage] = useLocalStorage("choose-page",null);
 
 
   return ( 

@@ -12,7 +12,7 @@ export default defineConfig({
       devOptions: {
         enabled: true,
       },
-      manifest: "/manifest.json", // ⬅️ pull from public folder
+      manifest: "/manifest.json", 
       workbox: {
         globPatterns: ["**/*.{js,css,html,ico,png,svg,json}"],
       },

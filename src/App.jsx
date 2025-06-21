@@ -28,14 +28,15 @@ const Numbers = lazy(() => import("./topics/numbers/Numbers"));
 const NumbersQuiz = lazy(() => import("./topics/numbers/NumbersQuiz"));
 const Probability = lazy(() => import("./topics/probability/Probability"));
 const WelcomePage = lazy(() => import("./pages/WelcomePage"));
+
+
 const App = () => {
   const [page, setPage] = useLocalStorage("choose-page", "choosePage");
   const [firstTime, setFirstTime] = useState(null);
-  useEffect(() => {
-    setPage("choosePage");
-  }, []);
+
 
   useEffect(() => {
+    setPage('choosePage')
     const stored = localStorage.getItem("first-time");
     if (stored === null) {
       localStorage.setItem("first-time", "true");

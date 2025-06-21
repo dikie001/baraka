@@ -32,7 +32,7 @@ const features = [
   },
   {
     title: '🎯 Progress Tracking',
-    desc: "Track every quiz, note, and win. You're in control.",
+    desc: "Track every quiz and win. You're in control.",
   },
 ];
 
