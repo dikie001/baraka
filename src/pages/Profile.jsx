@@ -1,10 +1,12 @@
 import { BookOpen, Crown, Star, Target, TrendingUp } from "lucide-react";
 import React, { useState, useEffect, useMemo } from "react";
 import BottomNav from "../components/MobileNav";
+import { useLocalStorage } from "@uidotdev/usehooks";
 
 const ProfilePage = () => {
   const [globalPercentage, setGlobalPercentage] = useState(0);
   const [totalQAnswered, setTotalQAnswered] = useState(0);
+  const [savePoints, setSavePoints]=useLocalStorage("global-points",null)
 
   // Memoized localStorage data extraction
   const quizData = useMemo(() => {
@@ -52,13 +54,17 @@ const ProfilePage = () => {
   const averageScore = useMemo(() => {
     const validScores = Object.values(quizData.points).filter(
       (score) => score > 0
+      
     );
     if (validScores.length === 0) return 0;
+ 
     return Math.round(
       validScores.reduce((sum, score) => sum + score, 0) / validScores.length
     );
+ 
   }, [quizData.points]);
-
+  setSavePoints(averageScore)
+  
   // Calculate progress and level
   useEffect(() => {
     const totalProgress = Object.values(quizData.progress).reduce(

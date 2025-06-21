@@ -2,19 +2,6 @@
   "questions": [
     {
       "id": 1,
-      "question": "What is the value of x if 2x + 5 = 17?",
-      "options": {
-        "A": "6",
-        "B": "11",
-        "C": "5",
-        "D": "7"
-      },
-      "answer": "A",
-      "subtopic": "Linear Equations",
-      "subject": "Mathematics"
-    },
-    {
-      "id": 2,
       "question": "Which of the following is a synonym for the word \"benevolent\"?",
       "options": {
         "A": "Cruel",
@@ -27,20 +14,20 @@
       "subject": "English"
     },
     {
-      "id": 3,
-      "question": "Je, herufi gani hubadilisha maana ya neno wakati zinapoongezwa mwanzoni mwa neno katika Kiswahili?",
+      "id": 2,
+      "question": "Changua kivumishi katika maneno haya",
       "options": {
-        "A": "Ki",
-        "B": "Ma",
-        "C": "U",
-        "D": "Ni"
+        "A": "baraka",
+        "B": "anacheza",
+        "C": "katika",
+        "D": "lakini"
       },
-      "answer": "B",
+      "answer": "A",
       "subtopic": "Penzi la Kiambishi",
       "subject": "Kiswahili"
     },
     {
-      "id": 4,
+      "id": 3,
       "question": "Which organelle is known as the powerhouse of the cell?",
       "options": {
         "A": "Nucleus",
@@ -53,7 +40,7 @@
       "subject": "Science"
     },
     {
-      "id": 5,
+      "id": 4,
       "question": "What is the capital city of Kenya?",
       "options": {
         "A": "Mombasa",
@@ -66,7 +53,7 @@
       "subject": "Social Studies"
     },
     {
-      "id": 6,
+      "id": 5,
       "question": "In Christianity, the event commemorated on Easter Sunday is:",
       "options": {
         "A": "Birth of Jesus",
@@ -79,7 +66,7 @@
       "subject": "Religious Education"
     },
     {
-      "id": 7,
+      "id": 6,
       "question": "Which practice involves growing crops in rows to reduce soil erosion?",
       "options": {
         "A": "Terracing",
@@ -90,6 +77,19 @@
       "answer": "C",
       "subtopic": "Soil Conservation",
       "subject": "Agriculture"
+    },
+    {
+      "id": 7,
+      "question": "Ni ipi kati ya hizi si kazi ya mwalimu?",
+      "options": {
+        "A": "kufundisha",
+        "B": "Kusahihisha",
+        "C": "Kutafuta charger ya mwanafunzi",
+        "D": "Kukuuliza kama umeelewa"
+      },
+      "answer": "C",
+      "subtopic": "Funny quiz",
+      "subject": "Kiswahili"
     },
     {
       "id": 8,

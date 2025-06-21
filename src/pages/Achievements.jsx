@@ -25,6 +25,8 @@ const MemoizedIcons = {
   CheckCircle: React.memo(() => <CheckCircle className="w-6 h-6" />),
 };
 
+const globalPoints = localStorage.getItem("global-points")
+
 // Constants to avoid recreation on each render
 const TOPIC_COLORS = {
   1: "from-blue-400 to-cyan-400",
@@ -217,11 +219,12 @@ export default function AchievementsPage() {
       percentages,
       geometryPoints,
       algebraPoints,
+
       measurementsPoints,
       globalPercentage,
       rawData,
     } = gameData;
-
+console.log(globalPercentage)
     return [
       {
         id: 1,
@@ -252,7 +255,7 @@ export default function AchievementsPage() {
         title: "Probability Pro",
         description: "Finish the entire Probability topic quiz",
         icon: <MemoizedIcons.Target />,
-        unlocked: percentages.probability === 100,
+        unlocked: percentages.probability >= 100,
         progress: percentages.probability,
       },
       {
@@ -260,7 +263,7 @@ export default function AchievementsPage() {
         title: "Geometry Genius",
         description: "Score above 85% on Geometry topic",
         icon: <MemoizedIcons.Trophy />,
-        unlocked: geometryPoints > 85,
+        unlocked: geometryPoints >= 85,
         progress: Math.min(100, Math.round((percentages.geometry / 85) * 100)),
       },
       {
@@ -268,7 +271,7 @@ export default function AchievementsPage() {
         title: "Algebra Ace",
         description: "score above 70% on algebra",
         icon: <MemoizedIcons.Zap />,
-        unlocked: algebraPoints > 70,
+        unlocked: algebraPoints >= 70,
         progress: Math.min(100, Math.round((percentages.algebra / 70) * 100)),
       },
       {
@@ -276,17 +279,17 @@ export default function AchievementsPage() {
         title: "Measurement Master",
         description: "Perfect score on Measurement topic",
         icon: <MemoizedIcons.Award />,
-        unlocked: measurementsPoints === 100,
+        unlocked: measurementsPoints >=100 ,
         progress: percentages.measurement,
       },
-      {
-        id: 8,
-        title: "Triple Threat",
-        description: "Complete 3 different topic quizzes",
-        icon: <MemoizedIcons.CheckCircle />,
-        unlocked: false, // This logic wasn't implemented in original
-        progress: 0,
-      },
+      // {
+        // id: 8,
+        // title: "Triple Threat",
+        // description: "Complete 3 different topic quizzes",
+        // icon: <MemoizedIcons.CheckCircle />,
+        // unlocked: false, // This logic wasn't implemented in original
+      //   // progress: 0,
+      // },
       {
         id: 9,
         title: "Math Champion",
@@ -298,8 +301,8 @@ export default function AchievementsPage() {
           rawData.geometry.progress === rawData.geometry.total &&
           rawData.measurement.progress === rawData.measurement.total &&
           rawData.probability.progress === rawData.probability.total &&
-          rawData.data.progress === rawData.data.total,
-        progress: globalPercentage || 0,
+          rawData.data.progress === rawData.data.total && rawData.numbers.progress !==0,
+        progress: globalPoints || 0,
       },
     ];
   }, [gameData]);

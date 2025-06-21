@@ -4,6 +4,7 @@ import React, { useEffect } from "react";
 import { lazy, Suspense } from "react";
 import { Toaster } from "react-hot-toast";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import { useState } from "react";
 
 const BarakaAI = lazy(() => import("./ai/BarakaAi"));
 const InstallPrompt = lazy(() => import("./components/InstallPrompt"));
@@ -26,14 +27,41 @@ const Measurement = lazy(() => import("./topics/measurement/Measurement"));
 const Numbers = lazy(() => import("./topics/numbers/Numbers"));
 const NumbersQuiz = lazy(() => import("./topics/numbers/NumbersQuiz"));
 const Probability = lazy(() => import("./topics/probability/Probability"));
+const WelcomePage = lazy(() => import("./pages/WelcomePage"));
 const App = () => {
-
- 
-
   const [page, setPage] = useLocalStorage("choose-page", "choosePage");
+  const [firstTime, setFirstTime] = useState(null);
   useEffect(() => {
     setPage("choosePage");
   }, []);
+
+  useEffect(() => {
+    const stored = localStorage.getItem("first-time");
+    if (stored === null) {
+      localStorage.setItem("first-time", "true");
+      setFirstTime(true);
+    } else {
+      setFirstTime(false);
+    }
+  }, []);
+
+  if (firstTime) {
+    return (
+      < div className="min-h-screen bg-gradient-to-br from-purple-950 via-slate-900 to-purple-900">
+        <Suspense
+          fallback={
+            <div className="flex-col font-medium animate-pulse  text-gray-300 flex justify-center h-screen items-center">
+              <Loader size={40} className="animate-spin mb-3 text-pink-400" />{" "}
+              Loading...
+            </div>
+          }
+        >
+          <WelcomePage />)
+        </Suspense>
+      </div>
+    );
+  }
+
   return (
     <div className="scroll-smooth min-h-screen bg-gradient-to-br from-purple-950 via-slate-900 to-purple-900">
       <Router>
