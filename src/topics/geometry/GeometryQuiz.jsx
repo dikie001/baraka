@@ -139,12 +139,12 @@ const GeometryQuiz = () => {
       <BottomNav />
       {mode === "choosePage" && <ConfirmStudyMode />}
       <button
-             onClick={() => setMode("choosePage")}
-             className="flex items-center gap-2 px-3 py-2 text-purple-200 hover:text-white hover:bg-purple-700/30 rounded-lg transition-colors"
-           >
-             <ChevronLeft className="w-5 h-5" />
-             <span className="text-sm">Back</span>
-           </button>
+        onClick={() => setMode("choosePage")}
+        className="flex items-center gap-2 px-3 py-2 text-purple-200 hover:text-white hover:bg-purple-700/30 rounded-lg transition-colors"
+      >
+        <ChevronLeft className="w-5 h-5" />
+        <span className="text-sm">Back</span>
+      </button>
       {/* Header with progress */}
       <div className="max-w-4xl mx-auto mb-6 mt-4">
         <div className="flex items-center justify-between mb-4">
@@ -208,7 +208,7 @@ const GeometryQuiz = () => {
           </div>
 
           {showAnswer && (
-            <div className="mb-6 p-4 bg-gradient-to-r from-purple-900/40 to-pink-900/40 rounded-2xl border border-purple-500/40 backdrop-blur-sm">
+            <div className="mb-6 p-4 absolute   top-5 left-1/2 transform -translate-x-1/2   bg-gradient-to-r from-purple-700/90 to-pink-700/90 rounded-2xl border border-purple-500/40 backdrop-blur-sm">
               <div className="flex items-center">
                 <div className="w-2 h-2 rounded-full bg-purple-400 mr-3"></div>
                 <span className="text-purple-200 font-medium">

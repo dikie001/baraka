@@ -5,7 +5,7 @@ import BottomNav from "../components/MobileNav";
 import { useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
 import useFeedbackSound from "../hooks/useFeedbackSound";
-
+import { X } from "lucide-react";
 
 // Custom localStorage hook
 const useLocalStorage = (key, defaultValue) => {
@@ -76,11 +76,11 @@ const QuickPractice = () => {
 
     if (!answered.has(current) && key === question.answer) {
       const newScore = score + 1;
-      playSuccess()
+      playSuccess();
       setScore(newScore);
       setSavedScore(newScore);
     } else if (!answered.has(current) && key !== question.answer) {
-      playError()
+      playError();
     }
 
     const newAnswered = new Set([...answered, current]);
@@ -91,10 +91,10 @@ const QuickPractice = () => {
   const nextQuestion = () => {
     if (!selected) {
       const toasty = toast.error("Please select an Answer!", { id: "toasty" });
-      playError()
+      playError();
       return;
     } else if (currentNumber === 199) {
-      playFinish()
+      playFinish();
       const toasty = toast.success("Hurray, you have completed!", {
         id: "toasty",
       });
@@ -108,7 +108,7 @@ const QuickPractice = () => {
   };
 
   const prevQuestion = () => {
-    playError()
+    playError();
     const toasty = toast.error("This button has been disabled", {
       id: "toasty",
     });
@@ -163,7 +163,7 @@ const QuickPractice = () => {
 
       {/* Main quiz card */}
       <div className="max-w-2xl  mx-auto">
-        <div className="bg-slate-800/60 backdrop-blur-lg p-8 rounded-3xl  shadow-2xl border border-purple-500/30 relative overflow-hidden">
+        <div className=" bg-slate-800/60 backdrop-blur-lg p-8 rounded-3xl  shadow-2xl border border-purple-500/30 relative overflow-hidden">
           {/* Decorative gradient overlay */}
 
           <div className="flex items-start justify-between">
@@ -203,13 +203,15 @@ const QuickPractice = () => {
           </div>
 
           {showAnswer && (
-            <div className="mb-4  p-3 bg-gradient-to-r from-purple-900/40 to-pink-900/40 rounded-2xl border border-purple-500/40 backdrop-blur-sm">
-              <div className="flex  items-center">
+            <div className="mb-4  absolute min-w-60  top-5 left-1/2 transform -translate-x-1/2   bg-gradient-to-r from-purple-700/90 to-pink-700/90 p-3  rounded-2xl border border-purple-500/40 backdrop-blur-sm">
+          
+
+              <div className="flex  items-center  ">
                 <div className="w-2 h-2 rounded-full bg-purple-400 mr-3"></div>
                 <span className="text-purple-200 font-medium">
-                  Correct answer:{" "}
+                  Correct answer:
                 </span>
-                <span className="ml-2 px-3 py-1 bg-pink-500/30 rounded-full text-pink-300 font-bold border border-pink-400/30">
+                <span className="ml-2 px-3 py-1  bg-pink-500/30 rounded-full text-pink-300 font-bold border border-pink-400/30">
                   {question.answer.toUpperCase()}
                 </span>
               </div>

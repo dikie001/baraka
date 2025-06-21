@@ -7,7 +7,6 @@ import toast from "react-hot-toast";
 import useFeedbackSound from "../../hooks/useFeedbackSound";
 import { useNavigate } from "react-router-dom";
 
-
 // Custom localStorage hook
 const useLocalStorage = (key, defaultValue) => {
   const [value, setValue] = useState(() => {
@@ -32,7 +31,7 @@ const useLocalStorage = (key, defaultValue) => {
 };
 
 const GeometryQuiz = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   // Initialize sounds
   const { playError, playSuccess, playFinish } = useFeedbackSound();
   // Load saved progress
@@ -100,9 +99,9 @@ const GeometryQuiz = () => {
       const toasty = toast.success("Hurray, you have completed!", {
         id: "toasty",
       });
-      setTimeout(()=>{
-        navigate('/')
-      },1000)
+      setTimeout(() => {
+        navigate("/");
+      }, 1000);
       return;
     }
     const nextIndex = (current + 1) % questionsData.questions.length;
@@ -208,7 +207,7 @@ const GeometryQuiz = () => {
           </div>
 
           {showAnswer && (
-            <div className="mb-6 p-4 bg-gradient-to-r from-purple-900/40 to-pink-900/40 rounded-2xl border border-purple-500/40 backdrop-blur-sm">
+            <div className="mb-6 p-4  absolute   top-5 left-1/2 transform -translate-x-1/2   bg-gradient-to-r from-purple-700/90 to-pink-700/90 backdrop-blur-sm">
               <div className="flex items-center">
                 <div className="w-2 h-2 rounded-full bg-purple-400 mr-3"></div>
                 <span className="text-purple-200 font-medium">

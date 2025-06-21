@@ -1,9 +1,9 @@
 import { useRef } from "react";
-import success from "../assets/sounds/success.mp3";
-import error from "../assets/sounds/error.mp3";
-import finish from "../assets/sounds/finish.mp3";
-import send from "../assets/sounds/send.mp3";
-import receive from "../assets/sounds/receive.mp3"
+import success from "/sounds/success.mp3";
+import error from "/sounds/error.mp3";
+import finish from "/sounds/finish.mp3";
+import send from "/sounds/send.mp3";
+import receive from "/sounds/receive.mp3";
 import { useEffect } from "react";
 
 const useFeedbackSound = () => {
