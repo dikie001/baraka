@@ -28,16 +28,16 @@
   "related_applications": [],
   "screenshots": [
     {
-      "src": "/screenshots/screenshot1.png",
+      "src": "/screenshots/shot1.jpg",
       "type": "image/png",
       "sizes": "1280x720",
-      "label": "Quizzy Quiz Interface"
+      "label": "Quizzy Notes Interface"
     },
     {
-      "src": "/screenshots/screenshot2.png",
+      "src": "/screenshots/shot2.jpg",
       "type": "image/png",
       "sizes": "1280x720",
-      "label": "Quizzy Dashboard"
+      "label": "Inbuilt Baraka AI"
     }
   ]
 }
