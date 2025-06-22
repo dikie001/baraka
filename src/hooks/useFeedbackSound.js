@@ -1,67 +1,51 @@
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import success from "/sounds/success.mp3";
 import error from "/sounds/error.mp3";
 import finish from "/sounds/finish.mp3";
 import send from "/sounds/send.mp3";
 import receive from "/sounds/receive.mp3";
-import { useEffect } from "react";
 
 const useFeedbackSound = () => {
-  // Create Audio Instances Once
-  const successRef = useRef(new Audio(success));
-  const errorRef = useRef(new Audio(error));
-  const finishRef = useRef(new Audio(finish));
-  const sendRef = useRef(new Audio(send));
-  const receiveRef = useRef(new Audio(receive));
+  const soundMap = {
+    success: { src: success, volume: 0.7 },
+    error: { src: error, volume: 1 },
+    finish: { src: finish, volume: 1 },
+    send: { src: send, volume: 1 },
+    receive: { src: receive, volume: 1 },
+  };
+
+  const audioRefs = useRef({});
 
   useEffect(() => {
-    //   Force Preload
-    successRef.current.preload = "auto";
-    errorRef.current.preload = "auto";
-    finishRef.current.preload = "auto";
-
-    // Touch the audio to warm it up!
-    successRef.current.load();
-    errorRef.current.load();
-    finishRef.current.load();
+    Object.entries(soundMap).forEach(([key, { src, volume }]) => {
+      const audio = new Audio(src);
+      audio.preload = "auto";
+      audio.volume = volume;
+      audio.load();
+      audioRefs.current[key] = audio;
+    });
   }, []);
 
-  const playSuccess = () => {
-    const audio = successRef.current;
-    audio.currentTime = 0;
-    audio.volume = 0.7;
-    audio.play().catch(console.warn);
+  const playSound = (key) => {
+    const audio = audioRefs.current[key];
+    if (audio) {
+      try {
+        audio.pause(); // stop any current play
+        audio.currentTime = 0;
+        audio.play().catch(console.warn);
+      } catch (err) {
+        console.warn(`Error playing ${key}:`, err);
+      }
+    }
   };
 
-  const playError = () => {
-    const audio = errorRef.current;
-    audio.currentTime = 0;
-    audio.volume = 1;
-    audio.play().catch(console.warn);
+  return {
+    playSuccess: () => playSound("success"),
+    playError: () => playSound("error"),
+    playFinish: () => playSound("finish"),
+    playSend: () => playSound("send"),
+    playReceive: () => playSound("receive"),
   };
-
-  const playFinish = () => {
-    const audio = finishRef.current;
-    audio.currentTime = 0;
-    audio.volume = 1;
-    audio.play().catch(console.warn);
-  };
-
-  const playSend = () => {
-    const audio = sendRef.current;
-    audio.currentTime = 0;
-    audio.volume = 1;
-    audio.play().catch(console.warn);
-  };
-
-  const playReceive = () => {
-    const audio = receiveRef.current;
-    audio.currentTime = 0;
-    audio.volume = 1;
-    audio.play().catch(console.warn);
-  };
-
-  return { playSuccess, playError, playFinish, playSend, playReceive };
 };
 
 export default useFeedbackSound;

@@ -28,11 +28,33 @@ const Numbers = lazy(() => import("./topics/numbers/Numbers"));
 const NumbersQuiz = lazy(() => import("./topics/numbers/NumbersQuiz"));
 const Probability = lazy(() => import("./topics/probability/Probability"));
 const WelcomePage = lazy(() => import("./pages/WelcomePage"));
+import useAppReady from "./hooks/useAppReady";
 
 
 const App = () => {
+
   const [page, setPage] = useLocalStorage("choose-page", "choosePage");
   const [firstTime, setFirstTime] = useState(null);
+
+  const isAppReady = useAppReady();
+  if (!isAppReady) {
+    return (
+      <div className="flex-col font-medium animate-pulse text-gray-300 flex justify-center h-screen items-center">
+        <img
+          src="/icon.png"
+          alt="Quizzy Logo"
+          className="w-20 mb-4 animate-bounce"
+        />
+        <p className="text-xl font-bold animate-pulse">Loading Quizzy...</p>
+        <Loader size={40} className="animate-spin mb-3 text-pink-400" />{" "}
+        <p className="text-gray-400">Please wait while we set things up.</p>
+        <p className="text-gray-400">This may take a few seconds.</p>
+        <p className="text-gray-400">If this takes too long, try refreshing the page.</p>
+        <p className="text-gray-400">If the problem persists, please contact support.</p>
+        <p className="text-gray-400">Thank you for your patience!</p>
+      </div>
+    );
+  }
 
 
   useEffect(() => {
