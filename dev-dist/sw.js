@@ -78,11 +78,11 @@ define(['./workbox-c7eb7b3a'], (function (workbox) { 'use strict';
    * See https://goo.gl/S9QRab
    */
   workbox.precacheAndRoute([{
-    "url": "/index.html",
-    "revision": "0.dlhbi6nv18"
+    "url": "/",
+    "revision": "0.2iq3a63rja8"
   }], {});
   workbox.cleanupOutdatedCaches();
-  workbox.registerRoute(new workbox.NavigationRoute(workbox.createHandlerBoundToURL("/index.html"), {
+  workbox.registerRoute(new workbox.NavigationRoute(workbox.createHandlerBoundToURL("/"), {
     allowlist: [/^\/$/]
   }));
   workbox.registerRoute(({
@@ -108,3 +108,4 @@ define(['./workbox-c7eb7b3a'], (function (workbox) { 'use strict';
   }), 'GET');
 
 }));
+//# sourceMappingURL=sw.js.map
