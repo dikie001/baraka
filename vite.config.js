@@ -10,7 +10,7 @@ export default defineConfig({
     VitePWA({
       registerType: "autoUpdate",
       devOptions: {
-        enabled: true, // enable SW in dev mode
+        enabled: true,
       },
       manifest: {
         short_name: "Quizzy",
@@ -29,8 +29,9 @@ export default defineConfig({
             type: "image/png",
           },
         ],
-        start_url: "/", // 💥 changed from /?source=pwa
+        start_url: "/",
         display: "standalone",
+        crossorigin: "use-credentials",
         theme_color: "#0f172a",
         background_color: "#0f172a",
         orientation: "portrait-primary",
@@ -57,7 +58,7 @@ export default defineConfig({
       },
       workbox: {
         globPatterns: ["**/*.{js,css,html,ico,png,svg,json,woff2,mp3,ogg,wav}"],
-        navigateFallback: "/", // 💥 ensures app works offline from first launch
+        navigateFallback: "/",
         runtimeCaching: [
           {
             urlPattern: ({ request }) => request.destination === "document",
@@ -83,7 +84,7 @@ export default defineConfig({
               cacheName: "audio-assets",
               expiration: {
                 maxEntries: 20,
-                maxAgeSeconds: 60 * 60 * 24 * 365, // 1 year
+                maxAgeSeconds: 60 * 60 * 24 * 365,
               },
             },
           },
@@ -91,4 +92,8 @@ export default defineConfig({
       },
     }),
   ],
+  build: {
+    outDir: "dist", // ✅ CORRECT
+    sourcemap: true, // 💡 Optional, helps debugging
+  },
 });

@@ -8,32 +8,31 @@ import useAppReady from "./hooks/useAppReady";
 import { AppLoading } from "./components/AppLoading";
 
 // Lazy-loaded pages/components
-const lazyLoad = (path) => lazy(() => import(path));
 
-const WelcomePage = lazyLoad("./pages/WelcomePage");
-const InstallPrompt = lazyLoad("./components/InstallPrompt");
-const BarakaAI = lazyLoad("./ai/BarakaAi");
-const DailyChallenge = lazyLoad("./dailyChallenge/DailyChallenge");
-const ExamsPage = lazyLoad("./exams/ExamsPage");
-const QuickPractice = lazyLoad("./quickPractice/QuickPractice");
+const WelcomePage = lazy(() => import("./pages/WelcomePage"));
+const InstallPrompt = lazy(() => import("./components/InstallPrompt"));
+const BarakaAI = lazy(() => import("./ai/BarakaAi"));
+const DailyChallenge = lazy(() => import("./dailyChallenge/DailyChallenge"));
+const ExamsPage = lazy(() => import("./exams/ExamsPage"));
+const QuickPractice = lazy(() => import("./quickPractice/QuickPractice"));
 
-const BarakaMathApp = lazyLoad("./pages/HomePage");
-const AuthPage = lazyLoad("./pages/Auth");
-const Profile = lazyLoad("./pages/Profile");
-const Quizes = lazyLoad("./pages/Quizes");
-const Settings = lazyLoad("./pages/Settings");
-const ContactPage = lazyLoad("./pages/Contact");
-const Achievements = lazyLoad("./pages/Achievements");
-const ReportBug = lazyLoad("./pages/ReportBug");
-const RequestFeature = lazyLoad("./pages/RequestFeature");
+const BarakaMathApp = lazy(() => import("./pages/HomePage"));
+const AuthPage = lazy(() => import("./pages/Auth"));
+const Profile = lazy(() => import("./pages/Profile"));
+const Quizes = lazy(() => import("./pages/Quizes"));
+const Settings = lazy(() => import("./pages/Settings"));
+const ContactPage = lazy(() => import("./pages/Contact"));
+const Achievements = lazy(() => import("./pages/Achievements"));
+const ReportBug = lazy(() => import("./pages/ReportBug"));
+const RequestFeature = lazy(() => import("./pages/RequestFeature"));
 
-const Algebra = lazyLoad("./topics/algebra/Algebra");
-const Numbers = lazyLoad("./topics/numbers/Numbers");
-const NumbersQuiz = lazyLoad("./topics/numbers/NumbersQuiz");
-const Geometry = lazyLoad("./topics/geometry/Geometry");
-const Probability = lazyLoad("./topics/probability/Probability");
-const Data = lazyLoad("./topics/data/Data");
-const Measurement = lazyLoad("./topics/measurement/Measurement");
+const Algebra = lazy(() => import("./topics/algebra/Algebra"));
+const Numbers = lazy(() => import("./topics/numbers/Numbers"));
+const NumbersQuiz = lazy(() => import("./topics/numbers/NumbersQuiz"));
+const Geometry = lazy(() => import("./topics/geometry/Geometry"));
+const Probability = lazy(() => import("./topics/probability/Probability"));
+const Data = lazy(() => import("./topics/data/Data"));
+const Measurement = lazy(() => import("./topics/measurement/Measurement"));
 
 // Reusable suspense fallback
 const SuspenseFallback = () => (
