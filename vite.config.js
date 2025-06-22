@@ -57,7 +57,7 @@ export default defineConfig({
       },
       workbox: {
         globPatterns: ["**/*.{js,css,html,ico,png,svg,json,woff2,mp3,ogg,wav}"],
-        navigateFallback: "/index.html", // 💥 ensures app works offline from first launch
+        navigateFallback: "/", // 💥 ensures app works offline from first launch
         runtimeCaching: [
           {
             urlPattern: ({ request }) => request.destination === "document",
