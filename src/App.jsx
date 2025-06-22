@@ -37,24 +37,36 @@ const App = () => {
   const [firstTime, setFirstTime] = useState(null);
 
   const isAppReady = useAppReady();
-  if (!isAppReady) {
-    return (
-      <div className="flex-col font-medium animate-pulse text-gray-300 flex justify-center h-screen items-center">
-        <img
-          src="/icon.png"
-          alt="Quizzy Logo"
-          className="w-20 mb-4 animate-bounce"
-        />
-        <p className="text-xl font-bold animate-pulse">Loading Quizzy...</p>
-        <Loader size={40} className="animate-spin mb-3 text-pink-400" />{" "}
-        <p className="text-gray-400">Please wait while we set things up.</p>
-        <p className="text-gray-400">This may take a few seconds.</p>
-        <p className="text-gray-400">If this takes too long, try refreshing the page.</p>
-        <p className="text-gray-400">If the problem persists, please contact support.</p>
-        <p className="text-gray-400">Thank you for your patience!</p>
+if (!isAppReady) {
+  return (
+    <div className="h-screen w-full bg-gradient-to-b from-slate-950 to-slate-900 text-white flex flex-col justify-center items-center px-4 text-center">
+      <img
+        src="/icon.png"
+        alt="Quizzy Logo"
+        className="w-20 mb-6 drop-shadow-lg animate-bounce"
+      />
+
+      <p className="text-2xl font-bold text-pink-400 animate-pulse mb-2">
+        Loading Quizzy...
+      </p>
+
+      <Loader size={40} className="text-purple-400 animate-spin mb-4" />
+
+      <p className="text-sm text-slate-400">
+        Setting things up just for you...
+      </p>
+      <p className="text-sm text-slate-500">Please wait a few seconds ⏳</p>
+
+      <div className="mt-4 text-xs text-slate-600 max-w-sm">
+        <p>If this takes too long, try refreshing the app.</p>
+        <p>
+          If the issue persists, contact{" "}
+          <span className="text-pink-400 underline">support@quizzy.app</span>.
+        </p>
       </div>
-    );
-  }
+    </div>
+  );
+}
 
 
   useEffect(() => {
