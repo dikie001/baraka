@@ -115,7 +115,7 @@ export default defineConfig({
           },
           // 🌐 API (optional)
           {
-            urlPattern: /^https:\/\/your-api-domain\.com\/.*$/,
+            urlPattern: /^https:\/\/baraka-bozes.vercel.app\/.*$/,
             handler: "NetworkFirst",
             options: {
               cacheName: "api-cache",

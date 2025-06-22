@@ -209,7 +209,7 @@ const NumbersQuiz = () => {
           </div>
 
           {showAnswer && (
-            <div className="mb-6 p-4 absolute   top-5 left-1/2 transform -translate-x-1/2 min-w-56  bg-gradient-to-r from-purple-700/60 to-pink-700/60 rounded-2xl border border-purple-500/40 backdrop-blur-sm">
+            <div className="mb-4   absolute min-w-56  top-5 left-1/2 transform -translate-x-1/2   bg-gradient-to-r from-purple-700/60 to-pink-700/60 p-3  rounded-2xl border border-purple-500/40 backdrop-blur-sm">
               <div className="flex items-center">
                 <div className="w-2 h-2 rounded-full bg-purple-400 mr-3"></div>
                 <span className="text-purple-200 font-medium">
