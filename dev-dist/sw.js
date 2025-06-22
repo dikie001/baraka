@@ -67,7 +67,7 @@ if (!self.define) {
     });
   };
 }
-define(['./workbox-86c9b217'], (function (workbox) { 'use strict';
+define(['./workbox-c7eb7b3a'], (function (workbox) { 'use strict';
 
   self.skipWaiting();
   workbox.clientsClaim();
@@ -78,12 +78,33 @@ define(['./workbox-86c9b217'], (function (workbox) { 'use strict';
    * See https://goo.gl/S9QRab
    */
   workbox.precacheAndRoute([{
-    "url": "index.html",
-    "revision": "0.6b6gai0utm8"
+    "url": "/index.html",
+    "revision": "0.dlhbi6nv18"
   }], {});
   workbox.cleanupOutdatedCaches();
-  workbox.registerRoute(new workbox.NavigationRoute(workbox.createHandlerBoundToURL("index.html"), {
+  workbox.registerRoute(new workbox.NavigationRoute(workbox.createHandlerBoundToURL("/index.html"), {
     allowlist: [/^\/$/]
   }));
+  workbox.registerRoute(({
+    request
+  }) => request.destination === "document", new workbox.NetworkFirst(), 'GET');
+  workbox.registerRoute(({
+    request
+  }) => request.destination === "style", new workbox.StaleWhileRevalidate(), 'GET');
+  workbox.registerRoute(({
+    request
+  }) => request.destination === "script", new workbox.StaleWhileRevalidate(), 'GET');
+  workbox.registerRoute(({
+    request
+  }) => request.destination === "image", new workbox.CacheFirst(), 'GET');
+  workbox.registerRoute(({
+    request
+  }) => ["audio"].includes(request.destination), new workbox.CacheFirst({
+    "cacheName": "audio-assets",
+    plugins: [new workbox.ExpirationPlugin({
+      maxEntries: 20,
+      maxAgeSeconds: 31536000
+    })]
+  }), 'GET');
 
 }));

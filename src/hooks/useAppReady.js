@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 const useAppReady = () => {
   const [isReady, setIsReady] = useState(false);
 
-
+  useEffect(() => {
     const cached = localStorage.getItem("quizzyReady");
     if (cached === "true") {
       setIsReady(true);
@@ -20,7 +20,7 @@ const useAppReady = () => {
     } else {
       setIsReady(true); // fallback
     }
-
+  }, []);
 
   return isReady;
 };

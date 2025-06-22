@@ -1,73 +1,56 @@
-import { useLocalStorage } from "@uidotdev/usehooks";
-import { Loader } from "lucide-react";
-import React, { useEffect } from "react";
-import { lazy, Suspense } from "react";
+import React, { lazy, Suspense, useEffect, useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
-import { useState } from "react";
+import { Loader } from "lucide-react";
+import { useLocalStorage } from "@uidotdev/usehooks";
 
-const BarakaAI = lazy(() => import("./ai/BarakaAi"));
-const InstallPrompt = lazy(() => import("./components/InstallPrompt"));
-const DailyChallenge = lazy(() => import("./dailyChallenge/DailyChallenge"));
-const ExamsPage = lazy(() => import("./exams/ExamsPage"));
-const Achievements = lazy(() => import("./pages/Achievements"));
-const AuthPage = lazy(() => import("./pages/Auth"));
-const ContactPage = lazy(() => import("./pages/Contact"));
-const BarakaMathApp = lazy(() => import("./pages/HomePage"));
-const Profile = lazy(() => import("./pages/Profile"));
-const Quizes = lazy(() => import("./pages/Quizes"));
-const ReportBug = lazy(() => import("./pages/ReportBug"));
-const RequestFeature = lazy(() => import("./pages/RequestFeature"));
-const Settings = lazy(() => import("./pages/Settings"));
-const QuickPractice = lazy(() => import("./quickPractice/QuickPractice"));
-const Algebra = lazy(() => import("./topics/algebra/Algebra"));
-const Data = lazy(() => import("./topics/data/Data"));
-const Geometry = lazy(() => import("./topics/geometry/Geometry"));
-const Measurement = lazy(() => import("./topics/measurement/Measurement"));
-const Numbers = lazy(() => import("./topics/numbers/Numbers"));
-const NumbersQuiz = lazy(() => import("./topics/numbers/NumbersQuiz"));
-const Probability = lazy(() => import("./topics/probability/Probability"));
-const WelcomePage = lazy(() => import("./pages/WelcomePage"));
 import useAppReady from "./hooks/useAppReady";
+import { AppLoading } from "./components/AppLoading";
+
+// Lazy-loaded pages/components
+const lazyLoad = (path) => lazy(() => import(path));
+
+const WelcomePage = lazyLoad("./pages/WelcomePage");
+const InstallPrompt = lazyLoad("./components/InstallPrompt");
+const BarakaAI = lazyLoad("./ai/BarakaAi");
+const DailyChallenge = lazyLoad("./dailyChallenge/DailyChallenge");
+const ExamsPage = lazyLoad("./exams/ExamsPage");
+const QuickPractice = lazyLoad("./quickPractice/QuickPractice");
+
+const BarakaMathApp = lazyLoad("./pages/HomePage");
+const AuthPage = lazyLoad("./pages/Auth");
+const Profile = lazyLoad("./pages/Profile");
+const Quizes = lazyLoad("./pages/Quizes");
+const Settings = lazyLoad("./pages/Settings");
+const ContactPage = lazyLoad("./pages/Contact");
+const Achievements = lazyLoad("./pages/Achievements");
+const ReportBug = lazyLoad("./pages/ReportBug");
+const RequestFeature = lazyLoad("./pages/RequestFeature");
+
+const Algebra = lazyLoad("./topics/algebra/Algebra");
+const Numbers = lazyLoad("./topics/numbers/Numbers");
+const NumbersQuiz = lazyLoad("./topics/numbers/NumbersQuiz");
+const Geometry = lazyLoad("./topics/geometry/Geometry");
+const Probability = lazyLoad("./topics/probability/Probability");
+const Data = lazyLoad("./topics/data/Data");
+const Measurement = lazyLoad("./topics/measurement/Measurement");
+
+// Reusable suspense fallback
+const SuspenseFallback = () => (
+  <div className="flex-col font-medium animate-pulse text-gray-300 flex justify-center h-screen items-center">
+    <Loader size={40} className="animate-spin mb-3 text-pink-400" />
+    Loading...
+  </div>
+);
 
 const App = () => {
   const [page, setPage] = useLocalStorage("choose-page", "choosePage");
   const [firstTime, setFirstTime] = useState(null);
-
   const isAppReady = useAppReady();
-  if (!isAppReady) {
-    return (
-      <div className="h-screen w-full bg-gradient-to-b from-slate-950 to-slate-900 text-white flex flex-col justify-center items-center px-4 text-center">
-        <img
-          src="/icon.png"
-          alt="Quizzy Logo"
-          className="w-20 mb-6 drop-shadow-lg animate-bounce"
-        />
-
-        <p className="text-2xl font-bold text-pink-400 animate-pulse mb-2">
-          Loading Quizzy...
-        </p>
-
-        <Loader size={40} className="text-purple-400 animate-spin mb-4" />
-
-        <p className="text-sm text-slate-400">
-          Setting things up just for you...
-        </p>
-        <p className="text-sm text-slate-500">Please wait a few seconds ⏳</p>
-
-        <div className="mt-4 text-xs text-slate-600 max-w-sm">
-          <p>If this takes too long, try refreshing the app.</p>
-          <p>
-            If the issue persists, contact{" "}
-            <span className="text-pink-400 underline">dikie.dev</span>.
-          </p>
-        </div>
-      </div>
-    );
-  }
 
   useEffect(() => {
     setPage("choosePage");
+
     const stored = localStorage.getItem("first-time");
     if (stored === null) {
       localStorage.setItem("first-time", "true");
@@ -77,61 +60,58 @@ const App = () => {
     }
   }, []);
 
+  // Show splash loading until useAppReady() returns true
+  if (!isAppReady) return <AppLoading />;
+
+  // First-time welcome screen
   if (firstTime) {
     return (
       <div className="min-h-screen bg-gradient-to-br from-purple-950 via-slate-900 to-purple-900">
-        <Suspense
-          fallback={
-            <div className="flex-col font-medium animate-pulse  text-gray-300 flex justify-center h-screen items-center">
-              <Loader size={40} className="animate-spin mb-3 text-pink-400" />{" "}
-              Loading...
-            </div>
-          }
-        >
-          <WelcomePage />)
+        <Suspense fallback={<SuspenseFallback />}>
+          <WelcomePage />
         </Suspense>
       </div>
     );
   }
 
+  // Main app
   return (
     <div className="scroll-smooth min-h-screen bg-gradient-to-br from-purple-950 via-slate-900 to-purple-900">
       <Router>
         <Toaster />
         <InstallPrompt />
-        <Suspense
-          fallback={
-            <div className="flex-col font-medium animate-pulse  text-gray-300 flex justify-center h-screen items-center">
-              <Loader size={40} className="animate-spin mb-3 text-pink-400" />{" "}
-              Loading...
-            </div>
-          }
-        >
+        <Suspense fallback={<SuspenseFallback />}>
           <Routes>
+            {/* Pages */}
             <Route path="/" element={<BarakaMathApp />} />
             <Route path="/auth-page" element={<AuthPage />} />
+            <Route path="/profile" element={<Profile />} />
+            <Route path="/quizes" element={<Quizes />} />
+            <Route path="/settings" element={<Settings />} />
+            <Route path="/contact" element={<ContactPage />} />
+            <Route path="/achievements" element={<Achievements />} />
+
+            {/* Math Topics */}
             <Route path="/numbers" element={<Numbers />} />
+            <Route path="/numbers-quiz" element={<NumbersQuiz />} />
+            <Route path="/algebra" element={<Algebra />} />
+            <Route path="/geometry" element={<Geometry />} />
+            <Route path="/probability" element={<Probability />} />
+            <Route path="/data" element={<Data />} />
+            <Route path="/measurement" element={<Measurement />} />
+
+            {/* Features */}
+            <Route path="/baraka-ai" element={<BarakaAI />} />
             <Route path="/daily-challenge" element={<DailyChallenge />} />
             <Route path="/quick-practice" element={<QuickPractice />} />
             <Route path="/exams-page" element={<ExamsPage />} />
-            <Route path="/profile" element={<Profile />} />
-            <Route path="/achievements" element={<Achievements />} />
-            <Route path="/algebra" element={<Algebra />} />
-            <Route path="/probability" element={<Probability />} />
-            <Route path="/geometry" element={<Geometry />} />
-            <Route path="/numbers-quiz" element={<NumbersQuiz />} />
-            <Route path="/data" element={<Data />} />
-            <Route path="/measurement" element={<Measurement />} />
-            <Route path="/baraka-ai" element={<BarakaAI />} />
-            <Route path="/quizes" element={<Quizes />} />
             <Route path="/report-bug" element={<ReportBug />} />
-            <Route path="/settings" element={<Settings />} />
             <Route path="/request-feature" element={<RequestFeature />} />
-            <Route path="/contact" element={<ContactPage />} />
           </Routes>
         </Suspense>
       </Router>
     </div>
   );
 };
+
 export default App;
