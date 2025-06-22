@@ -50,6 +50,7 @@ const App = () => {
   useEffect(() => {
     setPage("choosePage");
 
+    // Check if this is the first time the user has opened the app
     const stored = localStorage.getItem("first-time");
     if (stored === null) {
       localStorage.setItem("first-time", "true");
