@@ -12,6 +12,7 @@ export default function BarakaAI() {
   const { playSend, playReceive, playError } = useFeedbackSound();
   const bottomRef = useRef(null);
   const chatRef = useRef(null);
+  const inputRef = useRef(null);
   const [showHeader, setShowHeader] = useState(true);
   const [showNav, setShowNav] = useState(false);
   const VITE_API_KEY = import.meta.env.VITE_API_KEY;
@@ -19,6 +20,9 @@ export default function BarakaAI() {
   useEffect(() => {
     bottomRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages, isTyping]);
+
+  // Focus on the keyboard
+  inputRef.current?.focus();
 
   useEffect(() => {
     const chatEl = chatRef.current;
@@ -136,7 +140,7 @@ export default function BarakaAI() {
 
       {/* Navbar when user starts chatting */}
       {!showHeader && (
-        <div className= "fixed  top-0 left-1/2 transform -translate-x-1/2 bg-white/10 max-w-4xl rounded-xl  mx-2 w-full border-b border-white/20 px-6 backdrop-blur-xl ">
+        <div className="fixed  top-0 left-1/2 transform -translate-x-1/2 bg-white/10 max-w-4xl rounded-xl  mx-2 w-full border-b border-white/20 px-6 backdrop-blur-xl ">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-5">
               <div
@@ -155,7 +159,10 @@ export default function BarakaAI() {
                 onClick={() => setShowSettings(!showSettings)}
                 className=" mr-5 p-3  bg-white/10  rounded-xl hover:bg-white/20 transition-all duration-200"
               >
-                <Settings onClick={()=>console.log('first')} className="w-5 h-5 " />
+                <Settings
+                  onClick={() => console.log("first")}
+                  className="w-5 h-5 "
+                />
               </button>
             </div>
           </div>
@@ -314,6 +321,7 @@ export default function BarakaAI() {
               <input
                 type="text"
                 value={message}
+                ref={inputRef}
                 onChange={(e) => setMessage(e.target.value)}
                 onKeyPress={(e) => e.key === "Enter" && handleSend()}
                 placeholder="Ask me anything about your studies..."
