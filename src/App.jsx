@@ -34,7 +34,7 @@ const Probability = lazy(() => import("./topics/probability/Probability"));
 const Data = lazy(() => import("./topics/data/Data"));
 const Measurement = lazy(() => import("./topics/measurement/Measurement"));
 
-// Reusable suspense fallback
+// Reusable suspense fallback 
 const SuspenseFallback = () => (
         <div className="min-h-screen bg-gradient-to-br from-purple-950 via-slate-900 to-purple-900">
 
