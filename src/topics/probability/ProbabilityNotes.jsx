@@ -9,7 +9,7 @@ const ProbabilityNotes = () => {
   const [mode, setMode] = useLocalStorage("choose-page", "choosePage");
 
   return (
-    <div className=" text-white p-6">
+    <div className=" text-white ">
       <div className="max-w-4xl mx-auto">
         {/* Header Section */}
         <button
@@ -22,7 +22,7 @@ const ProbabilityNotes = () => {
         <BottomNav />
         <div className="text-center mb-4 mt-4 space-y-2">
           <h1 className="text-5xl font-bold bg-gradient-to-r from-pink-400 to-purple-300 bg-clip-text text-transparent">
-            📘 {topic}
+             {topic}
           </h1>
           <p className="text-slate-300 text-xl font-medium">
             Grade {grade} Revision Guide

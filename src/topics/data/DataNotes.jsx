@@ -9,7 +9,7 @@ const DataNotes = () => {
   const [mode, setMode] = useLocalStorage("choose-page", "choosePage");
 
   return (
-    <div className=" text-white p-6">
+    <div className=" text-white ">
       <div className="max-w-4xl mx-auto">
      <button
             onClick={() => setMode("choosePage")}

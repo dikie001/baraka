@@ -10,7 +10,7 @@ const GeometryNotes = () => {
   const [mode, setMode] = useLocalStorage("choose-page", "choosePage");
 
   return (
-    <div className=" text-white p-6">
+    <div className=" text-white ">
       {mode === "choosePage" && <ConfirmStudyMode />}
 
       <div className="max-w-4xl mx-auto">

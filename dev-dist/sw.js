@@ -67,7 +67,7 @@ if (!self.define) {
     });
   };
 }
-define(['./workbox-c7eb7b3a'], (function (workbox) { 'use strict';
+define(['./workbox-5ec3aef5'], (function (workbox) { 'use strict';
 
   self.skipWaiting();
   workbox.clientsClaim();
@@ -79,7 +79,7 @@ define(['./workbox-c7eb7b3a'], (function (workbox) { 'use strict';
    */
   workbox.precacheAndRoute([{
     "url": "/",
-    "revision": "0.2iq3a63rja8"
+    "revision": "0.l9ednmsbpu"
   }], {});
   workbox.cleanupOutdatedCaches();
   workbox.registerRoute(new workbox.NavigationRoute(workbox.createHandlerBoundToURL("/"), {
@@ -87,23 +87,51 @@ define(['./workbox-c7eb7b3a'], (function (workbox) { 'use strict';
   }));
   workbox.registerRoute(({
     request
-  }) => request.destination === "document", new workbox.NetworkFirst(), 'GET');
+  }) => request.mode === "navigate", new workbox.NetworkFirst({
+    "cacheName": "pages-cache",
+    plugins: [new workbox.ExpirationPlugin({
+      maxEntries: 50,
+      maxAgeSeconds: 2592000
+    })]
+  }), 'GET');
   workbox.registerRoute(({
     request
-  }) => request.destination === "style", new workbox.StaleWhileRevalidate(), 'GET');
+  }) => request.destination === "style", new workbox.StaleWhileRevalidate({
+    "cacheName": "styles-cache",
+    plugins: []
+  }), 'GET');
   workbox.registerRoute(({
     request
-  }) => request.destination === "script", new workbox.StaleWhileRevalidate(), 'GET');
+  }) => request.destination === "script", new workbox.StaleWhileRevalidate({
+    "cacheName": "scripts-cache",
+    plugins: []
+  }), 'GET');
   workbox.registerRoute(({
     request
-  }) => request.destination === "image", new workbox.CacheFirst(), 'GET');
+  }) => request.destination === "image", new workbox.CacheFirst({
+    "cacheName": "images-cache",
+    plugins: [new workbox.ExpirationPlugin({
+      maxEntries: 100,
+      maxAgeSeconds: 2592000
+    })]
+  }), 'GET');
   workbox.registerRoute(({
     request
   }) => ["audio"].includes(request.destination), new workbox.CacheFirst({
     "cacheName": "audio-assets",
     plugins: [new workbox.ExpirationPlugin({
-      maxEntries: 20,
+      maxEntries: 30,
       maxAgeSeconds: 31536000
+    })]
+  }), 'GET');
+  workbox.registerRoute(/^https:\/\/baraka-bozes.vercel.app\/.*$/, new workbox.NetworkFirst({
+    "cacheName": "api-cache",
+    "networkTimeoutSeconds": 5,
+    plugins: [new workbox.ExpirationPlugin({
+      maxEntries: 50,
+      maxAgeSeconds: 86400
+    }), new workbox.CacheableResponsePlugin({
+      statuses: [0, 200]
     })]
   }), 'GET');
 
